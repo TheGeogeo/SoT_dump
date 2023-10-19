@@ -1,0 +1,38 @@
+// BlueprintGeneratedClass BP_EmissaryTable_Sov_01_a.BP_EmissaryTable_Sov_01_a_C
+// Size: 0x7e0 (Inherited: 0x6e8)
+struct ABP_EmissaryTable_Sov_01_a_C : ABP_EmissaryTable_01_C {
+	struct UPointLightComponent* PointLight3; // 0x6e8(0x08)
+	struct UPointLightComponent* PointLight2; // 0x6f0(0x08)
+	struct UParticleSystemComponent* ParticleSystem7; // 0x6f8(0x08)
+	struct UParticleSystemComponent* ParticleSystem6; // 0x700(0x08)
+	struct UStaticMeshComponent* cap_desk_model_pol_01_a; // 0x708(0x08)
+	struct UStaticMeshComponent* bld_sovereign_sigil_02_a; // 0x710(0x08)
+	struct UStaticMeshComponent* StaticMesh6; // 0x718(0x08)
+	struct UStaticMeshComponent* StaticMesh12; // 0x720(0x08)
+	struct UStaticMeshComponent* StaticMesh11; // 0x728(0x08)
+	struct UStaticMeshComponent* StaticMesh10; // 0x730(0x08)
+	struct UStaticMeshComponent* StaticMesh9; // 0x738(0x08)
+	struct UStaticMeshComponent* StaticMesh8; // 0x740(0x08)
+	struct UStaticMeshComponent* StaticMesh7; // 0x748(0x08)
+	struct UStaticMeshComponent* trs_coin_02_a; // 0x750(0x08)
+	struct UStaticMeshComponent* cap_plinth_01_c; // 0x758(0x08)
+	struct UStaticMeshComponent* gmp_tal_wildrose_scroll_01_a; // 0x760(0x08)
+	struct UStaticMeshComponent* StaticMesh; // 0x768(0x08)
+	struct UStaticMeshComponent* cap_cabin_books_aged_01_a_proxy; // 0x770(0x08)
+	struct UStaticMeshComponent* cap_inkwell_01_a; // 0x778(0x08)
+	struct UStaticMeshComponent* gmp_parchment_scroll_01_c; // 0x780(0x08)
+	struct UParticleSystemComponent* ParticleSystem5; // 0x788(0x08)
+	struct UParticleSystemComponent* ParticleSystem4; // 0x790(0x08)
+	struct UStaticMeshComponent* StaticMesh4; // 0x798(0x08)
+	struct UParticleSystemComponent* ParticleSystem3; // 0x7a0(0x08)
+	struct UStaticMeshComponent* StaticMesh1; // 0x7a8(0x08)
+	struct UStaticMeshComponent* StaticMesh3; // 0x7b0(0x08)
+	struct UStaticMeshComponent* trs_gold_ingot_01_a5; // 0x7b8(0x08)
+	struct UStaticMeshComponent* StaticMesh2; // 0x7c0(0x08)
+	struct UStaticMeshComponent* Candlestick; // 0x7c8(0x08)
+	struct UEmissaryShipAffiliationTrackerComponent* EmissaryShipAffiliationTracker; // 0x7d0(0x08)
+	struct UStaticMeshComponent* con_cover_page_gld_01_a; // 0x7d8(0x08)
+
+	void UserConstructionScript(); // Function BP_EmissaryTable_Sov_01_a.BP_EmissaryTable_Sov_01_a_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+};
+
