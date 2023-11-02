@@ -91,7 +91,7 @@ struct UTaleQuestExpressionInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UTaleQuestStepInterface : UInterface {
 
-	void Signal(); // Function Tales.TaleQuestStepInterface.Signal // Native|Public // @ game+0x3f16b10
+	void Signal(); // Function Tales.TaleQuestStepInterface.Signal // Native|Public // @ game+0x3f19120
 };
 
 // Class Tales.SplineFootprintPathComponent
@@ -153,8 +153,8 @@ struct UTaleQuestCargoRunContractsService : UTaleQuestService {
 	struct TArray<struct UTaleQuestCargoRunContract*> Contracts; // 0x60(0x10)
 	char UnknownData_70[0x38]; // 0x70(0x38)
 
-	struct UTaleQuestCargoRunContract* GetContract(struct FGuid Guid); // Function Tales.TaleQuestCargoRunContractsService.GetContract // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3f11fd0
-	struct FGuid AddContract(struct TArray<struct UClass*> InItems, struct AActor* InCollectFromNPC, struct AActor* InDeliverToNPC, int32_t InTimeLimitInMinutes, struct FText InDeliveryHintLocationText); // Function Tales.TaleQuestCargoRunContractsService.AddContract // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3f0f7d0
+	struct UTaleQuestCargoRunContract* GetContract(struct FGuid Guid); // Function Tales.TaleQuestCargoRunContractsService.GetContract // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3f145e0
+	struct FGuid AddContract(struct TArray<struct UClass*> InItems, struct AActor* InCollectFromNPC, struct AActor* InDeliverToNPC, int32_t InTimeLimitInMinutes, struct FText InDeliveryHintLocationText); // Function Tales.TaleQuestCargoRunContractsService.AddContract // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3f11de0
 };
 
 // Class Tales.TaleQuestCompoundStepInterface
@@ -187,8 +187,8 @@ struct UTaleQuestMerchantContract : UObject {
 struct UTaleQuestMerchantContractsService : UTaleQuestService {
 	struct TArray<struct UTaleQuestMerchantContract*> Contracts; // 0x60(0x10)
 
-	struct UTaleQuestMerchantContract* GetContract(struct FGuid Guid); // Function Tales.TaleQuestMerchantContractsService.GetContract // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3f12070
-	struct FGuid AddContract(struct TArray<struct FTaleQuestDeliveryRequest> Requests, struct FName InDeliveryDestination, float InTimeLimit); // Function Tales.TaleQuestMerchantContractsService.AddContract // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3f0fa00
+	struct UTaleQuestMerchantContract* GetContract(struct FGuid Guid); // Function Tales.TaleQuestMerchantContractsService.GetContract // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3f14680
+	struct FGuid AddContract(struct TArray<struct FTaleQuestDeliveryRequest> Requests, struct FName InDeliveryDestination, float InTimeLimit); // Function Tales.TaleQuestMerchantContractsService.AddContract // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3f12010
 };
 
 // Class Tales.TaleQuestPhaseBranchSelectorPredicateBase
@@ -253,9 +253,9 @@ struct UTaleQuestQueryableStateReadValueIntNPCDialogConditional : UNPCDialogCond
 // Size: 0x28 (Inherited: 0x28)
 struct UTaleQuestQueryableStatesReadInterface : UInterface {
 
-	bool ReadDataInt(struct UClass* DataID, int32_t OutDataContent); // Function Tales.TaleQuestQueryableStatesReadInterface.ReadDataInt // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f15a10
-	bool ReadDataBool(struct UClass* DataID, bool OutDataContent); // Function Tales.TaleQuestQueryableStatesReadInterface.ReadDataBool // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f15920
-	bool CanDataBeRead(struct UClass* DataID); // Function Tales.TaleQuestQueryableStatesReadInterface.CanDataBeRead // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f106c0
+	bool ReadDataInt(struct UClass* DataID, int32_t OutDataContent); // Function Tales.TaleQuestQueryableStatesReadInterface.ReadDataInt // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f18020
+	bool ReadDataBool(struct UClass* DataID, bool OutDataContent); // Function Tales.TaleQuestQueryableStatesReadInterface.ReadDataBool // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f17f30
+	bool CanDataBeRead(struct UClass* DataID); // Function Tales.TaleQuestQueryableStatesReadInterface.CanDataBeRead // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f12cd0
 };
 
 // Class Tales.TaleQuestQueryableStatesWriteInterface
@@ -301,8 +301,8 @@ struct UTaleQuestSeasonNotificationDataAsset : UDataAsset {
 // Size: 0x28 (Inherited: 0x28)
 struct UTaleQuestSelectorServiceBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void SetDebugVoyageSeed(int32_t Seed); // Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.SetDebugVoyageSeed // Final|Native|Static|Public|BlueprintCallable // @ game+0x3f15f90
-	void ResetVoyageDebugSeed(); // Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.ResetVoyageDebugSeed // Final|Native|Static|Public|BlueprintCallable // @ game+0x3f15dc0
+	void SetDebugVoyageSeed(int32_t Seed); // Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.SetDebugVoyageSeed // Final|Native|Static|Public|BlueprintCallable // @ game+0x3f185a0
+	void ResetVoyageDebugSeed(); // Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.ResetVoyageDebugSeed // Final|Native|Static|Public|BlueprintCallable // @ game+0x3f183d0
 };
 
 // Class Tales.CutsceneResponsesTaleService
@@ -312,10 +312,10 @@ struct UCutsceneResponsesTaleService : UTaleQuestService {
 	struct TArray<struct UCutsceneResponseComponent*> TrackedResponseComponents; // 0x70(0x10)
 	struct TArray<struct AActor*> ResponseRelevantActors; // 0x80(0x10)
 
-	void TrackResponseCoordinator(struct UCutsceneResponseCoordinator* Coordinator); // Function Tales.CutsceneResponsesTaleService.TrackResponseCoordinator // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f18000
-	struct UCutsceneResponseSheet* StartCutsceneResponseSheet(struct AActor* TargetActor, TScriptInterface<struct UCutsceneResponsePlayerInterface> CutsceneResponsePlayer, struct UClass* ResponseSheetClass); // Function Tales.CutsceneResponsesTaleService.StartCutsceneResponseSheet // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f171a0
-	void ClearAllActiveResponseSheets(); // Function Tales.CutsceneResponsesTaleService.ClearAllActiveResponseSheets // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f10880
-	void AddResponseSheetRelevantActor(struct AActor* Actor); // Function Tales.CutsceneResponsesTaleService.AddResponseSheetRelevantActor // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f0fe30
+	void TrackResponseCoordinator(struct UCutsceneResponseCoordinator* Coordinator); // Function Tales.CutsceneResponsesTaleService.TrackResponseCoordinator // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f1a610
+	struct UCutsceneResponseSheet* StartCutsceneResponseSheet(struct AActor* TargetActor, TScriptInterface<struct UCutsceneResponsePlayerInterface> CutsceneResponsePlayer, struct UClass* ResponseSheetClass); // Function Tales.CutsceneResponsesTaleService.StartCutsceneResponseSheet // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f197b0
+	void ClearAllActiveResponseSheets(); // Function Tales.CutsceneResponsesTaleService.ClearAllActiveResponseSheets // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f12e90
+	void AddResponseSheetRelevantActor(struct AActor* Actor); // Function Tales.CutsceneResponsesTaleService.AddResponseSheetRelevantActor // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3f12440
 };
 
 // Class Tales.GameEventBlockingTaleService
@@ -371,9 +371,9 @@ struct UTaleQuestCrewGameEventBlockingTaleService : UTaleQuestService {
 struct UTaleQuestEQSService : UTaleQuestService {
 	char UnknownData_60[0xd8]; // 0x60(0xd8)
 
-	void AddVectorParam(struct FName ParamName, struct FVector VectorParam); // Function Tales.TaleQuestEQSService.AddVectorParam // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3f0ff70
-	void AddFloatParam(struct FName ParamName, float FloatParam); // Function Tales.TaleQuestEQSService.AddFloatParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3f0fc80
-	void AddActorParam(struct FName ParamName, struct AActor* ActorParam); // Function Tales.TaleQuestEQSService.AddActorParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3f0f700
+	void AddVectorParam(struct FName ParamName, struct FVector VectorParam); // Function Tales.TaleQuestEQSService.AddVectorParam // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3f12580
+	void AddFloatParam(struct FName ParamName, float FloatParam); // Function Tales.TaleQuestEQSService.AddFloatParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3f12290
+	void AddActorParam(struct FName ParamName, struct AActor* ActorParam); // Function Tales.TaleQuestEQSService.AddActorParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3f11d10
 };
 
 // Class Tales.TaleQuestInteractionPreventionService
@@ -382,8 +382,8 @@ struct UTaleQuestInteractionPreventionService : UTaleQuestService {
 	struct TArray<struct AActor*> TrackedInteractionActors; // 0x60(0x10)
 	struct UTaleQuestInteractionPreventionServiceDesc* Desc; // 0x70(0x08)
 
-	void PreventInteractionWithTargetActor(struct AActor* Actor); // Function Tales.TaleQuestInteractionPreventionService.PreventInteractionWithTargetActor // Final|Native|Public // @ game+0x3f14fe0
-	void EnableInteractionWithTargetActor(struct AActor* Actor); // Function Tales.TaleQuestInteractionPreventionService.EnableInteractionWithTargetActor // Final|Native|Public // @ game+0x3f10f40
+	void PreventInteractionWithTargetActor(struct AActor* Actor); // Function Tales.TaleQuestInteractionPreventionService.PreventInteractionWithTargetActor // Final|Native|Public // @ game+0x3f175f0
+	void EnableInteractionWithTargetActor(struct AActor* Actor); // Function Tales.TaleQuestInteractionPreventionService.EnableInteractionWithTargetActor // Final|Native|Public // @ game+0x3f13550
 };
 
 // Class Tales.TaleQuestLockGhostShipDoorService
@@ -432,8 +432,8 @@ struct UTaleQuestSelectorService : UTaleQuestService {
 	struct UTaleQuestSelectorServiceDesc* Desc; // 0x60(0x08)
 	char UnknownData_68[0x20]; // 0x68(0x20)
 
-	int32_t GetRandomIntegerInRange(int32_t Minimum, int32_t Maximum); // Function Tales.TaleQuestSelectorService.GetRandomIntegerInRange // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x3f12b80
-	float GetRandomFloatInRange(float Minimum, float Maximum); // Function Tales.TaleQuestSelectorService.GetRandomFloatInRange // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x3f12ab0
+	int32_t GetRandomIntegerInRange(int32_t Minimum, int32_t Maximum); // Function Tales.TaleQuestSelectorService.GetRandomIntegerInRange // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x3f15190
+	float GetRandomFloatInRange(float Minimum, float Maximum); // Function Tales.TaleQuestSelectorService.GetRandomFloatInRange // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x3f150c0
 };
 
 // Class Tales.TaleQuestShipSetSinkingParamsService
@@ -456,8 +456,8 @@ struct UTaleQuestToggleInteractionDescriptionService : UTaleQuestService {
 	struct TMap<struct AActor*, char> TrackedInteractionActors; // 0x60(0x50)
 	struct UTaleQuestToggleInteractionDescriptionServiceDesc* Desc; // 0xb0(0x08)
 
-	void TargetActorInteractionToEnable(struct AActor* Actor); // Function Tales.TaleQuestToggleInteractionDescriptionService.TargetActorInteractionToEnable // Final|Native|Public // @ game+0x3f17930
-	void TargetActorInteractionToDisable(struct AActor* Actor); // Function Tales.TaleQuestToggleInteractionDescriptionService.TargetActorInteractionToDisable // Final|Native|Public // @ game+0x3f178b0
+	void TargetActorInteractionToEnable(struct AActor* Actor); // Function Tales.TaleQuestToggleInteractionDescriptionService.TargetActorInteractionToEnable // Final|Native|Public // @ game+0x3f19f40
+	void TargetActorInteractionToDisable(struct AActor* Actor); // Function Tales.TaleQuestToggleInteractionDescriptionService.TargetActorInteractionToDisable // Final|Native|Public // @ game+0x3f19ec0
 };
 
 // Class Tales.TaleResourceBrokerService
@@ -1408,7 +1408,7 @@ struct USelectNamedPointStepDesc : UTaleQuestStepDesc {
 	char UnknownData_AD[0x3]; // 0xad(0x03)
 	struct FQuestVariableOrientedPoint Point; // 0xb0(0x30)
 
-	struct TArray<struct FString> GetNamedPointsGroups(); // Function Tales.SelectNamedPointStepDesc.GetNamedPointsGroups // Final|Native|Public|Const // @ game+0x3f12720
+	struct TArray<struct FString> GetNamedPointsGroups(); // Function Tales.SelectNamedPointStepDesc.GetNamedPointsGroups // Final|Native|Public|Const // @ game+0x3f14d30
 };
 
 // Class Tales.SetEQSNamedContextStepDesc
@@ -1718,354 +1718,354 @@ struct UTaleQuestCopyValueStepDesc : UTaleQuestRunnableStepDesc {
 // Size: 0x180 (Inherited: 0x180)
 struct UActorOfInterestTaleFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void GetActorsOfInterestForId(struct UClass* ActorsOfInterestId, struct TArray<struct AActor*> Actors); // Function Tales.ActorOfInterestTaleFunctionLibrary.GetActorsOfInterestForId // Final|Native|Public|HasOutParms|Const // @ game+0x3f11df0
-	struct TArray<struct AActor*> GetActorsOfInterest(struct TArray<struct UClass*> ActorsOfInterestId); // Function Tales.ActorOfInterestTaleFunctionLibrary.GetActorsOfInterest // Final|Native|Public|HasOutParms|Const // @ game+0x3f11ce0
-	struct AActor* GetActorOfInterest(struct UClass* ActorOfInterestId); // Function Tales.ActorOfInterestTaleFunctionLibrary.GetActorOfInterest // Final|Native|Public|HasOutParms|Const // @ game+0x3f11b80
+	void GetActorsOfInterestForId(struct UClass* ActorsOfInterestId, struct TArray<struct AActor*> Actors); // Function Tales.ActorOfInterestTaleFunctionLibrary.GetActorsOfInterestForId // Final|Native|Public|HasOutParms|Const // @ game+0x3f14400
+	struct TArray<struct AActor*> GetActorsOfInterest(struct TArray<struct UClass*> ActorsOfInterestId); // Function Tales.ActorOfInterestTaleFunctionLibrary.GetActorsOfInterest // Final|Native|Public|HasOutParms|Const // @ game+0x3f142f0
+	struct AActor* GetActorOfInterest(struct UClass* ActorOfInterestId); // Function Tales.ActorOfInterestTaleFunctionLibrary.GetActorOfInterest // Final|Native|Public|HasOutParms|Const // @ game+0x3f14190
 };
 
 // Class Tales.TaleQuestActionStateMachineFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestActionStateMachineFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void IsActionStateActive(TScriptInterface<struct UActionStateMachineInterface> ActionStateMachineInterface, char ActionStateMachineTrackId, struct UClass* ActionStateId, bool OutIsActionStateActive); // Function Tales.TaleQuestActionStateMachineFunctionLibrary.IsActionStateActive // Final|Native|Public|HasOutParms|Const // @ game+0x3f13420
+	void IsActionStateActive(TScriptInterface<struct UActionStateMachineInterface> ActionStateMachineInterface, char ActionStateMachineTrackId, struct UClass* ActionStateId, bool OutIsActionStateActive); // Function Tales.TaleQuestActionStateMachineFunctionLibrary.IsActionStateActive // Final|Native|Public|HasOutParms|Const // @ game+0x3f15a30
 };
 
 // Class Tales.TaleQuestActorFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestActorFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct AActor* SpawnActor(struct UClass* What, struct FTransform Where, bool TrackActor, bool AutomaticallyGatherForMigration); // Function Tales.TaleQuestActorFunctionLibrary.SpawnActor // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f16b30
-	struct AActor* ResolveActor(struct AActor* ActorReference); // Function Tales.TaleQuestActorFunctionLibrary.ResolveActor // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f15de0
-	TScriptInterface<struct UInterface> GetInterface(struct AActor* Actor, struct UClass* InterfaceClass); // Function Tales.TaleQuestActorFunctionLibrary.GetInterface // Final|RequiredAPI|Native|Static|Public|HasOutParms // @ game+0x3f12300
-	struct UActorComponent* GetComponentByClass(struct AActor* Actor, struct UClass* ComponentClass); // Function Tales.TaleQuestActorFunctionLibrary.GetComponentByClass // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f11f00
-	struct FTransform GetActorTransform(struct AActor* Actor); // Function Tales.TaleQuestActorFunctionLibrary.GetActorTransform // Final|RequiredAPI|Native|Static|Public|HasDefaults // @ game+0x3f11c20
+	struct AActor* SpawnActor(struct UClass* What, struct FTransform Where, bool TrackActor, bool AutomaticallyGatherForMigration); // Function Tales.TaleQuestActorFunctionLibrary.SpawnActor // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f19140
+	struct AActor* ResolveActor(struct AActor* ActorReference); // Function Tales.TaleQuestActorFunctionLibrary.ResolveActor // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f183f0
+	TScriptInterface<struct UInterface> GetInterface(struct AActor* Actor, struct UClass* InterfaceClass); // Function Tales.TaleQuestActorFunctionLibrary.GetInterface // Final|RequiredAPI|Native|Static|Public|HasOutParms // @ game+0x3f14910
+	struct UActorComponent* GetComponentByClass(struct AActor* Actor, struct UClass* ComponentClass); // Function Tales.TaleQuestActorFunctionLibrary.GetComponentByClass // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f14510
+	struct FTransform GetActorTransform(struct AActor* Actor); // Function Tales.TaleQuestActorFunctionLibrary.GetActorTransform // Final|RequiredAPI|Native|Static|Public|HasDefaults // @ game+0x3f14230
 };
 
 // Class Tales.TaleQuestAnimationMontageFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAnimationMontageFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void PushSetNextMontageSectionCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, struct FName FromSectionName, struct FName ToSectionName); // Function Tales.TaleQuestAnimationMontageFunctionLibrary.PushSetNextMontageSectionCommand // Final|Native|Public|HasOutParms|Const // @ game+0x3f15460
-	float PushJumpToMontageSectionCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, struct FName SectionName); // Function Tales.TaleQuestAnimationMontageFunctionLibrary.PushJumpToMontageSectionCommand // Final|Native|Public|HasOutParms|Const // @ game+0x3f15170
-	float GetMontageSectionLength(struct UAnimMontage* Montage, struct FName SectionName); // Function Tales.TaleQuestAnimationMontageFunctionLibrary.GetMontageSectionLength // Final|Native|Public|HasOutParms|Const // @ game+0x3f12490
+	void PushSetNextMontageSectionCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, struct FName FromSectionName, struct FName ToSectionName); // Function Tales.TaleQuestAnimationMontageFunctionLibrary.PushSetNextMontageSectionCommand // Final|Native|Public|HasOutParms|Const // @ game+0x3f17a70
+	float PushJumpToMontageSectionCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, struct FName SectionName); // Function Tales.TaleQuestAnimationMontageFunctionLibrary.PushJumpToMontageSectionCommand // Final|Native|Public|HasOutParms|Const // @ game+0x3f17780
+	float GetMontageSectionLength(struct UAnimMontage* Montage, struct FName SectionName); // Function Tales.TaleQuestAnimationMontageFunctionLibrary.GetMontageSectionLength // Final|Native|Public|HasOutParms|Const // @ game+0x3f14aa0
 };
 
 // Class Tales.TaleQuestAnimationStepFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAnimationStepFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct FPossessableSequence MakePosseableSequence(struct AActor* ActorToPossess, struct FString TrackNameToPossess); // Function Tales.TaleQuestAnimationStepFunctionLibrary.MakePosseableSequence // Final|Native|Static|Public // @ game+0x3f13ff0
-	float GetPlayLength(struct UAnimSequenceBase* Anim); // Function Tales.TaleQuestAnimationStepFunctionLibrary.GetPlayLength // Final|Native|Public|Const // @ game+0x3f12a10
+	struct FPossessableSequence MakePosseableSequence(struct AActor* ActorToPossess, struct FString TrackNameToPossess); // Function Tales.TaleQuestAnimationStepFunctionLibrary.MakePosseableSequence // Final|Native|Static|Public // @ game+0x3f16600
+	float GetPlayLength(struct UAnimSequenceBase* Anim); // Function Tales.TaleQuestAnimationStepFunctionLibrary.GetPlayLength // Final|Native|Public|Const // @ game+0x3f15020
 };
 
 // Class Tales.TaleQuestAudioFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAudioFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void StopMusic(TScriptInterface<struct UMusicZoneInterface> MusicZone); // Function Tales.TaleQuestAudioFunctionLibrary.StopMusic // Final|Native|Public|Const // @ game+0x3f173e0
-	void StartMusic(TScriptInterface<struct UMusicZoneInterface> MusicZone); // Function Tales.TaleQuestAudioFunctionLibrary.StartMusic // Final|Native|Public|Const // @ game+0x3f172c0
-	void SetEmitterSwitch(TScriptInterface<struct UEmitterManipulatorInterface> MusicZone, struct FName SwitchGroup, struct FName Value); // Function Tales.TaleQuestAudioFunctionLibrary.SetEmitterSwitch // Final|Native|Public|HasOutParms|Const // @ game+0x3f16430
-	void SetEmitterRTPC(TScriptInterface<struct UEmitterManipulatorInterface> MusicZone, struct FName RTPC, float Value); // Function Tales.TaleQuestAudioFunctionLibrary.SetEmitterRTPC // Final|Native|Public|HasOutParms|Const // @ game+0x3f16300
-	void PlayOneShot(TScriptInterface<struct UMusicZoneInterface> MusicZone, int32_t OneShotIndex); // Function Tales.TaleQuestAudioFunctionLibrary.PlayOneShot // Final|Native|Public|Const // @ game+0x3f14f00
+	void StopMusic(TScriptInterface<struct UMusicZoneInterface> MusicZone); // Function Tales.TaleQuestAudioFunctionLibrary.StopMusic // Final|Native|Public|Const // @ game+0x3f199f0
+	void StartMusic(TScriptInterface<struct UMusicZoneInterface> MusicZone); // Function Tales.TaleQuestAudioFunctionLibrary.StartMusic // Final|Native|Public|Const // @ game+0x3f198d0
+	void SetEmitterSwitch(TScriptInterface<struct UEmitterManipulatorInterface> MusicZone, struct FName SwitchGroup, struct FName Value); // Function Tales.TaleQuestAudioFunctionLibrary.SetEmitterSwitch // Final|Native|Public|HasOutParms|Const // @ game+0x3f18a40
+	void SetEmitterRTPC(TScriptInterface<struct UEmitterManipulatorInterface> MusicZone, struct FName RTPC, float Value); // Function Tales.TaleQuestAudioFunctionLibrary.SetEmitterRTPC // Final|Native|Public|HasOutParms|Const // @ game+0x3f18910
+	void PlayOneShot(TScriptInterface<struct UMusicZoneInterface> MusicZone, int32_t OneShotIndex); // Function Tales.TaleQuestAudioFunctionLibrary.PlayOneShot // Final|Native|Public|Const // @ game+0x3f17510
 };
 
 // Class Tales.TaleQuestCharacterFunctionStepLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestCharacterFunctionStepLibrary : UTaleQuestFunctionStepLibrary {
 
-	void EnableCharacterInput(struct AActor* Character); // Function Tales.TaleQuestCharacterFunctionStepLibrary.EnableCharacterInput // Final|Native|Static|Public // @ game+0x3f10ed0
-	void DisableCharacterInput(struct AActor* Character); // Function Tales.TaleQuestCharacterFunctionStepLibrary.DisableCharacterInput // Final|Native|Static|Public // @ game+0x3f109f0
+	void EnableCharacterInput(struct AActor* Character); // Function Tales.TaleQuestCharacterFunctionStepLibrary.EnableCharacterInput // Final|Native|Static|Public // @ game+0x3f134e0
+	void DisableCharacterInput(struct AActor* Character); // Function Tales.TaleQuestCharacterFunctionStepLibrary.DisableCharacterInput // Final|Native|Static|Public // @ game+0x3f13000
 };
 
 // Class Tales.TaleQuestClassFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestClassFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool IsChildOf(struct UClass* Class, struct UClass* BaseClass); // Function Tales.TaleQuestClassFunctionLibrary.IsChildOf // Final|Native|Public|Const // @ game+0x3f135b0
-	bool Equals_Class(struct UClass* Left, struct UClass* Right); // Function Tales.TaleQuestClassFunctionLibrary.Equals_Class // Final|Native|Public|Const // @ game+0x3f112b0
+	bool IsChildOf(struct UClass* Class, struct UClass* BaseClass); // Function Tales.TaleQuestClassFunctionLibrary.IsChildOf // Final|Native|Public|Const // @ game+0x3f15bc0
+	bool Equals_Class(struct UClass* Left, struct UClass* Right); // Function Tales.TaleQuestClassFunctionLibrary.Equals_Class // Final|Native|Public|Const // @ game+0x3f138c0
 };
 
 // Class Tales.TaleQuestClientCommandFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestClientCommandFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void PushStopMontageAnimationCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, float BlendOutTime); // Function Tales.TaleQuestClientCommandFunctionLibrary.PushStopMontageAnimationCommand // Final|Native|Public|Const // @ game+0x3f15610
-	float PushPlayMontageAnimationCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, float PlayRate, float Position); // Function Tales.TaleQuestClientCommandFunctionLibrary.PushPlayMontageAnimationCommand // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3f152d0
-	struct AClientCommandHandler* CreateCommandHandler(); // Function Tales.TaleQuestClientCommandFunctionLibrary.CreateCommandHandler // Final|Native|Public|Const // @ game+0x3f10940
+	void PushStopMontageAnimationCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, float BlendOutTime); // Function Tales.TaleQuestClientCommandFunctionLibrary.PushStopMontageAnimationCommand // Final|Native|Public|Const // @ game+0x3f17c20
+	float PushPlayMontageAnimationCommand(struct AClientCommandHandler* CommandHandler, struct AActor* TargetActor, struct UAnimMontage* Montage, float PlayRate, float Position); // Function Tales.TaleQuestClientCommandFunctionLibrary.PushPlayMontageAnimationCommand // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3f178e0
+	struct AClientCommandHandler* CreateCommandHandler(); // Function Tales.TaleQuestClientCommandFunctionLibrary.CreateCommandHandler // Final|Native|Public|Const // @ game+0x3f12f50
 };
 
 // Class Tales.TaleQuestConversionFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestConversionFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct FString TextToString(struct FText Text); // Function Tales.TaleQuestConversionFunctionLibrary.TextToString // Final|Native|Public|HasOutParms|Const // @ game+0x3f17a90
-	struct FName TextToName(struct FText Text); // Function Tales.TaleQuestConversionFunctionLibrary.TextToName // Final|Native|Public|HasOutParms|Const // @ game+0x3f179b0
-	struct FText StringToText(struct FString String); // Function Tales.TaleQuestConversionFunctionLibrary.StringToText // Final|Native|Public|Const // @ game+0x3f17660
-	struct FName StringToName(struct FString String); // Function Tales.TaleQuestConversionFunctionLibrary.StringToName // Final|Native|Public|Const // @ game+0x3f175a0
-	struct FText NameToText(struct FName Name); // Function Tales.TaleQuestConversionFunctionLibrary.NameToText // Final|Native|Public|HasOutParms|Const // @ game+0x3f14ab0
-	struct FString NameToString(struct FName Name); // Function Tales.TaleQuestConversionFunctionLibrary.NameToString // Final|Native|Public|HasOutParms|Const // @ game+0x3f149c0
-	struct FString IntToString(int32_t Int); // Function Tales.TaleQuestConversionFunctionLibrary.IntToString // Final|Native|Public|Const // @ game+0x3f13330
-	float IntToFloat(int32_t Int); // Function Tales.TaleQuestConversionFunctionLibrary.IntToFloat // Final|Native|Public|Const // @ game+0x3f132b0
-	struct FString FloatToString(float Float); // Function Tales.TaleQuestConversionFunctionLibrary.FloatToString // Final|Native|Public|Const // @ game+0x3f11840
-	int32_t FloatToInt(float Float); // Function Tales.TaleQuestConversionFunctionLibrary.FloatToInt // Final|Native|Public|Const // @ game+0x3f117c0
-	struct FString BoolToString(bool Bool); // Function Tales.TaleQuestConversionFunctionLibrary.BoolToString // Final|Native|Public|Const // @ game+0x3f10500
+	struct FString TextToString(struct FText Text); // Function Tales.TaleQuestConversionFunctionLibrary.TextToString // Final|Native|Public|HasOutParms|Const // @ game+0x3f1a0a0
+	struct FName TextToName(struct FText Text); // Function Tales.TaleQuestConversionFunctionLibrary.TextToName // Final|Native|Public|HasOutParms|Const // @ game+0x3f19fc0
+	struct FText StringToText(struct FString String); // Function Tales.TaleQuestConversionFunctionLibrary.StringToText // Final|Native|Public|Const // @ game+0x3f19c70
+	struct FName StringToName(struct FString String); // Function Tales.TaleQuestConversionFunctionLibrary.StringToName // Final|Native|Public|Const // @ game+0x3f19bb0
+	struct FText NameToText(struct FName Name); // Function Tales.TaleQuestConversionFunctionLibrary.NameToText // Final|Native|Public|HasOutParms|Const // @ game+0x3f170c0
+	struct FString NameToString(struct FName Name); // Function Tales.TaleQuestConversionFunctionLibrary.NameToString // Final|Native|Public|HasOutParms|Const // @ game+0x3f16fd0
+	struct FString IntToString(int32_t Int); // Function Tales.TaleQuestConversionFunctionLibrary.IntToString // Final|Native|Public|Const // @ game+0x3f15940
+	float IntToFloat(int32_t Int); // Function Tales.TaleQuestConversionFunctionLibrary.IntToFloat // Final|Native|Public|Const // @ game+0x3f158c0
+	struct FString FloatToString(float Float); // Function Tales.TaleQuestConversionFunctionLibrary.FloatToString // Final|Native|Public|Const // @ game+0x3f13e50
+	int32_t FloatToInt(float Float); // Function Tales.TaleQuestConversionFunctionLibrary.FloatToInt // Final|Native|Public|Const // @ game+0x3f13dd0
+	struct FString BoolToString(bool Bool); // Function Tales.TaleQuestConversionFunctionLibrary.BoolToString // Final|Native|Public|Const // @ game+0x3f12b10
 };
 
 // Class Tales.TaleQuestCoreFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestCoreFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct AGameState* GetGameState(); // Function Tales.TaleQuestCoreFunctionLibrary.GetGameState // Final|Native|Public|Const // @ game+0x3f12170
+	struct AGameState* GetGameState(); // Function Tales.TaleQuestCoreFunctionLibrary.GetGameState // Final|Native|Public|Const // @ game+0x3f14780
 };
 
 // Class Tales.TaleQuestCrewFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestCrewFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void ClearOverrideSpawnTeleportLocationActor(struct FGuid CrewId); // Function Tales.TaleQuestCrewFunctionLibrary.ClearOverrideSpawnTeleportLocationActor // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f108a0
-	void AddOverrideSpawnTeleportLocationActor(struct FGuid CrewId, struct AActor* InActor); // Function Tales.TaleQuestCrewFunctionLibrary.AddOverrideSpawnTeleportLocationActor // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f0fd50
-	void AddCrewShipToCrew(struct FGuid CrewId, struct AShip* Ship); // Function Tales.TaleQuestCrewFunctionLibrary.AddCrewShipToCrew // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f0fba0
+	void ClearOverrideSpawnTeleportLocationActor(struct FGuid CrewId); // Function Tales.TaleQuestCrewFunctionLibrary.ClearOverrideSpawnTeleportLocationActor // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f12eb0
+	void AddOverrideSpawnTeleportLocationActor(struct FGuid CrewId, struct AActor* InActor); // Function Tales.TaleQuestCrewFunctionLibrary.AddOverrideSpawnTeleportLocationActor // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f12360
+	void AddCrewShipToCrew(struct FGuid CrewId, struct AShip* Ship); // Function Tales.TaleQuestCrewFunctionLibrary.AddCrewShipToCrew // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults // @ game+0x3f121b0
 };
 
 // Class Tales.TaleQuestCurveFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestCurveFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	float SampleCurve_Float(struct UCurveFloat* Curve, float Time); // Function Tales.TaleQuestCurveFunctionLibrary.SampleCurve_Float // Final|Native|Public|Const // @ game+0x3f15ec0
+	float SampleCurve_Float(struct UCurveFloat* Curve, float Time); // Function Tales.TaleQuestCurveFunctionLibrary.SampleCurve_Float // Final|Native|Public|Const // @ game+0x3f184d0
 };
 
 // Class Tales.TaleQuestCutscenesFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestCutscenesFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void FireEventCutsceneTargetReady(struct AActor* TargetRetrievalActor, struct AActor* TargetActor); // Function Tales.TaleQuestCutscenesFunctionLibrary.FireEventCutsceneTargetReady // Final|RequiredAPI|Native|Static|Public // @ game+0x3f115f0
+	void FireEventCutsceneTargetReady(struct AActor* TargetRetrievalActor, struct AActor* TargetActor); // Function Tales.TaleQuestCutscenesFunctionLibrary.FireEventCutsceneTargetReady // Final|RequiredAPI|Native|Static|Public // @ game+0x3f13c00
 };
 
 // Class Tales.TaleQuestDamageableInterfaceFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestDamageableInterfaceFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetVulnerability(TScriptInterface<struct UDamageableVulnerabilityInterface> DamageableVulnerabilityInterface, struct UClass* DamagerType, float DamageMultipler); // Function Tales.TaleQuestDamageableInterfaceFunctionLibrary.SetVulnerability // Final|Native|Public // @ game+0x3f169e0
-	void SetDefaultVulnerability(TScriptInterface<struct UDamageableVulnerabilityInterface> DamageableVulnerabilityInterface, float DefaultVulnerability); // Function Tales.TaleQuestDamageableInterfaceFunctionLibrary.SetDefaultVulnerability // Final|Native|Public // @ game+0x3f16000
+	void SetVulnerability(TScriptInterface<struct UDamageableVulnerabilityInterface> DamageableVulnerabilityInterface, struct UClass* DamagerType, float DamageMultipler); // Function Tales.TaleQuestDamageableInterfaceFunctionLibrary.SetVulnerability // Final|Native|Public // @ game+0x3f18ff0
+	void SetDefaultVulnerability(TScriptInterface<struct UDamageableVulnerabilityInterface> DamageableVulnerabilityInterface, float DefaultVulnerability); // Function Tales.TaleQuestDamageableInterfaceFunctionLibrary.SetDefaultVulnerability // Final|Native|Public // @ game+0x3f18610
 };
 
 // Class Tales.TaleQuestDeathFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestDeathFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WaitForParticipantDeath(struct ACharacter* DyingParticipant, struct FDamageInstance FinalBlow, char DeathType); // Function Tales.TaleQuestDeathFunctionLibrary.WaitForParticipantDeath // Final|Native|Public|HasOutParms // @ game+0x3f183a0
-	void Kill(TScriptInterface<struct UKillableCharacterInterface> KillableCharacter, char DeathType); // Function Tales.TaleQuestDeathFunctionLibrary.Kill // Final|Native|Public|HasOutParms|Const // @ game+0x3f13930
+	void WaitForParticipantDeath(struct ACharacter* DyingParticipant, struct FDamageInstance FinalBlow, char DeathType); // Function Tales.TaleQuestDeathFunctionLibrary.WaitForParticipantDeath // Final|Native|Public|HasOutParms // @ game+0x3f1a9b0
+	void Kill(TScriptInterface<struct UKillableCharacterInterface> KillableCharacter, char DeathType); // Function Tales.TaleQuestDeathFunctionLibrary.Kill // Final|Native|Public|HasOutParms|Const // @ game+0x3f15f40
 };
 
 // Class Tales.TaleQuestDialogueFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestDialogueFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WatchForNPCDialogueInteractionWithQueryableState(struct AActor* DialogueActor, struct ACharacter* InteractingCharacter, struct UClass* DataID); // Function Tales.TaleQuestDialogueFunctionLibrary.WatchForNPCDialogueInteractionWithQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f186e0
-	void WatchForNPCDialogueInteraction(struct AActor* DialogueActor, struct ACharacter* InteractingCharacter, struct FName DialogueEvent); // Function Tales.TaleQuestDialogueFunctionLibrary.WatchForNPCDialogueInteraction // Final|Native|Public|HasOutParms // @ game+0x3f185c0
-	void WaitForNPCDialogueInteractionWithQueryableState(struct AActor* DialogueActor, struct UClass* ExpectedDataID, struct ACharacter* InteractingCharacter); // Function Tales.TaleQuestDialogueFunctionLibrary.WaitForNPCDialogueInteractionWithQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f18290
-	void SetDialogueInteractionPrompt(struct AClientCommandHandler* CommandHandler, struct UNPCDialogComponent* DialogueComponent, struct FText Prompt); // Function Tales.TaleQuestDialogueFunctionLibrary.SetDialogueInteractionPrompt // Final|Native|Public|HasOutParms|Const // @ game+0x3f161d0
-	void SetDialogueInteractionEnabled(TScriptInterface<struct UNPCDialogComponentInterface> DialogueComponent, bool Enabled); // Function Tales.TaleQuestDialogueFunctionLibrary.SetDialogueInteractionEnabled // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f160e0
+	void WatchForNPCDialogueInteractionWithQueryableState(struct AActor* DialogueActor, struct ACharacter* InteractingCharacter, struct UClass* DataID); // Function Tales.TaleQuestDialogueFunctionLibrary.WatchForNPCDialogueInteractionWithQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f1acf0
+	void WatchForNPCDialogueInteraction(struct AActor* DialogueActor, struct ACharacter* InteractingCharacter, struct FName DialogueEvent); // Function Tales.TaleQuestDialogueFunctionLibrary.WatchForNPCDialogueInteraction // Final|Native|Public|HasOutParms // @ game+0x3f1abd0
+	void WaitForNPCDialogueInteractionWithQueryableState(struct AActor* DialogueActor, struct UClass* ExpectedDataID, struct ACharacter* InteractingCharacter); // Function Tales.TaleQuestDialogueFunctionLibrary.WaitForNPCDialogueInteractionWithQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f1a8a0
+	void SetDialogueInteractionPrompt(struct AClientCommandHandler* CommandHandler, struct UNPCDialogComponent* DialogueComponent, struct FText Prompt); // Function Tales.TaleQuestDialogueFunctionLibrary.SetDialogueInteractionPrompt // Final|Native|Public|HasOutParms|Const // @ game+0x3f187e0
+	void SetDialogueInteractionEnabled(TScriptInterface<struct UNPCDialogComponentInterface> DialogueComponent, bool Enabled); // Function Tales.TaleQuestDialogueFunctionLibrary.SetDialogueInteractionEnabled // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f186f0
 };
 
 // Class Tales.TaleQuestEmoteFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestEmoteFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void PushIntoEmoteActionState(struct AActor* Target, struct UEmoteInfo* EmoteInfo, bool ForcedEmote); // Function Tales.TaleQuestEmoteFunctionLibrary.PushIntoEmoteActionState // Final|Native|Public|Const // @ game+0x3f15060
+	void PushIntoEmoteActionState(struct AActor* Target, struct UEmoteInfo* EmoteInfo, bool ForcedEmote); // Function Tales.TaleQuestEmoteFunctionLibrary.PushIntoEmoteActionState // Final|Native|Public|Const // @ game+0x3f17670
 };
 
 // Class Tales.TaleQuestFloatMathsFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestFloatMathsFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	float Subtract_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Subtract_Float // Final|Native|Public|Const // @ game+0x3f17730
-	float RandRange(float Min, float Max); // Function Tales.TaleQuestFloatMathsFunctionLibrary.RandRange // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3f15760
-	bool NotEquals_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.NotEquals_Float // Final|Native|Public|Const // @ game+0x3f14c30
-	float Multiply_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Multiply_Float // Final|Native|Public|Const // @ game+0x3f14840
-	float Modulus_Float(float Left, float Right, float Reminder); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Modulus_Float // Final|Native|Public|HasOutParms|Const // @ game+0x3f14630
-	bool LessThanOrEqual_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.LessThanOrEqual_Float // Final|Native|Public|Const // @ game+0x3f13c50
-	bool LessThan(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.LessThan // Final|Native|Public|Const // @ game+0x3f13a10
-	bool GreaterThanOrEqual_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.GreaterThanOrEqual_Float // Final|Native|Public|Const // @ game+0x3f13020
-	bool GreaterThan(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.GreaterThan // Final|Native|Public|Const // @ game+0x3f12de0
-	bool Equals_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Equals_Float // Final|Native|Public|Const // @ game+0x3f11370
-	float Divide_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Divide_Float // Final|Native|Public|Const // @ game+0x3f10c90
-	float Add_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Add_Float // Final|Native|Public|Const // @ game+0x3f10160
+	float Subtract_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Subtract_Float // Final|Native|Public|Const // @ game+0x3f19d40
+	float RandRange(float Min, float Max); // Function Tales.TaleQuestFloatMathsFunctionLibrary.RandRange // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3f17d70
+	bool NotEquals_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.NotEquals_Float // Final|Native|Public|Const // @ game+0x3f17240
+	float Multiply_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Multiply_Float // Final|Native|Public|Const // @ game+0x3f16e50
+	float Modulus_Float(float Left, float Right, float Reminder); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Modulus_Float // Final|Native|Public|HasOutParms|Const // @ game+0x3f16c40
+	bool LessThanOrEqual_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.LessThanOrEqual_Float // Final|Native|Public|Const // @ game+0x3f16260
+	bool LessThan(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.LessThan // Final|Native|Public|Const // @ game+0x3f16020
+	bool GreaterThanOrEqual_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.GreaterThanOrEqual_Float // Final|Native|Public|Const // @ game+0x3f15630
+	bool GreaterThan(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.GreaterThan // Final|Native|Public|Const // @ game+0x3f153f0
+	bool Equals_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Equals_Float // Final|Native|Public|Const // @ game+0x3f13980
+	float Divide_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Divide_Float // Final|Native|Public|Const // @ game+0x3f132a0
+	float Add_Float(float Left, float Right); // Function Tales.TaleQuestFloatMathsFunctionLibrary.Add_Float // Final|Native|Public|Const // @ game+0x3f12770
 };
 
 // Class Tales.TaleQuestHealthFunctionStepLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestHealthFunctionStepLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetMaxHealth(TScriptInterface<struct UHealthInterface> HealthInterface, float Health); // Function Tales.TaleQuestHealthFunctionStepLibrary.SetMaxHealth // Final|Native|Public|Const // @ game+0x3f16900
-	void SetHealthChangeEnabled(TScriptInterface<struct UHealthInterface> HealthInterface, bool Enabled); // Function Tales.TaleQuestHealthFunctionStepLibrary.SetHealthChangeEnabled // Final|Native|Public|Const // @ game+0x3f16750
-	void SetHealth(TScriptInterface<struct UHealthInterface> HealthInterface, float Health, char Reason); // Function Tales.TaleQuestHealthFunctionStepLibrary.SetHealth // Final|Native|Static|Public // @ game+0x3f16640
-	void ResetToMaxHealth(TScriptInterface<struct UHealthInterface> HealthInterface); // Function Tales.TaleQuestHealthFunctionStepLibrary.ResetToMaxHealth // Final|Native|Public|Const // @ game+0x3f15d20
-	float GetMaxHealth(TScriptInterface<struct UHealthInterface> HealthInterface); // Function Tales.TaleQuestHealthFunctionStepLibrary.GetMaxHealth // Final|Native|Public|Const // @ game+0x3f123e0
-	float GetHealth(TScriptInterface<struct UHealthInterface> HealthInterface); // Function Tales.TaleQuestHealthFunctionStepLibrary.GetHealth // Final|Native|Static|Public // @ game+0x3f12260
+	void SetMaxHealth(TScriptInterface<struct UHealthInterface> HealthInterface, float Health); // Function Tales.TaleQuestHealthFunctionStepLibrary.SetMaxHealth // Final|Native|Public|Const // @ game+0x3f18f10
+	void SetHealthChangeEnabled(TScriptInterface<struct UHealthInterface> HealthInterface, bool Enabled); // Function Tales.TaleQuestHealthFunctionStepLibrary.SetHealthChangeEnabled // Final|Native|Public|Const // @ game+0x3f18d60
+	void SetHealth(TScriptInterface<struct UHealthInterface> HealthInterface, float Health, char Reason); // Function Tales.TaleQuestHealthFunctionStepLibrary.SetHealth // Final|Native|Static|Public // @ game+0x3f18c50
+	void ResetToMaxHealth(TScriptInterface<struct UHealthInterface> HealthInterface); // Function Tales.TaleQuestHealthFunctionStepLibrary.ResetToMaxHealth // Final|Native|Public|Const // @ game+0x3f18330
+	float GetMaxHealth(TScriptInterface<struct UHealthInterface> HealthInterface); // Function Tales.TaleQuestHealthFunctionStepLibrary.GetMaxHealth // Final|Native|Public|Const // @ game+0x3f149f0
+	float GetHealth(TScriptInterface<struct UHealthInterface> HealthInterface); // Function Tales.TaleQuestHealthFunctionStepLibrary.GetHealth // Final|Native|Static|Public // @ game+0x3f14870
 };
 
 // Class Tales.TaleQuestIntMathsFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestIntMathsFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	int32_t Subtract_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Subtract_Int // Final|Native|Static|Public // @ game+0x3f177f0
-	bool NotEquals(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.NotEquals // Final|Native|Static|Public // @ game+0x3f14b70
-	int32_t Multiply_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Multiply_Int // Final|Native|Static|Public // @ game+0x3f14900
-	int32_t Modulus_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Modulus_Int // Final|Native|Static|Public // @ game+0x3f14770
-	bool LessThanOrEqual(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.LessThanOrEqual // Final|Native|Static|Public // @ game+0x3f13b90
-	bool LessThan(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.LessThan // Final|Native|Static|Public // @ game+0x3f13ad0
-	void Increment_Int(int32_t Value); // Function Tales.TaleQuestIntMathsFunctionLibrary.Increment_Int // Final|Native|Static|Public|HasOutParms // @ game+0x3f130e0
-	bool GreaterThanOrEqual(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.GreaterThanOrEqual // Final|Native|Static|Public // @ game+0x3f12f60
-	bool GreaterThan(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.GreaterThan // Final|Native|Static|Public // @ game+0x3f12ea0
-	bool Equals(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Equals // Final|Native|Static|Public // @ game+0x3f110f0
-	int32_t Divide_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Divide_Int // Final|Native|Static|Public // @ game+0x3f10d70
-	void Decrement_Int(int32_t Value); // Function Tales.TaleQuestIntMathsFunctionLibrary.Decrement_Int // Final|Native|Static|Public|HasOutParms // @ game+0x3f10970
-	int32_t Add_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Add_Int // Final|Native|Static|Public // @ game+0x3f10220
+	int32_t Subtract_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Subtract_Int // Final|Native|Static|Public // @ game+0x3f19e00
+	bool NotEquals(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.NotEquals // Final|Native|Static|Public // @ game+0x3f17180
+	int32_t Multiply_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Multiply_Int // Final|Native|Static|Public // @ game+0x3f16f10
+	int32_t Modulus_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Modulus_Int // Final|Native|Static|Public // @ game+0x3f16d80
+	bool LessThanOrEqual(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.LessThanOrEqual // Final|Native|Static|Public // @ game+0x3f161a0
+	bool LessThan(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.LessThan // Final|Native|Static|Public // @ game+0x3f160e0
+	void Increment_Int(int32_t Value); // Function Tales.TaleQuestIntMathsFunctionLibrary.Increment_Int // Final|Native|Static|Public|HasOutParms // @ game+0x3f156f0
+	bool GreaterThanOrEqual(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.GreaterThanOrEqual // Final|Native|Static|Public // @ game+0x3f15570
+	bool GreaterThan(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.GreaterThan // Final|Native|Static|Public // @ game+0x3f154b0
+	bool Equals(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Equals // Final|Native|Static|Public // @ game+0x3f13700
+	int32_t Divide_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Divide_Int // Final|Native|Static|Public // @ game+0x3f13380
+	void Decrement_Int(int32_t Value); // Function Tales.TaleQuestIntMathsFunctionLibrary.Decrement_Int // Final|Native|Static|Public|HasOutParms // @ game+0x3f12f80
+	int32_t Add_Int(int32_t Left, int32_t Right); // Function Tales.TaleQuestIntMathsFunctionLibrary.Add_Int // Final|Native|Static|Public // @ game+0x3f12830
 };
 
 // Class Tales.TaleQuestItemFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestItemFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WaitForItemHandIn(TScriptInterface<struct UNPCCustomItemPurchaseInterface> NPC, struct UClass* Item, TScriptInterface<struct UVoyageParticipantInterface> HandInParticipant); // Function Tales.TaleQuestItemFunctionLibrary.WaitForItemHandIn // Final|Native|Public|HasOutParms // @ game+0x3f18160
-	struct AItemInfo* SpawnAndWieldItem(struct AActor* Wielder, struct UClass* Item, bool TrackItem, bool MarkItemAsCritical, struct FText CritialItemLostMessage); // Function Tales.TaleQuestItemFunctionLibrary.SpawnAndWieldItem // Final|RequiredAPI|Native|Public|HasOutParms // @ game+0x3f16cf0
+	void WaitForItemHandIn(TScriptInterface<struct UNPCCustomItemPurchaseInterface> NPC, struct UClass* Item, TScriptInterface<struct UVoyageParticipantInterface> HandInParticipant); // Function Tales.TaleQuestItemFunctionLibrary.WaitForItemHandIn // Final|Native|Public|HasOutParms // @ game+0x3f1a770
+	struct AItemInfo* SpawnAndWieldItem(struct AActor* Wielder, struct UClass* Item, bool TrackItem, bool MarkItemAsCritical, struct FText CritialItemLostMessage); // Function Tales.TaleQuestItemFunctionLibrary.SpawnAndWieldItem // Final|RequiredAPI|Native|Public|HasOutParms // @ game+0x3f19300
 };
 
 // Class Tales.TaleQuestLogicFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestLogicFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool Logic_XOr(bool Left, bool Right); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_XOr // Final|Native|Static|Public // @ game+0x3f13f30
-	bool Logic_Or(bool Left, bool Right); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_Or // Final|Native|Static|Public // @ game+0x3f13e60
-	bool Logic_Not(bool Value); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_Not // Final|Native|Static|Public // @ game+0x3f13de0
-	bool Logic_And(bool Left, bool Right); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_And // Final|Native|Static|Public // @ game+0x3f13d10
+	bool Logic_XOr(bool Left, bool Right); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_XOr // Final|Native|Static|Public // @ game+0x3f16540
+	bool Logic_Or(bool Left, bool Right); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_Or // Final|Native|Static|Public // @ game+0x3f16470
+	bool Logic_Not(bool Value); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_Not // Final|Native|Static|Public // @ game+0x3f163f0
+	bool Logic_And(bool Left, bool Right); // Function Tales.TaleQuestLogicFunctionLibrary.Logic_And // Final|Native|Static|Public // @ game+0x3f16320
 };
 
 // Class Tales.TaleQuestModifyPagesFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestModifyPagesFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void ReplacePages(struct TArray<struct UQuestBookPageBundle*> Pages, struct TArray<struct UQuestBookPageBundle*> PagesToReplace); // Function Tales.TaleQuestModifyPagesFunctionLibrary.ReplacePages // Final|Native|Public|HasOutParms|Const // @ game+0x3f15bf0
-	void ModifyPagesAtIndex(struct TArray<struct UQuestBookPageBundle*> Pages, int32_t BookPageIndex, char ModifyTypeEnum); // Function Tales.TaleQuestModifyPagesFunctionLibrary.ModifyPagesAtIndex // Final|Native|Public|HasOutParms|Const // @ game+0x3f14500
+	void ReplacePages(struct TArray<struct UQuestBookPageBundle*> Pages, struct TArray<struct UQuestBookPageBundle*> PagesToReplace); // Function Tales.TaleQuestModifyPagesFunctionLibrary.ReplacePages // Final|Native|Public|HasOutParms|Const // @ game+0x3f18200
+	void ModifyPagesAtIndex(struct TArray<struct UQuestBookPageBundle*> Pages, int32_t BookPageIndex, char ModifyTypeEnum); // Function Tales.TaleQuestModifyPagesFunctionLibrary.ModifyPagesAtIndex // Final|Native|Public|HasOutParms|Const // @ game+0x3f16b10
 };
 
 // Class Tales.TaleQuestNamedPointsFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestNamedPointsFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void GetNamedPointsFromGroup(struct AActor* PointsContainer, struct FName GroupName, char ReturnSpace, struct TArray<struct FOrientedPoint> Points); // Function Tales.TaleQuestNamedPointsFunctionLibrary.GetNamedPointsFromGroup // Final|Native|Static|Public|HasOutParms // @ game+0x3f12560
+	void GetNamedPointsFromGroup(struct AActor* PointsContainer, struct FName GroupName, char ReturnSpace, struct TArray<struct FOrientedPoint> Points); // Function Tales.TaleQuestNamedPointsFunctionLibrary.GetNamedPointsFromGroup // Final|Native|Static|Public|HasOutParms // @ game+0x3f14b70
 };
 
 // Class Tales.TaleQuestNameFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestNameFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool IsNone(struct FName Name); // Function Tales.TaleQuestNameFunctionLibrary.IsNone // Final|Native|Static|Public // @ game+0x3f136b0
-	bool Equals(struct FName Left, struct FName Right); // Function Tales.TaleQuestNameFunctionLibrary.Equals // Final|Native|Public|HasOutParms|Const // @ game+0x3f111b0
+	bool IsNone(struct FName Name); // Function Tales.TaleQuestNameFunctionLibrary.IsNone // Final|Native|Static|Public // @ game+0x3f15cc0
+	bool Equals(struct FName Left, struct FName Right); // Function Tales.TaleQuestNameFunctionLibrary.Equals // Final|Native|Public|HasOutParms|Const // @ game+0x3f137c0
 };
 
 // Class Tales.TaleQuestNotificationFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestNotificationFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void FireSeasonNotification(struct UTaleQuestSeasonNotificationDataAsset* InTaleQuestSeasonNotificationDataAsset); // Function Tales.TaleQuestNotificationFunctionLibrary.FireSeasonNotification // Final|Native|Public // @ game+0x3f116a0
+	void FireSeasonNotification(struct UTaleQuestSeasonNotificationDataAsset* InTaleQuestSeasonNotificationDataAsset); // Function Tales.TaleQuestNotificationFunctionLibrary.FireSeasonNotification // Final|Native|Public // @ game+0x3f13cb0
 };
 
 // Class Tales.TaleQuestNPCHideFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestNPCHideFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void FadeOut(struct AActor* InActor); // Function Tales.TaleQuestNPCHideFunctionLibrary.FadeOut // Final|Native|Public // @ game+0x3f114c0
-	void FadeIn(struct AActor* InActor); // Function Tales.TaleQuestNPCHideFunctionLibrary.FadeIn // Final|Native|Public // @ game+0x3f11440
+	void FadeOut(struct AActor* InActor); // Function Tales.TaleQuestNPCHideFunctionLibrary.FadeOut // Final|Native|Public // @ game+0x3f13ad0
+	void FadeIn(struct AActor* InActor); // Function Tales.TaleQuestNPCHideFunctionLibrary.FadeIn // Final|Native|Public // @ game+0x3f13a50
 };
 
 // Class Tales.TaleQuestOfferingNPCFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestOfferingNPCFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void StopOfferItem(TScriptInterface<struct UOfferingNPCInterface> OfferingNPC); // Function Tales.TaleQuestOfferingNPCFunctionLibrary.StopOfferItem // Final|Native|Public // @ game+0x3f17480
-	void OfferItemAndWaitForPickup(TScriptInterface<struct UOfferingNPCInterface> OfferingNPC, struct UClass* ItemToShow, struct FText PickupItemTooltip, struct FText CannotPickupItemTooltip, struct AActor* InteractingActor); // Function Tales.TaleQuestOfferingNPCFunctionLibrary.OfferItemAndWaitForPickup // Final|Native|Public|HasOutParms // @ game+0x3f14d00
+	void StopOfferItem(TScriptInterface<struct UOfferingNPCInterface> OfferingNPC); // Function Tales.TaleQuestOfferingNPCFunctionLibrary.StopOfferItem // Final|Native|Public // @ game+0x3f19a90
+	void OfferItemAndWaitForPickup(TScriptInterface<struct UOfferingNPCInterface> OfferingNPC, struct UClass* ItemToShow, struct FText PickupItemTooltip, struct FText CannotPickupItemTooltip, struct AActor* InteractingActor); // Function Tales.TaleQuestOfferingNPCFunctionLibrary.OfferItemAndWaitForPickup // Final|Native|Public|HasOutParms // @ game+0x3f17310
 };
 
 // Class Tales.TaleQuestParticipantFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestParticipantFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct TArray<TScriptInterface<struct UVoyageParticipantInterface>> GetParticipants(); // Function Tales.TaleQuestParticipantFunctionLibrary.GetParticipants // Final|Native|Public|Const // @ game+0x3f128e0
-	struct ACharacter* GetParticipantCharacter(TScriptInterface<struct UVoyageParticipantInterface> Participant); // Function Tales.TaleQuestParticipantFunctionLibrary.GetParticipantCharacter // Final|Native|Public|Const // @ game+0x3f12830
+	struct TArray<TScriptInterface<struct UVoyageParticipantInterface>> GetParticipants(); // Function Tales.TaleQuestParticipantFunctionLibrary.GetParticipants // Final|Native|Public|Const // @ game+0x3f14ef0
+	struct ACharacter* GetParticipantCharacter(TScriptInterface<struct UVoyageParticipantInterface> Participant); // Function Tales.TaleQuestParticipantFunctionLibrary.GetParticipantCharacter // Final|Native|Public|Const // @ game+0x3f14e40
 };
 
 // Class Tales.TaleQuestPredicatedBranchPhasingFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestPredicatedBranchPhasingFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct APhasedClusterRoot* GetPhaseClusterBranchByIndex(int32_t CutsceneIndex); // Function Tales.TaleQuestPredicatedBranchPhasingFunctionLibrary.GetPhaseClusterBranchByIndex // Final|Native|Public|Const // @ game+0x3f12980
+	struct APhasedClusterRoot* GetPhaseClusterBranchByIndex(int32_t CutsceneIndex); // Function Tales.TaleQuestPredicatedBranchPhasingFunctionLibrary.GetPhaseClusterBranchByIndex // Final|Native|Public|Const // @ game+0x3f14f90
 };
 
 // Class Tales.TaleQuestQueryableStateAddToIntFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestQueryableStateAddToIntFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void AddToIntQueryableState(struct UClass* DataID, int32_t DataToAdd); // Function Tales.TaleQuestQueryableStateAddToIntFunctionLibrary.AddToIntQueryableState // Final|Native|Public // @ game+0x3f0feb0
+	void AddToIntQueryableState(struct UClass* DataID, int32_t DataToAdd); // Function Tales.TaleQuestQueryableStateAddToIntFunctionLibrary.AddToIntQueryableState // Final|Native|Public // @ game+0x3f124c0
 };
 
 // Class Tales.TaleQuestQueryableStateReadBoolFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestQueryableStateReadBoolFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool ReadBoolQueryableState(struct UClass* DataID, bool DataValue); // Function Tales.TaleQuestQueryableStateReadBoolFunctionLibrary.ReadBoolQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f15850
+	bool ReadBoolQueryableState(struct UClass* DataID, bool DataValue); // Function Tales.TaleQuestQueryableStateReadBoolFunctionLibrary.ReadBoolQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f17e60
 };
 
 // Class Tales.TaleQuestQueryableStateReadIntFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestQueryableStateReadIntFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool ReadIntQueryableState(struct UClass* DataID, int32_t DataValue); // Function Tales.TaleQuestQueryableStateReadIntFunctionLibrary.ReadIntQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f15b00
+	bool ReadIntQueryableState(struct UClass* DataID, int32_t DataValue); // Function Tales.TaleQuestQueryableStateReadIntFunctionLibrary.ReadIntQueryableState // Final|Native|Public|HasOutParms // @ game+0x3f18110
 };
 
 // Class Tales.TaleQuestQueryableStateWriteBoolFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestQueryableStateWriteBoolFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WriteBoolQueryableState(struct UClass* DataID, bool DataValue); // Function Tales.TaleQuestQueryableStateWriteBoolFunctionLibrary.WriteBoolQueryableState // Final|Native|Public // @ game+0x3f18800
+	void WriteBoolQueryableState(struct UClass* DataID, bool DataValue); // Function Tales.TaleQuestQueryableStateWriteBoolFunctionLibrary.WriteBoolQueryableState // Final|Native|Public // @ game+0x3f1ae10
 };
 
 // Class Tales.TaleQuestQueryableStateWriteIntFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestQueryableStateWriteIntFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WriteIntQueryableState(struct UClass* DataID, int32_t DataValue); // Function Tales.TaleQuestQueryableStateWriteIntFunctionLibrary.WriteIntQueryableState // Final|Native|Public // @ game+0x3f188d0
+	void WriteIntQueryableState(struct UClass* DataID, int32_t DataValue); // Function Tales.TaleQuestQueryableStateWriteIntFunctionLibrary.WriteIntQueryableState // Final|Native|Public // @ game+0x3f1aee0
 };
 
 // Class Tales.TaleQuestRandomFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestRandomFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct FGrabBag InitialiseGrabBag(int32_t Min, int32_t Max); // Function Tales.TaleQuestRandomFunctionLibrary.InitialiseGrabBag // Final|RequiredAPI|Native|Public|Const // @ game+0x3f13160
-	int32_t GetGrabBagElement(struct FGrabBag GrabBag); // Function Tales.TaleQuestRandomFunctionLibrary.GetGrabBagElement // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f121a0
+	struct FGrabBag InitialiseGrabBag(int32_t Min, int32_t Max); // Function Tales.TaleQuestRandomFunctionLibrary.InitialiseGrabBag // Final|RequiredAPI|Native|Public|Const // @ game+0x3f15770
+	int32_t GetGrabBagElement(struct FGrabBag GrabBag); // Function Tales.TaleQuestRandomFunctionLibrary.GetGrabBagElement // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f147b0
 };
 
 // Class Tales.TaleQuestShantyFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestShantyFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void StopShantyMusic(struct AShantyPlayer* InShantyPlayer); // Function Tales.TaleQuestShantyFunctionLibrary.StopShantyMusic // Final|Native|Public|Const // @ game+0x3f17520
-	void StartShantyMusic(struct AShantyPlayer* InShantyPlayer); // Function Tales.TaleQuestShantyFunctionLibrary.StartShantyMusic // Final|Native|Public|Const // @ game+0x3f17360
+	void StopShantyMusic(struct AShantyPlayer* InShantyPlayer); // Function Tales.TaleQuestShantyFunctionLibrary.StopShantyMusic // Final|Native|Public|Const // @ game+0x3f19b30
+	void StartShantyMusic(struct AShantyPlayer* InShantyPlayer); // Function Tales.TaleQuestShantyFunctionLibrary.StartShantyMusic // Final|Native|Public|Const // @ game+0x3f19970
 };
 
 // Class Tales.TaleQuestShipInteractionHandlerFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestShipInteractionHandlerFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetInteractionState(struct AActor* Ship, bool Enabled); // Function Tales.TaleQuestShipInteractionHandlerFunctionLibrary.SetInteractionState // Final|Native|Public // @ game+0x3f16830
+	void SetInteractionState(struct AActor* Ship, bool Enabled); // Function Tales.TaleQuestShipInteractionHandlerFunctionLibrary.SetInteractionState // Final|Native|Public // @ game+0x3f18e40
 };
 
 // Class Tales.TaleQuestSpawnShipFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestSpawnShipFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SpawnShipFromClass(struct UClass* ShipClassToSpawn, struct FTransform ShipSpawnTransform, struct UClass* ShipSize, struct UClass* ShipType, struct UClass* ShipCategory, struct AShip* SpawnedShip); // Function Tales.TaleQuestSpawnShipFunctionLibrary.SpawnShipFromClass // Final|Native|Public|HasOutParms|HasDefaults // @ game+0x3f16ee0
+	void SpawnShipFromClass(struct UClass* ShipClassToSpawn, struct FTransform ShipSpawnTransform, struct UClass* ShipSize, struct UClass* ShipType, struct UClass* ShipCategory, struct AShip* SpawnedShip); // Function Tales.TaleQuestSpawnShipFunctionLibrary.SpawnShipFromClass // Final|Native|Public|HasOutParms|HasDefaults // @ game+0x3f194f0
 };
 
 // Class Tales.TaleQuestStatFunctionLibrary
@@ -2074,23 +2074,23 @@ struct UTaleQuestStatFunctionLibrary : UTaleQuestFunctionStepLibrary {
 	struct FPlayerStat Stat; // 0x180(0x04)
 	char UnknownData_184[0x4]; // 0x184(0x04)
 
-	void FireStatToPlayer(TScriptInterface<struct UVoyageParticipantInterface> PlayerToFireStatOn); // Function Tales.TaleQuestStatFunctionLibrary.FireStatToPlayer // Final|Native|Public|Const // @ game+0x3f11720
+	void FireStatToPlayer(TScriptInterface<struct UVoyageParticipantInterface> PlayerToFireStatOn); // Function Tales.TaleQuestStatFunctionLibrary.FireStatToPlayer // Final|Native|Public|Const // @ game+0x3f13d30
 };
 
 // Class Tales.TaleQuestStatusEffectsFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestStatusEffectsFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void TriggerOnScreenParticles(TScriptInterface<struct UVoyageParticipantInterface> Participant, struct UParticleSystem* ParticleSystem); // Function Tales.TaleQuestStatusEffectsFunctionLibrary.TriggerOnScreenParticles // Final|Native|Public|Const // @ game+0x3f18080
-	void EndOnScreenParticles(TScriptInterface<struct UVoyageParticipantInterface> Participant, struct UParticleSystem* ParticleSystem, float Delay); // Function Tales.TaleQuestStatusEffectsFunctionLibrary.EndOnScreenParticles // Final|Native|Public|Const // @ game+0x3f10fc0
+	void TriggerOnScreenParticles(TScriptInterface<struct UVoyageParticipantInterface> Participant, struct UParticleSystem* ParticleSystem); // Function Tales.TaleQuestStatusEffectsFunctionLibrary.TriggerOnScreenParticles // Final|Native|Public|Const // @ game+0x3f1a690
+	void EndOnScreenParticles(TScriptInterface<struct UVoyageParticipantInterface> Participant, struct UParticleSystem* ParticleSystem, float Delay); // Function Tales.TaleQuestStatusEffectsFunctionLibrary.EndOnScreenParticles // Final|Native|Public|Const // @ game+0x3f135d0
 };
 
 // Class Tales.TaleQuestStoryFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestStoryFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WaitForStory(struct FName StoryName, bool ShouldBeActive); // Function Tales.TaleQuestStoryFunctionLibrary.WaitForStory // Final|RequiredAPI|Native|Public|HasOutParms // @ game+0x3f184f0
-	bool IsStoryActive(struct FName StoryName); // Function Tales.TaleQuestStoryFunctionLibrary.IsStoryActive // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f13750
+	void WaitForStory(struct FName StoryName, bool ShouldBeActive); // Function Tales.TaleQuestStoryFunctionLibrary.WaitForStory // Final|RequiredAPI|Native|Public|HasOutParms // @ game+0x3f1ab00
+	bool IsStoryActive(struct FName StoryName); // Function Tales.TaleQuestStoryFunctionLibrary.IsStoryActive // Final|RequiredAPI|Native|Public|HasOutParms|Const // @ game+0x3f15d60
 };
 
 // Class Tales.TaleQuestStoryBranchFunctionLibrary
@@ -2102,70 +2102,70 @@ struct UTaleQuestStoryBranchFunctionLibrary : UTaleQuestFunctionStepLibrary {
 	TScriptInterface<struct UTaleQuestStepInterface> Step; // 0x198(0x10)
 	char UnknownData_1A8[0x20]; // 0x1a8(0x20)
 
-	void BranchOnStory(struct FName StoryName); // Function Tales.TaleQuestStoryBranchFunctionLibrary.BranchOnStory // Final|Native|Public|HasOutParms // @ game+0x3f10630
+	void BranchOnStory(struct FName StoryName); // Function Tales.TaleQuestStoryBranchFunctionLibrary.BranchOnStory // Final|Native|Public|HasOutParms // @ game+0x3f12c40
 };
 
 // Class Tales.TaleQuestTransformMathsFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestTransformMathsFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct FTransform ToWorld_Transform(struct FTransform RootTransform, struct FTransform RelativeTransform); // Function Tales.TaleQuestTransformMathsFunctionLibrary.ToWorld_Transform // Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x3f17e80
+	struct FTransform ToWorld_Transform(struct FTransform RootTransform, struct FTransform RelativeTransform); // Function Tales.TaleQuestTransformMathsFunctionLibrary.ToWorld_Transform // Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x3f1a490
 };
 
 // Class Tales.TaleQuestTransfromConversionFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestTransfromConversionFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct FVector ToVector(struct FTransform InTransform); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.ToVector // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f17d80
-	struct FRotator ToRotator(struct FTransform InTransform); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.ToRotator // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f17c80
-	struct FTransform FromVector(struct FVector InTranslation); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.FromVector // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x3f11ab0
-	struct FTransform FromOrientedPoint(struct FOrientedPoint InOrientedPoint); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.FromOrientedPoint // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x3f11930
+	struct FVector ToVector(struct FTransform InTransform); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.ToVector // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f1a390
+	struct FRotator ToRotator(struct FTransform InTransform); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.ToRotator // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f1a290
+	struct FTransform FromVector(struct FVector InTranslation); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.FromVector // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x3f140c0
+	struct FTransform FromOrientedPoint(struct FOrientedPoint InOrientedPoint); // Function Tales.TaleQuestTransfromConversionFunctionLibrary.FromOrientedPoint // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x3f13f40
 };
 
 // Class Tales.TaleQuestUObjectFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestUObjectFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool IsValid(struct UObject* Object); // Function Tales.TaleQuestUObjectFunctionLibrary.IsValid // Final|Native|Static|Public // @ game+0x3f137f0
-	struct UObject* CastTo(struct UObject* Object, struct UClass* CastToClass); // Function Tales.TaleQuestUObjectFunctionLibrary.CastTo // Final|Native|Public|Const // @ game+0x3f10770
+	bool IsValid(struct UObject* Object); // Function Tales.TaleQuestUObjectFunctionLibrary.IsValid // Final|Native|Static|Public // @ game+0x3f15e00
+	struct UObject* CastTo(struct UObject* Object, struct UClass* CastToClass); // Function Tales.TaleQuestUObjectFunctionLibrary.CastTo // Final|Native|Public|Const // @ game+0x3f12d80
 };
 
 // Class Tales.TaleQuestUtilityFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestUtilityFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void FailTale(struct FText FailureMessage); // Function Tales.TaleQuestUtilityFunctionLibrary.FailTale // Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f11540
+	void FailTale(struct FText FailureMessage); // Function Tales.TaleQuestUtilityFunctionLibrary.FailTale // Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x3f13b50
 };
 
 // Class Tales.TaleQuestValueFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestValueFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct FText Make_Text(struct FText Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Text // Final|Native|Public|HasOutParms|Const // @ game+0x3f14430
-	struct FString Make_String(struct FString Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_String // Final|Native|Public|Const // @ game+0x3f14340
-	struct FName Make_Name(struct FName Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Name // Final|Native|Public|HasOutParms|Const // @ game+0x3f142b0
-	int32_t Make_Int32(int32_t Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Int32 // Final|Native|Public|Const // @ game+0x3f14230
-	float Make_Float(float Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Float // Final|Native|Public|Const // @ game+0x3f141b0
-	bool Make_Bool(bool Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Bool // Final|Native|Public|Const // @ game+0x3f14130
-	struct FString Append_String(struct FString Prefix, struct FString Value, struct FString Suffix); // Function Tales.TaleQuestValueFunctionLibrary.Append_String // Final|Native|Public|Const // @ game+0x3f102e0
+	struct FText Make_Text(struct FText Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Text // Final|Native|Public|HasOutParms|Const // @ game+0x3f16a40
+	struct FString Make_String(struct FString Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_String // Final|Native|Public|Const // @ game+0x3f16950
+	struct FName Make_Name(struct FName Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Name // Final|Native|Public|HasOutParms|Const // @ game+0x3f168c0
+	int32_t Make_Int32(int32_t Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Int32 // Final|Native|Public|Const // @ game+0x3f16840
+	float Make_Float(float Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Float // Final|Native|Public|Const // @ game+0x3f167c0
+	bool Make_Bool(bool Value); // Function Tales.TaleQuestValueFunctionLibrary.Make_Bool // Final|Native|Public|Const // @ game+0x3f16740
+	struct FString Append_String(struct FString Prefix, struct FString Value, struct FString Suffix); // Function Tales.TaleQuestValueFunctionLibrary.Append_String // Final|Native|Public|Const // @ game+0x3f128f0
 };
 
 // Class Tales.TaleQuestVectorMathsFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestVectorMathsFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	float DistanceSquared(struct FVector From, struct FVector To); // Function Tales.TaleQuestVectorMathsFunctionLibrary.DistanceSquared // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f10b80
-	float Distance(struct FVector From, struct FVector To); // Function Tales.TaleQuestVectorMathsFunctionLibrary.Distance // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f10a60
+	float DistanceSquared(struct FVector From, struct FVector To); // Function Tales.TaleQuestVectorMathsFunctionLibrary.DistanceSquared // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f13190
+	float Distance(struct FVector From, struct FVector To); // Function Tales.TaleQuestVectorMathsFunctionLibrary.Distance // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x3f13070
 };
 
 // Class Tales.TaleQuestWaterVolumeFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestWaterVolumeFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetExactWaterLevel(struct AWaterVolume* WaterVolume, float WaterLevel); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.SetExactWaterLevel // Final|Native|Public // @ game+0x3f16570
-	bool IsWaterVolumeFull(struct AWaterVolume* WaterVolume); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.IsWaterVolumeFull // Final|Native|Public // @ game+0x3f138a0
-	void EmptyWaterVolume(struct AWaterVolume* WaterVolume); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.EmptyWaterVolume // Final|Native|Public // @ game+0x3f10e50
-	void AddWaterAmount(struct AWaterVolume* WaterVolume, float AmountToAdd, float LerpRate); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.AddWaterAmount // Final|Native|Public // @ game+0x3f10060
+	void SetExactWaterLevel(struct AWaterVolume* WaterVolume, float WaterLevel); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.SetExactWaterLevel // Final|Native|Public // @ game+0x3f18b80
+	bool IsWaterVolumeFull(struct AWaterVolume* WaterVolume); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.IsWaterVolumeFull // Final|Native|Public // @ game+0x3f15eb0
+	void EmptyWaterVolume(struct AWaterVolume* WaterVolume); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.EmptyWaterVolume // Final|Native|Public // @ game+0x3f13460
+	void AddWaterAmount(struct AWaterVolume* WaterVolume, float AmountToAdd, float LerpRate); // Function Tales.TaleQuestWaterVolumeFunctionLibrary.AddWaterAmount // Final|Native|Public // @ game+0x3f12670
 };
 
 // Class Tales.TaleQuestSelectEntryFromArrayStepDesc
@@ -2474,8 +2474,8 @@ struct UTaleQuestAdvanceRiddleMapStep : UTaleQuestStep {
 struct UTaleQuestMapService : UTaleQuestService {
 	char UnknownData_60[0xb0]; // 0x60(0xb0)
 
-	void UpdateMerchantMap(struct FName MapID, int32_t Index, struct FTaleQuestDeliverableItem Deliverable); // Function Tales.TaleQuestMapService.UpdateMerchantMap // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4702650
-	void AdvanceRiddleMap(struct FName MapID); // Function Tales.TaleQuestMapService.AdvanceRiddleMap // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x47024b0
+	void UpdateMerchantMap(struct FName MapID, int32_t Index, struct FTaleQuestDeliverableItem Deliverable); // Function Tales.TaleQuestMapService.UpdateMerchantMap // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4704c70
+	void AdvanceRiddleMap(struct FName MapID); // Function Tales.TaleQuestMapService.AdvanceRiddleMap // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4704ad0
 };
 
 // Class Tales.TaleQuestMapServiceDesc

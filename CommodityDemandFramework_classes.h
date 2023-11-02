@@ -43,7 +43,7 @@ struct ACommodityDemandService : AActor {
 	struct UMerchantSovereignHandInNameInformationDataAsset* MerchantSovereignHandInNameInformationDataAsset; // 0x408(0x08)
 	char UnknownData_410[0x30]; // 0x410(0x30)
 
-	void OnRep_ActiveCommodityDemands(); // Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands // Final|RequiredAPI|Native|Private // @ game+0x3fb74f0
+	void OnRep_ActiveCommodityDemands(); // Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands // Final|RequiredAPI|Native|Private // @ game+0x3fb9b00
 };
 
 // Class CommodityDemandFramework.CommodityDemandStorageInterface

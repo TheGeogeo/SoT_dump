@@ -8,12 +8,12 @@ struct UBP_CT_VoyageProgress_C : UCompanyTutorialVoyageProgress {
 	struct UClass* MaximumRank; // 0xf8(0x08)
 	bool NoLongerPurchaseable; // 0x100(0x01)
 
-	void IsPurchaseable(bool Result); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPurchaseable // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void SetProgress(char NewProgress); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.SetProgress // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void IsCurrently(char ProgressState, bool Result); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsCurrently // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	void IsPast(char ProgressState, bool Result); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPast // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	void PopulateExistingState(); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.PopulateExistingState // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Initialise(bool Disabled); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.Initialise // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_CT_VoyageProgress(int32_t EntryPoint); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.ExecuteUbergraph_BP_CT_VoyageProgress //  // @ game+0x18e3b10
+	void IsPurchaseable(bool Result); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPurchaseable // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void SetProgress(char NewProgress); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.SetProgress // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void IsCurrently(char ProgressState, bool Result); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsCurrently // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	void IsPast(char ProgressState, bool Result); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPast // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	void PopulateExistingState(); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.PopulateExistingState // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Initialise(bool Disabled); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.Initialise // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_CT_VoyageProgress(int32_t EntryPoint); // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.ExecuteUbergraph_BP_CT_VoyageProgress //  // @ game+0x18e5fa0
 };
 

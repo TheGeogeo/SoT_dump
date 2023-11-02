@@ -3,7 +3,7 @@
 struct ABP_SailHoist_C : ASailHoist {
 	struct UInteractableComponent* Interactable; // 0x860(0x08)
 
-	struct FDockableInfo GetDockableInfo(); // Function BP_SailHoist.BP_SailHoist_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_SailHoist.BP_SailHoist_C.UserConstructionScript // Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	struct FDockableInfo GetDockableInfo(); // Function BP_SailHoist.BP_SailHoist_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_SailHoist.BP_SailHoist_C.UserConstructionScript // Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

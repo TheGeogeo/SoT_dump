@@ -7,6 +7,6 @@ struct ABP_Firework_Wieldable_C : AStaticMeshWieldableItem {
 	struct UConsumableWieldableComponent* ConsumableWieldable; // 0x7f8(0x08)
 	struct UInventoryItemComponent* InventoryItem; // 0x800(0x08)
 
-	void UserConstructionScript(); // Function BP_Firework_Wieldable.BP_Firework_Wieldable_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Firework_Wieldable.BP_Firework_Wieldable_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

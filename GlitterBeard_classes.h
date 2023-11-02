@@ -10,7 +10,7 @@ struct UGlitterBeardFinaleCoordinatorComponent : UActorComponent {
 	struct FFinaleReplicationState ReplicationState; // 0xd0(0x10)
 	char UnknownData_E0[0x90]; // 0xe0(0x90)
 
-	void OnRep_ReplicationState(struct FFinaleReplicationState OldState); // Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4962bd0
+	void OnRep_ReplicationState(struct FFinaleReplicationState OldState); // Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x49651f0
 };
 
 // Class GlitterBeard.GlitterBeardIsHideoutOpenConditional
@@ -68,11 +68,11 @@ struct AGlitterBeardTree : AActor {
 	struct FWwiseEmitter SoundEmitter; // 0x6a0(0x20)
 	char UnknownData_6C0[0x30]; // 0x6c0(0x30)
 
-	void StopVocals(); // Function GlitterBeard.GlitterBeardTree.StopVocals // Final|Native|Public|BlueprintCallable // @ game+0x4962d10
-	bool StopReaction(); // Function GlitterBeard.GlitterBeardTree.StopReaction // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x4962cd0
-	void StartVocals(); // Function GlitterBeard.GlitterBeardTree.StartVocals // Final|Native|Public|BlueprintCallable // @ game+0x4962cb0
-	bool StartReaction(); // Function GlitterBeard.GlitterBeardTree.StartReaction // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x4962c70
-	void Reset_Impl(); // Function GlitterBeard.GlitterBeardTree.Reset_Impl // Event|Protected|BlueprintEvent // @ game+0x18e3b10
+	void StopVocals(); // Function GlitterBeard.GlitterBeardTree.StopVocals // Final|Native|Public|BlueprintCallable // @ game+0x4965330
+	bool StopReaction(); // Function GlitterBeard.GlitterBeardTree.StopReaction // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x49652f0
+	void StartVocals(); // Function GlitterBeard.GlitterBeardTree.StartVocals // Final|Native|Public|BlueprintCallable // @ game+0x49652d0
+	bool StartReaction(); // Function GlitterBeard.GlitterBeardTree.StartReaction // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x4965290
+	void Reset_Impl(); // Function GlitterBeard.GlitterBeardTree.Reset_Impl // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class GlitterBeard.GlitterBeardTreeVisualFeedbackComponent
@@ -83,7 +83,7 @@ struct UGlitterBeardTreeVisualFeedbackComponent : UActorComponent {
 	struct TArray<char> CurrentStates; // 0xe8(0x10)
 	char UnknownData_F8[0x20]; // 0xf8(0x20)
 
-	void OnRep_NextStateEvent(struct TArray<char> OldStates); // Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4962b20
+	void OnRep_NextStateEvent(struct TArray<char> OldStates); // Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4965140
 };
 
 // Class GlitterBeard.GlitterBeardUnlockVFXCoordinatorComponent

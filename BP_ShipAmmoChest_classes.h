@@ -5,6 +5,6 @@ struct ABP_ShipAmmoChest_C : ABP_AmmoChest_C {
 	struct UCrewLockableComponent* CrewLockableComponent; // 0x4b8(0x08)
 	struct UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x4c0(0x08)
 
-	void UserConstructionScript(); // Function BP_ShipAmmoChest.BP_ShipAmmoChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ShipAmmoChest.BP_ShipAmmoChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

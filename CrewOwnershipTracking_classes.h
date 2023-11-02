@@ -23,7 +23,7 @@ struct UCrewOwnershipTrackingComponent : UActorComponent {
 	struct TMap<struct FName, struct FOwnerListEntry> CustomTrackingMap; // 0x110(0x50)
 	char UnknownData_160[0x10]; // 0x160(0x10)
 
-	struct FGuid GetSpawningCrewIdByCopy(); // Function CrewOwnershipTracking.CrewOwnershipTrackingComponent.GetSpawningCrewIdByCopy // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3709db0
+	struct FGuid GetSpawningCrewIdByCopy(); // Function CrewOwnershipTracking.CrewOwnershipTrackingComponent.GetSpawningCrewIdByCopy // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x370c3c0
 };
 
 // Class CrewOwnershipTracking.CrewOwnershipTrackingControlInterface

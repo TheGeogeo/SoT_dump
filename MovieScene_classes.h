@@ -80,23 +80,23 @@ struct UMovieSceneSequencePlayer : UObject {
 	struct ACharacter* InteractingCharacter; // 0x5e8(0x08)
 	char UnknownData_5F0[0x18]; // 0x5f0(0x18)
 
-	void Stop(); // Function MovieScene.MovieSceneSequencePlayer.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2168f70
-	void StartPlayingNextTick(); // Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick // Final|Native|Public|BlueprintCallable // @ game+0x2168f50
-	void SetPlayRate(float PlayRate); // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2168d90
-	void SetPlaybackRange(float NewStartTime, float NewEndTime); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange // Final|Native|Public|BlueprintCallable // @ game+0x2168e90
-	void SetPlaybackPosition(float NewPlaybackPosition); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition // Final|Native|Public|BlueprintCallable // @ game+0x2168e10
-	void SetOverridePlaybackSettings(struct FMovieSceneSequencePlaybackSettings InSettings); // Function MovieScene.MovieSceneSequencePlayer.SetOverridePlaybackSettings // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2168cd0
-	void PlayReverse(); // Function MovieScene.MovieSceneSequencePlayer.PlayReverse // Final|Native|Public|BlueprintCallable // @ game+0x2168cb0
-	void PlayLooping(int32_t NumLoops); // Function MovieScene.MovieSceneSequencePlayer.PlayLooping // Final|Native|Public|BlueprintCallable // @ game+0x2168c30
-	void Play(struct ACharacter* OptionalInteractingCharacter); // Function MovieScene.MovieSceneSequencePlayer.Play // Final|Native|Public|BlueprintCallable // @ game+0x2168bb0
-	void Pause(); // Function MovieScene.MovieSceneSequencePlayer.Pause // Final|Native|Public|BlueprintCallable // @ game+0x2168b90
-	bool IsPlaying(); // Function MovieScene.MovieSceneSequencePlayer.IsPlaying // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2168b60
-	float GetPlayRate(); // Function MovieScene.MovieSceneSequencePlayer.GetPlayRate // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2168ac0
-	float GetPlaybackStart(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2168b40
-	float GetPlaybackPosition(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2168b10
-	float GetPlaybackEnd(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2168af0
-	float GetLength(); // Function MovieScene.MovieSceneSequencePlayer.GetLength // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2168a90
-	void ChangePlaybackDirection(); // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection // Final|Native|Public|BlueprintCallable // @ game+0x2168a70
+	void Stop(); // Function MovieScene.MovieSceneSequencePlayer.Stop // Final|Native|Public|BlueprintCallable // @ game+0x216b400
+	void StartPlayingNextTick(); // Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick // Final|Native|Public|BlueprintCallable // @ game+0x216b3e0
+	void SetPlayRate(float PlayRate); // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x216b220
+	void SetPlaybackRange(float NewStartTime, float NewEndTime); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange // Final|Native|Public|BlueprintCallable // @ game+0x216b320
+	void SetPlaybackPosition(float NewPlaybackPosition); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition // Final|Native|Public|BlueprintCallable // @ game+0x216b2a0
+	void SetOverridePlaybackSettings(struct FMovieSceneSequencePlaybackSettings InSettings); // Function MovieScene.MovieSceneSequencePlayer.SetOverridePlaybackSettings // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x216b160
+	void PlayReverse(); // Function MovieScene.MovieSceneSequencePlayer.PlayReverse // Final|Native|Public|BlueprintCallable // @ game+0x216b140
+	void PlayLooping(int32_t NumLoops); // Function MovieScene.MovieSceneSequencePlayer.PlayLooping // Final|Native|Public|BlueprintCallable // @ game+0x216b0c0
+	void Play(struct ACharacter* OptionalInteractingCharacter); // Function MovieScene.MovieSceneSequencePlayer.Play // Final|Native|Public|BlueprintCallable // @ game+0x216b040
+	void Pause(); // Function MovieScene.MovieSceneSequencePlayer.Pause // Final|Native|Public|BlueprintCallable // @ game+0x216b020
+	bool IsPlaying(); // Function MovieScene.MovieSceneSequencePlayer.IsPlaying // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x216aff0
+	float GetPlayRate(); // Function MovieScene.MovieSceneSequencePlayer.GetPlayRate // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x216af50
+	float GetPlaybackStart(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x216afd0
+	float GetPlaybackPosition(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x216afa0
+	float GetPlaybackEnd(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x216af80
+	float GetLength(); // Function MovieScene.MovieSceneSequencePlayer.GetLength // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x216af20
+	void ChangePlaybackDirection(); // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection // Final|Native|Public|BlueprintCallable // @ game+0x216af00
 };
 
 // Class MovieScene.MovieSceneSection

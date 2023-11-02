@@ -39,15 +39,15 @@ struct UGameplayDebuggingComponent : UPrimitiveComponent {
 	struct AActor* TargetActor; // 0x770(0x08)
 	char UnknownData_778[0x78]; // 0x778(0x78)
 
-	void ServerReplicateData(uint32_t InMessage, uint32_t DataView); // Function GameplayDebugger.GameplayDebuggingComponent.ServerReplicateData // Final|Exec|Native|Public // @ game+0x45520f0
-	void ServerDiscardNavmeshData(); // Function GameplayDebugger.GameplayDebuggingComponent.ServerDiscardNavmeshData // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45520a0
-	void ServerCollectNavmeshData(struct FVector_NetQuantize10 TargetLocation); // Function GameplayDebugger.GameplayDebuggingComponent.ServerCollectNavmeshData // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4551fd0
-	void OnRep_UpdateNavmesh(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateNavmesh // Native|Public // @ game+0x4551fb0
-	void OnRep_UpdateEQS(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateEQS // Native|Public // @ game+0x4551f90
-	void OnRep_UpdateBlackboard(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateBlackboard // Native|Public // @ game+0x4551f70
-	void OnRep_PathCorridorData(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_PathCorridorData // Native|Public // @ game+0x4551f50
-	void OnCycleDetailsView(); // Function GameplayDebugger.GameplayDebuggingComponent.OnCycleDetailsView // Native|Public // @ game+0x4551f10
-	void ClientEnableTargetSelection(bool bEnable); // Function GameplayDebugger.GameplayDebuggingComponent.ClientEnableTargetSelection // Net|NetReliableNative|Event|Public|NetClient|NetValidate // @ game+0x4551d20
+	void ServerReplicateData(uint32_t InMessage, uint32_t DataView); // Function GameplayDebugger.GameplayDebuggingComponent.ServerReplicateData // Final|Exec|Native|Public // @ game+0x4554710
+	void ServerDiscardNavmeshData(); // Function GameplayDebugger.GameplayDebuggingComponent.ServerDiscardNavmeshData // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45546c0
+	void ServerCollectNavmeshData(struct FVector_NetQuantize10 TargetLocation); // Function GameplayDebugger.GameplayDebuggingComponent.ServerCollectNavmeshData // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45545f0
+	void OnRep_UpdateNavmesh(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateNavmesh // Native|Public // @ game+0x45545d0
+	void OnRep_UpdateEQS(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateEQS // Native|Public // @ game+0x45545b0
+	void OnRep_UpdateBlackboard(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateBlackboard // Native|Public // @ game+0x4554590
+	void OnRep_PathCorridorData(); // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_PathCorridorData // Native|Public // @ game+0x4554570
+	void OnCycleDetailsView(); // Function GameplayDebugger.GameplayDebuggingComponent.OnCycleDetailsView // Native|Public // @ game+0x4554530
+	void ClientEnableTargetSelection(bool bEnable); // Function GameplayDebugger.GameplayDebuggingComponent.ClientEnableTargetSelection // Net|NetReliableNative|Event|Public|NetClient|NetValidate // @ game+0x4554340
 };
 
 // Class GameplayDebugger.GameplayDebuggingHUDComponent
@@ -141,11 +141,11 @@ struct AGameplayDebuggingReplicator : AActor {
 	bool GameView5; // 0x429(0x01)
 	char UnknownData_42A[0x4e]; // 0x42a(0x4e)
 
-	void ServerSetActorToDebug(struct AActor* InActor); // Function GameplayDebugger.GameplayDebuggingReplicator.ServerSetActorToDebug // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45522e0
-	void ServerReplicateMessage(struct AActor* Actor, uint32_t InMessage, uint32_t DataView); // Function GameplayDebugger.GameplayDebuggingReplicator.ServerReplicateMessage // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45521b0
-	void OnRep_AutoActivate(); // Function GameplayDebugger.GameplayDebuggingReplicator.OnRep_AutoActivate // Native|Public // @ game+0x4551f30
-	void ClientReplicateMessage(struct AActor* Actor, uint32_t InMessage, uint32_t DataView); // Function GameplayDebugger.GameplayDebuggingReplicator.ClientReplicateMessage // Net|NetReliableNative|Event|Public|NetClient|NetValidate // @ game+0x4551de0
-	void ClientEnableTargetSelection(bool bEnable, struct APlayerController* Context); // Function GameplayDebugger.GameplayDebuggingReplicator.ClientEnableTargetSelection // Net|NetReliableNative|Event|Public|NetClient|NetValidate // @ game+0x4551c20
-	void ClientAutoActivate(); // Function GameplayDebugger.GameplayDebuggingReplicator.ClientAutoActivate // Net|NetReliableNative|Event|Public|NetClient // @ game+0x4551c00
+	void ServerSetActorToDebug(struct AActor* InActor); // Function GameplayDebugger.GameplayDebuggingReplicator.ServerSetActorToDebug // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4554900
+	void ServerReplicateMessage(struct AActor* Actor, uint32_t InMessage, uint32_t DataView); // Function GameplayDebugger.GameplayDebuggingReplicator.ServerReplicateMessage // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45547d0
+	void OnRep_AutoActivate(); // Function GameplayDebugger.GameplayDebuggingReplicator.OnRep_AutoActivate // Native|Public // @ game+0x4554550
+	void ClientReplicateMessage(struct AActor* Actor, uint32_t InMessage, uint32_t DataView); // Function GameplayDebugger.GameplayDebuggingReplicator.ClientReplicateMessage // Net|NetReliableNative|Event|Public|NetClient|NetValidate // @ game+0x4554400
+	void ClientEnableTargetSelection(bool bEnable, struct APlayerController* Context); // Function GameplayDebugger.GameplayDebuggingReplicator.ClientEnableTargetSelection // Net|NetReliableNative|Event|Public|NetClient|NetValidate // @ game+0x4554240
+	void ClientAutoActivate(); // Function GameplayDebugger.GameplayDebuggingReplicator.ClientAutoActivate // Net|NetReliableNative|Event|Public|NetClient // @ game+0x4554220
 };
 

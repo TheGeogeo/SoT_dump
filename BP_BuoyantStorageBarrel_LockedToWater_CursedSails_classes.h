@@ -6,7 +6,7 @@ struct ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C : ABuoyantStorageCon
 	struct UTelemetrySubjectComponent* TelemetrySubject; // 0x740(0x08)
 	struct UStorageContainerComponent* StorageContainer; // 0x748(0x08)
 
-	char GetPxActorCapacityForPhysXAggregate(); // Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	char GetPxActorCapacityForPhysXAggregate(); // Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -5,9 +5,9 @@ struct ABP_LargeShipLadderMainMast_C : ALadder {
 	struct TArray<struct FVector> OnTopSplinePositions; // 0x5e8(0x10)
 	struct TArray<struct FVector> OffTopSplinePositions; // 0x5f8(0x10)
 
-	struct FDockableInfo GetDockableInfo(); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Setup Spline(struct USplineComponent* Spline, struct TArray<struct FVector> Positions); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.Setup Spline // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	bool CanInteract(struct AActor* InInteractor); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.CanInteract // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	struct FDockableInfo GetDockableInfo(); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Setup Spline(struct USplineComponent* Spline, struct TArray<struct FVector> Positions); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.Setup Spline // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	bool CanInteract(struct AActor** InInteractor); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.CanInteract // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

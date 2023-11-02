@@ -2,8 +2,8 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UActorOfInterestBlueprintFunctionLibrary : UObject {
 
-	void GetActorsOfInterestFromIds(struct UObject* WorldContextObject, struct TArray<struct UClass*> ActorOfInterestIds, struct TArray<struct AActor*> Actors); // Function ActorOfInterestFramework.ActorOfInterestBlueprintFunctionLibrary.GetActorsOfInterestFromIds // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3ba9e90
-	struct AActor* GetActorOfInterestFromId(struct UObject* WorldContextObject, struct UClass* ActorOfInterestId); // Function ActorOfInterestFramework.ActorOfInterestBlueprintFunctionLibrary.GetActorOfInterestFromId // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x3ba9dd0
+	void GetActorsOfInterestFromIds(struct UObject* WorldContextObject, struct TArray<struct UClass*> ActorOfInterestIds, struct TArray<struct AActor*> Actors); // Function ActorOfInterestFramework.ActorOfInterestBlueprintFunctionLibrary.GetActorsOfInterestFromIds // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3bac4a0
+	struct AActor* GetActorOfInterestFromId(struct UObject* WorldContextObject, struct UClass* ActorOfInterestId); // Function ActorOfInterestFramework.ActorOfInterestBlueprintFunctionLibrary.GetActorOfInterestFromId // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x3bac3e0
 };
 
 // Class ActorOfInterestFramework.ActorOfInterestComponent

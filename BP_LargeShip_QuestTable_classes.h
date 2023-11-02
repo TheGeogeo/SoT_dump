@@ -13,6 +13,6 @@ struct ABP_LargeShip_QuestTable_C : AVoyageTable {
 	struct UChildActorComponent* VoyageSelectionSlot2; // 0x970(0x08)
 	struct UChildActorComponent* VoyageSelectionSlot1; // 0x978(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_QuestTable.BP_LargeShip_QuestTable_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_QuestTable.BP_LargeShip_QuestTable_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

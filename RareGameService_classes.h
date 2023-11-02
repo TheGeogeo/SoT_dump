@@ -7,9 +7,9 @@ struct URareGameServiceInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct URareGameServiceProviderInterface : UInterface {
 
-	void UnregisterRareGameService(struct UObject* Service); // Function RareGameService.RareGameServiceProviderInterface.UnregisterRareGameService // Native|Public|BlueprintCallable // @ game+0x3634120
-	bool RegisterRareGameService(struct UObject* Service, struct UClass* Class); // Function RareGameService.RareGameServiceProviderInterface.RegisterRareGameService // Native|Public|BlueprintCallable // @ game+0x3634050
-	struct UObject* GetRareGameService(struct UClass* Class); // Function RareGameService.RareGameServiceProviderInterface.GetRareGameService // Native|Public|BlueprintCallable // @ game+0x3633f90
+	void UnregisterRareGameService(struct UObject* Service); // Function RareGameService.RareGameServiceProviderInterface.UnregisterRareGameService // Native|Public|BlueprintCallable // @ game+0x3636730
+	bool RegisterRareGameService(struct UObject* Service, struct UClass* Class); // Function RareGameService.RareGameServiceProviderInterface.RegisterRareGameService // Native|Public|BlueprintCallable // @ game+0x3636660
+	struct UObject* GetRareGameService(struct UClass* Class); // Function RareGameService.RareGameServiceProviderInterface.GetRareGameService // Native|Public|BlueprintCallable // @ game+0x36365a0
 };
 
 // Class RareGameService.RareGameServiceManagerComponent
@@ -20,6 +20,6 @@ struct URareGameServiceManagerComponent : UActorComponent {
 	char UnknownData_E0[0x40]; // 0xe0(0x40)
 	struct TArray<struct FRareGameServiceSpecification> ServiceSpecifications; // 0x120(0x10)
 
-	void OnRep_ReplicatedServices(); // Function RareGameService.RareGameServiceManagerComponent.OnRep_ReplicatedServices // Final|Native|Private // @ game+0x3634030
+	void OnRep_ReplicatedServices(); // Function RareGameService.RareGameServiceManagerComponent.OnRep_ReplicatedServices // Final|Native|Private // @ game+0x3636640
 };
 

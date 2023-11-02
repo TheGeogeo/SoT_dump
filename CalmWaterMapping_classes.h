@@ -2,8 +2,8 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UCalmWaterMappingInterface : UInterface {
 
-	float GetDampeningFactor(struct FVector2D InPosition); // Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3746f40
-	float GetChoppinessFactor(struct FVector2D InPosition); // Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3746ea0
+	float GetDampeningFactor(struct FVector2D InPosition); // Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3749550
+	float GetChoppinessFactor(struct FVector2D InPosition); // Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x37494b0
 };
 
 // Class CalmWaterMapping.AthenaCalmWaterZone
@@ -17,6 +17,6 @@ struct AAthenaCalmWaterZone : ACalmWaterZone {
 struct UCalmWaterMappingService : UObject {
 	char UnknownData_28[0x28]; // 0x28(0x28)
 
-	float GetMaxWindSpeed(); // Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed // Final|Native|Static|Public|BlueprintCallable // @ game+0x3746fe0
+	float GetMaxWindSpeed(); // Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed // Final|Native|Static|Public|BlueprintCallable // @ game+0x37495f0
 };
 

@@ -27,9 +27,9 @@ struct AAshenLordAshCloud : AActor {
 	float MaxRadiusMultiplier; // 0x434(0x04)
 	char UnknownData_438[0x18]; // 0x438(0x18)
 
-	void UpdatePostSettingsBP(); // Function NaturalDisasters.AshenLordAshCloud.UpdatePostSettingsBP // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void SetDissipationDensityBP(float CloudDensity); // Function NaturalDisasters.AshenLordAshCloud.SetDissipationDensityBP // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_StateChanged(); // Function NaturalDisasters.AshenLordAshCloud.OnRep_StateChanged // Final|Native|Private // @ game+0x4369ce0
+	void UpdatePostSettingsBP(); // Function NaturalDisasters.AshenLordAshCloud.UpdatePostSettingsBP // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void SetDissipationDensityBP(float CloudDensity); // Function NaturalDisasters.AshenLordAshCloud.SetDissipationDensityBP // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_StateChanged(); // Function NaturalDisasters.AshenLordAshCloud.OnRep_StateChanged // Final|Native|Private // @ game+0x436c300
 };
 
 // Class NaturalDisasters.AshenLordVolcano
@@ -38,7 +38,7 @@ struct AAshenLordVolcano : AActor {
 	struct UAshenLordVolcanoSetupDataAsset* VolcanoSetupData; // 0x3c8(0x08)
 	char UnknownData_3D0[0x68]; // 0x3d0(0x68)
 
-	void Multicast_FireProjectile(int32_t WeightedVolcanoProjectileIndex, struct FVector AuthoritySpawnLocation, struct FVector LaunchVelocity, struct FVector RotationRate); // Function NaturalDisasters.AshenLordVolcano.Multicast_FireProjectile // Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults // @ game+0x4369430
+	void Multicast_FireProjectile(int32_t WeightedVolcanoProjectileIndex, struct FVector AuthoritySpawnLocation, struct FVector LaunchVelocity, struct FVector RotationRate); // Function NaturalDisasters.AshenLordVolcano.Multicast_FireProjectile // Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults // @ game+0x436ba50
 };
 
 // Class NaturalDisasters.VolcanoSetupDataAsset
@@ -112,8 +112,8 @@ struct AAshenLordWorldEndCloud : AActor {
 	struct FAshenLordWorldEndCloudAnimation CurrentCloudAnimation; // 0x3d0(0x08)
 	char UnknownData_3D8[0x8]; // 0x3d8(0x08)
 
-	void OnRep_CloudStateChange(); // Function NaturalDisasters.AshenLordWorldEndCloud.OnRep_CloudStateChange // Final|Native|Public // @ game+0x4369c00
-	void AnimateCloud(float AdjustedLifetime); // Function NaturalDisasters.AshenLordWorldEndCloud.AnimateCloud // Event|Public|BlueprintEvent // @ game+0x18e3b10
+	void OnRep_CloudStateChange(); // Function NaturalDisasters.AshenLordWorldEndCloud.OnRep_CloudStateChange // Final|Native|Public // @ game+0x436c220
+	void AnimateCloud(float AdjustedLifetime); // Function NaturalDisasters.AshenLordWorldEndCloud.AnimateCloud // Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class NaturalDisasters.Geyser
@@ -141,8 +141,8 @@ struct AGeyser : AActor {
 	struct AHole* GeyserHole; // 0x470(0x08)
 	char UnknownData_478[0x40]; // 0x478(0x40)
 
-	void OnRep_GeyserState(); // Function NaturalDisasters.Geyser.OnRep_GeyserState // Final|Native|Private // @ game+0x4369ca0
-	void Multicast_TriggerExplosion(); // Function NaturalDisasters.Geyser.Multicast_TriggerExplosion // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x4369650
+	void OnRep_GeyserState(); // Function NaturalDisasters.Geyser.OnRep_GeyserState // Final|Native|Private // @ game+0x436c2c0
+	void Multicast_TriggerExplosion(); // Function NaturalDisasters.Geyser.Multicast_TriggerExplosion // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x436bc70
 };
 
 // Class NaturalDisasters.DisableGeyserMechanismAction
@@ -151,8 +151,8 @@ struct ADisableGeyserMechanismAction : AActor {
 	struct UMechanismActionComponent* MechanismActionComponent; // 0x3c8(0x08)
 	struct TArray<struct AGeyser*> GeysersToDisable; // 0x3d0(0x10)
 
-	void OnActionStateChanged(TScriptInterface<struct UMechanismActionInterface> Action, char PreviousState, char NewState, struct AActor* InInstigator); // Function NaturalDisasters.DisableGeyserMechanismAction.OnActionStateChanged // Native|Public // @ game+0x4369710
-	void OnActionReset(TScriptInterface<struct UMechanismResetInterface> Mechanism); // Function NaturalDisasters.DisableGeyserMechanismAction.OnActionReset // Native|Public // @ game+0x4369670
+	void OnActionStateChanged(TScriptInterface<struct UMechanismActionInterface> Action, char PreviousState, char NewState, struct AActor* InInstigator); // Function NaturalDisasters.DisableGeyserMechanismAction.OnActionStateChanged // Native|Public // @ game+0x436bd30
+	void OnActionReset(TScriptInterface<struct UMechanismResetInterface> Mechanism); // Function NaturalDisasters.DisableGeyserMechanismAction.OnActionReset // Native|Public // @ game+0x436bc90
 };
 
 // Class NaturalDisasters.EarthquakeSetupDataAsset
@@ -215,7 +215,7 @@ struct AEarthquake : AActor {
 	char EarthquakeState; // 0x468(0x01)
 	char UnknownData_469[0x14f]; // 0x469(0x14f)
 
-	void OnRep_EarthquakeState(char OldEarthquakeState); // Function NaturalDisasters.Earthquake.OnRep_EarthquakeState // Final|Native|Private // @ game+0x4369c20
+	void OnRep_EarthquakeState(char OldEarthquakeState); // Function NaturalDisasters.Earthquake.OnRep_EarthquakeState // Final|Native|Private // @ game+0x436c240
 };
 
 // Class NaturalDisasters.MechanismGeyser
@@ -225,8 +225,8 @@ struct AMechanismGeyser : AGeyser {
 	char UnknownData_4B9[0x7]; // 0x4b9(0x07)
 	struct UMechanismActionComponent* MechanismActionComponent; // 0x4c0(0x08)
 
-	void OnMechanismActionStateChanged(TScriptInterface<struct UMechanismActionInterface> Action, char PreviousState, char NewState, struct AActor* InInstigator); // Function NaturalDisasters.MechanismGeyser.OnMechanismActionStateChanged // Final|Native|Public // @ game+0x43699b0
-	void OnMechanismActionReset(TScriptInterface<struct UMechanismResetInterface> Action); // Function NaturalDisasters.MechanismGeyser.OnMechanismActionReset // Final|Native|Private // @ game+0x4369910
+	void OnMechanismActionStateChanged(TScriptInterface<struct UMechanismActionInterface> Action, char PreviousState, char NewState, struct AActor* InInstigator); // Function NaturalDisasters.MechanismGeyser.OnMechanismActionStateChanged // Final|Native|Public // @ game+0x436bfd0
+	void OnMechanismActionReset(TScriptInterface<struct UMechanismResetInterface> Action); // Function NaturalDisasters.MechanismGeyser.OnMechanismActionReset // Final|Native|Private // @ game+0x436bf30
 };
 
 // Class NaturalDisasters.GeyserManagerSetupDataAsset
@@ -277,7 +277,7 @@ struct AGeyserManager : AActor {
 struct UGeyserItemSpawnComponent : UItemSpawnComponent {
 	char UnknownData_470[0x20]; // 0x470(0x20)
 
-	void OnGeyserSpawned(struct FVector GeyserSpawnLocation); // Function NaturalDisasters.GeyserItemSpawnComponent.OnGeyserSpawned // Final|Native|Private|HasOutParms|HasDefaults // @ game+0x4369880
+	void OnGeyserSpawned(struct FVector GeyserSpawnLocation); // Function NaturalDisasters.GeyserItemSpawnComponent.OnGeyserSpawned // Final|Native|Private|HasOutParms|HasDefaults // @ game+0x436bea0
 };
 
 // Class NaturalDisasters.GeyserSetupDataAsset
@@ -314,8 +314,8 @@ struct ALavaZone : AActor {
 	TScriptInterface<struct UActivateableSurfaceMaterialStatusZoneInterface> MaterialZone; // 0x450(0x10)
 	TScriptInterface<struct UObjectMessagingDispatcherInterface> LocalPlayerDispatcher; // 0x460(0x10)
 
-	void OnRep_ActorsInZone(struct TArray<struct AActor*> PreviousActors); // Function NaturalDisasters.LavaZone.OnRep_ActorsInZone // Final|Native|Private|HasOutParms // @ game+0x4369b50
-	void OnRep_Active(); // Function NaturalDisasters.LavaZone.OnRep_Active // Final|Native|Private // @ game+0x4369b30
+	void OnRep_ActorsInZone(struct TArray<struct AActor*> PreviousActors); // Function NaturalDisasters.LavaZone.OnRep_ActorsInZone // Final|Native|Private|HasOutParms // @ game+0x436c170
+	void OnRep_Active(); // Function NaturalDisasters.LavaZone.OnRep_Active // Final|Native|Private // @ game+0x436c150
 };
 
 // Class NaturalDisasters.VolcanoInterface
@@ -364,7 +364,7 @@ struct ASuperheatedWater : AMurk {
 	struct TArray<struct AAthenaPlayerCharacter*> PlayersInZone; // 0x490(0x10)
 	char UnknownData_4A0[0xd0]; // 0x4a0(0xd0)
 
-	void OnRep_PlayersInZone(); // Function NaturalDisasters.SuperheatedWater.OnRep_PlayersInZone // Final|Native|Private // @ game+0x4369cc0
+	void OnRep_PlayersInZone(); // Function NaturalDisasters.SuperheatedWater.OnRep_PlayersInZone // Final|Native|Private // @ game+0x436c2e0
 };
 
 // Class NaturalDisasters.Volcano
@@ -402,8 +402,8 @@ struct AVolcano : AActor {
 	struct FName AssociatedIslandName; // 0x4b0(0x08)
 	char UnknownData_4B8[0x138]; // 0x4b8(0x138)
 
-	void OnRep_VolcanoState(struct FVolcanoStateData OldVolcanoState); // Function NaturalDisasters.Volcano.OnRep_VolcanoState // Final|Native|Private // @ game+0x4369d00
-	void Multicast_FireProjectile(struct FVector AuthoritySpawnLocation, struct TArray<struct FVolcanoProjectileData> VolcanoProjectileDataArray); // Function NaturalDisasters.Volcano.Multicast_FireProjectile // Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults // @ game+0x4369570
+	void OnRep_VolcanoState(struct FVolcanoStateData OldVolcanoState); // Function NaturalDisasters.Volcano.OnRep_VolcanoState // Final|Native|Private // @ game+0x436c320
+	void Multicast_FireProjectile(struct FVector AuthoritySpawnLocation, struct TArray<struct FVolcanoProjectileData> VolcanoProjectileDataArray); // Function NaturalDisasters.Volcano.Multicast_FireProjectile // Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults // @ game+0x436bb90
 };
 
 // Class NaturalDisasters.VolcanoService

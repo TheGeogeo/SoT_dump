@@ -24,7 +24,7 @@ struct UKillActorChecklistActionData : UChecklistActionData {
 struct UNamedChecklistEventActionData : UChecklistActionData {
 	struct FName Event; // 0x30(0x08)
 
-	struct TArray<struct FString> EventsSource(); // Function ChecklistMaps.NamedChecklistEventActionData.EventsSource // Final|Native|Public|Const // @ game+0x3d02ff0
+	struct TArray<struct FString> EventsSource(); // Function ChecklistMaps.NamedChecklistEventActionData.EventsSource // Final|Native|Public|Const // @ game+0x3d05600
 };
 
 // Class ChecklistMaps.NPCInteractionChecklistActionData
@@ -51,9 +51,9 @@ struct AChecklistMap : ATreasureMap {
 	struct FChecklistMapContents Contents; // 0x850(0xe8)
 	char UnknownData_938[0x48]; // 0x938(0x48)
 
-	void RefreshContents(); // Function ChecklistMaps.ChecklistMap.RefreshContents // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3d032c0
-	void OnTextCanvasUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function ChecklistMaps.ChecklistMap.OnTextCanvasUpdate // Final|Native|Private // @ game+0x3d031c0
-	void OnRep_Contents(struct FChecklistMapContents InPreviousContents); // Function ChecklistMaps.ChecklistMap.OnRep_Contents // Final|Native|Private|HasOutParms // @ game+0x3d03100
+	void RefreshContents(); // Function ChecklistMaps.ChecklistMap.RefreshContents // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3d058d0
+	void OnTextCanvasUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function ChecklistMaps.ChecklistMap.OnTextCanvasUpdate // Final|Native|Private // @ game+0x3d057d0
+	void OnRep_Contents(struct FChecklistMapContents InPreviousContents); // Function ChecklistMaps.ChecklistMap.OnRep_Contents // Final|Native|Private|HasOutParms // @ game+0x3d05710
 };
 
 // Class ChecklistMaps.ChecklistMapCollectionInterface

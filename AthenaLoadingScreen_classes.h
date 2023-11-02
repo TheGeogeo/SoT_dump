@@ -2,8 +2,8 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UAthenaLoadingScreenBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	bool IsLoadingScreenVisible(); // Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenVisible // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3492390
-	bool IsLoadingScreenRegistered(); // Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenRegistered // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3492360
+	bool IsLoadingScreenVisible(); // Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenVisible // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3494990
+	bool IsLoadingScreenRegistered(); // Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenRegistered // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3494960
 };
 
 // Class AthenaLoadingScreen.SlateLoadingScreenParams
@@ -59,6 +59,6 @@ struct UAthenaLoadingScreenParams : UDeveloperSettings {
 // Size: 0x28 (Inherited: 0x28)
 struct ULoadingUtilities : UBlueprintFunctionLibrary {
 
-	bool IsStreaming(struct UObject* WorldContextObject); // Function AthenaLoadingScreen.LoadingUtilities.IsStreaming // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x34923c0
+	bool IsStreaming(struct UObject* WorldContextObject); // Function AthenaLoadingScreen.LoadingUtilities.IsStreaming // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x34949c0
 };
 

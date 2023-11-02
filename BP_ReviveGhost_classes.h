@@ -7,6 +7,6 @@ struct ABP_ReviveGhost_C : AReviveGhost {
 	struct UStaticMeshComponent* Cord_Outer_01; // 0x640(0x08)
 	struct UStaticMeshComponent* Cord_Inner; // 0x648(0x08)
 
-	void UserConstructionScript(); // Function BP_ReviveGhost.BP_ReviveGhost_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ReviveGhost.BP_ReviveGhost_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

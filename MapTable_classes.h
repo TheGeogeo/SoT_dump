@@ -16,13 +16,13 @@ struct AMapTable_C : AMapTable {
 	float ActiveRange; // 0x810(0x04)
 	bool IsActive; // 0x814(0x01)
 
-	void UpdateBlurEffect(); // Function MapTable.MapTable_C.UpdateBlurEffect // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	struct FVector GetClosestInteractionPoint(struct FVector ReferencePosition, float OutInteractionPointRadius); // Function MapTable.MapTable_C.GetClosestInteractionPoint // HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function MapTable.MapTable_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function MapTable.MapTable_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void SetEffectActiveWhenClose(); // Function MapTable.MapTable_C.SetEffectActiveWhenClose // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnMapActivate(bool IsMapActive, struct UTextureRenderTarget2D* Texture); // Function MapTable.MapTable_C.OnMapActivate // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnMapMove(struct FVector2D CentreLocation, struct FVector2D ZoomLevel); // Function MapTable.MapTable_C.OnMapMove // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_MapTable(int32_t EntryPoint); // Function MapTable.MapTable_C.ExecuteUbergraph_MapTable // HasDefaults // @ game+0x18e3b10
+	void UpdateBlurEffect(); // Function MapTable.MapTable_C.UpdateBlurEffect // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	struct FVector GetClosestInteractionPoint(struct FVector ReferencePosition, float OutInteractionPointRadius); // Function MapTable.MapTable_C.GetClosestInteractionPoint // HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function MapTable.MapTable_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function MapTable.MapTable_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void SetEffectActiveWhenClose(); // Function MapTable.MapTable_C.SetEffectActiveWhenClose // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnMapActivate(bool* IsMapActive, struct UTextureRenderTarget2D** Texture); // Function MapTable.MapTable_C.OnMapActivate // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnMapMove(struct FVector2D* CentreLocation, struct FVector2D* ZoomLevel); // Function MapTable.MapTable_C.OnMapMove // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_MapTable(int32_t EntryPoint); // Function MapTable.MapTable_C.ExecuteUbergraph_MapTable // HasDefaults // @ game+0x18e5fa0
 };
 

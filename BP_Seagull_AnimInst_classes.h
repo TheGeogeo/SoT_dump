@@ -6,7 +6,7 @@ struct UBP_Seagull_AnimInst_C : UAnimInstance {
 	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_D775EBF64D32A723FA50E08494A680D3; // 0x490(0x60)
 	float PlayRate; // 0x4f0(0x04)
 
-	void BlueprintInitializeAnimation(); // Function BP_Seagull_AnimInst.BP_Seagull_AnimInst_C.BlueprintInitializeAnimation // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Seagull_AnimInst(int32_t EntryPoint); // Function BP_Seagull_AnimInst.BP_Seagull_AnimInst_C.ExecuteUbergraph_BP_Seagull_AnimInst //  // @ game+0x18e3b10
+	void BlueprintInitializeAnimation(); // Function BP_Seagull_AnimInst.BP_Seagull_AnimInst_C.BlueprintInitializeAnimation // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Seagull_AnimInst(int32_t EntryPoint); // Function BP_Seagull_AnimInst.BP_Seagull_AnimInst_C.ExecuteUbergraph_BP_Seagull_AnimInst //  // @ game+0x18e5fa0
 };
 

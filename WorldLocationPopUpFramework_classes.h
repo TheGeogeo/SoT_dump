@@ -48,8 +48,8 @@ struct UWorldLocationPopUpComponent : USceneComponent {
 	struct TArray<struct FGuid> SuppressedCrews; // 0x358(0x10)
 	char UnknownData_368[0x8]; // 0x368(0x08)
 
-	void OnOverlapEnd(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapEnd // Final|Native|Protected // @ game+0x474bea0
-	void OnOverlapBegin(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool FromSweep, struct FHitResult SweepResult); // Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapBegin // Final|Native|Protected|HasOutParms // @ game+0x474bcd0
+	void OnOverlapEnd(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapEnd // Final|Native|Protected // @ game+0x474e4c0
+	void OnOverlapBegin(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool FromSweep, struct FHitResult SweepResult); // Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapBegin // Final|Native|Protected|HasOutParms // @ game+0x474e2f0
 };
 
 // Class WorldLocationPopUpFramework.WorldLocationPopUpDataAsset

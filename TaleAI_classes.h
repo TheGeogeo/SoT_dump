@@ -16,7 +16,7 @@ struct UTaleAICustomRegion : UTaleAIRegionBase {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleAIRegionFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct UTaleAICustomRegion* CreateCustomRegion(struct FVector RegionCentre, float RegionRadius); // Function TaleAI.TaleAIRegionFunctionLibrary.CreateCustomRegion // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x4725cd0
+	struct UTaleAICustomRegion* CreateCustomRegion(struct FVector RegionCentre, float RegionRadius); // Function TaleAI.TaleAIRegionFunctionLibrary.CreateCustomRegion // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x47282f0
 };
 
 // Class TaleAI.TaleQuestAIAsset
@@ -30,60 +30,60 @@ struct UTaleQuestAIAsset : UDataAsset {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAIBlackboardFunctionStepLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WaitForBlackboardValueAsObject(struct APawn* Pawn, struct FName KeyName, struct UObject* ExpectedValue); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.WaitForBlackboardValueAsObject // Final|Native|Public|HasOutParms // @ game+0x4727b50
-	void WaitForBlackboardValueAsClass(struct APawn* Pawn, struct FName KeyName, struct UClass* ExpectedValue); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.WaitForBlackboardValueAsClass // Final|Native|Public|HasOutParms // @ game+0x4727a40
-	void WaitForBlackboardValueAsBool(struct APawn* Pawn, struct FName KeyName, bool ExpectedValue); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.WaitForBlackboardValueAsBool // Final|Native|Public|HasOutParms // @ game+0x4727930
-	void SetBlackboardValueAsVector(struct APawn* Pawn, struct FName KeyName, struct FVector Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4727540
-	void SetBlackboardValueAsString(struct APawn* Pawn, struct FName KeyName, struct FString Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms // @ game+0x4727410
-	void SetBlackboardValueAsRotator(struct APawn* Pawn, struct FName KeyName, struct FRotator Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x47272f0
-	void SetBlackboardValueAsObject(struct APawn* Pawn, struct FName KeyName, struct UObject* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms // @ game+0x47271e0
-	void SetBlackboardValueAsName(struct APawn* Pawn, struct FName KeyName, struct FName Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms // @ game+0x47270c0
-	void SetBlackboardValueAsInt(struct APawn* Pawn, struct FName KeyName, int32_t Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms // @ game+0x4726fb0
-	void SetBlackboardValueAsFloat(struct APawn* Pawn, struct FName KeyName, float Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms // @ game+0x4726ea0
-	void SetBlackboardValueAsClass(struct APawn* Pawn, struct FName KeyName, struct UClass* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms // @ game+0x4726d90
-	void SetBlackboardValueAsBool(struct APawn* Pawn, struct FName KeyName, bool Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms // @ game+0x4726c80
-	void RunBehaviourTree(struct APawn* Pawn, struct UBehaviorTree* BehaviourTree); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.RunBehaviourTree // Final|Native|Public|HasOutParms // @ game+0x47267f0
-	void GetBlackboardValueAsVector(struct APawn* Pawn, struct FName KeyName, struct FVector Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x47266d0
-	void GetBlackboardValueAsString(struct APawn* Pawn, struct FName KeyName, struct FString Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms // @ game+0x4726590
-	void GetBlackboardValueAsRotator(struct APawn* Pawn, struct FName KeyName, struct FRotator Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4726470
-	void GetBlackboardValueAsObject(struct APawn* Pawn, struct FName KeyName, struct UObject* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms // @ game+0x4726350
-	void GetBlackboardValueAsName(struct APawn* Pawn, struct FName KeyName, struct FName Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms // @ game+0x4726230
-	void GetBlackboardValueAsInt(struct APawn* Pawn, struct FName KeyName, int32_t Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms // @ game+0x4726110
-	void GetBlackboardValueAsFloat(struct APawn* Pawn, struct FName KeyName, float Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms // @ game+0x4725ff0
-	void GetBlackboardValueAsClass(struct APawn* Pawn, struct FName KeyName, struct UClass* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms // @ game+0x4725ed0
-	void GetBlackboardValueAsBool(struct APawn* Pawn, struct FName KeyName, bool Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms // @ game+0x4725db0
-	void ClearBlackboardValue(struct APawn* Pawn, struct FName KeyName); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.ClearBlackboardValue // Final|Native|Static|Public|HasOutParms // @ game+0x4725a50
+	void WaitForBlackboardValueAsObject(struct APawn* Pawn, struct FName KeyName, struct UObject* ExpectedValue); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.WaitForBlackboardValueAsObject // Final|Native|Public|HasOutParms // @ game+0x472a170
+	void WaitForBlackboardValueAsClass(struct APawn* Pawn, struct FName KeyName, struct UClass* ExpectedValue); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.WaitForBlackboardValueAsClass // Final|Native|Public|HasOutParms // @ game+0x472a060
+	void WaitForBlackboardValueAsBool(struct APawn* Pawn, struct FName KeyName, bool ExpectedValue); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.WaitForBlackboardValueAsBool // Final|Native|Public|HasOutParms // @ game+0x4729f50
+	void SetBlackboardValueAsVector(struct APawn* Pawn, struct FName KeyName, struct FVector Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4729b60
+	void SetBlackboardValueAsString(struct APawn* Pawn, struct FName KeyName, struct FString Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms // @ game+0x4729a30
+	void SetBlackboardValueAsRotator(struct APawn* Pawn, struct FName KeyName, struct FRotator Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4729910
+	void SetBlackboardValueAsObject(struct APawn* Pawn, struct FName KeyName, struct UObject* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms // @ game+0x4729800
+	void SetBlackboardValueAsName(struct APawn* Pawn, struct FName KeyName, struct FName Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms // @ game+0x47296e0
+	void SetBlackboardValueAsInt(struct APawn* Pawn, struct FName KeyName, int32_t Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms // @ game+0x47295d0
+	void SetBlackboardValueAsFloat(struct APawn* Pawn, struct FName KeyName, float Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms // @ game+0x47294c0
+	void SetBlackboardValueAsClass(struct APawn* Pawn, struct FName KeyName, struct UClass* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms // @ game+0x47293b0
+	void SetBlackboardValueAsBool(struct APawn* Pawn, struct FName KeyName, bool Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.SetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms // @ game+0x47292a0
+	void RunBehaviourTree(struct APawn* Pawn, struct UBehaviorTree* BehaviourTree); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.RunBehaviourTree // Final|Native|Public|HasOutParms // @ game+0x4728e10
+	void GetBlackboardValueAsVector(struct APawn* Pawn, struct FName KeyName, struct FVector Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4728cf0
+	void GetBlackboardValueAsString(struct APawn* Pawn, struct FName KeyName, struct FString Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms // @ game+0x4728bb0
+	void GetBlackboardValueAsRotator(struct APawn* Pawn, struct FName KeyName, struct FRotator Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4728a90
+	void GetBlackboardValueAsObject(struct APawn* Pawn, struct FName KeyName, struct UObject* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms // @ game+0x4728970
+	void GetBlackboardValueAsName(struct APawn* Pawn, struct FName KeyName, struct FName Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms // @ game+0x4728850
+	void GetBlackboardValueAsInt(struct APawn* Pawn, struct FName KeyName, int32_t Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms // @ game+0x4728730
+	void GetBlackboardValueAsFloat(struct APawn* Pawn, struct FName KeyName, float Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms // @ game+0x4728610
+	void GetBlackboardValueAsClass(struct APawn* Pawn, struct FName KeyName, struct UClass* Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms // @ game+0x47284f0
+	void GetBlackboardValueAsBool(struct APawn* Pawn, struct FName KeyName, bool Value); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.GetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms // @ game+0x47283d0
+	void ClearBlackboardValue(struct APawn* Pawn, struct FName KeyName); // Function TaleAI.TaleQuestAIBlackboardFunctionStepLibrary.ClearBlackboardValue // Final|Native|Static|Public|HasOutParms // @ game+0x4728070
 };
 
 // Class TaleAI.TaleQuestAIGoalFunctionStepLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAIGoalFunctionStepLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetQuestTargetLocation(struct APawn* Pawn, struct FVector Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestTargetLocation // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4727870
-	void SetQuestTargetActor(struct APawn* Pawn, struct UObject* Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestTargetActor // Final|Native|Static|Public // @ game+0x47277c0
-	void SetQuestSecondaryTargetActor(struct APawn* Pawn, struct UObject* Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestSecondaryTargetActor // Final|Native|Static|Public // @ game+0x4727710
-	void SetQuestLookAtActor(struct APawn* Pawn, struct UObject* Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestLookAtActor // Final|Native|Static|Public // @ game+0x4727660
-	void SetAreaOfOperation(TScriptInterface<struct UAIAreaOfOperationInterface> AIAreaOfOperationInterface, struct FVector AreaLocation, float AreaRadius); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetAreaOfOperation // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4726b50
-	void ClearQuestTargetLocation(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestTargetLocation // Final|Native|Static|Public // @ game+0x4725c60
-	void ClearQuestTargetActor(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestTargetActor // Final|Native|Static|Public // @ game+0x4725bf0
-	void ClearQuestSecondaryTargetActor(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestSecondaryTargetActor // Final|Native|Static|Public // @ game+0x4725b80
-	void ClearQuestLookAtActor(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestLookAtActor // Final|Native|Static|Public // @ game+0x4725b10
-	void ClearAreaOfOperation(TScriptInterface<struct UAIAreaOfOperationInterface> AIAreaOfOperationInterface); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearAreaOfOperation // Final|Native|Static|Public // @ game+0x47259c0
+	void SetQuestTargetLocation(struct APawn* Pawn, struct FVector Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestTargetLocation // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4729e90
+	void SetQuestTargetActor(struct APawn* Pawn, struct UObject* Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestTargetActor // Final|Native|Static|Public // @ game+0x4729de0
+	void SetQuestSecondaryTargetActor(struct APawn* Pawn, struct UObject* Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestSecondaryTargetActor // Final|Native|Static|Public // @ game+0x4729d30
+	void SetQuestLookAtActor(struct APawn* Pawn, struct UObject* Value); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetQuestLookAtActor // Final|Native|Static|Public // @ game+0x4729c80
+	void SetAreaOfOperation(TScriptInterface<struct UAIAreaOfOperationInterface> AIAreaOfOperationInterface, struct FVector AreaLocation, float AreaRadius); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.SetAreaOfOperation // Final|Native|Static|Public|HasOutParms|HasDefaults // @ game+0x4729170
+	void ClearQuestTargetLocation(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestTargetLocation // Final|Native|Static|Public // @ game+0x4728280
+	void ClearQuestTargetActor(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestTargetActor // Final|Native|Static|Public // @ game+0x4728210
+	void ClearQuestSecondaryTargetActor(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestSecondaryTargetActor // Final|Native|Static|Public // @ game+0x47281a0
+	void ClearQuestLookAtActor(struct APawn* Pawn); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearQuestLookAtActor // Final|Native|Static|Public // @ game+0x4728130
+	void ClearAreaOfOperation(TScriptInterface<struct UAIAreaOfOperationInterface> AIAreaOfOperationInterface); // Function TaleAI.TaleQuestAIGoalFunctionStepLibrary.ClearAreaOfOperation // Final|Native|Static|Public // @ game+0x4727fe0
 };
 
 // Class TaleAI.TaleQuestAIHomeFunctionStepLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAIHomeFunctionStepLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetAIHome(TScriptInterface<struct UAIHomeInterface> AIHomeInterface, struct AActor* InAIHome); // Function TaleAI.TaleQuestAIHomeFunctionStepLibrary.SetAIHome // Final|Native|Static|Public // @ game+0x4726910
-	void ClearAIHome(TScriptInterface<struct UAIHomeInterface> AIHomeInterface); // Function TaleAI.TaleQuestAIHomeFunctionStepLibrary.ClearAIHome // Final|Native|Static|Public // @ game+0x4725930
+	void SetAIHome(TScriptInterface<struct UAIHomeInterface> AIHomeInterface, struct AActor* InAIHome); // Function TaleAI.TaleQuestAIHomeFunctionStepLibrary.SetAIHome // Final|Native|Static|Public // @ game+0x4728f30
+	void ClearAIHome(TScriptInterface<struct UAIHomeInterface> AIHomeInterface); // Function TaleAI.TaleQuestAIHomeFunctionStepLibrary.ClearAIHome // Final|Native|Static|Public // @ game+0x4727f50
 };
 
 // Class TaleAI.TaleQuestAINameplateFunctionLibrary
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAINameplateFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetAINamplateName(struct UAINameplateComponent* NameplateComponent, struct FText Title, struct FText Name); // Function TaleAI.TaleQuestAINameplateFunctionLibrary.SetAINamplateName // Final|Native|Public|HasOutParms|Const // @ game+0x47269e0
+	void SetAINamplateName(struct UAINameplateComponent* NameplateComponent, struct FText Title, struct FText Name); // Function TaleAI.TaleQuestAINameplateFunctionLibrary.SetAINamplateName // Final|Native|Public|HasOutParms|Const // @ game+0x4729000
 };
 
 // Class TaleAI.TaleQuestAISpawner
@@ -95,7 +95,7 @@ struct UTaleQuestAISpawner : UObject {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestAISpawnFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WaitForSpawnComplete(struct APawn* Pawn); // Function TaleAI.TaleQuestAISpawnFunctionLibrary.WaitForSpawnComplete // Final|Native|Public // @ game+0x4727c60
+	void WaitForSpawnComplete(struct APawn* Pawn); // Function TaleAI.TaleQuestAISpawnFunctionLibrary.WaitForSpawnComplete // Final|Native|Public // @ game+0x472a280
 };
 
 // Class TaleAI.TaleQuestSpawnAICustomOnDespawnFrame

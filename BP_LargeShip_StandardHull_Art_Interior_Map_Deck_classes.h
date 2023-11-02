@@ -100,6 +100,6 @@ struct ABP_LargeShip_StandardHull_Art_Interior_Map_Deck_C : AActor {
 	struct UStaticMeshComponent* shp_int_map_stairs_01_a; // 0x6c8(0x08)
 	struct UStaticMeshComponent* shp_interior_map_deck_01_a; // 0x6d0(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Interior_Map_Deck.BP_LargeShip_StandardHull_Art_Interior_Map_Deck_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Interior_Map_Deck.BP_LargeShip_StandardHull_Art_Interior_Map_Deck_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

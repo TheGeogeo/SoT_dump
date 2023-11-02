@@ -47,7 +47,7 @@ struct UTrinketLoadoutViewInterface : UInterface {
 struct ATrinketReplacementActor : AActor {
 	char UnknownData_3C8[0x10]; // 0x3c8(0x10)
 
-	void RegisterTrinketReplacementMesh(struct AActor* ActorWithTrinkets, struct UStaticMeshComponent* ReplacementMesh); // Function TrinketFramework.TrinketReplacementActor.RegisterTrinketReplacementMesh // Final|Native|Public|BlueprintCallable // @ game+0x38df8c0
+	void RegisterTrinketReplacementMesh(struct AActor* ActorWithTrinkets, struct UStaticMeshComponent* ReplacementMesh); // Function TrinketFramework.TrinketReplacementActor.RegisterTrinketReplacementMesh // Final|Native|Public|BlueprintCallable // @ game+0x38e1ed0
 };
 
 // Class TrinketFramework.TrinketSetControlInterface

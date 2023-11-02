@@ -32,7 +32,7 @@ struct UBP_Anim_ReviveGhost_C : UReviveGhostAnimationInstance {
 	struct FAnimNode_Root AnimGraphNode_StateResult_71009D984D06C31FCC34A4B43940ACA6; // 0xcc8(0x48)
 	struct FAnimNode_StateMachine AnimGraphNode_StateMachine_A6535CF945C147A307E61681E12F6CDF; // 0xd10(0xa8)
 
-	void AnimNotify_OutOfComplete(); // Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.AnimNotify_OutOfComplete // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Anim_ReviveGhost(int32_t EntryPoint); // Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.ExecuteUbergraph_BP_Anim_ReviveGhost // HasDefaults // @ game+0x18e3b10
+	void AnimNotify_OutOfComplete(); // Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.AnimNotify_OutOfComplete // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Anim_ReviveGhost(int32_t EntryPoint); // Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.ExecuteUbergraph_BP_Anim_ReviveGhost // HasDefaults // @ game+0x18e5fa0
 };
 

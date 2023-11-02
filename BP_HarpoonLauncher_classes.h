@@ -5,6 +5,6 @@ struct ABP_HarpoonLauncher_C : AHarpoonLauncher {
 	struct UCapsuleComponent* MountCollision; // 0xcb8(0x08)
 	struct UCapsuleComponent* BarrelCollision; // 0xcc0(0x08)
 
-	void UserConstructionScript(); // Function BP_HarpoonLauncher.BP_HarpoonLauncher_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_HarpoonLauncher.BP_HarpoonLauncher_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

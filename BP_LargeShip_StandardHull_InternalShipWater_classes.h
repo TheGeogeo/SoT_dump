@@ -5,12 +5,12 @@ struct ABP_LargeShip_StandardHull_InternalShipWater_C : AShipInternalWater {
 	struct UDynamicFlowComponent* DynamicFlow; // 0x628(0x08)
 	struct UCurveFloat* Foaminess; // 0x630(0x08)
 
-	void GetLineIntersectionFromPlane(struct FVector LineStart, struct FVector LineEnd, bool Intersect, struct FVector IntersectionPoint); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.GetLineIntersectionFromPlane // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetWaterLevel(float WaterLevel); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.GetWaterLevel // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetDistanceFromPlane(struct FVector Location, float Distance); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.GetDistanceFromPlane // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void AddWater(float Water Amount); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.AddWater // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_LargeShip_StandardHull_InternalShipWater(int32_t EntryPoint); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.ExecuteUbergraph_BP_LargeShip_StandardHull_InternalShipWater //  // @ game+0x18e3b10
+	void GetLineIntersectionFromPlane(struct FVector LineStart, struct FVector LineEnd, bool Intersect, struct FVector IntersectionPoint); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.GetLineIntersectionFromPlane // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetWaterLevel(float WaterLevel); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.GetWaterLevel // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetDistanceFromPlane(struct FVector Location, float Distance); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.GetDistanceFromPlane // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void AddWater(float Water Amount); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.AddWater // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_LargeShip_StandardHull_InternalShipWater(int32_t EntryPoint); // Function BP_LargeShip_StandardHull_InternalShipWater.BP_LargeShip_StandardHull_InternalShipWater_C.ExecuteUbergraph_BP_LargeShip_StandardHull_InternalShipWater //  // @ game+0x18e5fa0
 };
 

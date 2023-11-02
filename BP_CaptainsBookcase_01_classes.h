@@ -14,8 +14,8 @@ struct ABP_CaptainsBookcase_01_C : ACaptainsBookcase {
 	struct UClass* Company_Leg; // 0x6f8(0x08)
 	struct UClass* Company_Merc; // 0x700(0x08)
 
-	void UserConstructionScript(); // Function BP_CaptainsBookcase_01.BP_CaptainsBookcase_01_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GatherIndicators(); // Function BP_CaptainsBookcase_01.BP_CaptainsBookcase_01_C.GatherIndicators // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_CaptainsBookcase_01(int32_t EntryPoint); // Function BP_CaptainsBookcase_01.BP_CaptainsBookcase_01_C.ExecuteUbergraph_BP_CaptainsBookcase_01 //  // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_CaptainsBookcase_01.BP_CaptainsBookcase_01_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GatherIndicators(); // Function BP_CaptainsBookcase_01.BP_CaptainsBookcase_01_C.GatherIndicators // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_CaptainsBookcase_01(int32_t EntryPoint); // Function BP_CaptainsBookcase_01.BP_CaptainsBookcase_01_C.ExecuteUbergraph_BP_CaptainsBookcase_01 //  // @ game+0x18e5fa0
 };
 

@@ -18,6 +18,6 @@ struct ABP_LargeShipLanterns_C : AActor {
 	struct UChildActorComponent* Cabin_Entrance; // 0x438(0x08)
 	struct USceneComponent* DefaultSceneRoot; // 0x440(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShipLanterns.BP_LargeShipLanterns_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShipLanterns.BP_LargeShipLanterns_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -295,7 +295,7 @@ struct UAdventureOnDemandYieldQuestResumeOnConditionsTaleStep : UTaleQuestStep {
 // Size: 0x180 (Inherited: 0x180)
 struct UAdventureOnDemandTaleFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	bool CompareOnDemandQuestResumeConditionMetReason(char Left, char Right); // Function AdventureOnDemandFramework.AdventureOnDemandTaleFunctionLibrary.CompareOnDemandQuestResumeConditionMetReason // Final|Native|Static|Public // @ game+0x4a777d0
+	bool CompareOnDemandQuestResumeConditionMetReason(char Left, char Right); // Function AdventureOnDemandFramework.AdventureOnDemandTaleFunctionLibrary.CompareOnDemandQuestResumeConditionMetReason // Final|Native|Static|Public // @ game+0x4a79df0
 };
 
 // Class AdventureOnDemandFramework.AdventureOnDemandYieldQuestResumeOnConditionsStepDesc

@@ -177,17 +177,17 @@ struct ABP_LargeShipTemplate_C : AShip {
 	char UnknownData_1DF9[0x7]; // 0x1df9(0x07)
 	struct UTimelineComponent* Timeline_DisableSplash1; // 0x1e00(0x08)
 
-	void IsPlayerOnShip(bool PlayerOnShip); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.IsPlayerOnShip // Private|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	char GetPxActorCapacityForPhysXAggregate(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const // @ game+0x18e3b10
-	void SetupMastControls(struct UChildActorComponent* LeftHoist, struct UChildActorComponent* RightHoist, struct UChildActorComponent* LeftAngle, struct UChildActorComponent* RightAngle, struct FName RiggingGroupName); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Timeline_DisableSplash1__FinishedFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_DisableSplash1__FinishedFunc // BlueprintEvent // @ game+0x18e3b10
-	void Timeline_DisableSplash1__UpdateFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_DisableSplash1__UpdateFunc // BlueprintEvent // @ game+0x18e3b10
-	void Timeline_Disable_Secondary__FinishedFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_Disable_Secondary__FinishedFunc // BlueprintEvent // @ game+0x18e3b10
-	void Timeline_Disable_Secondary__UpdateFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_Disable_Secondary__UpdateFunc // BlueprintEvent // @ game+0x18e3b10
-	void OnPlayerShipBeginSurface(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.OnPlayerShipBeginSurface // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnPlayerShipDive(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.OnPlayerShipDive // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnPlayerShipSailing(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.OnPlayerShipSailing // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_LargeShipTemplate(int32_t EntryPoint); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.ExecuteUbergraph_BP_LargeShipTemplate //  // @ game+0x18e3b10
+	void IsPlayerOnShip(bool PlayerOnShip); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.IsPlayerOnShip // Private|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	char GetPxActorCapacityForPhysXAggregate(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const // @ game+0x18e5fa0
+	void SetupMastControls(struct UChildActorComponent* LeftHoist, struct UChildActorComponent* RightHoist, struct UChildActorComponent* LeftAngle, struct UChildActorComponent* RightAngle, struct FName RiggingGroupName); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Timeline_DisableSplash1__FinishedFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_DisableSplash1__FinishedFunc // BlueprintEvent // @ game+0x18e5fa0
+	void Timeline_DisableSplash1__UpdateFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_DisableSplash1__UpdateFunc // BlueprintEvent // @ game+0x18e5fa0
+	void Timeline_Disable_Secondary__FinishedFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_Disable_Secondary__FinishedFunc // BlueprintEvent // @ game+0x18e5fa0
+	void Timeline_Disable_Secondary__UpdateFunc(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.Timeline_Disable_Secondary__UpdateFunc // BlueprintEvent // @ game+0x18e5fa0
+	void OnPlayerShipBeginSurface(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.OnPlayerShipBeginSurface // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnPlayerShipDive(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.OnPlayerShipDive // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnPlayerShipSailing(); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.OnPlayerShipSailing // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_LargeShipTemplate(int32_t EntryPoint); // Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.ExecuteUbergraph_BP_LargeShipTemplate //  // @ game+0x18e5fa0
 };
 

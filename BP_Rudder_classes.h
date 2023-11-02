@@ -4,6 +4,6 @@ struct ABP_Rudder_C : ARudder {
 	struct UStaticMeshComponent* StaticMesh; // 0x440(0x08)
 	struct USceneComponent* Root; // 0x448(0x08)
 
-	void UserConstructionScript(); // Function BP_Rudder.BP_Rudder_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Rudder.BP_Rudder_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -23,8 +23,8 @@ struct UOceanCrawlerAnimationInstance : UAnimInstance {
 	struct FHitReactionAnimationState HitReacts; // 0x6a8(0x28)
 	char UnknownData_6D0[0x50]; // 0x6d0(0x50)
 
-	void ClearActiveAttack(); // Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack // Final|Native|Public|BlueprintCallable // @ game+0x1594820
-	void BeginNewAttack(); // Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack // Final|Native|Public|BlueprintCallable // @ game+0x1594800
+	void ClearActiveAttack(); // Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack // Final|Native|Public|BlueprintCallable // @ game+0x1596cb0
+	void BeginNewAttack(); // Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack // Final|Native|Public|BlueprintCallable // @ game+0x1596c90
 };
 
 // Class OceanCrawlersAnimation.OceanCrawlerAnimationServerData

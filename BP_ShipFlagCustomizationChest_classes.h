@@ -3,6 +3,6 @@
 struct ABP_ShipFlagCustomizationChest_C : AShipFlagCustomizationChest {
 	struct UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x620(0x08)
 
-	void UserConstructionScript(); // Function BP_ShipFlagCustomizationChest.BP_ShipFlagCustomizationChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ShipFlagCustomizationChest.BP_ShipFlagCustomizationChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -137,25 +137,25 @@ struct AAIController : AController {
 	struct FMulticastDelegate ReceiveMoveCompleted; // 0x498(0x10)
 	char UnknownData_4A8[0x10]; // 0x4a8(0x10)
 
-	bool UseBlackboard(struct UBlackboardData* BlackboardAsset, struct UBlackboardComponent* BlackboardComponent); // Function AIModule.AIController.UseBlackboard // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a8660
-	void SetMoveBlockDetection(bool bEnable); // Function AIModule.AIController.SetMoveBlockDetection // Final|Native|Public|BlueprintCallable // @ game+0x24a75d0
-	bool RunBehaviorTree(struct UBehaviorTree* BTAsset); // Function AIModule.AIController.RunBehaviorTree // Native|Public|BlueprintCallable // @ game+0x24a6380
-	void OnUsingBlackBoard(struct UBlackboardComponent* BlackboardComp, struct UBlackboardData* BlackboardAsset); // Function AIModule.AIController.OnUsingBlackBoard // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void OnPossess(struct APawn* PossessedPawn); // Function AIModule.AIController.OnPossess // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnGameplayTaskResourcesClaimed(struct FGameplayResourceSet NewlyClaimed, struct FGameplayResourceSet FreshlyReleased); // Function AIModule.AIController.OnGameplayTaskResourcesClaimed // Native|Public // @ game+0x24a5860
-	char MoveToLocation(struct FVector Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, struct UClass* FilterClass, bool bAllowPartialPath); // Function AIModule.AIController.MoveToLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a5450
-	char MoveToActor(struct AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, struct UClass* FilterClass, bool bAllowPartialPath); // Function AIModule.AIController.MoveToActor // Final|Native|Public|BlueprintCallable // @ game+0x24a5230
-	void K2_SetFocus(struct AActor* NewFocus); // Function AIModule.AIController.K2_SetFocus // Final|Native|Public|BlueprintCallable // @ game+0x24a50a0
-	void K2_SetFocalPoint(struct FVector FP); // Function AIModule.AIController.K2_SetFocalPoint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x24a5010
-	void K2_ClearFocus(); // Function AIModule.AIController.K2_ClearFocus // Final|Native|Public|BlueprintCallable // @ game+0x24a4d60
-	bool HasPartialPath(); // Function AIModule.AIController.HasPartialPath // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a48d0
-	struct UPathFollowingComponent* GetPathFollowingComponent(); // Function AIModule.AIController.GetPathFollowingComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3be0
-	char GetMoveStatus(); // Function AIModule.AIController.GetMoveStatus // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3a40
-	struct FVector GetImmediateMoveDestination(); // Function AIModule.AIController.GetImmediateMoveDestination // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3880
-	struct AActor* GetFocusActor(); // Function AIModule.AIController.GetFocusActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3850
-	struct FVector GetFocalPointOnActor(struct AActor* Actor); // Function AIModule.AIController.GetFocalPointOnActor // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a37a0
-	struct FVector GetFocalPoint(); // Function AIModule.AIController.GetFocalPoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3760
-	struct UAIPerceptionComponent* GetAIPerceptionComponent(); // Function AIModule.AIController.GetAIPerceptionComponent // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a28a0
+	bool UseBlackboard(struct UBlackboardData* BlackboardAsset, struct UBlackboardComponent* BlackboardComponent); // Function AIModule.AIController.UseBlackboard // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24aaaf0
+	void SetMoveBlockDetection(bool bEnable); // Function AIModule.AIController.SetMoveBlockDetection // Final|Native|Public|BlueprintCallable // @ game+0x24a9a60
+	bool RunBehaviorTree(struct UBehaviorTree* BTAsset); // Function AIModule.AIController.RunBehaviorTree // Native|Public|BlueprintCallable // @ game+0x24a8810
+	void OnUsingBlackBoard(struct UBlackboardComponent* BlackboardComp, struct UBlackboardData* BlackboardAsset); // Function AIModule.AIController.OnUsingBlackBoard // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void OnPossess(struct APawn* PossessedPawn); // Function AIModule.AIController.OnPossess // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnGameplayTaskResourcesClaimed(struct FGameplayResourceSet NewlyClaimed, struct FGameplayResourceSet FreshlyReleased); // Function AIModule.AIController.OnGameplayTaskResourcesClaimed // Native|Public // @ game+0x24a7cf0
+	char MoveToLocation(struct FVector Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, struct UClass* FilterClass, bool bAllowPartialPath); // Function AIModule.AIController.MoveToLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a78e0
+	char MoveToActor(struct AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, struct UClass* FilterClass, bool bAllowPartialPath); // Function AIModule.AIController.MoveToActor // Final|Native|Public|BlueprintCallable // @ game+0x24a76c0
+	void K2_SetFocus(struct AActor* NewFocus); // Function AIModule.AIController.K2_SetFocus // Final|Native|Public|BlueprintCallable // @ game+0x24a7530
+	void K2_SetFocalPoint(struct FVector FP); // Function AIModule.AIController.K2_SetFocalPoint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x24a74a0
+	void K2_ClearFocus(); // Function AIModule.AIController.K2_ClearFocus // Final|Native|Public|BlueprintCallable // @ game+0x24a71f0
+	bool HasPartialPath(); // Function AIModule.AIController.HasPartialPath // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6d60
+	struct UPathFollowingComponent* GetPathFollowingComponent(); // Function AIModule.AIController.GetPathFollowingComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6070
+	char GetMoveStatus(); // Function AIModule.AIController.GetMoveStatus // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a5ed0
+	struct FVector GetImmediateMoveDestination(); // Function AIModule.AIController.GetImmediateMoveDestination // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a5d10
+	struct AActor* GetFocusActor(); // Function AIModule.AIController.GetFocusActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a5ce0
+	struct FVector GetFocalPointOnActor(struct AActor* Actor); // Function AIModule.AIController.GetFocalPointOnActor // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a5c30
+	struct FVector GetFocalPoint(); // Function AIModule.AIController.GetFocalPoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a5bf0
+	struct UAIPerceptionComponent* GetAIPerceptionComponent(); // Function AIModule.AIController.GetAIPerceptionComponent // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a4d30
 };
 
 // Class AIModule.PathFollowingComponent
@@ -170,9 +170,9 @@ struct UPathFollowingComponent : UActorComponent {
 	char UnknownData_1F4_1 : 7; // 0x1f4(0x01)
 	char UnknownData_1F5[0xc3]; // 0x1f5(0xc3)
 
-	void OnActorBump(struct AActor* SelfActor, struct AActor* OtherActor, struct FVector NormalImpulse, struct FHitResult Hit); // Function AIModule.PathFollowingComponent.OnActorBump // Native|Public|HasOutParms|HasDefaults // @ game+0x24a56c0
-	struct FVector GetPathDestination(); // Function AIModule.PathFollowingComponent.GetPathDestination // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3ba0
-	char GetPathActionType(); // Function AIModule.PathFollowingComponent.GetPathActionType // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3b70
+	void OnActorBump(struct AActor* SelfActor, struct AActor* OtherActor, struct FVector NormalImpulse, struct FHitResult Hit); // Function AIModule.PathFollowingComponent.OnActorBump // Native|Public|HasOutParms|HasDefaults // @ game+0x24a7b50
+	struct FVector GetPathDestination(); // Function AIModule.PathFollowingComponent.GetPathDestination // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6030
+	char GetPathActionType(); // Function AIModule.PathFollowingComponent.GetPathActionType // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6000
 };
 
 // Class AIModule.AIResourceInterface
@@ -187,23 +187,23 @@ struct UAIAsyncTaskBlueprintProxy : UObject {
 	struct FMulticastDelegate OnFail; // 0x38(0x10)
 	char UnknownData_48[0x18]; // 0x48(0x18)
 
-	void OnMoveCompleted(struct FAIRequestID RequestID, char MovementResult); // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted // Final|Native|Public // @ game+0x24a5930
+	void OnMoveCompleted(struct FAIRequestID RequestID, char MovementResult); // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted // Final|Native|Public // @ game+0x24a7dc0
 };
 
 // Class AIModule.AIBlueprintHelperLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UAIBlueprintHelperLibrary : UBlueprintFunctionLibrary {
 
-	void UnlockAIResourcesWithAnimation(struct UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic); // Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x24a84b0
-	struct APawn* SpawnAIFromClass(struct UObject* WorldContextObject, struct UClass* PawnClass, struct UBehaviorTree* BehaviorTree, struct FVector Location, struct FRotator Rotation, bool bNoCollisionFail); // Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a8080
-	void SendAIMessage(struct APawn* Target, struct FName Message, struct UObject* MessageSource, bool bSuccess); // Function AIModule.AIBlueprintHelperLibrary.SendAIMessage // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a65b0
-	void LockAIResourcesWithAnimation(struct UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic); // Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x24a5120
-	bool IsValidAIRotation(struct FRotator Rotation); // Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a4ba0
-	bool IsValidAILocation(struct FVector Location); // Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a4b10
-	bool IsValidAIDirection(struct FVector DirectionVector); // Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a4a80
-	struct UBlackboardComponent* GetBlackboard(struct AActor* Target); // Function AIModule.AIBlueprintHelperLibrary.GetBlackboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24a2b60
-	struct AAIController* GetAIController(struct AActor* ControlledActor); // Function AIModule.AIBlueprintHelperLibrary.GetAIController // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a2820
-	struct UAIAsyncTaskBlueprintProxy* CreateMoveToProxyObject(struct UObject* WorldContextObject, struct APawn* Pawn, struct FVector Destination, struct AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap); // Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a2490
+	void UnlockAIResourcesWithAnimation(struct UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic); // Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x24aa940
+	struct APawn* SpawnAIFromClass(struct UObject* WorldContextObject, struct UClass* PawnClass, struct UBehaviorTree* BehaviorTree, struct FVector Location, struct FRotator Rotation, bool bNoCollisionFail); // Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24aa510
+	void SendAIMessage(struct APawn* Target, struct FName Message, struct UObject* MessageSource, bool bSuccess); // Function AIModule.AIBlueprintHelperLibrary.SendAIMessage // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a8a40
+	void LockAIResourcesWithAnimation(struct UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic); // Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x24a75b0
+	bool IsValidAIRotation(struct FRotator Rotation); // Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a7030
+	bool IsValidAILocation(struct FVector Location); // Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a6fa0
+	bool IsValidAIDirection(struct FVector DirectionVector); // Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a6f10
+	struct UBlackboardComponent* GetBlackboard(struct AActor* Target); // Function AIModule.AIBlueprintHelperLibrary.GetBlackboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24a4ff0
+	struct AAIController* GetAIController(struct AActor* ControlledActor); // Function AIModule.AIBlueprintHelperLibrary.GetAIController // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a4cb0
+	struct UAIAsyncTaskBlueprintProxy* CreateMoveToProxyObject(struct UObject* WorldContextObject, struct APawn* Pawn, struct FVector Destination, struct AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap); // Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a4920
 };
 
 // Class AIModule.PawnActionsComponent
@@ -215,10 +215,10 @@ struct UPawnActionsComponent : UActorComponent {
 	struct UPawnAction* CurrentAction; // 0xf0(0x08)
 	char UnknownData_F8[0x8]; // 0xf8(0x08)
 
-	bool K2_PushAction(struct UPawnAction* NewAction, char Priority, struct UObject* Instigator); // Function AIModule.PawnActionsComponent.K2_PushAction // Final|Native|Public|BlueprintCallable // @ game+0x24a4f10
-	bool K2_PerformAction(struct APawn* Pawn, struct UPawnAction* Action, char Priority); // Function AIModule.PawnActionsComponent.K2_PerformAction // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a4e10
-	char K2_ForceAbortAction(struct UPawnAction* ActionToAbort); // Function AIModule.PawnActionsComponent.K2_ForceAbortAction // Final|Native|Public|BlueprintCallable // @ game+0x24a4d80
-	char K2_AbortAction(struct UPawnAction* ActionToAbort); // Function AIModule.PawnActionsComponent.K2_AbortAction // Final|Native|Public|BlueprintCallable // @ game+0x24a4cd0
+	bool K2_PushAction(struct UPawnAction* NewAction, char Priority, struct UObject* Instigator); // Function AIModule.PawnActionsComponent.K2_PushAction // Final|Native|Public|BlueprintCallable // @ game+0x24a73a0
+	bool K2_PerformAction(struct APawn* Pawn, struct UPawnAction* Action, char Priority); // Function AIModule.PawnActionsComponent.K2_PerformAction // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a72a0
+	char K2_ForceAbortAction(struct UPawnAction* ActionToAbort); // Function AIModule.PawnActionsComponent.K2_ForceAbortAction // Final|Native|Public|BlueprintCallable // @ game+0x24a7210
+	char K2_AbortAction(struct UPawnAction* ActionToAbort); // Function AIModule.PawnActionsComponent.K2_AbortAction // Final|Native|Public|BlueprintCallable // @ game+0x24a7160
 };
 
 // Class AIModule.AIPerceptionListenerInterface
@@ -299,8 +299,8 @@ struct UAISystem : UAISystemBase {
 	struct UAIHotSpotManager* HotSpotManager; // 0x90(0x08)
 	char UnknownData_98[0x58]; // 0x98(0x58)
 
-	void AILoggingVerbose(); // Function AIModule.AISystem.AILoggingVerbose // Exec|Native|Public // @ game+0x24a1bc0
-	void AIIgnorePlayers(); // Function AIModule.AISystem.AIIgnorePlayers // Exec|Native|Public // @ game+0x24a1ba0
+	void AILoggingVerbose(); // Function AIModule.AISystem.AILoggingVerbose // Exec|Native|Public // @ game+0x24a4050
+	void AIIgnorePlayers(); // Function AIModule.AISystem.AIIgnorePlayers // Exec|Native|Public // @ game+0x24a4030
 };
 
 // Class AIModule.AISense
@@ -328,11 +328,11 @@ struct UAIPerceptionSystem : UObject {
 	float PerceptionAgingRate; // 0x90(0x04)
 	char UnknownData_94[0x94]; // 0x94(0x94)
 
-	void ReportPerceptionEvent(struct UObject* WorldContext, struct UAISenseEvent* PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a6090
-	void ReportEvent(struct UAISenseEvent* PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportEvent // Final|Native|Public|BlueprintCallable // @ game+0x24a5e50
-	bool RegisterPerceptionStimuliSource(struct UObject* WorldContext, struct UClass* Sense, struct AActor* Target); // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a5b70
-	void OnPerceptionStimuliSourceEndPlay(char EndPlayReason); // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay // Final|Native|Protected // @ game+0x24a5a70
-	struct UClass* GetSenseClassForStimulus(struct UObject* WorldContext, struct FAIStimulus Stimulus); // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a4050
+	void ReportPerceptionEvent(struct UObject* WorldContext, struct UAISenseEvent* PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a8520
+	void ReportEvent(struct UAISenseEvent* PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportEvent // Final|Native|Public|BlueprintCallable // @ game+0x24a82e0
+	bool RegisterPerceptionStimuliSource(struct UObject* WorldContext, struct UClass* Sense, struct AActor* Target); // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a8000
+	void OnPerceptionStimuliSourceEndPlay(char EndPlayReason); // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay // Final|Native|Protected // @ game+0x24a7f00
+	struct UClass* GetSenseClassForStimulus(struct UObject* WorldContext, struct FAIStimulus Stimulus); // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a64e0
 };
 
 // Class AIModule.AIPerceptionComponent
@@ -353,12 +353,12 @@ struct UAIPerceptionComponent : UActorComponent {
 	struct FMulticastDelegate OnTargetPerceptionUpdated; // 0x1a0(0x10)
 	char UnknownData_1B0[0x18]; // 0x1b0(0x18)
 
-	void RequestStimuliListenerUpdate(); // Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate // Final|Native|Public|BlueprintCallable // @ game+0x24a6340
-	void OnOwnerEndPlay(char EndPlayReason); // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay // Final|Native|Public // @ game+0x24a59f0
-	bool IsIgnored(struct AActor* Actor); // Function AIModule.AIPerceptionComponent.IsIgnored // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4960
-	void GetPerceivedHostileActors(struct TArray<struct AActor*> OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3d00
-	void GetPerceivedActors(struct UClass* SenseToUse, struct TArray<struct AActor*> OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3c10
-	bool GetActorsPerception(struct AActor* Actor, struct FActorPerceptionBlueprintInfo Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a28f0
+	void RequestStimuliListenerUpdate(); // Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate // Final|Native|Public|BlueprintCallable // @ game+0x24a87d0
+	void OnOwnerEndPlay(char EndPlayReason); // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay // Final|Native|Public // @ game+0x24a7e80
+	bool IsIgnored(struct AActor* Actor); // Function AIModule.AIPerceptionComponent.IsIgnored // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6df0
+	void GetPerceivedHostileActors(struct TArray<struct AActor*> OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6190
+	void GetPerceivedActors(struct UClass* SenseToUse, struct TArray<struct AActor*> OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a60a0
+	bool GetActorsPerception(struct AActor* Actor, struct FActorPerceptionBlueprintInfo Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a4d80
 };
 
 // Class AIModule.AIPerceptionStimuliSourceComponent
@@ -369,10 +369,10 @@ struct UAIPerceptionStimuliSourceComponent : UActorComponent {
 	char UnknownData_C9[0x7]; // 0xc9(0x07)
 	struct TArray<struct UClass*> RegisterAsSourceForSenses; // 0xd0(0x10)
 
-	void UnregisterFromSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense // Final|Native|Public|BlueprintCallable // @ game+0x24a85e0
-	void UnregisterFromPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem // Final|Native|Public|BlueprintCallable // @ game+0x24a85c0
-	void RegisterWithPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem // Final|Native|Public|BlueprintCallable // @ game+0x24a5c60
-	void RegisterForSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense // Final|Native|Public|BlueprintCallable // @ game+0x24a5af0
+	void UnregisterFromSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense // Final|Native|Public|BlueprintCallable // @ game+0x24aaa70
+	void UnregisterFromPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem // Final|Native|Public|BlueprintCallable // @ game+0x24aaa50
+	void RegisterWithPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem // Final|Native|Public|BlueprintCallable // @ game+0x24a80f0
+	void RegisterForSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense // Final|Native|Public|BlueprintCallable // @ game+0x24a7f80
 };
 
 // Class AIModule.AIResource_Movement
@@ -392,13 +392,13 @@ struct UAISense_Blueprint : UAISense {
 	struct TArray<struct UAIPerceptionComponent*> ListenerContainer; // 0x90(0x10)
 	struct TArray<struct UAISenseEvent*> UnprocessedEvents; // 0xa0(0x10)
 
-	float OnUpdate(struct TArray<struct UAISenseEvent*> EventsToProcess); // Function AIModule.AISense_Blueprint.OnUpdate // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e3b10
-	void OnListenerUpdated(struct AActor* ActorListener, struct UAIPerceptionComponent* PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUpdated // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnListenerUnregistered(struct AActor* ActorListener, struct UAIPerceptionComponent* PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUnregistered // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnListenerRegistered(struct AActor* ActorListener, struct UAIPerceptionComponent* PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerRegistered // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnNewPawn(struct APawn* NewPawn); // Function AIModule.AISense_Blueprint.K2_OnNewPawn // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void GetAllListenerComponents(struct TArray<struct UAIPerceptionComponent*> ListenerComponents); // Function AIModule.AISense_Blueprint.GetAllListenerComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a2ab0
-	void GetAllListenerActors(struct TArray<struct AActor*> ListenerActors); // Function AIModule.AISense_Blueprint.GetAllListenerActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a2a00
+	float OnUpdate(struct TArray<struct UAISenseEvent*> EventsToProcess); // Function AIModule.AISense_Blueprint.OnUpdate // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
+	void OnListenerUpdated(struct AActor* ActorListener, struct UAIPerceptionComponent* PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUpdated // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnListenerUnregistered(struct AActor* ActorListener, struct UAIPerceptionComponent* PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUnregistered // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnListenerRegistered(struct AActor* ActorListener, struct UAIPerceptionComponent* PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerRegistered // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnNewPawn(struct APawn* NewPawn); // Function AIModule.AISense_Blueprint.K2_OnNewPawn // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void GetAllListenerComponents(struct TArray<struct UAIPerceptionComponent*> ListenerComponents); // Function AIModule.AISense_Blueprint.GetAllListenerComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4f40
+	void GetAllListenerActors(struct TArray<struct AActor*> ListenerActors); // Function AIModule.AISense_Blueprint.GetAllListenerActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4e90
 };
 
 // Class AIModule.AISense_Damage
@@ -406,7 +406,7 @@ struct UAISense_Blueprint : UAISense {
 struct UAISense_Damage : UAISense {
 	struct TArray<struct FAIDamageEvent> RegisteredEvents; // 0x88(0x10)
 
-	void ReportDamageEvent(struct UObject* WorldContext, struct AActor* DamagedActor, struct AActor* Instigator, float DamageAmount, struct FVector EventLocation, struct FVector HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a5c80
+	void ReportDamageEvent(struct UObject* WorldContext, struct AActor* DamagedActor, struct AActor* Instigator, float DamageAmount, struct FVector EventLocation, struct FVector HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a8110
 };
 
 // Class AIModule.AISense_Hearing
@@ -421,7 +421,7 @@ struct UAISense_Hearing : UAISense {
 	float SpeedOfSoundSq; // 0xc8(0x04)
 	char UnknownData_CC[0x54]; // 0xcc(0x54)
 
-	void ReportNoiseEvent(struct UObject* WorldContext, struct FVector NoiseLocation, float Loudness, struct AActor* Instigator, float MaxRange, struct FName Tag); // Function AIModule.AISense_Hearing.ReportNoiseEvent // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a5ed0
+	void ReportNoiseEvent(struct UObject* WorldContext, struct FVector NoiseLocation, float Loudness, struct AActor* Instigator, float MaxRange, struct FName Tag); // Function AIModule.AISense_Hearing.ReportNoiseEvent // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a8360
 };
 
 // Class AIModule.AISense_Prediction
@@ -429,8 +429,8 @@ struct UAISense_Hearing : UAISense {
 struct UAISense_Prediction : UAISense {
 	struct TArray<struct FAIPredictionEvent> RegisteredEvents; // 0x88(0x10)
 
-	void RequestPawnPredictionEvent(struct APawn* Requestor, struct AActor* PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a6240
-	void RequestControllerPredictionEvent(struct AAIController* Requestor, struct AActor* PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a6140
+	void RequestPawnPredictionEvent(struct APawn* Requestor, struct AActor* PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a86d0
+	void RequestControllerPredictionEvent(struct AAIController* Requestor, struct AActor* PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a85d0
 };
 
 // Class AIModule.AISense_Sight
@@ -564,7 +564,7 @@ struct UAITask_MoveTo : UAITask {
 	bool bShouldUsePathfinding; // 0xa6(0x01)
 	char UnknownData_A7[0x9]; // 0xa7(0x09)
 
-	struct UAITask_MoveTo* AIMoveTo(struct AAIController* Controller, struct FVector GoalLocation, struct AActor* GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic); // Function AIModule.AITask_MoveTo.AIMoveTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a1be0
+	struct UAITask_MoveTo* AIMoveTo(struct AAIController* Controller, struct FVector GoalLocation, struct AActor* GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic); // Function AIModule.AITask_MoveTo.AIMoveTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x24a4070
 };
 
 // Class AIModule.BrainComponent
@@ -575,8 +575,8 @@ struct UBrainComponent : UActorComponent {
 	struct AAIController* AIOwner; // 0xd8(0x08)
 	char UnknownData_E0[0x48]; // 0xe0(0x48)
 
-	void StopLogic(struct FString Reason); // Function AIModule.BrainComponent.StopLogic // Native|Public|BlueprintCallable // @ game+0x24a8300
-	void RestartLogic(); // Function AIModule.BrainComponent.RestartLogic // Native|Public|BlueprintCallable // @ game+0x24a6360
+	void StopLogic(struct FString Reason); // Function AIModule.BrainComponent.StopLogic // Native|Public|BlueprintCallable // @ game+0x24aa790
+	void RestartLogic(); // Function AIModule.BrainComponent.RestartLogic // Native|Public|BlueprintCallable // @ game+0x24a87f0
 };
 
 // Class AIModule.BehaviorTreeComponent
@@ -586,9 +586,9 @@ struct UBehaviorTreeComponent : UBrainComponent {
 	struct TArray<struct UBTNode*> NodeInstances; // 0x148(0x10)
 	char UnknownData_158[0x130]; // 0x158(0x130)
 
-	void SetDynamicSubtree(struct FGameplayTag InjectTag, struct UBehaviorTree* BehaviorAsset); // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree // Native|Public|BlueprintCallable // @ game+0x24a73c0
-	float GetTagCooldownEndTime(struct FGameplayTag CooldownTag); // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4180
-	void AddCooldownTagDuration(struct FGameplayTag CooldownTag, float CoolDownDuration, bool bAddToExistingDuration); // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration // Final|Native|Public|BlueprintCallable // @ game+0x24a1e20
+	void SetDynamicSubtree(struct FGameplayTag InjectTag, struct UBehaviorTree* BehaviorAsset); // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree // Native|Public|BlueprintCallable // @ game+0x24a9850
+	float GetTagCooldownEndTime(struct FGameplayTag CooldownTag); // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6610
+	void AddCooldownTagDuration(struct FGameplayTag CooldownTag, float CoolDownDuration, bool bAddToExistingDuration); // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration // Final|Native|Public|BlueprintCallable // @ game+0x24a42b0
 };
 
 // Class AIModule.BTCompositeNode
@@ -654,32 +654,32 @@ struct UBlackboardComponent : UActorComponent {
 	struct TArray<struct UBlackboardKeyType*> KeyInstances; // 0xf8(0x10)
 	char UnknownData_108[0x108]; // 0x108(0x108)
 
-	void SetValueAsVector(struct FName KeyName, struct FVector VectorValue); // Function AIModule.BlackboardComponent.SetValueAsVector // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a7f90
-	void SetValueAsString(struct FName KeyName, struct FString StringValue); // Function AIModule.BlackboardComponent.SetValueAsString // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a7e90
-	void SetValueAsRotator(struct FName KeyName, struct FRotator VectorValue); // Function AIModule.BlackboardComponent.SetValueAsRotator // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a7da0
-	void SetValueAsObject(struct FName KeyName, struct UObject* ObjectValue); // Function AIModule.BlackboardComponent.SetValueAsObject // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a7cd0
-	void SetValueAsName(struct FName KeyName, struct FName NameValue); // Function AIModule.BlackboardComponent.SetValueAsName // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a7c00
-	void SetValueAsInt(struct FName KeyName, int32_t IntValue); // Function AIModule.BlackboardComponent.SetValueAsInt // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a7b30
-	void SetValueAsFloat(struct FName KeyName, float FloatValue); // Function AIModule.BlackboardComponent.SetValueAsFloat // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a7a60
-	void SetValueAsEnum(struct FName KeyName, char EnumValue); // Function AIModule.BlackboardComponent.SetValueAsEnum // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a7990
-	void SetValueAsClass(struct FName KeyName, struct UClass* ClassValue); // Function AIModule.BlackboardComponent.SetValueAsClass // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a78c0
-	void SetValueAsBool(struct FName KeyName, bool BoolValue); // Function AIModule.BlackboardComponent.SetValueAsBool // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a77f0
-	bool IsVectorValueSet(struct FName KeyName); // Function AIModule.BlackboardComponent.IsVectorValueSet // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4c30
-	struct FVector GetValueAsVector(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsVector // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4820
-	struct FString GetValueAsString(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsString // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4720
-	struct FRotator GetValueAsRotator(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsRotator // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4670
-	struct UObject* GetValueAsObject(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsObject // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a45d0
-	struct FName GetValueAsName(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsName // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4530
-	int32_t GetValueAsInt(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsInt // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4490
-	float GetValueAsFloat(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsFloat // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a43f0
-	char GetValueAsEnum(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsEnum // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4350
-	struct UClass* GetValueAsClass(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsClass // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a42b0
-	bool GetValueAsBool(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsBool // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4210
-	bool GetRotationFromEntry(struct FName KeyName, struct FRotator ResultRotation); // Function AIModule.BlackboardComponent.GetRotationFromEntry // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3f60
-	bool GetLocationFromEntry(struct FName KeyName, struct FVector ResultLocation); // Function AIModule.BlackboardComponent.GetLocationFromEntry // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3950
-	void ClearValueAsVector(struct FName KeyName); // Function AIModule.BlackboardComponent.ClearValueAsVector // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a2340
-	void ClearValueAsRotator(struct FName KeyName); // Function AIModule.BlackboardComponent.ClearValueAsRotator // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a22b0
-	void ClearValue(struct FName KeyName); // Function AIModule.BlackboardComponent.ClearValue // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a2220
+	void SetValueAsVector(struct FName KeyName, struct FVector VectorValue); // Function AIModule.BlackboardComponent.SetValueAsVector // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24aa420
+	void SetValueAsString(struct FName KeyName, struct FString StringValue); // Function AIModule.BlackboardComponent.SetValueAsString // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24aa320
+	void SetValueAsRotator(struct FName KeyName, struct FRotator VectorValue); // Function AIModule.BlackboardComponent.SetValueAsRotator // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24aa230
+	void SetValueAsObject(struct FName KeyName, struct UObject* ObjectValue); // Function AIModule.BlackboardComponent.SetValueAsObject // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24aa160
+	void SetValueAsName(struct FName KeyName, struct FName NameValue); // Function AIModule.BlackboardComponent.SetValueAsName // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24aa090
+	void SetValueAsInt(struct FName KeyName, int32_t IntValue); // Function AIModule.BlackboardComponent.SetValueAsInt // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a9fc0
+	void SetValueAsFloat(struct FName KeyName, float FloatValue); // Function AIModule.BlackboardComponent.SetValueAsFloat // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a9ef0
+	void SetValueAsEnum(struct FName KeyName, char EnumValue); // Function AIModule.BlackboardComponent.SetValueAsEnum // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a9e20
+	void SetValueAsClass(struct FName KeyName, struct UClass* ClassValue); // Function AIModule.BlackboardComponent.SetValueAsClass // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a9d50
+	void SetValueAsBool(struct FName KeyName, bool BoolValue); // Function AIModule.BlackboardComponent.SetValueAsBool // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a9c80
+	bool IsVectorValueSet(struct FName KeyName); // Function AIModule.BlackboardComponent.IsVectorValueSet // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a70c0
+	struct FVector GetValueAsVector(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsVector // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6cb0
+	struct FString GetValueAsString(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsString // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6bb0
+	struct FRotator GetValueAsRotator(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsRotator // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6b00
+	struct UObject* GetValueAsObject(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsObject // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6a60
+	struct FName GetValueAsName(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsName // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a69c0
+	int32_t GetValueAsInt(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsInt // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6920
+	float GetValueAsFloat(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsFloat // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6880
+	char GetValueAsEnum(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsEnum // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a67e0
+	struct UClass* GetValueAsClass(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsClass // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6740
+	bool GetValueAsBool(struct FName KeyName); // Function AIModule.BlackboardComponent.GetValueAsBool // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x24a66a0
+	bool GetRotationFromEntry(struct FName KeyName, struct FRotator ResultRotation); // Function AIModule.BlackboardComponent.GetRotationFromEntry // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a63f0
+	bool GetLocationFromEntry(struct FName KeyName, struct FVector ResultLocation); // Function AIModule.BlackboardComponent.GetLocationFromEntry // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x24a5de0
+	void ClearValueAsVector(struct FName KeyName); // Function AIModule.BlackboardComponent.ClearValueAsVector // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a47d0
+	void ClearValueAsRotator(struct FName KeyName); // Function AIModule.BlackboardComponent.ClearValueAsRotator // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a4740
+	void ClearValue(struct FName KeyName); // Function AIModule.BlackboardComponent.ClearValue // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24a46b0
 };
 
 // Class AIModule.BlackboardKeyType_Bool
@@ -734,33 +734,33 @@ struct UBlackboardKeyType_Vector : UBlackboardKeyType {
 // Size: 0x28 (Inherited: 0x28)
 struct UBTFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void StopUsingExternalEvent(struct UBTNode* NodeOwner); // Function AIModule.BTFunctionLibrary.StopUsingExternalEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a83b0
-	void StartUsingExternalEvent(struct UBTNode* NodeOwner, struct AActor* OwningActor); // Function AIModule.BTFunctionLibrary.StartUsingExternalEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a8250
-	void SetBlackboardValueAsVector(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FVector Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a7260
-	void SetBlackboardValueAsString(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FString Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a7100
-	void SetBlackboardValueAsRotator(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FRotator Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a6fa0
-	void SetBlackboardValueAsObject(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct UObject* Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a6e60
-	void SetBlackboardValueAsName(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FName Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a6d20
-	void SetBlackboardValueAsInt(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, int32_t Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a6be0
-	void SetBlackboardValueAsFloat(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, float Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a6aa0
-	void SetBlackboardValueAsEnum(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, char Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a6960
-	void SetBlackboardValueAsClass(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct UClass* Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a6820
-	void SetBlackboardValueAsBool(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, bool Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a66e0
-	struct UBlackboardComponent* GetOwnersBlackboard(struct UBTNode* NodeOwner); // Function AIModule.BTFunctionLibrary.GetOwnersBlackboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24a3af0
-	struct UBehaviorTreeComponent* GetOwnerComponent(struct UBTNode* NodeOwner); // Function AIModule.BTFunctionLibrary.GetOwnerComponent // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24a3a70
-	struct FVector GetBlackboardValueAsVector(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a3650
-	struct FString GetBlackboardValueAsString(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a3500
-	struct FRotator GetBlackboardValueAsRotator(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a33f0
-	struct UObject* GetBlackboardValueAsObject(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a32f0
-	struct FName GetBlackboardValueAsName(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a31e0
-	int32_t GetBlackboardValueAsInt(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a30e0
-	float GetBlackboardValueAsFloat(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a2fe0
-	char GetBlackboardValueAsEnum(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a2ee0
-	struct UClass* GetBlackboardValueAsClass(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a2de0
-	bool GetBlackboardValueAsBool(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a2ce0
-	struct AActor* GetBlackboardValueAsActor(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a2be0
-	void ClearBlackboardValueAsVector(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a2130
-	void ClearBlackboardValue(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.ClearBlackboardValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a2040
+	void StopUsingExternalEvent(struct UBTNode* NodeOwner); // Function AIModule.BTFunctionLibrary.StopUsingExternalEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24aa840
+	void StartUsingExternalEvent(struct UBTNode* NodeOwner, struct AActor* OwningActor); // Function AIModule.BTFunctionLibrary.StartUsingExternalEvent // Final|Native|Static|Public|BlueprintCallable // @ game+0x24aa6e0
+	void SetBlackboardValueAsVector(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FVector Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a96f0
+	void SetBlackboardValueAsString(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FString Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a9590
+	void SetBlackboardValueAsRotator(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FRotator Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x24a9430
+	void SetBlackboardValueAsObject(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct UObject* Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a92f0
+	void SetBlackboardValueAsName(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct FName Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a91b0
+	void SetBlackboardValueAsInt(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, int32_t Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a9070
+	void SetBlackboardValueAsFloat(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, float Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a8f30
+	void SetBlackboardValueAsEnum(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, char Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a8df0
+	void SetBlackboardValueAsClass(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, struct UClass* Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a8cb0
+	void SetBlackboardValueAsBool(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key, bool Value); // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a8b70
+	struct UBlackboardComponent* GetOwnersBlackboard(struct UBTNode* NodeOwner); // Function AIModule.BTFunctionLibrary.GetOwnersBlackboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24a5f80
+	struct UBehaviorTreeComponent* GetOwnerComponent(struct UBTNode* NodeOwner); // Function AIModule.BTFunctionLibrary.GetOwnerComponent // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24a5f00
+	struct FVector GetBlackboardValueAsVector(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a5ae0
+	struct FString GetBlackboardValueAsString(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5990
+	struct FRotator GetBlackboardValueAsRotator(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x24a5880
+	struct UObject* GetBlackboardValueAsObject(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5780
+	struct FName GetBlackboardValueAsName(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5670
+	int32_t GetBlackboardValueAsInt(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5570
+	float GetBlackboardValueAsFloat(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5470
+	char GetBlackboardValueAsEnum(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5370
+	struct UClass* GetBlackboardValueAsClass(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5270
+	bool GetBlackboardValueAsBool(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5170
+	struct AActor* GetBlackboardValueAsActor(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x24a5070
+	void ClearBlackboardValueAsVector(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a45c0
+	void ClearBlackboardValue(struct UBTNode* NodeOwner, struct FBlackboardKeySelector Key); // Function AIModule.BTFunctionLibrary.ClearBlackboardValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x24a44d0
 };
 
 // Class AIModule.BTDecorator_Blackboard
@@ -807,22 +807,22 @@ struct UBTDecorator_BlueprintBase : UBTDecorator {
 	char UnknownData_98_3 : 5; // 0x98(0x01)
 	char UnknownData_99[0x7]; // 0x99(0x07)
 
-	void ReceiveTickAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveTick(struct AActor* OwnerActor, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveObserverDeactivatedAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveObserverDeactivated(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveObserverActivatedAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveObserverActivated(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveExecutionStartAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveExecutionStart(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveExecutionFinishAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveExecutionFinish(struct AActor* OwnerActor, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveConditionCheck(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveConditionCheck // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	bool PerformConditionCheckAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	bool PerformConditionCheck(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	bool IsDecoratorObserverActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4930
-	bool IsDecoratorExecutionActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4900
-	void FinishConditionCheck(bool bAllowExecution); // Function AIModule.BTDecorator_BlueprintBase.FinishConditionCheck // Final|Native|Protected|BlueprintCallable // @ game+0x24a2700
+	void ReceiveTickAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveTick(struct AActor* OwnerActor, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveObserverDeactivatedAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveObserverDeactivated(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveObserverActivatedAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveObserverActivated(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveExecutionStartAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveExecutionStart(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveExecutionFinishAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveExecutionFinish(struct AActor* OwnerActor, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveConditionCheck(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveConditionCheck // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	bool PerformConditionCheckAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	bool PerformConditionCheck(struct AActor* OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	bool IsDecoratorObserverActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6dc0
+	bool IsDecoratorExecutionActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6d90
+	void FinishConditionCheck(bool bAllowExecution); // Function AIModule.BTDecorator_BlueprintBase.FinishConditionCheck // Final|Native|Protected|BlueprintCallable // @ game+0x24a4b90
 };
 
 // Class AIModule.BTDecorator_CheckGameplayTagsOnActor
@@ -956,15 +956,15 @@ struct UBTService_BlueprintBase : UBTService {
 	char UnknownData_90_2 : 6; // 0x90(0x01)
 	char UnknownData_91[0x7]; // 0x91(0x07)
 
-	void ReceiveTickAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTickAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveTick(struct AActor* OwnerActor, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTick // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveSearchStartAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveSearchStart(struct AActor* OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveDeactivationAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveDeactivation(struct AActor* OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActivationAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActivation(struct AActor* OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveActivation // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	bool IsServiceActive(); // Function AIModule.BTService_BlueprintBase.IsServiceActive // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a49f0
+	void ReceiveTickAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTickAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveTick(struct AActor* OwnerActor, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTick // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveSearchStartAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveSearchStart(struct AActor* OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveDeactivationAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveDeactivation(struct AActor* OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActivationAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActivation(struct AActor* OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveActivation // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	bool IsServiceActive(); // Function AIModule.BTService_BlueprintBase.IsServiceActive // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6e80
 };
 
 // Class AIModule.BTComposite_Selector
@@ -1030,18 +1030,18 @@ struct UBTTask_BlueprintBase : UBTTaskNode {
 	char UnknownData_88_1 : 7; // 0x88(0x01)
 	char UnknownData_89[0x7]; // 0x89(0x07)
 
-	void SetFinishOnMessageWithId(struct FName MessageName, int32_t RequestID); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId // Final|Native|Protected|BlueprintCallable // @ game+0x24a7510
-	void SetFinishOnMessage(struct FName MessageName); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage // Final|Native|Protected|BlueprintCallable // @ game+0x24a7490
-	void ReceiveTickAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveTick(struct AActor* OwnerActor, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTick // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveExecuteAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveExecute(struct AActor* OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveExecute // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveAbortAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveAbort(struct AActor* OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveAbort // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	bool IsTaskExecuting(); // Function AIModule.BTTask_BlueprintBase.IsTaskExecuting // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4a50
-	bool IsTaskAborting(); // Function AIModule.BTTask_BlueprintBase.IsTaskAborting // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a4a20
-	void FinishExecute(bool bSuccess); // Function AIModule.BTTask_BlueprintBase.FinishExecute // Final|Native|Protected|BlueprintCallable // @ game+0x24a2790
-	void FinishAbort(); // Function AIModule.BTTask_BlueprintBase.FinishAbort // Final|Native|Protected|BlueprintCallable // @ game+0x24a26e0
+	void SetFinishOnMessageWithId(struct FName MessageName, int32_t RequestID); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId // Final|Native|Protected|BlueprintCallable // @ game+0x24a99a0
+	void SetFinishOnMessage(struct FName MessageName); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage // Final|Native|Protected|BlueprintCallable // @ game+0x24a9920
+	void ReceiveTickAI(struct AAIController* OwnerController, struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveTick(struct AActor* OwnerActor, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTick // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveExecuteAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveExecute(struct AActor* OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveExecute // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveAbortAI(struct AAIController* OwnerController, struct APawn* ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveAbort(struct AActor* OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveAbort // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	bool IsTaskExecuting(); // Function AIModule.BTTask_BlueprintBase.IsTaskExecuting // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6ee0
+	bool IsTaskAborting(); // Function AIModule.BTTask_BlueprintBase.IsTaskAborting // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6eb0
+	void FinishExecute(bool bSuccess); // Function AIModule.BTTask_BlueprintBase.FinishExecute // Final|Native|Protected|BlueprintCallable // @ game+0x24a4c20
+	void FinishAbort(); // Function AIModule.BTTask_BlueprintBase.FinishAbort // Final|Native|Protected|BlueprintCallable // @ game+0x24a4b70
 };
 
 // Class AIModule.BTTask_MakeNoise
@@ -1066,9 +1066,9 @@ struct UPawnAction : UObject {
 	char UnknownData_78_3 : 5; // 0x78(0x01)
 	char UnknownData_79[0x17]; // 0x79(0x17)
 
-	char GetActionPriority(); // Function AIModule.PawnAction.GetActionPriority // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a28d0
-	void Finish(char WithResult); // Function AIModule.PawnAction.Finish // Native|Protected|BlueprintCallable // @ game+0x24a2650
-	struct UPawnAction* CreateActionInstance(struct UObject* WorldContextObject, struct UClass* ActionClass); // Function AIModule.PawnAction.CreateActionInstance // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a23d0
+	char GetActionPriority(); // Function AIModule.PawnAction.GetActionPriority // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a4d60
+	void Finish(char WithResult); // Function AIModule.PawnAction.Finish // Native|Protected|BlueprintCallable // @ game+0x24a4ae0
+	struct UPawnAction* CreateActionInstance(struct UObject* WorldContextObject, struct UClass* ActionClass); // Function AIModule.PawnAction.CreateActionInstance // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a4860
 };
 
 // Class AIModule.BTTask_PawnActionBase
@@ -1171,10 +1171,10 @@ struct UEnvQuery : UObject {
 struct UEnvQueryContext_BlueprintBase : UEnvQueryContext {
 	char UnknownData_28[0x8]; // 0x28(0x08)
 
-	void ProvideSingleLocation(struct AActor* QuerierActor, struct FVector ResultingLocation); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation // Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const // @ game+0x18e3b10
-	void ProvideSingleActor(struct AActor* QuerierActor, struct AActor* ResultingActor); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e3b10
-	void ProvideLocationsSet(struct AActor* QuerierActor, struct TArray<struct FVector> ResultingLocationSet); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e3b10
-	void ProvideActorsSet(struct AActor* QuerierActor, struct TArray<struct AActor*> ResultingActorsSet); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e3b10
+	void ProvideSingleLocation(struct AActor* QuerierActor, struct FVector ResultingLocation); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation // Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const // @ game+0x18e5fa0
+	void ProvideSingleActor(struct AActor* QuerierActor, struct AActor* ResultingActor); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e5fa0
+	void ProvideLocationsSet(struct AActor* QuerierActor, struct TArray<struct FVector> ResultingLocationSet); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e5fa0
+	void ProvideActorsSet(struct AActor* QuerierActor, struct TArray<struct AActor*> ResultingActorsSet); // Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e5fa0
 };
 
 // Class AIModule.EnvQueryContext_Item
@@ -1213,10 +1213,10 @@ struct UEnvQueryInstanceBlueprintWrapper : UObject {
 	char UnknownData_5C[0x4]; // 0x5c(0x04)
 	struct FMulticastDelegate OnQueryFinishedEvent; // 0x60(0x10)
 
-	struct TArray<struct FVector> GetResultsAsLocations(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a3ec0
-	struct TArray<struct AActor*> GetResultsAsActors(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a3e20
-	float GetItemScore(int32_t ItemIndex); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a38c0
-	void EQSQueryDoneSignature__DelegateSignature(struct UEnvQueryInstanceBlueprintWrapper* QueryInstance, char QueryStatus); // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
+	struct TArray<struct FVector> GetResultsAsLocations(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a6350
+	struct TArray<struct AActor*> GetResultsAsActors(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a62b0
+	float GetItemScore(int32_t ItemIndex); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x24a5d50
+	void EQSQueryDoneSignature__DelegateSignature(struct UEnvQueryInstanceBlueprintWrapper* QueryInstance, char QueryStatus); // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
 };
 
 // Class AIModule.EnvQueryItemType_VectorBase
@@ -1252,7 +1252,7 @@ struct UEnvQueryManager : UObject {
 	struct TArray<struct UEnvQueryContext*> LocalContexts; // 0xa8(0x10)
 	char UnknownData_B8[0x58]; // 0xb8(0x58)
 
-	struct UEnvQueryInstanceBlueprintWrapper* RunEQSQuery(struct UObject* WorldContext, struct UEnvQuery* QueryTemplate, struct UObject* Querier, char RunMode, struct UClass* WrapperClass); // Function AIModule.EnvQueryManager.RunEQSQuery // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a6420
+	struct UEnvQueryInstanceBlueprintWrapper* RunEQSQuery(struct UObject* WorldContext, struct UEnvQuery* QueryTemplate, struct UObject* Querier, char RunMode, struct UClass* WrapperClass); // Function AIModule.EnvQueryManager.RunEQSQuery // Final|Native|Static|Public|BlueprintCallable // @ game+0x24a88b0
 };
 
 // Class AIModule.EnvQueryGenerator_ActorsOfClass
@@ -1271,10 +1271,10 @@ struct UEnvQueryGenerator_BlueprintBase : UEnvQueryGenerator {
 	struct UClass* GeneratedItemType; // 0x98(0x08)
 	char UnknownData_A0[0x8]; // 0xa0(0x08)
 
-	struct UObject* GetQuerier(); // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3df0
-	void DoItemGeneration(struct TArray<struct FVector> ContextLocations); // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e3b10
-	void AddGeneratedVector(struct FVector GeneratedVector); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector // Final|Native|Public|HasDefaults|BlueprintCallable|Const // @ game+0x24a1fb0
-	void AddGeneratedActor(struct AActor* GeneratedActor); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor // Final|Native|Public|BlueprintCallable|Const // @ game+0x24a1f30
+	struct UObject* GetQuerier(); // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6280
+	void DoItemGeneration(struct TArray<struct FVector> ContextLocations); // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration // Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x18e5fa0
+	void AddGeneratedVector(struct FVector GeneratedVector); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector // Final|Native|Public|HasDefaults|BlueprintCallable|Const // @ game+0x24a4440
+	void AddGeneratedActor(struct AActor* GeneratedActor); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor // Final|Native|Public|BlueprintCallable|Const // @ game+0x24a43c0
 };
 
 // Class AIModule.EnvQueryGenerator_Composite
@@ -1445,18 +1445,18 @@ struct UCrowdFollowingComponent : UPathFollowingComponent {
 	struct FNavAvoidanceMask GroupsToIgnore; // 0x2e0(0x04)
 	char UnknownData_2E4[0x24]; // 0x2e4(0x24)
 
-	void SuspendCrowdSteering(bool bSuspend); // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering // Native|Public|BlueprintCallable // @ game+0x24a8420
+	void SuspendCrowdSteering(bool bSuspend); // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering // Native|Public|BlueprintCallable // @ game+0x24aa8b0
 };
 
 // Class AIModule.PawnAction_BlueprintBase
 // Size: 0x90 (Inherited: 0x90)
 struct UPawnAction_BlueprintBase : UPawnAction {
 
-	void ActionTick(struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.PawnAction_BlueprintBase.ActionTick // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ActionStart(struct APawn* ControlledPawn); // Function AIModule.PawnAction_BlueprintBase.ActionStart // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ActionResume(struct APawn* ControlledPawn); // Function AIModule.PawnAction_BlueprintBase.ActionResume // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ActionPause(struct APawn* ControlledPawn); // Function AIModule.PawnAction_BlueprintBase.ActionPause // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ActionFinished(struct APawn* ControlledPawn, char WithResult); // Function AIModule.PawnAction_BlueprintBase.ActionFinished // Event|Public|BlueprintEvent // @ game+0x18e3b10
+	void ActionTick(struct APawn* ControlledPawn, float DeltaSeconds); // Function AIModule.PawnAction_BlueprintBase.ActionTick // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ActionStart(struct APawn* ControlledPawn); // Function AIModule.PawnAction_BlueprintBase.ActionStart // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ActionResume(struct APawn* ControlledPawn); // Function AIModule.PawnAction_BlueprintBase.ActionResume // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ActionPause(struct APawn* ControlledPawn); // Function AIModule.PawnAction_BlueprintBase.ActionPause // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ActionFinished(struct APawn* ControlledPawn, char WithResult); // Function AIModule.PawnAction_BlueprintBase.ActionFinished // Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class AIModule.PawnAction_Move
@@ -1521,12 +1521,12 @@ struct UPawnSensingComponent : UActorComponent {
 	float PeripheralVisionAngle; // 0x108(0x04)
 	float PeripheralVisionCosine; // 0x10c(0x04)
 
-	void SetSensingUpdatesEnabled(bool bEnabled); // Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x24a7760
-	void SetSensingInterval(float NewSensingInterval); // Function AIModule.PawnSensingComponent.SetSensingInterval // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x24a76e0
-	void SetPeripheralVisionAngle(float NewPeripheralVisionAngle); // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x24a7660
-	void SeePawnDelegate__DelegateSignature(struct APawn* Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
-	void HearNoiseDelegate__DelegateSignature(struct APawn* Instigator, struct FVector Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults // @ game+0x18e3b10
-	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3dd0
-	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a3db0
+	void SetSensingUpdatesEnabled(bool bEnabled); // Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x24a9bf0
+	void SetSensingInterval(float NewSensingInterval); // Function AIModule.PawnSensingComponent.SetSensingInterval // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x24a9b70
+	void SetPeripheralVisionAngle(float NewPeripheralVisionAngle); // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x24a9af0
+	void SeePawnDelegate__DelegateSignature(struct APawn* Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
+	void HearNoiseDelegate__DelegateSignature(struct APawn* Instigator, struct FVector Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults // @ game+0x18e5fa0
+	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6260
+	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24a6240
 };
 

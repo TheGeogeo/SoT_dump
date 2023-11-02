@@ -3,6 +3,6 @@
 struct ABP_FogBank_C : AFogBank {
 	struct UAthenaPlayerZonePenetrationTrackerComponent* AthenaPlayerZonePenetrationTracker; // 0x590(0x08)
 
-	void UserConstructionScript(); // Function BP_FogBank.BP_FogBank_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_FogBank.BP_FogBank_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

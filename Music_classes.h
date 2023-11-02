@@ -7,7 +7,7 @@ struct UEmitterManipulatorInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UMusicZoneInterface : UEmitterManipulatorInterface {
 
-	bool CanPlayForPlayer(struct AActor* Player); // Function Music.MusicZoneInterface.CanPlayForPlayer // RequiredAPI|Native|Event|Public|BlueprintEvent|Const // @ game+0x3c2beb0
+	bool CanPlayForPlayer(struct AActor* Player); // Function Music.MusicZoneInterface.CanPlayForPlayer // RequiredAPI|Native|Event|Public|BlueprintEvent|Const // @ game+0x3c2e4c0
 };
 
 // Class Music.MusicZoneComponent
@@ -32,14 +32,14 @@ struct UMusicZoneComponent : USceneComponent {
 	struct FMusicZoneRemoteValues EmitterRemoteValues; // 0x370(0x20)
 	char UnknownData_390[0x40]; // 0x390(0x40)
 
-	bool SetPlaybackPositionRtpc(float OutTimeInSeconds); // Function Music.MusicZoneComponent.SetPlaybackPositionRtpc // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3c2c0f0
-	void OnRep_EmitterRemoteValues(); // Function Music.MusicZoneComponent.OnRep_EmitterRemoteValues // Final|Native|Private // @ game+0x3c2c0b0
-	struct FWwiseEmitter GetEmitter(); // Function Music.MusicZoneComponent.GetEmitter // Native|Public|BlueprintCallable // @ game+0x3c2c030
-	void DisableZone(); // Function Music.MusicZoneComponent.DisableZone // Final|Native|Public|BlueprintCallable // @ game+0x3c2c010
-	void Client_StopMusicAndDisableZone(); // Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3c2bff0
-	void Client_PlayOneShot(int32_t Index); // Function Music.MusicZoneComponent.Client_PlayOneShot // Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable // @ game+0x3c2bf70
-	void Client_ActivateZone(); // Function Music.MusicZoneComponent.Client_ActivateZone // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3c2bf50
-	void ActivateZone(); // Function Music.MusicZoneComponent.ActivateZone // Final|Native|Public|BlueprintCallable // @ game+0x3c2be90
+	bool SetPlaybackPositionRtpc(float OutTimeInSeconds); // Function Music.MusicZoneComponent.SetPlaybackPositionRtpc // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3c2e700
+	void OnRep_EmitterRemoteValues(); // Function Music.MusicZoneComponent.OnRep_EmitterRemoteValues // Final|Native|Private // @ game+0x3c2e6c0
+	struct FWwiseEmitter GetEmitter(); // Function Music.MusicZoneComponent.GetEmitter // Native|Public|BlueprintCallable // @ game+0x3c2e640
+	void DisableZone(); // Function Music.MusicZoneComponent.DisableZone // Final|Native|Public|BlueprintCallable // @ game+0x3c2e620
+	void Client_StopMusicAndDisableZone(); // Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3c2e600
+	void Client_PlayOneShot(int32_t Index); // Function Music.MusicZoneComponent.Client_PlayOneShot // Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable // @ game+0x3c2e580
+	void Client_ActivateZone(); // Function Music.MusicZoneComponent.Client_ActivateZone // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3c2e560
+	void ActivateZone(); // Function Music.MusicZoneComponent.ActivateZone // Final|Native|Public|BlueprintCallable // @ game+0x3c2e4a0
 };
 
 // Class Music.AISpawnerMusicZoneComponent
@@ -50,7 +50,7 @@ struct UAISpawnerMusicZoneComponent : UMusicZoneComponent {
 	struct TArray<struct APawn*> SpawnerPawns; // 0x3d8(0x10)
 	char SpawnerState; // 0x3e8(0x01)
 
-	void OnRep_SpawnerState(); // Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState // Final|Native|Private // @ game+0x3c2c0d0
+	void OnRep_SpawnerState(); // Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState // Final|Native|Private // @ game+0x3c2e6e0
 };
 
 // Class Music.SynchedMusicZoneComponent

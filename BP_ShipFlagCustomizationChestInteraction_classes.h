@@ -3,6 +3,6 @@
 struct ABP_ShipFlagCustomizationChestInteraction_C : AShipFlagCustomizationChestInteraction {
 	struct USceneComponent* DefaultSceneRoot; // 0x550(0x08)
 
-	void UserConstructionScript(); // Function BP_ShipFlagCustomizationChestInteraction.BP_ShipFlagCustomizationChestInteraction_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ShipFlagCustomizationChestInteraction.BP_ShipFlagCustomizationChestInteraction_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

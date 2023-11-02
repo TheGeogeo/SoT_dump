@@ -2,35 +2,35 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UTimeInterface : UInterface {
 
-	struct FGameTime GetTime(); // Function Time.TimeInterface.GetTime // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x369e340
-	struct FDateTime GetSmoothRealWorldTime(); // Function Time.TimeInterface.GetSmoothRealWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x369e300
-	struct FDateTime GetPreciseRealWorldTime(); // Function Time.TimeInterface.GetPreciseRealWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x369e2c0
-	struct FGameTime ConvertRealWorldTimeToGameWorldTime(struct FDateTime RealWorldTime); // Function Time.TimeInterface.ConvertRealWorldTimeToGameWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x369e020
-	struct FDateTime ConvertGameWorldTimeToRealWorldTime(struct FGameTime GameWorldTime); // Function Time.TimeInterface.ConvertGameWorldTimeToRealWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x369df80
+	struct FGameTime GetTime(); // Function Time.TimeInterface.GetTime // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x36a0950
+	struct FDateTime GetSmoothRealWorldTime(); // Function Time.TimeInterface.GetSmoothRealWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x36a0910
+	struct FDateTime GetPreciseRealWorldTime(); // Function Time.TimeInterface.GetPreciseRealWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x36a08d0
+	struct FGameTime ConvertRealWorldTimeToGameWorldTime(struct FDateTime RealWorldTime); // Function Time.TimeInterface.ConvertRealWorldTimeToGameWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x36a0630
+	struct FDateTime ConvertGameWorldTimeToRealWorldTime(struct FGameTime GameWorldTime); // Function Time.TimeInterface.ConvertGameWorldTimeToRealWorldTime // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x36a0590
 };
 
 // Class Time.CustomizableTimeInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UCustomizableTimeInterface : UInterface {
 
-	void SetTimeScalar(int32_t RequestedTimeScalar); // Function Time.CustomizableTimeInterface.SetTimeScalar // Native|Public|BlueprintCallable // @ game+0x369ec70
-	void SetSunset(float SunsetHours); // Function Time.CustomizableTimeInterface.SetSunset // Native|Public|BlueprintCallable // @ game+0x369eb70
-	void SetSunrise(float SunriseHours); // Function Time.CustomizableTimeInterface.SetSunrise // Native|Public|BlueprintCallable // @ game+0x369ea70
-	void SetGameWorldTime(struct FGameTime RequestedTime); // Function Time.CustomizableTimeInterface.SetGameWorldTime // Native|Public|HasOutParms|BlueprintCallable // @ game+0x369e930
-	int32_t GetTimeScalar(); // Function Time.CustomizableTimeInterface.GetTimeScalar // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x369e380
-	void EnableQueryServiceTime(bool Enable); // Function Time.CustomizableTimeInterface.EnableQueryServiceTime // Native|Public|BlueprintCallable // @ game+0x369e1a0
+	void SetTimeScalar(int32_t RequestedTimeScalar); // Function Time.CustomizableTimeInterface.SetTimeScalar // Native|Public|BlueprintCallable // @ game+0x36a1280
+	void SetSunset(float SunsetHours); // Function Time.CustomizableTimeInterface.SetSunset // Native|Public|BlueprintCallable // @ game+0x36a1180
+	void SetSunrise(float SunriseHours); // Function Time.CustomizableTimeInterface.SetSunrise // Native|Public|BlueprintCallable // @ game+0x36a1080
+	void SetGameWorldTime(struct FGameTime RequestedTime); // Function Time.CustomizableTimeInterface.SetGameWorldTime // Native|Public|HasOutParms|BlueprintCallable // @ game+0x36a0f40
+	int32_t GetTimeScalar(); // Function Time.CustomizableTimeInterface.GetTimeScalar // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x36a0990
+	void EnableQueryServiceTime(bool Enable); // Function Time.CustomizableTimeInterface.EnableQueryServiceTime // Native|Public|BlueprintCallable // @ game+0x36a07b0
 };
 
 // Class Time.DebugTimeInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UDebugTimeInterface : UInterface {
 
-	void SetTimeScalar(int32_t RequestedTimeScalar); // Function Time.DebugTimeInterface.SetTimeScalar // Native|Public|BlueprintCallable // @ game+0x369ecf0
-	void SetSunset(float SunsetHours); // Function Time.DebugTimeInterface.SetSunset // Native|Public|BlueprintCallable // @ game+0x369ebf0
-	void SetSunrise(float SunriseHours); // Function Time.DebugTimeInterface.SetSunrise // Native|Public|BlueprintCallable // @ game+0x369eaf0
-	void SetGameWorldTime(struct FGameTime RequestedTime); // Function Time.DebugTimeInterface.SetGameWorldTime // Native|Public|HasOutParms|BlueprintCallable // @ game+0x369e9d0
-	int32_t GetTimeScalar(); // Function Time.DebugTimeInterface.GetTimeScalar // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x369e3b0
-	void EnableQueryServiceTime(bool Enable); // Function Time.DebugTimeInterface.EnableQueryServiceTime // Native|Public|BlueprintCallable // @ game+0x369e230
+	void SetTimeScalar(int32_t RequestedTimeScalar); // Function Time.DebugTimeInterface.SetTimeScalar // Native|Public|BlueprintCallable // @ game+0x36a1300
+	void SetSunset(float SunsetHours); // Function Time.DebugTimeInterface.SetSunset // Native|Public|BlueprintCallable // @ game+0x36a1200
+	void SetSunrise(float SunriseHours); // Function Time.DebugTimeInterface.SetSunrise // Native|Public|BlueprintCallable // @ game+0x36a1100
+	void SetGameWorldTime(struct FGameTime RequestedTime); // Function Time.DebugTimeInterface.SetGameWorldTime // Native|Public|HasOutParms|BlueprintCallable // @ game+0x36a0fe0
+	int32_t GetTimeScalar(); // Function Time.DebugTimeInterface.GetTimeScalar // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x36a09c0
+	void EnableQueryServiceTime(bool Enable); // Function Time.DebugTimeInterface.EnableQueryServiceTime // Native|Public|BlueprintCallable // @ game+0x36a0840
 };
 
 // Class Time.LocationProviderInterface
@@ -42,10 +42,10 @@ struct ULocationProviderInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UTimeBlueprintLibrary : UBlueprintFunctionLibrary {
 
-	struct FReplicatedDateTime MakeReplicatedDateTimeFromDateTime(struct FDateTime InDateTime); // Function Time.TimeBlueprintLibrary.MakeReplicatedDateTimeFromDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x369e660
-	struct FDateTime MakeDateTimeFromReplicatedDateTime(struct FReplicatedDateTime InDateTime); // Function Time.TimeBlueprintLibrary.MakeDateTimeFromReplicatedDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x369e5d0
-	struct FDateTime MakeDateTimeFromRaw(int32_t Year, int32_t Month, int32_t Day, int32_t Hour, int32_t Minute, int32_t Second, int32_t Millisecond); // Function Time.TimeBlueprintLibrary.MakeDateTimeFromRaw // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x369e3e0
-	bool DateTimesWithinTolerance(struct FDateTime FirstDateTime, struct FDateTime SecondDateTime, struct FTimespan Tolerance); // Function Time.TimeBlueprintLibrary.DateTimesWithinTolerance // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x369e0b0
+	struct FReplicatedDateTime MakeReplicatedDateTimeFromDateTime(struct FDateTime InDateTime); // Function Time.TimeBlueprintLibrary.MakeReplicatedDateTimeFromDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x36a0c70
+	struct FDateTime MakeDateTimeFromReplicatedDateTime(struct FReplicatedDateTime InDateTime); // Function Time.TimeBlueprintLibrary.MakeDateTimeFromReplicatedDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x36a0be0
+	struct FDateTime MakeDateTimeFromRaw(int32_t Year, int32_t Month, int32_t Day, int32_t Hour, int32_t Minute, int32_t Second, int32_t Millisecond); // Function Time.TimeBlueprintLibrary.MakeDateTimeFromRaw // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x36a09f0
+	bool DateTimesWithinTolerance(struct FDateTime FirstDateTime, struct FDateTime SecondDateTime, struct FTimespan Tolerance); // Function Time.TimeBlueprintLibrary.DateTimesWithinTolerance // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x36a06c0
 };
 
 // Class Time.TimeFormatterInterface
@@ -78,8 +78,8 @@ struct ATimeService : AActor {
 	struct FReplicatedAuthoritativeTime ReplicatedServerTime; // 0x498(0x10)
 	char UnknownData_4A8[0x50]; // 0x4a8(0x50)
 
-	void OnRep_ReplicatedServerTime(); // Function Time.TimeService.OnRep_ReplicatedServerTime // Final|Native|Protected // @ game+0x369e910
-	void MulticastOnServiceTimeChangedRPC(int64_t ServiceTimeInTicks); // Function Time.TimeService.MulticastOnServiceTimeChangedRPC // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x369e6e0
+	void OnRep_ReplicatedServerTime(); // Function Time.TimeService.OnRep_ReplicatedServerTime // Final|Native|Protected // @ game+0x36a0f20
+	void MulticastOnServiceTimeChangedRPC(int64_t ServiceTimeInTicks); // Function Time.TimeService.MulticastOnServiceTimeChangedRPC // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x36a0cf0
 };
 
 // Class Time.DebugTimeService
@@ -87,7 +87,7 @@ struct ATimeService : AActor {
 struct ADebugTimeService : ATimeService {
 	char UnknownData_4F8[0x8]; // 0x4f8(0x08)
 
-	void MulticastOnTimeScalarOffsetRPC(int32_t Scalar, int64_t Offset); // Function Time.DebugTimeService.MulticastOnTimeScalarOffsetRPC // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x369e840
+	void MulticastOnTimeScalarOffsetRPC(int32_t Scalar, int64_t Offset); // Function Time.DebugTimeService.MulticastOnTimeScalarOffsetRPC // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x36a0e50
 };
 
 // Class Time.CustomizableTimeService
@@ -95,6 +95,6 @@ struct ADebugTimeService : ATimeService {
 struct ACustomizableTimeService : ADebugTimeService {
 	char UnknownData_500[0x8]; // 0x500(0x08)
 
-	void MulticastOnTimeScalarOffsetRPC(int32_t Scalar, int64_t Offset); // Function Time.CustomizableTimeService.MulticastOnTimeScalarOffsetRPC // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x369e770
+	void MulticastOnTimeScalarOffsetRPC(int32_t Scalar, int64_t Offset); // Function Time.CustomizableTimeService.MulticastOnTimeScalarOffsetRPC // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x36a0d80
 };
 

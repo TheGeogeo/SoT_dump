@@ -36,6 +36,6 @@ struct UBP_Anim_Wheel_C : UWheelAnimInstance {
 	struct FAnimNode_ModifyBone AnimGraphNode_ModifyBone_41A9D55B421A1C69CCB7BF9070C34B85; // 0xef0(0x90)
 	struct FAnimNode_ModifyBone AnimGraphNode_ModifyBone_AB135DD947B12E21A9FB21A6A5E947EA; // 0xf80(0x90)
 
-	void ExecuteUbergraph_BP_Anim_Wheel(int32_t EntryPoint); // Function BP_Anim_Wheel.BP_Anim_Wheel_C.ExecuteUbergraph_BP_Anim_Wheel //  // @ game+0x18e3b10
+	void ExecuteUbergraph_BP_Anim_Wheel(int32_t EntryPoint); // Function BP_Anim_Wheel.BP_Anim_Wheel_C.ExecuteUbergraph_BP_Anim_Wheel //  // @ game+0x18e5fa0
 };
 

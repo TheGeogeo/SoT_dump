@@ -7,8 +7,8 @@ struct UServiceMessagingDispatcherInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UServiceMessagingFunctions : UBlueprintFunctionLibrary {
 
-	struct FObjectMessagingDispatcherHandle GetServiceMessagingDispatcherFromActor(struct UObject* Object); // Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x3350be0
-	struct FObjectMessagingDispatcherHandle GetServiceMessagingDispatcher(TScriptInterface<struct UServiceMessagingDispatcherInterface> ServiceMessagingDispatcher); // Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3350b40
+	struct FObjectMessagingDispatcherHandle GetServiceMessagingDispatcherFromActor(struct UObject* Object); // Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x33531e0
+	struct FObjectMessagingDispatcherHandle GetServiceMessagingDispatcher(TScriptInterface<struct UServiceMessagingDispatcherInterface> ServiceMessagingDispatcher); // Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3353140
 };
 
 // Class ServiceMessaging.ServiceMessagingListenerTestObject
@@ -16,6 +16,6 @@ struct UServiceMessagingFunctions : UBlueprintFunctionLibrary {
 struct UServiceMessagingListenerTestObject : UObject {
 	char UnknownData_28[0x10]; // 0x28(0x10)
 
-	void TestFunctionWithMessage(struct FServiceMessagingTestMessage InMessage); // Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage // Final|Native|Public|HasOutParms // @ game+0x3350c70
+	void TestFunctionWithMessage(struct FServiceMessagingTestMessage InMessage); // Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage // Final|Native|Public|HasOutParms // @ game+0x3353270
 };
 

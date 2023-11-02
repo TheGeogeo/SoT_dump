@@ -7,7 +7,7 @@ struct UFactionCurseInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UFactionServiceInterface : UInterface {
 
-	struct FName Blueprint_GetActiveFactionIdentifierForCrew(struct FGuid InCrewId); // Function FactionsFramework.FactionServiceInterface.Blueprint_GetActiveFactionIdentifierForCrew // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3aa43f0
+	struct FName Blueprint_GetActiveFactionIdentifierForCrew(struct FGuid InCrewId); // Function FactionsFramework.FactionServiceInterface.Blueprint_GetActiveFactionIdentifierForCrew // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3aa6a00
 };
 
 // Class FactionsFramework.IsTargetWearingGhostCurseStatCondition

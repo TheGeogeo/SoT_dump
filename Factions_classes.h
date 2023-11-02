@@ -41,8 +41,8 @@ struct UFactionFlipMeshComponent : UStaticMeshComponent {
 	bool ServerTargetFlipped; // 0x88c(0x01)
 	char UnknownData_88D[0x3]; // 0x88d(0x03)
 
-	void OnRep_Streak(); // Function Factions.FactionFlipMeshComponent.OnRep_Streak // Final|Native|Public // @ game+0x479eb60
-	void OnRep_ServerTargetFlipped(); // Function Factions.FactionFlipMeshComponent.OnRep_ServerTargetFlipped // Final|Native|Public // @ game+0x479eb40
+	void OnRep_Streak(); // Function Factions.FactionFlipMeshComponent.OnRep_Streak // Final|Native|Public // @ game+0x47a1180
+	void OnRep_ServerTargetFlipped(); // Function Factions.FactionFlipMeshComponent.OnRep_ServerTargetFlipped // Final|Native|Public // @ game+0x47a1160
 };
 
 // Class Factions.FactionInteractionVoteComponent
@@ -95,8 +95,8 @@ struct UFactionParticleComponent : UParticleSystemComponent {
 	bool ServerMigrationEnded; // 0xa4c(0x01)
 	char UnknownData_A4D[0x3]; // 0xa4d(0x03)
 
-	void OnRep_Streak(); // Function Factions.FactionParticleComponent.OnRep_Streak // Final|Native|Public // @ game+0x479eb80
-	void OnRep_ServerMigrationEnded(); // Function Factions.FactionParticleComponent.OnRep_ServerMigrationEnded // Final|Native|Public // @ game+0x479eb20
+	void OnRep_Streak(); // Function Factions.FactionParticleComponent.OnRep_Streak // Final|Native|Public // @ game+0x47a11a0
+	void OnRep_ServerMigrationEnded(); // Function Factions.FactionParticleComponent.OnRep_ServerMigrationEnded // Final|Native|Public // @ game+0x47a1140
 };
 
 // Class Factions.FactionServiceDebugRepActor
@@ -124,7 +124,7 @@ struct AFactionService : AActor {
 	struct AFactionServiceDebugRepActor* DebugRepActor; // 0x630(0x08)
 	char UnknownData_638[0x20]; // 0x638(0x20)
 
-	void OnRep_FactionAlignedCrews(struct TArray<struct FCrewFactionEntry> PreviousCrews); // Function Factions.FactionService.OnRep_FactionAlignedCrews // Final|Native|Public|HasOutParms // @ game+0x479ea50
+	void OnRep_FactionAlignedCrews(struct TArray<struct FCrewFactionEntry> PreviousCrews); // Function Factions.FactionService.OnRep_FactionAlignedCrews // Final|Native|Public|HasOutParms // @ game+0x47a1070
 };
 
 // Class Factions.FactionShipStreakDataAsset
@@ -155,7 +155,7 @@ struct UFactionVoteConsumerBase : UVoteConsumerInlineBase {
 	struct TArray<struct FCrewMemberVotes> Votes; // 0xa8(0x10)
 	char UnknownData_B8[0x18]; // 0xb8(0x18)
 
-	void OnRep_Votes(struct TArray<struct FCrewMemberVotes> PreviousVotes); // Function Factions.FactionVoteConsumerBase.OnRep_Votes // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x479eba0
+	void OnRep_Votes(struct TArray<struct FCrewMemberVotes> PreviousVotes); // Function Factions.FactionVoteConsumerBase.OnRep_Votes // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x47a11c0
 };
 
 // Class Factions.StartFactionVoyageVoteConsumer
@@ -221,7 +221,7 @@ struct UFactionVoteValidatorBase : UVoteValidatorInlineBase {
 	char UnknownData_F8[0x8]; // 0xf8(0x08)
 	struct AActor* OwningActor; // 0x100(0x08)
 
-	void OnRep_CurrentCompany(); // Function Factions.FactionVoteValidatorBase.OnRep_CurrentCompany // Final|Native|Protected // @ game+0x479ea30
+	void OnRep_CurrentCompany(); // Function Factions.FactionVoteValidatorBase.OnRep_CurrentCompany // Final|Native|Protected // @ game+0x47a1050
 };
 
 // Class Factions.StartFactionVoyageVoteValidator
@@ -273,7 +273,7 @@ struct UShipFactionCustomisation : UActorComponent {
 	char UnknownData_F8[0x48]; // 0xf8(0x48)
 	struct FFactionStreakData FactionStreakData; // 0x140(0x10)
 
-	void OnRep_FactionStreakData(); // Function Factions.ShipFactionCustomisation.OnRep_FactionStreakData // Final|Native|Private // @ game+0x479eb00
+	void OnRep_FactionStreakData(); // Function Factions.ShipFactionCustomisation.OnRep_FactionStreakData // Final|Native|Private // @ game+0x47a1120
 };
 
 // Class Factions.ShipSunkTrackingComponent

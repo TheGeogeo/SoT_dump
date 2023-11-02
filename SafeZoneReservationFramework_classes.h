@@ -35,11 +35,11 @@ struct USafeZoneComponent : UCapsuleComponent {
 	char SafeZoneState; // 0x6d0(0x01)
 	char UnknownData_6D1[0x5f]; // 0x6d1(0x5f)
 
-	void SafeZoneIsEmpty__DelegateSignature(); // DelegateFunction SafeZoneReservationFramework.SafeZoneComponent.SafeZoneIsEmpty__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
-	void OnRep_UpdateCollisionProfile(); // Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_UpdateCollisionProfile // Final|Native|Private // @ game+0x46bde60
-	void OnRep_EmptyStateChanged(); // Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_EmptyStateChanged // Final|Native|Private // @ game+0x46bde40
-	void DeactivateSafeZone(); // Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateSafeZone // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x46bde20
-	void DeactivateCollider(); // Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateCollider // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x46bde00
-	void ActivateSafeZone(); // Function SafeZoneReservationFramework.SafeZoneComponent.ActivateSafeZone // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x46bdde0
+	void SafeZoneIsEmpty__DelegateSignature(); // DelegateFunction SafeZoneReservationFramework.SafeZoneComponent.SafeZoneIsEmpty__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
+	void OnRep_UpdateCollisionProfile(); // Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_UpdateCollisionProfile // Final|Native|Private // @ game+0x46c0480
+	void OnRep_EmptyStateChanged(); // Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_EmptyStateChanged // Final|Native|Private // @ game+0x46c0460
+	void DeactivateSafeZone(); // Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateSafeZone // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x46c0440
+	void DeactivateCollider(); // Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateCollider // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x46c0420
+	void ActivateSafeZone(); // Function SafeZoneReservationFramework.SafeZoneComponent.ActivateSafeZone // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x46c0400
 };
 

@@ -24,20 +24,20 @@ struct UBP_CharacterVFXComponent_C : UCharacterVfxComponent {
 	struct UParticleSystemComponent* vfx_player_underwater_ambient; // 0x398(0x08)
 	struct FFeatureFlag FeatureName; // 0x3a0(0x0c)
 
-	void GetWindService(struct UObject* WindInterface); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.GetWindService // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void WindVFX_DebugTick(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_DebugTick // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void WindVFX_Destroy(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_Destroy // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void WindVFX_Create(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_Create // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void WindVFX_Deactivate(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_Deactivate // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Play View Under Water FX(struct FEventPlayerViewUnderWaterStateChanged Event); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.Play View Under Water FX // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Play Falling Splash(float FallingSpeed); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.Play Falling Splash // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Play Foot Splash(struct FVector Location); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.Play Foot Splash // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveEndPlay(char EndPlayReason); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void PlayerViewUnderWaterEvent(struct FEventPlayerViewUnderWaterStateChanged Event); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.PlayerViewUnderWaterEvent // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void FallingIntoWaterEvent(struct FFallingIntoWaterEvent Event); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.FallingIntoWaterEvent // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void WaterStateChanged(struct FEventPlayerViewUnderWaterStateChanged Under water state changed); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WaterStateChanged // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void On Foot Enter Water(struct FEventCharacterFootEnterWater Enter Water); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.On Foot Enter Water // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_CharacterVFXComponent(int32_t EntryPoint); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.ExecuteUbergraph_BP_CharacterVFXComponent // HasDefaults // @ game+0x18e3b10
+	void GetWindService(struct UObject* WindInterface); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.GetWindService // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void WindVFX_DebugTick(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_DebugTick // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void WindVFX_Destroy(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_Destroy // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void WindVFX_Create(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_Create // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void WindVFX_Deactivate(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WindVFX_Deactivate // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Play View Under Water FX(struct FEventPlayerViewUnderWaterStateChanged Event); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.Play View Under Water FX // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Play Falling Splash(float FallingSpeed); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.Play Falling Splash // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Play Foot Splash(struct FVector Location); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.Play Foot Splash // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveEndPlay(char* EndPlayReason); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void PlayerViewUnderWaterEvent(struct FEventPlayerViewUnderWaterStateChanged Event); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.PlayerViewUnderWaterEvent // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void FallingIntoWaterEvent(struct FFallingIntoWaterEvent Event); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.FallingIntoWaterEvent // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void WaterStateChanged(struct FEventPlayerViewUnderWaterStateChanged Under water state changed); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.WaterStateChanged // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void On Foot Enter Water(struct FEventCharacterFootEnterWater Enter Water); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.On Foot Enter Water // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_CharacterVFXComponent(int32_t EntryPoint); // Function BP_CharacterVFXComponent.BP_CharacterVFXComponent_C.ExecuteUbergraph_BP_CharacterVFXComponent // HasDefaults // @ game+0x18e5fa0
 };
 

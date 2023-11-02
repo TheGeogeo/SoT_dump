@@ -33,7 +33,7 @@ struct UWhileActionSpotAvailableForPatrolAIGoal : UAIGoal {
 struct UWhileBlackboardKeySetAIGoal : UAIGoal {
 	struct FName BlackboardKey; // 0x40(0x08)
 
-	struct TArray<struct FString> GetAllowedBlackboardKeys(); // Function AIGoals.WhileBlackboardKeySetAIGoal.GetAllowedBlackboardKeys // Final|Native|Private|Const // @ game+0x2c8230
+	struct TArray<struct FString> GetAllowedBlackboardKeys(); // Function AIGoals.WhileBlackboardKeySetAIGoal.GetAllowedBlackboardKeys // Final|Native|Private|Const // @ game+0x2c8250
 };
 
 // Class AIGoals.WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal

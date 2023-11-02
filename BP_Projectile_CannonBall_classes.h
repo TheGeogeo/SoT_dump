@@ -5,6 +5,6 @@ struct ABP_Projectile_CannonBall_C : ACannonProjectile {
 	struct UStaticMeshComponent* CannonBall; // 0x698(0x08)
 	struct USphereComponent* Collision; // 0x6a0(0x08)
 
-	void UserConstructionScript(); // Function BP_Projectile_CannonBall.BP_Projectile_CannonBall_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Projectile_CannonBall.BP_Projectile_CannonBall_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

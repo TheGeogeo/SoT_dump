@@ -35,7 +35,7 @@ struct USirenAnimationInstance : UAnimInstance {
 	struct FHitReactionAnimationState HitReacts; // 0x6b0(0x28)
 	char UnknownData_6D8[0x38]; // 0x6d8(0x38)
 
-	void ClearActiveAttack(); // Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack // Final|Native|Public|BlueprintCallable // @ game+0x16f4660
-	void BeginNewAttack(); // Function SirensAnimation.SirenAnimationInstance.BeginNewAttack // Final|Native|Public|BlueprintCallable // @ game+0x16f4640
+	void ClearActiveAttack(); // Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack // Final|Native|Public|BlueprintCallable // @ game+0x16f6af0
+	void BeginNewAttack(); // Function SirensAnimation.SirenAnimationInstance.BeginNewAttack // Final|Native|Public|BlueprintCallable // @ game+0x16f6ad0
 };
 

@@ -2,6 +2,6 @@
 // Size: 0x77d (Inherited: 0x77d)
 struct ABP_Lantern_LargeShip_BrigDeck_StairsRight_C : ABP_InteractableShipLantern_C {
 
-	void UserConstructionScript(); // Function BP_Lantern_LargeShip_BrigDeck_StairsRight.BP_Lantern_LargeShip_BrigDeck_StairsRight_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Lantern_LargeShip_BrigDeck_StairsRight.BP_Lantern_LargeShip_BrigDeck_StairsRight_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

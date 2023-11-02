@@ -20,6 +20,6 @@ struct AAsymmetricObjectServerManager : AActor {
 	struct FStringAssetReference AsymmetricObjectAsset; // 0x3f0(0x10)
 	struct UClass* ForcedAsymmetricObjectAsset; // 0x400(0x20)
 
-	void OnRep_AsymmetricObjectAsset(); // Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset // Final|RequiredAPI|Native|Private // @ game+0x2ccef0
+	void OnRep_AsymmetricObjectAsset(); // Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset // Final|RequiredAPI|Native|Private // @ game+0x2ccf10
 };
 

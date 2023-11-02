@@ -39,30 +39,30 @@ struct ABP_GuildMastPlaque_C : AGuildPlaque {
 	struct UTexture2D* DefaultNormalMap; // 0x700(0x20)
 	struct UTexture2D* DefaultMRMap; // 0x720(0x20)
 
-	void ClearCanvas(struct UCanvas* Canvas, int32_t CanvasWidth, int32_t CavasHeight); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ClearCanvas // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ApplyRenderTargetOutputsToMIDs(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ApplyRenderTargetOutputsToMIDs // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateBevelIcon(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelIcon // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateBevelRank(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelRank // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateBevelText(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelText // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateIcon(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateIcon // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateRank(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateRank // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetTextScale(struct FVector2D FontSizeInScreenSpace, float AdjustedFontScalar); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.GetTextScale // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void UpdateBevelMaterials(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelMaterials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateText(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateText // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ApplyRenderTargetToMIDs(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ApplyRenderTargetToMIDs // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetMedallionColour(float Gold Threshold, float Silver Threshold, int32_t Rank Index, struct FLinearColor Medallion Colour); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.GetMedallionColour // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void AssignMedallionColour(struct FLinearColor Medallion Colour); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.AssignMedallionColour // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Create_MIDs(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.Create_MIDs // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnCanvasUpdate_Text(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Text // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void RefreshGuildPlaqueRender(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.RefreshGuildPlaqueRender // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnCanvasUpdate_Rank(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Rank // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnCanvasUpdate_Icon(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Icon // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnCanvasUpdate_Text_Bevel(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Text_Bevel // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnCanvasUpdate_Rank_Bevel(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Rank_Bevel // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnCanvasUpdate_Icon_Bevel(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Icon_Bevel // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GuildPlaqueMeshReady(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.GuildPlaqueMeshReady // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_GuildMastPlaque(int32_t EntryPoint); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ExecuteUbergraph_BP_GuildMastPlaque //  // @ game+0x18e3b10
+	void ClearCanvas(struct UCanvas* Canvas, int32_t CanvasWidth, int32_t CavasHeight); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ClearCanvas // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ApplyRenderTargetOutputsToMIDs(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ApplyRenderTargetOutputsToMIDs // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateBevelIcon(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelIcon // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateBevelRank(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelRank // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateBevelText(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelText // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateIcon(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateIcon // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateRank(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateRank // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetTextScale(struct FVector2D FontSizeInScreenSpace, float AdjustedFontScalar); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.GetTextScale // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void UpdateBevelMaterials(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateBevelMaterials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateText(struct UCanvas* Canvas); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UpdateText // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ApplyRenderTargetToMIDs(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ApplyRenderTargetToMIDs // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetMedallionColour(float Gold Threshold, float Silver Threshold, int32_t Rank Index, struct FLinearColor Medallion Colour); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.GetMedallionColour // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void AssignMedallionColour(struct FLinearColor Medallion Colour); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.AssignMedallionColour // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Create_MIDs(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.Create_MIDs // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnCanvasUpdate_Text(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Text // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void RefreshGuildPlaqueRender(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.RefreshGuildPlaqueRender // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnCanvasUpdate_Rank(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Rank // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnCanvasUpdate_Icon(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Icon // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnCanvasUpdate_Text_Bevel(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Text_Bevel // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnCanvasUpdate_Rank_Bevel(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Rank_Bevel // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnCanvasUpdate_Icon_Bevel(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.OnCanvasUpdate_Icon_Bevel // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GuildPlaqueMeshReady(); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.GuildPlaqueMeshReady // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_GuildMastPlaque(int32_t EntryPoint); // Function BP_GuildMastPlaque.BP_GuildMastPlaque_C.ExecuteUbergraph_BP_GuildMastPlaque //  // @ game+0x18e5fa0
 };
 

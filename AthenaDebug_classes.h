@@ -17,15 +17,15 @@ struct ADrawDebugService : AActor {
 	bool IsDrawDebugActive; // 0x440(0x01)
 	char UnknownData_441[0x7f]; // 0x441(0x7f)
 
-	void OnRep_PersistentShapeChanged(); // Function AthenaDebug.DrawDebugService.OnRep_PersistentShapeChanged // Final|Native|Private // @ game+0x36d9e90
-	void OnRep_IsDrawDebugActiveChanged(); // Function AthenaDebug.DrawDebugService.OnRep_IsDrawDebugActiveChanged // Final|Native|Private // @ game+0x36d9e70
-	void Multicast_ClearGroup(struct FName GroupName); // Function AthenaDebug.DrawDebugService.Multicast_ClearGroup // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d9df0
-	void Multicast_AddStrings(struct TArray<struct FDrawDebugItemString> Strings); // Function AthenaDebug.DrawDebugService.Multicast_AddStrings // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d9d10
-	void Multicast_AddSpheres(struct TArray<struct FDrawDebugItemSphere> Spheres); // Function AthenaDebug.DrawDebugService.Multicast_AddSpheres // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d9c70
-	void Multicast_AddSectors(struct TArray<struct FDrawDebugItemSector> Sectors); // Function AthenaDebug.DrawDebugService.Multicast_AddSectors // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d9bd0
-	void Multicast_AddLines(struct TArray<struct FDrawDebugItemLine> Lines); // Function AthenaDebug.DrawDebugService.Multicast_AddLines // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d9b30
-	void Multicast_AddCapsules(struct TArray<struct FDrawDebugItemCapsule> Capsules); // Function AthenaDebug.DrawDebugService.Multicast_AddCapsules // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d9a90
-	void Multicast_AddBoxes(struct TArray<struct FDrawDebugItemBox> Boxes); // Function AthenaDebug.DrawDebugService.Multicast_AddBoxes // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36d99f0
+	void OnRep_PersistentShapeChanged(); // Function AthenaDebug.DrawDebugService.OnRep_PersistentShapeChanged // Final|Native|Private // @ game+0x36dc4a0
+	void OnRep_IsDrawDebugActiveChanged(); // Function AthenaDebug.DrawDebugService.OnRep_IsDrawDebugActiveChanged // Final|Native|Private // @ game+0x36dc480
+	void Multicast_ClearGroup(struct FName GroupName); // Function AthenaDebug.DrawDebugService.Multicast_ClearGroup // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc400
+	void Multicast_AddStrings(struct TArray<struct FDrawDebugItemString> Strings); // Function AthenaDebug.DrawDebugService.Multicast_AddStrings // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc320
+	void Multicast_AddSpheres(struct TArray<struct FDrawDebugItemSphere> Spheres); // Function AthenaDebug.DrawDebugService.Multicast_AddSpheres // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc280
+	void Multicast_AddSectors(struct TArray<struct FDrawDebugItemSector> Sectors); // Function AthenaDebug.DrawDebugService.Multicast_AddSectors // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc1e0
+	void Multicast_AddLines(struct TArray<struct FDrawDebugItemLine> Lines); // Function AthenaDebug.DrawDebugService.Multicast_AddLines // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc140
+	void Multicast_AddCapsules(struct TArray<struct FDrawDebugItemCapsule> Capsules); // Function AthenaDebug.DrawDebugService.Multicast_AddCapsules // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc0a0
+	void Multicast_AddBoxes(struct TArray<struct FDrawDebugItemBox> Boxes); // Function AthenaDebug.DrawDebugService.Multicast_AddBoxes // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x36dc000
 };
 
 // Class AthenaDebug.ShippingDebugActorSphereCollection

@@ -23,6 +23,6 @@ struct ABP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C : AActor {
 	struct UMergedStaticMeshComponent* MergedStaticMesh; // 0x460(0x08)
 	struct UStaticMeshComponent* shp_interior_captains_cabin_01_a; // 0x468(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin.BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin.BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

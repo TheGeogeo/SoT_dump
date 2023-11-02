@@ -11,8 +11,8 @@ struct ABP_PiratePreview_Lighting_C : AActor {
 	struct FMulticastDelegate PreviewBusy; // 0x400(0x10)
 	struct FMulticastDelegate PreviewReady; // 0x410(0x10)
 
-	void UserConstructionScript(); // Function BP_PiratePreview_Lighting.BP_PiratePreview_Lighting_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PreviewReady__DelegateSignature(struct FPiratePreviewReadyEvent Data); // Function BP_PiratePreview_Lighting.BP_PiratePreview_Lighting_C.PreviewReady__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PreviewBusy__DelegateSignature(struct FPiratePreviewBusyEvent Data); // Function BP_PiratePreview_Lighting.BP_PiratePreview_Lighting_C.PreviewBusy__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_PiratePreview_Lighting.BP_PiratePreview_Lighting_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PreviewReady__DelegateSignature(struct FPiratePreviewReadyEvent Data); // Function BP_PiratePreview_Lighting.BP_PiratePreview_Lighting_C.PreviewReady__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PreviewBusy__DelegateSignature(struct FPiratePreviewBusyEvent Data); // Function BP_PiratePreview_Lighting.BP_PiratePreview_Lighting_C.PreviewBusy__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

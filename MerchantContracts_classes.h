@@ -2,7 +2,7 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UMerchantContractsBlueprintLibrary : UBlueprintFunctionLibrary {
 
-	struct FText GetDateFromTimeLimit(TScriptInterface<struct UGameServiceProviderInterface> ServiceProviderInterface, float TimeLimit); // Function MerchantContracts.MerchantContractsBlueprintLibrary.GetDateFromTimeLimit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3d8f450
+	struct FText GetDateFromTimeLimit(TScriptInterface<struct UGameServiceProviderInterface> ServiceProviderInterface, float TimeLimit); // Function MerchantContracts.MerchantContractsBlueprintLibrary.GetDateFromTimeLimit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3d91a60
 };
 
 // Class MerchantContracts.MerchantContractsServiceInterface

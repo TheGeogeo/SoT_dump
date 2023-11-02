@@ -36,10 +36,10 @@ struct UAnimationDataConsumerInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UAnimationDataFunctionLib : UBlueprintFunctionLibrary {
 
-	bool UnwrapAnimDataEntryStruct(struct FAnimDataEntryStructWrapper Wrapper, struct UScriptStruct* DestinationStruct, struct FGenericStruct Value); // Function Animation.AnimationDataFunctionLib.UnwrapAnimDataEntryStruct // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33eb2a0
-	struct UAnimationData* MakeAnimationData(struct UClass* Class); // Function Animation.AnimationDataFunctionLib.MakeAnimationData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x33ea130
-	struct FAnimDataEntryStructWrapper GetAnimDataEntryStructAsStructWrapper(struct UAnimationData* AnimationDataObject, struct UScriptStruct* TheClass); // Function Animation.AnimationDataFunctionLib.GetAnimDataEntryStructAsStructWrapper // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x33e97a0
-	void CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs(struct UClass* InClass); // Function Animation.AnimationDataFunctionLib.CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs // Final|Native|Static|Public // @ game+0x33e93e0
+	bool UnwrapAnimDataEntryStruct(struct FAnimDataEntryStructWrapper Wrapper, struct UScriptStruct* DestinationStruct, struct FGenericStruct Value); // Function Animation.AnimationDataFunctionLib.UnwrapAnimDataEntryStruct // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ed8a0
+	struct UAnimationData* MakeAnimationData(struct UClass* Class); // Function Animation.AnimationDataFunctionLib.MakeAnimationData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x33ec730
+	struct FAnimDataEntryStructWrapper GetAnimDataEntryStructAsStructWrapper(struct UAnimationData* AnimationDataObject, struct UScriptStruct* TheClass); // Function Animation.AnimationDataFunctionLib.GetAnimDataEntryStructAsStructWrapper // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x33ebda0
+	void CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs(struct UClass* InClass); // Function Animation.AnimationDataFunctionLib.CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs // Final|Native|Static|Public // @ game+0x33eb9e0
 };
 
 // Class Animation.AnimationDataOverriderInterface
@@ -70,8 +70,8 @@ struct UAnimationDataStore : UObject {
 struct UAnimationDataStoreAsset : UDataAsset {
 	struct TArray<struct FAnimationDataStoreAssetEntry> AssetRefs; // 0x28(0x10)
 
-	struct UAnimationData* LookupAnimationData(struct UClass* AnimDataId); // Function Animation.AnimationDataStoreAsset.LookupAnimationData // Final|Native|Public|BlueprintCallable // @ game+0x33ea0a0
-	struct UClass* GetAnimationDataClass(struct FAnimationDataStoreAssetEntry Entry); // Function Animation.AnimationDataStoreAsset.GetAnimationDataClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33e98b0
+	struct UAnimationData* LookupAnimationData(struct UClass* AnimDataId); // Function Animation.AnimationDataStoreAsset.LookupAnimationData // Final|Native|Public|BlueprintCallable // @ game+0x33ec6a0
+	struct UClass* GetAnimationDataClass(struct FAnimationDataStoreAssetEntry Entry); // Function Animation.AnimationDataStoreAsset.GetAnimationDataClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ebeb0
 };
 
 // Class Animation.AnimationDataStoreWeakReferenceAsset
@@ -97,7 +97,7 @@ struct UAnimationDataStoreComponent : UActorComponent {
 // Size: 0x28 (Inherited: 0x28)
 struct UAnimationDataStoreInterface : UInterface {
 
-	struct UAnimationData* GetAnimationDataForId(struct UClass* AnimDataId); // Function Animation.AnimationDataStoreInterface.GetAnimationDataForId // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x33e9950
+	struct UAnimationData* GetAnimationDataForId(struct UClass* AnimDataId); // Function Animation.AnimationDataStoreInterface.GetAnimationDataForId // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x33ebf50
 };
 
 // Class Animation.AnimationEditorSettings
@@ -318,8 +318,8 @@ struct UCosmeticItemAnimationComponent : UActorComponent {
 	struct UCosmeticItemAnimationDataAsset* DataAsset; // 0x120(0x08)
 	char UnknownData_128[0x8]; // 0x128(0x08)
 
-	bool SpawnCosmeticItem(struct USkeletalMeshComponent* MeshComponent, struct UClass* ObjectToSpawn, char SpawnLocation, struct UCosmeticItemAnimationSetDataAsset* CosmeticData, bool SpawnHidden); // Function Animation.CosmeticItemAnimationComponent.SpawnCosmeticItem // Final|Native|Public|BlueprintCallable // @ game+0x33eaec0
-	void DestroyAllCosmeticItems(); // Function Animation.CosmeticItemAnimationComponent.DestroyAllCosmeticItems // Native|Public|BlueprintCallable // @ game+0x33e96b0
+	bool SpawnCosmeticItem(struct USkeletalMeshComponent* MeshComponent, struct UClass* ObjectToSpawn, char SpawnLocation, struct UCosmeticItemAnimationSetDataAsset* CosmeticData, bool SpawnHidden); // Function Animation.CosmeticItemAnimationComponent.SpawnCosmeticItem // Final|Native|Public|BlueprintCallable // @ game+0x33ed4c0
+	void DestroyAllCosmeticItems(); // Function Animation.CosmeticItemAnimationComponent.DestroyAllCosmeticItems // Native|Public|BlueprintCallable // @ game+0x33ebcb0
 };
 
 // Class Animation.CosmeticItemAnimationDataAsset
@@ -341,7 +341,7 @@ struct UCosmeticItemAnimationInstance : UAnimInstance {
 	struct UAnimMontage* ActiveMontage; // 0x450(0x08)
 	char UnknownData_458[0xa8]; // 0x458(0xa8)
 
-	void UnregisterEvents(); // Function Animation.CosmeticItemAnimationInstance.UnregisterEvents // Final|Native|Private // @ game+0x33eb280
+	void UnregisterEvents(); // Function Animation.CosmeticItemAnimationInstance.UnregisterEvents // Final|Native|Private // @ game+0x33ed880
 };
 
 // Class Animation.CosmeticItemAnimationSetDataAsset
@@ -378,7 +378,7 @@ struct UCustomAnimationMontageComponent : UActorComponent {
 	struct FCustomAnimationMontageComponentReplicatedData ReplicatedData; // 0xd0(0x0c)
 	char UnknownData_DC[0x6c]; // 0xdc(0x6c)
 
-	void OnRep_ReplicatedData(struct FCustomAnimationMontageComponentReplicatedData PriorData); // Function Animation.CustomAnimationMontageComponent.OnRep_ReplicatedData // Final|Native|Private|HasOutParms // @ game+0x33ea330
+	void OnRep_ReplicatedData(struct FCustomAnimationMontageComponentReplicatedData PriorData); // Function Animation.CustomAnimationMontageComponent.OnRep_ReplicatedData // Final|Native|Private|HasOutParms // @ game+0x33ec930
 };
 
 // Class Animation.CustomAnimationMontageDefinitionDataAsset
@@ -424,26 +424,26 @@ struct UIndexedPlayableMontagesInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct ULimbIKFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void SetTranslationStrength(struct FLimbIK LimbIK, float InRotationStrength); // Function Animation.LimbIKFunctionLibrary.SetTranslationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33eadc0
-	void SetTransform(struct FLimbIK LimbIK, struct FTransform InTransform); // Function Animation.LimbIKFunctionLibrary.SetTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x33eac70
-	void SetRotationStrength(struct FLimbIK LimbIK, float InRotationStrength); // Function Animation.LimbIKFunctionLibrary.SetRotationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33eab70
-	void SetParentBone(struct FLimbIK LimbIK, struct FName Bone); // Function Animation.LimbIKFunctionLibrary.SetParentBone // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33eaa60
-	void SetIKSpace(struct FLimbIK LimbIK, char IKSpace); // Function Animation.LimbIKFunctionLibrary.SetIKSpace // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ea960
-	void SetEnabled(struct FLimbIK LimbIK, bool Enabled, char IKSpace, struct FName ParentBone); // Function Animation.LimbIKFunctionLibrary.SetEnabled // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ea7d0
-	void SetBlendOutSpeed(struct FLimbIK LimbIK, float BlendOutSpeed); // Function Animation.LimbIKFunctionLibrary.SetBlendOutSpeed // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ea6d0
-	void SetBlendInSpeed(struct FLimbIK LimbIK, float BlendInSpeed); // Function Animation.LimbIKFunctionLibrary.SetBlendInSpeed // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ea5d0
-	void SetAnimationOverride(struct FLimbIK LimbIK, bool AnimationOverride); // Function Animation.LimbIKFunctionLibrary.SetAnimationOverride // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ea4d0
-	void SetAlphaTarget(struct FLimbIK LimbIK, float AlphaTarget); // Function Animation.LimbIKFunctionLibrary.SetAlphaTarget // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ea3d0
-	bool IsEnabled(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.IsEnabled // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e9fe0
-	float GetTranslationStrength(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetTranslationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e9ea0
-	struct FTransform GetTransform(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33e9dc0
-	float GetRotationStrength(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetRotationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e9d00
-	struct FName GetParentBone(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetParentBone // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e9c30
-	char GetIKSpace(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetIKSpace // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e9b70
-	float GetCurrentAlpha(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetCurrentAlpha // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e9ab0
-	bool GetAnimationOverride(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetAnimationOverride // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e99f0
-	float GetAlphaTarget(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetAlphaTarget // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33e96e0
-	float ConvertBoolToAlpha(bool InBool); // Function Animation.LimbIKFunctionLibrary.ConvertBoolToAlpha // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x33e9450
+	void SetTranslationStrength(struct FLimbIK LimbIK, float InRotationStrength); // Function Animation.LimbIKFunctionLibrary.SetTranslationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ed3c0
+	void SetTransform(struct FLimbIK LimbIK, struct FTransform InTransform); // Function Animation.LimbIKFunctionLibrary.SetTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x33ed270
+	void SetRotationStrength(struct FLimbIK LimbIK, float InRotationStrength); // Function Animation.LimbIKFunctionLibrary.SetRotationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ed170
+	void SetParentBone(struct FLimbIK LimbIK, struct FName Bone); // Function Animation.LimbIKFunctionLibrary.SetParentBone // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ed060
+	void SetIKSpace(struct FLimbIK LimbIK, char IKSpace); // Function Animation.LimbIKFunctionLibrary.SetIKSpace // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ecf60
+	void SetEnabled(struct FLimbIK LimbIK, bool Enabled, char IKSpace, struct FName ParentBone); // Function Animation.LimbIKFunctionLibrary.SetEnabled // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ecdd0
+	void SetBlendOutSpeed(struct FLimbIK LimbIK, float BlendOutSpeed); // Function Animation.LimbIKFunctionLibrary.SetBlendOutSpeed // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33eccd0
+	void SetBlendInSpeed(struct FLimbIK LimbIK, float BlendInSpeed); // Function Animation.LimbIKFunctionLibrary.SetBlendInSpeed // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ecbd0
+	void SetAnimationOverride(struct FLimbIK LimbIK, bool AnimationOverride); // Function Animation.LimbIKFunctionLibrary.SetAnimationOverride // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ecad0
+	void SetAlphaTarget(struct FLimbIK LimbIK, float AlphaTarget); // Function Animation.LimbIKFunctionLibrary.SetAlphaTarget // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ec9d0
+	bool IsEnabled(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.IsEnabled // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ec5e0
+	float GetTranslationStrength(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetTranslationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ec4a0
+	struct FTransform GetTransform(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33ec3c0
+	float GetRotationStrength(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetRotationStrength // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ec300
+	struct FName GetParentBone(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetParentBone // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ec230
+	char GetIKSpace(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetIKSpace // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ec170
+	float GetCurrentAlpha(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetCurrentAlpha // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ec0b0
+	bool GetAnimationOverride(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetAnimationOverride // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ebff0
+	float GetAlphaTarget(struct FLimbIK LimbIK); // Function Animation.LimbIKFunctionLibrary.GetAlphaTarget // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ebce0
+	float ConvertBoolToAlpha(bool InBool); // Function Animation.LimbIKFunctionLibrary.ConvertBoolToAlpha // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x33eba50
 };
 
 // Class Animation.LoadableAnimationsInterface
@@ -455,9 +455,9 @@ struct ULoadableAnimationsInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct ULocomotionFunctionLib : UBlueprintFunctionLibrary {
 
-	float UpdateControllerSpineRotation(struct FRotator CharacterRotation, float AngleSpeedMax, float AngleSpeedMin); // Function Animation.LocomotionFunctionLib.UpdateControllerSpineRotation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33eb760
-	struct FActorVelocityData UpdateCharacterSpeed(struct FVector Velocity, float CurrentMaxWalkSpeed, float WantedMovementSpeed, float BaseMaxWalkSpeed, float SpeedBlendValue, bool IsSwimming, float DeadZone); // Function Animation.LocomotionFunctionLib.UpdateCharacterSpeed // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33eb530
-	float UpdateCalculateRateAndCurrentYaw(struct FRotator CharacterRotation, float LargeRate, float CurrentCharacterYaw, float DeltaSeconds); // Function Animation.LocomotionFunctionLib.UpdateCalculateRateAndCurrentYaw // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33eb3d0
+	float UpdateControllerSpineRotation(struct FRotator CharacterRotation, float AngleSpeedMax, float AngleSpeedMin); // Function Animation.LocomotionFunctionLib.UpdateControllerSpineRotation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33edd60
+	struct FActorVelocityData UpdateCharacterSpeed(struct FVector Velocity, float CurrentMaxWalkSpeed, float WantedMovementSpeed, float BaseMaxWalkSpeed, float SpeedBlendValue, bool IsSwimming, float DeadZone); // Function Animation.LocomotionFunctionLib.UpdateCharacterSpeed // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33edb30
+	float UpdateCalculateRateAndCurrentYaw(struct FRotator CharacterRotation, float LargeRate, float CurrentCharacterYaw, float DeltaSeconds); // Function Animation.LocomotionFunctionLib.UpdateCalculateRateAndCurrentYaw // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x33ed9d0
 };
 
 // Class Animation.NetworkSyncedAnimationInstanceInterface
@@ -478,8 +478,8 @@ struct UNetworkSyncedAnimationComponent : UActorComponent {
 	struct UAnimInstance* AnimInstance; // 0xe8(0x08)
 	char UnknownData_F0[0x20]; // 0xf0(0x20)
 
-	void OnRep_PlayingAnimationIndex(); // Function Animation.NetworkSyncedAnimationComponent.OnRep_PlayingAnimationIndex // Final|Native|Protected // @ game+0x33ea310
-	void OnRep_AnimationProgression(); // Function Animation.NetworkSyncedAnimationComponent.OnRep_AnimationProgression // Final|Native|Protected // @ game+0x33ea2f0
+	void OnRep_PlayingAnimationIndex(); // Function Animation.NetworkSyncedAnimationComponent.OnRep_PlayingAnimationIndex // Final|Native|Protected // @ game+0x33ec910
+	void OnRep_AnimationProgression(); // Function Animation.NetworkSyncedAnimationComponent.OnRep_AnimationProgression // Final|Native|Protected // @ game+0x33ec8f0
 };
 
 // Class Animation.RemoteAnimPlayableInterface
@@ -509,7 +509,7 @@ struct UTransformBlendCurveComponent : UActorComponent {
 // Size: 0x28 (Inherited: 0x28)
 struct UTurningFunctionLib : UBlueprintFunctionLibrary {
 
-	bool TurningUpdate(float DeltaSeconds, bool CharacterMoving, bool DeadZone, float TurnRate, float DelayedCounter, float CounterMax, bool TurningLeft); // Function Animation.TurningFunctionLib.TurningUpdate // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33eb050
+	bool TurningUpdate(float DeltaSeconds, bool CharacterMoving, bool DeadZone, float TurnRate, float DelayedCounter, float CounterMax, bool TurningLeft); // Function Animation.TurningFunctionLib.TurningUpdate // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x33ed650
 };
 
 // Class Animation.WaitForAnimationStateEntryProxy
@@ -518,9 +518,9 @@ struct UWaitForAnimationStateEntryProxy : UObject {
 	struct FMulticastDelegate OnReachedState; // 0x28(0x10)
 	char UnknownData_38[0x18]; // 0x38(0x18)
 
-	void OnEnteredState(struct FName path); // Function Animation.WaitForAnimationStateEntryProxy.OnEnteredState // Final|Native|Public // @ game+0x33ea1f0
-	void OnAnimationUpdated(); // Function Animation.WaitForAnimationStateEntryProxy.OnAnimationUpdated // Final|Native|Public // @ game+0x33ea1b0
-	struct UWaitForAnimationStateEntryProxy* CreateProxy(struct UAnimInstance* AnimInstance, struct FName TargetPath); // Function Animation.WaitForAnimationStateEntryProxy.CreateProxy // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33e9510
+	void OnEnteredState(struct FName path); // Function Animation.WaitForAnimationStateEntryProxy.OnEnteredState // Final|Native|Public // @ game+0x33ec7f0
+	void OnAnimationUpdated(); // Function Animation.WaitForAnimationStateEntryProxy.OnAnimationUpdated // Final|Native|Public // @ game+0x33ec7b0
+	struct UWaitForAnimationStateEntryProxy* CreateProxy(struct UAnimInstance* AnimInstance, struct FName TargetPath); // Function Animation.WaitForAnimationStateEntryProxy.CreateProxy // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ebb10
 };
 
 // Class Animation.WaitForAnimationStateExitProxy
@@ -529,9 +529,9 @@ struct UWaitForAnimationStateExitProxy : UObject {
 	struct FMulticastDelegate OnStateExit; // 0x28(0x10)
 	char UnknownData_38[0x10]; // 0x38(0x10)
 
-	void OnExitState(struct FName path); // Function Animation.WaitForAnimationStateExitProxy.OnExitState // Final|Native|Public // @ game+0x33ea270
-	void OnAnimationUpdated(); // Function Animation.WaitForAnimationStateExitProxy.OnAnimationUpdated // Final|Native|Public // @ game+0x33ea1d0
-	struct UWaitForAnimationStateExitProxy* CreateProxy(struct UAnimInstance* AnimInstance, struct FName TargetPath); // Function Animation.WaitForAnimationStateExitProxy.CreateProxy // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33e95e0
+	void OnExitState(struct FName path); // Function Animation.WaitForAnimationStateExitProxy.OnExitState // Final|Native|Public // @ game+0x33ec870
+	void OnAnimationUpdated(); // Function Animation.WaitForAnimationStateExitProxy.OnAnimationUpdated // Final|Native|Public // @ game+0x33ec7d0
+	struct UWaitForAnimationStateExitProxy* CreateProxy(struct UAnimInstance* AnimInstance, struct FName TargetPath); // Function Animation.WaitForAnimationStateExitProxy.CreateProxy // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x33ebbe0
 };
 
 // Class Animation.WeightedAnimationLoadOnDemandDataAsset
@@ -548,15 +548,15 @@ struct UWeightedAnimSequenceLoadOnDemand : UObject {
 	struct TArray<struct FWeightedAnimationData> WeightedAnimationList; // 0x30(0x10)
 	char UnknownData_40[0xe0]; // 0x40(0xe0)
 
-	void Initialise(struct UWeightedAnimationLoadOnDemandDataAsset* InAnimationData); // Function Animation.WeightedAnimSequenceLoadOnDemand.Initialise // Final|Native|Public|BlueprintCallable // @ game+0x33e9f60
-	struct UWeightedAnimSequenceLoadOnDemand* CreateNewWeightedAnimSequenceLoadOnDemand(); // Function Animation.WeightedAnimSequenceLoadOnDemand.CreateNewWeightedAnimSequenceLoadOnDemand // Final|Native|Static|Public|BlueprintCallable // @ game+0x33e94e0
+	void Initialise(struct UWeightedAnimationLoadOnDemandDataAsset* InAnimationData); // Function Animation.WeightedAnimSequenceLoadOnDemand.Initialise // Final|Native|Public|BlueprintCallable // @ game+0x33ec560
+	struct UWeightedAnimSequenceLoadOnDemand* CreateNewWeightedAnimSequenceLoadOnDemand(); // Function Animation.WeightedAnimSequenceLoadOnDemand.CreateNewWeightedAnimSequenceLoadOnDemand // Final|Native|Static|Public|BlueprintCallable // @ game+0x33ebae0
 };
 
 // Class Animation.DockableInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UDockableInterface : UInterface {
 
-	void HandleDestroy(); // Function Animation.DockableInterface.HandleDestroy // Native|Public // @ game+0x387afd0
-	struct FDockableInfo GetDockableInfo(); // Function Animation.DockableInterface.GetDockableInfo // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x387aea0
+	void HandleDestroy(); // Function Animation.DockableInterface.HandleDestroy // Native|Public // @ game+0x387d5e0
+	struct FDockableInfo GetDockableInfo(); // Function Animation.DockableInterface.GetDockableInfo // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x387d4b0
 };
 

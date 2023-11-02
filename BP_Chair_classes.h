@@ -3,7 +3,7 @@
 struct ABP_Chair_C : AGenericPartWithMMC {
 	struct UStaticMeshMemoryConstraintComponent* ChairMesh; // 0x470(0x08)
 
-	struct UStaticMeshComponent* GetMeshComponent(); // Function BP_Chair.BP_Chair_C.GetMeshComponent // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Chair.BP_Chair_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	struct UStaticMeshComponent* GetMeshComponent(); // Function BP_Chair.BP_Chair_C.GetMeshComponent // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Chair.BP_Chair_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

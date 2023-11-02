@@ -22,6 +22,6 @@ struct ABP_FactionHourglass_C : AFactionVoteInteractionActor {
 	struct UStaticMeshVoteVisualiserComponent* StaticMeshVoteVisualiser; // 0x570(0x08)
 	struct UActionRulesComponent* ActionRules; // 0x578(0x08)
 
-	void UserConstructionScript(); // Function BP_FactionHourglass.BP_FactionHourglass_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_FactionHourglass.BP_FactionHourglass_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

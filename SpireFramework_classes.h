@@ -24,7 +24,7 @@ struct UHeightTriggerableEffectsComponent : UActorComponent {
 	float ShakeOuterRadius; // 0x104(0x04)
 	char UnknownData_108[0x50]; // 0x108(0x50)
 
-	void SetMovementDirection(char InMovement); // Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection // Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable // @ game+0x4800340
+	void SetMovementDirection(char InMovement); // Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection // Final|RequiredAPI|BlueprintCosmetic|Native|Public|BlueprintCallable // @ game+0x4802960
 };
 
 // Class SpireFramework.SpireResource
@@ -53,7 +53,7 @@ struct ASpireService : AActor {
 	struct TArray<struct FSpireInfo> SpireLevels; // 0x3e8(0x10)
 	char UnknownData_3F8[0x68]; // 0x3f8(0x68)
 
-	void OnRep_SpireLevels(struct TArray<struct FSpireInfo> InPreviousSpireLevels); // Function SpireFramework.SpireService.OnRep_SpireLevels // Final|Native|Private|HasOutParms // @ game+0x4800210
+	void OnRep_SpireLevels(struct TArray<struct FSpireInfo> InPreviousSpireLevels); // Function SpireFramework.SpireService.OnRep_SpireLevels // Final|Native|Private|HasOutParms // @ game+0x4802830
 };
 
 // Class SpireFramework.SpireStreamedLevelDataAsset
@@ -87,8 +87,8 @@ struct UTaleSpireService : UTaleQuestService {
 	struct FMulticastDelegate SpireMadeVisible; // 0x68(0x10)
 	char UnknownData_78[0x30]; // 0x78(0x30)
 
-	void RegisterResetMechanismInterface(struct AActor* InMechanismResetInterface); // Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface // Final|Native|Public|BlueprintCallable // @ game+0x48002c0
-	bool IsSpireVisible(); // Function SpireFramework.TaleSpireService.IsSpireVisible // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x48001e0
+	void RegisterResetMechanismInterface(struct AActor* InMechanismResetInterface); // Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface // Final|Native|Public|BlueprintCallable // @ game+0x48028e0
+	bool IsSpireVisible(); // Function SpireFramework.TaleSpireService.IsSpireVisible // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4802800
 };
 
 // Class SpireFramework.TaleSpireServiceDesc

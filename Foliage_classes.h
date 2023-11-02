@@ -9,8 +9,8 @@ struct UFoliageInstancedStaticMeshComponent : UHierarchicalInstancedStaticMeshCo
 // Size: 0x28 (Inherited: 0x28)
 struct UFoliageStatistics : UBlueprintFunctionLibrary {
 
-	int32_t FoliageOverlappingSphereCount(struct UObject* WorldContextObject, struct UStaticMesh* StaticMesh, struct FVector CenterPosition, float Radius); // Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x20d5680
-	int32_t FoliageOverlappingBoxCount(struct UObject* WorldContextObject, struct UStaticMesh* StaticMesh, struct FBox Box); // Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x20d5560
+	int32_t FoliageOverlappingSphereCount(struct UObject* WorldContextObject, struct UStaticMesh* StaticMesh, struct FVector CenterPosition, float Radius); // Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x20d7b10
+	int32_t FoliageOverlappingBoxCount(struct UObject* WorldContextObject, struct UStaticMesh* StaticMesh, struct FBox Box); // Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x20d79f0
 };
 
 // Class Foliage.FoliageType
@@ -146,7 +146,7 @@ struct AInteractiveFoliageActor : AStaticMeshActor {
 	float Mass; // 0x430(0x04)
 	char UnknownData_434[0x4]; // 0x434(0x04)
 
-	void CapsuleTouched(struct AActor* Other, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched // Final|Native|Protected|HasOutParms // @ game+0x20d5390
+	void CapsuleTouched(struct AActor* Other, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched // Final|Native|Protected|HasOutParms // @ game+0x20d7820
 };
 
 // Class Foliage.InteractiveFoliageComponent
@@ -182,7 +182,7 @@ struct UProceduralFoliageSpawner : UObject {
 	bool bNeedsSimulation; // 0x48(0x01)
 	char UnknownData_49[0x1f]; // 0x49(0x1f)
 
-	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate // Final|Native|Public|BlueprintCallable // @ game+0x20d57d0
+	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate // Final|Native|Public|BlueprintCallable // @ game+0x20d7c60
 };
 
 // Class Foliage.ProceduralFoliageTile

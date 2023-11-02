@@ -28,17 +28,17 @@ struct UAudioPortalComponent : USceneComponent {
 	struct UStoryDrivenAudioPortalDataAsset* CollectionAsset; // 0x310(0x08)
 	char UnknownData_318[0x28]; // 0x318(0x28)
 
-	void SetParentShip(struct AActor* ParentShip); // Function AthenaAudio.AudioPortalComponent.SetParentShip // Native|Public|BlueprintCallable // @ game+0x3727ce0
+	void SetParentShip(struct AActor* ParentShip); // Function AthenaAudio.AudioPortalComponent.SetParentShip // Native|Public|BlueprintCallable // @ game+0x372a2f0
 };
 
 // Class AthenaAudio.AudioPortalInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UAudioPortalInterface : UInterface {
 
-	void UnregisterPortal(struct UAudioPortalComponent* AudioPortal); // Function AthenaAudio.AudioPortalInterface.UnregisterPortal // Native|Public|BlueprintCallable // @ game+0x3727d70
-	void RegisterPortal(struct UAudioPortalComponent* AudioPortal, struct AActor* OwningActor); // Function AthenaAudio.AudioPortalInterface.RegisterPortal // Native|Public|BlueprintCallable // @ game+0x3727c00
-	struct TArray<struct UAudioPortalComponent*> GetAllRegisteredPortalsInSpecificSpace(struct UAudioSpaceDataAsset* AudioSpace, struct AActor* OwningActor); // Function AthenaAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace // Native|Public // @ game+0x3727810
-	struct TArray<struct UAudioPortalComponent*> GetAllRegisteredPortals(); // Function AthenaAudio.AudioPortalInterface.GetAllRegisteredPortals // Native|Public|Const // @ game+0x37277b0
+	void UnregisterPortal(struct UAudioPortalComponent* AudioPortal); // Function AthenaAudio.AudioPortalInterface.UnregisterPortal // Native|Public|BlueprintCallable // @ game+0x372a380
+	void RegisterPortal(struct UAudioPortalComponent* AudioPortal, struct AActor* OwningActor); // Function AthenaAudio.AudioPortalInterface.RegisterPortal // Native|Public|BlueprintCallable // @ game+0x372a210
+	struct TArray<struct UAudioPortalComponent*> GetAllRegisteredPortalsInSpecificSpace(struct UAudioSpaceDataAsset* AudioSpace, struct AActor* OwningActor); // Function AthenaAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace // Native|Public // @ game+0x3729e20
+	struct TArray<struct UAudioPortalComponent*> GetAllRegisteredPortals(); // Function AthenaAudio.AudioPortalInterface.GetAllRegisteredPortals // Native|Public|Const // @ game+0x3729dc0
 };
 
 // Class AthenaAudio.AudioPortalService
@@ -55,8 +55,8 @@ struct UAudioSpaceComponent : UStaticMeshComponent {
 	struct UStoryDrivenAudioPortalDataAsset* CollectionAsset; // 0x630(0x08)
 	char UnknownData_638[0x18]; // 0x638(0x18)
 
-	void OnOverlapEnd(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function AthenaAudio.AudioSpaceComponent.OnOverlapEnd // Final|Native|Private // @ game+0x3727b00
-	void OnOverlapBegin(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool FromSweep, struct FHitResult SweepResult); // Function AthenaAudio.AudioSpaceComponent.OnOverlapBegin // Final|Native|Private|HasOutParms // @ game+0x3727930
+	void OnOverlapEnd(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function AthenaAudio.AudioSpaceComponent.OnOverlapEnd // Final|Native|Private // @ game+0x372a110
+	void OnOverlapBegin(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool FromSweep, struct FHitResult SweepResult); // Function AthenaAudio.AudioSpaceComponent.OnOverlapBegin // Final|Native|Private|HasOutParms // @ game+0x3729f40
 };
 
 // Class AthenaAudio.AudioSpaceTrackerComponent
@@ -64,7 +64,7 @@ struct UAudioSpaceComponent : UStaticMeshComponent {
 struct UAudioSpaceTrackerComponent : UActorComponent {
 	struct TArray<struct UAudioSpaceComponent*> CurrentSpaces; // 0xc8(0x10)
 
-	struct UAudioSpaceDataAsset* GetCurrentSpace(); // Function AthenaAudio.AudioSpaceTrackerComponent.GetCurrentSpace // Final|Native|Public|BlueprintCallable // @ game+0x3727900
+	struct UAudioSpaceDataAsset* GetCurrentSpace(); // Function AthenaAudio.AudioSpaceTrackerComponent.GetCurrentSpace // Final|Native|Public|BlueprintCallable // @ game+0x3729f10
 };
 
 // Class AthenaAudio.MultiEmitter
@@ -73,8 +73,8 @@ struct AMultiEmitter : AActor {
 	struct UMultiEmitterRootComponent* MultiEmitterRootComponent; // 0x3c8(0x08)
 	char UnknownData_3D0[0x8]; // 0x3d0(0x08)
 
-	void ResetNamingCount(); // Function AthenaAudio.MultiEmitter.ResetNamingCount // Final|Native|Public|BlueprintCallable // @ game+0x3727cc0
-	void CreateAndAddMergedEmitterComponentToRoot(struct FName InName, struct FVector InOffset, struct UWwiseEvent* InWwiseEvent, struct UWwiseObjectPoolWrapper* InPool); // Function AthenaAudio.MultiEmitter.CreateAndAddMergedEmitterComponentToRoot // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3727650
+	void ResetNamingCount(); // Function AthenaAudio.MultiEmitter.ResetNamingCount // Final|Native|Public|BlueprintCallable // @ game+0x372a2d0
+	void CreateAndAddMergedEmitterComponentToRoot(struct FName InName, struct FVector InOffset, struct UWwiseEvent* InWwiseEvent, struct UWwiseObjectPoolWrapper* InPool); // Function AthenaAudio.MultiEmitter.CreateAndAddMergedEmitterComponentToRoot // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3729c60
 };
 
 // Class AthenaAudio.StoryDrivenAudioPortalDataAsset

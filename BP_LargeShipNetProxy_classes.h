@@ -5,14 +5,14 @@ struct ABP_LargeShipNetProxy_C : AShipNetProxy {
 	struct UStaticMeshComponent* EmissaryFlags; // 0x4b8(0x08)
 	struct TArray<struct UMaterialInstanceDynamic*> Dynamic Materials; // 0x4c0(0x10)
 
-	void Set Colour on All Materials(struct FName Variable Name, struct FLinearColor Value); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Colour on All Materials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Set Value on All Materials(struct FName Variable Name, float Value); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Value on All Materials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Apply Bits to Lanterns(int32_t Lantern Bits); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Apply Bits to Lanterns // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Create Dynamic Materials(); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Create Dynamic Materials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnLanternStateChanged(int32_t LanternStateBits); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnLanternStateChanged // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void OnEmissaryActiveStateChanged(bool InNewEmissaryActiveState); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnEmissaryActiveStateChanged // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_LargeShipNetProxy(int32_t EntryPoint); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ExecuteUbergraph_BP_LargeShipNetProxy //  // @ game+0x18e3b10
+	void Set Colour on All Materials(struct FName Variable Name, struct FLinearColor Value); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Colour on All Materials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Set Value on All Materials(struct FName Variable Name, float Value); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Value on All Materials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Apply Bits to Lanterns(int32_t Lantern Bits); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Apply Bits to Lanterns // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Create Dynamic Materials(); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Create Dynamic Materials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnLanternStateChanged(int32_t* LanternStateBits); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnLanternStateChanged // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void OnEmissaryActiveStateChanged(bool* InNewEmissaryActiveState); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnEmissaryActiveStateChanged // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_LargeShipNetProxy(int32_t EntryPoint); // Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ExecuteUbergraph_BP_LargeShipNetProxy //  // @ game+0x18e5fa0
 };
 

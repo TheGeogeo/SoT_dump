@@ -14,7 +14,7 @@ struct UBP_Anim_Cannon_C : UCannonAnimInstance {
 	struct FAnimNode_StateMachine AnimGraphNode_StateMachine_F11BDD78417C84D075356DA9724CF142; // 0x7f8(0xa8)
 	struct FObjectMessagingHandle FireEventHandle; // 0x8a0(0x58)
 
-	void AnimNotify_FireEnd(); // Function BP_Anim_Cannon.BP_Anim_Cannon_C.AnimNotify_FireEnd // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Anim_Cannon(int32_t EntryPoint); // Function BP_Anim_Cannon.BP_Anim_Cannon_C.ExecuteUbergraph_BP_Anim_Cannon //  // @ game+0x18e3b10
+	void AnimNotify_FireEnd(); // Function BP_Anim_Cannon.BP_Anim_Cannon_C.AnimNotify_FireEnd // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Anim_Cannon(int32_t EntryPoint); // Function BP_Anim_Cannon.BP_Anim_Cannon_C.ExecuteUbergraph_BP_Anim_Cannon //  // @ game+0x18e5fa0
 };
 

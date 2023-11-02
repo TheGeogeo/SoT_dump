@@ -2,11 +2,11 @@
 // Size: 0x28 (Inherited: 0x28)
 struct ULiquidContainerInterface : UInterface {
 
-	void SetLiquidLevel(float Level); // Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel // Native|Public|BlueprintCallable // @ game+0x4661f00
-	float GetWantedLiquidLevel(); // Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4661ed0
-	float GetMaxLiquidCollectionAmount(); // Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4661ea0
-	float GetLiquidLevel(); // Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4661e40
-	float CollectLiquidAmount(float DesiredAmount); // Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount // Native|Public|BlueprintCallable // @ game+0x4661d30
+	void SetLiquidLevel(float Level); // Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel // Native|Public|BlueprintCallable // @ game+0x4664520
+	float GetWantedLiquidLevel(); // Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x46644f0
+	float GetMaxLiquidCollectionAmount(); // Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x46644c0
+	float GetLiquidLevel(); // Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4664460
+	float CollectLiquidAmount(float DesiredAmount); // Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount // Native|Public|BlueprintCallable // @ game+0x4664350
 };
 
 // Class LiquidContainer.LiquidContainerComponent
@@ -23,10 +23,10 @@ struct ULiquidContainerComponent : UActorComponent {
 	struct TArray<struct UMaterialInstanceDynamic*> LiquidMaterials; // 0x100(0x10)
 	char UnknownData_110[0x18]; // 0x110(0x18)
 
-	void SetLiquidType(char LiquidType); // Function LiquidContainer.LiquidContainerComponent.SetLiquidType // Final|Native|Public|BlueprintCallable // @ game+0x4662000
-	void SetLiquidLevel(float Level); // Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel // Final|Native|Public|BlueprintCallable // @ game+0x4661f80
-	float GetLiquidLevel(); // Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4661e70
-	void CollectLiquidMaterials(struct UMeshComponent* MeshComponent); // Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials // Final|Native|Public|BlueprintCallable // @ game+0x4661dc0
+	void SetLiquidType(char LiquidType); // Function LiquidContainer.LiquidContainerComponent.SetLiquidType // Final|Native|Public|BlueprintCallable // @ game+0x4664620
+	void SetLiquidLevel(float Level); // Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel // Final|Native|Public|BlueprintCallable // @ game+0x46645a0
+	float GetLiquidLevel(); // Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4664490
+	void CollectLiquidMaterials(struct UMeshComponent* MeshComponent); // Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials // Final|Native|Public|BlueprintCallable // @ game+0x46643e0
 };
 
 // Class LiquidContainer.LiquidContainerServiceInterface

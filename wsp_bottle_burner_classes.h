@@ -7,6 +7,6 @@ struct Awsp_bottle_burner_C : AActor {
 	struct UStaticMeshComponent* StaticMeshComponent0; // 0x3e0(0x08)
 	struct USceneComponent* SharedRoot; // 0x3e8(0x08)
 
-	void UserConstructionScript(); // Function wsp_bottle_burner.wsp_bottle_burner_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function wsp_bottle_burner.wsp_bottle_burner_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

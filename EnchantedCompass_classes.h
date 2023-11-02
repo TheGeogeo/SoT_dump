@@ -13,8 +13,8 @@ struct ARotatingCompass : AEnchantedCompass {
 	float MaxSpeedToTriggerOneShotSfx; // 0xa48(0x04)
 	char UnknownData_A4D[0x13]; // 0xa4d(0x13)
 
-	void OnRep_StartRotationSequenceCurve(); // Function EnchantedCompass.RotatingCompass.OnRep_StartRotationSequenceCurve // Final|RequiredAPI|Native|Private // @ game+0x444ac90
-	void OnRep_RotationSequenceCurve(); // Function EnchantedCompass.RotatingCompass.OnRep_RotationSequenceCurve // Final|RequiredAPI|Native|Private // @ game+0x444ac70
+	void OnRep_StartRotationSequenceCurve(); // Function EnchantedCompass.RotatingCompass.OnRep_StartRotationSequenceCurve // Final|RequiredAPI|Native|Private // @ game+0x444d2b0
+	void OnRep_RotationSequenceCurve(); // Function EnchantedCompass.RotatingCompass.OnRep_RotationSequenceCurve // Final|RequiredAPI|Native|Private // @ game+0x444d290
 };
 
 // Class EnchantedCompass.EnchantedCompassProximityAnnouncementComponent
@@ -45,9 +45,9 @@ struct AMultiTargetEnchantedCompass : ACompass {
 // Size: 0x910 (Inherited: 0x910)
 struct APrototypeMultiTargetEnchantedCompass : AMultiTargetEnchantedCompass {
 
-	float GetFloatMax(); // Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x444ac40
-	float CalculateDesiredYaw(struct FRotator CompassRotation); // Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw // Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const // @ game+0x18e3b10
-	struct TArray<struct FVector> BP_GetTargetLocations(); // Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x444ab90
+	float GetFloatMax(); // Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x444d260
+	float CalculateDesiredYaw(struct FRotator CompassRotation); // Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw // Event|Public|HasOutParms|HasDefaults|BlueprintEvent|Const // @ game+0x18e5fa0
+	struct TArray<struct FVector> BP_GetTargetLocations(); // Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x444d1b0
 };
 
 // Class EnchantedCompass.RotatingCompassSpinComponent
@@ -111,11 +111,11 @@ struct UTaleQuestRotatingCompassServiceDesc : UTaleQuestServiceDesc {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestRotatingCompassFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void WaitForRotatingCompassPickup(struct AActor* CurrentRotatingCompassWielder); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.WaitForRotatingCompassPickup // Final|RequiredAPI|Native|Public|HasOutParms // @ game+0x444af10
-	void WaitForRotatingCompassDestroyed(struct AActor* InRotatingCompass); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.WaitForRotatingCompassDestroyed // Final|RequiredAPI|Native|Public // @ game+0x444ae90
-	void UpdateRotatingCompassSplinePath(struct AActor* InRotatingCompass); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.UpdateRotatingCompassSplinePath // Final|RequiredAPI|Native|Public // @ game+0x444ae10
-	void SetRotatingCompassCurveAndWaitForCompletion(struct UCurveFloat* RotationSequenceCurve); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.SetRotatingCompassCurveAndWaitForCompletion // Final|RequiredAPI|Native|Public // @ game+0x444ad90
-	void SetRotatingCompass(struct AActor* InRotatingCompass, struct AActor* InPickerUpper); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.SetRotatingCompass // Final|RequiredAPI|Native|Public // @ game+0x444acd0
+	void WaitForRotatingCompassPickup(struct AActor* CurrentRotatingCompassWielder); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.WaitForRotatingCompassPickup // Final|RequiredAPI|Native|Public|HasOutParms // @ game+0x444d530
+	void WaitForRotatingCompassDestroyed(struct AActor* InRotatingCompass); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.WaitForRotatingCompassDestroyed // Final|RequiredAPI|Native|Public // @ game+0x444d4b0
+	void UpdateRotatingCompassSplinePath(struct AActor* InRotatingCompass); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.UpdateRotatingCompassSplinePath // Final|RequiredAPI|Native|Public // @ game+0x444d430
+	void SetRotatingCompassCurveAndWaitForCompletion(struct UCurveFloat* RotationSequenceCurve); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.SetRotatingCompassCurveAndWaitForCompletion // Final|RequiredAPI|Native|Public // @ game+0x444d3b0
+	void SetRotatingCompass(struct AActor* InRotatingCompass, struct AActor* InPickerUpper); // Function EnchantedCompass.TaleQuestRotatingCompassFunctionLibrary.SetRotatingCompass // Final|RequiredAPI|Native|Public // @ game+0x444d2f0
 };
 
 // Class EnchantedCompass.TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep

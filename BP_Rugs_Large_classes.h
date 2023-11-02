@@ -4,7 +4,7 @@ struct ABP_Rugs_Large_C : ABP_Rugs_C {
 	struct UStaticMeshComponent* CircularRugMeshComponent; // 0x3d8(0x08)
 	struct UStaticMeshComponent* RectangularRugMeshComponent; // 0x3e0(0x08)
 
-	struct TArray<struct UStaticMeshComponent*> GetRugMeshComponents(); // Function BP_Rugs_Large.BP_Rugs_Large_C.GetRugMeshComponents // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Rugs_Large.BP_Rugs_Large_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	struct TArray<struct UStaticMeshComponent*> GetRugMeshComponents(); // Function BP_Rugs_Large.BP_Rugs_Large_C.GetRugMeshComponents // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Rugs_Large.BP_Rugs_Large_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

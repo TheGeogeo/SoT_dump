@@ -24,18 +24,18 @@ struct ABP_Crest_C : ACrest {
 	int32_t NameSizeIndex; // 0x5c8(0x04)
 	struct FFeatureFlag FeatureName; // 0x5cc(0x0c)
 
-	void SetupCrestMaterials(); // Function BP_Crest.BP_Crest_C.SetupCrestMaterials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetTextScale(struct FVector2D TextSize, float Scale); // Function BP_Crest.BP_Crest_C.GetTextScale // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Crest.BP_Crest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_Crest.BP_Crest_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void UpdateTextCanvas(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_Crest.BP_Crest_C.UpdateTextCanvas // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateBlurredCanvas(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_Crest.BP_Crest_C.UpdateBlurredCanvas // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UpdateBevelCanvas(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_Crest.BP_Crest_C.UpdateBevelCanvas // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveMeshLoaded(); // Function BP_Crest.BP_Crest_C.ReceiveMeshLoaded // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void RefreshShipNameRender(); // Function BP_Crest.BP_Crest_C.RefreshShipNameRender // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void HideShipName(); // Function BP_Crest.BP_Crest_C.HideShipName // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void InscribeShipName(); // Function BP_Crest.BP_Crest_C.InscribeShipName // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void UpdateShipNameRender(float FadeInTime); // Function BP_Crest.BP_Crest_C.UpdateShipNameRender // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Crest(int32_t EntryPoint); // Function BP_Crest.BP_Crest_C.ExecuteUbergraph_BP_Crest // HasDefaults // @ game+0x18e3b10
+	void SetupCrestMaterials(); // Function BP_Crest.BP_Crest_C.SetupCrestMaterials // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetTextScale(struct FVector2D TextSize, float Scale); // Function BP_Crest.BP_Crest_C.GetTextScale // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Crest.BP_Crest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_Crest.BP_Crest_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateTextCanvas(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_Crest.BP_Crest_C.UpdateTextCanvas // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateBlurredCanvas(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_Crest.BP_Crest_C.UpdateBlurredCanvas // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateBevelCanvas(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function BP_Crest.BP_Crest_C.UpdateBevelCanvas // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveMeshLoaded(); // Function BP_Crest.BP_Crest_C.ReceiveMeshLoaded // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void RefreshShipNameRender(); // Function BP_Crest.BP_Crest_C.RefreshShipNameRender // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void HideShipName(); // Function BP_Crest.BP_Crest_C.HideShipName // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void InscribeShipName(); // Function BP_Crest.BP_Crest_C.InscribeShipName // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void UpdateShipNameRender(float FadeInTime); // Function BP_Crest.BP_Crest_C.UpdateShipNameRender // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Crest(int32_t EntryPoint); // Function BP_Crest.BP_Crest_C.ExecuteUbergraph_BP_Crest // HasDefaults // @ game+0x18e5fa0
 };
 

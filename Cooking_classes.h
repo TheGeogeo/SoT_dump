@@ -76,7 +76,7 @@ struct UCookerComponent : UActorComponent {
 	bool OnIsland; // 0x1a9(0x01)
 	char UnknownData_1AA[0x9e]; // 0x1aa(0x9e)
 
-	void OnRep_CookingState(struct FCookingClientRepresentation OldRepresentation); // Function Cooking.CookerComponent.OnRep_CookingState // Final|Native|Private|HasOutParms // @ game+0x3cdc120
+	void OnRep_CookingState(struct FCookingClientRepresentation OldRepresentation); // Function Cooking.CookerComponent.OnRep_CookingState // Final|Native|Private|HasOutParms // @ game+0x3cde730
 };
 
 // Class Cooking.CookingComponentAudioParams

@@ -5,6 +5,6 @@ struct ABP_LargeShip_StandardHull_C : AHull {
 	struct UChildActorComponent* Damage; // 0x3f8(0x08)
 	struct UChildActorComponent* Art; // 0x400(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull.BP_LargeShip_StandardHull_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull.BP_LargeShip_StandardHull_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

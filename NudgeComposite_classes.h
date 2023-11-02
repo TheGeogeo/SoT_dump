@@ -19,7 +19,7 @@ struct UNudgeFromStormPolicy : UNudgePolicy {
 	struct FWeightedProbabilityRangeOfRanges WeightedTimers; // 0xd0(0x30)
 	char UnknownData_100[0x58]; // 0x100(0x58)
 
-	void OnTimerCompleted(); // Function NudgeComposite.NudgeFromStormPolicy.OnTimerCompleted // Final|Native|Private // @ game+0x46859a0
+	void OnTimerCompleted(); // Function NudgeComposite.NudgeFromStormPolicy.OnTimerCompleted // Final|Native|Private // @ game+0x4687fc0
 };
 
 // Class NudgeComposite.NudgeFromWaterLevelPolicy

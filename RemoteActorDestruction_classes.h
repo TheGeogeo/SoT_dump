@@ -2,8 +2,8 @@
 // Size: 0x28 (Inherited: 0x28)
 struct URemoteActorDestructionInterface : UInterface {
 
-	void DestroyExistingActors(struct TArray<struct UClass*> ClassesToDestroy); // Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors // Native|Public|HasOutParms // @ game+0x46ba040
-	void DestroyActor(struct FDestroyActorGameServerRequestModel DestroyActorGameServerRequestModel); // Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor // Native|Public|HasOutParms // @ game+0x46b9fb0
+	void DestroyExistingActors(struct TArray<struct UClass*> ClassesToDestroy); // Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors // Native|Public|HasOutParms // @ game+0x46bc660
+	void DestroyActor(struct FDestroyActorGameServerRequestModel DestroyActorGameServerRequestModel); // Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor // Native|Public|HasOutParms // @ game+0x46bc5d0
 };
 
 // Class RemoteActorDestruction.RemoteActorDestructionService

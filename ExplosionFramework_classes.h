@@ -24,7 +24,7 @@ struct UExplosiveComponentInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UFuseInterface : UInterface {
 
-	bool GetIsActive(); // Function ExplosionFramework.FuseInterface.GetIsActive // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x433a680
+	bool GetIsActive(); // Function ExplosionFramework.FuseInterface.GetIsActive // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x433cca0
 };
 
 // Class ExplosionFramework.StatusResponseExplodeAfterTime
@@ -40,6 +40,6 @@ struct UStatusResponseExplodeAfterTime : UStatusResponse {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestFuseFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void TriggerFuse(struct AActor* InFuseActor); // Function ExplosionFramework.TaleQuestFuseFunctionLibrary.TriggerFuse // Final|Native|Static|Public // @ game+0x433a6b0
+	void TriggerFuse(struct AActor* InFuseActor); // Function ExplosionFramework.TaleQuestFuseFunctionLibrary.TriggerFuse // Final|Native|Static|Public // @ game+0x433ccd0
 };
 

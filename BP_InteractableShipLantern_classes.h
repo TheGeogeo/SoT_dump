@@ -20,9 +20,9 @@ struct ABP_InteractableShipLantern_C : AShipInteractableLight {
 	struct FLinearColor DefaultGlowColour; // 0x76c(0x10)
 	char CurrentFlameOFateType; // 0x77c(0x01)
 
-	void UserConstructionScript(); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void LightStateChanged(); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.LightStateChanged // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_InteractableShipLantern(int32_t EntryPoint); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ExecuteUbergraph_BP_InteractableShipLantern //  // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void LightStateChanged(); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.LightStateChanged // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_InteractableShipLantern(int32_t EntryPoint); // Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ExecuteUbergraph_BP_InteractableShipLantern //  // @ game+0x18e5fa0
 };
 

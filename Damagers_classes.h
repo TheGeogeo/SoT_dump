@@ -11,9 +11,9 @@ struct UShipDamagerComponent : UActorComponent {
 	bool StartDamagingOnBeginPlay; // 0x154(0x01)
 	char UnknownData_155[0xcb]; // 0x155(0xcb)
 
-	void SetShape(struct UPrimitiveComponent* InShape); // Function Damagers.ShipDamagerComponent.SetShape // Final|Native|Public|BlueprintCallable // @ game+0x4332560
-	void EndDamage(); // Function Damagers.ShipDamagerComponent.EndDamage // Final|Native|Public|BlueprintCallable // @ game+0x4332280
-	void BeginDamage(); // Function Damagers.ShipDamagerComponent.BeginDamage // Final|Native|Public|BlueprintCallable // @ game+0x4332260
+	void SetShape(struct UPrimitiveComponent* InShape); // Function Damagers.ShipDamagerComponent.SetShape // Final|Native|Public|BlueprintCallable // @ game+0x4334b80
+	void EndDamage(); // Function Damagers.ShipDamagerComponent.EndDamage // Final|Native|Public|BlueprintCallable // @ game+0x43348a0
+	void BeginDamage(); // Function Damagers.ShipDamagerComponent.BeginDamage // Final|Native|Public|BlueprintCallable // @ game+0x4334880
 };
 
 // Class Damagers.RadialDamagerComponent
@@ -30,20 +30,20 @@ struct URadialDamagerComponent : UActorComponent {
 	struct FVector LocalOffset; // 0xec(0x0c)
 	char UnknownData_F8[0x28]; // 0xf8(0x28)
 
-	void SetDamageRadius(float Radius); // Function Damagers.RadialDamagerComponent.SetDamageRadius // Final|Native|Public|BlueprintCallable // @ game+0x476f350
-	void EndDamage(); // Function Damagers.RadialDamagerComponent.EndDamage // Final|Native|Public|BlueprintCallable // @ game+0x476f1c0
-	void BeginDamage(); // Function Damagers.RadialDamagerComponent.BeginDamage // Final|Native|Public|BlueprintCallable // @ game+0x476f1a0
+	void SetDamageRadius(float Radius); // Function Damagers.RadialDamagerComponent.SetDamageRadius // Final|Native|Public|BlueprintCallable // @ game+0x4771970
+	void EndDamage(); // Function Damagers.RadialDamagerComponent.EndDamage // Final|Native|Public|BlueprintCallable // @ game+0x47717e0
+	void BeginDamage(); // Function Damagers.RadialDamagerComponent.BeginDamage // Final|Native|Public|BlueprintCallable // @ game+0x47717c0
 };
 
 // Class Damagers.ShockwaveDamagerInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UShockwaveDamagerInterface : UInterface {
 
-	void StartShockwaveAtLocation(struct FVector StartLocation); // Function Damagers.ShockwaveDamagerInterface.StartShockwaveAtLocation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x476f3f0
-	void StartShockwave(); // Function Damagers.ShockwaveDamagerInterface.StartShockwave // Native|Public|BlueprintCallable // @ game+0x476f3d0
-	void IgnoreGhostShip(struct AAggressiveGhostShip* Ship); // Function Damagers.ShockwaveDamagerInterface.IgnoreGhostShip // Native|Public|BlueprintCallable // @ game+0x476f240
-	float GetShockwaveRadius(); // Function Damagers.ShockwaveDamagerInterface.GetShockwaveRadius // Native|Public|BlueprintCallable // @ game+0x476f210
-	float GetShockwaveDuration(); // Function Damagers.ShockwaveDamagerInterface.GetShockwaveDuration // Native|Public|BlueprintCallable // @ game+0x476f1e0
+	void StartShockwaveAtLocation(struct FVector StartLocation); // Function Damagers.ShockwaveDamagerInterface.StartShockwaveAtLocation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4771a10
+	void StartShockwave(); // Function Damagers.ShockwaveDamagerInterface.StartShockwave // Native|Public|BlueprintCallable // @ game+0x47719f0
+	void IgnoreGhostShip(struct AAggressiveGhostShip* Ship); // Function Damagers.ShockwaveDamagerInterface.IgnoreGhostShip // Native|Public|BlueprintCallable // @ game+0x4771860
+	float GetShockwaveRadius(); // Function Damagers.ShockwaveDamagerInterface.GetShockwaveRadius // Native|Public|BlueprintCallable // @ game+0x4771830
+	float GetShockwaveDuration(); // Function Damagers.ShockwaveDamagerInterface.GetShockwaveDuration // Native|Public|BlueprintCallable // @ game+0x4771800
 };
 
 // Class Damagers.ShockwaveDamagerComponent
@@ -73,6 +73,6 @@ struct UShockwaveDamagerComponent : UActorComponent {
 	struct TArray<struct AAggressiveGhostShip*> ProcessedGhostShips; // 0x178(0x10)
 	char UnknownData_188[0x48]; // 0x188(0x48)
 
-	void Multi_StartShockwave(struct FVector InStartLocation); // Function Damagers.ShockwaveDamagerComponent.Multi_StartShockwave // Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults // @ game+0x476f2d0
+	void Multi_StartShockwave(struct FVector InStartLocation); // Function Damagers.ShockwaveDamagerComponent.Multi_StartShockwave // Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults // @ game+0x47718f0
 };
 

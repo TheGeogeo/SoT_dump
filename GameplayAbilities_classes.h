@@ -8,67 +8,67 @@ struct UAttributeSet : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UGameplayCueInterface : UInterface {
 
-	void ForwardGameplayCueToParent(); // Function GameplayAbilities.GameplayCueInterface.ForwardGameplayCueToParent // BlueprintCosmetic|Native|Public|BlueprintCallable // @ game+0x453c2a0
-	void BlueprintCustomHandler(char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueInterface.BlueprintCustomHandler // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e3b10
+	void ForwardGameplayCueToParent(); // Function GameplayAbilities.GameplayCueInterface.ForwardGameplayCueToParent // BlueprintCosmetic|Native|Public|BlueprintCallable // @ game+0x453e8c0
+	void BlueprintCustomHandler(char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueInterface.BlueprintCustomHandler // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class GameplayAbilities.AbilitySystemBlueprintLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UAbilitySystemBlueprintLibrary : UBlueprintFunctionLibrary {
 
-	bool TargetDataHasOrigin(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasOrigin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4543c40
-	bool TargetDataHasHitResult(struct FGameplayAbilityTargetDataHandle HitResult, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4543b50
-	bool TargetDataHasEndPoint(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasEndPoint // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4543a60
-	bool TargetDataHasActor(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4543970
-	struct FGameplayEffectSpecHandle SetStackCountToMax(struct FGameplayEffectSpecHandle SpecHandle); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCountToMax // Final|Native|Static|Public|BlueprintCallable // @ game+0x45433f0
-	struct FGameplayEffectSpecHandle SetStackCount(struct FGameplayEffectSpecHandle SpecHandle, int32_t StackCount); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCount // Final|Native|Static|Public|BlueprintCallable // @ game+0x4543260
-	struct FGameplayEffectSpecHandle SetDuration(struct FGameplayEffectSpecHandle SpecHandle, float Duration); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetDuration // Final|Native|Static|Public|BlueprintCallable // @ game+0x4543040
-	void SendGameplayEventToActor(struct AActor* Actor, struct FGameplayTag EventTag, struct FGameplayEventData payload); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SendGameplayEventToActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x4541d30
-	struct FGameplayEffectSpecHandle MakeSpecHandle(struct UGameplayEffect* InGameplayEffect, struct AActor* InInstigator, struct AActor* InEffectCauser, float InLevel); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeSpecHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453f590
-	struct FGameplayTargetDataFilterHandle MakeFilterHandle(struct FGameplayTargetDataFilter Filter, struct AActor* FilterActor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeFilterHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453f140
-	bool IsInstigatorLocallyControlledPlayer(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlledPlayer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453e0e0
-	bool IsInstigatorLocallyControlled(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlled // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453dff0
-	bool HasHitResult(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.HasHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453de70
-	struct FTransform GetTargetDataOrigin(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataOrigin // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453dd10
-	struct FTransform GetTargetDataEndPointTransform(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPointTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453dbe0
-	struct FVector GetTargetDataEndPoint(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPoint // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453dae0
-	struct FVector GetOrigin(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetOrigin // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453d730
-	struct FTransform GetInstigatorTransform(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453d600
-	struct AActor* GetInstigatorActor(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453d500
-	struct FHitResult GetHitResultFromTargetData(struct FGameplayAbilityTargetDataHandle HitResult, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResultFromTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453d3f0
-	struct FHitResult GetHitResult(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453d2e0
-	bool GetGameplayCueEndLocationAndNormal(struct AActor* TargetActor, struct FGameplayCueParameters Parameters, struct FVector Location, struct FVector Normal); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueEndLocationAndNormal // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453cf80
-	bool GetGameplayCueDirection(struct AActor* TargetActor, struct FGameplayCueParameters Parameters, struct FVector Direction); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueDirection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453ce00
-	float GetFloatAttribute(struct AActor* Actor, struct FGameplayAttribute Attribute, bool bSuccessfullyFoundAttribute); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttribute // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x453cd00
-	int32_t GetDataCountFromTargetData(struct FGameplayAbilityTargetDataHandle TargetData); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetDataCountFromTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453cbc0
-	struct TArray<struct AActor*> GetActorsFromTargetData(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorsFromTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453c900
-	int32_t GetActorCount(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorCount // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453c790
-	struct AActor* GetActorByIndex(struct FGameplayCueParameters Parameters, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorByIndex // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453c650
-	int32_t GetActiveGameplayEffectStackCount(struct FActiveGameplayEffectHandle ActiveHandle); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStackCount // Final|Native|Static|Public|BlueprintCallable // @ game+0x453c5d0
-	struct UAbilitySystemComponent* GetAbilitySystemComponent(struct AActor* Actor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetAbilitySystemComponent // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453c550
-	void ForwardGameplayCueToTarget(TScriptInterface<struct UGameplayCueInterface> TargetCueInterface, char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.ForwardGameplayCueToTarget // Final|Native|Static|Public|BlueprintCallable // @ game+0x453c2c0
-	struct FGameplayAbilityTargetDataHandle FilterTargetData(struct FGameplayAbilityTargetDataHandle TargetDataHandle, struct FGameplayTargetDataFilterHandle ActorFilterClass); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.FilterTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453be90
-	bool EffectContextIsInstigatorLocallyControlled(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextIsInstigatorLocallyControlled // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453baa0
-	bool EffectContextHasHitResult(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextHasHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b9a0
-	struct UObject* EffectContextGetSourceObject(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetSourceObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b8a0
-	struct AActor* EffectContextGetOriginalInstigatorActor(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOriginalInstigatorActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b7a0
-	struct FVector EffectContextGetOrigin(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOrigin // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453b690
-	struct AActor* EffectContextGetInstigatorActor(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetInstigatorActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b590
-	struct FHitResult EffectContextGetHitResult(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b480
-	struct AActor* EffectContextGetEffectCauser(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetEffectCauser // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b380
-	bool DoesTargetDataContainActor(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index, struct AActor* Actor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesTargetDataContainActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453b260
-	bool DoesGameplayCueMeetTagRequirements(struct FGameplayCueParameters Parameters, struct FGameplayTagRequirements SourceTagReqs, struct FGameplayTagRequirements TargetTagReqs); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesGameplayCueMeetTagRequirements // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x453b090
-	struct FGameplayEffectSpecHandle AssignSetByCallerMagnitude(struct FGameplayEffectSpecHandle SpecHandle, struct FName DataName, float Magnitude); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AssignSetByCallerMagnitude // Final|Native|Static|Public|BlueprintCallable // @ game+0x4539440
-	struct FGameplayAbilityTargetDataHandle AppendTargetDataHandle(struct FGameplayAbilityTargetDataHandle TargetHandle, struct FGameplayAbilityTargetDataHandle HandleToAdd); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AppendTargetDataHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x4539300
-	struct FGameplayEffectSpecHandle AddLinkedGameplayEffectSpec(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayEffectSpecHandle LinkedGameplayEffectSpec); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddLinkedGameplayEffectSpec // Final|Native|Static|Public|BlueprintCallable // @ game+0x4539130
-	struct FGameplayEffectSpecHandle AddGrantedTags(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTagContainer NewGameplayTags); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTags // Final|Native|Static|Public|BlueprintCallable // @ game+0x4538f70
-	struct FGameplayEffectSpecHandle AddGrantedTag(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTag NewGameplayTag); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTag // Final|Native|Static|Public|BlueprintCallable // @ game+0x4538de0
-	struct FGameplayEffectSpecHandle AddAssetTags(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTagContainer NewGameplayTags); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTags // Final|Native|Static|Public|BlueprintCallable // @ game+0x4538c20
-	struct FGameplayEffectSpecHandle AddAssetTag(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTag NewGameplayTag); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTag // Final|Native|Static|Public|BlueprintCallable // @ game+0x4538a90
-	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromLocations(struct FGameplayAbilityTargetingLocationInfo SourceLocation, struct FGameplayAbilityTargetingLocationInfo TargetLocation); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromLocations // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x45388d0
-	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromHitResult(struct FHitResult HitResult); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4538730
-	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromActorArray(struct TArray<struct AActor*> ActorArray, bool OneTargetPerHandle); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActorArray // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x45385c0
-	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromActor(struct AActor* Actor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4538510
+	bool TargetDataHasOrigin(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasOrigin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4546260
+	bool TargetDataHasHitResult(struct FGameplayAbilityTargetDataHandle HitResult, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4546170
+	bool TargetDataHasEndPoint(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasEndPoint // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4546080
+	bool TargetDataHasActor(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4545f90
+	struct FGameplayEffectSpecHandle SetStackCountToMax(struct FGameplayEffectSpecHandle SpecHandle); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCountToMax // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545a10
+	struct FGameplayEffectSpecHandle SetStackCount(struct FGameplayEffectSpecHandle SpecHandle, int32_t StackCount); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCount // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545880
+	struct FGameplayEffectSpecHandle SetDuration(struct FGameplayEffectSpecHandle SpecHandle, float Duration); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetDuration // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545660
+	void SendGameplayEventToActor(struct AActor* Actor, struct FGameplayTag EventTag, struct FGameplayEventData payload); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.SendGameplayEventToActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544350
+	struct FGameplayEffectSpecHandle MakeSpecHandle(struct UGameplayEffect* InGameplayEffect, struct AActor* InInstigator, struct AActor* InEffectCauser, float InLevel); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeSpecHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4541bb0
+	struct FGameplayTargetDataFilterHandle MakeFilterHandle(struct FGameplayTargetDataFilter Filter, struct AActor* FilterActor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeFilterHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4541760
+	bool IsInstigatorLocallyControlledPlayer(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlledPlayer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4540700
+	bool IsInstigatorLocallyControlled(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlled // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4540610
+	bool HasHitResult(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.HasHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x4540490
+	struct FTransform GetTargetDataOrigin(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataOrigin // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x4540330
+	struct FTransform GetTargetDataEndPointTransform(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPointTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x4540200
+	struct FVector GetTargetDataEndPoint(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPoint // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x4540100
+	struct FVector GetOrigin(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetOrigin // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453fd50
+	struct FTransform GetInstigatorTransform(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453fc20
+	struct AActor* GetInstigatorActor(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453fb20
+	struct FHitResult GetHitResultFromTargetData(struct FGameplayAbilityTargetDataHandle HitResult, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResultFromTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453fa10
+	struct FHitResult GetHitResult(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453f900
+	bool GetGameplayCueEndLocationAndNormal(struct AActor* TargetActor, struct FGameplayCueParameters Parameters, struct FVector Location, struct FVector Normal); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueEndLocationAndNormal // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453f5a0
+	bool GetGameplayCueDirection(struct AActor* TargetActor, struct FGameplayCueParameters Parameters, struct FVector Direction); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueDirection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453f420
+	float GetFloatAttribute(struct AActor* Actor, struct FGameplayAttribute Attribute, bool bSuccessfullyFoundAttribute); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttribute // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x453f320
+	int32_t GetDataCountFromTargetData(struct FGameplayAbilityTargetDataHandle TargetData); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetDataCountFromTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453f1e0
+	struct TArray<struct AActor*> GetActorsFromTargetData(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorsFromTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453ef20
+	int32_t GetActorCount(struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorCount // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453edb0
+	struct AActor* GetActorByIndex(struct FGameplayCueParameters Parameters, int32_t Index); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorByIndex // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453ec70
+	int32_t GetActiveGameplayEffectStackCount(struct FActiveGameplayEffectHandle ActiveHandle); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStackCount // Final|Native|Static|Public|BlueprintCallable // @ game+0x453ebf0
+	struct UAbilitySystemComponent* GetAbilitySystemComponent(struct AActor* Actor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetAbilitySystemComponent // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453eb70
+	void ForwardGameplayCueToTarget(TScriptInterface<struct UGameplayCueInterface> TargetCueInterface, char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.ForwardGameplayCueToTarget // Final|Native|Static|Public|BlueprintCallable // @ game+0x453e8e0
+	struct FGameplayAbilityTargetDataHandle FilterTargetData(struct FGameplayAbilityTargetDataHandle TargetDataHandle, struct FGameplayTargetDataFilterHandle ActorFilterClass); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.FilterTargetData // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453e4b0
+	bool EffectContextIsInstigatorLocallyControlled(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextIsInstigatorLocallyControlled // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453e0c0
+	bool EffectContextHasHitResult(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextHasHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453dfc0
+	struct UObject* EffectContextGetSourceObject(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetSourceObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453dec0
+	struct AActor* EffectContextGetOriginalInstigatorActor(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOriginalInstigatorActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453ddc0
+	struct FVector EffectContextGetOrigin(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOrigin // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x453dcb0
+	struct AActor* EffectContextGetInstigatorActor(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetInstigatorActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453dbb0
+	struct FHitResult EffectContextGetHitResult(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453daa0
+	struct AActor* EffectContextGetEffectCauser(struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetEffectCauser // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453d9a0
+	bool DoesTargetDataContainActor(struct FGameplayAbilityTargetDataHandle TargetData, int32_t Index, struct AActor* Actor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesTargetDataContainActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453d880
+	bool DoesGameplayCueMeetTagRequirements(struct FGameplayCueParameters Parameters, struct FGameplayTagRequirements SourceTagReqs, struct FGameplayTagRequirements TargetTagReqs); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesGameplayCueMeetTagRequirements // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x453d6b0
+	struct FGameplayEffectSpecHandle AssignSetByCallerMagnitude(struct FGameplayEffectSpecHandle SpecHandle, struct FName DataName, float Magnitude); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AssignSetByCallerMagnitude // Final|Native|Static|Public|BlueprintCallable // @ game+0x453ba60
+	struct FGameplayAbilityTargetDataHandle AppendTargetDataHandle(struct FGameplayAbilityTargetDataHandle TargetHandle, struct FGameplayAbilityTargetDataHandle HandleToAdd); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AppendTargetDataHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x453b920
+	struct FGameplayEffectSpecHandle AddLinkedGameplayEffectSpec(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayEffectSpecHandle LinkedGameplayEffectSpec); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddLinkedGameplayEffectSpec // Final|Native|Static|Public|BlueprintCallable // @ game+0x453b750
+	struct FGameplayEffectSpecHandle AddGrantedTags(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTagContainer NewGameplayTags); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTags // Final|Native|Static|Public|BlueprintCallable // @ game+0x453b590
+	struct FGameplayEffectSpecHandle AddGrantedTag(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTag NewGameplayTag); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTag // Final|Native|Static|Public|BlueprintCallable // @ game+0x453b400
+	struct FGameplayEffectSpecHandle AddAssetTags(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTagContainer NewGameplayTags); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTags // Final|Native|Static|Public|BlueprintCallable // @ game+0x453b240
+	struct FGameplayEffectSpecHandle AddAssetTag(struct FGameplayEffectSpecHandle SpecHandle, struct FGameplayTag NewGameplayTag); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTag // Final|Native|Static|Public|BlueprintCallable // @ game+0x453b0b0
+	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromLocations(struct FGameplayAbilityTargetingLocationInfo SourceLocation, struct FGameplayAbilityTargetingLocationInfo TargetLocation); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromLocations // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x453aef0
+	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromHitResult(struct FHitResult HitResult); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromHitResult // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453ad50
+	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromActorArray(struct TArray<struct AActor*> ActorArray, bool OneTargetPerHandle); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActorArray // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453abe0
+	struct FGameplayAbilityTargetDataHandle AbilityTargetDataFromActor(struct AActor* Actor); // Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x453ab30
 };
 
 // Class GameplayAbilities.GameplayEffect
@@ -154,52 +154,52 @@ struct UGameplayAbility : UObject {
 	bool bIsBlockingOtherAbilities; // 0x442(0x01)
 	char UnknownData_443[0x5]; // 0x443(0x05)
 
-	void SetShouldBlockOtherAbilities(bool bShouldBlockAbilities); // Function GameplayAbilities.GameplayAbility.SetShouldBlockOtherAbilities // Native|Public|BlueprintCallable // @ game+0x45431d0
-	void SetCanBeCanceled(bool bCanBeCanceled); // Function GameplayAbilities.GameplayAbility.SetCanBeCanceled // Native|Public|BlueprintCallable // @ game+0x4542fb0
-	void SendGameplayEvent(struct FGameplayTag EventTag, struct FGameplayEventData payload); // Function GameplayAbilities.GameplayAbility.SendGameplayEvent // Native|Protected|BlueprintCallable // @ game+0x4541bd0
-	void MontageStop(float OverrideBlendOutTime); // Function GameplayAbilities.GameplayAbility.MontageStop // Final|Native|Protected|BlueprintCallable // @ game+0x453fa00
-	void MontageSetNextSectionName(struct FName FromSectionName, struct FName ToSectionName); // Function GameplayAbilities.GameplayAbility.MontageSetNextSectionName // Final|Native|Protected|BlueprintCallable // @ game+0x453f940
-	void MontageJumpToSection(struct FName SectionName); // Function GameplayAbilities.GameplayAbility.MontageJumpToSection // Final|Native|Protected|BlueprintCallable // @ game+0x453f8c0
-	struct FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerSkeletalMeshComponent(struct FName SocketName); // Function GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerSkeletalMeshComponent // Final|Native|Protected|BlueprintCallable|BlueprintPure // @ game+0x453f7d0
-	struct FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerActor(); // Function GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerActor // Final|Native|Protected|BlueprintCallable|BlueprintPure // @ game+0x453f740
-	struct FGameplayEffectSpecHandle MakeOutgoingGameplayEffectSpec(struct UClass* GameplayEffectClass, float Level); // Function GameplayAbilities.GameplayAbility.MakeOutgoingGameplayEffectSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453f2a0
-	bool K2_ShouldAbilityRespondToEvent(struct FGameplayAbilityActorInfo ActorInfo, struct FGameplayEventData payload); // Function GameplayAbilities.GameplayAbility.K2_ShouldAbilityRespondToEvent // Event|Protected|BlueprintEvent|Const // @ game+0x18e3b10
-	void K2_RemoveGameplayCue(struct FGameplayTag GameplayCueTag); // Function GameplayAbilities.GameplayAbility.K2_RemoveGameplayCue // Native|Protected|BlueprintCallable // @ game+0x453f0c0
-	void K2_OnEndAbility(); // Function GameplayAbilities.GameplayAbility.K2_OnEndAbility // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void K2_ExecuteGameplayCueWithParams(struct FGameplayTag GameplayCueTag, struct FGameplayCueParameters GameplayCueParameters); // Function GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCueWithParams // Native|Protected|HasOutParms|BlueprintCallable // @ game+0x453eeb0
-	void K2_ExecuteGameplayCue(struct FGameplayTag GameplayCueTag, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCue // Native|Protected|BlueprintCallable // @ game+0x453ed60
-	void K2_EndAbility(); // Function GameplayAbilities.GameplayAbility.K2_EndAbility // Native|Protected|BlueprintCallable // @ game+0x453ed40
-	void K2_CommitExecute(); // Function GameplayAbilities.GameplayAbility.K2_CommitExecute // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	bool K2_CommitAbilityCost(bool BroadcastCommitEvent); // Function GameplayAbilities.GameplayAbility.K2_CommitAbilityCost // Native|Public|BlueprintCallable // @ game+0x453eca0
-	bool K2_CommitAbilityCooldown(bool BroadcastCommitEvent); // Function GameplayAbilities.GameplayAbility.K2_CommitAbilityCooldown // Native|Public|BlueprintCallable // @ game+0x453ec00
-	bool K2_CommitAbility(); // Function GameplayAbilities.GameplayAbility.K2_CommitAbility // Native|Public|BlueprintCallable // @ game+0x453ebd0
-	bool K2_CheckAbilityCost(); // Function GameplayAbilities.GameplayAbility.K2_CheckAbilityCost // Native|Public|BlueprintCallable // @ game+0x453eba0
-	bool K2_CheckAbilityCooldown(); // Function GameplayAbilities.GameplayAbility.K2_CheckAbilityCooldown // Native|Public|BlueprintCallable // @ game+0x453eb70
-	bool K2_CanActivateAbility(struct FGameplayAbilityActorInfo ActorInfo, struct FGameplayTagContainer RelevantTags); // Function GameplayAbilities.GameplayAbility.K2_CanActivateAbility // Event|Protected|HasOutParms|BlueprintEvent|Const // @ game+0x18e3b10
-	struct TArray<struct FActiveGameplayEffectHandle> K2_ApplyGameplayEffectToTarget(struct FGameplayAbilityTargetDataHandle TargetData, struct UGameplayEffect* GameplayEffect, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectToTarget // Final|Native|Protected|BlueprintCallable // @ game+0x453e9e0
-	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectToOwner(struct UGameplayEffect* GameplayEffect, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectToOwner // Final|Native|Protected|BlueprintCallable // @ game+0x453e5d0
-	struct TArray<struct FActiveGameplayEffectHandle> K2_ApplyGameplayEffectSpecToTarget(struct FGameplayEffectSpecHandle EffectSpecHandle, struct FGameplayAbilityTargetDataHandle TargetData); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToTarget // Final|Native|Protected|BlueprintCallable // @ game+0x453e430
-	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectSpecToOwner(struct FGameplayEffectSpecHandle EffectSpecHandle); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToOwner // Final|Native|Protected|BlueprintCallable // @ game+0x453e330
-	void K2_AddGameplayCue(struct FGameplayTag GameplayCueTag, struct FGameplayEffectContextHandle Context, bool bRemoveOnAbilityEnd); // Function GameplayAbilities.GameplayAbility.K2_AddGameplayCue // Native|Protected|BlueprintCallable // @ game+0x453e1d0
-	void K2_ActivateAbilityFromEvent(struct FGameplayEventData EventData); // Function GameplayAbilities.GameplayAbility.K2_ActivateAbilityFromEvent // Event|Protected|HasOutParms|BlueprintEvent // @ game+0x18e3b10
-	void K2_ActivateAbility(); // Function GameplayAbilities.GameplayAbility.K2_ActivateAbility // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	struct USkeletalMeshComponent* GetOwningComponentFromActorInfo(); // Function GameplayAbilities.GameplayAbility.GetOwningComponentFromActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453dab0
-	struct AActor* GetOwningActorFromActorInfo(); // Function GameplayAbilities.GameplayAbility.GetOwningActorFromActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453da80
-	struct FGameplayEffectSpecHandle GetOutgoingGameplayEffectSpec(struct UGameplayEffect* GameplayEffect, float Level); // Function GameplayAbilities.GameplayAbility.GetOutgoingGameplayEffectSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453d840
-	struct UObject* GetCurrentSourceObject(); // Function GameplayAbilities.GameplayAbility.GetCurrentSourceObject // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x453cb90
-	struct UAnimMontage* GetCurrentMontage(); // Function GameplayAbilities.GameplayAbility.GetCurrentMontage // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453cb60
-	struct FGameplayEffectContextHandle GetContextFromOwner(struct FGameplayAbilityTargetDataHandle OptionalTargetData); // Function GameplayAbilities.GameplayAbility.GetContextFromOwner // Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x453ca60
-	struct AActor* GetAvatarActorFromActorInfo(); // Function GameplayAbilities.GameplayAbility.GetAvatarActorFromActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453ca30
-	struct FGameplayAbilityActorInfo GetActorInfo(); // Function GameplayAbilities.GameplayAbility.GetActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453c880
-	int32_t GetAbilityLevel(); // Function GameplayAbilities.GameplayAbility.GetAbilityLevel // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x453c520
-	void EndTaskByInstanceName(struct FName InstanceName); // Function GameplayAbilities.GameplayAbility.EndTaskByInstanceName // Final|Native|Protected|BlueprintCallable // @ game+0x453bc20
-	void EndAbilityState(struct FName OptionalStateNameToEnd); // Function GameplayAbilities.GameplayAbility.EndAbilityState // Final|Native|Protected|BlueprintCallable // @ game+0x453bba0
-	void ConfirmTaskByInstanceName(struct FName InstanceName, bool bEndTask); // Function GameplayAbilities.GameplayAbility.ConfirmTaskByInstanceName // Final|Native|Protected|BlueprintCallable // @ game+0x453ac60
-	void CancelTaskByInstanceName(struct FName InstanceName); // Function GameplayAbilities.GameplayAbility.CancelTaskByInstanceName // Final|Native|Protected|BlueprintCallable // @ game+0x453a480
-	void BP_RemoveGameplayEffectFromOwnerWithGrantedTags(struct FGameplayTagContainer WithGrantedTags, int32_t StacksToRemove); // Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithGrantedTags // Final|Native|Protected|BlueprintCallable // @ game+0x4539e90
-	void BP_RemoveGameplayEffectFromOwnerWithAssetTags(struct FGameplayTagContainer WithAssetTags, int32_t StacksToRemove); // Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithAssetTags // Final|Native|Protected|BlueprintCallable // @ game+0x4539d60
-	struct TArray<struct FActiveGameplayEffectHandle> BP_ApplyGameplayEffectToTarget(struct FGameplayAbilityTargetDataHandle TargetData, struct UClass* GameplayEffectClass, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToTarget // Final|Native|Protected|BlueprintCallable // @ game+0x4539bd0
-	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToOwner(struct UClass* GameplayEffectClass, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToOwner // Final|Native|Protected|BlueprintCallable // @ game+0x45397c0
+	void SetShouldBlockOtherAbilities(bool bShouldBlockAbilities); // Function GameplayAbilities.GameplayAbility.SetShouldBlockOtherAbilities // Native|Public|BlueprintCallable // @ game+0x45457f0
+	void SetCanBeCanceled(bool bCanBeCanceled); // Function GameplayAbilities.GameplayAbility.SetCanBeCanceled // Native|Public|BlueprintCallable // @ game+0x45455d0
+	void SendGameplayEvent(struct FGameplayTag EventTag, struct FGameplayEventData payload); // Function GameplayAbilities.GameplayAbility.SendGameplayEvent // Native|Protected|BlueprintCallable // @ game+0x45441f0
+	void MontageStop(float OverrideBlendOutTime); // Function GameplayAbilities.GameplayAbility.MontageStop // Final|Native|Protected|BlueprintCallable // @ game+0x4542020
+	void MontageSetNextSectionName(struct FName FromSectionName, struct FName ToSectionName); // Function GameplayAbilities.GameplayAbility.MontageSetNextSectionName // Final|Native|Protected|BlueprintCallable // @ game+0x4541f60
+	void MontageJumpToSection(struct FName SectionName); // Function GameplayAbilities.GameplayAbility.MontageJumpToSection // Final|Native|Protected|BlueprintCallable // @ game+0x4541ee0
+	struct FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerSkeletalMeshComponent(struct FName SocketName); // Function GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerSkeletalMeshComponent // Final|Native|Protected|BlueprintCallable|BlueprintPure // @ game+0x4541df0
+	struct FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerActor(); // Function GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerActor // Final|Native|Protected|BlueprintCallable|BlueprintPure // @ game+0x4541d60
+	struct FGameplayEffectSpecHandle MakeOutgoingGameplayEffectSpec(struct UClass* GameplayEffectClass, float Level); // Function GameplayAbilities.GameplayAbility.MakeOutgoingGameplayEffectSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45418c0
+	bool K2_ShouldAbilityRespondToEvent(struct FGameplayAbilityActorInfo ActorInfo, struct FGameplayEventData payload); // Function GameplayAbilities.GameplayAbility.K2_ShouldAbilityRespondToEvent // Event|Protected|BlueprintEvent|Const // @ game+0x18e5fa0
+	void K2_RemoveGameplayCue(struct FGameplayTag GameplayCueTag); // Function GameplayAbilities.GameplayAbility.K2_RemoveGameplayCue // Native|Protected|BlueprintCallable // @ game+0x45416e0
+	void K2_OnEndAbility(); // Function GameplayAbilities.GameplayAbility.K2_OnEndAbility // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void K2_ExecuteGameplayCueWithParams(struct FGameplayTag GameplayCueTag, struct FGameplayCueParameters GameplayCueParameters); // Function GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCueWithParams // Native|Protected|HasOutParms|BlueprintCallable // @ game+0x45414d0
+	void K2_ExecuteGameplayCue(struct FGameplayTag GameplayCueTag, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCue // Native|Protected|BlueprintCallable // @ game+0x4541380
+	void K2_EndAbility(); // Function GameplayAbilities.GameplayAbility.K2_EndAbility // Native|Protected|BlueprintCallable // @ game+0x4541360
+	void K2_CommitExecute(); // Function GameplayAbilities.GameplayAbility.K2_CommitExecute // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	bool K2_CommitAbilityCost(bool BroadcastCommitEvent); // Function GameplayAbilities.GameplayAbility.K2_CommitAbilityCost // Native|Public|BlueprintCallable // @ game+0x45412c0
+	bool K2_CommitAbilityCooldown(bool BroadcastCommitEvent); // Function GameplayAbilities.GameplayAbility.K2_CommitAbilityCooldown // Native|Public|BlueprintCallable // @ game+0x4541220
+	bool K2_CommitAbility(); // Function GameplayAbilities.GameplayAbility.K2_CommitAbility // Native|Public|BlueprintCallable // @ game+0x45411f0
+	bool K2_CheckAbilityCost(); // Function GameplayAbilities.GameplayAbility.K2_CheckAbilityCost // Native|Public|BlueprintCallable // @ game+0x45411c0
+	bool K2_CheckAbilityCooldown(); // Function GameplayAbilities.GameplayAbility.K2_CheckAbilityCooldown // Native|Public|BlueprintCallable // @ game+0x4541190
+	bool K2_CanActivateAbility(struct FGameplayAbilityActorInfo ActorInfo, struct FGameplayTagContainer RelevantTags); // Function GameplayAbilities.GameplayAbility.K2_CanActivateAbility // Event|Protected|HasOutParms|BlueprintEvent|Const // @ game+0x18e5fa0
+	struct TArray<struct FActiveGameplayEffectHandle> K2_ApplyGameplayEffectToTarget(struct FGameplayAbilityTargetDataHandle TargetData, struct UGameplayEffect* GameplayEffect, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectToTarget // Final|Native|Protected|BlueprintCallable // @ game+0x4541000
+	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectToOwner(struct UGameplayEffect* GameplayEffect, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectToOwner // Final|Native|Protected|BlueprintCallable // @ game+0x4540bf0
+	struct TArray<struct FActiveGameplayEffectHandle> K2_ApplyGameplayEffectSpecToTarget(struct FGameplayEffectSpecHandle EffectSpecHandle, struct FGameplayAbilityTargetDataHandle TargetData); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToTarget // Final|Native|Protected|BlueprintCallable // @ game+0x4540a50
+	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectSpecToOwner(struct FGameplayEffectSpecHandle EffectSpecHandle); // Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToOwner // Final|Native|Protected|BlueprintCallable // @ game+0x4540950
+	void K2_AddGameplayCue(struct FGameplayTag GameplayCueTag, struct FGameplayEffectContextHandle Context, bool bRemoveOnAbilityEnd); // Function GameplayAbilities.GameplayAbility.K2_AddGameplayCue // Native|Protected|BlueprintCallable // @ game+0x45407f0
+	void K2_ActivateAbilityFromEvent(struct FGameplayEventData EventData); // Function GameplayAbilities.GameplayAbility.K2_ActivateAbilityFromEvent // Event|Protected|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
+	void K2_ActivateAbility(); // Function GameplayAbilities.GameplayAbility.K2_ActivateAbility // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	struct USkeletalMeshComponent* GetOwningComponentFromActorInfo(); // Function GameplayAbilities.GameplayAbility.GetOwningComponentFromActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45400d0
+	struct AActor* GetOwningActorFromActorInfo(); // Function GameplayAbilities.GameplayAbility.GetOwningActorFromActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45400a0
+	struct FGameplayEffectSpecHandle GetOutgoingGameplayEffectSpec(struct UGameplayEffect* GameplayEffect, float Level); // Function GameplayAbilities.GameplayAbility.GetOutgoingGameplayEffectSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453fe60
+	struct UObject* GetCurrentSourceObject(); // Function GameplayAbilities.GameplayAbility.GetCurrentSourceObject // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x453f1b0
+	struct UAnimMontage* GetCurrentMontage(); // Function GameplayAbilities.GameplayAbility.GetCurrentMontage // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453f180
+	struct FGameplayEffectContextHandle GetContextFromOwner(struct FGameplayAbilityTargetDataHandle OptionalTargetData); // Function GameplayAbilities.GameplayAbility.GetContextFromOwner // Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x453f080
+	struct AActor* GetAvatarActorFromActorInfo(); // Function GameplayAbilities.GameplayAbility.GetAvatarActorFromActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453f050
+	struct FGameplayAbilityActorInfo GetActorInfo(); // Function GameplayAbilities.GameplayAbility.GetActorInfo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453eea0
+	int32_t GetAbilityLevel(); // Function GameplayAbilities.GameplayAbility.GetAbilityLevel // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x453eb40
+	void EndTaskByInstanceName(struct FName InstanceName); // Function GameplayAbilities.GameplayAbility.EndTaskByInstanceName // Final|Native|Protected|BlueprintCallable // @ game+0x453e240
+	void EndAbilityState(struct FName OptionalStateNameToEnd); // Function GameplayAbilities.GameplayAbility.EndAbilityState // Final|Native|Protected|BlueprintCallable // @ game+0x453e1c0
+	void ConfirmTaskByInstanceName(struct FName InstanceName, bool bEndTask); // Function GameplayAbilities.GameplayAbility.ConfirmTaskByInstanceName // Final|Native|Protected|BlueprintCallable // @ game+0x453d280
+	void CancelTaskByInstanceName(struct FName InstanceName); // Function GameplayAbilities.GameplayAbility.CancelTaskByInstanceName // Final|Native|Protected|BlueprintCallable // @ game+0x453caa0
+	void BP_RemoveGameplayEffectFromOwnerWithGrantedTags(struct FGameplayTagContainer WithGrantedTags, int32_t StacksToRemove); // Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithGrantedTags // Final|Native|Protected|BlueprintCallable // @ game+0x453c4b0
+	void BP_RemoveGameplayEffectFromOwnerWithAssetTags(struct FGameplayTagContainer WithAssetTags, int32_t StacksToRemove); // Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithAssetTags // Final|Native|Protected|BlueprintCallable // @ game+0x453c380
+	struct TArray<struct FActiveGameplayEffectHandle> BP_ApplyGameplayEffectToTarget(struct FGameplayAbilityTargetDataHandle TargetData, struct UClass* GameplayEffectClass, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToTarget // Final|Native|Protected|BlueprintCallable // @ game+0x453c1f0
+	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToOwner(struct UClass* GameplayEffectClass, int32_t GameplayEffectLevel); // Function GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToOwner // Final|Native|Protected|BlueprintCallable // @ game+0x453bde0
 };
 
 // Class GameplayAbilities.AbilitySystemComponent
@@ -229,59 +229,59 @@ struct UAbilitySystemComponent : UGameplayTasksComponent {
 	struct TArray<char> BlockedAbilityBindings; // 0xb48(0x10)
 	char UnknownData_B58[0x140]; // 0xb58(0x140)
 
-	bool TryActivateAbilityByClass(struct UClass* InAbilityToActivate, bool bAllowRemoteActivation); // Function GameplayAbilities.AbilitySystemComponent.TryActivateAbilityByClass // Final|Native|Public|BlueprintCallable // @ game+0x4543ea0
-	bool TryActivateAbilitiesByTag(struct FGameplayTagContainer GameplayTagContainer, bool bAllowRemoteActivation); // Function GameplayAbilities.AbilitySystemComponent.TryActivateAbilitiesByTag // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4543d70
-	void TargetConfirm(); // Function GameplayAbilities.AbilitySystemComponent.TargetConfirm // Final|Native|Public|BlueprintCallable // @ game+0x4543950
-	void TargetCancel(); // Function GameplayAbilities.AbilitySystemComponent.TargetCancel // Final|Native|Public|BlueprintCallable // @ game+0x4543930
-	void SetUserAbilityActivationInhibited(bool NewInhibit); // Function GameplayAbilities.AbilitySystemComponent.SetUserAbilityActivationInhibited // Final|Native|Public|BlueprintCallable // @ game+0x4543530
-	void SetActiveGameplayEffectLevel(struct FActiveGameplayEffectHandle ActiveHandle, int32_t NewLevel); // Function GameplayAbilities.AbilitySystemComponent.SetActiveGameplayEffectLevel // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x4542ee0
-	void ServerTryActivateAbilityWithEventData(struct FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, struct FPredictionKey PredictionKey, struct FGameplayEventData TriggerEventData); // Function GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbilityWithEventData // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4542ca0
-	void ServerTryActivateAbility(struct FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbility // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4542b40
-	void ServerSetReplicatedTargetDataCancelled(struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey, struct FPredictionKey CurrentPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetDataCancelled // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45429b0
-	void ServerSetReplicatedTargetData(struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey, struct FGameplayAbilityTargetDataHandle ReplicatedTargetDataHandle, struct FGameplayTag ApplicationTag, struct FPredictionKey CurrentPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetData // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4542760
-	void ServerSetReplicatedEvent(char EventType, struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey, struct FPredictionKey CurrentPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEvent // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4542590
-	void ServerSetInputReleased(struct FGameplayAbilitySpecHandle AbilityHandle); // Function GameplayAbilities.AbilitySystemComponent.ServerSetInputReleased // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45424e0
-	void ServerSetInputPressed(struct FGameplayAbilitySpecHandle AbilityHandle); // Function GameplayAbilities.AbilitySystemComponent.ServerSetInputPressed // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4542430
-	void ServerEndAbility(struct FGameplayAbilitySpecHandle AbilityToEnd, struct FGameplayAbilityActivationInfo ActivationInfo, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerEndAbility // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4542280
-	void ServerCurrentMontageSetNextSectionName(struct UAnimMontage* ClientAnimMontage, float ClientPosition, struct FName SectionName, struct FName NextSectionName); // Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageSetNextSectionName // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4542100
-	void ServerCurrentMontageJumpToSectionName(struct UAnimMontage* ClientAnimMontage, struct FName SectionName); // Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageJumpToSectionName // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4542000
-	void ServerCancelAbility(struct FGameplayAbilitySpecHandle AbilityToCancel, struct FGameplayAbilityActivationInfo ActivationInfo); // Function GameplayAbilities.AbilitySystemComponent.ServerCancelAbility // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4541ec0
-	void RemoveActiveGameplayEffectBySourceEffect(struct UClass* GameplayEffect, struct UAbilitySystemComponent* InstigatorAbilitySystemComponent, int32_t StacksToRemove); // Function GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffectBySourceEffect // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x45419d0
-	bool RemoveActiveGameplayEffect(struct FActiveGameplayEffectHandle Handle, int32_t StacksToRemove); // Function GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffect // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x4541910
-	void RemoveActiveEffectsWithTags(struct FGameplayTagContainer Tags); // Function GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithTags // Final|Native|Public|BlueprintCallable // @ game+0x4541830
-	void OnRep_ReplicatedAnimMontage(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_ReplicatedAnimMontage // Final|Native|Protected // @ game+0x4541580
-	void OnRep_PredictionKey(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_PredictionKey // Final|Native|Public // @ game+0x4541560
-	void OnRep_OwningActor(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_OwningActor // Final|Native|Public // @ game+0x4541540
-	void OnRep_GameplayEffects(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_GameplayEffects // Final|Native|Public // @ game+0x4541520
-	void OnRep_ActivateAbilities(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_ActivateAbilities // Final|Native|Protected // @ game+0x4541500
-	void NetMulticast_InvokeGameplayCueExecuted_WithParams(struct FGameplayTag GameplayCueTag, struct FPredictionKey PredictionKey, struct FGameplayCueParameters GameplayCueParameters); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_WithParams // Net|Native|Event|NetMulticast|Public // @ game+0x4540260
-	void NetMulticast_InvokeGameplayCueExecuted_FromSpec(struct FGameplayEffectSpecForRPC Spec, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_FromSpec // Net|Native|Event|NetMulticast|Public // @ game+0x4540070
-	void NetMulticast_InvokeGameplayCueExecuted(struct FGameplayTag GameplayCueTag, struct FPredictionKey PredictionKey, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted // Net|Native|Event|NetMulticast|Public // @ game+0x453fee0
-	void NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(struct FGameplayEffectSpecForRPC Spec, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec // Net|Native|Event|NetMulticast|Public // @ game+0x453fdd0
-	void NetMulticast_InvokeGameplayCueAdded(struct FGameplayTag GameplayCueTag, struct FPredictionKey PredictionKey, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded // Net|Native|Event|NetMulticast|Public // @ game+0x453fc40
-	struct FGameplayEffectSpecHandle MakeOutgoingSpec(struct UClass* GameplayEffectClass, float Level, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.AbilitySystemComponent.MakeOutgoingSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453f3c0
-	void K2_InitStats(struct UClass* Attributes, struct UDataTable* DataTable); // Function GameplayAbilities.AbilitySystemComponent.K2_InitStats // Final|Native|Public|BlueprintCallable // @ game+0x453f000
-	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectToTarget(struct UGameplayEffect* GameplayEffect, struct UAbilitySystemComponent* Target, float Level, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.AbilitySystemComponent.K2_ApplyGameplayEffectToTarget // Final|Native|Public|BlueprintCallable // @ game+0x453e820
-	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectToSelf(struct UGameplayEffect* GameplayEffect, float Level, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.K2_ApplyGameplayEffectToSelf // Final|Native|Public|BlueprintCallable // @ game+0x453e6a0
-	bool IsGameplayCueActive(struct FGameplayTag GameplayCueTag); // Function GameplayAbilities.AbilitySystemComponent.IsGameplayCueActive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453df60
-	bool GetUserAbilityActivationInhibited(); // Function GameplayAbilities.AbilitySystemComponent.GetUserAbilityActivationInhibited // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453de40
-	struct FGameplayEffectSpecHandle GetOutgoingSpec(struct UGameplayEffect* GameplayEffect, float Level); // Function GameplayAbilities.AbilitySystemComponent.GetOutgoingSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453d960
-	float GetGameplayEffectMagnitude(struct FActiveGameplayEffectHandle Handle, struct FGameplayAttribute Attribute); // Function GameplayAbilities.AbilitySystemComponent.GetGameplayEffectMagnitude // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453d210
-	int32_t GetGameplayEffectCount(struct UClass* SourceGameplayEffect, struct UAbilitySystemComponent* OptionalInstigatorFilterComponent); // Function GameplayAbilities.AbilitySystemComponent.GetGameplayEffectCount // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x453d150
-	struct FGameplayEffectContextHandle GetEffectContext(); // Function GameplayAbilities.AbilitySystemComponent.GetEffectContext // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453cc70
-	void ClientTryActivateAbility(struct FGameplayAbilitySpecHandle AbilityToActivate); // Function GameplayAbilities.AbilitySystemComponent.ClientTryActivateAbility // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453abc0
-	void ClientSetReplicatedEvent(char EventType, struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ClientSetReplicatedEvent // Net|NetReliableNative|Event|Public|NetClient // @ game+0x453aa90
-	void ClientEndAbility(struct FGameplayAbilitySpecHandle AbilityToEnd, struct FGameplayAbilityActivationInfo ActivationInfo); // Function GameplayAbilities.AbilitySystemComponent.ClientEndAbility // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453a980
-	void ClientCancelAbility(struct FGameplayAbilitySpecHandle AbilityToCancel, struct FGameplayAbilityActivationInfo ActivationInfo); // Function GameplayAbilities.AbilitySystemComponent.ClientCancelAbility // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453a870
-	void ClientActivateAbilitySucceedWithEventData(struct FGameplayAbilitySpecHandle AbilityToActivate, struct FPredictionKey PredictionKey, struct FGameplayEventData TriggerEventData); // Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceedWithEventData // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453a6c0
-	void ClientActivateAbilitySucceed(struct FGameplayAbilitySpecHandle AbilityToActivate, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceed // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453a5d0
-	void ClientActivateAbilityFailed(struct FGameplayAbilitySpecHandle AbilityToActivate, int16_t PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilityFailed // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453a500
-	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToTarget(struct UClass* GameplayEffectClass, struct UAbilitySystemComponent* Target, float Level, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToTarget // Final|Native|Public|BlueprintCallable // @ game+0x4539a10
-	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToSelf(struct UClass* GameplayEffectClass, float Level, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToSelf // Final|Native|Public|BlueprintCallable // @ game+0x4539890
-	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToTarget(struct FGameplayEffectSpecHandle SpecHandle, struct UAbilitySystemComponent* Target); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToTarget // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x45396b0
-	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToSelf(struct FGameplayEffectSpecHandle SpecHandle); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToSelf // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x45395f0
-	void AbilityConfirmOrCancel__DelegateSignature(); // DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityConfirmOrCancel__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
-	void AbilityAbilityKey__DelegateSignature(int32_t InputID); // DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityAbilityKey__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
+	bool TryActivateAbilityByClass(struct UClass* InAbilityToActivate, bool bAllowRemoteActivation); // Function GameplayAbilities.AbilitySystemComponent.TryActivateAbilityByClass // Final|Native|Public|BlueprintCallable // @ game+0x45464c0
+	bool TryActivateAbilitiesByTag(struct FGameplayTagContainer GameplayTagContainer, bool bAllowRemoteActivation); // Function GameplayAbilities.AbilitySystemComponent.TryActivateAbilitiesByTag // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4546390
+	void TargetConfirm(); // Function GameplayAbilities.AbilitySystemComponent.TargetConfirm // Final|Native|Public|BlueprintCallable // @ game+0x4545f70
+	void TargetCancel(); // Function GameplayAbilities.AbilitySystemComponent.TargetCancel // Final|Native|Public|BlueprintCallable // @ game+0x4545f50
+	void SetUserAbilityActivationInhibited(bool NewInhibit); // Function GameplayAbilities.AbilitySystemComponent.SetUserAbilityActivationInhibited // Final|Native|Public|BlueprintCallable // @ game+0x4545b50
+	void SetActiveGameplayEffectLevel(struct FActiveGameplayEffectHandle ActiveHandle, int32_t NewLevel); // Function GameplayAbilities.AbilitySystemComponent.SetActiveGameplayEffectLevel // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x4545500
+	void ServerTryActivateAbilityWithEventData(struct FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, struct FPredictionKey PredictionKey, struct FGameplayEventData TriggerEventData); // Function GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbilityWithEventData // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x45452c0
+	void ServerTryActivateAbility(struct FGameplayAbilitySpecHandle AbilityToActivate, bool InputPressed, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbility // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4545160
+	void ServerSetReplicatedTargetDataCancelled(struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey, struct FPredictionKey CurrentPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetDataCancelled // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4544fd0
+	void ServerSetReplicatedTargetData(struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey, struct FGameplayAbilityTargetDataHandle ReplicatedTargetDataHandle, struct FGameplayTag ApplicationTag, struct FPredictionKey CurrentPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetData // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4544d80
+	void ServerSetReplicatedEvent(char EventType, struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey, struct FPredictionKey CurrentPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEvent // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4544bb0
+	void ServerSetInputReleased(struct FGameplayAbilitySpecHandle AbilityHandle); // Function GameplayAbilities.AbilitySystemComponent.ServerSetInputReleased // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4544b00
+	void ServerSetInputPressed(struct FGameplayAbilitySpecHandle AbilityHandle); // Function GameplayAbilities.AbilitySystemComponent.ServerSetInputPressed // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x4544a50
+	void ServerEndAbility(struct FGameplayAbilitySpecHandle AbilityToEnd, struct FGameplayAbilityActivationInfo ActivationInfo, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ServerEndAbility // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x45448a0
+	void ServerCurrentMontageSetNextSectionName(struct UAnimMontage* ClientAnimMontage, float ClientPosition, struct FName SectionName, struct FName NextSectionName); // Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageSetNextSectionName // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4544720
+	void ServerCurrentMontageJumpToSectionName(struct UAnimMontage* ClientAnimMontage, struct FName SectionName); // Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageJumpToSectionName // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4544620
+	void ServerCancelAbility(struct FGameplayAbilitySpecHandle AbilityToCancel, struct FGameplayAbilityActivationInfo ActivationInfo); // Function GameplayAbilities.AbilitySystemComponent.ServerCancelAbility // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x45444e0
+	void RemoveActiveGameplayEffectBySourceEffect(struct UClass* GameplayEffect, struct UAbilitySystemComponent* InstigatorAbilitySystemComponent, int32_t StacksToRemove); // Function GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffectBySourceEffect // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x4543ff0
+	bool RemoveActiveGameplayEffect(struct FActiveGameplayEffectHandle Handle, int32_t StacksToRemove); // Function GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffect // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x4543f30
+	void RemoveActiveEffectsWithTags(struct FGameplayTagContainer Tags); // Function GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithTags // Final|Native|Public|BlueprintCallable // @ game+0x4543e50
+	void OnRep_ReplicatedAnimMontage(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_ReplicatedAnimMontage // Final|Native|Protected // @ game+0x4543ba0
+	void OnRep_PredictionKey(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_PredictionKey // Final|Native|Public // @ game+0x4543b80
+	void OnRep_OwningActor(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_OwningActor // Final|Native|Public // @ game+0x4543b60
+	void OnRep_GameplayEffects(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_GameplayEffects // Final|Native|Public // @ game+0x4543b40
+	void OnRep_ActivateAbilities(); // Function GameplayAbilities.AbilitySystemComponent.OnRep_ActivateAbilities // Final|Native|Protected // @ game+0x4543b20
+	void NetMulticast_InvokeGameplayCueExecuted_WithParams(struct FGameplayTag GameplayCueTag, struct FPredictionKey PredictionKey, struct FGameplayCueParameters GameplayCueParameters); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_WithParams // Net|Native|Event|NetMulticast|Public // @ game+0x4542880
+	void NetMulticast_InvokeGameplayCueExecuted_FromSpec(struct FGameplayEffectSpecForRPC Spec, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_FromSpec // Net|Native|Event|NetMulticast|Public // @ game+0x4542690
+	void NetMulticast_InvokeGameplayCueExecuted(struct FGameplayTag GameplayCueTag, struct FPredictionKey PredictionKey, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted // Net|Native|Event|NetMulticast|Public // @ game+0x4542500
+	void NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(struct FGameplayEffectSpecForRPC Spec, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec // Net|Native|Event|NetMulticast|Public // @ game+0x45423f0
+	void NetMulticast_InvokeGameplayCueAdded(struct FGameplayTag GameplayCueTag, struct FPredictionKey PredictionKey, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded // Net|Native|Event|NetMulticast|Public // @ game+0x4542260
+	struct FGameplayEffectSpecHandle MakeOutgoingSpec(struct UClass* GameplayEffectClass, float Level, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.AbilitySystemComponent.MakeOutgoingSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45419e0
+	void K2_InitStats(struct UClass* Attributes, struct UDataTable* DataTable); // Function GameplayAbilities.AbilitySystemComponent.K2_InitStats // Final|Native|Public|BlueprintCallable // @ game+0x4541620
+	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectToTarget(struct UGameplayEffect* GameplayEffect, struct UAbilitySystemComponent* Target, float Level, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.AbilitySystemComponent.K2_ApplyGameplayEffectToTarget // Final|Native|Public|BlueprintCallable // @ game+0x4540e40
+	struct FActiveGameplayEffectHandle K2_ApplyGameplayEffectToSelf(struct UGameplayEffect* GameplayEffect, float Level, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.K2_ApplyGameplayEffectToSelf // Final|Native|Public|BlueprintCallable // @ game+0x4540cc0
+	bool IsGameplayCueActive(struct FGameplayTag GameplayCueTag); // Function GameplayAbilities.AbilitySystemComponent.IsGameplayCueActive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4540580
+	bool GetUserAbilityActivationInhibited(); // Function GameplayAbilities.AbilitySystemComponent.GetUserAbilityActivationInhibited // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4540460
+	struct FGameplayEffectSpecHandle GetOutgoingSpec(struct UGameplayEffect* GameplayEffect, float Level); // Function GameplayAbilities.AbilitySystemComponent.GetOutgoingSpec // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453ff80
+	float GetGameplayEffectMagnitude(struct FActiveGameplayEffectHandle Handle, struct FGameplayAttribute Attribute); // Function GameplayAbilities.AbilitySystemComponent.GetGameplayEffectMagnitude // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453f830
+	int32_t GetGameplayEffectCount(struct UClass* SourceGameplayEffect, struct UAbilitySystemComponent* OptionalInstigatorFilterComponent); // Function GameplayAbilities.AbilitySystemComponent.GetGameplayEffectCount // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x453f770
+	struct FGameplayEffectContextHandle GetEffectContext(); // Function GameplayAbilities.AbilitySystemComponent.GetEffectContext // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x453f290
+	void ClientTryActivateAbility(struct FGameplayAbilitySpecHandle AbilityToActivate); // Function GameplayAbilities.AbilitySystemComponent.ClientTryActivateAbility // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453d1e0
+	void ClientSetReplicatedEvent(char EventType, struct FGameplayAbilitySpecHandle AbilityHandle, struct FPredictionKey AbilityOriginalPredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ClientSetReplicatedEvent // Net|NetReliableNative|Event|Public|NetClient // @ game+0x453d0b0
+	void ClientEndAbility(struct FGameplayAbilitySpecHandle AbilityToEnd, struct FGameplayAbilityActivationInfo ActivationInfo); // Function GameplayAbilities.AbilitySystemComponent.ClientEndAbility // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453cfa0
+	void ClientCancelAbility(struct FGameplayAbilitySpecHandle AbilityToCancel, struct FGameplayAbilityActivationInfo ActivationInfo); // Function GameplayAbilities.AbilitySystemComponent.ClientCancelAbility // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453ce90
+	void ClientActivateAbilitySucceedWithEventData(struct FGameplayAbilitySpecHandle AbilityToActivate, struct FPredictionKey PredictionKey, struct FGameplayEventData TriggerEventData); // Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceedWithEventData // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453cce0
+	void ClientActivateAbilitySucceed(struct FGameplayAbilitySpecHandle AbilityToActivate, struct FPredictionKey PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceed // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453cbf0
+	void ClientActivateAbilityFailed(struct FGameplayAbilitySpecHandle AbilityToActivate, int16_t PredictionKey); // Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilityFailed // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x453cb20
+	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToTarget(struct UClass* GameplayEffectClass, struct UAbilitySystemComponent* Target, float Level, struct FGameplayEffectContextHandle Context); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToTarget // Final|Native|Public|BlueprintCallable // @ game+0x453c030
+	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToSelf(struct UClass* GameplayEffectClass, float Level, struct FGameplayEffectContextHandle EffectContext); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToSelf // Final|Native|Public|BlueprintCallable // @ game+0x453beb0
+	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToTarget(struct FGameplayEffectSpecHandle SpecHandle, struct UAbilitySystemComponent* Target); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToTarget // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453bcd0
+	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToSelf(struct FGameplayEffectSpecHandle SpecHandle); // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToSelf // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453bc10
+	void AbilityConfirmOrCancel__DelegateSignature(); // DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityConfirmOrCancel__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
+	void AbilityAbilityKey__DelegateSignature(int32_t InputID); // DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityAbilityKey__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
 };
 
 // Class GameplayAbilities.AbilitySystemDebugHUD
@@ -318,8 +318,8 @@ struct UAbilitySystemGlobals : UObject {
 	struct UGameplayCueManager* GlobalGameplayCueManager; // 0x110(0x08)
 	char UnknownData_118[0x18]; // 0x118(0x18)
 
-	void ToggleIgnoreAbilitySystemCosts(); // Function GameplayAbilities.AbilitySystemGlobals.ToggleIgnoreAbilitySystemCosts // Exec|Native|Public // @ game+0x4543d50
-	void ToggleIgnoreAbilitySystemCooldowns(); // Function GameplayAbilities.AbilitySystemGlobals.ToggleIgnoreAbilitySystemCooldowns // Exec|Native|Public // @ game+0x4543d30
+	void ToggleIgnoreAbilitySystemCosts(); // Function GameplayAbilities.AbilitySystemGlobals.ToggleIgnoreAbilitySystemCosts // Exec|Native|Public // @ game+0x4546370
+	void ToggleIgnoreAbilitySystemCooldowns(); // Function GameplayAbilities.AbilitySystemGlobals.ToggleIgnoreAbilitySystemCooldowns // Exec|Native|Public // @ game+0x4546350
 };
 
 // Class GameplayAbilities.AbilitySystemInterface
@@ -352,7 +352,7 @@ struct UAbilityTask_MoveToLocation : UAbilityTask {
 	struct UCurveFloat* LerpCurve; // 0xa0(0x08)
 	struct UCurveVector* LerpCurveVector; // 0xa8(0x08)
 
-	struct UAbilityTask_MoveToLocation* MoveToLocation(struct UObject* WorldContextObject, struct FName TaskInstanceName, struct FVector Location, float Duration, struct UCurveFloat* OptionalInterpolationCurve, struct UCurveVector* OptionalVectorInterpolationCurve); // Function GameplayAbilities.AbilityTask_MoveToLocation.MoveToLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x453fa80
+	struct UAbilityTask_MoveToLocation* MoveToLocation(struct UObject* WorldContextObject, struct FName TaskInstanceName, struct FVector Location, float Duration, struct UCurveFloat* OptionalInterpolationCurve, struct UCurveVector* OptionalVectorInterpolationCurve); // Function GameplayAbilities.AbilityTask_MoveToLocation.MoveToLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x45420a0
 };
 
 // Class GameplayAbilities.AbilityTask_NetworkSyncPoint
@@ -361,8 +361,8 @@ struct UAbilityTask_NetworkSyncPoint : UAbilityTask {
 	struct FMulticastDelegate OnSync; // 0x68(0x10)
 	char UnknownData_78[0x8]; // 0x78(0x08)
 
-	struct UAbilityTask_NetworkSyncPoint* WaitNetSync(struct UObject* WorldContextObject, char SyncType); // Function GameplayAbilities.AbilityTask_NetworkSyncPoint.WaitNetSync // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545580
-	void OnSignalCallback(); // Function GameplayAbilities.AbilityTask_NetworkSyncPoint.OnSignalCallback // Final|Native|Public // @ game+0x45415a0
+	struct UAbilityTask_NetworkSyncPoint* WaitNetSync(struct UObject* WorldContextObject, char SyncType); // Function GameplayAbilities.AbilityTask_NetworkSyncPoint.WaitNetSync // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547ba0
+	void OnSignalCallback(); // Function GameplayAbilities.AbilityTask_NetworkSyncPoint.OnSignalCallback // Final|Native|Public // @ game+0x4543bc0
 };
 
 // Class GameplayAbilities.AbilityTask_PlayMontageAndWait
@@ -373,9 +373,9 @@ struct UAbilityTask_PlayMontageAndWait : UAbilityTask {
 	struct FMulticastDelegate OnCancelled; // 0x88(0x10)
 	char UnknownData_98[0x28]; // 0x98(0x28)
 
-	void OnMontageInterrupted(); // Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageInterrupted // Final|Native|Public // @ game+0x4540f30
-	void OnMontageBlendingOut(struct UAnimMontage* Montage, bool bInterrupted); // Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageBlendingOut // Final|Native|Public // @ game+0x4540e60
-	struct UAbilityTask_PlayMontageAndWait* CreatePlayMontageAndWaitProxy(struct UObject* WorldContextObject, struct FName TaskInstanceName, struct UAnimMontage* MontageToPlay, float Rate, struct FName StartSection); // Function GameplayAbilities.AbilityTask_PlayMontageAndWait.CreatePlayMontageAndWaitProxy // Final|Native|Static|Public|BlueprintCallable // @ game+0x453ad30
+	void OnMontageInterrupted(); // Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageInterrupted // Final|Native|Public // @ game+0x4543550
+	void OnMontageBlendingOut(struct UAnimMontage* Montage, bool bInterrupted); // Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageBlendingOut // Final|Native|Public // @ game+0x4543480
+	struct UAbilityTask_PlayMontageAndWait* CreatePlayMontageAndWaitProxy(struct UObject* WorldContextObject, struct FName TaskInstanceName, struct UAnimMontage* MontageToPlay, float Rate, struct FName StartSection); // Function GameplayAbilities.AbilityTask_PlayMontageAndWait.CreatePlayMontageAndWaitProxy // Final|Native|Static|Public|BlueprintCallable // @ game+0x453d350
 };
 
 // Class GameplayAbilities.AbilityTask_Repeat
@@ -385,7 +385,7 @@ struct UAbilityTask_Repeat : UAbilityTask {
 	struct FMulticastDelegate OnFinished; // 0x78(0x10)
 	char UnknownData_88[0x10]; // 0x88(0x10)
 
-	struct UAbilityTask_Repeat* RepeatAction(struct UObject* WorldContextObject, float TimeBetweenActions, int32_t TotalActionCount); // Function GameplayAbilities.AbilityTask_Repeat.RepeatAction // Final|Native|Static|Public|BlueprintCallable // @ game+0x4541ad0
+	struct UAbilityTask_Repeat* RepeatAction(struct UObject* WorldContextObject, float TimeBetweenActions, int32_t TotalActionCount); // Function GameplayAbilities.AbilityTask_Repeat.RepeatAction // Final|Native|Static|Public|BlueprintCallable // @ game+0x45440f0
 };
 
 // Class GameplayAbilities.AbilityTask_SpawnActor
@@ -395,9 +395,9 @@ struct UAbilityTask_SpawnActor : UAbilityTask {
 	struct FMulticastDelegate DidNotSpawn; // 0x78(0x10)
 	char UnknownData_88[0x10]; // 0x88(0x10)
 
-	struct UAbilityTask_SpawnActor* SpawnActor(struct UObject* WorldContextObject, struct FGameplayAbilityTargetDataHandle TargetData, struct UClass* Class); // Function GameplayAbilities.AbilityTask_SpawnActor.SpawnActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x45435c0
-	void FinishSpawningActor(struct UObject* WorldContextObject, struct FGameplayAbilityTargetDataHandle TargetData, struct AActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_SpawnActor.FinishSpawningActor // Final|Native|Public|BlueprintCallable // @ game+0x453bff0
-	bool BeginSpawningActor(struct UObject* WorldContextObject, struct FGameplayAbilityTargetDataHandle TargetData, struct UClass* Class, struct AActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_SpawnActor.BeginSpawningActor // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4539fc0
+	struct UAbilityTask_SpawnActor* SpawnActor(struct UObject* WorldContextObject, struct FGameplayAbilityTargetDataHandle TargetData, struct UClass* Class); // Function GameplayAbilities.AbilityTask_SpawnActor.SpawnActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545be0
+	void FinishSpawningActor(struct UObject* WorldContextObject, struct FGameplayAbilityTargetDataHandle TargetData, struct AActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_SpawnActor.FinishSpawningActor // Final|Native|Public|BlueprintCallable // @ game+0x453e610
+	bool BeginSpawningActor(struct UObject* WorldContextObject, struct FGameplayAbilityTargetDataHandle TargetData, struct UClass* Class, struct AActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_SpawnActor.BeginSpawningActor // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453c5e0
 };
 
 // Class GameplayAbilities.AbilityTask_StartAbilityState
@@ -407,7 +407,7 @@ struct UAbilityTask_StartAbilityState : UAbilityTask {
 	struct FMulticastDelegate OnStateInterrupted; // 0x78(0x10)
 	char UnknownData_88[0x18]; // 0x88(0x18)
 
-	struct UAbilityTask_StartAbilityState* StartAbilityState(struct UObject* WorldContextObject, struct FName StateName, bool bEndCurrentState); // Function GameplayAbilities.AbilityTask_StartAbilityState.StartAbilityState // Final|Native|Static|Public|BlueprintCallable // @ game+0x45436e0
+	struct UAbilityTask_StartAbilityState* StartAbilityState(struct UObject* WorldContextObject, struct FName StateName, bool bEndCurrentState); // Function GameplayAbilities.AbilityTask_StartAbilityState.StartAbilityState // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545d00
 };
 
 // Class GameplayAbilities.GameplayAbilityWorldReticle
@@ -421,12 +421,12 @@ struct AGameplayAbilityWorldReticle : AActor {
 	struct APlayerController* MasterPC; // 0x3d8(0x08)
 	struct AActor* TargetingActor; // 0x3e0(0x08)
 
-	void SetReticleMaterialParamVector(struct FName ParamName, struct FVector Value); // Function GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamVector // Event|Public|HasDefaults|BlueprintEvent // @ game+0x18e3b10
-	void SetReticleMaterialParamFloat(struct FName ParamName, float Value); // Function GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamFloat // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnValidTargetChanged(bool bNewValue); // Function GameplayAbilities.GameplayAbilityWorldReticle.OnValidTargetChanged // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnTargetingAnActor(bool bNewValue); // Function GameplayAbilities.GameplayAbilityWorldReticle.OnTargetingAnActor // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnParametersInitialized(); // Function GameplayAbilities.GameplayAbilityWorldReticle.OnParametersInitialized // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void FaceTowardSource(bool bFaceIn2D); // Function GameplayAbilities.GameplayAbilityWorldReticle.FaceTowardSource // Final|Native|Public|BlueprintCallable // @ game+0x453be00
+	void SetReticleMaterialParamVector(struct FName ParamName, struct FVector Value); // Function GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamVector // Event|Public|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
+	void SetReticleMaterialParamFloat(struct FName ParamName, float Value); // Function GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamFloat // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnValidTargetChanged(bool bNewValue); // Function GameplayAbilities.GameplayAbilityWorldReticle.OnValidTargetChanged // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnTargetingAnActor(bool bNewValue); // Function GameplayAbilities.GameplayAbilityWorldReticle.OnTargetingAnActor // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnParametersInitialized(); // Function GameplayAbilities.GameplayAbilityWorldReticle.OnParametersInitialized // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void FaceTowardSource(bool bFaceIn2D); // Function GameplayAbilities.GameplayAbilityWorldReticle.FaceTowardSource // Final|Native|Public|BlueprintCallable // @ game+0x453e420
 };
 
 // Class GameplayAbilities.GameplayAbilityTargetActor
@@ -448,8 +448,8 @@ struct AGameplayAbilityTargetActor : AActor {
 	bool bDebug; // 0x4c0(0x01)
 	char UnknownData_4C1[0x1f]; // 0x4c1(0x1f)
 
-	void ConfirmTargeting(); // Function GameplayAbilities.GameplayAbilityTargetActor.ConfirmTargeting // Native|Public // @ game+0x453ac40
-	void CancelTargeting(); // Function GameplayAbilities.GameplayAbilityTargetActor.CancelTargeting // Native|Public // @ game+0x453a460
+	void ConfirmTargeting(); // Function GameplayAbilities.GameplayAbilityTargetActor.ConfirmTargeting // Native|Public // @ game+0x453d260
+	void CancelTargeting(); // Function GameplayAbilities.GameplayAbilityTargetActor.CancelTargeting // Native|Public // @ game+0x453ca80
 };
 
 // Class GameplayAbilities.AbilityTask_VisualizeTargeting
@@ -458,10 +458,10 @@ struct UAbilityTask_VisualizeTargeting : UAbilityTask {
 	struct FMulticastDelegate TimeElapsed; // 0x68(0x10)
 	char UnknownData_78[0x18]; // 0x78(0x18)
 
-	struct UAbilityTask_VisualizeTargeting* VisualizeTargetingUsingActor(struct UObject* WorldContextObject, struct AGameplayAbilityTargetActor* TargetActor, struct FName TaskInstanceName, float Duration); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargetingUsingActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x45440a0
-	struct UAbilityTask_VisualizeTargeting* VisualizeTargeting(struct UObject* WorldContextObject, struct UClass* Class, struct FName TaskInstanceName, float Duration); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargeting // Final|Native|Static|Public|BlueprintCallable // @ game+0x4543f60
-	void FinishSpawningActor(struct UObject* WorldContextObject, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.FinishSpawningActor // Final|Native|Public|BlueprintCallable // @ game+0x453c120
-	bool BeginSpawningActor(struct UObject* WorldContextObject, struct UClass* Class, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.BeginSpawningActor // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453a160
+	struct UAbilityTask_VisualizeTargeting* VisualizeTargetingUsingActor(struct UObject* WorldContextObject, struct AGameplayAbilityTargetActor* TargetActor, struct FName TaskInstanceName, float Duration); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargetingUsingActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x45466c0
+	struct UAbilityTask_VisualizeTargeting* VisualizeTargeting(struct UObject* WorldContextObject, struct UClass* Class, struct FName TaskInstanceName, float Duration); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargeting // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546580
+	void FinishSpawningActor(struct UObject* WorldContextObject, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.FinishSpawningActor // Final|Native|Public|BlueprintCallable // @ game+0x453e740
+	bool BeginSpawningActor(struct UObject* WorldContextObject, struct UClass* Class, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_VisualizeTargeting.BeginSpawningActor // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453c780
 };
 
 // Class GameplayAbilities.AbilityTask_WaitAbilityActivate
@@ -470,8 +470,8 @@ struct UAbilityTask_WaitAbilityActivate : UAbilityTask {
 	struct FMulticastDelegate OnActivate; // 0x68(0x10)
 	char UnknownData_78[0x20]; // 0x78(0x20)
 
-	struct UAbilityTask_WaitAbilityActivate* WaitForAbilityActivate(struct UObject* WorldContextObject, struct FGameplayTag WithTag, struct FGameplayTag WithoutTag, bool IncludeTriggeredAbilities, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivate // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544430
-	void OnAbilityActivate(struct UGameplayAbility* ActivatedAbility); // Function GameplayAbilities.AbilityTask_WaitAbilityActivate.OnAbilityActivate // Final|Native|Public // @ game+0x4540400
+	struct UAbilityTask_WaitAbilityActivate* WaitForAbilityActivate(struct UObject* WorldContextObject, struct FGameplayTag WithTag, struct FGameplayTag WithoutTag, bool IncludeTriggeredAbilities, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivate // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546a50
+	void OnAbilityActivate(struct UGameplayAbility* ActivatedAbility); // Function GameplayAbilities.AbilityTask_WaitAbilityActivate.OnAbilityActivate // Final|Native|Public // @ game+0x4542a20
 };
 
 // Class GameplayAbilities.AbilityTask_WaitAbilityCommit
@@ -480,8 +480,8 @@ struct UAbilityTask_WaitAbilityCommit : UAbilityTask {
 	struct FMulticastDelegate OnCommit; // 0x68(0x10)
 	char UnknownData_78[0x20]; // 0x78(0x20)
 
-	struct UAbilityTask_WaitAbilityCommit* WaitForAbilityCommit(struct UObject* WorldContextObject, struct FGameplayTag WithTag, struct FGameplayTag WithoutTage, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAbilityCommit.WaitForAbilityCommit // Final|Native|Static|Public|BlueprintCallable // @ game+0x45445c0
-	void OnAbilityCommit(struct UGameplayAbility* ActivatedAbility); // Function GameplayAbilities.AbilityTask_WaitAbilityCommit.OnAbilityCommit // Final|Native|Public // @ game+0x4540480
+	struct UAbilityTask_WaitAbilityCommit* WaitForAbilityCommit(struct UObject* WorldContextObject, struct FGameplayTag WithTag, struct FGameplayTag WithoutTage, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAbilityCommit.WaitForAbilityCommit // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546be0
+	void OnAbilityCommit(struct UGameplayAbility* ActivatedAbility); // Function GameplayAbilities.AbilityTask_WaitAbilityCommit.OnAbilityCommit // Final|Native|Public // @ game+0x4542aa0
 };
 
 // Class GameplayAbilities.AbilityTask_WaitAttributeChange
@@ -490,8 +490,8 @@ struct UAbilityTask_WaitAttributeChange : UAbilityTask {
 	struct FMulticastDelegate OnChange; // 0x68(0x10)
 	char UnknownData_78[0x30]; // 0x78(0x30)
 
-	struct UAbilityTask_WaitAttributeChange* WaitForAttributeChangeWithComparison(struct UObject* WorldContextObject, struct FGameplayAttribute InAttribute, struct FGameplayTag InWithTag, struct FGameplayTag InWithoutTag, char InComparisonType, float InComparisonValue, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChangeWithComparison // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544880
-	struct UAbilityTask_WaitAttributeChange* WaitForAttributeChange(struct UObject* WorldContextObject, struct FGameplayAttribute Attribute, struct FGameplayTag WithSrcTag, struct FGameplayTag WithoutSrcTag, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChange // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544700
+	struct UAbilityTask_WaitAttributeChange* WaitForAttributeChangeWithComparison(struct UObject* WorldContextObject, struct FGameplayAttribute InAttribute, struct FGameplayTag InWithTag, struct FGameplayTag InWithoutTag, char InComparisonType, float InComparisonValue, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChangeWithComparison // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546ea0
+	struct UAbilityTask_WaitAttributeChange* WaitForAttributeChange(struct UObject* WorldContextObject, struct FGameplayAttribute Attribute, struct FGameplayTag WithSrcTag, struct FGameplayTag WithoutSrcTag, bool TriggerOnce); // Function GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChange // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546d20
 };
 
 // Class GameplayAbilities.AbilityTask_WaitCancel
@@ -500,9 +500,9 @@ struct UAbilityTask_WaitCancel : UAbilityTask {
 	struct FMulticastDelegate OnCancel; // 0x68(0x10)
 	char UnknownData_78[0x8]; // 0x78(0x08)
 
-	struct UAbilityTask_WaitCancel* WaitCancel(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitCancel.WaitCancel // Final|Native|Static|Public|BlueprintCallable // @ game+0x45441e0
-	void OnLocalCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitCancel.OnLocalCancelCallback // Final|Native|Public // @ game+0x4540e00
-	void OnCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitCancel.OnCancelCallback // Final|Native|Public // @ game+0x45408e0
+	struct UAbilityTask_WaitCancel* WaitCancel(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitCancel.WaitCancel // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546800
+	void OnLocalCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitCancel.OnLocalCancelCallback // Final|Native|Public // @ game+0x4543420
+	void OnCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitCancel.OnCancelCallback // Final|Native|Public // @ game+0x4542f00
 };
 
 // Class GameplayAbilities.AbilityTask_WaitConfirm
@@ -511,8 +511,8 @@ struct UAbilityTask_WaitConfirm : UAbilityTask {
 	struct FMulticastDelegate OnConfirm; // 0x68(0x10)
 	char UnknownData_78[0x10]; // 0x78(0x10)
 
-	struct UAbilityTask_WaitConfirm* WaitConfirm(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitConfirm.WaitConfirm // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544260
-	void OnConfirmCallback(struct UGameplayAbility* Ability); // Function GameplayAbilities.AbilityTask_WaitConfirm.OnConfirmCallback // Final|Native|Public // @ game+0x4540920
+	struct UAbilityTask_WaitConfirm* WaitConfirm(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitConfirm.WaitConfirm // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546880
+	void OnConfirmCallback(struct UGameplayAbility* Ability); // Function GameplayAbilities.AbilityTask_WaitConfirm.OnConfirmCallback // Final|Native|Public // @ game+0x4542f40
 };
 
 // Class GameplayAbilities.AbilityTask_WaitConfirmCancel
@@ -522,11 +522,11 @@ struct UAbilityTask_WaitConfirmCancel : UAbilityTask {
 	struct FMulticastDelegate OnCancel; // 0x78(0x10)
 	char UnknownData_88[0x8]; // 0x88(0x08)
 
-	struct UAbilityTask_WaitConfirmCancel* WaitConfirmCancel(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.WaitConfirmCancel // Final|Native|Static|Public|BlueprintCallable // @ game+0x45442e0
-	void OnLocalConfirmCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalConfirmCallback // Final|Native|Public // @ game+0x4540e40
-	void OnLocalCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalCancelCallback // Final|Native|Public // @ game+0x4540e20
-	void OnConfirmCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnConfirmCallback // Final|Native|Public // @ game+0x45409a0
-	void OnCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnCancelCallback // Final|Native|Public // @ game+0x4540900
+	struct UAbilityTask_WaitConfirmCancel* WaitConfirmCancel(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.WaitConfirmCancel // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546900
+	void OnLocalConfirmCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalConfirmCallback // Final|Native|Public // @ game+0x4543460
+	void OnLocalCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalCancelCallback // Final|Native|Public // @ game+0x4543440
+	void OnConfirmCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnConfirmCallback // Final|Native|Public // @ game+0x4542fc0
+	void OnCancelCallback(); // Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnCancelCallback // Final|Native|Public // @ game+0x4542f20
 };
 
 // Class GameplayAbilities.AbilityTask_WaitDelay
@@ -535,7 +535,7 @@ struct UAbilityTask_WaitDelay : UAbilityTask {
 	struct FMulticastDelegate OnFinish; // 0x68(0x10)
 	char UnknownData_78[0x8]; // 0x78(0x08)
 
-	struct UAbilityTask_WaitDelay* WaitDelay(struct UObject* WorldContextObject, float Time); // Function GameplayAbilities.AbilityTask_WaitDelay.WaitDelay // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544360
+	struct UAbilityTask_WaitDelay* WaitDelay(struct UObject* WorldContextObject, float Time); // Function GameplayAbilities.AbilityTask_WaitDelay.WaitDelay // Final|Native|Static|Public|BlueprintCallable // @ game+0x4546980
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayEffectApplied
@@ -543,7 +543,7 @@ struct UAbilityTask_WaitDelay : UAbilityTask {
 struct UAbilityTask_WaitGameplayEffectApplied : UAbilityTask {
 	char UnknownData_68[0xc8]; // 0x68(0xc8)
 
-	void OnApplyGameplayEffectCallback(struct UAbilitySystemComponent* Target, struct FGameplayEffectSpec SpecApplied, struct FActiveGameplayEffectHandle ActiveHandle); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied.OnApplyGameplayEffectCallback // Final|Native|Public|HasOutParms // @ game+0x4540780
+	void OnApplyGameplayEffectCallback(struct UAbilitySystemComponent* Target, struct FGameplayEffectSpec SpecApplied, struct FActiveGameplayEffectHandle ActiveHandle); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied.OnApplyGameplayEffectCallback // Final|Native|Public|HasOutParms // @ game+0x4542da0
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self
@@ -552,7 +552,7 @@ struct UAbilityTask_WaitGameplayEffectApplied_Self : UAbilityTask_WaitGameplayEf
 	struct FMulticastDelegate OnApplied; // 0x130(0x10)
 	char UnknownData_140[0x8]; // 0x140(0x08)
 
-	struct UAbilityTask_WaitGameplayEffectApplied_Self* WaitGameplayEffectAppliedToSelf(struct UObject* WorldContextObject, struct FGameplayTargetDataFilterHandle SourceFilter, struct FGameplayTagRequirements SourceTagRequirements, struct FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, struct AActor* OptionalExternalOwner); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self.WaitGameplayEffectAppliedToSelf // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544be0
+	struct UAbilityTask_WaitGameplayEffectApplied_Self* WaitGameplayEffectAppliedToSelf(struct UObject* WorldContextObject, struct FGameplayTargetDataFilterHandle SourceFilter, struct FGameplayTagRequirements SourceTagRequirements, struct FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, struct AActor* OptionalExternalOwner); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self.WaitGameplayEffectAppliedToSelf // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547200
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target
@@ -561,7 +561,7 @@ struct UAbilityTask_WaitGameplayEffectApplied_Target : UAbilityTask_WaitGameplay
 	struct FMulticastDelegate OnApplied; // 0x130(0x10)
 	char UnknownData_140[0x8]; // 0x140(0x08)
 
-	struct UAbilityTask_WaitGameplayEffectApplied_Target* WaitGameplayEffectAppliedToTarget(struct UObject* WorldContextObject, struct FGameplayTargetDataFilterHandle TargetFilter, struct FGameplayTagRequirements SourceTagRequirements, struct FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, struct AActor* OptionalExternalOwner); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target.WaitGameplayEffectAppliedToTarget // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544eb0
+	struct UAbilityTask_WaitGameplayEffectApplied_Target* WaitGameplayEffectAppliedToTarget(struct UObject* WorldContextObject, struct FGameplayTargetDataFilterHandle TargetFilter, struct FGameplayTagRequirements SourceTagRequirements, struct FGameplayTagRequirements TargetTagRequirements, bool TriggerOnce, struct AActor* OptionalExternalOwner); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target.WaitGameplayEffectAppliedToTarget // Final|Native|Static|Public|BlueprintCallable // @ game+0x45474d0
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved
@@ -571,8 +571,8 @@ struct UAbilityTask_WaitGameplayEffectRemoved : UAbilityTask {
 	struct FMulticastDelegate InvalidHandle; // 0x78(0x10)
 	char UnknownData_88[0x10]; // 0x88(0x10)
 
-	struct UAbilityTask_WaitGameplayEffectRemoved* WaitForGameplayEffectRemoved(struct UObject* WorldContextObject, struct FActiveGameplayEffectHandle Handle); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.WaitForGameplayEffectRemoved // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544a90
-	void OnGameplayEffectRemoved(); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.OnGameplayEffectRemoved // Final|Native|Public // @ game+0x4540c40
+	struct UAbilityTask_WaitGameplayEffectRemoved* WaitForGameplayEffectRemoved(struct UObject* WorldContextObject, struct FActiveGameplayEffectHandle Handle); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.WaitForGameplayEffectRemoved // Final|Native|Static|Public|BlueprintCallable // @ game+0x45470b0
+	void OnGameplayEffectRemoved(); // Function GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.OnGameplayEffectRemoved // Final|Native|Public // @ game+0x4543260
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayTag
@@ -580,7 +580,7 @@ struct UAbilityTask_WaitGameplayEffectRemoved : UAbilityTask {
 struct UAbilityTask_WaitGameplayTag : UAbilityTask {
 	char UnknownData_68[0x20]; // 0x68(0x20)
 
-	void GameplayTagCallback(struct FGameplayTag Tag, int32_t NewCount); // Function GameplayAbilities.AbilityTask_WaitGameplayTag.GameplayTagCallback // Native|Public // @ game+0x453c450
+	void GameplayTagCallback(struct FGameplayTag Tag, int32_t NewCount); // Function GameplayAbilities.AbilityTask_WaitGameplayTag.GameplayTagCallback // Native|Public // @ game+0x453ea70
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayTagAdded
@@ -588,7 +588,7 @@ struct UAbilityTask_WaitGameplayTag : UAbilityTask {
 struct UAbilityTask_WaitGameplayTagAdded : UAbilityTask_WaitGameplayTag {
 	struct FMulticastDelegate Added; // 0x88(0x10)
 
-	struct UAbilityTask_WaitGameplayTagAdded* WaitGameplayTagAdd(struct UObject* WorldContextObject, struct FGameplayTag Tag, struct AActor* OptionalExternalTarget, bool OnlyTriggerOnce); // Function GameplayAbilities.AbilityTask_WaitGameplayTagAdded.WaitGameplayTagAdd // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545180
+	struct UAbilityTask_WaitGameplayTagAdded* WaitGameplayTagAdd(struct UObject* WorldContextObject, struct FGameplayTag Tag, struct AActor* OptionalExternalTarget, bool OnlyTriggerOnce); // Function GameplayAbilities.AbilityTask_WaitGameplayTagAdded.WaitGameplayTagAdd // Final|Native|Static|Public|BlueprintCallable // @ game+0x45477a0
 };
 
 // Class GameplayAbilities.AbilityTask_WaitGameplayTagRemoved
@@ -596,7 +596,7 @@ struct UAbilityTask_WaitGameplayTagAdded : UAbilityTask_WaitGameplayTag {
 struct UAbilityTask_WaitGameplayTagRemoved : UAbilityTask_WaitGameplayTag {
 	struct FMulticastDelegate Removed; // 0x88(0x10)
 
-	struct UAbilityTask_WaitGameplayTagRemoved* WaitGameplayTagRemove(struct UObject* WorldContextObject, struct FGameplayTag Tag, struct AActor* OptionalExternalTarget, bool OnlyTriggerOnce); // Function GameplayAbilities.AbilityTask_WaitGameplayTagRemoved.WaitGameplayTagRemove // Final|Native|Static|Public|BlueprintCallable // @ game+0x45452c0
+	struct UAbilityTask_WaitGameplayTagRemoved* WaitGameplayTagRemove(struct UObject* WorldContextObject, struct FGameplayTag Tag, struct AActor* OptionalExternalTarget, bool OnlyTriggerOnce); // Function GameplayAbilities.AbilityTask_WaitGameplayTagRemoved.WaitGameplayTagRemove // Final|Native|Static|Public|BlueprintCallable // @ game+0x45478e0
 };
 
 // Class GameplayAbilities.AbilityTask_WaitInputPress
@@ -605,8 +605,8 @@ struct UAbilityTask_WaitInputPress : UAbilityTask {
 	struct FMulticastDelegate OnPress; // 0x68(0x10)
 	char UnknownData_78[0x10]; // 0x78(0x10)
 
-	struct UAbilityTask_WaitInputPress* WaitInputPress(struct UObject* WorldContextObject, bool bTestAlreadyPressed); // Function GameplayAbilities.AbilityTask_WaitInputPress.WaitInputPress // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545400
-	void OnPressCallback(); // Function GameplayAbilities.AbilityTask_WaitInputPress.OnPressCallback // Final|Native|Public // @ game+0x4541240
+	struct UAbilityTask_WaitInputPress* WaitInputPress(struct UObject* WorldContextObject, bool bTestAlreadyPressed); // Function GameplayAbilities.AbilityTask_WaitInputPress.WaitInputPress // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547a20
+	void OnPressCallback(); // Function GameplayAbilities.AbilityTask_WaitInputPress.OnPressCallback // Final|Native|Public // @ game+0x4543860
 };
 
 // Class GameplayAbilities.AbilityTask_WaitInputRelease
@@ -615,8 +615,8 @@ struct UAbilityTask_WaitInputRelease : UAbilityTask {
 	struct FMulticastDelegate OnRelease; // 0x68(0x10)
 	char UnknownData_78[0x10]; // 0x78(0x10)
 
-	struct UAbilityTask_WaitInputRelease* WaitInputRelease(struct UObject* WorldContextObject, bool bTestAlreadyReleased); // Function GameplayAbilities.AbilityTask_WaitInputRelease.WaitInputRelease // Final|Native|Static|Public|BlueprintCallable // @ game+0x45454c0
-	void OnReleaseCallback(); // Function GameplayAbilities.AbilityTask_WaitInputRelease.OnReleaseCallback // Final|Native|Public // @ game+0x4541260
+	struct UAbilityTask_WaitInputRelease* WaitInputRelease(struct UObject* WorldContextObject, bool bTestAlreadyReleased); // Function GameplayAbilities.AbilityTask_WaitInputRelease.WaitInputRelease // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547ae0
+	void OnReleaseCallback(); // Function GameplayAbilities.AbilityTask_WaitInputRelease.OnReleaseCallback // Final|Native|Public // @ game+0x4543880
 };
 
 // Class GameplayAbilities.AbilityTask_WaitMovementModeChange
@@ -625,8 +625,8 @@ struct UAbilityTask_WaitMovementModeChange : UAbilityTask {
 	struct FMulticastDelegate OnChange; // 0x68(0x10)
 	char UnknownData_78[0x10]; // 0x78(0x10)
 
-	void OnMovementModeChange(struct ACharacter* Character, char PrevMovementMode, char PreviousCustomMode); // Function GameplayAbilities.AbilityTask_WaitMovementModeChange.OnMovementModeChange // Final|Native|Public // @ game+0x4540f50
-	struct UAbilityTask_WaitMovementModeChange* CreateWaitMovementModeChange(struct UObject* WorldContextObject, char NewMode); // Function GameplayAbilities.AbilityTask_WaitMovementModeChange.CreateWaitMovementModeChange // Final|Native|Static|Public|BlueprintCallable // @ game+0x453aeb0
+	void OnMovementModeChange(struct ACharacter* Character, char PrevMovementMode, char PreviousCustomMode); // Function GameplayAbilities.AbilityTask_WaitMovementModeChange.OnMovementModeChange // Final|Native|Public // @ game+0x4543570
+	struct UAbilityTask_WaitMovementModeChange* CreateWaitMovementModeChange(struct UObject* WorldContextObject, char NewMode); // Function GameplayAbilities.AbilityTask_WaitMovementModeChange.CreateWaitMovementModeChange // Final|Native|Static|Public|BlueprintCallable // @ game+0x453d4d0
 };
 
 // Class GameplayAbilities.AbilityTask_WaitOverlap
@@ -634,9 +634,9 @@ struct UAbilityTask_WaitMovementModeChange : UAbilityTask {
 struct UAbilityTask_WaitOverlap : UAbilityTask {
 	struct FMulticastDelegate OnOverlap; // 0x68(0x10)
 
-	struct UAbilityTask_WaitOverlap* WaitForOverlap(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitOverlap.WaitForOverlap // Final|Native|Static|Public|BlueprintCallable // @ game+0x4544b60
-	void OnOverlapCallback(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function GameplayAbilities.AbilityTask_WaitOverlap.OnOverlapCallback // Final|Native|Public|HasOutParms // @ game+0x4541050
-	void OnHitCallback(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, struct FVector NormalImpulse, struct FHitResult Hit); // Function GameplayAbilities.AbilityTask_WaitOverlap.OnHitCallback // Final|Native|Public|HasOutParms|HasDefaults // @ game+0x4540c60
+	struct UAbilityTask_WaitOverlap* WaitForOverlap(struct UObject* WorldContextObject); // Function GameplayAbilities.AbilityTask_WaitOverlap.WaitForOverlap // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547180
+	void OnOverlapCallback(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function GameplayAbilities.AbilityTask_WaitOverlap.OnOverlapCallback // Final|Native|Public|HasOutParms // @ game+0x4543670
+	void OnHitCallback(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, struct FVector NormalImpulse, struct FHitResult Hit); // Function GameplayAbilities.AbilityTask_WaitOverlap.OnHitCallback // Final|Native|Public|HasOutParms|HasDefaults // @ game+0x4543280
 };
 
 // Class GameplayAbilities.AbilityTask_WaitTargetData
@@ -646,14 +646,14 @@ struct UAbilityTask_WaitTargetData : UAbilityTask {
 	struct FMulticastDelegate Cancelled; // 0x78(0x10)
 	char UnknownData_88[0x20]; // 0x88(0x20)
 
-	struct UAbilityTask_WaitTargetData* WaitTargetDataUsingActor(struct UObject* WorldContextObject, struct FName TaskInstanceName, char ConfirmationType, struct AGameplayAbilityTargetActor* TargetActor); // Function GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetDataUsingActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545780
-	struct UAbilityTask_WaitTargetData* WaitTargetData(struct UObject* WorldContextObject, struct FName TaskInstanceName, char ConfirmationType, struct UClass* Class); // Function GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetData // Final|Native|Static|Public|BlueprintCallable // @ game+0x4545640
-	void OnTargetDataReplicatedCancelledCallback(); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCancelledCallback // Final|Native|Public // @ game+0x4541810
-	void OnTargetDataReplicatedCallback(struct FGameplayAbilityTargetDataHandle Data, struct FGameplayTag ActivationTag); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCallback // Final|Native|Public // @ game+0x4541720
-	void OnTargetDataReadyCallback(struct FGameplayAbilityTargetDataHandle Data); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReadyCallback // Final|Native|Public // @ game+0x4541670
-	void OnTargetDataCancelledCallback(struct FGameplayAbilityTargetDataHandle Data); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataCancelledCallback // Final|Native|Public // @ game+0x45415c0
-	void FinishSpawningActor(struct UObject* WorldContextObject, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_WaitTargetData.FinishSpawningActor // Final|Native|Public|BlueprintCallable // @ game+0x453c1e0
-	bool BeginSpawningActor(struct UObject* WorldContextObject, struct UClass* Class, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_WaitTargetData.BeginSpawningActor // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453a270
+	struct UAbilityTask_WaitTargetData* WaitTargetDataUsingActor(struct UObject* WorldContextObject, struct FName TaskInstanceName, char ConfirmationType, struct AGameplayAbilityTargetActor* TargetActor); // Function GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetDataUsingActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547da0
+	struct UAbilityTask_WaitTargetData* WaitTargetData(struct UObject* WorldContextObject, struct FName TaskInstanceName, char ConfirmationType, struct UClass* Class); // Function GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetData // Final|Native|Static|Public|BlueprintCallable // @ game+0x4547c60
+	void OnTargetDataReplicatedCancelledCallback(); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCancelledCallback // Final|Native|Public // @ game+0x4543e30
+	void OnTargetDataReplicatedCallback(struct FGameplayAbilityTargetDataHandle Data, struct FGameplayTag ActivationTag); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCallback // Final|Native|Public // @ game+0x4543d40
+	void OnTargetDataReadyCallback(struct FGameplayAbilityTargetDataHandle Data); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReadyCallback // Final|Native|Public // @ game+0x4543c90
+	void OnTargetDataCancelledCallback(struct FGameplayAbilityTargetDataHandle Data); // Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataCancelledCallback // Final|Native|Public // @ game+0x4543be0
+	void FinishSpawningActor(struct UObject* WorldContextObject, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_WaitTargetData.FinishSpawningActor // Final|Native|Public|BlueprintCallable // @ game+0x453e800
+	bool BeginSpawningActor(struct UObject* WorldContextObject, struct UClass* Class, struct AGameplayAbilityTargetActor* SpawnedActor); // Function GameplayAbilities.AbilityTask_WaitTargetData.BeginSpawningActor // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x453c890
 };
 
 // Class GameplayAbilities.AbilityTask_WaitVelocityChange
@@ -663,7 +663,7 @@ struct UAbilityTask_WaitVelocityChange : UAbilityTask {
 	struct UMovementComponent* CachedMovementComponent; // 0x78(0x08)
 	char UnknownData_80[0x10]; // 0x80(0x10)
 
-	struct UAbilityTask_WaitVelocityChange* CreateWaitVelocityChange(struct UObject* WorldContextObject, struct FVector Direction, float MinimumMagnitude); // Function GameplayAbilities.AbilityTask_WaitVelocityChange.CreateWaitVelocityChange // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x453af70
+	struct UAbilityTask_WaitVelocityChange* CreateWaitVelocityChange(struct UObject* WorldContextObject, struct FVector Direction, float MinimumMagnitude); // Function GameplayAbilities.AbilityTask_WaitVelocityChange.CreateWaitVelocityChange // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x453d590
 };
 
 // Class GameplayAbilities.AbilitySystemTestAttributeSet
@@ -788,12 +788,12 @@ struct AGameplayCueNotify_Actor : AActor {
 	bool bUniqueInstancePerSourceObject; // 0x3e2(0x01)
 	char UnknownData_3E3[0x5]; // 0x3e3(0x05)
 
-	bool WhileActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.WhileActive // Native|Event|Public|BlueprintEvent // @ game+0x45458c0
-	bool OnRemove(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.OnRemove // Native|Event|Public|BlueprintEvent // @ game+0x4541280
-	void OnOwnerDestroyed(); // Function GameplayAbilities.GameplayCueNotify_Actor.OnOwnerDestroyed // Native|Public // @ game+0x4541220
-	bool OnExecute(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.OnExecute // Native|Event|Public|BlueprintEvent // @ game+0x45409c0
-	bool OnActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.OnActive // Native|Event|Public|BlueprintEvent // @ game+0x4540500
-	void K2_HandleGameplayCue(struct AActor* MyTarget, char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.K2_HandleGameplayCue // Event|Public|BlueprintEvent // @ game+0x18e3b10
+	bool WhileActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.WhileActive // Native|Event|Public|BlueprintEvent // @ game+0x4547ee0
+	bool OnRemove(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.OnRemove // Native|Event|Public|BlueprintEvent // @ game+0x45438a0
+	void OnOwnerDestroyed(); // Function GameplayAbilities.GameplayCueNotify_Actor.OnOwnerDestroyed // Native|Public // @ game+0x4543840
+	bool OnExecute(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.OnExecute // Native|Event|Public|BlueprintEvent // @ game+0x4542fe0
+	bool OnActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.OnActive // Native|Event|Public|BlueprintEvent // @ game+0x4542b20
+	void K2_HandleGameplayCue(struct AActor* MyTarget, char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Actor.K2_HandleGameplayCue // Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class GameplayAbilities.GameplayCueNotify_Static
@@ -804,11 +804,11 @@ struct UGameplayCueNotify_Static : UObject {
 	bool IsOverride; // 0x38(0x01)
 	char UnknownData_39[0x7]; // 0x39(0x07)
 
-	bool WhileActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.WhileActive // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x4545a00
-	bool OnRemove(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.OnRemove // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x45413c0
-	bool OnExecute(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.OnExecute // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x4540b00
-	bool OnActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.OnActive // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x4540640
-	void K2_HandleGameplayCue(struct AActor* MyTarget, char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.K2_HandleGameplayCue // Event|Public|BlueprintEvent|Const // @ game+0x18e3b10
+	bool WhileActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.WhileActive // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x4548020
+	bool OnRemove(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.OnRemove // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x45439e0
+	bool OnExecute(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.OnExecute // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x4543120
+	bool OnActive(struct AActor* MyTarget, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.OnActive // Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x4542c60
+	void K2_HandleGameplayCue(struct AActor* MyTarget, char EventType, struct FGameplayCueParameters Parameters); // Function GameplayAbilities.GameplayCueNotify_Static.K2_HandleGameplayCue // Event|Public|BlueprintEvent|Const // @ game+0x18e5fa0
 };
 
 // Class GameplayAbilities.GameplayCueNotify_HitImpact
@@ -842,14 +842,14 @@ struct UGameplayEffectExecutionCalculation : UGameplayEffectCalculation {
 	bool bRequiresPassedInTags; // 0x38(0x01)
 	char UnknownData_39[0x7]; // 0x39(0x07)
 
-	void Execute(struct FGameplayEffectCustomExecutionParameters ExecutionParams, struct FGameplayEffectCustomExecutionOutput OutExecutionOutput); // Function GameplayAbilities.GameplayEffectExecutionCalculation.Execute // Native|Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x453bca0
+	void Execute(struct FGameplayEffectCustomExecutionParameters ExecutionParams, struct FGameplayEffectCustomExecutionOutput OutExecutionOutput); // Function GameplayAbilities.GameplayEffectExecutionCalculation.Execute // Native|Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x453e2c0
 };
 
 // Class GameplayAbilities.GameplayModMagnitudeCalculation
 // Size: 0x38 (Inherited: 0x38)
 struct UGameplayModMagnitudeCalculation : UGameplayEffectCalculation {
 
-	float CalculateBaseMagnitude(struct FGameplayEffectSpec Spec); // Function GameplayAbilities.GameplayModMagnitudeCalculation.CalculateBaseMagnitude // Native|Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x453a380
+	float CalculateBaseMagnitude(struct FGameplayEffectSpec Spec); // Function GameplayAbilities.GameplayModMagnitudeCalculation.CalculateBaseMagnitude // Native|Event|Public|HasOutParms|BlueprintEvent|Const // @ game+0x453c9a0
 };
 
 // Class GameplayAbilities.GameplayEffectExtension
@@ -888,7 +888,7 @@ struct UGameplayTagReponseTable : UDataAsset {
 	struct TArray<struct FGameplayTagResponseTableEntry> Entries; // 0x28(0x10)
 	char UnknownData_38[0x50]; // 0x38(0x50)
 
-	void TagResponseEvent(struct FGameplayTag Tag, int32_t NewCount, struct UAbilitySystemComponent* ASC, int32_t Idx); // Function GameplayAbilities.GameplayTagReponseTable.TagResponseEvent // Final|Native|Protected // @ game+0x45437e0
+	void TagResponseEvent(struct FGameplayTag Tag, int32_t NewCount, struct UAbilitySystemComponent* ASC, int32_t Idx); // Function GameplayAbilities.GameplayTagReponseTable.TagResponseEvent // Final|Native|Protected // @ game+0x4545e00
 };
 
 // Class GameplayAbilities.TickableAttributeSetInterface

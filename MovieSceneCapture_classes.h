@@ -41,8 +41,8 @@ struct ULevelCapture : UMovieSceneCapture {
 // Size: 0x28 (Inherited: 0x28)
 struct UMovieSceneCaptureEnvironment : UObject {
 
-	int32_t GetCaptureFrameNumber(); // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24c7970
-	float GetCaptureElapsedTime(); // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24c7940
+	int32_t GetCaptureFrameNumber(); // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24c9e00
+	float GetCaptureElapsedTime(); // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x24c9dd0
 };
 
 // Class MovieSceneCapture.FrameGrabberProtocolSettings

@@ -52,7 +52,7 @@ struct UBurrowHealVFXComponent : UActorComponent {
 	bool IsVFXActive; // 0xe8(0x01)
 	char UnknownData_E9[0x2f]; // 0xe9(0x2f)
 
-	void OnRep_IsVFXActive(); // Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive // Final|Native|Private // @ game+0x43a4d70
+	void OnRep_IsVFXActive(); // Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive // Final|Native|Private // @ game+0x43a7390
 };
 
 // Class AthenaAIAbilities.CoralShieldStatus
@@ -104,8 +104,8 @@ struct UElectricShieldBuffComponent : UActorComponent {
 	bool IsShieldActive; // 0xf8(0x01)
 	char UnknownData_F9[0xd7]; // 0xf9(0xd7)
 
-	void OnRep_IsShieldActive(); // Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive // Final|Native|Public // @ game+0x43a4d50
-	void DeactivateShield(); // Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield // Native|Public // @ game+0x43a4d20
+	void OnRep_IsShieldActive(); // Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive // Final|Native|Public // @ game+0x43a7370
+	void DeactivateShield(); // Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield // Native|Public // @ game+0x43a7340
 };
 
 // Class AthenaAIAbilities.ElectricShieldStatus

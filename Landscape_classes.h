@@ -186,8 +186,8 @@ struct ALandscapeProxy : AActor {
 	char LODFalloff; // 0x6a1(0x01)
 	char UnknownData_6A2[0xae]; // 0x6a2(0xae)
 
-	void EditorApplySpline(struct USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, struct ULandscapeLayerInfoObject* PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline // Final|Native|Public|BlueprintCallable // @ game+0x2118110
-	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor // Native|Public|BlueprintCallable // @ game+0x2118090
+	void EditorApplySpline(struct USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, struct ULandscapeLayerInfoObject* PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline // Final|Native|Public|BlueprintCallable // @ game+0x211a5a0
+	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor // Native|Public|BlueprintCallable // @ game+0x211a520
 };
 
 // Class Landscape.LandscapeMeshProxyComponent

@@ -7,7 +7,7 @@ struct UAthenaAIFormComponent : UActorComponent {
 	struct UCharacterHitReactionDamagerTypeToAnimTypeLayer* HitReactionsLayer; // 0xe8(0x08)
 	char UnknownData_F0[0x58]; // 0xf0(0x58)
 
-	void OnRep_FormData(); // Function AthenaAI.AthenaAIFormComponent.OnRep_FormData // Final|Native|Private // @ game+0x4c3ccb0
+	void OnRep_FormData(); // Function AthenaAI.AthenaAIFormComponent.OnRep_FormData // Final|Native|Private // @ game+0x4c3f2d0
 };
 
 // Class AthenaAI.AthenaAIAbilityType
@@ -48,7 +48,7 @@ struct UAISpawner : UDataAsset {
 	struct UAthenaAISettings* AthenaAISettings; // 0x380(0x08)
 	char UnknownData_388[0xc0]; // 0x388(0xc0)
 
-	int32_t GetNumOfSpawnRequests(); // Function AthenaAI.AISpawner.GetNumOfSpawnRequests // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c8c0
+	int32_t GetNumOfSpawnRequests(); // Function AthenaAI.AISpawner.GetNumOfSpawnRequests // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3eee0
 };
 
 // Class AthenaAI.AIPerCrewSpawner
@@ -296,10 +296,10 @@ struct AAICreatureCharacter : ACharacter {
 	char UnknownData_7A0[0x68]; // 0x7a0(0x68)
 	struct UClass* CurrentAIStrategy; // 0x808(0x08)
 
-	void SetAIStrategy(struct UClass* InStrategy); // Function AthenaAI.AICreatureCharacter.SetAIStrategy // Native|Public|BlueprintCallable // @ game+0x3b5c600
-	void OnRep_CurrentAIStrategy(struct UClass* OldAIStrategy); // Function AthenaAI.AICreatureCharacter.OnRep_CurrentAIStrategy // Final|Native|Protected // @ game+0x3b5c560
-	void Multicast_DespawnRPC(); // Function AthenaAI.AICreatureCharacter.Multicast_DespawnRPC // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3b5c540
-	struct UClass* GetAIStrategy(); // Function AthenaAI.AICreatureCharacter.GetAIStrategy // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3b5c480
+	void SetAIStrategy(struct UClass* InStrategy); // Function AthenaAI.AICreatureCharacter.SetAIStrategy // Native|Public|BlueprintCallable // @ game+0x3b5ec10
+	void OnRep_CurrentAIStrategy(struct UClass* OldAIStrategy); // Function AthenaAI.AICreatureCharacter.OnRep_CurrentAIStrategy // Final|Native|Protected // @ game+0x3b5eb70
+	void Multicast_DespawnRPC(); // Function AthenaAI.AICreatureCharacter.Multicast_DespawnRPC // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3b5eb50
+	struct UClass* GetAIStrategy(); // Function AthenaAI.AICreatureCharacter.GetAIStrategy // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3b5ea90
 };
 
 // Class AthenaAI.AthenaAICharacterPathFollowingComponent
@@ -363,10 +363,10 @@ struct AAICreatureSpline : AActor {
 	struct UWwiseObjectPoolWrapper* WwiseEmitterPool; // 0x4c0(0x08)
 	char UnknownData_4C8[0x20]; // 0x4c8(0x20)
 
-	void OnRep_ShouldTickBeEnabled(); // Function AthenaAI.AICreatureSpline.OnRep_ShouldTickBeEnabled // Final|Native|Private // @ game+0x3b5c5e0
-	void OnCreatureMovementStarted(); // Function AthenaAI.AICreatureSpline.OnCreatureMovementStarted // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void OnCreatureMovementCompleted(); // Function AthenaAI.AICreatureSpline.OnCreatureMovementCompleted // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void BeginCreatureMovement(); // Function AthenaAI.AICreatureSpline.BeginCreatureMovement // Final|Native|Protected|BlueprintCallable // @ game+0x3b5c460
+	void OnRep_ShouldTickBeEnabled(); // Function AthenaAI.AICreatureSpline.OnRep_ShouldTickBeEnabled // Final|Native|Private // @ game+0x3b5ebf0
+	void OnCreatureMovementStarted(); // Function AthenaAI.AICreatureSpline.OnCreatureMovementStarted // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void OnCreatureMovementCompleted(); // Function AthenaAI.AICreatureSpline.OnCreatureMovementCompleted // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void BeginCreatureMovement(); // Function AthenaAI.AICreatureSpline.BeginCreatureMovement // Final|Native|Protected|BlueprintCallable // @ game+0x3b5ea70
 };
 
 // Class AthenaAI.LimitedInteractableAICreatureSpline
@@ -381,11 +381,11 @@ struct ALimitedInteractableAICreatureSpline : AAICreatureSpline {
 	char UnknownData_55C[0x8]; // 0x55c(0x08)
 	struct FPlayerStat StatToFireOnInteraction; // 0x564(0x04)
 
-	void OnInteractionStartedClient(); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionStartedClient // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void OnInteractionCompletedServer(struct AActor* PlayerCharacter); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionCompletedServer // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void OnInteractionCompletedClient(); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionCompletedClient // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void OnInteractionCancelledClient(); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionCancelledClient // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void InteractCountRetrieved(int32_t InInteractedCount); // Function AthenaAI.LimitedInteractableAICreatureSpline.InteractCountRetrieved // Final|Native|Protected|BlueprintCallable // @ game+0x3b5c4c0
+	void OnInteractionStartedClient(); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionStartedClient // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void OnInteractionCompletedServer(struct AActor* PlayerCharacter); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionCompletedServer // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void OnInteractionCompletedClient(); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionCompletedClient // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void OnInteractionCancelledClient(); // Function AthenaAI.LimitedInteractableAICreatureSpline.OnInteractionCancelledClient // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void InteractCountRetrieved(int32_t InInteractedCount); // Function AthenaAI.LimitedInteractableAICreatureSpline.InteractCountRetrieved // Final|Native|Protected|BlueprintCallable // @ game+0x3b5ead0
 };
 
 // Class AthenaAI.BehaviourTreeInterruptionInterface
@@ -471,25 +471,25 @@ struct AAIDebugSpawnActor : AActor {
 	char UnknownData_3E4[0x4]; // 0x3e4(0x04)
 	struct TArray<struct APawn*> SpawnedAIList; // 0x3e8(0x10)
 
-	void StartSpawning(); // Function AthenaAI.AIDebugSpawnActor.StartSpawning // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3bf9590
+	void StartSpawning(); // Function AthenaAI.AIDebugSpawnActor.StartSpawning // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x3bfbba0
 };
 
 // Class AthenaAI.AthenaAIDebugFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UAthenaAIDebugFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct TArray<struct FAIEncounterSpecification> SpawnMultipleAI(int32_t Count, struct UAIEncounterSettings* EncounterSettings, struct FVector Pos, struct FRotator Rot, float Delay, bool MakeAIPermanentlyNetRelevant, struct AActor* InstancedNavMesh); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnMultipleAI // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bf9270
-	void SpawnAIWithSettings(struct UClass* AIType, struct UAthenaAIControllerParamsDataAsset* Skillset, struct ULoadoutAsset* Loadout, struct UAthenaAIFormDataAsset* Form, struct UClass* AIItemSpawnComponent, struct UClass* ClassId, struct UAthenaAIAmmoDataAsset* Ammo, struct FVector Pos, struct FRotator Rot, struct FName Region, struct AActor* TriggerActor, struct FName NavMeshOverride, float Delay); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAIWithSettings // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bf8ab0
-	struct FAIEncounterSpecification SpawnAI(struct UAIEncounterSettings* EncounterSettings, struct FVector Pos, struct FRotator Rot, float Delay, bool MakeAIPermanentlyNetRelevant, struct AActor* InstancedNavMesh); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAI // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bf8780
-	void SetEnvQueryManagerMaxAllowedSeconds(float InMaxAllowedSeconds, struct UObject* QueryOwner); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SetEnvQueryManagerMaxAllowedSeconds // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf86c0
-	void KillAllDebugAISpawners(); // Function AthenaAI.AthenaAIDebugFunctionLibrary.KillAllDebugAISpawners // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf86a0
-	int32_t GetEnvQueryManagerNumRunningQueries(struct UObject* QueryOwner); // Function AthenaAI.AthenaAIDebugFunctionLibrary.GetEnvQueryManagerNumRunningQueries // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf8620
-	void EnableMaximumSightSettings(struct AAthenaAIController* AIController); // Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableMaximumSightSettings // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf85b0
-	void EnableBehaviorTreeLogging(struct UObject* WorldContext); // Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableBehaviorTreeLogging // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf8540
-	void DespawnAIPawn(struct APawn* Pawn); // Function AthenaAI.AthenaAIDebugFunctionLibrary.DespawnAIPawn // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf84d0
-	void CreateAISpawnerAtPosition(struct UObject* WorldContext, struct UAISpawner* SpawnerAsset, struct FVector Pos); // Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtPosition // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bf83d0
-	void CreateAISpawnerAtActor(struct UObject* WorldContext, struct UAISpawner* SpawnerAsset, struct AActor* SpawnLocationActor); // Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bf82e0
-	struct FVector CanProjectPointToNavigation(struct UObject* WorldContext, struct FVector Point, struct ANavigationData* NavData, struct UClass* FilterClass, struct FVector QueryExtent); // Function AthenaAI.AthenaAIDebugFunctionLibrary.CanProjectPointToNavigation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bf8110
+	struct TArray<struct FAIEncounterSpecification> SpawnMultipleAI(int32_t Count, struct UAIEncounterSettings* EncounterSettings, struct FVector Pos, struct FRotator Rot, float Delay, bool MakeAIPermanentlyNetRelevant, struct AActor* InstancedNavMesh); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnMultipleAI // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bfb880
+	void SpawnAIWithSettings(struct UClass* AIType, struct UAthenaAIControllerParamsDataAsset* Skillset, struct ULoadoutAsset* Loadout, struct UAthenaAIFormDataAsset* Form, struct UClass* AIItemSpawnComponent, struct UClass* ClassId, struct UAthenaAIAmmoDataAsset* Ammo, struct FVector Pos, struct FRotator Rot, struct FName Region, struct AActor* TriggerActor, struct FName NavMeshOverride, float Delay); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAIWithSettings // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bfb0c0
+	struct FAIEncounterSpecification SpawnAI(struct UAIEncounterSettings* EncounterSettings, struct FVector Pos, struct FRotator Rot, float Delay, bool MakeAIPermanentlyNetRelevant, struct AActor* InstancedNavMesh); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAI // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bfad90
+	void SetEnvQueryManagerMaxAllowedSeconds(float InMaxAllowedSeconds, struct UObject* QueryOwner); // Function AthenaAI.AthenaAIDebugFunctionLibrary.SetEnvQueryManagerMaxAllowedSeconds // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfacd0
+	void KillAllDebugAISpawners(); // Function AthenaAI.AthenaAIDebugFunctionLibrary.KillAllDebugAISpawners // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfacb0
+	int32_t GetEnvQueryManagerNumRunningQueries(struct UObject* QueryOwner); // Function AthenaAI.AthenaAIDebugFunctionLibrary.GetEnvQueryManagerNumRunningQueries // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfac30
+	void EnableMaximumSightSettings(struct AAthenaAIController* AIController); // Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableMaximumSightSettings // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfabc0
+	void EnableBehaviorTreeLogging(struct UObject* WorldContext); // Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableBehaviorTreeLogging // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfab50
+	void DespawnAIPawn(struct APawn* Pawn); // Function AthenaAI.AthenaAIDebugFunctionLibrary.DespawnAIPawn // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfaae0
+	void CreateAISpawnerAtPosition(struct UObject* WorldContext, struct UAISpawner* SpawnerAsset, struct FVector Pos); // Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtPosition // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bfa9e0
+	void CreateAISpawnerAtActor(struct UObject* WorldContext, struct UAISpawner* SpawnerAsset, struct AActor* SpawnLocationActor); // Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x3bfa8f0
+	struct FVector CanProjectPointToNavigation(struct UObject* WorldContext, struct FVector Point, struct ANavigationData* NavData, struct UClass* FilterClass, struct FVector QueryExtent); // Function AthenaAI.AthenaAIDebugFunctionLibrary.CanProjectPointToNavigation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3bfa720
 };
 
 // Class AthenaAI.DebugAISpawnerCreator
@@ -600,7 +600,7 @@ struct UAIFaunaSpawner : UAISpawner {
 	char UnknownData_570[0x10]; // 0x570(0x10)
 	struct TArray<struct AActor*> PlayersInSpawnArea; // 0x580(0x10)
 
-	void SpawnFaunaGroup(); // Function AthenaAI.AIFaunaSpawner.SpawnFaunaGroup // Final|Native|Public|BlueprintCallable // @ game+0x3d83bd0
+	void SpawnFaunaGroup(); // Function AthenaAI.AIFaunaSpawner.SpawnFaunaGroup // Final|Native|Public|BlueprintCallable // @ game+0x3d861e0
 };
 
 // Class AthenaAI.AthenaAIControllerBase
@@ -608,10 +608,10 @@ struct UAIFaunaSpawner : UAISpawner {
 struct AAthenaAIControllerBase : AAIController {
 	char UnknownData_4B8[0x158]; // 0x4b8(0x158)
 
-	void SetNamedControllerParam(struct FName ParamName, float Value); // Function AthenaAI.AthenaAIControllerBase.SetNamedControllerParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4c3e570
-	struct FWeightedProbabilityRangeOfRanges FindNamedWeightedRangesControllerParam(struct FName ParamName); // Function AthenaAI.AthenaAIControllerBase.FindNamedWeightedRangesControllerParam // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c640
-	float FindNamedControllerParam(struct FName ParamName); // Function AthenaAI.AthenaAIControllerBase.FindNamedControllerParam // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c590
-	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* ParamsAsset, struct APawn* InPawn); // Function AthenaAI.AthenaAIControllerBase.ApplyControllerParams // Native|Public|BlueprintCallable // @ game+0x4c3c060
+	void SetNamedControllerParam(struct FName ParamName, float Value); // Function AthenaAI.AthenaAIControllerBase.SetNamedControllerParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4c40b90
+	struct FWeightedProbabilityRangeOfRanges FindNamedWeightedRangesControllerParam(struct FName ParamName); // Function AthenaAI.AthenaAIControllerBase.FindNamedWeightedRangesControllerParam // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ec60
+	float FindNamedControllerParam(struct FName ParamName); // Function AthenaAI.AthenaAIControllerBase.FindNamedControllerParam // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ebb0
+	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* ParamsAsset, struct APawn* InPawn); // Function AthenaAI.AthenaAIControllerBase.ApplyControllerParams // Native|Public|BlueprintCallable // @ game+0x4c3e680
 };
 
 // Class AthenaAI.AthenaAIController
@@ -631,17 +631,17 @@ struct AAthenaAIController : AAthenaAIControllerBase {
 	struct AActor* PendingSpawnTriggerActor; // 0x948(0x08)
 	char UnknownData_950[0x20]; // 0x950(0x20)
 
-	void StopBehaviourLogic(); // Function AthenaAI.AthenaAIController.StopBehaviourLogic // Native|Public|BlueprintCallable // @ game+0x4c3ead0
-	void SetPerceptionExpirationAgeForActor(struct AActor* Actor, float ExpirationAge, struct UClass* Sense); // Function AthenaAI.AthenaAIController.SetPerceptionExpirationAgeForActor // Final|Native|Public|BlueprintCallable // @ game+0x4c3e6d0
-	void RegisterSpawnTriggerActorAsStimulus(struct AActor* TriggerActor); // Function AthenaAI.AthenaAIController.RegisterSpawnTriggerActorAsStimulus // Native|Public|BlueprintCallable // @ game+0x4c3d8f0
-	void OnPerceptionUpdated(struct TArray<struct AActor*> ChangedPerceivedActors); // Function AthenaAI.AthenaAIController.OnPerceptionUpdated // Native|Public // @ game+0x4c3cab0
-	void OnNewlySpawned(); // Function AthenaAI.AthenaAIController.OnNewlySpawned // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnFinishDespawn(); // Function AthenaAI.AthenaAIController.OnFinishDespawn // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	bool IsActorPerceived(struct AActor* TargetActor); // Function AthenaAI.AthenaAIController.IsActorPerceived // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c950
-	struct AActor* GetTargetActor(); // Function AthenaAI.AthenaAIController.GetTargetActor // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c920
-	struct UAthenaAIPerceptionComponent* GetAthenaAIPerceptionComponent(); // Function AthenaAI.AthenaAIController.GetAthenaAIPerceptionComponent // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x4c3c860
-	void GetAllSeenActors(struct TArray<struct AActor*> SeenActors); // Function AthenaAI.AthenaAIController.GetAllSeenActors // Native|Public|HasOutParms|BlueprintCallable // @ game+0x4c3c7a0
-	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* ParamsAsset, struct APawn* InPawn); // Function AthenaAI.AthenaAIController.ApplyControllerParams // Native|Public|BlueprintCallable // @ game+0x4c3bf90
+	void StopBehaviourLogic(); // Function AthenaAI.AthenaAIController.StopBehaviourLogic // Native|Public|BlueprintCallable // @ game+0x4c410f0
+	void SetPerceptionExpirationAgeForActor(struct AActor* Actor, float ExpirationAge, struct UClass* Sense); // Function AthenaAI.AthenaAIController.SetPerceptionExpirationAgeForActor // Final|Native|Public|BlueprintCallable // @ game+0x4c40cf0
+	void RegisterSpawnTriggerActorAsStimulus(struct AActor* TriggerActor); // Function AthenaAI.AthenaAIController.RegisterSpawnTriggerActorAsStimulus // Native|Public|BlueprintCallable // @ game+0x4c3ff10
+	void OnPerceptionUpdated(struct TArray<struct AActor*> ChangedPerceivedActors); // Function AthenaAI.AthenaAIController.OnPerceptionUpdated // Native|Public // @ game+0x4c3f0d0
+	void OnNewlySpawned(); // Function AthenaAI.AthenaAIController.OnNewlySpawned // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnFinishDespawn(); // Function AthenaAI.AthenaAIController.OnFinishDespawn // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	bool IsActorPerceived(struct AActor* TargetActor); // Function AthenaAI.AthenaAIController.IsActorPerceived // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ef70
+	struct AActor* GetTargetActor(); // Function AthenaAI.AthenaAIController.GetTargetActor // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ef40
+	struct UAthenaAIPerceptionComponent* GetAthenaAIPerceptionComponent(); // Function AthenaAI.AthenaAIController.GetAthenaAIPerceptionComponent // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x4c3ee80
+	void GetAllSeenActors(struct TArray<struct AActor*> SeenActors); // Function AthenaAI.AthenaAIController.GetAllSeenActors // Native|Public|HasOutParms|BlueprintCallable // @ game+0x4c3edc0
+	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* ParamsAsset, struct APawn* InPawn); // Function AthenaAI.AthenaAIController.ApplyControllerParams // Native|Public|BlueprintCallable // @ game+0x4c3e5b0
 };
 
 // Class AthenaAI.AthenaFaunaAIController
@@ -660,11 +660,11 @@ struct AAthenaFaunaAIController : AAthenaAIController {
 	struct UFaunaAIPlayerTracker* PlayerTracker; // 0xb08(0x08)
 	char UnknownData_B10[0x28]; // 0xb10(0x28)
 
-	void SetDormancyCheckingEnabled(bool InDormancyCheckingEnabledInAutomation); // Function AthenaAI.AthenaFaunaAIController.SetDormancyCheckingEnabled // Final|Native|Public|BlueprintCallable // @ game+0x3d83b40
-	void LeaderDestroyed(struct AActor* Actor); // Function AthenaAI.AthenaFaunaAIController.LeaderDestroyed // Final|Native|Private // @ game+0x3d837e0
-	struct AActor* GetLeader(); // Function AthenaAI.AthenaFaunaAIController.GetLeader // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3d83000
-	float GetCourage(); // Function AthenaAI.AthenaFaunaAIController.GetCourage // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3d82d00
-	struct UAthenaAICharacterPathFollowingComponent* GetAthenaAICharPathFollowingComp(); // Function AthenaAI.AthenaFaunaAIController.GetAthenaAICharPathFollowingComp // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3d82cd0
+	void SetDormancyCheckingEnabled(bool InDormancyCheckingEnabledInAutomation); // Function AthenaAI.AthenaFaunaAIController.SetDormancyCheckingEnabled // Final|Native|Public|BlueprintCallable // @ game+0x3d86150
+	void LeaderDestroyed(struct AActor* Actor); // Function AthenaAI.AthenaFaunaAIController.LeaderDestroyed // Final|Native|Private // @ game+0x3d85df0
+	struct AActor* GetLeader(); // Function AthenaAI.AthenaFaunaAIController.GetLeader // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3d85610
+	float GetCourage(); // Function AthenaAI.AthenaFaunaAIController.GetCourage // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3d85310
+	struct UAthenaAICharacterPathFollowingComponent* GetAthenaAICharPathFollowingComp(); // Function AthenaAI.AthenaFaunaAIController.GetAthenaAICharPathFollowingComp // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3d852e0
 };
 
 // Class AthenaAI.CatchFaunaConditionalStatTrigger
@@ -689,10 +689,10 @@ struct AFauna : AAICreatureCharacter {
 	struct FText DisplayName; // 0x818(0x38)
 	struct UClass* FaunaSpecies; // 0x850(0x08)
 	struct UClass* FaunaBreed; // 0x858(0x08)
-	struct FVector HeadOffset; // 0x860(0x0c)
-	struct FVector MountedScale; // 0x86c(0x0c)
+	struct FVector ; // 0x860(0x0c)
+	struct FVector ; // 0x86c(0x0c)
 	float NearToSurfaceDistance; // 0x878(0x04)
-	float StartDrowningTimePercentage; // 0x87c(0x04)
+	float ; // 0x87c(0x04)
 	float DrowningDeathTimeMin; // 0x880(0x04)
 	float DrowningDeathTimeMax; // 0x884(0x04)
 	float PercentageStarvedToChangeAnimation; // 0x888(0x04)
@@ -765,18 +765,18 @@ struct AFauna : AAICreatureCharacter {
 	struct AActor* CurrentShip; // 0xb58(0x08)
 	char UnknownData_B60[0x80]; // 0xb60(0x80)
 
-	void TestingSetWaterState(char NewInState); // Function AthenaAI.Fauna.TestingSetWaterState // Final|Native|Public|BlueprintCallable // @ game+0x3d83bf0
-	void OnRep_TargetTurnAngle(); // Function AthenaAI.Fauna.OnRep_TargetTurnAngle // Final|Native|Private // @ game+0x3d83b20
-	void OnRep_IsPlayingStarvingAnim(); // Function AthenaAI.Fauna.OnRep_IsPlayingStarvingAnim // Final|Native|Private // @ game+0x3d83b00
-	void OnRep_IsCalm(); // Function AthenaAI.Fauna.OnRep_IsCalm // Final|Native|Private // @ game+0x3d83ae0
-	void OnRep_IsAgitated(); // Function AthenaAI.Fauna.OnRep_IsAgitated // Final|Native|Private // @ game+0x3d83ac0
-	void OnRep_InWaterState(); // Function AthenaAI.Fauna.OnRep_InWaterState // Final|Native|Private // @ game+0x3d83aa0
-	void OnRep_CratedState(char PreviousCratedState); // Function AthenaAI.Fauna.OnRep_CratedState // Final|Native|Private|HasOutParms // @ game+0x3d83a10
-	void Multicast_PlayPutInCrateEffectsRPC(struct AActor* Crate); // Function AthenaAI.Fauna.Multicast_PlayPutInCrateEffectsRPC // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3d83980
-	void Multicast_JustBeenFedRPC(struct AActor* FedBy); // Function AthenaAI.Fauna.Multicast_JustBeenFedRPC // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3d838f0
-	void Multicast_HightlightLeader(bool bIsLeader); // Function AthenaAI.Fauna.Multicast_HightlightLeader // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3d83860
-	void GenerateNewRandomAnimationSeed(); // Function AthenaAI.Fauna.GenerateNewRandomAnimationSeed // Final|Native|Public|BlueprintCallable // @ game+0x3d82b60
-	void ActivateResponseRPC(float InTargetTurnAngle); // Function AthenaAI.Fauna.ActivateResponseRPC // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x3d82ab0
+	void TestingSetWaterState(char NewInState); // Function AthenaAI.Fauna.TestingSetWaterState // Final|Native|Public|BlueprintCallable // @ game+0x3d86200
+	void OnRep_TargetTurnAngle(); // Function AthenaAI.Fauna.OnRep_TargetTurnAngle // Final|Native|Private // @ game+0x3d86130
+	void OnRep_IsPlayingStarvingAnim(); // Function AthenaAI.Fauna.OnRep_IsPlayingStarvingAnim // Final|Native|Private // @ game+0x3d86110
+	void OnRep_IsCalm(); // Function AthenaAI.Fauna.OnRep_IsCalm // Final|Native|Private // @ game+0x3d860f0
+	void OnRep_IsAgitated(); // Function AthenaAI.Fauna.OnRep_IsAgitated // Final|Native|Private // @ game+0x3d860d0
+	void OnRep_InWaterState(); // Function AthenaAI.Fauna.OnRep_InWaterState // Final|Native|Private // @ game+0x3d860b0
+	void OnRep_CratedState(char PreviousCratedState); // Function AthenaAI.Fauna.OnRep_CratedState // Final|Native|Private|HasOutParms // @ game+0x3d86020
+	void Multicast_PlayPutInCrateEffectsRPC(struct AActor* Crate); // Function AthenaAI.Fauna.Multicast_PlayPutInCrateEffectsRPC // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3d85f90
+	void Multicast_JustBeenFedRPC(struct AActor* FedBy); // Function AthenaAI.Fauna.Multicast_JustBeenFedRPC // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3d85f00
+	void Multicast_HightlightLeader(bool bIsLeader); // Function AthenaAI.Fauna.Multicast_HightlightLeader // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x3d85e70
+	void GenerateNewRandomAnimationSeed(); // Function AthenaAI.Fauna.GenerateNewRandomAnimationSeed // Final|Native|Public|BlueprintCallable // @ game+0x3d85170
+	void ActivateResponseRPC(float InTargetTurnAngle); // Function AthenaAI.Fauna.ActivateResponseRPC // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x3d850c0
 };
 
 // Class AthenaAI.FaunaAIPlayerTracker
@@ -854,7 +854,7 @@ struct AAthenaSwimmingAIController : AAthenaAIController {
 	float PathingFailedThresholdToDespawn; // 0x9ac(0x04)
 	char UnknownData_9B0[0xc0]; // 0x9b0(0xc0)
 
-	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* InControllerParametersAsset, struct APawn* InPawn); // Function AthenaAI.AthenaSwimmingAIController.ApplyControllerParams // Final|Native|Public|BlueprintCallable // @ game+0x4174b00
+	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* InControllerParametersAsset, struct APawn* InPawn); // Function AthenaAI.AthenaSwimmingAIController.ApplyControllerParams // Final|Native|Public|BlueprintCallable // @ game+0x4177110
 };
 
 // Class AthenaAI.BTDecorator_NearSurfaceOfWater
@@ -1055,11 +1055,11 @@ struct ATinySharkExperience : AActor {
 	struct UAthenaAIControllerParamsDataAsset* CachedControllerParamsAsset; // 0x8c0(0x20)
 	char UnknownData_8E0[0x20]; // 0x8e0(0x20)
 
-	void TinySharkPawnDestroyed(struct AActor* InDestroyedActor); // Function AthenaAI.TinySharkExperience.TinySharkPawnDestroyed // Final|Native|Private // @ game+0x4197a10
-	void OnRep_TinySharkPawn(struct ASharkPawn* LastTinySharkPawn); // Function AthenaAI.TinySharkExperience.OnRep_TinySharkPawn // Native|Protected // @ game+0x41977a0
-	struct AShip* GetTrackedShip(); // Function AthenaAI.TinySharkExperience.GetTrackedShip // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4197780
-	char GetCurrentState(); // Function AthenaAI.TinySharkExperience.GetCurrentState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4197760
-	char GetActiveState(); // Function AthenaAI.TinySharkExperience.GetActiveState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4197740
+	void TinySharkPawnDestroyed(struct AActor* InDestroyedActor); // Function AthenaAI.TinySharkExperience.TinySharkPawnDestroyed // Final|Native|Private // @ game+0x419a020
+	void OnRep_TinySharkPawn(struct ASharkPawn* LastTinySharkPawn); // Function AthenaAI.TinySharkExperience.OnRep_TinySharkPawn // Native|Protected // @ game+0x4199db0
+	struct AShip* GetTrackedShip(); // Function AthenaAI.TinySharkExperience.GetTrackedShip // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4199d90
+	char GetCurrentState(); // Function AthenaAI.TinySharkExperience.GetCurrentState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4199d70
+	char GetActiveState(); // Function AthenaAI.TinySharkExperience.GetActiveState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4199d50
 };
 
 // Class AthenaAI.TinySharkLootSpawnParamsInterface
@@ -1088,10 +1088,10 @@ struct ATinySharkService : AActor {
 	struct TArray<struct ATinySharkExperience*> ExternallyManagedTinySharkExperiences; // 0x5a0(0x10)
 	char UnknownData_5B0[0x20]; // 0x5b0(0x20)
 
-	bool RequestTinySharkWithShip(struct AShip* InTrackedShip, int32_t OverrideControllerParamIndex, int32_t PartIndex); // Function AthenaAI.TinySharkService.RequestTinySharkWithShip // Native|Public|BlueprintCallable // @ game+0x4197910
-	bool RequestTinySharkWithLocation(struct FVector SpawnLocation, int32_t PartIndex); // Function AthenaAI.TinySharkService.RequestTinySharkWithLocation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4197830
-	void DismissAllTinySharks(); // Function AthenaAI.TinySharkService.DismissAllTinySharks // Native|Public|BlueprintCallable // @ game+0x4197710
-	bool CanSpawnTinySharkExperience(); // Function AthenaAI.TinySharkService.CanSpawnTinySharkExperience // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x41976d0
+	bool RequestTinySharkWithShip(struct AShip* InTrackedShip, int32_t OverrideControllerParamIndex, int32_t PartIndex); // Function AthenaAI.TinySharkService.RequestTinySharkWithShip // Native|Public|BlueprintCallable // @ game+0x4199f20
+	bool RequestTinySharkWithLocation(struct FVector SpawnLocation, int32_t PartIndex); // Function AthenaAI.TinySharkService.RequestTinySharkWithLocation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4199e40
+	void DismissAllTinySharks(); // Function AthenaAI.TinySharkService.DismissAllTinySharks // Native|Public|BlueprintCallable // @ game+0x4199d20
+	bool CanSpawnTinySharkExperience(); // Function AthenaAI.TinySharkService.CanSpawnTinySharkExperience // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4199ce0
 };
 
 // Class AthenaAI.TinySharkServiceParamsDataAsset
@@ -1117,10 +1117,10 @@ struct UAINameplateComponent : UNameplateComponent {
 	bool VisibilityDisabled; // 0x3b8(0x01)
 	char UnknownData_3B9[0xe7]; // 0x3b9(0xe7)
 
-	void OnRep_Title(); // Function AthenaAI.AINameplateComponent.OnRep_Title // Final|Native|Private // @ game+0x4c3cd10
-	void OnRep_DisplayNameAsString(); // Function AthenaAI.AINameplateComponent.OnRep_DisplayNameAsString // Final|Native|Private // @ game+0x4c3cc90
-	void OnRep_DisplayName(); // Function AthenaAI.AINameplateComponent.OnRep_DisplayName // Final|Native|Private // @ game+0x4c3cc70
-	void OnRep_DebugDisplayText(); // Function AthenaAI.AINameplateComponent.OnRep_DebugDisplayText // Final|Native|Private // @ game+0x4c3cc50
+	void OnRep_Title(); // Function AthenaAI.AINameplateComponent.OnRep_Title // Final|Native|Private // @ game+0x4c3f330
+	void OnRep_DisplayNameAsString(); // Function AthenaAI.AINameplateComponent.OnRep_DisplayNameAsString // Final|Native|Private // @ game+0x4c3f2b0
+	void OnRep_DisplayName(); // Function AthenaAI.AINameplateComponent.OnRep_DisplayName // Final|Native|Private // @ game+0x4c3f290
+	void OnRep_DebugDisplayText(); // Function AthenaAI.AINameplateComponent.OnRep_DebugDisplayText // Final|Native|Private // @ game+0x4c3f270
 };
 
 // Class AthenaAI.PetNameplateComponent
@@ -1212,21 +1212,21 @@ struct APet : AAICreatureCharacter {
 	bool PetIsSad; // 0xc8d(0x01)
 	char UnknownData_C8E[0x42]; // 0xc8e(0x42)
 
-	void SetExitTakeOffFlag(bool InExitTakeOffFlag); // Function AthenaAI.Pet.SetExitTakeOffFlag // Final|Native|Public|BlueprintCallable // @ game+0x45e6460
-	void OnShipDestroyed(struct AActor* InShip); // Function AthenaAI.Pet.OnShipDestroyed // Final|Native|Public // @ game+0x45e6300
-	void OnRep_RollRequest(); // Function AthenaAI.Pet.OnRep_RollRequest // Final|Native|Private // @ game+0x45e62e0
-	void OnRep_ResetRollAndZOffset(); // Function AthenaAI.Pet.OnRep_ResetRollAndZOffset // Final|Native|Private // @ game+0x45e62c0
-	void OnRep_PetTurnToFaceData(); // Function AthenaAI.Pet.OnRep_PetTurnToFaceData // Final|Native|Public // @ game+0x45e62a0
-	void OnRep_PetOwner(); // Function AthenaAI.Pet.OnRep_PetOwner // Final|Native|Private // @ game+0x45e6260
-	void OnRep_PetIsSad(); // Function AthenaAI.Pet.OnRep_PetIsSad // Final|Native|Private // @ game+0x45e6240
-	void OnRep_PetInfo(); // Function AthenaAI.Pet.OnRep_PetInfo // Final|Native|Private // @ game+0x45e6220
-	void OnRep_PerchedInHangout(); // Function AthenaAI.Pet.OnRep_PerchedInHangout // Final|Native|Private // @ game+0x45e6200
-	void OnRep_MovementRequest(); // Function AthenaAI.Pet.OnRep_MovementRequest // Final|Native|Private // @ game+0x45e61e0
-	void OnRep_InHangout(); // Function AthenaAI.Pet.OnRep_InHangout // Final|Native|Private // @ game+0x45e61a0
-	void OnOwnerDestroyed(struct AActor* InOwner); // Function AthenaAI.Pet.OnOwnerDestroyed // Final|Native|Public // @ game+0x45e5f80
-	void Multicast_DitherOut(); // Function AthenaAI.Pet.Multicast_DitherOut // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x45e5f60
-	void Multicast_DitherIn(); // Function AthenaAI.Pet.Multicast_DitherIn // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x45e5f40
-	float GetFloorMeshOffsetZ(); // Function AthenaAI.Pet.GetFloorMeshOffsetZ // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45e5f20
+	void SetExitTakeOffFlag(bool InExitTakeOffFlag); // Function AthenaAI.Pet.SetExitTakeOffFlag // Final|Native|Public|BlueprintCallable // @ game+0x45e8a80
+	void OnShipDestroyed(struct AActor* InShip); // Function AthenaAI.Pet.OnShipDestroyed // Final|Native|Public // @ game+0x45e8920
+	void OnRep_RollRequest(); // Function AthenaAI.Pet.OnRep_RollRequest // Final|Native|Private // @ game+0x45e8900
+	void OnRep_ResetRollAndZOffset(); // Function AthenaAI.Pet.OnRep_ResetRollAndZOffset // Final|Native|Private // @ game+0x45e88e0
+	void OnRep_PetTurnToFaceData(); // Function AthenaAI.Pet.OnRep_PetTurnToFaceData // Final|Native|Public // @ game+0x45e88c0
+	void OnRep_PetOwner(); // Function AthenaAI.Pet.OnRep_PetOwner // Final|Native|Private // @ game+0x45e8880
+	void OnRep_PetIsSad(); // Function AthenaAI.Pet.OnRep_PetIsSad // Final|Native|Private // @ game+0x45e8860
+	void OnRep_PetInfo(); // Function AthenaAI.Pet.OnRep_PetInfo // Final|Native|Private // @ game+0x45e8840
+	void OnRep_PerchedInHangout(); // Function AthenaAI.Pet.OnRep_PerchedInHangout // Final|Native|Private // @ game+0x45e8820
+	void OnRep_MovementRequest(); // Function AthenaAI.Pet.OnRep_MovementRequest // Final|Native|Private // @ game+0x45e8800
+	void OnRep_InHangout(); // Function AthenaAI.Pet.OnRep_InHangout // Final|Native|Private // @ game+0x45e87c0
+	void OnOwnerDestroyed(struct AActor* InOwner); // Function AthenaAI.Pet.OnOwnerDestroyed // Final|Native|Public // @ game+0x45e85a0
+	void Multicast_DitherOut(); // Function AthenaAI.Pet.Multicast_DitherOut // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x45e8580
+	void Multicast_DitherIn(); // Function AthenaAI.Pet.Multicast_DitherIn // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x45e8560
+	float GetFloorMeshOffsetZ(); // Function AthenaAI.Pet.GetFloorMeshOffsetZ // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45e8540
 };
 
 // Class AthenaAI.BTTask_SetRoamingPetAnimationState
@@ -1495,11 +1495,11 @@ struct UAIPartsServiceInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UAIEncounterServiceInterface : UInterface {
 
-	void RegisterLoadedSkillsetProgression(struct UAISkillsetRankProgression* Progression); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillsetProgression // Native|Public|BlueprintCallable // @ game+0x4c3d7e0
-	void RegisterLoadedSkillset(struct UAthenaAIControllerParamsDataAsset* Skillset); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillset // Native|Public|BlueprintCallable // @ game+0x4c3d5c0
-	void RegisterLoadedLoadout(struct ULoadoutAsset* Loadout); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedLoadout // Native|Public|BlueprintCallable // @ game+0x4c3d3a0
-	void RegisterLoadedForm(struct UAthenaAIFormDataAsset* Form); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedForm // Native|Public|BlueprintCallable // @ game+0x4c3d180
-	void RegisterLoadedEncounter(struct UAIEncounterSettings* Encounter); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedEncounter // Native|Public|BlueprintCallable // @ game+0x4c3cf60
+	void RegisterLoadedSkillsetProgression(struct UAISkillsetRankProgression* Progression); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillsetProgression // Native|Public|BlueprintCallable // @ game+0x4c3fe00
+	void RegisterLoadedSkillset(struct UAthenaAIControllerParamsDataAsset* Skillset); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillset // Native|Public|BlueprintCallable // @ game+0x4c3fbe0
+	void RegisterLoadedLoadout(struct ULoadoutAsset* Loadout); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedLoadout // Native|Public|BlueprintCallable // @ game+0x4c3f9c0
+	void RegisterLoadedForm(struct UAthenaAIFormDataAsset* Form); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedForm // Native|Public|BlueprintCallable // @ game+0x4c3f7a0
+	void RegisterLoadedEncounter(struct UAIEncounterSettings* Encounter); // Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedEncounter // Native|Public|BlueprintCallable // @ game+0x4c3f580
 };
 
 // Class AthenaAI.AIClassIdTypeList
@@ -1518,7 +1518,7 @@ struct UAIColorVariantPool : UDataAsset {
 // Size: 0x28 (Inherited: 0x28)
 struct UAICombatEncounterInterface : UInterface {
 
-	void OnVulnerabilityStateEntered(); // Function AthenaAI.AICombatEncounterInterface.OnVulnerabilityStateEntered // Native|Event|Public|BlueprintEvent // @ game+0x4c3cd30
+	void OnVulnerabilityStateEntered(); // Function AthenaAI.AICombatEncounterInterface.OnVulnerabilityStateEntered // Native|Event|Public|BlueprintEvent // @ game+0x4c3f350
 };
 
 // Class AthenaAI.AIDeathInterface
@@ -1656,11 +1656,11 @@ struct AAIEncounterService : AActor {
 	struct TArray<struct UAIEncounterSettings*> DebugSpawnableEncounterSettings; // 0x458(0x10)
 	char UnknownData_468[0x330]; // 0x468(0x330)
 
-	void RegisterLoadedSkillsetProgression(struct UAISkillsetRankProgression* Progression); // Function AthenaAI.AIEncounterService.RegisterLoadedSkillsetProgression // Native|Public|BlueprintCallable // @ game+0x4c3d6d0
-	void RegisterLoadedSkillset(struct UAthenaAIControllerParamsDataAsset* Skillset); // Function AthenaAI.AIEncounterService.RegisterLoadedSkillset // Native|Public|BlueprintCallable // @ game+0x4c3d4b0
-	void RegisterLoadedLoadout(struct ULoadoutAsset* Loadout); // Function AthenaAI.AIEncounterService.RegisterLoadedLoadout // Native|Public|BlueprintCallable // @ game+0x4c3d290
-	void RegisterLoadedForm(struct UAthenaAIFormDataAsset* Form); // Function AthenaAI.AIEncounterService.RegisterLoadedForm // Native|Public|BlueprintCallable // @ game+0x4c3d070
-	void RegisterLoadedEncounter(struct UAIEncounterSettings* Encounter); // Function AthenaAI.AIEncounterService.RegisterLoadedEncounter // Native|Public|BlueprintCallable // @ game+0x4c3ce40
+	void RegisterLoadedSkillsetProgression(struct UAISkillsetRankProgression* Progression); // Function AthenaAI.AIEncounterService.RegisterLoadedSkillsetProgression // Native|Public|BlueprintCallable // @ game+0x4c3fcf0
+	void RegisterLoadedSkillset(struct UAthenaAIControllerParamsDataAsset* Skillset); // Function AthenaAI.AIEncounterService.RegisterLoadedSkillset // Native|Public|BlueprintCallable // @ game+0x4c3fad0
+	void RegisterLoadedLoadout(struct ULoadoutAsset* Loadout); // Function AthenaAI.AIEncounterService.RegisterLoadedLoadout // Native|Public|BlueprintCallable // @ game+0x4c3f8b0
+	void RegisterLoadedForm(struct UAthenaAIFormDataAsset* Form); // Function AthenaAI.AIEncounterService.RegisterLoadedForm // Native|Public|BlueprintCallable // @ game+0x4c3f690
+	void RegisterLoadedEncounter(struct UAIEncounterSettings* Encounter); // Function AthenaAI.AIEncounterService.RegisterLoadedEncounter // Native|Public|BlueprintCallable // @ game+0x4c3f460
 };
 
 // Class AthenaAI.AISkillsetRankProgression
@@ -1782,18 +1782,18 @@ struct UAILoadoutWithNonStorableInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UAIManagerBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct AItemInfo* SpawnItemFromAI(struct APawn* Pawn, struct UClass* ItemDesc); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.SpawnItemFromAI // Final|Native|Static|Public|BlueprintCallable // @ game+0x4c3e870
-	int32_t GetFrameCounter(); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.GetFrameCounter // Final|Native|Static|Public|BlueprintCallable // @ game+0x4c3c890
-	void AddNameplateToAIWithLocalisedName(struct AActor* Actor, struct FText DisplayName); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAIWithLocalisedName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x4c3beb0
-	void AddNameplateToAI(struct AActor* Actor, struct FString DisplayName); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAI // Final|Native|Static|Public|BlueprintCallable // @ game+0x4c3bde0
+	struct AItemInfo* SpawnItemFromAI(struct APawn* Pawn, struct UClass* ItemDesc); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.SpawnItemFromAI // Final|Native|Static|Public|BlueprintCallable // @ game+0x4c40e90
+	int32_t GetFrameCounter(); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.GetFrameCounter // Final|Native|Static|Public|BlueprintCallable // @ game+0x4c3eeb0
+	void AddNameplateToAIWithLocalisedName(struct AActor* Actor, struct FText DisplayName); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAIWithLocalisedName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x4c3e4d0
+	void AddNameplateToAI(struct AActor* Actor, struct FString DisplayName); // Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAI // Final|Native|Static|Public|BlueprintCallable // @ game+0x4c3e400
 };
 
 // Class AthenaAI.AIManagerServiceInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UAIManagerServiceInterface : UInterface {
 
-	void StartDespawnAI(struct APawn* AIActor, char DeathType); // Function AthenaAI.AIManagerServiceInterface.StartDespawnAI // Native|Public|BlueprintCallable // @ game+0x4c3ea00
-	int32_t GetNumOfSpawnedPawns(); // Function AthenaAI.AIManagerServiceInterface.GetNumOfSpawnedPawns // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c8f0
+	void StartDespawnAI(struct APawn* AIActor, char DeathType); // Function AthenaAI.AIManagerServiceInterface.StartDespawnAI // Native|Public|BlueprintCallable // @ game+0x4c41020
+	int32_t GetNumOfSpawnedPawns(); // Function AthenaAI.AIManagerServiceInterface.GetNumOfSpawnedPawns // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ef10
 };
 
 // Class AthenaAI.AthenaAITypeListDataAsset
@@ -1922,23 +1922,23 @@ struct AAIManagerService : AActor {
 	struct UAISpawnContextList* AISpawnContextList; // 0xb10(0x08)
 	char UnknownData_B18[0x38]; // 0xb18(0x38)
 
-	void TickService(float DeltaSeconds); // Function AthenaAI.AIManagerService.TickService // Final|Native|Public|BlueprintCallable // @ game+0x4c3eaf0
-	void StartDespawnAI(struct APawn* AIActor, char DeathType); // Function AthenaAI.AIManagerService.StartDespawnAI // Native|Public|BlueprintCallable // @ game+0x4c3e930
+	void TickService(float DeltaSeconds); // Function AthenaAI.AIManagerService.TickService // Final|Native|Public|BlueprintCallable // @ game+0x4c41110
+	void StartDespawnAI(struct APawn* AIActor, char DeathType); // Function AthenaAI.AIManagerService.StartDespawnAI // Native|Public|BlueprintCallable // @ game+0x4c40f50
 };
 
 // Class AthenaAI.DebugAIManagerServiceInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UDebugAIManagerServiceInterface : UInterface {
 
-	void SetMaxNumOfSpawnedActors(int32_t InMaxNumOfSpawnedActors); // Function AthenaAI.DebugAIManagerServiceInterface.SetMaxNumOfSpawnedActors // Native|Public|BlueprintCallable // @ game+0x4c3e4f0
-	void SetMaxAICostUnitsPerRegion(int32_t InMaxAICostUnitsPerRegion); // Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsPerRegion // Native|Public|BlueprintCallable // @ game+0x4c3e3e0
-	void SetMaxAICostUnitsForWorld(int32_t InMaxAICostUnitsForWorld); // Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsForWorld // Native|Public|BlueprintCallable // @ game+0x4c3e2d0
-	void SetIgnoreCharacterLimits(bool Ignore); // Function AthenaAI.DebugAIManagerServiceInterface.SetIgnoreCharacterLimits // Native|Public|BlueprintCallable // @ game+0x4c3e0a0
-	void SetDistanceToPlayerToRaiseSpawnPriority(float InDistanceToPlayerToRaiseSpawnPriority); // Function AthenaAI.DebugAIManagerServiceInterface.SetDistanceToPlayerToRaiseSpawnPriority // Native|Public|BlueprintCallable // @ game+0x4c3df90
-	void SetCharacterWorldDensityCheckTimer(float InCharacterWorldDensityCheckTimer); // Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterWorldDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c3de00
-	void SetCharacterRegionDensityCheckTimer(float InCharacterRegionDensityCheckTimer); // Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterRegionDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c3dd00
-	void SetCharacterNetRelevancy(float InCloseByCharactersRadius); // Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterNetRelevancy // Native|Public|BlueprintCallable // @ game+0x4c3dc00
-	bool BlockAIAbility(struct UClass* InExclusive, bool InBlockState); // Function AthenaAI.DebugAIManagerServiceInterface.BlockAIAbility // Native|Public|BlueprintCallable // @ game+0x4c3c200
+	void SetMaxNumOfSpawnedActors(int32_t InMaxNumOfSpawnedActors); // Function AthenaAI.DebugAIManagerServiceInterface.SetMaxNumOfSpawnedActors // Native|Public|BlueprintCallable // @ game+0x4c40b10
+	void SetMaxAICostUnitsPerRegion(int32_t InMaxAICostUnitsPerRegion); // Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsPerRegion // Native|Public|BlueprintCallable // @ game+0x4c40a00
+	void SetMaxAICostUnitsForWorld(int32_t InMaxAICostUnitsForWorld); // Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsForWorld // Native|Public|BlueprintCallable // @ game+0x4c408f0
+	void SetIgnoreCharacterLimits(bool Ignore); // Function AthenaAI.DebugAIManagerServiceInterface.SetIgnoreCharacterLimits // Native|Public|BlueprintCallable // @ game+0x4c406c0
+	void SetDistanceToPlayerToRaiseSpawnPriority(float InDistanceToPlayerToRaiseSpawnPriority); // Function AthenaAI.DebugAIManagerServiceInterface.SetDistanceToPlayerToRaiseSpawnPriority // Native|Public|BlueprintCallable // @ game+0x4c405b0
+	void SetCharacterWorldDensityCheckTimer(float InCharacterWorldDensityCheckTimer); // Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterWorldDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c40420
+	void SetCharacterRegionDensityCheckTimer(float InCharacterRegionDensityCheckTimer); // Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterRegionDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c40320
+	void SetCharacterNetRelevancy(float InCloseByCharactersRadius); // Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterNetRelevancy // Native|Public|BlueprintCallable // @ game+0x4c40220
+	bool BlockAIAbility(struct UClass* InExclusive, bool InBlockState); // Function AthenaAI.DebugAIManagerServiceInterface.BlockAIAbility // Native|Public|BlueprintCallable // @ game+0x4c3e820
 };
 
 // Class AthenaAI.DebugAIManagerService
@@ -1947,15 +1947,15 @@ struct ADebugAIManagerService : AAIManagerService {
 	char UnknownData_B50[0x110]; // 0xb50(0x110)
 	struct TArray<struct UClass*> BlockedAIAbilities; // 0xc60(0x10)
 
-	void SetMaxNumOfSpawnedActors(int32_t InMaxNumOfSpawnedActors); // Function AthenaAI.DebugAIManagerService.SetMaxNumOfSpawnedActors // Native|Public|BlueprintCallable // @ game+0x4c3e460
-	void SetMaxAICostUnitsPerRegion(int32_t InMaxAICostUnitsPerRegion); // Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsPerRegion // Native|Public|BlueprintCallable // @ game+0x4c3e350
-	void SetMaxAICostUnitsForWorld(int32_t InMaxAICostUnitsForWorld); // Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsForWorld // Native|Public|BlueprintCallable // @ game+0x4c3e240
-	void SetIgnoreCharacterLimits(bool Ignore); // Function AthenaAI.DebugAIManagerService.SetIgnoreCharacterLimits // Native|Public|BlueprintCallable // @ game+0x4c3e010
-	void SetDistanceToPlayerToRaiseSpawnPriority(float InDistanceToPlayerToRaiseSpawnPriority); // Function AthenaAI.DebugAIManagerService.SetDistanceToPlayerToRaiseSpawnPriority // Native|Public|BlueprintCallable // @ game+0x4c3df10
-	void SetCharacterWorldDensityCheckTimer(float InCharacterWorldDensityCheckTimer); // Function AthenaAI.DebugAIManagerService.SetCharacterWorldDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c3dd80
-	void SetCharacterRegionDensityCheckTimer(float InCharacterRegionDensityCheckTimer); // Function AthenaAI.DebugAIManagerService.SetCharacterRegionDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c3dc80
-	void SetCharacterNetRelevancy(float InCloseByCharactersRadius); // Function AthenaAI.DebugAIManagerService.SetCharacterNetRelevancy // Native|Public|BlueprintCallable // @ game+0x4c3db80
-	bool BlockAIAbility(struct UClass* InExclusive, bool InBlockState); // Function AthenaAI.DebugAIManagerService.BlockAIAbility // Native|Public|BlueprintCallable // @ game+0x4c3c130
+	void SetMaxNumOfSpawnedActors(int32_t InMaxNumOfSpawnedActors); // Function AthenaAI.DebugAIManagerService.SetMaxNumOfSpawnedActors // Native|Public|BlueprintCallable // @ game+0x4c40a80
+	void SetMaxAICostUnitsPerRegion(int32_t InMaxAICostUnitsPerRegion); // Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsPerRegion // Native|Public|BlueprintCallable // @ game+0x4c40970
+	void SetMaxAICostUnitsForWorld(int32_t InMaxAICostUnitsForWorld); // Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsForWorld // Native|Public|BlueprintCallable // @ game+0x4c40860
+	void SetIgnoreCharacterLimits(bool Ignore); // Function AthenaAI.DebugAIManagerService.SetIgnoreCharacterLimits // Native|Public|BlueprintCallable // @ game+0x4c40630
+	void SetDistanceToPlayerToRaiseSpawnPriority(float InDistanceToPlayerToRaiseSpawnPriority); // Function AthenaAI.DebugAIManagerService.SetDistanceToPlayerToRaiseSpawnPriority // Native|Public|BlueprintCallable // @ game+0x4c40530
+	void SetCharacterWorldDensityCheckTimer(float InCharacterWorldDensityCheckTimer); // Function AthenaAI.DebugAIManagerService.SetCharacterWorldDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c403a0
+	void SetCharacterRegionDensityCheckTimer(float InCharacterRegionDensityCheckTimer); // Function AthenaAI.DebugAIManagerService.SetCharacterRegionDensityCheckTimer // Native|Public|BlueprintCallable // @ game+0x4c402a0
+	void SetCharacterNetRelevancy(float InCloseByCharactersRadius); // Function AthenaAI.DebugAIManagerService.SetCharacterNetRelevancy // Native|Public|BlueprintCallable // @ game+0x4c401a0
+	bool BlockAIAbility(struct UClass* InExclusive, bool InBlockState); // Function AthenaAI.DebugAIManagerService.BlockAIAbility // Native|Public|BlueprintCallable // @ game+0x4c3e750
 };
 
 // Class AthenaAI.AINoiseFireInstigator
@@ -2001,8 +2001,8 @@ struct UAIPartsRetrievalComponent : UActorComponent {
 	struct FReplicatedAIPartsData ReplicatedAIPartsData; // 0xd8(0x18)
 	char UnknownData_F0[0x90]; // 0xf0(0x90)
 
-	void RequestNewAIParts(struct UAIPartsCategory* AssignedPartsCategory, int32_t PartsIndexToUse, int32_t TeamColorIndex); // Function AthenaAI.AIPartsRetrievalComponent.RequestNewAIParts // Final|Native|Public|BlueprintCallable // @ game+0x4c3da80
-	void OnRep_ReplicatedAIPartsData(); // Function AthenaAI.AIPartsRetrievalComponent.OnRep_ReplicatedAIPartsData // Final|Native|Private // @ game+0x4c3ccd0
+	void RequestNewAIParts(struct UAIPartsCategory* AssignedPartsCategory, int32_t PartsIndexToUse, int32_t TeamColorIndex); // Function AthenaAI.AIPartsRetrievalComponent.RequestNewAIParts // Final|Native|Public|BlueprintCallable // @ game+0x4c400a0
+	void OnRep_ReplicatedAIPartsData(); // Function AthenaAI.AIPartsRetrievalComponent.OnRep_ReplicatedAIPartsData // Final|Native|Private // @ game+0x4c3f2f0
 };
 
 // Class AthenaAI.AIPartsServiceParams
@@ -2163,7 +2163,7 @@ struct UAIPerPlayerSpawner : UAISpawner {
 	struct TMap<struct AController*, struct FTemporaryPlayerDetailsUnitEntry> TemporaryPlayerDetails; // 0x608(0x50)
 	char UnknownData_658[0x8]; // 0x658(0x08)
 
-	void PlayerDeath(struct AActor* Player); // Function AthenaAI.AIPerPlayerSpawner.PlayerDeath // Final|Native|Public // @ game+0x4c3cd50
+	void PlayerDeath(struct AActor* Player); // Function AthenaAI.AIPerPlayerSpawner.PlayerDeath // Final|Native|Public // @ game+0x4c3f370
 };
 
 // Class AthenaAI.NamedAIDataAsset
@@ -2334,7 +2334,7 @@ struct AAITargetActor : AActor {
 	char Team; // 0x3e0(0x01)
 	char UnknownData_3E1[0x7]; // 0x3e1(0x07)
 
-	void SetTargetEnabled(bool InEnabled); // Function AthenaAI.AITargetActor.SetTargetEnabled // Final|Native|Public|BlueprintCallable // @ game+0x4c3e7e0
+	void SetTargetEnabled(bool InEnabled); // Function AthenaAI.AITargetActor.SetTargetEnabled // Final|Native|Public|BlueprintCallable // @ game+0x4c40e00
 };
 
 // Class AthenaAI.AITargetService
@@ -2347,7 +2347,7 @@ struct AAITargetService : AActor {
 // Size: 0x28 (Inherited: 0x28)
 struct UAITargetWeaponInterface : UInterface {
 
-	bool FindAimConfigToHitTarget(struct FVector Target, bool CheckYaw, struct FRotator OutAimConfig); // Function AthenaAI.AITargetWeaponInterface.FindAimConfigToHitTarget // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c450
+	bool FindAimConfigToHitTarget(struct FVector Target, bool CheckYaw, struct FRotator OutAimConfig); // Function AthenaAI.AITargetWeaponInterface.FindAimConfigToHitTarget // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ea70
 };
 
 // Class AthenaAI.AIWithFormInterface
@@ -2377,7 +2377,7 @@ struct AAmbientWaterSpawnerManager : AActor {
 	struct TArray<struct FPlayerInWaterData> PlayersInWater; // 0x618(0x10)
 	struct TArray<struct FSirenEncounterData> SirenEncounters; // 0x628(0x10)
 
-	void OnPlayerDeath(struct AActor* InActorDying); // Function AthenaAI.AmbientWaterSpawnerManager.OnPlayerDeath // Final|Native|Private // @ game+0x4c3cbb0
+	void OnPlayerDeath(struct AActor* InActorDying); // Function AthenaAI.AmbientWaterSpawnerManager.OnPlayerDeath // Final|Native|Private // @ game+0x4c3f1d0
 };
 
 // Class AthenaAI.AmmunitionItemClassProviderInterface
@@ -2424,8 +2424,8 @@ struct ABurrowCrack : AActor {
 	bool HasFadeStarted; // 0x3dc(0x01)
 	char UnknownData_3DD[0x2b]; // 0x3dd(0x2b)
 
-	void OnRep_StartFadeAndLifeSpan(); // Function AthenaAI.BurrowCrack.OnRep_StartFadeAndLifeSpan // Final|Native|Public // @ game+0x4c3ccf0
-	void OnLifeSpanPercentLeft(float PercentLeft); // Function AthenaAI.BurrowCrack.OnLifeSpanPercentLeft // Event|Public|BlueprintEvent // @ game+0x18e3b10
+	void OnRep_StartFadeAndLifeSpan(); // Function AthenaAI.BurrowCrack.OnRep_StartFadeAndLifeSpan // Final|Native|Public // @ game+0x4c3f310
+	void OnLifeSpanPercentLeft(float PercentLeft); // Function AthenaAI.BurrowCrack.OnLifeSpanPercentLeft // Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class AthenaAI.BurrowAIAbilityParams
@@ -2630,10 +2630,10 @@ struct AAthenaAICharacterController : AAthenaAIController {
 	struct UCurveFloat* DistanceInMToCannonShotHitChanceCurve; // 0xa80(0x08)
 	char UnknownData_A88[0x148]; // 0xa88(0x148)
 
-	void SetOverridePrioritiseInteractablesBeforeEnemies(bool InPrioritiseInteractablesBeforeEnemies); // Function AthenaAI.AthenaAICharacterController.SetOverridePrioritiseInteractablesBeforeEnemies // Final|Native|Public|BlueprintCallable // @ game+0x4c3e640
-	void SetItemSpecificNamedControllerParam(struct UClass* InItemCategory, struct FName ParamName, float Value); // Function AthenaAI.AthenaAICharacterController.SetItemSpecificNamedControllerParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4c3e130
-	void SetDisableTurningForTest(bool InDisableTurningForTest); // Function AthenaAI.AthenaAICharacterController.SetDisableTurningForTest // Final|Native|Public|BlueprintCallable // @ game+0x4c3de80
-	void ClearOverridePrioritiseInteractablesBeforeEnemies(); // Function AthenaAI.AthenaAICharacterController.ClearOverridePrioritiseInteractablesBeforeEnemies // Final|Native|Public|BlueprintCallable // @ game+0x4c3c2d0
+	void SetOverridePrioritiseInteractablesBeforeEnemies(bool InPrioritiseInteractablesBeforeEnemies); // Function AthenaAI.AthenaAICharacterController.SetOverridePrioritiseInteractablesBeforeEnemies // Final|Native|Public|BlueprintCallable // @ game+0x4c40c60
+	void SetItemSpecificNamedControllerParam(struct UClass* InItemCategory, struct FName ParamName, float Value); // Function AthenaAI.AthenaAICharacterController.SetItemSpecificNamedControllerParam // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x4c40750
+	void SetDisableTurningForTest(bool InDisableTurningForTest); // Function AthenaAI.AthenaAICharacterController.SetDisableTurningForTest // Final|Native|Public|BlueprintCallable // @ game+0x4c404a0
+	void ClearOverridePrioritiseInteractablesBeforeEnemies(); // Function AthenaAI.AthenaAICharacterController.ClearOverridePrioritiseInteractablesBeforeEnemies // Final|Native|Public|BlueprintCallable // @ game+0x4c3e8f0
 };
 
 // Class AthenaAI.AthenaAIControllerNavMeshTogglesInterface
@@ -2705,10 +2705,10 @@ struct UAthenaAIInteractableInterface : UInterface {
 // Size: 0x1c8 (Inherited: 0x1c8)
 struct UAthenaAIPerceptionComponent : UAIPerceptionComponent {
 
-	bool IsPerceptionSenseEnabled(struct UClass* Sense); // Function AthenaAI.AthenaAIPerceptionComponent.IsPerceptionSenseEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3ca20
-	bool IsAnyPerceptionEnabled(); // Function AthenaAI.AthenaAIPerceptionComponent.IsAnyPerceptionEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3c9f0
-	void EnablePerceptionSense(struct UClass* Sense, bool Enable); // Function AthenaAI.AthenaAIPerceptionComponent.EnablePerceptionSense // Final|Native|Public|BlueprintCallable // @ game+0x4c3c380
-	void EnableAllPerception(bool Enable); // Function AthenaAI.AthenaAIPerceptionComponent.EnableAllPerception // Final|Native|Public|BlueprintCallable // @ game+0x4c3c2f0
+	bool IsPerceptionSenseEnabled(struct UClass* Sense); // Function AthenaAI.AthenaAIPerceptionComponent.IsPerceptionSenseEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3f040
+	bool IsAnyPerceptionEnabled(); // Function AthenaAI.AthenaAIPerceptionComponent.IsAnyPerceptionEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4c3f010
+	void EnablePerceptionSense(struct UClass* Sense, bool Enable); // Function AthenaAI.AthenaAIPerceptionComponent.EnablePerceptionSense // Final|Native|Public|BlueprintCallable // @ game+0x4c3e9a0
+	void EnableAllPerception(bool Enable); // Function AthenaAI.AthenaAIPerceptionComponent.EnableAllPerception // Final|Native|Public|BlueprintCallable // @ game+0x4c3e910
 };
 
 // Class AthenaAI.AthenaAISightTargetInterface
@@ -3500,7 +3500,7 @@ struct UCoralShieldVFXComponent : UActorComponent {
 	struct TArray<struct UMaterialInstanceDynamic*> OverriddenMaterialsForCast; // 0x138(0x10)
 	char UnknownData_148[0x60]; // 0x148(0x60)
 
-	void OnRep_CurrentCoralShieldRole(); // Function AthenaAI.CoralShieldVFXComponent.OnRep_CurrentCoralShieldRole // Final|Native|Private // @ game+0x4c3cc30
+	void OnRep_CurrentCoralShieldRole(); // Function AthenaAI.CoralShieldVFXComponent.OnRep_CurrentCoralShieldRole // Final|Native|Private // @ game+0x4c3f250
 };
 
 // Class AthenaAI.CustomAttitudeInterface
@@ -3768,8 +3768,8 @@ struct ASpawnContextProviderZone : AActor {
 	struct TArray<struct FName> SpawnContextIDs; // 0x3c8(0x10)
 	struct UBoxComponent* BoundingBox; // 0x3d8(0x08)
 
-	void RemoveContextsFromTarget(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex); // Function AthenaAI.SpawnContextProviderZone.RemoveContextsFromTarget // Final|Native|Private // @ game+0x4c3d980
-	void AddContextsToTarget(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex, bool InFromSweep, struct FHitResult InSweepResult); // Function AthenaAI.SpawnContextProviderZone.AddContextsToTarget // Final|Native|Private|HasOutParms // @ game+0x4c3bc10
+	void RemoveContextsFromTarget(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex); // Function AthenaAI.SpawnContextProviderZone.RemoveContextsFromTarget // Final|Native|Private // @ game+0x4c3ffa0
+	void AddContextsToTarget(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex, bool InFromSweep, struct FHitResult InSweepResult); // Function AthenaAI.SpawnContextProviderZone.AddContextsToTarget // Final|Native|Private|HasOutParms // @ game+0x4c3e230
 };
 
 // Class AthenaAI.BaseSpawnBlockingBehaviourStrategy

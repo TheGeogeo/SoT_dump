@@ -4,6 +4,6 @@ struct ABP_ShipStorageBarrel_C : AActor {
 	struct UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3c8(0x08)
 	struct UStaticMeshComponent* StaticMesh; // 0x3d0(0x08)
 
-	void UserConstructionScript(); // Function BP_ShipStorageBarrel.BP_ShipStorageBarrel_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ShipStorageBarrel.BP_ShipStorageBarrel_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

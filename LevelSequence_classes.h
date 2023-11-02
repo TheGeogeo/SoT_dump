@@ -17,7 +17,7 @@ struct ULevelSequencePlayer : UMovieSceneSequencePlayer {
 	struct AActor* SpawnablesParent; // 0x608(0x08)
 	char UnknownData_610[0x38]; // 0x610(0x38)
 
-	struct ULevelSequencePlayer* CreateLevelSequencePlayer(struct UObject* WorldContextObject, struct ULevelSequence* LevelSequence, struct FMovieSceneSequencePlaybackSettings Settings); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer // Final|Native|Static|Public|BlueprintCallable // @ game+0x24b8680
+	struct ULevelSequencePlayer* CreateLevelSequencePlayer(struct UObject* WorldContextObject, struct ULevelSequence* LevelSequence, struct FMovieSceneSequencePlaybackSettings Settings); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer // Final|Native|Static|Public|BlueprintCallable // @ game+0x24bab10
 };
 
 // Class LevelSequence.LevelSequenceBurnInInitSettings
@@ -48,13 +48,13 @@ struct ALevelSequenceActor : AActor {
 	struct AActor* SpawnablesParent; // 0x428(0x08)
 	struct ULevelSequenceBurnIn* BurnInInstance; // 0x430(0x08)
 
-	void SetSequence(struct ULevelSequence* InSequence, bool LoadSequence); // Function LevelSequence.LevelSequenceActor.SetSequence // Final|Native|Public|BlueprintCallable // @ game+0x24b8ca0
-	void SetBinding(struct FMovieSceneObjectBindingPtr Binding, struct TArray<struct AActor*> Actors, bool bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24b8ab0
-	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings // Final|Native|Public|BlueprintCallable // @ game+0x24b8a60
-	void ResetBinding(struct FMovieSceneObjectBindingPtr Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding // Final|Native|Public|BlueprintCallable // @ game+0x24b89a0
-	void RemoveBinding(struct FMovieSceneObjectBindingPtr Binding, struct AActor* Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding // Final|Native|Public|BlueprintCallable // @ game+0x24b88a0
-	struct ULevelSequence* GetSequence(bool Load); // Function LevelSequence.LevelSequenceActor.GetSequence // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24b87e0
-	void AddBinding(struct FMovieSceneObjectBindingPtr Binding, struct AActor* Actor, bool bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding // Final|Native|Public|BlueprintCallable // @ game+0x24b8540
+	void SetSequence(struct ULevelSequence* InSequence, bool LoadSequence); // Function LevelSequence.LevelSequenceActor.SetSequence // Final|Native|Public|BlueprintCallable // @ game+0x24bb130
+	void SetBinding(struct FMovieSceneObjectBindingPtr Binding, struct TArray<struct AActor*> Actors, bool bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x24baf40
+	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings // Final|Native|Public|BlueprintCallable // @ game+0x24baef0
+	void ResetBinding(struct FMovieSceneObjectBindingPtr Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding // Final|Native|Public|BlueprintCallable // @ game+0x24bae30
+	void RemoveBinding(struct FMovieSceneObjectBindingPtr Binding, struct AActor* Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding // Final|Native|Public|BlueprintCallable // @ game+0x24bad30
+	struct ULevelSequence* GetSequence(bool Load); // Function LevelSequence.LevelSequenceActor.GetSequence // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x24bac70
+	void AddBinding(struct FMovieSceneObjectBindingPtr Binding, struct AActor* Actor, bool bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding // Final|Native|Public|BlueprintCallable // @ game+0x24ba9d0
 };
 
 // Class LevelSequence.LevelSequenceBurnIn
@@ -63,7 +63,7 @@ struct ULevelSequenceBurnIn : UUserWidget {
 	struct FLevelSequencePlayerSnapshot FrameInformation; // 0x230(0x90)
 	struct ALevelSequenceActor* LevelSequenceActor; // 0x2c0(0x08)
 
-	void SetSettings(struct UObject* InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	struct UClass* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass // Native|Event|Public|BlueprintEvent|Const // @ game+0x24b8880
+	void SetSettings(struct UObject* InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	struct UClass* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass // Native|Event|Public|BlueprintEvent|Const // @ game+0x24bad10
 };
 

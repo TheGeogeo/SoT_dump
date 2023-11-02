@@ -3,6 +3,6 @@
 struct ABP_ArmoryChestInteraction_C : AArmoryChestInteraction {
 	struct USceneComponent* DefaultSceneRoot; // 0x4b0(0x08)
 
-	void UserConstructionScript(); // Function BP_ArmoryChestInteraction.BP_ArmoryChestInteraction_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ArmoryChestInteraction.BP_ArmoryChestInteraction_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

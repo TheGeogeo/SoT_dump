@@ -18,6 +18,6 @@ struct UCleanlinessComponent : UActorComponent {
 	float QuickCleanDirtynessDecayRatePerSecond; // 0xf0(0x04)
 	char UnknownData_F4[0x54]; // 0xf4(0x54)
 
-	void OnRep_CleanlinessInfo(); // Function Cleanliness.CleanlinessComponent.OnRep_CleanlinessInfo // Final|Native|Private // @ game+0x43c5400
+	void OnRep_CleanlinessInfo(); // Function Cleanliness.CleanlinessComponent.OnRep_CleanlinessInfo // Final|Native|Private // @ game+0x43c7a20
 };
 

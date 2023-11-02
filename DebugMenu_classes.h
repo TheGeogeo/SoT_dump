@@ -36,12 +36,12 @@ struct UDebugMenuComponentMock : UDebugMenuComponent {
 // Size: 0x28 (Inherited: 0x28)
 struct UDebugMenuTestFunctions : UBlueprintFunctionLibrary {
 
-	bool IsDebugMenuReady(struct UObject* WorldContextObject); // Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuReady // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3454d40
-	bool IsDebugMenuOpen(struct UObject* WorldContextObject); // Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuOpen // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3454cc0
-	bool IsDebugMenuAvailable(); // Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuAvailable // Final|Native|Static|Public|BlueprintCallable // @ game+0x3454c90
-	struct FKey GetDebugMenuToggleKeyComboBetaKeyboard(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboBetaKeyboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3454c00
-	struct FKey GetDebugMenuToggleKeyComboAlphaKeyboard(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboAlphaKeyboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3454b70
-	struct FKey GetDebugMenuToggleButtonComboBetaGamepad(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboBetaGamepad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3454ae0
-	struct FKey GetDebugMenuToggleButtonComboAlphaGamepad(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboAlphaGamepad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3454a50
+	bool IsDebugMenuReady(struct UObject* WorldContextObject); // Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuReady // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3457340
+	bool IsDebugMenuOpen(struct UObject* WorldContextObject); // Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuOpen // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x34572c0
+	bool IsDebugMenuAvailable(); // Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuAvailable // Final|Native|Static|Public|BlueprintCallable // @ game+0x3457290
+	struct FKey GetDebugMenuToggleKeyComboBetaKeyboard(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboBetaKeyboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3457200
+	struct FKey GetDebugMenuToggleKeyComboAlphaKeyboard(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboAlphaKeyboard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3457170
+	struct FKey GetDebugMenuToggleButtonComboBetaGamepad(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboBetaGamepad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x34570e0
+	struct FKey GetDebugMenuToggleButtonComboAlphaGamepad(); // Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboAlphaGamepad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3457050
 };
 

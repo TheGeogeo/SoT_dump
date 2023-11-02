@@ -13,8 +13,8 @@ struct UAbandonedNoteWeightedTextSourceComponent : UActorComponent {
 	struct FText TitleText; // 0x140(0x38)
 	char UnknownData_178[0x30]; // 0x178(0x30)
 
-	void OnRep_TitleText(); // Function Mysteries.AbandonedNoteWeightedTextSourceComponent.OnRep_TitleText // Final|Native|Private // @ game+0x46822e0
-	void OnRep_ClueText(); // Function Mysteries.AbandonedNoteWeightedTextSourceComponent.OnRep_ClueText // Final|Native|Private // @ game+0x4682210
+	void OnRep_TitleText(); // Function Mysteries.AbandonedNoteWeightedTextSourceComponent.OnRep_TitleText // Final|Native|Private // @ game+0x4684900
+	void OnRep_ClueText(); // Function Mysteries.AbandonedNoteWeightedTextSourceComponent.OnRep_ClueText // Final|Native|Private // @ game+0x4684830
 };
 
 // Class Mysteries.OneShotRewardableObjectBase
@@ -48,10 +48,10 @@ struct ASirenPuzzleContext : AActor {
 	struct TArray<char> LockStates; // 0x408(0x10)
 	char UnknownData_418[0xa0]; // 0x418(0xa0)
 
-	void Unlock(struct FGuid LockId, struct FGuid CrewId); // Function Mysteries.SirenPuzzleContext.Unlock // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4682320
-	void ResetUnlock(); // Function Mysteries.SirenPuzzleContext.ResetUnlock // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x4682300
-	void OnRep_LockStates(struct TArray<char> OldStates); // Function Mysteries.SirenPuzzleContext.OnRep_LockStates // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4682230
-	void DeactivateLock(struct FGuid LockId); // Function Mysteries.SirenPuzzleContext.DeactivateLock // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4682170
-	void ActivateLock(struct FGuid LockId); // Function Mysteries.SirenPuzzleContext.ActivateLock // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x46820d0
+	void Unlock(struct FGuid LockId, struct FGuid CrewId); // Function Mysteries.SirenPuzzleContext.Unlock // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4684940
+	void ResetUnlock(); // Function Mysteries.SirenPuzzleContext.ResetUnlock // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x4684920
+	void OnRep_LockStates(struct TArray<char> OldStates); // Function Mysteries.SirenPuzzleContext.OnRep_LockStates // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4684850
+	void DeactivateLock(struct FGuid LockId); // Function Mysteries.SirenPuzzleContext.DeactivateLock // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4684790
+	void ActivateLock(struct FGuid LockId); // Function Mysteries.SirenPuzzleContext.ActivateLock // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x46846f0
 };
 

@@ -18,21 +18,21 @@ struct ABP_Mast_C : AMast {
 	struct UDecalComponent* DamageDecalRight; // 0xa58(0x08)
 	struct UDecalComponent* DamageDecalLeft; // 0xa60(0x08)
 
-	void SetupMastMesh(); // Function BP_Mast.BP_Mast_C.SetupMastMesh // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void AttemptToAddDamageDecal(char RepairableState, struct UDecalComponent* DecalComponent, struct FTransform RelativeTransform, struct UMaterialInterface* NewDecalMaterial); // Function BP_Mast.BP_Mast_C.AttemptToAddDamageDecal // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	bool IsMastVisuallyFractured(); // Function BP_Mast.BP_Mast_C.IsMastVisuallyFractured // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	void Customise Static Mesh(struct UStaticMesh* New Static Mesh, struct UStaticMeshComponent* Static Mesh Component); // Function BP_Mast.BP_Mast_C.Customise Static Mesh // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Trim Array Func(struct TArray<struct UObject*> TargetArray, int32_t Size); // Function BP_Mast.BP_Mast_C.Trim Array Func // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Initialise Sail Parameters(); // Function BP_Mast.BP_Mast_C.Initialise Sail Parameters // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Populate Lists of Yards and Sails(); // Function BP_Mast.BP_Mast_C.Populate Lists of Yards and Sails // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Cull Excess Components(struct TArray<struct UActorComponent*> TargetArray); // Function BP_Mast.BP_Mast_C.Cull Excess Components // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Initialise Sails(); // Function BP_Mast.BP_Mast_C.Initialise Sails // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Mast.BP_Mast_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnMastDescLoaded(struct UMastDescAsset* MastDesc); // Function BP_Mast.BP_Mast_C.OnMastDescLoaded // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnMastMeshSwapRequested(struct UStaticMesh* NewMeshBottom, struct UStaticMesh* NewMeshTop); // Function BP_Mast.BP_Mast_C.OnMastMeshSwapRequested // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature(char State, char PreviousState, struct URepairableComponent* RepairableComponent); // Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature // BlueprintEvent // @ game+0x18e3b10
-	void BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature(char State, char PreviousState, struct URepairableComponent* RepairableComponent); // Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature // BlueprintEvent // @ game+0x18e3b10
-	void BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature(char State, char PreviousState, struct URepairableComponent* RepairableComponent); // Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature // BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Mast(int32_t EntryPoint); // Function BP_Mast.BP_Mast_C.ExecuteUbergraph_BP_Mast // HasDefaults // @ game+0x18e3b10
+	void SetupMastMesh(); // Function BP_Mast.BP_Mast_C.SetupMastMesh // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void AttemptToAddDamageDecal(char RepairableState, struct UDecalComponent* DecalComponent, struct FTransform RelativeTransform, struct UMaterialInterface* NewDecalMaterial); // Function BP_Mast.BP_Mast_C.AttemptToAddDamageDecal // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	bool IsMastVisuallyFractured(); // Function BP_Mast.BP_Mast_C.IsMastVisuallyFractured // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	void Customise Static Mesh(struct UStaticMesh* New Static Mesh, struct UStaticMeshComponent* Static Mesh Component); // Function BP_Mast.BP_Mast_C.Customise Static Mesh // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Trim Array Func(struct TArray<struct UObject*> TargetArray, int32_t Size); // Function BP_Mast.BP_Mast_C.Trim Array Func // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Initialise Sail Parameters(); // Function BP_Mast.BP_Mast_C.Initialise Sail Parameters // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Populate Lists of Yards and Sails(); // Function BP_Mast.BP_Mast_C.Populate Lists of Yards and Sails // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Cull Excess Components(struct TArray<struct UActorComponent*> TargetArray); // Function BP_Mast.BP_Mast_C.Cull Excess Components // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Initialise Sails(); // Function BP_Mast.BP_Mast_C.Initialise Sails // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Mast.BP_Mast_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnMastDescLoaded(struct UMastDescAsset** MastDesc); // Function BP_Mast.BP_Mast_C.OnMastDescLoaded // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnMastMeshSwapRequested(struct UStaticMesh** NewMeshBottom, struct UStaticMesh** NewMeshTop); // Function BP_Mast.BP_Mast_C.OnMastMeshSwapRequested // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature(char State, char PreviousState, struct URepairableComponent* RepairableComponent); // Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature // BlueprintEvent // @ game+0x18e5fa0
+	void BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature(char State, char PreviousState, struct URepairableComponent* RepairableComponent); // Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature // BlueprintEvent // @ game+0x18e5fa0
+	void BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature(char State, char PreviousState, struct URepairableComponent* RepairableComponent); // Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature // BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Mast(int32_t EntryPoint); // Function BP_Mast.BP_Mast_C.ExecuteUbergraph_BP_Mast // HasDefaults // @ game+0x18e5fa0
 };
 

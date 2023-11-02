@@ -16,8 +16,8 @@ struct ABP_LargeShip_MapDeck_Dressing_01_a_C : ATrinketReplacementActor {
 	struct UStaticMeshComponent* tls_tankard_01_b1; // 0x438(0x08)
 	struct UMergedStaticMeshComponent* MergedStaticMesh; // 0x440(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_MapDeck_Dressing_01_a.BP_LargeShip_MapDeck_Dressing_01_a_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_LargeShip_MapDeck_Dressing_01_a.BP_LargeShip_MapDeck_Dressing_01_a_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_LargeShip_MapDeck_Dressing_01_a(int32_t EntryPoint); // Function BP_LargeShip_MapDeck_Dressing_01_a.BP_LargeShip_MapDeck_Dressing_01_a_C.ExecuteUbergraph_BP_LargeShip_MapDeck_Dressing_01_a //  // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_MapDeck_Dressing_01_a.BP_LargeShip_MapDeck_Dressing_01_a_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_LargeShip_MapDeck_Dressing_01_a.BP_LargeShip_MapDeck_Dressing_01_a_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_LargeShip_MapDeck_Dressing_01_a(int32_t EntryPoint); // Function BP_LargeShip_MapDeck_Dressing_01_a.BP_LargeShip_MapDeck_Dressing_01_a_C.ExecuteUbergraph_BP_LargeShip_MapDeck_Dressing_01_a //  // @ game+0x18e5fa0
 };
 

@@ -6,8 +6,8 @@ struct UInstancedRopeComponent : UPrimitiveComponent {
 	int32_t ShadowLOD; // 0x5d0(0x04)
 	char UnknownData_5DC[0xa4]; // 0x5dc(0xa4)
 
-	void SetUnderwater(bool Underwater); // Function AthenaRigging.InstancedRopeComponent.SetUnderwater // Final|Native|Public|BlueprintCallable // @ game+0x3fd70a0
-	void SetRopes(struct TArray<struct FInstancedRopeParams> InRopes); // Function AthenaRigging.InstancedRopeComponent.SetRopes // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3fd6f70
+	void SetUnderwater(bool Underwater); // Function AthenaRigging.InstancedRopeComponent.SetUnderwater // Final|Native|Public|BlueprintCallable // @ game+0x3fd96b0
+	void SetRopes(struct TArray<struct FInstancedRopeParams> InRopes); // Function AthenaRigging.InstancedRopeComponent.SetRopes // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x3fd9580
 };
 
 // Class AthenaRigging.MaterialExpressionRopeParameter
@@ -40,8 +40,8 @@ struct URiggingSystemComponent : USceneComponent {
 	struct ARiggingSystem* Impl; // 0x310(0x08)
 	char UnknownData_318[0x8]; // 0x318(0x08)
 
-	void SetSocketLookupSource(struct AActor* InSocketSource); // Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource // Final|Native|Public|BlueprintCallable // @ game+0x3fd7020
-	int32_t ConvertLineToRopeIndex(struct FName InLineGroupName, int32_t InLineOffset); // Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3fd6d50
+	void SetSocketLookupSource(struct AActor* InSocketSource); // Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource // Final|Native|Public|BlueprintCallable // @ game+0x3fd9630
+	int32_t ConvertLineToRopeIndex(struct FName InLineGroupName, int32_t InLineOffset); // Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3fd9360
 };
 
 // Class AthenaRigging.RopeCatenaryRenderComponent
@@ -53,7 +53,7 @@ struct URopeCatenaryRenderComponent : UCordRenderComponent {
 // Size: 0x28 (Inherited: 0x28)
 struct URopeInterface : UInterface {
 
-	void SetRopeUVOffset(float InUVOffset); // Function AthenaRigging.RopeInterface.SetRopeUVOffset // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x3fd6ef0
-	void SetRopeEndpoints(struct FVector InWorldSpaceStart, struct FVector InWorldSpaceEnd); // Function AthenaRigging.RopeInterface.SetRopeEndpoints // Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x3fd6e10
+	void SetRopeUVOffset(float InUVOffset); // Function AthenaRigging.RopeInterface.SetRopeUVOffset // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x3fd9500
+	void SetRopeEndpoints(struct FVector InWorldSpaceStart, struct FVector InWorldSpaceEnd); // Function AthenaRigging.RopeInterface.SetRopeEndpoints // Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x3fd9420
 };
 

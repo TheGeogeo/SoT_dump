@@ -19,9 +19,9 @@ struct ABP_InteractableShipRailingLight_C : AShipInteractableLight {
 	struct FLinearColor DefaultGlowColour; // 0x768(0x10)
 	char CurrentFlameOfFateType; // 0x778(0x01)
 
-	void UserConstructionScript(); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void LightStateChanged(); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.LightStateChanged // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_InteractableShipRailingLight(int32_t EntryPoint); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.ExecuteUbergraph_BP_InteractableShipRailingLight //  // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void LightStateChanged(); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.LightStateChanged // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_InteractableShipRailingLight(int32_t EntryPoint); // Function BP_InteractableShipRailingLight.BP_InteractableShipRailingLight_C.ExecuteUbergraph_BP_InteractableShipRailingLight //  // @ game+0x18e5fa0
 };
 

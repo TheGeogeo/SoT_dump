@@ -8,7 +8,7 @@ struct UDescribableComponent : UInteractableComponent {
 	bool TooltipActive; // 0x180(0x01)
 	char UnknownData_181[0x17]; // 0x181(0x17)
 
-	void SetTooltipActive(bool IsActive); // Function Describables.DescribableComponent.SetTooltipActive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x14f86c0
-	void OnRep_TooltipActive(); // Function Describables.DescribableComponent.OnRep_TooltipActive // Final|RequiredAPI|Native|Private // @ game+0x14f86a0
+	void SetTooltipActive(bool IsActive); // Function Describables.DescribableComponent.SetTooltipActive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x14fab50
+	void OnRep_TooltipActive(); // Function Describables.DescribableComponent.OnRep_TooltipActive // Final|RequiredAPI|Native|Private // @ game+0x14fab30
 };
 

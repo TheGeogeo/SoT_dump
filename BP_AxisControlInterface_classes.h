@@ -2,6 +2,6 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UBP_AxisControlInterface_C : UInterface {
 
-	void StickInput(float StickInputX); // Function BP_AxisControlInterface.BP_AxisControlInterface_C.StickInput // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void StickInput(float StickInputX); // Function BP_AxisControlInterface.BP_AxisControlInterface_C.StickInput // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

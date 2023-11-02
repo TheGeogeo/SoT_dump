@@ -131,8 +131,8 @@ struct UTaleQuestAddTradeRouteMapStep : UTaleQuestStep {
 struct UTaleQuestCustomMapFunctionLibrary : UTaleQuestFunctionStepLibrary {
 	char UnknownData_180[0x18]; // 0x180(0x18)
 
-	void UpdateStrikeThoughTextElement(struct FGuid MapGuid, struct FGuid ElementGuid, bool StrikeThroughEnabled); // Function TaleMaps.TaleQuestCustomMapFunctionLibrary.UpdateStrikeThoughTextElement // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x47027b0
-	void AddCustomMap(struct UCustomMapData* Data, struct FGuid MapGuid); // Function TaleMaps.TaleQuestCustomMapFunctionLibrary.AddCustomMap // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x47021d0
+	void UpdateStrikeThoughTextElement(struct FGuid MapGuid, struct FGuid ElementGuid, bool StrikeThroughEnabled); // Function TaleMaps.TaleQuestCustomMapFunctionLibrary.UpdateStrikeThoughTextElement // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4704dd0
+	void AddCustomMap(struct UCustomMapData* Data, struct FGuid MapGuid); // Function TaleMaps.TaleQuestCustomMapFunctionLibrary.AddCustomMap // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x47047f0
 };
 
 // Class TaleMaps.TaleQuestLocationMapChestFoundStep
@@ -190,7 +190,7 @@ struct UTaleQuestWaitForChecklistMapCompletionStep : UTaleQuestStep {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestTornMapFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	void AddTornMap(struct FName IslandName, int32_t NumPieces, struct UTornMapParams* MapParams, float MaskRotation, struct FGuid OutMapId); // Function TaleMaps.TaleQuestTornMapFunctionLibrary.AddTornMap // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x4702300
+	void AddTornMap(struct FName IslandName, int32_t NumPieces, struct UTornMapParams* MapParams, float MaskRotation, struct FGuid OutMapId); // Function TaleMaps.TaleQuestTornMapFunctionLibrary.AddTornMap // Final|Native|Public|HasOutParms|HasDefaults|Const // @ game+0x4704920
 };
 
 // Class TaleMaps.TaleQuestTriggerNamedChecklistEventStep
@@ -203,6 +203,6 @@ struct UTaleQuestTriggerNamedChecklistEventStep : UTaleQuestStep {
 struct UTaleQuestTriggerNamedChecklistEventStepDesc : UTaleQuestStepDesc {
 	struct FName Event; // 0x80(0x08)
 
-	struct TArray<struct FString> EventsSource(); // Function TaleMaps.TaleQuestTriggerNamedChecklistEventStepDesc.EventsSource // Final|Native|Private|Const // @ game+0x4702540
+	struct TArray<struct FString> EventsSource(); // Function TaleMaps.TaleQuestTriggerNamedChecklistEventStepDesc.EventsSource // Final|Native|Private|Const // @ game+0x4704b60
 };
 

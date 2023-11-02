@@ -2,7 +2,7 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UForceFeedbackCondition : UObject {
 
-	bool CanPlayForceFeedback(struct AActor* InOwner); // Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback // Native|Event|Public|BlueprintEvent|Const // @ game+0x32d2f30
+	bool CanPlayForceFeedback(struct AActor* InOwner); // Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback // Native|Event|Public|BlueprintEvent|Const // @ game+0x32d5530
 };
 
 // Class AthenaEngine.AthenaEngineInterface
@@ -25,9 +25,9 @@ struct UBoxedRpcDispatcherInterface : UInterface {
 struct UBoxedRpcDispatcherComponent : UActorComponent {
 	char UnknownData_C8[0x8]; // 0xc8(0x08)
 
-	void Server_SendRpc(struct FSerialisedRpc Event); // Function AthenaEngine.BoxedRpcDispatcherComponent.Server_SendRpc // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x32d3430
-	void NetMulticastExcludeServer_SendRpc(struct FSerialisedRpc Event); // Function AthenaEngine.BoxedRpcDispatcherComponent.NetMulticastExcludeServer_SendRpc // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x32d3300
-	void Client_SendRpc(struct FSerialisedRpc Event); // Function AthenaEngine.BoxedRpcDispatcherComponent.Client_SendRpc // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x32d3010
+	void Server_SendRpc(struct FSerialisedRpc Event); // Function AthenaEngine.BoxedRpcDispatcherComponent.Server_SendRpc // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x32d5a30
+	void NetMulticastExcludeServer_SendRpc(struct FSerialisedRpc Event); // Function AthenaEngine.BoxedRpcDispatcherComponent.NetMulticastExcludeServer_SendRpc // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x32d5900
+	void Client_SendRpc(struct FSerialisedRpc Event); // Function AthenaEngine.BoxedRpcDispatcherComponent.Client_SendRpc // Net|NetReliableNative|Event|Protected|NetClient // @ game+0x32d5610
 };
 
 // Class AthenaEngine.DynamicColourPointLightComponent
@@ -37,8 +37,8 @@ struct UDynamicColourPointLightComponent : UPointLightComponent {
 	struct FRuntimeFloatCurve DeactivationCurve; // 0x528(0x80)
 	char UnknownData_5B0[0x30]; // 0x5b0(0x30)
 
-	void DeactivateLight(bool Blend); // Function AthenaEngine.DynamicColourPointLightComponent.DeactivateLight // Final|Native|Public|BlueprintCallable // @ game+0x32d30b0
-	void ActivateLight(bool Blend); // Function AthenaEngine.DynamicColourPointLightComponent.ActivateLight // Final|Native|Public|BlueprintCallable // @ game+0x32d2e70
+	void DeactivateLight(bool Blend); // Function AthenaEngine.DynamicColourPointLightComponent.DeactivateLight // Final|Native|Public|BlueprintCallable // @ game+0x32d56b0
+	void ActivateLight(bool Blend); // Function AthenaEngine.DynamicColourPointLightComponent.ActivateLight // Final|Native|Public|BlueprintCallable // @ game+0x32d5470
 };
 
 // Class AthenaEngine.EmptyObject
@@ -63,21 +63,22 @@ struct UOnlinePlayerPermissionsRetrieverInterface : UInterface {
 };
 
 // Class AthenaEngine.PersistentAssetCollectionDataAsset
-// Size: 0x38 (Inherited: 0x28)
+// Size: 0x48 (Inherited: 0x28)
 struct UPersistentAssetCollectionDataAsset : UDataAsset {
-	struct TArray<struct UObject*> Assets; // 0x28(0x10)
+	struct TArray<struct UObject*> Blueprints; // 0x28(0x10)
+	struct TArray<struct UObject*> Assets; // 0x38(0x10)
 };
 
 // Class AthenaEngine.PlayModeHelpers
 // Size: 0x28 (Inherited: 0x28)
 struct UPlayModeHelpers : UBlueprintFunctionLibrary {
 
-	void SetPlayModeVariantOverride(char NewPlayModeVariantOverride); // Function AthenaEngine.PlayModeHelpers.SetPlayModeVariantOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d3560
-	void SetPlayModeOverride(char NewPlayModeOverride); // Function AthenaEngine.PlayModeHelpers.SetPlayModeOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d34f0
-	char GetPlayModeVariant(struct UObject* WorldContext); // Function AthenaEngine.PlayModeHelpers.GetPlayModeVariant // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d31c0
-	char GetPlayMode(struct UObject* WorldContext); // Function AthenaEngine.PlayModeHelpers.GetPlayMode // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d3140
-	void ClearPlayModeVariantOverride(); // Function AthenaEngine.PlayModeHelpers.ClearPlayModeVariantOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d2ff0
-	void ClearPlayModeOverride(); // Function AthenaEngine.PlayModeHelpers.ClearPlayModeOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d2fd0
+	void SetPlayModeVariantOverride(char NewPlayModeVariantOverride); // Function AthenaEngine.PlayModeHelpers.SetPlayModeVariantOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d5b60
+	void SetPlayModeOverride(char NewPlayModeOverride); // Function AthenaEngine.PlayModeHelpers.SetPlayModeOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d5af0
+	char GetPlayModeVariant(struct UObject* WorldContext); // Function AthenaEngine.PlayModeHelpers.GetPlayModeVariant // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d57c0
+	char GetPlayMode(struct UObject* WorldContext); // Function AthenaEngine.PlayModeHelpers.GetPlayMode // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d5740
+	void ClearPlayModeVariantOverride(); // Function AthenaEngine.PlayModeHelpers.ClearPlayModeVariantOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d55f0
+	void ClearPlayModeOverride(); // Function AthenaEngine.PlayModeHelpers.ClearPlayModeOverride // Final|Native|Static|Public|BlueprintCallable // @ game+0x32d55d0
 };
 
 // Class AthenaEngine.PlayModeInterface
@@ -143,8 +144,8 @@ struct URotateMeshToActorComponent : UActorComponent {
 	float CloseProximityYawRotation; // 0xec(0x04)
 	char UnknownData_F0[0x8]; // 0xf0(0x08)
 
-	void SnapMeshToLookAtActor(); // Function AthenaEngine.RotateMeshToActorComponent.SnapMeshToLookAtActor // Final|Native|Public|BlueprintCallable // @ game+0x32d3600
-	void Initialise(struct UMeshComponent* InMeshToRotate, struct AActor* InActorToRotateTo); // Function AthenaEngine.RotateMeshToActorComponent.Initialise // Final|Native|Public|BlueprintCallable // @ game+0x32d3240
+	void SnapMeshToLookAtActor(); // Function AthenaEngine.RotateMeshToActorComponent.SnapMeshToLookAtActor // Final|Native|Public|BlueprintCallable // @ game+0x32d5c00
+	void Initialise(struct UMeshComponent* InMeshToRotate, struct AActor* InActorToRotateTo); // Function AthenaEngine.RotateMeshToActorComponent.Initialise // Final|Native|Public|BlueprintCallable // @ game+0x32d5840
 };
 
 // Class AthenaEngine.RotateMeshToLocalPlayerComponent

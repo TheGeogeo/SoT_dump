@@ -10,8 +10,8 @@ struct UCompanyTutorialVoyageProgress : UObject {
 	struct UClass* AssignedTaleRankDescClass; // 0x30(0x08)
 	char UnknownData_38[0xa8]; // 0x38(0xa8)
 
-	bool IsSameVoyage(struct FText VoyageName); // Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x41ec780
-	void AssignVoyage(struct UClass* VoyageProposalDescClass, struct UClass* TaleRankDescClass); // Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage // Final|Native|Public|BlueprintCallable // @ game+0x41ec520
+	bool IsSameVoyage(struct FText VoyageName); // Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x41eed90
+	void AssignVoyage(struct UClass* VoyageProposalDescClass, struct UClass* TaleRankDescClass); // Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage // Final|Native|Public|BlueprintCallable // @ game+0x41eeb30
 };
 
 // Class Tutorial.ContextualTutorialComponent
@@ -41,11 +41,11 @@ struct UTutorial2019Component : UActorComponent {
 	bool IsInTutorialTale; // 0xc9(0x01)
 	char UnknownData_CA[0x6]; // 0xca(0x06)
 
-	void ReceiveTutorial2019BeginPlayOnServer(); // Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveTutorial2019BeginPlayOnClient(); // Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_IsEnabledByServer(bool OldIsEnabled); // Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer // Final|Native|Private // @ game+0x41ec840
-	void ForceDisableComponent_Blueprint(); // Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void BeginOnServer(); // Function Tutorial.Tutorial2019Component.BeginOnServer // Final|Native|Public|BlueprintCallable // @ game+0x41ec5e0
+	void ReceiveTutorial2019BeginPlayOnServer(); // Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveTutorial2019BeginPlayOnClient(); // Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_IsEnabledByServer(bool OldIsEnabled); // Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer // Final|Native|Private // @ game+0x41eee50
+	void ForceDisableComponent_Blueprint(); // Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void BeginOnServer(); // Function Tutorial.Tutorial2019Component.BeginOnServer // Final|Native|Public|BlueprintCallable // @ game+0x41eebf0
 };
 
 // Class Tutorial.Tutorial2019ContextualDelegatingComponent
@@ -58,14 +58,14 @@ struct UTutorial2019ContextualDelegatingComponent : UTutorial2019Component {
 // Size: 0x28 (Inherited: 0x28)
 struct UTutorial2019FunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct FTeleportLocation GetNearestOnboardingSpawnPoint(struct AActor* CharacterToTeleport); // Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x41ec6b0
+	struct FTeleportLocation GetNearestOnboardingSpawnPoint(struct AActor* CharacterToTeleport); // Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x41eecc0
 };
 
 // Class Tutorial.TutorialHelpersBlueprintLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UTutorialHelpersBlueprintLibrary : UBlueprintFunctionLibrary {
 
-	void FirePromptCompleted(struct UClass* AccessKey, struct UObject* WorldContextObject); // Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted // Final|Native|Static|Public|BlueprintCallable // @ game+0x41ec600
+	void FirePromptCompleted(struct UClass* AccessKey, struct UObject* WorldContextObject); // Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted // Final|Native|Static|Public|BlueprintCallable // @ game+0x41eec10
 };
 
 // Class Tutorial.TutorialManagerInterface
@@ -96,8 +96,8 @@ struct UTutorialManager : UActorComponent {
 	bool HasPlayerPromptsServiceSetup; // 0x11f(0x01)
 	char UnknownData_120[0x20]; // 0x120(0x20)
 
-	void OnRep_TutorialType(); // Function Tutorial.TutorialManager.OnRep_TutorialType // Final|Native|Private // @ game+0x41ec8f0
-	void OnRep_SelectedTutorialClass(); // Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass // Final|Native|Private // @ game+0x41ec8d0
+	void OnRep_TutorialType(); // Function Tutorial.TutorialManager.OnRep_TutorialType // Final|Native|Private // @ game+0x41eef00
+	void OnRep_SelectedTutorialClass(); // Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass // Final|Native|Private // @ game+0x41eeee0
 };
 
 // Class Tutorial.TutorialStarter
@@ -138,7 +138,7 @@ struct UCaptaincyStarter : UTutorialStarter {
 // Size: 0x60 (Inherited: 0x60)
 struct UCompanyOnboardingStarter : UTutorialStarter {
 
-	bool HasPrerequisites(); // Function Tutorial.CompanyOnboardingStarter.HasPrerequisites // Native|Event|Protected|BlueprintEvent // @ game+0x41ec750
+	bool HasPrerequisites(); // Function Tutorial.CompanyOnboardingStarter.HasPrerequisites // Native|Event|Protected|BlueprintEvent // @ game+0x41eed60
 };
 
 // Class Tutorial.IntroductionToSOTFlowStarter

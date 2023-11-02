@@ -195,8 +195,8 @@ struct UAIShipServiceDataAsset : UDataAsset {
 // Size: 0x28 (Inherited: 0x28)
 struct UAIShipDebugFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void RequestAIShipForCrew(struct UObject* WorldContextObject, struct FGuid CrewId); // Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x4158bb0
-	struct FAIShipEncounterBattleDesc GenerateAIShipBattleDesc(struct UObject* WorldContextObject, struct UAIShipServiceDataAsset* ServiceParams); // Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc // Final|Native|Static|Public|BlueprintCallable // @ game+0x4158a60
+	void RequestAIShipForCrew(struct UObject* WorldContextObject, struct FGuid CrewId); // Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x415b1c0
+	struct FAIShipEncounterBattleDesc GenerateAIShipBattleDesc(struct UObject* WorldContextObject, struct UAIShipServiceDataAsset* ServiceParams); // Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc // Final|Native|Static|Public|BlueprintCallable // @ game+0x415b070
 };
 
 // Class AIShips.AIShipEncounterDesc
@@ -267,7 +267,7 @@ struct AAthenaAIShipController : AAthenaAIControllerBase {
 	struct FStandardAnchorDynamicsParameters AnchorDynamicsParams; // 0x640(0x28)
 	char UnknownData_668[0x118]; // 0x668(0x118)
 
-	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* ParamsAsset, struct APawn* InPawn); // Function AIShips.AthenaAIShipController.ApplyControllerParams // Native|Public|BlueprintCallable // @ game+0x4158990
+	void ApplyControllerParams(struct UAthenaAIControllerParamsDataAsset* ParamsAsset, struct APawn* InPawn); // Function AIShips.AthenaAIShipController.ApplyControllerParams // Native|Public|BlueprintCallable // @ game+0x415afa0
 };
 
 // Class AIShips.BTService_UpdateIfShipShouldBreakTracking
@@ -336,7 +336,7 @@ struct UBTTask_SailShipToLocation : UBTTask_BlackboardBase {
 // Size: 0x28 (Inherited: 0x28)
 struct UCursedCrewCustomisationInterface : UInterface {
 
-	void SetCursedCrewCustomisationProperties(struct FAIShipSailData SailData); // Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties // Native|Event|Public|HasOutParms|BlueprintEvent // @ game+0x4158c70
+	void SetCursedCrewCustomisationProperties(struct FAIShipSailData SailData); // Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties // Native|Event|Public|HasOutParms|BlueprintEvent // @ game+0x415b280
 };
 
 // Class AIShips.CursedSailsCampaignDataAsset

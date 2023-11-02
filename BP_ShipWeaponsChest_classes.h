@@ -5,6 +5,6 @@ struct ABP_ShipWeaponsChest_C : APossessionsChest {
 	struct UStaticMeshComponent* LockMesh; // 0x5a8(0x08)
 	struct UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5b0(0x08)
 
-	void UserConstructionScript(); // Function BP_ShipWeaponsChest.BP_ShipWeaponsChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_ShipWeaponsChest.BP_ShipWeaponsChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

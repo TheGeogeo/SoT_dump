@@ -43,9 +43,9 @@ struct UEmotePropDiceData : UEmotePropData {
 struct AEmoteDice : AActor {
 	char UnknownData_3C8[0x130]; // 0x3c8(0x130)
 
-	void SetDiceMesh(char DiceType); // Function EmotingFramework.EmoteDice.SetDiceMesh // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void SendTelemetryData(struct FTransform OrientationUsed, int32_t RollNumber, char DiceType); // Function EmotingFramework.EmoteDice.SendTelemetryData // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3660b10
-	void RollDice(int32_t RollNumber, char DiceType); // Function EmotingFramework.EmoteDice.RollDice // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x3660a40
+	void SetDiceMesh(char DiceType); // Function EmotingFramework.EmoteDice.SetDiceMesh // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void SendTelemetryData(struct FTransform OrientationUsed, int32_t RollNumber, char DiceType); // Function EmotingFramework.EmoteDice.SendTelemetryData // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3663120
+	void RollDice(int32_t RollNumber, char DiceType); // Function EmotingFramework.EmoteDice.RollDice // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x3663050
 };
 
 // Class EmotingFramework.EmoteIdListingAsset

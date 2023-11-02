@@ -57,6 +57,6 @@ struct ABP_AudioBoatLargeHullAmbi_C : AShipHullAudio {
 	struct UAudioPortalComponent* LargeBoat_AudioPortal_CaptCab_DeckDoor; // 0x7e0(0x08)
 	struct UAudioPortalComponent* LargeBoat_AudioPortal_CaptCab_SideDoor; // 0x7e8(0x08)
 
-	void UserConstructionScript(); // Function BP_AudioBoatLargeHullAmbi.BP_AudioBoatLargeHullAmbi_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_AudioBoatLargeHullAmbi.BP_AudioBoatLargeHullAmbi_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

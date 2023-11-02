@@ -2,32 +2,32 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UWindZoneInterface : UInterface {
 
-	struct FWindZoneParams GetWindZoneParams(); // Function Wind.WindZoneInterface.GetWindZoneParams // Native|Public|BlueprintCallable // @ game+0x38d75e0
-	struct FVector2D GetWindZoneLocation(); // Function Wind.WindZoneInterface.GetWindZoneLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d75a0
-	struct FWindZoneTurbulence GetTurbulence(struct FVector Location); // Function Wind.WindZoneInterface.GetTurbulence // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d6fc0
+	struct FWindZoneParams GetWindZoneParams(); // Function Wind.WindZoneInterface.GetWindZoneParams // Native|Public|BlueprintCallable // @ game+0x38d9bf0
+	struct FVector2D GetWindZoneLocation(); // Function Wind.WindZoneInterface.GetWindZoneLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9bb0
+	struct FWindZoneTurbulence GetTurbulence(struct FVector Location); // Function Wind.WindZoneInterface.GetTurbulence // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d95d0
 };
 
 // Class Wind.WindInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UWindInterface : UInterface {
 
-	void UnregisterWindZone(TScriptInterface<struct UWindZoneInterface> InWindZone); // Function Wind.WindInterface.UnregisterWindZone // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d7b40
-	void TriggerChange(bool ChangeInstantly); // Function Wind.WindInterface.TriggerChange // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d7ab0
-	void SetParams(struct FWindServiceParams Params); // Function Wind.WindInterface.SetParams // BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable // @ game+0x38d7a10
-	void SetGlobalWindVector(struct FVector InWindVector); // Function Wind.WindInterface.SetGlobalWindVector // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x38d7980
-	void SetGlobalWindMagnitude(float InWindMagnitude); // Function Wind.WindInterface.SetGlobalWindMagnitude // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d7900
-	void SetGlobalWindDirection(struct FVector InWindDirection); // Function Wind.WindInterface.SetGlobalWindDirection // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x38d7870
-	void SetGlobalWindAngle(float InAngle); // Function Wind.WindInterface.SetGlobalWindAngle // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d77f0
-	void SetCustomMode(bool InCustomMode); // Function Wind.WindInterface.SetCustomMode // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d76f0
-	void RegisterWindZone(TScriptInterface<struct UWindZoneInterface> InWindZone); // Function Wind.WindInterface.RegisterWindZone // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d7650
-	TScriptInterface<struct UWindZoneInterface> GetWindZoneAtLocation(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindZoneAtLocation // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d74f0
-	struct FVector GetWindVector(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindVector // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d7440
-	float GetWindMagnitude(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindMagnitude // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d7350
-	struct FVector GetWindDirection(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindDirection // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d72a0
-	float GetWindAngle(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindAngle // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d7120
-	struct FWindZoneTurbulence GetTurbulenceForTrees(struct FVector SamplePosition); // Function Wind.WindInterface.GetTurbulenceForTrees // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d7070
-	struct FWindZoneTurbulence GetTurbulence(struct FVector SamplePosition); // Function Wind.WindInterface.GetTurbulence // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d6f10
-	float GetMaxWindMagnitude(); // Function Wind.WindInterface.GetMaxWindMagnitude // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x38d6ee0
+	void UnregisterWindZone(TScriptInterface<struct UWindZoneInterface> InWindZone); // Function Wind.WindInterface.UnregisterWindZone // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38da150
+	void TriggerChange(bool ChangeInstantly); // Function Wind.WindInterface.TriggerChange // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38da0c0
+	void SetParams(struct FWindServiceParams Params); // Function Wind.WindInterface.SetParams // BlueprintAuthorityOnly|Native|Public|HasOutParms|BlueprintCallable // @ game+0x38da020
+	void SetGlobalWindVector(struct FVector InWindVector); // Function Wind.WindInterface.SetGlobalWindVector // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x38d9f90
+	void SetGlobalWindMagnitude(float InWindMagnitude); // Function Wind.WindInterface.SetGlobalWindMagnitude // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d9f10
+	void SetGlobalWindDirection(struct FVector InWindDirection); // Function Wind.WindInterface.SetGlobalWindDirection // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x38d9e80
+	void SetGlobalWindAngle(float InAngle); // Function Wind.WindInterface.SetGlobalWindAngle // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d9e00
+	void SetCustomMode(bool InCustomMode); // Function Wind.WindInterface.SetCustomMode // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d9d00
+	void RegisterWindZone(TScriptInterface<struct UWindZoneInterface> InWindZone); // Function Wind.WindInterface.RegisterWindZone // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x38d9c60
+	TScriptInterface<struct UWindZoneInterface> GetWindZoneAtLocation(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindZoneAtLocation // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9b00
+	struct FVector GetWindVector(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindVector // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9a50
+	float GetWindMagnitude(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindMagnitude // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9960
+	struct FVector GetWindDirection(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindDirection // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d98b0
+	float GetWindAngle(struct FVector SamplePosition); // Function Wind.WindInterface.GetWindAngle // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9730
+	struct FWindZoneTurbulence GetTurbulenceForTrees(struct FVector SamplePosition); // Function Wind.WindInterface.GetTurbulenceForTrees // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9680
+	struct FWindZoneTurbulence GetTurbulence(struct FVector SamplePosition); // Function Wind.WindInterface.GetTurbulence // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9520
+	float GetMaxWindMagnitude(); // Function Wind.WindInterface.GetMaxWindMagnitude // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x38d94f0
 };
 
 // Class Wind.DebugWindInterface
@@ -58,8 +58,8 @@ struct UTestWindZone : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UWindFunctions : UBlueprintFunctionLibrary {
 
-	void SetDefaultWindBlowingNorth(struct UObject* WorldContextObject); // Function Wind.WindFunctions.SetDefaultWindBlowingNorth // Final|Native|Static|Public|BlueprintCallable // @ game+0x38d7780
-	struct FVector GetWindAtLocation(struct UObject* WorldContextObject, struct FVector WorldPosition); // Function Wind.WindFunctions.GetWindAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x38d71c0
+	void SetDefaultWindBlowingNorth(struct UObject* WorldContextObject); // Function Wind.WindFunctions.SetDefaultWindBlowingNorth // Final|Native|Static|Public|BlueprintCallable // @ game+0x38d9d90
+	struct FVector GetWindAtLocation(struct UObject* WorldContextObject, struct FVector WorldPosition); // Function Wind.WindFunctions.GetWindAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x38d97d0
 };
 
 // Class Wind.WindService
@@ -74,9 +74,9 @@ struct AWindService : AActor {
 	struct TArray<TScriptInterface<struct UWindZoneInterface>> WindZones; // 0x4e0(0x10)
 	struct TArray<struct FExtraWind> ExtraWind; // 0x4f0(0x10)
 
-	void OnRep_WindMagnitude(); // Function Wind.WindService.OnRep_WindMagnitude // Final|Native|Private // @ game+0x38d7630
-	void OnRep_WindAngle(); // Function Wind.WindService.OnRep_WindAngle // Final|Native|Private // @ game+0x38d7610
-	struct FWindServiceParams GetWindParams(); // Function Wind.WindService.GetWindParams // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x38d73f0
+	void OnRep_WindMagnitude(); // Function Wind.WindService.OnRep_WindMagnitude // Final|Native|Private // @ game+0x38d9c40
+	void OnRep_WindAngle(); // Function Wind.WindService.OnRep_WindAngle // Final|Native|Private // @ game+0x38d9c20
+	struct FWindServiceParams GetWindParams(); // Function Wind.WindService.GetWindParams // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x38d9a00
 };
 
 // Class Wind.DebugWindService
@@ -89,7 +89,7 @@ struct ADebugWindService : AWindService {
 // Size: 0x28 (Inherited: 0x28)
 struct UWindServiceParamsFunctionLibrary : UBlueprintFunctionLibrary {
 
-	bool AreWindServiceParamsEqual(struct FWindServiceParams Params1, struct FWindServiceParams Params2); // Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x38d6de0
+	bool AreWindServiceParamsEqual(struct FWindServiceParams Params1, struct FWindServiceParams Params2); // Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x38d93f0
 };
 
 // Class Wind.WindZoneComponent

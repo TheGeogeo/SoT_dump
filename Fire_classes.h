@@ -5,11 +5,11 @@ struct UFlammableComponent : UActorComponent {
 	bool OnFire; // 0xd8(0x01)
 	char UnknownData_D9[0x7]; // 0xd9(0x07)
 
-	void OnRep_OnFire(); // Function Fire.FlammableComponent.OnRep_OnFire // Final|Native|Protected // @ game+0x39dfc70
-	void Multicast_NotifyExtinguished_RPC(struct FVector InExtinguishLocationWS); // Function Fire.FlammableComponent.Multicast_NotifyExtinguished_RPC // Net|Native|Event|NetMulticast|Protected|HasDefaults // @ game+0x39dfbf0
-	bool IsOnFire(); // Function Fire.FlammableComponent.IsOnFire // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x39dfbb0
-	void IncrementFireSource(); // Function Fire.FlammableComponent.IncrementFireSource // Native|Public|BlueprintCallable // @ game+0x39dfb80
-	void DecrementFireSource(); // Function Fire.FlammableComponent.DecrementFireSource // Native|Public|BlueprintCallable // @ game+0x39dfb30
+	void OnRep_OnFire(); // Function Fire.FlammableComponent.OnRep_OnFire // Final|Native|Protected // @ game+0x39e2280
+	void Multicast_NotifyExtinguished_RPC(struct FVector InExtinguishLocationWS); // Function Fire.FlammableComponent.Multicast_NotifyExtinguished_RPC // Net|Native|Event|NetMulticast|Protected|HasDefaults // @ game+0x39e2200
+	bool IsOnFire(); // Function Fire.FlammableComponent.IsOnFire // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x39e21c0
+	void IncrementFireSource(); // Function Fire.FlammableComponent.IncrementFireSource // Native|Public|BlueprintCallable // @ game+0x39e2190
+	void DecrementFireSource(); // Function Fire.FlammableComponent.DecrementFireSource // Native|Public|BlueprintCallable // @ game+0x39e2140
 };
 
 // Class Fire.ActorFlammableComponent
@@ -51,8 +51,8 @@ struct UFireStatus : UStatusBase {
 // Size: 0x28 (Inherited: 0x28)
 struct UFlammableInterface : UInterface {
 
-	void IncrementFireSource(); // Function Fire.FlammableInterface.IncrementFireSource // Native|Public|BlueprintCallable // @ game+0x39dfb60
-	void DecrementFireSource(); // Function Fire.FlammableInterface.DecrementFireSource // Native|Public|BlueprintCallable // @ game+0x39dfb10
+	void IncrementFireSource(); // Function Fire.FlammableInterface.IncrementFireSource // Native|Public|BlueprintCallable // @ game+0x39e2170
+	void DecrementFireSource(); // Function Fire.FlammableInterface.DecrementFireSource // Native|Public|BlueprintCallable // @ game+0x39e2120
 };
 
 // Class Fire.FlammableWieldableComponent
@@ -95,7 +95,7 @@ struct UFireGridCellSelectionParamsDataAsset : UDataAsset {
 // Size: 0x28 (Inherited: 0x28)
 struct UFirePropagationInterface : UInterface {
 
-	void SetAllCellsState(char State); // Function Fire.FirePropagationInterface.SetAllCellsState // BlueprintAuthorityOnly|Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x3f7b4d0
+	void SetAllCellsState(char State); // Function Fire.FirePropagationInterface.SetAllCellsState // BlueprintAuthorityOnly|Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x3f7dae0
 };
 
 // Class Fire.CookerIgnitionComponent
@@ -214,7 +214,7 @@ struct UShipFirePropagationComponent : UActorComponent {
 	struct FFireCellAudioParams FireAudioParams; // 0x408(0x40)
 	char UnknownData_448[0x58]; // 0x448(0x58)
 
-	void OnRep_CellData(); // Function Fire.ShipFirePropagationComponent.OnRep_CellData // Final|Native|Private // @ game+0x3f7b4b0
-	void OnRep_CellCharringData(); // Function Fire.ShipFirePropagationComponent.OnRep_CellCharringData // Final|Native|Private // @ game+0x3f7b490
+	void OnRep_CellData(); // Function Fire.ShipFirePropagationComponent.OnRep_CellData // Final|Native|Private // @ game+0x3f7dac0
+	void OnRep_CellCharringData(); // Function Fire.ShipFirePropagationComponent.OnRep_CellCharringData // Final|Native|Private // @ game+0x3f7daa0
 };
 

@@ -25,11 +25,11 @@ struct ABP_Placement_Garden_C : AActor {
 	float Max Draw Distance; // 0x468(0x04)
 	bool Cast Shadows; // 0x46c(0x01)
 
-	void Set Garden Parameters(float Radius, int32_t Int, bool Instances Created); // Function BP_Placement_Garden.BP_Placement_Garden_C.Set Garden Parameters // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Create Garden(); // Function BP_Placement_Garden.BP_Placement_Garden_C.Create Garden // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Initialise Instances(); // Function BP_Placement_Garden.BP_Placement_Garden_C.Initialise Instances // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Placement_Garden.BP_Placement_Garden_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Force Create Garden(); // Function BP_Placement_Garden.BP_Placement_Garden_C.Force Create Garden // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Placement_Garden(int32_t EntryPoint); // Function BP_Placement_Garden.BP_Placement_Garden_C.ExecuteUbergraph_BP_Placement_Garden //  // @ game+0x18e3b10
+	void Set Garden Parameters(float Radius, int32_t Int, bool Instances Created); // Function BP_Placement_Garden.BP_Placement_Garden_C.Set Garden Parameters // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Create Garden(); // Function BP_Placement_Garden.BP_Placement_Garden_C.Create Garden // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Initialise Instances(); // Function BP_Placement_Garden.BP_Placement_Garden_C.Initialise Instances // Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Placement_Garden.BP_Placement_Garden_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Force Create Garden(); // Function BP_Placement_Garden.BP_Placement_Garden_C.Force Create Garden // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Placement_Garden(int32_t EntryPoint); // Function BP_Placement_Garden.BP_Placement_Garden_C.ExecuteUbergraph_BP_Placement_Garden //  // @ game+0x18e5fa0
 };
 

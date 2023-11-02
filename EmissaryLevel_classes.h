@@ -15,7 +15,7 @@ struct UEmissaryActiveTableVisualiserComponent : UActorComponent {
 	struct TArray<struct FParticleVisualisation> ParticleChanges; // 0x110(0x10)
 	char UnknownData_120[0x38]; // 0x120(0x38)
 
-	void OnControllerEndPlay(char EndPlayReason); // Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay // Final|Native|Private // @ game+0x426d260
+	void OnControllerEndPlay(char EndPlayReason); // Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay // Final|Native|Private // @ game+0x426f880
 };
 
 // Class EmissaryLevel.EmissaryColourSwatchSettingsAsset
@@ -117,8 +117,8 @@ struct UEmissaryParticipantComponent : UActorComponent {
 	struct FName VotedCompany; // 0x10c(0x08)
 	char UnknownData_114[0x4]; // 0x114(0x04)
 
-	void OnRep_EmissaryLevel(); // Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel // Final|Native|Private // @ game+0x426d390
-	void OnRep_AffiliatedCompany(struct FName PreviousId); // Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany // Final|Native|Private|HasOutParms // @ game+0x426d2e0
+	void OnRep_EmissaryLevel(); // Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel // Final|Native|Private // @ game+0x426f9b0
+	void OnRep_AffiliatedCompany(struct FName PreviousId); // Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany // Final|Native|Private|HasOutParms // @ game+0x426f900
 };
 
 // Class EmissaryLevel.EmissaryRepresentationMeshComponent
@@ -152,7 +152,7 @@ struct UEmissaryShipAffiliationTrackerComponent : USceneComponent {
 	int32_t EmissaryCount; // 0x330(0x04)
 	char UnknownData_334[0x1c]; // 0x334(0x1c)
 
-	void OnRep_EmissaryCount(); // Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount // Final|Native|Private // @ game+0x426d370
+	void OnRep_EmissaryCount(); // Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount // Final|Native|Private // @ game+0x426f990
 };
 
 // Class EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase
@@ -168,7 +168,7 @@ struct UEmissaryVoyageInlineVoteConsumerBase : UVoteConsumerInlineBase {
 	struct AActor* OwningActor; // 0x110(0x08)
 	char UnknownData_118[0x8]; // 0x118(0x08)
 
-	void OnRep_Votes(); // Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes // Final|Native|Private // @ game+0x426d3b0
+	void OnRep_Votes(); // Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes // Final|Native|Private // @ game+0x426f9d0
 };
 
 // Class EmissaryLevel.StartEmissaryVoyageInlineVoteConsumer

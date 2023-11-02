@@ -24,8 +24,8 @@ struct UDeathSelfInteractionComponent : UInteractableComponent {
 	bool HasGivenUp; // 0x140(0x01)
 	char UnknownData_141[0x47]; // 0x141(0x47)
 
-	void SetGiveUpAvaliable(); // Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable // Final|Native|Private // @ game+0x3a16fc0
-	void OnRep_HasGivenUp(); // Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp // Final|Native|Private // @ game+0x3a16f20
+	void SetGiveUpAvaliable(); // Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable // Final|Native|Private // @ game+0x3a195d0
+	void OnRep_HasGivenUp(); // Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp // Final|Native|Private // @ game+0x3a19530
 };
 
 // Class Reviving.PostReviveLocomotionActionStateId
@@ -81,8 +81,8 @@ struct UReviveComponent : UInteractableComponent {
 	struct FStatus RevivableStatus; // 0x248(0x18)
 	char UnknownData_260[0x18]; // 0x260(0x18)
 
-	void OnRep_ReviveState(char PreviousReviveState); // Function Reviving.ReviveComponent.OnRep_ReviveState // Final|Native|Private // @ game+0x3a16f40
-	void HandleOwningCharacterEndPlay(); // Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay // Final|Native|Public // @ game+0x3a16f00
+	void OnRep_ReviveState(char PreviousReviveState); // Function Reviving.ReviveComponent.OnRep_ReviveState // Final|Native|Private // @ game+0x3a19550
+	void HandleOwningCharacterEndPlay(); // Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay // Final|Native|Public // @ game+0x3a19510
 };
 
 // Class Reviving.ReviveConditionalStatTrigger

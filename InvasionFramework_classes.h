@@ -2,10 +2,10 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UInvasionServiceInterface : UInterface {
 
-	struct FName GetCachedFactionIdentifierForMatchmakingCrew(struct FGuid InCrewId); // Function InvasionFramework.InvasionServiceInterface.GetCachedFactionIdentifierForMatchmakingCrew // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c395e0
-	struct FName GetCachedFactionIdentifierForInvadingCrew(struct FGuid InCrewId); // Function InvasionFramework.InvasionServiceInterface.GetCachedFactionIdentifierForInvadingCrew // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c39530
-	bool GetAggressivePassiveInvasionTargetLocationOffset(struct FGuid InCrewId, struct FVector OutTargetLocation); // Function InvasionFramework.InvasionServiceInterface.GetAggressivePassiveInvasionTargetLocationOffset // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c39430
-	bool GetAggressivePassiveInvasionResurfaceDistanceForCrewId(struct FGuid InCrewId, float OutMinDistance, float OutMaxDistance); // Function InvasionFramework.InvasionServiceInterface.GetAggressivePassiveInvasionResurfaceDistanceForCrewId // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c392f0
+	struct FName GetCachedFactionIdentifierForMatchmakingCrew(struct FGuid InCrewId); // Function InvasionFramework.InvasionServiceInterface.GetCachedFactionIdentifierForMatchmakingCrew // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c3bbf0
+	struct FName GetCachedFactionIdentifierForInvadingCrew(struct FGuid InCrewId); // Function InvasionFramework.InvasionServiceInterface.GetCachedFactionIdentifierForInvadingCrew // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c3bb40
+	bool GetAggressivePassiveInvasionTargetLocationOffset(struct FGuid InCrewId, struct FVector OutTargetLocation); // Function InvasionFramework.InvasionServiceInterface.GetAggressivePassiveInvasionTargetLocationOffset // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c3ba40
+	bool GetAggressivePassiveInvasionResurfaceDistanceForCrewId(struct FGuid InCrewId, float OutMinDistance, float OutMaxDistance); // Function InvasionFramework.InvasionServiceInterface.GetAggressivePassiveInvasionResurfaceDistanceForCrewId // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3c3b900
 };
 
 // Class InvasionFramework.DisplayInvasionBannersStep
@@ -89,8 +89,8 @@ struct AInvasionBattleBounds : AActor {
 	char UnknownData_408[0x8]; // 0x408(0x08)
 	struct TMap<struct AActor*, float> TimeAsSubmarine; // 0x410(0x50)
 
-	void OnRep_InnerRadius(); // Function InvasionFramework.InvasionBattleBounds.OnRep_InnerRadius // Final|Native|Private // @ game+0x47be0c0
-	void Multicast_ExplodeShip(struct AActor* Ship); // Function InvasionFramework.InvasionBattleBounds.Multicast_ExplodeShip // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x47be040
+	void OnRep_InnerRadius(); // Function InvasionFramework.InvasionBattleBounds.OnRep_InnerRadius // Final|Native|Private // @ game+0x47c06e0
+	void Multicast_ExplodeShip(struct AActor* Ship); // Function InvasionFramework.InvasionBattleBounds.Multicast_ExplodeShip // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x47c0660
 };
 
 // Class InvasionFramework.InvasionBattleBoundsShipComponentInterface
@@ -102,8 +102,8 @@ struct UInvasionBattleBoundsShipComponentInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UInvasionBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	bool ShouldAggressivePassiveTeleportUseEQS(); // Function InvasionFramework.InvasionBlueprintFunctionLibrary.ShouldAggressivePassiveTeleportUseEQS // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x47be190
-	float GetAggressivePassiveTeleportOffsetDistance(); // Function InvasionFramework.InvasionBlueprintFunctionLibrary.GetAggressivePassiveTeleportOffsetDistance // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x47be010
+	bool ShouldAggressivePassiveTeleportUseEQS(); // Function InvasionFramework.InvasionBlueprintFunctionLibrary.ShouldAggressivePassiveTeleportUseEQS // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x47c07b0
+	float GetAggressivePassiveTeleportOffsetDistance(); // Function InvasionFramework.InvasionBlueprintFunctionLibrary.GetAggressivePassiveTeleportOffsetDistance // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x47c0630
 };
 
 // Class InvasionFramework.InvasionLocationsDataAsset
@@ -162,7 +162,7 @@ struct AInvasionService : AActor {
 	struct TArray<struct AInvasionBattleBounds*> InvasionBattleBoundsList; // 0x5e8(0x10)
 	char UnknownData_5F8[0x68]; // 0x5f8(0x68)
 
-	void OnRep_ReplicatedInvasionCrewMusicStates(struct TArray<struct FReplicatedInvasionCrewMusicState> StaleMusicStates); // Function InvasionFramework.InvasionService.OnRep_ReplicatedInvasionCrewMusicStates // Final|Native|Private|HasOutParms // @ game+0x47be0e0
+	void OnRep_ReplicatedInvasionCrewMusicStates(struct TArray<struct FReplicatedInvasionCrewMusicState> StaleMusicStates); // Function InvasionFramework.InvasionService.OnRep_ReplicatedInvasionCrewMusicStates // Final|Native|Private|HasOutParms // @ game+0x47c0700
 };
 
 // Class InvasionFramework.InvasionSettings

@@ -45,7 +45,7 @@ struct USeasonProgressionUIComponent : UActorComponent {
 	struct FSeasonProgressionUITelemetryFragment NextReceivedEventsTelemetryData; // 0xf8(0x18)
 	char UnknownData_110[0xb0]; // 0x110(0xb0)
 
-	void OnHUDDestroyed(); // Function SeasonProgressionUI.SeasonProgressionUIComponent.OnHUDDestroyed // Final|Native|Private // @ game+0x3ddbde0
+	void OnHUDDestroyed(); // Function SeasonProgressionUI.SeasonProgressionUIComponent.OnHUDDestroyed // Final|Native|Private // @ game+0x3dde3f0
 };
 
 // Class SeasonProgressionUI.SeasonProgressionUIServiceInterface

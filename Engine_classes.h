@@ -26,30 +26,30 @@ struct UActorComponent : UObject {
 	char CreationMethod; // 0xc5(0x01)
 	char UnknownData_C6[0x2]; // 0xc6(0x02)
 
-	void ToggleActive(); // Function Engine.ActorComponent.ToggleActive // Native|Public|BlueprintCallable // @ game+0x2d3c500
-	void SetTickGroup(char NewTickGroup); // Function Engine.ActorComponent.SetTickGroup // Final|Native|Public|BlueprintCallable // @ game+0x2d3b560
-	void SetTickableWhenPaused(bool bTickableWhenPaused); // Function Engine.ActorComponent.SetTickableWhenPaused // Final|Native|Public|BlueprintCallable // @ game+0x2d3b670
-	void SetIsReplicated(bool ShouldReplicate); // Function Engine.ActorComponent.SetIsReplicated // Final|Native|Public|BlueprintCallable // @ game+0x2d3add0
-	void SetComponentTickEnabled(bool bEnabled); // Function Engine.ActorComponent.SetComponentTickEnabled // Native|Public|BlueprintCallable // @ game+0x2d3a630
-	void SetActive(bool bNewActive, bool bReset); // Function Engine.ActorComponent.SetActive // Native|Public|BlueprintCallable // @ game+0x2d39bc0
-	void RemoveTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.ActorComponent.RemoveTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d38ae0
-	void RemoveTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.ActorComponent.RemoveTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d389c0
-	void ReceiveTick(float DeltaSeconds); // Function Engine.ActorComponent.ReceiveTick // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveEndPlay(char EndPlayReason); // Function Engine.ActorComponent.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function Engine.ActorComponent.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_IsActive(); // Function Engine.ActorComponent.OnRep_IsActive // Native|Public // @ game+0x2d37840
-	void K2_DestroyComponent(struct UObject* Object); // Function Engine.ActorComponent.K2_DestroyComponent // Final|Native|Public|BlueprintCallable // @ game+0x2d356b0
-	bool IsComponentTickEnabled(); // Function Engine.ActorComponent.IsComponentTickEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33470
-	bool IsBeingDestroyed(); // Function Engine.ActorComponent.IsBeingDestroyed // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33410
-	bool IsActive(); // Function Engine.ActorComponent.IsActive // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33350
-	char GetTargetNetDormancy(); // Function Engine.ActorComponent.GetTargetNetDormancy // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32c90
-	struct AActor* GetOwner(); // Function Engine.ActorComponent.GetOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32740
-	bool FlushNetDormancy(); // Function Engine.ActorComponent.FlushNetDormancy // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d2f840
-	void Deactivate(); // Function Engine.ActorComponent.Deactivate // Native|Public|BlueprintCallable // @ game+0x2d2ee70
-	bool ComponentHasTag(struct FName Tag); // Function Engine.ActorComponent.ComponentHasTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2ece0
-	void AddTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.ActorComponent.AddTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d2bc90
-	void AddTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.ActorComponent.AddTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d2bb70
-	void Activate(bool bReset); // Function Engine.ActorComponent.Activate // Native|Public|BlueprintCallable // @ game+0x2d2b3a0
+	void ToggleActive(); // Function Engine.ActorComponent.ToggleActive // Native|Public|BlueprintCallable // @ game+0x2d3e990
+	void SetTickGroup(char NewTickGroup); // Function Engine.ActorComponent.SetTickGroup // Final|Native|Public|BlueprintCallable // @ game+0x2d3d9f0
+	void SetTickableWhenPaused(bool bTickableWhenPaused); // Function Engine.ActorComponent.SetTickableWhenPaused // Final|Native|Public|BlueprintCallable // @ game+0x2d3db00
+	void SetIsReplicated(bool ShouldReplicate); // Function Engine.ActorComponent.SetIsReplicated // Final|Native|Public|BlueprintCallable // @ game+0x2d3d260
+	void SetComponentTickEnabled(bool bEnabled); // Function Engine.ActorComponent.SetComponentTickEnabled // Native|Public|BlueprintCallable // @ game+0x2d3cac0
+	void SetActive(bool bNewActive, bool bReset); // Function Engine.ActorComponent.SetActive // Native|Public|BlueprintCallable // @ game+0x2d3c050
+	void RemoveTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.ActorComponent.RemoveTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d3af70
+	void RemoveTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.ActorComponent.RemoveTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d3ae50
+	void ReceiveTick(float DeltaSeconds); // Function Engine.ActorComponent.ReceiveTick // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveEndPlay(char EndPlayReason); // Function Engine.ActorComponent.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function Engine.ActorComponent.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_IsActive(); // Function Engine.ActorComponent.OnRep_IsActive // Native|Public // @ game+0x2d39cd0
+	void K2_DestroyComponent(struct UObject* Object); // Function Engine.ActorComponent.K2_DestroyComponent // Final|Native|Public|BlueprintCallable // @ game+0x2d37b40
+	bool IsComponentTickEnabled(); // Function Engine.ActorComponent.IsComponentTickEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35900
+	bool IsBeingDestroyed(); // Function Engine.ActorComponent.IsBeingDestroyed // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d358a0
+	bool IsActive(); // Function Engine.ActorComponent.IsActive // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d357e0
+	char GetTargetNetDormancy(); // Function Engine.ActorComponent.GetTargetNetDormancy // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35120
+	struct AActor* GetOwner(); // Function Engine.ActorComponent.GetOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34bd0
+	bool FlushNetDormancy(); // Function Engine.ActorComponent.FlushNetDormancy // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d31cd0
+	void Deactivate(); // Function Engine.ActorComponent.Deactivate // Native|Public|BlueprintCallable // @ game+0x2d31300
+	bool ComponentHasTag(struct FName Tag); // Function Engine.ActorComponent.ComponentHasTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31170
+	void AddTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.ActorComponent.AddTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d2e120
+	void AddTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.ActorComponent.AddTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d2e000
+	void Activate(bool bReset); // Function Engine.ActorComponent.Activate // Native|Public|BlueprintCallable // @ game+0x2d2d830
 };
 
 // Class Engine.DataAsset
@@ -155,129 +155,129 @@ struct AActor : UObject {
 	char UnknownData_358[0x68]; // 0x358(0x68)
 	double DormancyLingeringInSeconds; // 0x3c0(0x08)
 
-	void UserConstructionScript(); // Function Engine.Actor.UserConstructionScript // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void TearOff(); // Function Engine.Actor.TearOff // Native|Public|BlueprintCallable // @ game+0x2d3c4e0
-	void SnapRootComponentTo(struct AActor* InParentActor, struct FName InSocketName); // Function Engine.Actor.SnapRootComponentTo // Final|Native|Public|BlueprintCallable // @ game+0x2d3bc10
-	void SetTickGroup(char NewTickGroup); // Function Engine.Actor.SetTickGroup // Final|Native|Public|BlueprintCallable // @ game+0x2d3b4e0
-	void SetTickableWhenPaused(bool bTickableWhenPaused); // Function Engine.Actor.SetTickableWhenPaused // Final|Native|Public|BlueprintCallable // @ game+0x2d3b5e0
-	void SetReplicates(bool bInReplicates); // Function Engine.Actor.SetReplicates // Final|Native|Public|BlueprintCallable // @ game+0x2d3b350
-	void SetReplicateMovement(bool bInReplicateMovement); // Function Engine.Actor.SetReplicateMovement // Native|Public|BlueprintCallable // @ game+0x2d3b2c0
-	void SetOwner(struct AActor* NewOwner); // Function Engine.Actor.SetOwner // Final|Native|Public|BlueprintCallable // @ game+0x2d3b130
-	void SetLifeSpan(float InLifespan); // Function Engine.Actor.SetLifeSpan // Native|Public|BlueprintCallable // @ game+0x2d3ae60
-	void SetIgnoreNetTransformUpdates(bool bInIgnoreNetTransformUpdates); // Function Engine.Actor.SetIgnoreNetTransformUpdates // Final|Native|Public|BlueprintCallable // @ game+0x2d3ac50
-	void SetActorVisible(bool InActorVisible, bool InPropagateToComponents); // Function Engine.Actor.SetActorVisible // Final|Native|Public|BlueprintCallable // @ game+0x2d3a000
-	void SetActorTickEnabled(bool bEnabled); // Function Engine.Actor.SetActorTickEnabled // Final|Native|Public|BlueprintCallable // @ game+0x2d39f70
-	void SetActorScale3D(struct FVector NewScale3D); // Function Engine.Actor.SetActorScale3D // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d39ee0
-	bool SetActorRotation(struct FRotator NewRotation); // Function Engine.Actor.SetActorRotation // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d39e40
-	void SetActorRelativeScale3D(struct FVector NewRelativeScale); // Function Engine.Actor.SetActorRelativeScale3D // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d39db0
-	void SetActorHiddenInGame(bool bNewHidden); // Function Engine.Actor.SetActorHiddenInGame // Native|Public|BlueprintCallable // @ game+0x2d39d20
-	void SetActorEnableCollision(bool bNewActorEnableCollision); // Function Engine.Actor.SetActorEnableCollision // Final|Native|Public|BlueprintCallable // @ game+0x2d39c90
-	void RemoveTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.Actor.RemoveTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d38a50
-	void RemoveTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.Actor.RemoveTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d38930
-	void ReceiveTick(float DeltaSeconds); // Function Engine.Actor.ReceiveTick // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveRadialDamage(float DamageReceived, struct UDamageType* DamageType, struct FVector Origin, struct FHitResult HitInfo, struct AController* InstigatedBy, struct AActor* DamageCauser); // Function Engine.Actor.ReceiveRadialDamage // BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e3b10
-	void ReceivePointDamage(float Damage, struct UDamageType* DamageType, struct FVector HitLocation, struct FVector HitNormal, struct UPrimitiveComponent* HitComponent, struct FName BoneName, struct FVector ShotFromDirection, struct AController* InstigatedBy, struct AActor* DamageCauser); // Function Engine.Actor.ReceivePointDamage // BlueprintAuthorityOnly|Event|Public|HasDefaults|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveHit(struct UPrimitiveComponent* MyComp, struct AActor* Other, struct UPrimitiveComponent* OtherComp, bool bSelfMoved, struct FVector HitLocation, struct FVector HitNormal, struct FVector NormalImpulse, struct FHitResult Hit); // Function Engine.Actor.ReceiveHit // Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x2d38520
-	void ReceiveEndPlay(char EndPlayReason); // Function Engine.Actor.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveDestroyed(); // Function Engine.Actor.ReceiveDestroyed // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function Engine.Actor.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveAnyDamage(float Damage, struct UDamageType* DamageType, struct AController* InstigatedBy, struct AActor* DamageCauser); // Function Engine.Actor.ReceiveAnyDamage // BlueprintAuthorityOnly|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorOnReleased(); // Function Engine.Actor.ReceiveActorOnReleased // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorOnInputTouchLeave(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchLeave // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorOnInputTouchEnter(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnter // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorOnInputTouchEnd(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnd // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorOnInputTouchBegin(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchBegin // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorOnClicked(); // Function Engine.Actor.ReceiveActorOnClicked // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorEndOverlap(struct AActor* OtherActor); // Function Engine.Actor.ReceiveActorEndOverlap // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorEndCursorOver(); // Function Engine.Actor.ReceiveActorEndCursorOver // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorBeginOverlap(struct AActor* OtherActor); // Function Engine.Actor.ReceiveActorBeginOverlap // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveActorBeginCursorOver(); // Function Engine.Actor.ReceiveActorBeginCursorOver // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_Role(); // Function Engine.Actor.OnRep_Role // Native|Public // @ game+0x2d378e0
-	void OnRep_ReplicateMovement(); // Function Engine.Actor.OnRep_ReplicateMovement // Native|Public // @ game+0x2d378a0
-	void OnRep_ReplicatedMovement(); // Function Engine.Actor.OnRep_ReplicatedMovement // Native|Public // @ game+0x2d378c0
-	void OnRep_Instigator(); // Function Engine.Actor.OnRep_Instigator // Native|Public // @ game+0x2d37820
-	void OnRep_bActorVisible(bool OldActorVisible); // Function Engine.Actor.OnRep_bActorVisible // Final|Native|Public // @ game+0x2d379b0
-	void OnRep_AttachmentReplication(); // Function Engine.Actor.OnRep_AttachmentReplication // Native|Public // @ game+0x2d37800
-	void OnEndPlayDynamicMulticastEvent__DelegateSignature(struct AActor* EndPlayActor); // DelegateFunction Engine.Actor.OnEndPlayDynamicMulticastEvent__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
-	void OnDestroyedDynamicMulticastEvent__DelegateSignature(struct AActor* DeletedActor); // DelegateFunction Engine.Actor.OnDestroyedDynamicMulticastEvent__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
-	void MakeNoise(float Loudness, struct APawn* NoiseInstigator, struct FVector NoiseLocation, float MaxRange, struct FName Tag); // Function Engine.Actor.MakeNoise // Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d37670
-	struct UMaterialInstanceDynamic* MakeMIDForMaterial(struct UMaterialInterface* Parent); // Function Engine.Actor.MakeMIDForMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2d375e0
-	bool K2_TeleportTo(struct FVector DestLocation, struct FRotator DestRotation); // Function Engine.Actor.K2_TeleportTo // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d37240
-	bool K2_SetActorTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36210
-	void K2_SetActorRelativeTransform(struct FTransform NewRelativeTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorRelativeTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36020
-	void K2_SetActorRelativeRotation(struct FRotator NewRelativeRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorRelativeRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35e70
-	void K2_SetActorRelativeLocation(struct FVector NewRelativeLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorRelativeLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35cc0
-	bool K2_SetActorLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorLocationAndRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35ae0
-	bool K2_SetActorLocation(struct FVector NewLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35930
-	void K2_OnReset(); // Function Engine.Actor.K2_OnReset // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnEndViewTarget(struct APlayerController* PC); // Function Engine.Actor.K2_OnEndViewTarget // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnBecomeViewTarget(struct APlayerController* PC); // Function Engine.Actor.K2_OnBecomeViewTarget // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	struct USceneComponent* K2_GetRootComponent(); // Function Engine.Actor.K2_GetRootComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35900
-	struct FRotator K2_GetActorRotation(); // Function Engine.Actor.K2_GetActorRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35770
-	struct FVector K2_GetActorLocation(); // Function Engine.Actor.K2_GetActorLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35730
-	void K2_DestroyComponent(struct UActorComponent* Component); // Function Engine.Actor.K2_DestroyComponent // Final|Native|Public|BlueprintCallable // @ game+0x2d35630
-	void K2_DestroyActor(); // Function Engine.Actor.K2_DestroyActor // Native|Public|BlueprintCallable // @ game+0x2d35610
-	void K2_AttachRootComponentToActor(struct AActor* InParentActor, struct FName InSocketName, char AttachLocationType, bool bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentToActor // Final|Native|Public|BlueprintCallable // @ game+0x2d35370
-	void K2_AttachRootComponentTo(struct USceneComponent* InParent, struct FName InSocketName, char AttachLocationType, bool bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentTo // Final|Native|Public|BlueprintCallable // @ game+0x2d35220
-	void K2_AddActorWorldTransform(struct FTransform DeltaTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorWorldTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34230
-	void K2_AddActorWorldRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorWorldRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34080
-	void K2_AddActorWorldOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorWorldOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d33ed0
-	void K2_AddActorLocalTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorLocalTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d33ce0
-	void K2_AddActorLocalRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorLocalRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d33b30
-	void K2_AddActorLocalOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorLocalOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d33980
-	bool IsOverlappingActor(struct AActor* Other); // Function Engine.Actor.IsOverlappingActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33790
-	bool IsChildActor(); // Function Engine.Actor.IsChildActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33440
-	bool IsActorTickEnabled(); // Function Engine.Actor.IsActorTickEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d333b0
-	bool IsActorBeingDestroyed(); // Function Engine.Actor.IsActorBeingDestroyed // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33380
-	bool HasNetOwner(); // Function Engine.Actor.HasNetOwner // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33320
-	bool HasAuthority(); // Function Engine.Actor.HasAuthority // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d332c0
-	float GetVerticalDistanceTo(struct AActor* OtherActor); // Function Engine.Actor.GetVerticalDistanceTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33110
-	struct FVector GetVelocity(); // Function Engine.Actor.GetVelocity // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d330d0
-	struct FTransform GetTransform(); // Function Engine.Actor.GetTransform // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32f50
-	bool GetTickableWhenPaused(); // Function Engine.Actor.GetTickableWhenPaused // Final|Native|Public|BlueprintCallable // @ game+0x2d32cc0
-	char GetPxActorCapacityForPhysXAggregate(); // Function Engine.Actor.GetPxActorCapacityForPhysXAggregate // Native|Event|Public|BlueprintEvent|Const // @ game+0x2d328a0
-	struct AActor* GetParentActor(); // Function Engine.Actor.GetParentActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32790
-	struct AActor* GetOwner(); // Function Engine.Actor.GetOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32720
-	void GetOverlappingComponents(struct TArray<struct UPrimitiveComponent*> OverlappingComponents); // Function Engine.Actor.GetOverlappingComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32670
-	void GetOverlappingActors(struct TArray<struct AActor*> OverlappingActors, struct UClass* ClassFilter); // Function Engine.Actor.GetOverlappingActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32570
-	float GetLifeSpan(); // Function Engine.Actor.GetLifeSpan // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32410
-	struct UObject* GetInterfaceImplementer(struct UClass* InterfaceClass); // Function Engine.Actor.GetInterfaceImplementer // Final|Native|Public|BlueprintCallable // @ game+0x2d32380
-	struct AController* GetInstigatorController(); // Function Engine.Actor.GetInstigatorController // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32350
-	struct APawn* GetInstigator(); // Function Engine.Actor.GetInstigator // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32320
-	struct FVector GetInputVectorAxisValue(struct FKey InputAxisKey); // Function Engine.Actor.GetInputVectorAxisValue // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d320e0
-	float GetInputAxisValue(struct FName InputAxisName); // Function Engine.Actor.GetInputAxisValue // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31b50
-	float GetInputAxisKeyValue(struct FKey InputAxisKey); // Function Engine.Actor.GetInputAxisKeyValue // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31a50
-	float GetHorizontalDotProductTo(struct AActor* OtherActor); // Function Engine.Actor.GetHorizontalDotProductTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31790
-	float GetHorizontalDistanceTo(struct AActor* OtherActor); // Function Engine.Actor.GetHorizontalDistanceTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d316f0
-	float GetDotProductTo(struct AActor* OtherActor); // Function Engine.Actor.GetDotProductTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30b70
-	float GetDistanceTo(struct AActor* OtherActor); // Function Engine.Actor.GetDistanceTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30ad0
-	struct TArray<struct UActorComponent*> GetComponentsByTag(struct UClass* ComponentClass, struct FName Tag); // Function Engine.Actor.GetComponentsByTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30410
-	struct TArray<struct UActorComponent*> GetComponentsByClass(struct UClass* ComponentClass); // Function Engine.Actor.GetComponentsByClass // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30320
-	void GetComponentInterfacesByClass(struct TArray<struct UActorComponent*> OutInterfaces, struct UClass* InterfaceClass); // Function Engine.Actor.GetComponentInterfacesByClass // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d301e0
-	struct UActorComponent* GetComponentInterfaceByClass(struct UClass* InterfaceClass); // Function Engine.Actor.GetComponentInterfaceByClass // Final|Native|Public|BlueprintCallable // @ game+0x2d30150
-	struct UActorComponent* GetComponentByClass(struct UClass* ComponentClass); // Function Engine.Actor.GetComponentByClass // Native|Public // @ game+0x2d300b0
-	struct AActor* GetAttachParentActor(); // Function Engine.Actor.GetAttachParentActor // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fda0
-	bool GetActorVisible(); // Function Engine.Actor.GetActorVisible // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fca0
-	struct FVector GetActorUpVector(); // Function Engine.Actor.GetActorUpVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fc60
-	float GetActorTimeDilation(); // Function Engine.Actor.GetActorTimeDilation // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fc30
-	struct FVector GetActorScale3D(); // Function Engine.Actor.GetActorScale3D // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fbf0
-	struct FVector GetActorRightVector(); // Function Engine.Actor.GetActorRightVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fbb0
-	struct FVector GetActorRelativeScale3D(); // Function Engine.Actor.GetActorRelativeScale3D // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fb70
-	struct FVector GetActorForwardVector(); // Function Engine.Actor.GetActorForwardVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fb30
-	void GetActorEyesViewPoint(struct FVector OutLocation, struct FRotator OutRotation); // Function Engine.Actor.GetActorEyesViewPoint // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fa40
-	bool GetActorEnableCollision(); // Function Engine.Actor.GetActorEnableCollision // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fa10
-	void GetActorBounds(bool bOnlyCollidingComponents, struct FVector Origin, struct FVector BoxExtent, bool bIncludeFromChildActors); // Function Engine.Actor.GetActorBounds // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2f890
-	void ForceNetUpdate(); // Function Engine.Actor.ForceNetUpdate // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d2f870
-	bool FlushNetDormancy(); // Function Engine.Actor.FlushNetDormancy // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d2f810
-	void EnableInput(struct APlayerController* PlayerController); // Function Engine.Actor.EnableInput // Native|Public|BlueprintCallable // @ game+0x2d2f4e0
-	void DisableInput(struct APlayerController* PlayerController); // Function Engine.Actor.DisableInput // Native|Public|BlueprintCallable // @ game+0x2d2f390
-	void DetachRootComponentFromParent(bool bMaintainWorldPosition); // Function Engine.Actor.DetachRootComponentFromParent // Final|Native|Public|BlueprintCallable // @ game+0x2d2f300
-	void AttachRootComponentToNoReplication(struct USceneComponent* InParent, struct FName InSocketName, char AttachLocationType, bool bWeldSimulatedBodies); // Function Engine.Actor.AttachRootComponentToNoReplication // Final|Native|Public|BlueprintCallable // @ game+0x2d2bf70
-	void AttachActorToActorNoReplication(struct AActor* InParentActor, struct FName InSocketName, bool bWeldSimulatedBodies); // Function Engine.Actor.AttachActorToActorNoReplication // Final|Native|Public|BlueprintCallable // @ game+0x2d2be60
-	void AddTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.Actor.AddTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d2bc00
-	void AddTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.Actor.AddTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d2bae0
-	struct UActorComponent* AddComponent(struct FName TemplateName, bool bManualAttachment, struct FTransform RelativeTransform, struct UObject* ComponentTemplateContext); // Function Engine.Actor.AddComponent // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d2b5f0
-	bool ActorHasTag(struct FName Tag); // Function Engine.Actor.ActorHasTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2b4c0
+	void UserConstructionScript(); // Function Engine.Actor.UserConstructionScript // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void TearOff(); // Function Engine.Actor.TearOff // Native|Public|BlueprintCallable // @ game+0x2d3e970
+	void SnapRootComponentTo(struct AActor* InParentActor, struct FName InSocketName); // Function Engine.Actor.SnapRootComponentTo // Final|Native|Public|BlueprintCallable // @ game+0x2d3e0a0
+	void SetTickGroup(char NewTickGroup); // Function Engine.Actor.SetTickGroup // Final|Native|Public|BlueprintCallable // @ game+0x2d3d970
+	void SetTickableWhenPaused(bool bTickableWhenPaused); // Function Engine.Actor.SetTickableWhenPaused // Final|Native|Public|BlueprintCallable // @ game+0x2d3da70
+	void SetReplicates(bool bInReplicates); // Function Engine.Actor.SetReplicates // Final|Native|Public|BlueprintCallable // @ game+0x2d3d7e0
+	void SetReplicateMovement(bool bInReplicateMovement); // Function Engine.Actor.SetReplicateMovement // Native|Public|BlueprintCallable // @ game+0x2d3d750
+	void SetOwner(struct AActor* NewOwner); // Function Engine.Actor.SetOwner // Final|Native|Public|BlueprintCallable // @ game+0x2d3d5c0
+	void SetLifeSpan(float InLifespan); // Function Engine.Actor.SetLifeSpan // Native|Public|BlueprintCallable // @ game+0x2d3d2f0
+	void SetIgnoreNetTransformUpdates(bool bInIgnoreNetTransformUpdates); // Function Engine.Actor.SetIgnoreNetTransformUpdates // Final|Native|Public|BlueprintCallable // @ game+0x2d3d0e0
+	void SetActorVisible(bool InActorVisible, bool InPropagateToComponents); // Function Engine.Actor.SetActorVisible // Final|Native|Public|BlueprintCallable // @ game+0x2d3c490
+	void SetActorTickEnabled(bool bEnabled); // Function Engine.Actor.SetActorTickEnabled // Final|Native|Public|BlueprintCallable // @ game+0x2d3c400
+	void SetActorScale3D(struct FVector NewScale3D); // Function Engine.Actor.SetActorScale3D // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3c370
+	bool SetActorRotation(struct FRotator NewRotation); // Function Engine.Actor.SetActorRotation // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3c2d0
+	void SetActorRelativeScale3D(struct FVector NewRelativeScale); // Function Engine.Actor.SetActorRelativeScale3D // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3c240
+	void SetActorHiddenInGame(bool bNewHidden); // Function Engine.Actor.SetActorHiddenInGame // Native|Public|BlueprintCallable // @ game+0x2d3c1b0
+	void SetActorEnableCollision(bool bNewActorEnableCollision); // Function Engine.Actor.SetActorEnableCollision // Final|Native|Public|BlueprintCallable // @ game+0x2d3c120
+	void RemoveTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.Actor.RemoveTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d3aee0
+	void RemoveTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.Actor.RemoveTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d3adc0
+	void ReceiveTick(float DeltaSeconds); // Function Engine.Actor.ReceiveTick // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveRadialDamage(float DamageReceived, struct UDamageType* DamageType, struct FVector Origin, struct FHitResult HitInfo, struct AController* InstigatedBy, struct AActor* DamageCauser); // Function Engine.Actor.ReceiveRadialDamage // BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
+	void ReceivePointDamage(float Damage, struct UDamageType* DamageType, struct FVector HitLocation, struct FVector HitNormal, struct UPrimitiveComponent* HitComponent, struct FName BoneName, struct FVector ShotFromDirection, struct AController* InstigatedBy, struct AActor* DamageCauser); // Function Engine.Actor.ReceivePointDamage // BlueprintAuthorityOnly|Event|Public|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveHit(struct UPrimitiveComponent* MyComp, struct AActor* Other, struct UPrimitiveComponent* OtherComp, bool bSelfMoved, struct FVector HitLocation, struct FVector HitNormal, struct FVector NormalImpulse, struct FHitResult Hit); // Function Engine.Actor.ReceiveHit // Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x2d3a9b0
+	void ReceiveEndPlay(char EndPlayReason); // Function Engine.Actor.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveDestroyed(); // Function Engine.Actor.ReceiveDestroyed // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function Engine.Actor.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveAnyDamage(float Damage, struct UDamageType* DamageType, struct AController* InstigatedBy, struct AActor* DamageCauser); // Function Engine.Actor.ReceiveAnyDamage // BlueprintAuthorityOnly|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorOnReleased(); // Function Engine.Actor.ReceiveActorOnReleased // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorOnInputTouchLeave(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchLeave // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorOnInputTouchEnter(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnter // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorOnInputTouchEnd(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnd // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorOnInputTouchBegin(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchBegin // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorOnClicked(); // Function Engine.Actor.ReceiveActorOnClicked // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorEndOverlap(struct AActor* OtherActor); // Function Engine.Actor.ReceiveActorEndOverlap // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorEndCursorOver(); // Function Engine.Actor.ReceiveActorEndCursorOver // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorBeginOverlap(struct AActor* OtherActor); // Function Engine.Actor.ReceiveActorBeginOverlap // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveActorBeginCursorOver(); // Function Engine.Actor.ReceiveActorBeginCursorOver // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_Role(); // Function Engine.Actor.OnRep_Role // Native|Public // @ game+0x2d39d70
+	void OnRep_ReplicateMovement(); // Function Engine.Actor.OnRep_ReplicateMovement // Native|Public // @ game+0x2d39d30
+	void OnRep_ReplicatedMovement(); // Function Engine.Actor.OnRep_ReplicatedMovement // Native|Public // @ game+0x2d39d50
+	void OnRep_Instigator(); // Function Engine.Actor.OnRep_Instigator // Native|Public // @ game+0x2d39cb0
+	void OnRep_bActorVisible(bool OldActorVisible); // Function Engine.Actor.OnRep_bActorVisible // Final|Native|Public // @ game+0x2d39e40
+	void OnRep_AttachmentReplication(); // Function Engine.Actor.OnRep_AttachmentReplication // Native|Public // @ game+0x2d39c90
+	void OnEndPlayDynamicMulticastEvent__DelegateSignature(struct AActor* EndPlayActor); // DelegateFunction Engine.Actor.OnEndPlayDynamicMulticastEvent__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
+	void OnDestroyedDynamicMulticastEvent__DelegateSignature(struct AActor* DeletedActor); // DelegateFunction Engine.Actor.OnDestroyedDynamicMulticastEvent__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
+	void MakeNoise(float Loudness, struct APawn* NoiseInstigator, struct FVector NoiseLocation, float MaxRange, struct FName Tag); // Function Engine.Actor.MakeNoise // Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d39b00
+	struct UMaterialInstanceDynamic* MakeMIDForMaterial(struct UMaterialInterface* Parent); // Function Engine.Actor.MakeMIDForMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2d39a70
+	bool K2_TeleportTo(struct FVector DestLocation, struct FRotator DestRotation); // Function Engine.Actor.K2_TeleportTo // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d396d0
+	bool K2_SetActorTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d386a0
+	void K2_SetActorRelativeTransform(struct FTransform NewRelativeTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorRelativeTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d384b0
+	void K2_SetActorRelativeRotation(struct FRotator NewRelativeRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorRelativeRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38300
+	void K2_SetActorRelativeLocation(struct FVector NewRelativeLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorRelativeLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38150
+	bool K2_SetActorLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorLocationAndRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d37f70
+	bool K2_SetActorLocation(struct FVector NewLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_SetActorLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d37dc0
+	void K2_OnReset(); // Function Engine.Actor.K2_OnReset // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnEndViewTarget(struct APlayerController* PC); // Function Engine.Actor.K2_OnEndViewTarget // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnBecomeViewTarget(struct APlayerController* PC); // Function Engine.Actor.K2_OnBecomeViewTarget // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	struct USceneComponent* K2_GetRootComponent(); // Function Engine.Actor.K2_GetRootComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37d90
+	struct FRotator K2_GetActorRotation(); // Function Engine.Actor.K2_GetActorRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37c00
+	struct FVector K2_GetActorLocation(); // Function Engine.Actor.K2_GetActorLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37bc0
+	void K2_DestroyComponent(struct UActorComponent* Component); // Function Engine.Actor.K2_DestroyComponent // Final|Native|Public|BlueprintCallable // @ game+0x2d37ac0
+	void K2_DestroyActor(); // Function Engine.Actor.K2_DestroyActor // Native|Public|BlueprintCallable // @ game+0x2d37aa0
+	void K2_AttachRootComponentToActor(struct AActor* InParentActor, struct FName InSocketName, char AttachLocationType, bool bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentToActor // Final|Native|Public|BlueprintCallable // @ game+0x2d37800
+	void K2_AttachRootComponentTo(struct USceneComponent* InParent, struct FName InSocketName, char AttachLocationType, bool bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentTo // Final|Native|Public|BlueprintCallable // @ game+0x2d376b0
+	void K2_AddActorWorldTransform(struct FTransform DeltaTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorWorldTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d366c0
+	void K2_AddActorWorldRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorWorldRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36510
+	void K2_AddActorWorldOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorWorldOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36360
+	void K2_AddActorLocalTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorLocalTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36170
+	void K2_AddActorLocalRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorLocalRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35fc0
+	void K2_AddActorLocalOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.Actor.K2_AddActorLocalOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35e10
+	bool IsOverlappingActor(struct AActor* Other); // Function Engine.Actor.IsOverlappingActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35c20
+	bool IsChildActor(); // Function Engine.Actor.IsChildActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d358d0
+	bool IsActorTickEnabled(); // Function Engine.Actor.IsActorTickEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35840
+	bool IsActorBeingDestroyed(); // Function Engine.Actor.IsActorBeingDestroyed // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35810
+	bool HasNetOwner(); // Function Engine.Actor.HasNetOwner // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d357b0
+	bool HasAuthority(); // Function Engine.Actor.HasAuthority // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35750
+	float GetVerticalDistanceTo(struct AActor* OtherActor); // Function Engine.Actor.GetVerticalDistanceTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d355a0
+	struct FVector GetVelocity(); // Function Engine.Actor.GetVelocity // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35560
+	struct FTransform GetTransform(); // Function Engine.Actor.GetTransform // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d353e0
+	bool GetTickableWhenPaused(); // Function Engine.Actor.GetTickableWhenPaused // Final|Native|Public|BlueprintCallable // @ game+0x2d35150
+	char GetPxActorCapacityForPhysXAggregate(); // Function Engine.Actor.GetPxActorCapacityForPhysXAggregate // Native|Event|Public|BlueprintEvent|Const // @ game+0x2d34d30
+	struct AActor* GetParentActor(); // Function Engine.Actor.GetParentActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34c20
+	struct AActor* GetOwner(); // Function Engine.Actor.GetOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34bb0
+	void GetOverlappingComponents(struct TArray<struct UPrimitiveComponent*> OverlappingComponents); // Function Engine.Actor.GetOverlappingComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34b00
+	void GetOverlappingActors(struct TArray<struct AActor*> OverlappingActors, struct UClass* ClassFilter); // Function Engine.Actor.GetOverlappingActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34a00
+	float GetLifeSpan(); // Function Engine.Actor.GetLifeSpan // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d348a0
+	struct UObject* GetInterfaceImplementer(struct UClass* InterfaceClass); // Function Engine.Actor.GetInterfaceImplementer // Final|Native|Public|BlueprintCallable // @ game+0x2d34810
+	struct AController* GetInstigatorController(); // Function Engine.Actor.GetInstigatorController // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d347e0
+	struct APawn* GetInstigator(); // Function Engine.Actor.GetInstigator // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d347b0
+	struct FVector GetInputVectorAxisValue(struct FKey InputAxisKey); // Function Engine.Actor.GetInputVectorAxisValue // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34570
+	float GetInputAxisValue(struct FName InputAxisName); // Function Engine.Actor.GetInputAxisValue // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33fe0
+	float GetInputAxisKeyValue(struct FKey InputAxisKey); // Function Engine.Actor.GetInputAxisKeyValue // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33ee0
+	float GetHorizontalDotProductTo(struct AActor* OtherActor); // Function Engine.Actor.GetHorizontalDotProductTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33c20
+	float GetHorizontalDistanceTo(struct AActor* OtherActor); // Function Engine.Actor.GetHorizontalDistanceTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33b80
+	float GetDotProductTo(struct AActor* OtherActor); // Function Engine.Actor.GetDotProductTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33000
+	float GetDistanceTo(struct AActor* OtherActor); // Function Engine.Actor.GetDistanceTo // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32f60
+	struct TArray<struct UActorComponent*> GetComponentsByTag(struct UClass* ComponentClass, struct FName Tag); // Function Engine.Actor.GetComponentsByTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d328a0
+	struct TArray<struct UActorComponent*> GetComponentsByClass(struct UClass* ComponentClass); // Function Engine.Actor.GetComponentsByClass // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d327b0
+	void GetComponentInterfacesByClass(struct TArray<struct UActorComponent*> OutInterfaces, struct UClass* InterfaceClass); // Function Engine.Actor.GetComponentInterfacesByClass // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32670
+	struct UActorComponent* GetComponentInterfaceByClass(struct UClass* InterfaceClass); // Function Engine.Actor.GetComponentInterfaceByClass // Final|Native|Public|BlueprintCallable // @ game+0x2d325e0
+	struct UActorComponent* GetComponentByClass(struct UClass* ComponentClass); // Function Engine.Actor.GetComponentByClass // Native|Public // @ game+0x2d32540
+	struct AActor* GetAttachParentActor(); // Function Engine.Actor.GetAttachParentActor // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32230
+	bool GetActorVisible(); // Function Engine.Actor.GetActorVisible // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32130
+	struct FVector GetActorUpVector(); // Function Engine.Actor.GetActorUpVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d320f0
+	float GetActorTimeDilation(); // Function Engine.Actor.GetActorTimeDilation // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d320c0
+	struct FVector GetActorScale3D(); // Function Engine.Actor.GetActorScale3D // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32080
+	struct FVector GetActorRightVector(); // Function Engine.Actor.GetActorRightVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32040
+	struct FVector GetActorRelativeScale3D(); // Function Engine.Actor.GetActorRelativeScale3D // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32000
+	struct FVector GetActorForwardVector(); // Function Engine.Actor.GetActorForwardVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31fc0
+	void GetActorEyesViewPoint(struct FVector OutLocation, struct FRotator OutRotation); // Function Engine.Actor.GetActorEyesViewPoint // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31ed0
+	bool GetActorEnableCollision(); // Function Engine.Actor.GetActorEnableCollision // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31ea0
+	void GetActorBounds(bool bOnlyCollidingComponents, struct FVector Origin, struct FVector BoxExtent, bool bIncludeFromChildActors); // Function Engine.Actor.GetActorBounds // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31d20
+	void ForceNetUpdate(); // Function Engine.Actor.ForceNetUpdate // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d31d00
+	bool FlushNetDormancy(); // Function Engine.Actor.FlushNetDormancy // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d31ca0
+	void EnableInput(struct APlayerController* PlayerController); // Function Engine.Actor.EnableInput // Native|Public|BlueprintCallable // @ game+0x2d31970
+	void DisableInput(struct APlayerController* PlayerController); // Function Engine.Actor.DisableInput // Native|Public|BlueprintCallable // @ game+0x2d31820
+	void DetachRootComponentFromParent(bool bMaintainWorldPosition); // Function Engine.Actor.DetachRootComponentFromParent // Final|Native|Public|BlueprintCallable // @ game+0x2d31790
+	void AttachRootComponentToNoReplication(struct USceneComponent* InParent, struct FName InSocketName, char AttachLocationType, bool bWeldSimulatedBodies); // Function Engine.Actor.AttachRootComponentToNoReplication // Final|Native|Public|BlueprintCallable // @ game+0x2d2e400
+	void AttachActorToActorNoReplication(struct AActor* InParentActor, struct FName InSocketName, bool bWeldSimulatedBodies); // Function Engine.Actor.AttachActorToActorNoReplication // Final|Native|Public|BlueprintCallable // @ game+0x2d2e2f0
+	void AddTickPrerequisiteComponent(struct UActorComponent* PrerequisiteComponent); // Function Engine.Actor.AddTickPrerequisiteComponent // Native|Public|BlueprintCallable // @ game+0x2d2e090
+	void AddTickPrerequisiteActor(struct AActor* PrerequisiteActor); // Function Engine.Actor.AddTickPrerequisiteActor // Native|Public|BlueprintCallable // @ game+0x2d2df70
+	struct UActorComponent* AddComponent(struct FName TemplateName, bool bManualAttachment, struct FTransform RelativeTransform, struct UObject* ComponentTemplateContext); // Function Engine.Actor.AddComponent // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d2da80
+	bool ActorHasTag(struct FName Tag); // Function Engine.Actor.ActorHasTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2d950
 };
 
 // Class Engine.BlueprintFunctionLibrary
@@ -331,62 +331,62 @@ struct USceneComponent : UActorComponent {
 	struct TArray<struct AActor*> MovedActors; // 0x278(0x10)
 	char UnknownData_288[0x58]; // 0x288(0x58)
 
-	void ToggleVisibility(bool bPropagateToChildren); // Function Engine.SceneComponent.ToggleVisibility // Final|Native|Public|BlueprintCallable // @ game+0x2d3c5b0
-	void SnapTo(struct USceneComponent* InParent, struct FName InSocketName); // Function Engine.SceneComponent.SnapTo // Final|Native|Public|BlueprintCallable // @ game+0x2d3bcd0
-	bool SharesBasis(struct USceneComponent* Other); // Function Engine.SceneComponent.SharesBasis // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3bb80
-	void SetWorldScale3D(struct FVector NewScale); // Function Engine.SceneComponent.SetWorldScale3D // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3baf0
-	void SetVisibility(bool bNewVisibility, bool bPropagateToChildren); // Function Engine.SceneComponent.SetVisibility // Native|Public|BlueprintCallable // @ game+0x2d3b910
-	void SetRelativeScale3D(struct FVector NewScale3D); // Function Engine.SceneComponent.SetRelativeScale3D // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3b230
-	void SetHiddenInGame(bool NewHidden, bool bPropagateToChildren); // Function Engine.SceneComponent.SetHiddenInGame // Native|Public|BlueprintCallable // @ game+0x2d3aa60
-	void SetAbsolute(bool bNewAbsoluteLocation, bool bNewAbsoluteRotation, bool bNewAbsoluteScale); // Function Engine.SceneComponent.SetAbsolute // Final|Native|Public|BlueprintCallable // @ game+0x2d39aa0
-	void ResetRelativeTransform(); // Function Engine.SceneComponent.ResetRelativeTransform // Final|Native|Public|BlueprintCallable // @ game+0x2d38bd0
-	void OnRep_Visibility(bool OldValue); // Function Engine.SceneComponent.OnRep_Visibility // Final|Native|Private // @ game+0x2d37920
-	void OnRep_Transform(); // Function Engine.SceneComponent.OnRep_Transform // Final|Native|Private // @ game+0x2d37900
-	bool K2_TryGetCachedSocketVelocity(struct FName SocketName, struct FVector OutVelocity); // Function Engine.SceneComponent.K2_TryGetCachedSocketVelocity // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37330
-	void K2_SetWorldTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d37050
-	void K2_SetWorldRotation(struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36ea0
-	void K2_SetWorldLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocationAndRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36cd0
-	void K2_SetWorldLocation(struct FVector NewLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36b20
-	void K2_SetRelativeTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36930
-	void K2_SetRelativeRotation(struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36780
-	void K2_SetRelativeLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d365b0
-	void K2_SetRelativeLocation(struct FVector NewLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36400
-	struct FTransform K2_GetComponentToWorld(); // Function Engine.SceneComponent.K2_GetComponentToWorld // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35870
-	struct FVector K2_GetComponentScale(); // Function Engine.SceneComponent.K2_GetComponentScale // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35830
-	struct FRotator K2_GetComponentRotation(); // Function Engine.SceneComponent.K2_GetComponentRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d357f0
-	struct FVector K2_GetComponentLocation(); // Function Engine.SceneComponent.K2_GetComponentLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d357b0
-	void K2_AttachTo(struct USceneComponent* InParent, struct FName InSocketName, char AttachType, bool bWeldSimulatedBodies); // Function Engine.SceneComponent.K2_AttachTo // Final|Native|Public|BlueprintCallable // @ game+0x2d354c0
-	void K2_AddWorldTransform(struct FTransform DeltaTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddWorldTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d35030
-	void K2_AddWorldRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddWorldRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34e80
-	void K2_AddWorldOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddWorldOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34cd0
-	void K2_AddRelativeRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddRelativeRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34b20
-	void K2_AddRelativeLocation(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddRelativeLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34970
-	void K2_AddLocalTransform(struct FTransform DeltaTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddLocalTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34780
-	void K2_AddLocalRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddLocalRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d345d0
-	void K2_AddLocalOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddLocalOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d34420
-	bool IsVisible(); // Function Engine.SceneComponent.IsVisible // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33950
-	bool IsSimulatingPhysics(struct FName BoneName); // Function Engine.SceneComponent.IsSimulatingPhysics // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d338b0
-	bool IsAnySimulatingPhysics(); // Function Engine.SceneComponent.IsAnySimulatingPhysics // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d333e0
-	struct FVector GetUpVector(); // Function Engine.SceneComponent.GetUpVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32fb0
-	struct FTransform GetSocketTransform(struct FName InSocketName, char TransformSpace); // Function Engine.SceneComponent.GetSocketTransform // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32b70
-	struct FRotator GetSocketRotation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32ac0
-	struct FQuat GetSocketQuaternion(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketQuaternion // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32a20
-	struct FVector GetSocketLocation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32970
-	struct FVector GetRightVector(); // Function Engine.SceneComponent.GetRightVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32930
-	struct FTransform GetRelativeTransform(); // Function Engine.SceneComponent.GetRelativeTransform // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d328d0
-	struct APhysicsVolume* GetPhysicsVolume(); // Function Engine.SceneComponent.GetPhysicsVolume // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32870
-	void GetParentComponents(struct TArray<struct USceneComponent*> Parents); // Function Engine.SceneComponent.GetParentComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d327c0
-	int32_t GetNumChildrenComponents(); // Function Engine.SceneComponent.GetNumChildrenComponents // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32540
-	struct FVector GetForwardVector(); // Function Engine.SceneComponent.GetForwardVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30d20
-	struct FVector GetComponentVelocity(); // Function Engine.SceneComponent.GetComponentVelocity // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d302e0
-	void GetChildrenComponents(bool bIncludeAllDescendants, struct TArray<struct USceneComponent*> Children); // Function Engine.SceneComponent.GetChildrenComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2ff90
-	struct USceneComponent* GetChildComponent(int32_t ChildIndex); // Function Engine.SceneComponent.GetChildComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2ff00
-	struct FName GetAttachSocketName(); // Function Engine.SceneComponent.GetAttachSocketName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fdd0
-	struct USceneComponent* GetAttachParent(); // Function Engine.SceneComponent.GetAttachParent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fd70
-	struct FTransform GetAttachedBasisTransform(); // Function Engine.SceneComponent.GetAttachedBasisTransform // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fdf0
-	struct TArray<struct FName> GetAllSocketNames(); // Function Engine.SceneComponent.GetAllSocketNames // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fcd0
-	bool DoesSocketExist(struct FName InSocketName); // Function Engine.SceneComponent.DoesSocketExist // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2f420
-	void DetachFromParent(bool bMaintainWorldPosition, bool bCallModify); // Function Engine.SceneComponent.DetachFromParent // Native|Public|BlueprintCallable // @ game+0x2d2f230
+	void ToggleVisibility(bool bPropagateToChildren); // Function Engine.SceneComponent.ToggleVisibility // Final|Native|Public|BlueprintCallable // @ game+0x2d3ea40
+	void SnapTo(struct USceneComponent* InParent, struct FName InSocketName); // Function Engine.SceneComponent.SnapTo // Final|Native|Public|BlueprintCallable // @ game+0x2d3e160
+	bool SharesBasis(struct USceneComponent* Other); // Function Engine.SceneComponent.SharesBasis // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3e010
+	void SetWorldScale3D(struct FVector NewScale); // Function Engine.SceneComponent.SetWorldScale3D // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3df80
+	void SetVisibility(bool bNewVisibility, bool bPropagateToChildren); // Function Engine.SceneComponent.SetVisibility // Native|Public|BlueprintCallable // @ game+0x2d3dda0
+	void SetRelativeScale3D(struct FVector NewScale3D); // Function Engine.SceneComponent.SetRelativeScale3D // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3d6c0
+	void SetHiddenInGame(bool NewHidden, bool bPropagateToChildren); // Function Engine.SceneComponent.SetHiddenInGame // Native|Public|BlueprintCallable // @ game+0x2d3cef0
+	void SetAbsolute(bool bNewAbsoluteLocation, bool bNewAbsoluteRotation, bool bNewAbsoluteScale); // Function Engine.SceneComponent.SetAbsolute // Final|Native|Public|BlueprintCallable // @ game+0x2d3bf30
+	void ResetRelativeTransform(); // Function Engine.SceneComponent.ResetRelativeTransform // Final|Native|Public|BlueprintCallable // @ game+0x2d3b060
+	void OnRep_Visibility(bool OldValue); // Function Engine.SceneComponent.OnRep_Visibility // Final|Native|Private // @ game+0x2d39db0
+	void OnRep_Transform(); // Function Engine.SceneComponent.OnRep_Transform // Final|Native|Private // @ game+0x2d39d90
+	bool K2_TryGetCachedSocketVelocity(struct FName SocketName, struct FVector OutVelocity); // Function Engine.SceneComponent.K2_TryGetCachedSocketVelocity // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d397c0
+	void K2_SetWorldTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d394e0
+	void K2_SetWorldRotation(struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d39330
+	void K2_SetWorldLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocationAndRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d39160
+	void K2_SetWorldLocation(struct FVector NewLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38fb0
+	void K2_SetRelativeTransform(struct FTransform NewTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38dc0
+	void K2_SetRelativeRotation(struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38c10
+	void K2_SetRelativeLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38a40
+	void K2_SetRelativeLocation(struct FVector NewLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d38890
+	struct FTransform K2_GetComponentToWorld(); // Function Engine.SceneComponent.K2_GetComponentToWorld // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37d00
+	struct FVector K2_GetComponentScale(); // Function Engine.SceneComponent.K2_GetComponentScale // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37cc0
+	struct FRotator K2_GetComponentRotation(); // Function Engine.SceneComponent.K2_GetComponentRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37c80
+	struct FVector K2_GetComponentLocation(); // Function Engine.SceneComponent.K2_GetComponentLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37c40
+	void K2_AttachTo(struct USceneComponent* InParent, struct FName InSocketName, char AttachType, bool bWeldSimulatedBodies); // Function Engine.SceneComponent.K2_AttachTo // Final|Native|Public|BlueprintCallable // @ game+0x2d37950
+	void K2_AddWorldTransform(struct FTransform DeltaTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddWorldTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d374c0
+	void K2_AddWorldRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddWorldRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d37310
+	void K2_AddWorldOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddWorldOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d37160
+	void K2_AddRelativeRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddRelativeRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36fb0
+	void K2_AddRelativeLocation(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddRelativeLocation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36e00
+	void K2_AddLocalTransform(struct FTransform DeltaTransform, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddLocalTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36c10
+	void K2_AddLocalRotation(struct FRotator DeltaRotation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddLocalRotation // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d36a60
+	void K2_AddLocalOffset(struct FVector DeltaLocation, bool bSweep, struct FHitResult SweepHitResult, bool bTeleport); // Function Engine.SceneComponent.K2_AddLocalOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d368b0
+	bool IsVisible(); // Function Engine.SceneComponent.IsVisible // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35de0
+	bool IsSimulatingPhysics(struct FName BoneName); // Function Engine.SceneComponent.IsSimulatingPhysics // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35d40
+	bool IsAnySimulatingPhysics(); // Function Engine.SceneComponent.IsAnySimulatingPhysics // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35870
+	struct FVector GetUpVector(); // Function Engine.SceneComponent.GetUpVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35440
+	struct FTransform GetSocketTransform(struct FName InSocketName, char TransformSpace); // Function Engine.SceneComponent.GetSocketTransform // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35000
+	struct FRotator GetSocketRotation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34f50
+	struct FQuat GetSocketQuaternion(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketQuaternion // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34eb0
+	struct FVector GetSocketLocation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34e00
+	struct FVector GetRightVector(); // Function Engine.SceneComponent.GetRightVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34dc0
+	struct FTransform GetRelativeTransform(); // Function Engine.SceneComponent.GetRelativeTransform // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34d60
+	struct APhysicsVolume* GetPhysicsVolume(); // Function Engine.SceneComponent.GetPhysicsVolume // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34d00
+	void GetParentComponents(struct TArray<struct USceneComponent*> Parents); // Function Engine.SceneComponent.GetParentComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34c50
+	int32_t GetNumChildrenComponents(); // Function Engine.SceneComponent.GetNumChildrenComponents // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d349d0
+	struct FVector GetForwardVector(); // Function Engine.SceneComponent.GetForwardVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d331b0
+	struct FVector GetComponentVelocity(); // Function Engine.SceneComponent.GetComponentVelocity // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32770
+	void GetChildrenComponents(bool bIncludeAllDescendants, struct TArray<struct USceneComponent*> Children); // Function Engine.SceneComponent.GetChildrenComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32420
+	struct USceneComponent* GetChildComponent(int32_t ChildIndex); // Function Engine.SceneComponent.GetChildComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32390
+	struct FName GetAttachSocketName(); // Function Engine.SceneComponent.GetAttachSocketName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32260
+	struct USceneComponent* GetAttachParent(); // Function Engine.SceneComponent.GetAttachParent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32200
+	struct FTransform GetAttachedBasisTransform(); // Function Engine.SceneComponent.GetAttachedBasisTransform // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32280
+	struct TArray<struct FName> GetAllSocketNames(); // Function Engine.SceneComponent.GetAllSocketNames // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32160
+	bool DoesSocketExist(struct FName InSocketName); // Function Engine.SceneComponent.DoesSocketExist // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d318b0
+	void DetachFromParent(bool bMaintainWorldPosition, bool bCallModify); // Function Engine.SceneComponent.DetachFromParent // Native|Public|BlueprintCallable // @ game+0x2d316c0
 };
 
 // Class Engine.Pawn
@@ -414,32 +414,32 @@ struct APawn : AActor {
 	struct FVector LastControlInputVector; // 0x42c(0x0c)
 	char UnknownData_438[0x8]; // 0x438(0x08)
 
-	void SpawnDefaultController(); // Function Engine.Pawn.SpawnDefaultController // Native|Public|BlueprintCallable // @ game+0x2e419c0
-	void SetCanAffectNavigationGeneration(bool bNewValue); // Function Engine.Pawn.SetCanAffectNavigationGeneration // Final|Native|Public|BlueprintCallable // @ game+0x2e3c620
-	void ReceiveUnpossessed(struct AController* OldController); // Function Engine.Pawn.ReceiveUnpossessed // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceivePossessed(struct AController* NewController); // Function Engine.Pawn.ReceivePossessed // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void PawnMakeNoise(float Loudness, struct FVector NoiseLocation, bool bUseNoiseMakerLocation, struct AActor* NoiseMaker); // Function Engine.Pawn.PawnMakeNoise // Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e39940
-	void OnRep_PlayerState(); // Function Engine.Pawn.OnRep_PlayerState // Native|Public // @ game+0x2e39580
-	void OnRep_Controller(); // Function Engine.Pawn.OnRep_Controller // Native|Public // @ game+0x2e394e0
-	void LaunchPawn(struct FVector LaunchVelocity, bool bXYOverride, bool bZOverride); // Function Engine.Pawn.LaunchPawn // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e38c40
-	struct FVector K2_GetMovementInputVector(); // Function Engine.Pawn.K2_GetMovementInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e386b0
-	bool IsMoveInputIgnored(); // Function Engine.Pawn.IsMoveInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38160
-	bool IsLocallyControlled(); // Function Engine.Pawn.IsLocallyControlled // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38100
-	bool IsControlled(); // Function Engine.Pawn.IsControlled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37f50
-	struct FVector GetPendingMovementInputVector(); // Function Engine.Pawn.GetPendingMovementInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34ff0
-	struct FVector GetNavAgentLocation(); // Function Engine.Pawn.GetNavAgentLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34460
-	struct UPawnMovementComponent* GetMovementComponent(); // Function Engine.Pawn.GetMovementComponent // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34390
-	struct AActor* GetMovementBaseActor(struct APawn* Pawn); // Function Engine.Pawn.GetMovementBaseActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2e34310
-	struct FVector GetLastMovementInputVector(); // Function Engine.Pawn.GetLastMovementInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33960
-	struct FRotator GetControlRotation(); // Function Engine.Pawn.GetControlRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33130
-	struct AController* GetController(); // Function Engine.Pawn.GetController // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33170
-	struct FRotator GetBaseAimRotation(); // Function Engine.Pawn.GetBaseAimRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32b50
-	void DetachFromControllerPendingDestroy(); // Function Engine.Pawn.DetachFromControllerPendingDestroy // Native|Public|BlueprintCallable // @ game+0x2e30bd0
-	struct FVector ConsumeMovementInputVector(); // Function Engine.Pawn.ConsumeMovementInputVector // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e304c0
-	void AddMovementInput(struct FVector WorldDirection, float ScaleValue, bool bForce); // Function Engine.Pawn.AddMovementInput // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2f380
-	void AddControllerYawInput(float Val); // Function Engine.Pawn.AddControllerYawInput // Native|Public|BlueprintCallable // @ game+0x2e2e5f0
-	void AddControllerRollInput(float Val); // Function Engine.Pawn.AddControllerRollInput // Native|Public|BlueprintCallable // @ game+0x2e2e570
-	void AddControllerPitchInput(float Val); // Function Engine.Pawn.AddControllerPitchInput // Native|Public|BlueprintCallable // @ game+0x2e2e4f0
+	void SpawnDefaultController(); // Function Engine.Pawn.SpawnDefaultController // Native|Public|BlueprintCallable // @ game+0x2e43e50
+	void SetCanAffectNavigationGeneration(bool bNewValue); // Function Engine.Pawn.SetCanAffectNavigationGeneration // Final|Native|Public|BlueprintCallable // @ game+0x2e3eab0
+	void ReceiveUnpossessed(struct AController* OldController); // Function Engine.Pawn.ReceiveUnpossessed // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceivePossessed(struct AController* NewController); // Function Engine.Pawn.ReceivePossessed // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void PawnMakeNoise(float Loudness, struct FVector NoiseLocation, bool bUseNoiseMakerLocation, struct AActor* NoiseMaker); // Function Engine.Pawn.PawnMakeNoise // Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3bdd0
+	void OnRep_PlayerState(); // Function Engine.Pawn.OnRep_PlayerState // Native|Public // @ game+0x2e3ba10
+	void OnRep_Controller(); // Function Engine.Pawn.OnRep_Controller // Native|Public // @ game+0x2e3b970
+	void LaunchPawn(struct FVector LaunchVelocity, bool bXYOverride, bool bZOverride); // Function Engine.Pawn.LaunchPawn // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3b0d0
+	struct FVector K2_GetMovementInputVector(); // Function Engine.Pawn.K2_GetMovementInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3ab40
+	bool IsMoveInputIgnored(); // Function Engine.Pawn.IsMoveInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a5f0
+	bool IsLocallyControlled(); // Function Engine.Pawn.IsLocallyControlled // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a590
+	bool IsControlled(); // Function Engine.Pawn.IsControlled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a3e0
+	struct FVector GetPendingMovementInputVector(); // Function Engine.Pawn.GetPendingMovementInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37480
+	struct FVector GetNavAgentLocation(); // Function Engine.Pawn.GetNavAgentLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e368f0
+	struct UPawnMovementComponent* GetMovementComponent(); // Function Engine.Pawn.GetMovementComponent // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36820
+	struct AActor* GetMovementBaseActor(struct APawn* Pawn); // Function Engine.Pawn.GetMovementBaseActor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2e367a0
+	struct FVector GetLastMovementInputVector(); // Function Engine.Pawn.GetLastMovementInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35df0
+	struct FRotator GetControlRotation(); // Function Engine.Pawn.GetControlRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e355c0
+	struct AController* GetController(); // Function Engine.Pawn.GetController // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35600
+	struct FRotator GetBaseAimRotation(); // Function Engine.Pawn.GetBaseAimRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34fe0
+	void DetachFromControllerPendingDestroy(); // Function Engine.Pawn.DetachFromControllerPendingDestroy // Native|Public|BlueprintCallable // @ game+0x2e33060
+	struct FVector ConsumeMovementInputVector(); // Function Engine.Pawn.ConsumeMovementInputVector // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e32950
+	void AddMovementInput(struct FVector WorldDirection, float ScaleValue, bool bForce); // Function Engine.Pawn.AddMovementInput // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31810
+	void AddControllerYawInput(float Val); // Function Engine.Pawn.AddControllerYawInput // Native|Public|BlueprintCallable // @ game+0x2e30a80
+	void AddControllerRollInput(float Val); // Function Engine.Pawn.AddControllerRollInput // Native|Public|BlueprintCallable // @ game+0x2e30a00
+	void AddControllerPitchInput(float Val); // Function Engine.Pawn.AddControllerPitchInput // Native|Public|BlueprintCallable // @ game+0x2e30980
 };
 
 // Class Engine.Character
@@ -477,34 +477,34 @@ struct ACharacter : APawn {
 	struct FRepRootMotionMontage RepRootMotion; // 0x590(0x40)
 	char UnknownData_5D0[0x10]; // 0x5d0(0x10)
 
-	void UnCrouch(bool bClientSimulation); // Function Engine.Character.UnCrouch // Native|Public|BlueprintCallable // @ game+0x2e42200
-	void StopJumping(); // Function Engine.Character.StopJumping // Native|Public|BlueprintCallable // @ game+0x2e41be0
-	void StopAnimMontage(struct UAnimMontage* AnimMontage); // Function Engine.Character.StopAnimMontage // Native|Public|BlueprintCallable // @ game+0x2e41b50
-	void SetReplicateMovement(bool bInReplicateMovement); // Function Engine.Character.SetReplicateMovement // Native|Public|BlueprintCallable // @ game+0x2e40680
-	float PlayAnimMontage(struct UAnimMontage* AnimMontage, float InPlayRate, struct FName StartSectionName); // Function Engine.Character.PlayAnimMontage // Native|Public|BlueprintCallable // @ game+0x2e39cc0
-	void OnWalkingOffLedge(struct FVector PreviousFloorImpactNormal, struct FVector PreviousFloorContactNormal, struct FVector PreviousLocation, float TimeDelta); // Function Engine.Character.OnWalkingOffLedge // Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x2e39780
-	void OnRep_RootMotion(); // Function Engine.Character.OnRep_RootMotion // Final|Native|Public // @ game+0x2e39620
-	void OnRep_ReplicatedBasedMovement(); // Function Engine.Character.OnRep_ReplicatedBasedMovement // Native|Public // @ game+0x2e395a0
-	void OnRep_IsCrouched(); // Function Engine.Character.OnRep_IsCrouched // Native|Public // @ game+0x2e39540
-	void OnLaunched(struct FVector LaunchVelocity, bool bXYOverride, bool bZOverride); // Function Engine.Character.OnLaunched // Event|Public|HasDefaults|BlueprintEvent // @ game+0x18e3b10
-	void OnLanded(struct FHitResult Hit); // Function Engine.Character.OnLanded // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e3b10
-	void OnJumped(); // Function Engine.Character.OnJumped // Native|Event|Public|BlueprintEvent // @ game+0x2e393b0
-	void LaunchCharacter(struct FVector LaunchVelocity, bool bXYOverride, bool bZOverride); // Function Engine.Character.LaunchCharacter // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e38b20
-	void K2_UpdateCustomMovement(float DeltaTime); // Function Engine.Character.K2_UpdateCustomMovement // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnStartCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnStartCrouch // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnMovementModeChanged(char PrevMovementMode, char NewMovementMode, char PrevCustomMode, char NewCustomMode); // Function Engine.Character.K2_OnMovementModeChanged // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnEndCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnEndCrouch // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void Jump(); // Function Engine.Character.Jump // Native|Public|BlueprintCallable // @ game+0x2e38540
-	bool IsPlayingRootMotion(); // Function Engine.Character.IsPlayingRootMotion // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e383f0
-	bool IsPlayingNetworkedRootMotionMontage(); // Function Engine.Character.IsPlayingNetworkedRootMotionMontage // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e383c0
-	bool IsJumpProvidingForce(); // Function Engine.Character.IsJumpProvidingForce // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e380d0
-	struct UAnimMontage* GetCurrentMontage(); // Function Engine.Character.GetCurrentMontage // Final|Native|Public|BlueprintCallable // @ game+0x2e331a0
-	void Crouch(bool bClientSimulation); // Function Engine.Character.Crouch // Native|Public|BlueprintCallable // @ game+0x2e30970
-	void ClientCheatWalk(); // Function Engine.Character.ClientCheatWalk // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e30250
-	void ClientCheatGhost(); // Function Engine.Character.ClientCheatGhost // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e30230
-	void ClientCheatFly(); // Function Engine.Character.ClientCheatFly // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e30210
-	bool CanJumpInternal(); // Function Engine.Character.CanJumpInternal // Native|Event|Protected|BlueprintEvent|Const // @ game+0x2e2fe60
-	bool CanJump(); // Function Engine.Character.CanJump // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e2fe30
+	void UnCrouch(bool bClientSimulation); // Function Engine.Character.UnCrouch // Native|Public|BlueprintCallable // @ game+0x2e44690
+	void StopJumping(); // Function Engine.Character.StopJumping // Native|Public|BlueprintCallable // @ game+0x2e44070
+	void StopAnimMontage(struct UAnimMontage* AnimMontage); // Function Engine.Character.StopAnimMontage // Native|Public|BlueprintCallable // @ game+0x2e43fe0
+	void SetReplicateMovement(bool bInReplicateMovement); // Function Engine.Character.SetReplicateMovement // Native|Public|BlueprintCallable // @ game+0x2e42b10
+	float PlayAnimMontage(struct UAnimMontage* AnimMontage, float InPlayRate, struct FName StartSectionName); // Function Engine.Character.PlayAnimMontage // Native|Public|BlueprintCallable // @ game+0x2e3c150
+	void OnWalkingOffLedge(struct FVector PreviousFloorImpactNormal, struct FVector PreviousFloorContactNormal, struct FVector PreviousLocation, float TimeDelta); // Function Engine.Character.OnWalkingOffLedge // Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x2e3bc10
+	void OnRep_RootMotion(); // Function Engine.Character.OnRep_RootMotion // Final|Native|Public // @ game+0x2e3bab0
+	void OnRep_ReplicatedBasedMovement(); // Function Engine.Character.OnRep_ReplicatedBasedMovement // Native|Public // @ game+0x2e3ba30
+	void OnRep_IsCrouched(); // Function Engine.Character.OnRep_IsCrouched // Native|Public // @ game+0x2e3b9d0
+	void OnLaunched(struct FVector LaunchVelocity, bool bXYOverride, bool bZOverride); // Function Engine.Character.OnLaunched // Event|Public|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
+	void OnLanded(struct FHitResult Hit); // Function Engine.Character.OnLanded // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
+	void OnJumped(); // Function Engine.Character.OnJumped // Native|Event|Public|BlueprintEvent // @ game+0x2e3b840
+	void LaunchCharacter(struct FVector LaunchVelocity, bool bXYOverride, bool bZOverride); // Function Engine.Character.LaunchCharacter // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3afb0
+	void K2_UpdateCustomMovement(float DeltaTime); // Function Engine.Character.K2_UpdateCustomMovement // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnStartCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnStartCrouch // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnMovementModeChanged(char PrevMovementMode, char NewMovementMode, char PrevCustomMode, char NewCustomMode); // Function Engine.Character.K2_OnMovementModeChanged // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnEndCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnEndCrouch // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void Jump(); // Function Engine.Character.Jump // Native|Public|BlueprintCallable // @ game+0x2e3a9d0
+	bool IsPlayingRootMotion(); // Function Engine.Character.IsPlayingRootMotion // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a880
+	bool IsPlayingNetworkedRootMotionMontage(); // Function Engine.Character.IsPlayingNetworkedRootMotionMontage // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a850
+	bool IsJumpProvidingForce(); // Function Engine.Character.IsJumpProvidingForce // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a560
+	struct UAnimMontage* GetCurrentMontage(); // Function Engine.Character.GetCurrentMontage // Final|Native|Public|BlueprintCallable // @ game+0x2e35630
+	void Crouch(bool bClientSimulation); // Function Engine.Character.Crouch // Native|Public|BlueprintCallable // @ game+0x2e32e00
+	void ClientCheatWalk(); // Function Engine.Character.ClientCheatWalk // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e326e0
+	void ClientCheatGhost(); // Function Engine.Character.ClientCheatGhost // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e326c0
+	void ClientCheatFly(); // Function Engine.Character.ClientCheatFly // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e326a0
+	bool CanJumpInternal(); // Function Engine.Character.CanJumpInternal // Native|Event|Protected|BlueprintEvent|Const // @ game+0x2e322f0
+	bool CanJump(); // Function Engine.Character.CanJump // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e322c0
 };
 
 // Class Engine.InputComponent
@@ -512,15 +512,15 @@ struct ACharacter : APawn {
 struct UInputComponent : UActorComponent {
 	char UnknownData_C8[0x88]; // 0xc8(0x88)
 
-	bool WasControllerKeyJustReleased(struct FKey Key); // Function Engine.InputComponent.WasControllerKeyJustReleased // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3c7f0
-	bool WasControllerKeyJustPressed(struct FKey Key); // Function Engine.InputComponent.WasControllerKeyJustPressed // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3c6f0
-	bool IsControllerKeyDown(struct FKey Key); // Function Engine.InputComponent.IsControllerKeyDown // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d334a0
-	void GetTouchState(int32_t FingerIndex, float LocationX, float LocationY, bool bIsCurrentlyPressed); // Function Engine.InputComponent.GetTouchState // Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32dd0
-	struct FVector GetControllerVectorKeyState(struct FKey Key); // Function Engine.InputComponent.GetControllerVectorKeyState // Final|Native|Private|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30970
-	void GetControllerMouseDelta(float DeltaX, float DeltaY); // Function Engine.InputComponent.GetControllerMouseDelta // Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30890
-	float GetControllerKeyTimeDown(struct FKey Key); // Function Engine.InputComponent.GetControllerKeyTimeDown // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30790
-	void GetControllerAnalogStickState(char WhichStick, float StickX, float StickY); // Function Engine.InputComponent.GetControllerAnalogStickState // Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30670
-	float GetControllerAnalogKeyState(struct FKey Key); // Function Engine.InputComponent.GetControllerAnalogKeyState // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30570
+	bool WasControllerKeyJustReleased(struct FKey Key); // Function Engine.InputComponent.WasControllerKeyJustReleased // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3ec80
+	bool WasControllerKeyJustPressed(struct FKey Key); // Function Engine.InputComponent.WasControllerKeyJustPressed // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3eb80
+	bool IsControllerKeyDown(struct FKey Key); // Function Engine.InputComponent.IsControllerKeyDown // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35930
+	void GetTouchState(int32_t FingerIndex, float LocationX, float LocationY, bool bIsCurrentlyPressed); // Function Engine.InputComponent.GetTouchState // Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35260
+	struct FVector GetControllerVectorKeyState(struct FKey Key); // Function Engine.InputComponent.GetControllerVectorKeyState // Final|Native|Private|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32e00
+	void GetControllerMouseDelta(float DeltaX, float DeltaY); // Function Engine.InputComponent.GetControllerMouseDelta // Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32d20
+	float GetControllerKeyTimeDown(struct FKey Key); // Function Engine.InputComponent.GetControllerKeyTimeDown // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32c20
+	void GetControllerAnalogStickState(char WhichStick, float StickX, float StickY); // Function Engine.InputComponent.GetControllerAnalogStickState // Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32b00
+	float GetControllerAnalogKeyState(struct FKey Key); // Function Engine.InputComponent.GetControllerAnalogKeyState // Final|Native|Private|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32a00
 };
 
 // Class Engine.AnimInstance
@@ -555,60 +555,60 @@ struct UAnimInstance : UObject {
 	char UnknownData_438_2 : 6; // 0x438(0x01)
 	char UnknownData_439[0x7]; // 0x439(0x07)
 
-	void UnlockAIResources(bool bUnlockMovement, bool UnlockAILogic); // Function Engine.AnimInstance.UnlockAIResources // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2f504a0
-	struct APawn* TryGetPawnOwner(); // Function Engine.AnimInstance.TryGetPawnOwner // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f50350
-	void StopSlotAnimation(float InBlendOutTime, struct FName SlotNodeName); // Function Engine.AnimInstance.StopSlotAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2f501d0
-	void SetMorphTarget(struct FName MorphTargetName, float Value); // Function Engine.AnimInstance.SetMorphTarget // Final|Native|Public|BlueprintCallable // @ game+0x2f4ba90
-	struct UAnimMontage* PlaySlotAnimationAsDynamicMontage(struct UAnimSequenceBase* Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount, float BlendOutTriggerTime, float StartingPosition); // Function Engine.AnimInstance.PlaySlotAnimationAsDynamicMontage // Final|Native|Public|BlueprintCallable // @ game+0x2f45b90
-	float PlaySlotAnimation(struct UAnimSequenceBase* Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount); // Function Engine.AnimInstance.PlaySlotAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2f459d0
-	void Montage_Stop(float InBlendOutTime, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_Stop // Final|Native|Public|BlueprintCallable // @ game+0x2f44e10
-	void Montage_SetPlayRate(struct UAnimMontage* Montage, float NewPlayRate); // Function Engine.AnimInstance.Montage_SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2f44d40
-	void Montage_SetNextSection(struct FName SectionNameToChange, struct FName NextSection, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_SetNextSection // Final|Native|Public|BlueprintCallable // @ game+0x2f44c40
-	void Montage_Resume(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_Resume // Final|Native|Public|BlueprintCallable // @ game+0x2f44bc0
-	float Montage_Play(struct UAnimMontage* MontageToPlay, float InPlayRate, float Position); // Function Engine.AnimInstance.Montage_Play // Final|Native|Public|BlueprintCallable // @ game+0x2f44ac0
-	void Montage_Pause(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_Pause // Final|Native|Public|BlueprintCallable // @ game+0x2f44a40
-	void Montage_JumpToSectionsEnd(struct FName SectionName, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_JumpToSectionsEnd // Final|Native|Public|BlueprintCallable // @ game+0x2f44980
-	void Montage_JumpToSection(struct FName SectionName, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_JumpToSection // Final|Native|Public|BlueprintCallable // @ game+0x2f448c0
-	bool Montage_IsPlaying(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_IsPlaying // Final|Native|Public|BlueprintCallable // @ game+0x2f44830
-	bool Montage_IsActive(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_IsActive // Final|Native|Public|BlueprintCallable // @ game+0x2f447a0
-	struct FName Montage_GetCurrentSection(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_GetCurrentSection // Final|Native|Public|BlueprintCallable // @ game+0x2f44710
-	void LockAIResources(bool bLockMovement, bool LockAILogic); // Function Engine.AnimInstance.LockAIResources // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2f44490
-	bool IsPlayingSlotAnimation(struct UAnimSequenceBase* Asset, struct FName SlotNodeName); // Function Engine.AnimInstance.IsPlayingSlotAnimation // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43e10
-	float GetSyncGroupPosition(struct FName Name); // Function Engine.AnimInstance.GetSyncGroupPosition // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f431a0
-	float GetStateWeight(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetStateWeight // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42ed0
-	float GetRelevantAnimTimeRemainingFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemainingFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f428f0
-	float GetRelevantAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemaining // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42830
-	float GetRelevantAnimTimeFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42770
-	float GetRelevantAnimTime(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f426b0
-	float GetRelevantAnimLength(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimLength // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f425f0
-	struct USkeletalMeshComponent* GetOwningComponent(); // Function Engine.AnimInstance.GetOwningComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f420c0
-	struct AActor* GetOwningActor(); // Function Engine.AnimInstance.GetOwningActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42000
-	float GetMaxPlayingAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetMaxPlayingAnimTimeRemaining // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41bd0
-	float GetMaxAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetMaxAnimTimeRemaining // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41ad0
-	float GetInstanceTransitionTimeElapsedFraction(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsedFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41470
-	float GetInstanceTransitionTimeElapsed(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsed // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f413b0
-	float GetInstanceTransitionCrossfadeDuration(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionCrossfadeDuration // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f412f0
-	float GetInstanceStateWeight(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetInstanceStateWeight // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f410d0
-	float GetInstanceCurrentStateElapsedTime(int32_t MachineIndex); // Function Engine.AnimInstance.GetInstanceCurrentStateElapsedTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41040
-	float GetInstanceAssetPlayerTimeFromEndFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEndFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40f80
-	float GetInstanceAssetPlayerTimeFromEnd(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEnd // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40ef0
-	float GetInstanceAssetPlayerTimeFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40e60
-	float GetInstanceAssetPlayerTime(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40dd0
-	float GetInstanceAssetPlayerLength(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerLength // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40d40
-	float GetCurveValue(struct FName CurveName); // Function Engine.AnimInstance.GetCurveValue // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40650
-	struct FName GetCurrentStateName(int32_t MachineIndex); // Function Engine.AnimInstance.GetCurrentStateName // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f405c0
-	float GetCurrentStateElapsedTime(int32_t MachineIndex); // Function Engine.AnimInstance.GetCurrentStateElapsedTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40530
-	float GetAnimAssetPlayerTimeFromEndFraction(struct UAnimationAsset* AnimAsset, float CurrentTime); // Function Engine.AnimInstance.GetAnimAssetPlayerTimeFromEndFraction // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f3f860
-	float GetAnimAssetPlayerTimeFromEnd(struct UAnimationAsset* AnimAsset, float CurrentTime); // Function Engine.AnimInstance.GetAnimAssetPlayerTimeFromEnd // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f3f790
-	float GetAnimAssetPlayerTimeFraction(struct UAnimationAsset* AnimAsset, float CurrentTime); // Function Engine.AnimInstance.GetAnimAssetPlayerTimeFraction // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f3f6c0
-	float GetAnimAssetPlayerLength(struct UAnimationAsset* AnimAsset); // Function Engine.AnimInstance.GetAnimAssetPlayerLength // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f3f630
-	void ClearMorphTargets(); // Function Engine.AnimInstance.ClearMorphTargets // Final|Native|Public|BlueprintCallable // @ game+0x2f3d910
-	float CalculateDirection(struct FVector Velocity, struct FRotator BaseRotation); // Function Engine.AnimInstance.CalculateDirection // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3d610
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function Engine.AnimInstance.BlueprintUpdateAnimation // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void BlueprintUninitializeAnimation(); // Function Engine.AnimInstance.BlueprintUninitializeAnimation // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void BlueprintPostEvaluateAnimation(); // Function Engine.AnimInstance.BlueprintPostEvaluateAnimation // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void BlueprintInitializeAnimation(); // Function Engine.AnimInstance.BlueprintInitializeAnimation // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void AnimNotify_Sound(struct UAnimNotify* Notify); // Function Engine.AnimInstance.AnimNotify_Sound // Final|Native|Public // @ game+0x2f3b470
+	void UnlockAIResources(bool bUnlockMovement, bool UnlockAILogic); // Function Engine.AnimInstance.UnlockAIResources // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2f52930
+	struct APawn* TryGetPawnOwner(); // Function Engine.AnimInstance.TryGetPawnOwner // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f527e0
+	void StopSlotAnimation(float InBlendOutTime, struct FName SlotNodeName); // Function Engine.AnimInstance.StopSlotAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2f52660
+	void SetMorphTarget(struct FName MorphTargetName, float Value); // Function Engine.AnimInstance.SetMorphTarget // Final|Native|Public|BlueprintCallable // @ game+0x2f4df20
+	struct UAnimMontage* PlaySlotAnimationAsDynamicMontage(struct UAnimSequenceBase* Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount, float BlendOutTriggerTime, float StartingPosition); // Function Engine.AnimInstance.PlaySlotAnimationAsDynamicMontage // Final|Native|Public|BlueprintCallable // @ game+0x2f48020
+	float PlaySlotAnimation(struct UAnimSequenceBase* Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount); // Function Engine.AnimInstance.PlaySlotAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2f47e60
+	void Montage_Stop(float InBlendOutTime, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_Stop // Final|Native|Public|BlueprintCallable // @ game+0x2f472a0
+	void Montage_SetPlayRate(struct UAnimMontage* Montage, float NewPlayRate); // Function Engine.AnimInstance.Montage_SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2f471d0
+	void Montage_SetNextSection(struct FName SectionNameToChange, struct FName NextSection, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_SetNextSection // Final|Native|Public|BlueprintCallable // @ game+0x2f470d0
+	void Montage_Resume(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_Resume // Final|Native|Public|BlueprintCallable // @ game+0x2f47050
+	float Montage_Play(struct UAnimMontage* MontageToPlay, float InPlayRate, float Position); // Function Engine.AnimInstance.Montage_Play // Final|Native|Public|BlueprintCallable // @ game+0x2f46f50
+	void Montage_Pause(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_Pause // Final|Native|Public|BlueprintCallable // @ game+0x2f46ed0
+	void Montage_JumpToSectionsEnd(struct FName SectionName, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_JumpToSectionsEnd // Final|Native|Public|BlueprintCallable // @ game+0x2f46e10
+	void Montage_JumpToSection(struct FName SectionName, struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_JumpToSection // Final|Native|Public|BlueprintCallable // @ game+0x2f46d50
+	bool Montage_IsPlaying(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_IsPlaying // Final|Native|Public|BlueprintCallable // @ game+0x2f46cc0
+	bool Montage_IsActive(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_IsActive // Final|Native|Public|BlueprintCallable // @ game+0x2f46c30
+	struct FName Montage_GetCurrentSection(struct UAnimMontage* Montage); // Function Engine.AnimInstance.Montage_GetCurrentSection // Final|Native|Public|BlueprintCallable // @ game+0x2f46ba0
+	void LockAIResources(bool bLockMovement, bool LockAILogic); // Function Engine.AnimInstance.LockAIResources // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2f46920
+	bool IsPlayingSlotAnimation(struct UAnimSequenceBase* Asset, struct FName SlotNodeName); // Function Engine.AnimInstance.IsPlayingSlotAnimation // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f462a0
+	float GetSyncGroupPosition(struct FName Name); // Function Engine.AnimInstance.GetSyncGroupPosition // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45630
+	float GetStateWeight(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetStateWeight // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f45360
+	float GetRelevantAnimTimeRemainingFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemainingFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44d80
+	float GetRelevantAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemaining // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44cc0
+	float GetRelevantAnimTimeFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44c00
+	float GetRelevantAnimTime(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44b40
+	float GetRelevantAnimLength(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimLength // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44a80
+	struct USkeletalMeshComponent* GetOwningComponent(); // Function Engine.AnimInstance.GetOwningComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44550
+	struct AActor* GetOwningActor(); // Function Engine.AnimInstance.GetOwningActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44490
+	float GetMaxPlayingAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetMaxPlayingAnimTimeRemaining // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44060
+	float GetMaxAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetMaxAnimTimeRemaining // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43f60
+	float GetInstanceTransitionTimeElapsedFraction(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsedFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43900
+	float GetInstanceTransitionTimeElapsed(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsed // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43840
+	float GetInstanceTransitionCrossfadeDuration(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionCrossfadeDuration // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43780
+	float GetInstanceStateWeight(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetInstanceStateWeight // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43560
+	float GetInstanceCurrentStateElapsedTime(int32_t MachineIndex); // Function Engine.AnimInstance.GetInstanceCurrentStateElapsedTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f434d0
+	float GetInstanceAssetPlayerTimeFromEndFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEndFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43410
+	float GetInstanceAssetPlayerTimeFromEnd(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEnd // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43380
+	float GetInstanceAssetPlayerTimeFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFraction // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f432f0
+	float GetInstanceAssetPlayerTime(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43260
+	float GetInstanceAssetPlayerLength(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerLength // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f431d0
+	float GetCurveValue(struct FName CurveName); // Function Engine.AnimInstance.GetCurveValue // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42ae0
+	struct FName GetCurrentStateName(int32_t MachineIndex); // Function Engine.AnimInstance.GetCurrentStateName // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42a50
+	float GetCurrentStateElapsedTime(int32_t MachineIndex); // Function Engine.AnimInstance.GetCurrentStateElapsedTime // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f429c0
+	float GetAnimAssetPlayerTimeFromEndFraction(struct UAnimationAsset* AnimAsset, float CurrentTime); // Function Engine.AnimInstance.GetAnimAssetPlayerTimeFromEndFraction // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41cf0
+	float GetAnimAssetPlayerTimeFromEnd(struct UAnimationAsset* AnimAsset, float CurrentTime); // Function Engine.AnimInstance.GetAnimAssetPlayerTimeFromEnd // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41c20
+	float GetAnimAssetPlayerTimeFraction(struct UAnimationAsset* AnimAsset, float CurrentTime); // Function Engine.AnimInstance.GetAnimAssetPlayerTimeFraction // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41b50
+	float GetAnimAssetPlayerLength(struct UAnimationAsset* AnimAsset); // Function Engine.AnimInstance.GetAnimAssetPlayerLength // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41ac0
+	void ClearMorphTargets(); // Function Engine.AnimInstance.ClearMorphTargets // Final|Native|Public|BlueprintCallable // @ game+0x2f3fda0
+	float CalculateDirection(struct FVector Velocity, struct FRotator BaseRotation); // Function Engine.AnimInstance.CalculateDirection // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3faa0
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function Engine.AnimInstance.BlueprintUpdateAnimation // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void BlueprintUninitializeAnimation(); // Function Engine.AnimInstance.BlueprintUninitializeAnimation // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void BlueprintPostEvaluateAnimation(); // Function Engine.AnimInstance.BlueprintPostEvaluateAnimation // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void BlueprintInitializeAnimation(); // Function Engine.AnimInstance.BlueprintInitializeAnimation // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void AnimNotify_Sound(struct UAnimNotify* Notify); // Function Engine.AnimInstance.AnimNotify_Sound // Final|Native|Public // @ game+0x2f3d900
 };
 
 // Class Engine.AnimNotify
@@ -617,8 +617,8 @@ struct UAnimNotify : UObject {
 	bool PlayedWithSequencer; // 0x28(0x01)
 	char UnknownData_29[0xf]; // 0x29(0x0f)
 
-	bool Received_Notify(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation); // Function Engine.AnimNotify.Received_Notify // Event|Public|BlueprintEvent|Const // @ game+0x18e3b10
-	struct FString GetNotifyName(); // Function Engine.AnimNotify.GetNotifyName // Native|Event|Public|BlueprintEvent|Const // @ game+0x2f41d50
+	bool Received_Notify(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation); // Function Engine.AnimNotify.Received_Notify // Event|Public|BlueprintEvent|Const // @ game+0x18e5fa0
+	struct FString GetNotifyName(); // Function Engine.AnimNotify.GetNotifyName // Native|Event|Public|BlueprintEvent|Const // @ game+0x2f441e0
 };
 
 // Class Engine.AnimNotifyState
@@ -627,10 +627,10 @@ struct UAnimNotifyState : UObject {
 	bool PlayedWithSequencer; // 0x28(0x01)
 	char UnknownData_29[0x7]; // 0x29(0x07)
 
-	bool Received_NotifyTick(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation, float FrameDeltaTime); // Function Engine.AnimNotifyState.Received_NotifyTick // Event|Public|BlueprintEvent|Const // @ game+0x18e3b10
-	bool Received_NotifyEnd(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation); // Function Engine.AnimNotifyState.Received_NotifyEnd // Event|Public|BlueprintEvent|Const // @ game+0x18e3b10
-	bool Received_NotifyBegin(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation, float TotalDuration); // Function Engine.AnimNotifyState.Received_NotifyBegin // Event|Public|BlueprintEvent|Const // @ game+0x18e3b10
-	struct FString GetNotifyName(); // Function Engine.AnimNotifyState.GetNotifyName // Native|Event|Public|BlueprintEvent|Const // @ game+0x2f41df0
+	bool Received_NotifyTick(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation, float FrameDeltaTime); // Function Engine.AnimNotifyState.Received_NotifyTick // Event|Public|BlueprintEvent|Const // @ game+0x18e5fa0
+	bool Received_NotifyEnd(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation); // Function Engine.AnimNotifyState.Received_NotifyEnd // Event|Public|BlueprintEvent|Const // @ game+0x18e5fa0
+	bool Received_NotifyBegin(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation, float TotalDuration); // Function Engine.AnimNotifyState.Received_NotifyBegin // Event|Public|BlueprintEvent|Const // @ game+0x18e5fa0
+	struct FString GetNotifyName(); // Function Engine.AnimNotifyState.GetNotifyName // Native|Event|Public|BlueprintEvent|Const // @ game+0x2f44280
 };
 
 // Class Engine.AnimNotifyState_TimedParticleEffect
@@ -668,9 +668,9 @@ struct UCameraComponent : USceneComponent {
 	char UnknownData_840_1 : 7; // 0x840(0x01)
 	char UnknownData_841[0xf]; // 0x841(0x0f)
 
-	struct FVector ProjectWorldLocation(struct FVector WorldLocation, struct FIntPoint ViewDimensions); // Function Engine.CameraComponent.ProjectWorldLocation // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f46460
-	void GetCameraView(float DeltaTime, struct FMinimalViewInfo DesiredView); // Function Engine.CameraComponent.GetCameraView // Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f40220
-	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.CameraComponent.AddOrUpdateBlendable // Final|Native|Public|BlueprintCallable // @ game+0x2f3af70
+	struct FVector ProjectWorldLocation(struct FVector WorldLocation, struct FIntPoint ViewDimensions); // Function Engine.CameraComponent.ProjectWorldLocation // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f488f0
+	void GetCameraView(float DeltaTime, struct FMinimalViewInfo DesiredView); // Function Engine.CameraComponent.GetCameraView // Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f426b0
+	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.CameraComponent.AddOrUpdateBlendable // Final|Native|Public|BlueprintCallable // @ game+0x2f3d400
 };
 
 // Class Engine.MovementComponent
@@ -694,28 +694,28 @@ struct UMovementComponent : UActorComponent {
 	char UnknownData_108_3 : 5; // 0x108(0x01)
 	char UnknownData_109[0x7]; // 0x109(0x07)
 
-	void StopMovementImmediately(); // Function Engine.MovementComponent.StopMovementImmediately // Native|Public|BlueprintCallable // @ game+0x2e41c00
-	void SnapUpdatedComponentToPlane(); // Function Engine.MovementComponent.SnapUpdatedComponentToPlane // Native|Public|BlueprintCallable // @ game+0x2e419a0
-	void SetUpdatedComponent(struct USceneComponent* NewUpdatedComponent); // Function Engine.MovementComponent.SetUpdatedComponent // Native|Public|BlueprintCallable // @ game+0x2e41220
-	void SetPlaneConstraintOrigin(struct FVector PlaneOrigin); // Function Engine.MovementComponent.SetPlaneConstraintOrigin // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e40230
-	void SetPlaneConstraintNormal(struct FVector PlaneNormal); // Function Engine.MovementComponent.SetPlaneConstraintNormal // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e401a0
-	void SetPlaneConstraintFromVectors(struct FVector Forward, struct FVector Up); // Function Engine.MovementComponent.SetPlaneConstraintFromVectors // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e400c0
-	void SetPlaneConstraintEnabled(bool bEnabled); // Function Engine.MovementComponent.SetPlaneConstraintEnabled // Native|Public|BlueprintCallable // @ game+0x2e40030
-	void SetPlaneConstraintAxisSetting(char NewAxisSetting); // Function Engine.MovementComponent.SetPlaneConstraintAxisSetting // Native|Public|BlueprintCallable // @ game+0x2e3ffb0
-	void PhysicsVolumeChanged(struct APhysicsVolume* NewVolume); // Function Engine.MovementComponent.PhysicsVolumeChanged // Native|Public // @ game+0x2e39ab0
-	bool K2_MoveUpdatedComponent(struct FVector Delta, struct FRotator NewRotation, struct FHitResult OutHit, bool bSweep, bool bTeleport); // Function Engine.MovementComponent.K2_MoveUpdatedComponent // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e38940
-	float K2_GetModifiedMaxSpeed(); // Function Engine.MovementComponent.K2_GetModifiedMaxSpeed // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38670
-	float K2_GetMaxSpeedModifier(); // Function Engine.MovementComponent.K2_GetMaxSpeedModifier // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38630
-	bool IsExceedingMaxSpeed(float MaxSpeed); // Function Engine.MovementComponent.IsExceedingMaxSpeed // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37fb0
-	struct FVector GetPlaneConstraintOrigin(); // Function Engine.MovementComponent.GetPlaneConstraintOrigin // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35320
-	struct FVector GetPlaneConstraintNormal(); // Function Engine.MovementComponent.GetPlaneConstraintNormal // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e352e0
-	char GetPlaneConstraintAxisSetting(); // Function Engine.MovementComponent.GetPlaneConstraintAxisSetting // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e352c0
-	struct APhysicsVolume* GetPhysicsVolume(); // Function Engine.MovementComponent.GetPhysicsVolume // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35290
-	float GetMaxSpeed(); // Function Engine.MovementComponent.GetMaxSpeed // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34230
-	float GetGravityZ(); // Function Engine.MovementComponent.GetGravityZ // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e337a0
-	struct FVector ConstrainNormalToPlane(struct FVector Normal); // Function Engine.MovementComponent.ConstrainNormalToPlane // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e303d0
-	struct FVector ConstrainLocationToPlane(struct FVector Location); // Function Engine.MovementComponent.ConstrainLocationToPlane // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e30320
-	struct FVector ConstrainDirectionToPlane(struct FVector Direction); // Function Engine.MovementComponent.ConstrainDirectionToPlane // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e30270
+	void StopMovementImmediately(); // Function Engine.MovementComponent.StopMovementImmediately // Native|Public|BlueprintCallable // @ game+0x2e44090
+	void SnapUpdatedComponentToPlane(); // Function Engine.MovementComponent.SnapUpdatedComponentToPlane // Native|Public|BlueprintCallable // @ game+0x2e43e30
+	void SetUpdatedComponent(struct USceneComponent* NewUpdatedComponent); // Function Engine.MovementComponent.SetUpdatedComponent // Native|Public|BlueprintCallable // @ game+0x2e436b0
+	void SetPlaneConstraintOrigin(struct FVector PlaneOrigin); // Function Engine.MovementComponent.SetPlaneConstraintOrigin // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e426c0
+	void SetPlaneConstraintNormal(struct FVector PlaneNormal); // Function Engine.MovementComponent.SetPlaneConstraintNormal // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e42630
+	void SetPlaneConstraintFromVectors(struct FVector Forward, struct FVector Up); // Function Engine.MovementComponent.SetPlaneConstraintFromVectors // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e42550
+	void SetPlaneConstraintEnabled(bool bEnabled); // Function Engine.MovementComponent.SetPlaneConstraintEnabled // Native|Public|BlueprintCallable // @ game+0x2e424c0
+	void SetPlaneConstraintAxisSetting(char NewAxisSetting); // Function Engine.MovementComponent.SetPlaneConstraintAxisSetting // Native|Public|BlueprintCallable // @ game+0x2e42440
+	void PhysicsVolumeChanged(struct APhysicsVolume* NewVolume); // Function Engine.MovementComponent.PhysicsVolumeChanged // Native|Public // @ game+0x2e3bf40
+	bool K2_MoveUpdatedComponent(struct FVector Delta, struct FRotator NewRotation, struct FHitResult OutHit, bool bSweep, bool bTeleport); // Function Engine.MovementComponent.K2_MoveUpdatedComponent // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3add0
+	float K2_GetModifiedMaxSpeed(); // Function Engine.MovementComponent.K2_GetModifiedMaxSpeed // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3ab00
+	float K2_GetMaxSpeedModifier(); // Function Engine.MovementComponent.K2_GetMaxSpeedModifier // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3aac0
+	bool IsExceedingMaxSpeed(float MaxSpeed); // Function Engine.MovementComponent.IsExceedingMaxSpeed // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a440
+	struct FVector GetPlaneConstraintOrigin(); // Function Engine.MovementComponent.GetPlaneConstraintOrigin // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e377b0
+	struct FVector GetPlaneConstraintNormal(); // Function Engine.MovementComponent.GetPlaneConstraintNormal // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37770
+	char GetPlaneConstraintAxisSetting(); // Function Engine.MovementComponent.GetPlaneConstraintAxisSetting // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37750
+	struct APhysicsVolume* GetPhysicsVolume(); // Function Engine.MovementComponent.GetPhysicsVolume // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37720
+	float GetMaxSpeed(); // Function Engine.MovementComponent.GetMaxSpeed // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e366c0
+	float GetGravityZ(); // Function Engine.MovementComponent.GetGravityZ // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35c30
+	struct FVector ConstrainNormalToPlane(struct FVector Normal); // Function Engine.MovementComponent.ConstrainNormalToPlane // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32860
+	struct FVector ConstrainLocationToPlane(struct FVector Location); // Function Engine.MovementComponent.ConstrainLocationToPlane // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e327b0
+	struct FVector ConstrainDirectionToPlane(struct FVector Direction); // Function Engine.MovementComponent.ConstrainDirectionToPlane // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32700
 };
 
 // Class Engine.NavMovementComponent
@@ -731,14 +731,14 @@ struct UNavMovementComponent : UMovementComponent {
 	bool UseDefaultNavWalkingSearchHeightScale; // 0x151(0x01)
 	char UnknownData_152[0x6]; // 0x152(0x06)
 
-	void StopMovementKeepPathing(); // Function Engine.NavMovementComponent.StopMovementKeepPathing // Final|Native|Public|BlueprintCallable // @ game+0x2e41c20
-	void StopActiveMovement(); // Function Engine.NavMovementComponent.StopActiveMovement // Native|Public|BlueprintCallable // @ game+0x2e41b30
-	bool IsSwimming(); // Function Engine.NavMovementComponent.IsSwimming // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38510
-	bool IsMovingOnGround(); // Function Engine.NavMovementComponent.IsMovingOnGround // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e381c0
-	bool IsFlying(); // Function Engine.NavMovementComponent.IsFlying // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38070
-	bool IsFalling(); // Function Engine.NavMovementComponent.IsFalling // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38040
-	bool IsCrouching(); // Function Engine.NavMovementComponent.IsCrouching // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37f80
-	struct FVector GetActorFeetLocation(); // Function Engine.NavMovementComponent.GetActorFeetLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32780
+	void StopMovementKeepPathing(); // Function Engine.NavMovementComponent.StopMovementKeepPathing // Final|Native|Public|BlueprintCallable // @ game+0x2e440b0
+	void StopActiveMovement(); // Function Engine.NavMovementComponent.StopActiveMovement // Native|Public|BlueprintCallable // @ game+0x2e43fc0
+	bool IsSwimming(); // Function Engine.NavMovementComponent.IsSwimming // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a9a0
+	bool IsMovingOnGround(); // Function Engine.NavMovementComponent.IsMovingOnGround // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a650
+	bool IsFlying(); // Function Engine.NavMovementComponent.IsFlying // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a500
+	bool IsFalling(); // Function Engine.NavMovementComponent.IsFalling // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a4d0
+	bool IsCrouching(); // Function Engine.NavMovementComponent.IsCrouching // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a410
+	struct FVector GetActorFeetLocation(); // Function Engine.NavMovementComponent.GetActorFeetLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34c10
 };
 
 // Class Engine.PawnMovementComponent
@@ -746,13 +746,13 @@ struct UNavMovementComponent : UMovementComponent {
 struct UPawnMovementComponent : UNavMovementComponent {
 	struct APawn* PawnOwner; // 0x158(0x08)
 
-	struct FVector K2_GetInputVector(); // Function Engine.PawnMovementComponent.K2_GetInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e385f0
-	bool IsMoveInputIgnored(); // Function Engine.PawnMovementComponent.IsMoveInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38190
-	struct FVector GetPendingInputVector(); // Function Engine.PawnMovementComponent.GetPendingInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34fb0
-	struct APawn* GetPawnOwner(); // Function Engine.PawnMovementComponent.GetPawnOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34f80
-	struct FVector GetLastInputVector(); // Function Engine.PawnMovementComponent.GetLastInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33920
-	struct FVector ConsumeInputVector(); // Function Engine.PawnMovementComponent.ConsumeInputVector // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e30480
-	void AddInputVector(struct FVector WorldVector, bool bForce); // Function Engine.PawnMovementComponent.AddInputVector // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2f200
+	struct FVector K2_GetInputVector(); // Function Engine.PawnMovementComponent.K2_GetInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3aa80
+	bool IsMoveInputIgnored(); // Function Engine.PawnMovementComponent.IsMoveInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a620
+	struct FVector GetPendingInputVector(); // Function Engine.PawnMovementComponent.GetPendingInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37440
+	struct APawn* GetPawnOwner(); // Function Engine.PawnMovementComponent.GetPawnOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37410
+	struct FVector GetLastInputVector(); // Function Engine.PawnMovementComponent.GetLastInputVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35db0
+	struct FVector ConsumeInputVector(); // Function Engine.PawnMovementComponent.ConsumeInputVector // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e32910
+	void AddInputVector(struct FVector WorldVector, bool bForce); // Function Engine.PawnMovementComponent.AddInputVector // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31690
 };
 
 // Class Engine.CharacterMovementComponent
@@ -917,43 +917,43 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	bool bWasSimulatingRootMotion; // 0x580(0x01)
 	char UnknownData_581[0xf]; // 0x581(0x0f)
 
-	void UpdateMaxNavMeshProjectionIntervalAndModifier(float DesiredMaxNavMeshProjectionInterval); // Function Engine.CharacterMovementComponent.UpdateMaxNavMeshProjectionIntervalAndModifier // Final|Native|Public|BlueprintCallable // @ game+0x2f50830
-	void SetWalkableFloorZ(float InWalkableFloorZ); // Function Engine.CharacterMovementComponent.SetWalkableFloorZ // Final|Native|Public|BlueprintCallable // @ game+0x2f4e400
-	void SetWalkableFloorAngle(float InWalkableFloorAngle); // Function Engine.CharacterMovementComponent.SetWalkableFloorAngle // Final|Native|Public|BlueprintCallable // @ game+0x2f4e380
-	void SetNavMeshProjectionInterval(float InNavMeshProjectionInterval); // Function Engine.CharacterMovementComponent.SetNavMeshProjectionInterval // Final|Native|Public|BlueprintCallable // @ game+0x2f4bd80
-	void SetMovementMode(char NewMovementMode, char NewCustomMode); // Function Engine.CharacterMovementComponent.SetMovementMode // Native|Public|BlueprintCallable // @ game+0x2f4bb60
-	void SetGroupsToIgnore(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToIgnore // Final|Native|Public|BlueprintCallable // @ game+0x2f4af20
-	void SetGroupsToAvoid(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToAvoid // Final|Native|Public|BlueprintCallable // @ game+0x2f4aea0
-	void SetAvoidanceGroup(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetAvoidanceGroup // Final|Native|Public|BlueprintCallable // @ game+0x2f48030
-	void SetAvoidanceEnabled(bool bEnable); // Function Engine.CharacterMovementComponent.SetAvoidanceEnabled // Final|Native|Public|BlueprintCallable // @ game+0x2f47fa0
-	void ServerMoveOld(float OldTimeStamp, struct FVector_NetQuantize10 OldAccel, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char OldMoveFlags); // Function Engine.CharacterMovementComponent.ServerMoveOld // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f47890
-	void ServerMoveDualHybridRootMotion(float TimeStamp0, struct FVector_NetQuantize10 InAccel0, char PendingFlags, uint32_t View0, float TimeStamp, struct FVector_NetQuantize10 InAccel, struct FVector_NetQuantize100 ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.CharacterMovementComponent.ServerMoveDualHybridRootMotion // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f47430
-	void ServerMoveDual(float TimeStamp0, struct FVector_NetQuantize10 InAccel0, char PendingFlags, uint32_t View0, float TimeStamp, struct FVector_NetQuantize10 InAccel, struct FVector_NetQuantize100 ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.CharacterMovementComponent.ServerMoveDual // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f46fd0
-	void ServerMove(float TimeStamp, struct FVector_NetQuantize10 InAccel, struct FVector_NetQuantize100 ClientLoc, char CompressedMoveFlags, char ClientRoll, uint32_t View, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.CharacterMovementComponent.ServerMove // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f46cb0
-	float K2_GetWalkableFloorZ(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorZ // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44070
-	float K2_GetWalkableFloorAngle(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorAngle // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44040
-	float K2_GetModifiedMaxAcceleration(); // Function Engine.CharacterMovementComponent.K2_GetModifiedMaxAcceleration // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44000
-	bool IsWalking(); // Function Engine.CharacterMovementComponent.IsWalking // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43fd0
-	bool IsWalkable(struct FHitResult Hit); // Function Engine.CharacterMovementComponent.IsWalkable // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43f00
-	float GetValidPerchRadius(); // Function Engine.CharacterMovementComponent.GetValidPerchRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43550
-	float GetPerchRadiusThreshold(); // Function Engine.CharacterMovementComponent.GetPerchRadiusThreshold // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f420f0
-	float GetNavMeshProjectionInterval(); // Function Engine.CharacterMovementComponent.GetNavMeshProjectionInterval // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41cc0
-	struct UPrimitiveComponent* GetMovementBase(); // Function Engine.CharacterMovementComponent.GetMovementBase // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41c90
-	float GetMaxJumpHeight(); // Function Engine.CharacterMovementComponent.GetMaxJumpHeight // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41b90
-	float GetMaxAcceleration(); // Function Engine.CharacterMovementComponent.GetMaxAcceleration // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41a90
-	struct FVector GetImpartedMovementBaseVelocity(); // Function Engine.CharacterMovementComponent.GetImpartedMovementBaseVelocity // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40d00
-	struct FVector GetCurrentAcceleration(); // Function Engine.CharacterMovementComponent.GetCurrentAcceleration // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f403d0
-	struct ACharacter* GetCharacterOwner(); // Function Engine.CharacterMovementComponent.GetCharacterOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f403b0
-	float GetAnalogInputModifier(); // Function Engine.CharacterMovementComponent.GetAnalogInputModifier // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f3f600
-	void DisableMovement(); // Function Engine.CharacterMovementComponent.DisableMovement // Native|Public|BlueprintCallable // @ game+0x2f3e890
-	void ClientVeryShortAdjustPosition(float TimeStamp, struct FVector NewLoc, struct UPrimitiveComponent* NewBase, struct FName NewBaseBoneName, bool bHasBase, bool bBaseRelativePosition, char ServerMovementMode); // Function Engine.CharacterMovementComponent.ClientVeryShortAdjustPosition // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2f3df80
-	void ClientAdjustRootMotionPosition(float TimeStamp, float ServerMontageTrackPosition, struct FVector ServerLoc, struct FVector_NetQuantizeNormal ServerRotation, float ServerVelZ, struct UPrimitiveComponent* ServerBase, struct FName ServerBoneName, bool bHasBase, bool bBaseRelativePosition, char ServerMovementMode); // Function Engine.CharacterMovementComponent.ClientAdjustRootMotionPosition // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2f3dc90
-	void ClientAdjustPosition(float TimeStamp, struct FVector NewLoc, struct FVector NewVel, struct UPrimitiveComponent* NewBase, struct FName NewBaseBoneName, bool bHasBase, bool bBaseRelativePosition, char ServerMovementMode); // Function Engine.CharacterMovementComponent.ClientAdjustPosition // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2f3da20
-	void ClientAckGoodMove(float TimeStamp); // Function Engine.CharacterMovementComponent.ClientAckGoodMove // Net|Native|Event|Public|NetClient // @ game+0x2f3d9a0
-	void CapsuleTouched(struct AActor* Other, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function Engine.CharacterMovementComponent.CapsuleTouched // Native|Protected|HasOutParms // @ game+0x2f3d710
-	void CalcVelocity(float DeltaTime, float Friction, bool bFluid, float BrakingDeceleration); // Function Engine.CharacterMovementComponent.CalcVelocity // Native|Public|BlueprintCallable // @ game+0x2f3d4b0
-	void AddImpulse(struct FVector Impulse, bool bVelocityChange); // Function Engine.CharacterMovementComponent.AddImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3aab0
-	void AddForce(struct FVector Force); // Function Engine.CharacterMovementComponent.AddForce // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3aa20
+	void UpdateMaxNavMeshProjectionIntervalAndModifier(float DesiredMaxNavMeshProjectionInterval); // Function Engine.CharacterMovementComponent.UpdateMaxNavMeshProjectionIntervalAndModifier // Final|Native|Public|BlueprintCallable // @ game+0x2f52cc0
+	void SetWalkableFloorZ(float InWalkableFloorZ); // Function Engine.CharacterMovementComponent.SetWalkableFloorZ // Final|Native|Public|BlueprintCallable // @ game+0x2f50890
+	void SetWalkableFloorAngle(float InWalkableFloorAngle); // Function Engine.CharacterMovementComponent.SetWalkableFloorAngle // Final|Native|Public|BlueprintCallable // @ game+0x2f50810
+	void SetNavMeshProjectionInterval(float InNavMeshProjectionInterval); // Function Engine.CharacterMovementComponent.SetNavMeshProjectionInterval // Final|Native|Public|BlueprintCallable // @ game+0x2f4e210
+	void SetMovementMode(char NewMovementMode, char NewCustomMode); // Function Engine.CharacterMovementComponent.SetMovementMode // Native|Public|BlueprintCallable // @ game+0x2f4dff0
+	void SetGroupsToIgnore(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToIgnore // Final|Native|Public|BlueprintCallable // @ game+0x2f4d3b0
+	void SetGroupsToAvoid(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToAvoid // Final|Native|Public|BlueprintCallable // @ game+0x2f4d330
+	void SetAvoidanceGroup(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetAvoidanceGroup // Final|Native|Public|BlueprintCallable // @ game+0x2f4a4c0
+	void SetAvoidanceEnabled(bool bEnable); // Function Engine.CharacterMovementComponent.SetAvoidanceEnabled // Final|Native|Public|BlueprintCallable // @ game+0x2f4a430
+	void ServerMoveOld(float OldTimeStamp, struct FVector_NetQuantize10 OldAccel, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char OldMoveFlags); // Function Engine.CharacterMovementComponent.ServerMoveOld // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f49d20
+	void ServerMoveDualHybridRootMotion(float TimeStamp0, struct FVector_NetQuantize10 InAccel0, char PendingFlags, uint32_t View0, float TimeStamp, struct FVector_NetQuantize10 InAccel, struct FVector_NetQuantize100 ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.CharacterMovementComponent.ServerMoveDualHybridRootMotion // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f498c0
+	void ServerMoveDual(float TimeStamp0, struct FVector_NetQuantize10 InAccel0, char PendingFlags, uint32_t View0, float TimeStamp, struct FVector_NetQuantize10 InAccel, struct FVector_NetQuantize100 ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.CharacterMovementComponent.ServerMoveDual // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f49460
+	void ServerMove(float TimeStamp, struct FVector_NetQuantize10 InAccel, struct FVector_NetQuantize100 ClientLoc, char CompressedMoveFlags, char ClientRoll, uint32_t View, struct UPrimitiveComponent* ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.CharacterMovementComponent.ServerMove // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2f49140
+	float K2_GetWalkableFloorZ(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorZ // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46500
+	float K2_GetWalkableFloorAngle(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorAngle // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f464d0
+	float K2_GetModifiedMaxAcceleration(); // Function Engine.CharacterMovementComponent.K2_GetModifiedMaxAcceleration // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46490
+	bool IsWalking(); // Function Engine.CharacterMovementComponent.IsWalking // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46460
+	bool IsWalkable(struct FHitResult Hit); // Function Engine.CharacterMovementComponent.IsWalkable // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46390
+	float GetValidPerchRadius(); // Function Engine.CharacterMovementComponent.GetValidPerchRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f459e0
+	float GetPerchRadiusThreshold(); // Function Engine.CharacterMovementComponent.GetPerchRadiusThreshold // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44580
+	float GetNavMeshProjectionInterval(); // Function Engine.CharacterMovementComponent.GetNavMeshProjectionInterval // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44150
+	struct UPrimitiveComponent* GetMovementBase(); // Function Engine.CharacterMovementComponent.GetMovementBase // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44120
+	float GetMaxJumpHeight(); // Function Engine.CharacterMovementComponent.GetMaxJumpHeight // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44020
+	float GetMaxAcceleration(); // Function Engine.CharacterMovementComponent.GetMaxAcceleration // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43f20
+	struct FVector GetImpartedMovementBaseVelocity(); // Function Engine.CharacterMovementComponent.GetImpartedMovementBaseVelocity // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43190
+	struct FVector GetCurrentAcceleration(); // Function Engine.CharacterMovementComponent.GetCurrentAcceleration // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42860
+	struct ACharacter* GetCharacterOwner(); // Function Engine.CharacterMovementComponent.GetCharacterOwner // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42840
+	float GetAnalogInputModifier(); // Function Engine.CharacterMovementComponent.GetAnalogInputModifier // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41a90
+	void DisableMovement(); // Function Engine.CharacterMovementComponent.DisableMovement // Native|Public|BlueprintCallable // @ game+0x2f40d20
+	void ClientVeryShortAdjustPosition(float TimeStamp, struct FVector NewLoc, struct UPrimitiveComponent* NewBase, struct FName NewBaseBoneName, bool bHasBase, bool bBaseRelativePosition, char ServerMovementMode); // Function Engine.CharacterMovementComponent.ClientVeryShortAdjustPosition // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2f40410
+	void ClientAdjustRootMotionPosition(float TimeStamp, float ServerMontageTrackPosition, struct FVector ServerLoc, struct FVector_NetQuantizeNormal ServerRotation, float ServerVelZ, struct UPrimitiveComponent* ServerBase, struct FName ServerBoneName, bool bHasBase, bool bBaseRelativePosition, char ServerMovementMode); // Function Engine.CharacterMovementComponent.ClientAdjustRootMotionPosition // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2f40120
+	void ClientAdjustPosition(float TimeStamp, struct FVector NewLoc, struct FVector NewVel, struct UPrimitiveComponent* NewBase, struct FName NewBaseBoneName, bool bHasBase, bool bBaseRelativePosition, char ServerMovementMode); // Function Engine.CharacterMovementComponent.ClientAdjustPosition // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2f3feb0
+	void ClientAckGoodMove(float TimeStamp); // Function Engine.CharacterMovementComponent.ClientAckGoodMove // Net|Native|Event|Public|NetClient // @ game+0x2f3fe30
+	void CapsuleTouched(struct AActor* Other, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function Engine.CharacterMovementComponent.CapsuleTouched // Native|Protected|HasOutParms // @ game+0x2f3fba0
+	void CalcVelocity(float DeltaTime, float Friction, bool bFluid, float BrakingDeceleration); // Function Engine.CharacterMovementComponent.CalcVelocity // Native|Public|BlueprintCallable // @ game+0x2f3f940
+	void AddImpulse(struct FVector Impulse, bool bVelocityChange); // Function Engine.CharacterMovementComponent.AddImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3cf40
+	void AddForce(struct FVector Force); // Function Engine.CharacterMovementComponent.AddForce // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3ceb0
 };
 
 // Class Engine.Engine
@@ -1221,10 +1221,10 @@ struct UGameInstance : UObject {
 	struct UOnlineSession* OnlineSession; // 0x50(0x08)
 	char UnknownData_58[0x30]; // 0x58(0x30)
 
-	void ReceiveShutdown(); // Function Engine.GameInstance.ReceiveShutdown // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveInit(); // Function Engine.GameInstance.ReceiveInit // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void DebugRemovePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugRemovePlayer // Exec|Native|Public // @ game+0x2d2ef20
-	void DebugCreatePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugCreatePlayer // Exec|Native|Public // @ game+0x2d2ee90
+	void ReceiveShutdown(); // Function Engine.GameInstance.ReceiveShutdown // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveInit(); // Function Engine.GameInstance.ReceiveInit // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void DebugRemovePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugRemovePlayer // Exec|Native|Public // @ game+0x2d313b0
+	void DebugCreatePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugCreatePlayer // Exec|Native|Public // @ game+0x2d31320
 };
 
 // Class Engine.Info
@@ -1268,38 +1268,38 @@ struct AGameMode : AInfo {
 	bool bHandleDedicatedServerReplays; // 0x4bc(0x01)
 	char UnknownData_4BD[0x3]; // 0x4bd(0x03)
 
-	void StartPlay(); // Function Engine.GameMode.StartPlay // Native|Public|BlueprintCallable // @ game+0x2e41ad0
-	void StartMatch(); // Function Engine.GameMode.StartMatch // Native|Public|BlueprintCallable // @ game+0x2e41ab0
-	struct APawn* SpawnDefaultPawnFor(struct AController* NewPlayer, struct AActor* StartSpot); // Function Engine.GameMode.SpawnDefaultPawnFor // Native|Event|Public|BlueprintEvent // @ game+0x2e419e0
-	bool ShouldReset(struct AActor* ActorToReset); // Function Engine.GameMode.ShouldReset // Native|Event|Public|BlueprintEvent // @ game+0x2e415c0
-	void SetBandwidthLimit(float AsyncIOBandwidthLimit); // Function Engine.GameMode.SetBandwidthLimit // Exec|Native|Public // @ game+0x2e3bca0
-	void ReturnToMainMenuHost(); // Function Engine.GameMode.ReturnToMainMenuHost // Native|Public|BlueprintCallable // @ game+0x2e3a7d0
-	void RestartGame(); // Function Engine.GameMode.RestartGame // Native|Public|BlueprintCallable // @ game+0x2e3a730
-	void ResetLevel(); // Function Engine.GameMode.ResetLevel // Native|Public|BlueprintCallable // @ game+0x2e3a6f0
-	bool ReadyToStartMatch(); // Function Engine.GameMode.ReadyToStartMatch // Native|Event|Protected|BlueprintEvent // @ game+0x2e3a290
-	bool ReadyToEndMatch(); // Function Engine.GameMode.ReadyToEndMatch // Native|Event|Protected|BlueprintEvent // @ game+0x2e3a260
-	bool PlayerCanRestart(struct APlayerController* Player); // Function Engine.GameMode.PlayerCanRestart // Native|Event|Public|BlueprintEvent // @ game+0x2e39ec0
-	bool MustSpectate(struct APlayerController* NewPlayerController); // Function Engine.GameMode.MustSpectate // Native|Event|Public|BlueprintEvent|Const // @ game+0x2e38fe0
-	void K2_PostLogin(struct APlayerController* NewPlayer); // Function Engine.GameMode.K2_PostLogin // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnSwapPlayerControllers(struct APlayerController* OldPC, struct APlayerController* NewPC); // Function Engine.GameMode.K2_OnSwapPlayerControllers // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnSetMatchState(struct FName NewState); // Function Engine.GameMode.K2_OnSetMatchState // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnRestartPlayer(struct AController* NewPlayer); // Function Engine.GameMode.K2_OnRestartPlayer // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnLogout(struct AController* ExitingController); // Function Engine.GameMode.K2_OnLogout // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void K2_OnChangeName(struct AController* Other, struct FString NewName, bool bNameChange); // Function Engine.GameMode.K2_OnChangeName // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	struct AActor* K2_FindPlayerStart(struct AController* Player); // Function Engine.GameMode.K2_FindPlayerStart // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2e38560
-	bool IsMatchInProgress(); // Function Engine.GameMode.IsMatchInProgress // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38130
-	void InitStartSpot(struct AActor* StartSpot, struct AController* NewPlayer); // Function Engine.GameMode.InitStartSpot // Native|Event|Public|BlueprintEvent // @ game+0x2e37d90
-	bool HasMatchStarted(); // Function Engine.GameMode.HasMatchStarted // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37b60
-	bool HasMatchEnded(); // Function Engine.GameMode.HasMatchEnded // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37b30
-	int32_t GetNumPlayers(); // Function Engine.GameMode.GetNumPlayers // Native|Public|BlueprintCallable // @ game+0x2e345f0
-	struct FName GetMatchState(); // Function Engine.GameMode.GetMatchState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e340d0
-	struct UClass* GetDefaultPawnClassForController(struct AController* InController); // Function Engine.GameMode.GetDefaultPawnClassForController // Native|Event|Public|BlueprintEvent // @ game+0x2e332c0
-	struct AActor* FindPlayerStart(struct AController* Player, struct FString IncomingName); // Function Engine.GameMode.FindPlayerStart // Native|Event|Public|BlueprintEvent // @ game+0x2e323e0
-	void EndMatch(); // Function Engine.GameMode.EndMatch // Native|Public|BlueprintCallable // @ game+0x2e32000
-	struct AActor* ChoosePlayerStart(struct AController* Player); // Function Engine.GameMode.ChoosePlayerStart // Native|Event|Public|BlueprintEvent // @ game+0x2e300b0
-	void ChangeName(struct AController* Controller, struct FString NewName, bool bNameChange); // Function Engine.GameMode.ChangeName // Native|Public|BlueprintCallable // @ game+0x2e2ff60
-	bool CanSpectate(struct APlayerController* Viewer, struct APlayerState* ViewTarget); // Function Engine.GameMode.CanSpectate // Native|Event|Public|BlueprintEvent // @ game+0x2e2fe90
-	void AbortMatch(); // Function Engine.GameMode.AbortMatch // Native|Public|BlueprintCallable // @ game+0x2e2e270
+	void StartPlay(); // Function Engine.GameMode.StartPlay // Native|Public|BlueprintCallable // @ game+0x2e43f60
+	void StartMatch(); // Function Engine.GameMode.StartMatch // Native|Public|BlueprintCallable // @ game+0x2e43f40
+	struct APawn* SpawnDefaultPawnFor(struct AController* NewPlayer, struct AActor* StartSpot); // Function Engine.GameMode.SpawnDefaultPawnFor // Native|Event|Public|BlueprintEvent // @ game+0x2e43e70
+	bool ShouldReset(struct AActor* ActorToReset); // Function Engine.GameMode.ShouldReset // Native|Event|Public|BlueprintEvent // @ game+0x2e43a50
+	void SetBandwidthLimit(float AsyncIOBandwidthLimit); // Function Engine.GameMode.SetBandwidthLimit // Exec|Native|Public // @ game+0x2e3e130
+	void ReturnToMainMenuHost(); // Function Engine.GameMode.ReturnToMainMenuHost // Native|Public|BlueprintCallable // @ game+0x2e3cc60
+	void RestartGame(); // Function Engine.GameMode.RestartGame // Native|Public|BlueprintCallable // @ game+0x2e3cbc0
+	void ResetLevel(); // Function Engine.GameMode.ResetLevel // Native|Public|BlueprintCallable // @ game+0x2e3cb80
+	bool ReadyToStartMatch(); // Function Engine.GameMode.ReadyToStartMatch // Native|Event|Protected|BlueprintEvent // @ game+0x2e3c720
+	bool ReadyToEndMatch(); // Function Engine.GameMode.ReadyToEndMatch // Native|Event|Protected|BlueprintEvent // @ game+0x2e3c6f0
+	bool PlayerCanRestart(struct APlayerController* Player); // Function Engine.GameMode.PlayerCanRestart // Native|Event|Public|BlueprintEvent // @ game+0x2e3c350
+	bool MustSpectate(struct APlayerController* NewPlayerController); // Function Engine.GameMode.MustSpectate // Native|Event|Public|BlueprintEvent|Const // @ game+0x2e3b470
+	void K2_PostLogin(struct APlayerController* NewPlayer); // Function Engine.GameMode.K2_PostLogin // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnSwapPlayerControllers(struct APlayerController* OldPC, struct APlayerController* NewPC); // Function Engine.GameMode.K2_OnSwapPlayerControllers // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnSetMatchState(struct FName NewState); // Function Engine.GameMode.K2_OnSetMatchState // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnRestartPlayer(struct AController* NewPlayer); // Function Engine.GameMode.K2_OnRestartPlayer // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnLogout(struct AController* ExitingController); // Function Engine.GameMode.K2_OnLogout // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void K2_OnChangeName(struct AController* Other, struct FString NewName, bool bNameChange); // Function Engine.GameMode.K2_OnChangeName // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	struct AActor* K2_FindPlayerStart(struct AController* Player); // Function Engine.GameMode.K2_FindPlayerStart // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2e3a9f0
+	bool IsMatchInProgress(); // Function Engine.GameMode.IsMatchInProgress // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a5c0
+	void InitStartSpot(struct AActor* StartSpot, struct AController* NewPlayer); // Function Engine.GameMode.InitStartSpot // Native|Event|Public|BlueprintEvent // @ game+0x2e3a220
+	bool HasMatchStarted(); // Function Engine.GameMode.HasMatchStarted // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39ff0
+	bool HasMatchEnded(); // Function Engine.GameMode.HasMatchEnded // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39fc0
+	int32_t GetNumPlayers(); // Function Engine.GameMode.GetNumPlayers // Native|Public|BlueprintCallable // @ game+0x2e36a80
+	struct FName GetMatchState(); // Function Engine.GameMode.GetMatchState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36560
+	struct UClass* GetDefaultPawnClassForController(struct AController* InController); // Function Engine.GameMode.GetDefaultPawnClassForController // Native|Event|Public|BlueprintEvent // @ game+0x2e35750
+	struct AActor* FindPlayerStart(struct AController* Player, struct FString IncomingName); // Function Engine.GameMode.FindPlayerStart // Native|Event|Public|BlueprintEvent // @ game+0x2e34870
+	void EndMatch(); // Function Engine.GameMode.EndMatch // Native|Public|BlueprintCallable // @ game+0x2e34490
+	struct AActor* ChoosePlayerStart(struct AController* Player); // Function Engine.GameMode.ChoosePlayerStart // Native|Event|Public|BlueprintEvent // @ game+0x2e32540
+	void ChangeName(struct AController* Controller, struct FString NewName, bool bNameChange); // Function Engine.GameMode.ChangeName // Native|Public|BlueprintCallable // @ game+0x2e323f0
+	bool CanSpectate(struct APlayerController* Viewer, struct APlayerState* ViewTarget); // Function Engine.GameMode.CanSpectate // Native|Event|Public|BlueprintEvent // @ game+0x2e32320
+	void AbortMatch(); // Function Engine.GameMode.AbortMatch // Native|Public|BlueprintCallable // @ game+0x2e30700
 };
 
 // Class Engine.PrimitiveComponent
@@ -1418,82 +1418,82 @@ struct UPrimitiveComponent : USceneComponent {
 	struct UPrimitiveComponent* MergedCollisionComponentParent; // 0x5b0(0x08)
 	char UnknownData_5B8[0x8]; // 0x5b8(0x08)
 
-	void WakeRigidBody(struct FName BoneName); // Function Engine.PrimitiveComponent.WakeRigidBody // Native|Public|BlueprintCallable // @ game+0x2e42580
-	void WakeAllRigidBodies(); // Function Engine.PrimitiveComponent.WakeAllRigidBodies // Native|Public|BlueprintCallable // @ game+0x2e42560
-	void SetWalkableSlopeOverride(struct FWalkableSlopeOverride NewOverride); // Function Engine.PrimitiveComponent.SetWalkableSlopeOverride // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e41450
-	void SetTranslucentSortPriority(int32_t NewTranslucentSortPriority); // Function Engine.PrimitiveComponent.SetTranslucentSortPriority // Final|Native|Public|BlueprintCallable // @ game+0x2e41110
-	void SetSimulatePhysics(bool bSimulate); // Function Engine.PrimitiveComponent.SetSimulatePhysics // Native|Public|BlueprintCallable // @ game+0x2e40830
-	void SetRenderInMainPass(bool bValue); // Function Engine.PrimitiveComponent.SetRenderInMainPass // Final|Native|Public|BlueprintCallable // @ game+0x2e405f0
-	void SetRenderCustomDepth(bool bValue); // Function Engine.PrimitiveComponent.SetRenderCustomDepth // Final|Native|Public|BlueprintCallable // @ game+0x2e40560
-	void SetPhysMaterialOverride(struct UPhysicalMaterial* NewPhysMaterial); // Function Engine.PrimitiveComponent.SetPhysMaterialOverride // Native|Public|BlueprintCallable // @ game+0x2e3faa0
-	void SetPhysicsMaxAngularVelocity(float NewMaxAngVel, bool bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocity // Final|Native|Public|BlueprintCallable // @ game+0x2e3fea0
-	void SetPhysicsLinearVelocity(struct FVector NewVel, bool bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsLinearVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3fd90
-	void SetPhysicsAngularVelocity(struct FVector NewAngVel, bool bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3fb30
-	void SetOwnerNoSee(bool bNewOwnerNoSee); // Function Engine.PrimitiveComponent.SetOwnerNoSee // Final|Native|Public|BlueprintCallable // @ game+0x2e3fa10
-	void SetOnlyOwnerSee(bool bNewOnlyOwnerSee); // Function Engine.PrimitiveComponent.SetOnlyOwnerSee // Final|Native|Public|BlueprintCallable // @ game+0x2e3f900
-	void SetNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision); // Function Engine.PrimitiveComponent.SetNotifyRigidBodyCollision // Native|Public|BlueprintCallable // @ game+0x2e3f870
-	void SetMaterial(int32_t ElementIndex, struct UMaterialInterface* Material); // Function Engine.PrimitiveComponent.SetMaterial // Native|Public|BlueprintCallable // @ game+0x2e3f490
-	void SetMassScale(struct FName BoneName, float InMassScale); // Function Engine.PrimitiveComponent.SetMassScale // Native|Public|BlueprintCallable // @ game+0x2e3f340
-	void SetMassOverrideInKg(struct FName BoneName, float MassInKg, bool bOverrideMass); // Function Engine.PrimitiveComponent.SetMassOverrideInKg // Native|Public|BlueprintCallable // @ game+0x2e3f240
-	void SetLockedAxis(char LockedAxis); // Function Engine.PrimitiveComponent.SetLockedAxis // Native|Public|BlueprintCallable // @ game+0x2e3f130
-	void SetLinearDamping(float InDamping); // Function Engine.PrimitiveComponent.SetLinearDamping // Native|Public|BlueprintCallable // @ game+0x2e3e8f0
-	void SetGenerateOverlapEvents(bool bEnable); // Function Engine.PrimitiveComponent.SetGenerateOverlapEvents // Final|Native|Public|BlueprintCallable // @ game+0x2e3e070
-	void SetEnableGravity(bool bGravityEnabled); // Function Engine.PrimitiveComponent.SetEnableGravity // Native|Public|BlueprintCallable // @ game+0x2e3dd20
-	void SetCustomPrimitiveVector(int32_t Index, struct FVector Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveVector // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3d900
-	void SetCustomPrimitiveScalar(int32_t Index, float Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveScalar // Final|Native|Public|BlueprintCallable // @ game+0x2e3d830
-	void SetCustomDepthStencilValue(int32_t Value); // Function Engine.PrimitiveComponent.SetCustomDepthStencilValue // Final|Native|Public|BlueprintCallable // @ game+0x2e3d650
-	void SetCullDistance(float NewCullDistance); // Function Engine.PrimitiveComponent.SetCullDistance // Final|Native|Public|BlueprintCallable // @ game+0x2e3d550
-	void SetConstraintMode(char ConstraintMode); // Function Engine.PrimitiveComponent.SetConstraintMode // Native|Public|BlueprintCallable // @ game+0x2e3d1c0
-	void SetCollisionResponseToChannel(char Channel, char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToChannel // Final|Native|Public|BlueprintCallable // @ game+0x2e3ce10
-	void SetCollisionResponseToAllChannels(char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToAllChannels // Final|Native|Public|BlueprintCallable // @ game+0x2e3cd90
-	void SetCollisionProfileName(struct FName InCollisionProfileName); // Function Engine.PrimitiveComponent.SetCollisionProfileName // Native|Public|BlueprintCallable // @ game+0x2e3cd00
-	void SetCollisionObjectType(char Channel); // Function Engine.PrimitiveComponent.SetCollisionObjectType // Final|Native|Public|BlueprintCallable // @ game+0x2e3cc80
-	void SetCollisionEnabled(char NewType); // Function Engine.PrimitiveComponent.SetCollisionEnabled // Native|Public|BlueprintCallable // @ game+0x2e3cc00
-	void SetCenterOfMass(struct FVector CenterOfMassOffset, struct FName BoneName); // Function Engine.PrimitiveComponent.SetCenterOfMass // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3c860
-	void SetCastShadow(bool NewCastShadow); // Function Engine.PrimitiveComponent.SetCastShadow // Final|Native|Public|BlueprintCallable // @ game+0x2e3c6b0
-	void SetAngularDamping(float InDamping); // Function Engine.PrimitiveComponent.SetAngularDamping // Native|Public|BlueprintCallable // @ game+0x2e3b490
-	void SetAllPhysicsLinearVelocity(struct FVector NewVel, bool bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsLinearVelocity // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3b3b0
-	void SetAllMassScale(float InMassScale); // Function Engine.PrimitiveComponent.SetAllMassScale // Native|Public|BlueprintCallable // @ game+0x2e3af90
-	struct FVector ScaleByMomentOfInertia(struct FVector InputVector, struct FName BoneName); // Function Engine.PrimitiveComponent.ScaleByMomentOfInertia // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a810
-	void PutRigidBodyToSleep(struct FName BoneName); // Function Engine.PrimitiveComponent.PutRigidBodyToSleep // Final|Native|Public|BlueprintCallable // @ game+0x2e3a1e0
-	bool K2_LineTraceComponent(struct FVector TraceStart, struct FVector TraceEnd, bool bTraceComplex, bool bShowTrace, struct FVector HitLocation, struct FVector HitNormal, struct FName BoneName); // Function Engine.PrimitiveComponent.K2_LineTraceComponent // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e386f0
-	bool IsOverlappingComponent(struct UPrimitiveComponent* OtherComp); // Function Engine.PrimitiveComponent.IsOverlappingComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38300
-	bool IsOverlappingActor(struct AActor* Other); // Function Engine.PrimitiveComponent.IsOverlappingActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38270
-	bool IsGravityEnabled(); // Function Engine.PrimitiveComponent.IsGravityEnabled // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e380a0
-	void IgnoreActorWhenMoving(struct AActor* Actor, bool bShouldIgnore); // Function Engine.PrimitiveComponent.IgnoreActorWhenMoving // Final|Native|Public|BlueprintCallable // @ game+0x2e37c80
-	struct FWalkableSlopeOverride GetWalkableSlopeOverride(); // Function Engine.PrimitiveComponent.GetWalkableSlopeOverride // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e374b0
-	struct FVector GetPhysicsLinearVelocityAtPoint(struct FVector Point, struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocityAtPoint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e351a0
-	struct FVector GetPhysicsLinearVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e35100
-	struct FVector GetPhysicsAngularVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e35060
-	void GetOverlappingComponents(struct TArray<struct UPrimitiveComponent*> InOverlappingComponents); // Function Engine.PrimitiveComponent.GetOverlappingComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2e349a0
-	void GetOverlappingActors(struct TArray<struct AActor*> OverlappingActors, struct UClass* ClassFilter); // Function Engine.PrimitiveComponent.GetOverlappingActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2e348a0
-	struct TArray<struct FOverlapInfo> GetOverlapInfos(); // Function Engine.PrimitiveComponent.GetOverlapInfos // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34680
-	int32_t GetNumMaterials(); // Function Engine.PrimitiveComponent.GetNumMaterials // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e345c0
-	struct UMaterialInterface* GetMaterial(int32_t ElementIndex); // Function Engine.PrimitiveComponent.GetMaterial // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e340f0
-	float GetMassScale(struct FName BoneName); // Function Engine.PrimitiveComponent.GetMassScale // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34030
-	float GetMass(); // Function Engine.PrimitiveComponent.GetMass // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33ff0
-	float GetLinearDamping(); // Function Engine.PrimitiveComponent.GetLinearDamping // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33a20
-	struct FVector GetInertiaTensor(struct FName BoneName); // Function Engine.PrimitiveComponent.GetInertiaTensor // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e337e0
-	char GetCollisionResponseToChannel(char Channel); // Function Engine.PrimitiveComponent.GetCollisionResponseToChannel // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32f90
-	struct FName GetCollisionProfileName(); // Function Engine.PrimitiveComponent.GetCollisionProfileName // Final|Native|Public|BlueprintCallable // @ game+0x2e32f50
-	char GetCollisionObjectType(); // Function Engine.PrimitiveComponent.GetCollisionObjectType // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32f20
-	float GetClosestPointOnCollision(struct FVector Point, struct FVector OutPointOnBody, struct FName BoneName); // Function Engine.PrimitiveComponent.GetClosestPointOnCollision // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32db0
-	struct FVector GetCenterOfMass(struct FName BoneName); // Function Engine.PrimitiveComponent.GetCenterOfMass // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e32d10
-	float GetAngularDamping(); // Function Engine.PrimitiveComponent.GetAngularDamping // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32a70
-	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(int32_t ElementIndex, struct UMaterialInterface* SourceMaterial); // Function Engine.PrimitiveComponent.CreateDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2e307d0
-	struct UMaterialInstanceDynamic* CreateAndSetMaterialInstanceDynamicFromMaterial(int32_t ElementIndex, struct UMaterialInterface* Parent); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamicFromMaterial // Native|Public|BlueprintCallable // @ game+0x2e306d0
-	struct UMaterialInstanceDynamic* CreateAndSetMaterialInstanceDynamic(int32_t ElementIndex); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamic // Native|Public|BlueprintCallable // @ game+0x2e30630
-	struct TArray<struct AActor*> CopyArrayOfMoveIgnoreActors(); // Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreActors // Final|Native|Public|BlueprintCallable // @ game+0x2e30590
-	void ClearMoveIgnoreActors(int32_t InSlack); // Function Engine.PrimitiveComponent.ClearMoveIgnoreActors // Final|Native|Public|BlueprintCallable // @ game+0x2e30170
-	bool CanCharacterStepUp(struct APawn* Pawn); // Function Engine.PrimitiveComponent.CanCharacterStepUp // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e2fd90
-	void AddTorque(struct FVector Torque, struct FName BoneName, bool bAccelChange); // Function Engine.PrimitiveComponent.AddTorque // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2fa20
-	void AddRadialImpulse(struct FVector Origin, float Radius, float Strength, char Falloff, bool bVelChange); // Function Engine.PrimitiveComponent.AddRadialImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2f660
-	void AddRadialForce(struct FVector Origin, float Radius, float Strength, char Falloff, bool bAccelChange); // Function Engine.PrimitiveComponent.AddRadialForce // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2f4a0
-	void AddImpulseAtLocation(struct FVector Impulse, struct FVector Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddImpulseAtLocation // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2f0d0
-	void AddImpulse(struct FVector Impulse, struct FName BoneName, bool bVelChange); // Function Engine.PrimitiveComponent.AddImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2efb0
-	void AddForceAtLocation(struct FVector Force, struct FVector Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddForceAtLocation // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2ecf0
-	void AddForce(struct FVector Force, struct FName BoneName, bool bAccelChange); // Function Engine.PrimitiveComponent.AddForce // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2ebd0
-	void AddAngularImpulse(struct FVector Impulse, struct FName BoneName, bool bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2e3d0
+	void WakeRigidBody(struct FName BoneName); // Function Engine.PrimitiveComponent.WakeRigidBody // Native|Public|BlueprintCallable // @ game+0x2e44a10
+	void WakeAllRigidBodies(); // Function Engine.PrimitiveComponent.WakeAllRigidBodies // Native|Public|BlueprintCallable // @ game+0x2e449f0
+	void SetWalkableSlopeOverride(struct FWalkableSlopeOverride NewOverride); // Function Engine.PrimitiveComponent.SetWalkableSlopeOverride // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e438e0
+	void SetTranslucentSortPriority(int32_t NewTranslucentSortPriority); // Function Engine.PrimitiveComponent.SetTranslucentSortPriority // Final|Native|Public|BlueprintCallable // @ game+0x2e435a0
+	void SetSimulatePhysics(bool bSimulate); // Function Engine.PrimitiveComponent.SetSimulatePhysics // Native|Public|BlueprintCallable // @ game+0x2e42cc0
+	void SetRenderInMainPass(bool bValue); // Function Engine.PrimitiveComponent.SetRenderInMainPass // Final|Native|Public|BlueprintCallable // @ game+0x2e42a80
+	void SetRenderCustomDepth(bool bValue); // Function Engine.PrimitiveComponent.SetRenderCustomDepth // Final|Native|Public|BlueprintCallable // @ game+0x2e429f0
+	void SetPhysMaterialOverride(struct UPhysicalMaterial* NewPhysMaterial); // Function Engine.PrimitiveComponent.SetPhysMaterialOverride // Native|Public|BlueprintCallable // @ game+0x2e41f30
+	void SetPhysicsMaxAngularVelocity(float NewMaxAngVel, bool bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocity // Final|Native|Public|BlueprintCallable // @ game+0x2e42330
+	void SetPhysicsLinearVelocity(struct FVector NewVel, bool bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsLinearVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e42220
+	void SetPhysicsAngularVelocity(struct FVector NewAngVel, bool bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e41fc0
+	void SetOwnerNoSee(bool bNewOwnerNoSee); // Function Engine.PrimitiveComponent.SetOwnerNoSee // Final|Native|Public|BlueprintCallable // @ game+0x2e41ea0
+	void SetOnlyOwnerSee(bool bNewOnlyOwnerSee); // Function Engine.PrimitiveComponent.SetOnlyOwnerSee // Final|Native|Public|BlueprintCallable // @ game+0x2e41d90
+	void SetNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision); // Function Engine.PrimitiveComponent.SetNotifyRigidBodyCollision // Native|Public|BlueprintCallable // @ game+0x2e41d00
+	void SetMaterial(int32_t ElementIndex, struct UMaterialInterface* Material); // Function Engine.PrimitiveComponent.SetMaterial // Native|Public|BlueprintCallable // @ game+0x2e41920
+	void SetMassScale(struct FName BoneName, float InMassScale); // Function Engine.PrimitiveComponent.SetMassScale // Native|Public|BlueprintCallable // @ game+0x2e417d0
+	void SetMassOverrideInKg(struct FName BoneName, float MassInKg, bool bOverrideMass); // Function Engine.PrimitiveComponent.SetMassOverrideInKg // Native|Public|BlueprintCallable // @ game+0x2e416d0
+	void SetLockedAxis(char LockedAxis); // Function Engine.PrimitiveComponent.SetLockedAxis // Native|Public|BlueprintCallable // @ game+0x2e415c0
+	void SetLinearDamping(float InDamping); // Function Engine.PrimitiveComponent.SetLinearDamping // Native|Public|BlueprintCallable // @ game+0x2e40d80
+	void SetGenerateOverlapEvents(bool bEnable); // Function Engine.PrimitiveComponent.SetGenerateOverlapEvents // Final|Native|Public|BlueprintCallable // @ game+0x2e40500
+	void SetEnableGravity(bool bGravityEnabled); // Function Engine.PrimitiveComponent.SetEnableGravity // Native|Public|BlueprintCallable // @ game+0x2e401b0
+	void SetCustomPrimitiveVector(int32_t Index, struct FVector Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveVector // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3fd90
+	void SetCustomPrimitiveScalar(int32_t Index, float Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveScalar // Final|Native|Public|BlueprintCallable // @ game+0x2e3fcc0
+	void SetCustomDepthStencilValue(int32_t Value); // Function Engine.PrimitiveComponent.SetCustomDepthStencilValue // Final|Native|Public|BlueprintCallable // @ game+0x2e3fae0
+	void SetCullDistance(float NewCullDistance); // Function Engine.PrimitiveComponent.SetCullDistance // Final|Native|Public|BlueprintCallable // @ game+0x2e3f9e0
+	void SetConstraintMode(char ConstraintMode); // Function Engine.PrimitiveComponent.SetConstraintMode // Native|Public|BlueprintCallable // @ game+0x2e3f650
+	void SetCollisionResponseToChannel(char Channel, char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToChannel // Final|Native|Public|BlueprintCallable // @ game+0x2e3f2a0
+	void SetCollisionResponseToAllChannels(char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToAllChannels // Final|Native|Public|BlueprintCallable // @ game+0x2e3f220
+	void SetCollisionProfileName(struct FName InCollisionProfileName); // Function Engine.PrimitiveComponent.SetCollisionProfileName // Native|Public|BlueprintCallable // @ game+0x2e3f190
+	void SetCollisionObjectType(char Channel); // Function Engine.PrimitiveComponent.SetCollisionObjectType // Final|Native|Public|BlueprintCallable // @ game+0x2e3f110
+	void SetCollisionEnabled(char NewType); // Function Engine.PrimitiveComponent.SetCollisionEnabled // Native|Public|BlueprintCallable // @ game+0x2e3f090
+	void SetCenterOfMass(struct FVector CenterOfMassOffset, struct FName BoneName); // Function Engine.PrimitiveComponent.SetCenterOfMass // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3ecf0
+	void SetCastShadow(bool NewCastShadow); // Function Engine.PrimitiveComponent.SetCastShadow // Final|Native|Public|BlueprintCallable // @ game+0x2e3eb40
+	void SetAngularDamping(float InDamping); // Function Engine.PrimitiveComponent.SetAngularDamping // Native|Public|BlueprintCallable // @ game+0x2e3d920
+	void SetAllPhysicsLinearVelocity(struct FVector NewVel, bool bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsLinearVelocity // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3d840
+	void SetAllMassScale(float InMassScale); // Function Engine.PrimitiveComponent.SetAllMassScale // Native|Public|BlueprintCallable // @ game+0x2e3d420
+	struct FVector ScaleByMomentOfInertia(struct FVector InputVector, struct FName BoneName); // Function Engine.PrimitiveComponent.ScaleByMomentOfInertia // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3cca0
+	void PutRigidBodyToSleep(struct FName BoneName); // Function Engine.PrimitiveComponent.PutRigidBodyToSleep // Final|Native|Public|BlueprintCallable // @ game+0x2e3c670
+	bool K2_LineTraceComponent(struct FVector TraceStart, struct FVector TraceEnd, bool bTraceComplex, bool bShowTrace, struct FVector HitLocation, struct FVector HitNormal, struct FName BoneName); // Function Engine.PrimitiveComponent.K2_LineTraceComponent // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3ab80
+	bool IsOverlappingComponent(struct UPrimitiveComponent* OtherComp); // Function Engine.PrimitiveComponent.IsOverlappingComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a790
+	bool IsOverlappingActor(struct AActor* Other); // Function Engine.PrimitiveComponent.IsOverlappingActor // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a700
+	bool IsGravityEnabled(); // Function Engine.PrimitiveComponent.IsGravityEnabled // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a530
+	void IgnoreActorWhenMoving(struct AActor* Actor, bool bShouldIgnore); // Function Engine.PrimitiveComponent.IgnoreActorWhenMoving // Final|Native|Public|BlueprintCallable // @ game+0x2e3a110
+	struct FWalkableSlopeOverride GetWalkableSlopeOverride(); // Function Engine.PrimitiveComponent.GetWalkableSlopeOverride // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39940
+	struct FVector GetPhysicsLinearVelocityAtPoint(struct FVector Point, struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocityAtPoint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e37630
+	struct FVector GetPhysicsLinearVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e37590
+	struct FVector GetPhysicsAngularVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocity // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e374f0
+	void GetOverlappingComponents(struct TArray<struct UPrimitiveComponent*> InOverlappingComponents); // Function Engine.PrimitiveComponent.GetOverlappingComponents // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36e30
+	void GetOverlappingActors(struct TArray<struct AActor*> OverlappingActors, struct UClass* ClassFilter); // Function Engine.PrimitiveComponent.GetOverlappingActors // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36d30
+	struct TArray<struct FOverlapInfo> GetOverlapInfos(); // Function Engine.PrimitiveComponent.GetOverlapInfos // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36b10
+	int32_t GetNumMaterials(); // Function Engine.PrimitiveComponent.GetNumMaterials // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36a50
+	struct UMaterialInterface* GetMaterial(int32_t ElementIndex); // Function Engine.PrimitiveComponent.GetMaterial // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36580
+	float GetMassScale(struct FName BoneName); // Function Engine.PrimitiveComponent.GetMassScale // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e364c0
+	float GetMass(); // Function Engine.PrimitiveComponent.GetMass // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36480
+	float GetLinearDamping(); // Function Engine.PrimitiveComponent.GetLinearDamping // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35eb0
+	struct FVector GetInertiaTensor(struct FName BoneName); // Function Engine.PrimitiveComponent.GetInertiaTensor // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35c70
+	char GetCollisionResponseToChannel(char Channel); // Function Engine.PrimitiveComponent.GetCollisionResponseToChannel // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35420
+	struct FName GetCollisionProfileName(); // Function Engine.PrimitiveComponent.GetCollisionProfileName // Final|Native|Public|BlueprintCallable // @ game+0x2e353e0
+	char GetCollisionObjectType(); // Function Engine.PrimitiveComponent.GetCollisionObjectType // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e353b0
+	float GetClosestPointOnCollision(struct FVector Point, struct FVector OutPointOnBody, struct FName BoneName); // Function Engine.PrimitiveComponent.GetClosestPointOnCollision // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35240
+	struct FVector GetCenterOfMass(struct FName BoneName); // Function Engine.PrimitiveComponent.GetCenterOfMass // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e351a0
+	float GetAngularDamping(); // Function Engine.PrimitiveComponent.GetAngularDamping // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34f00
+	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(int32_t ElementIndex, struct UMaterialInterface* SourceMaterial); // Function Engine.PrimitiveComponent.CreateDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2e32c60
+	struct UMaterialInstanceDynamic* CreateAndSetMaterialInstanceDynamicFromMaterial(int32_t ElementIndex, struct UMaterialInterface* Parent); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamicFromMaterial // Native|Public|BlueprintCallable // @ game+0x2e32b60
+	struct UMaterialInstanceDynamic* CreateAndSetMaterialInstanceDynamic(int32_t ElementIndex); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamic // Native|Public|BlueprintCallable // @ game+0x2e32ac0
+	struct TArray<struct AActor*> CopyArrayOfMoveIgnoreActors(); // Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreActors // Final|Native|Public|BlueprintCallable // @ game+0x2e32a20
+	void ClearMoveIgnoreActors(int32_t InSlack); // Function Engine.PrimitiveComponent.ClearMoveIgnoreActors // Final|Native|Public|BlueprintCallable // @ game+0x2e32600
+	bool CanCharacterStepUp(struct APawn* Pawn); // Function Engine.PrimitiveComponent.CanCharacterStepUp // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32220
+	void AddTorque(struct FVector Torque, struct FName BoneName, bool bAccelChange); // Function Engine.PrimitiveComponent.AddTorque // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31eb0
+	void AddRadialImpulse(struct FVector Origin, float Radius, float Strength, char Falloff, bool bVelChange); // Function Engine.PrimitiveComponent.AddRadialImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31af0
+	void AddRadialForce(struct FVector Origin, float Radius, float Strength, char Falloff, bool bAccelChange); // Function Engine.PrimitiveComponent.AddRadialForce // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31930
+	void AddImpulseAtLocation(struct FVector Impulse, struct FVector Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddImpulseAtLocation // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31560
+	void AddImpulse(struct FVector Impulse, struct FName BoneName, bool bVelChange); // Function Engine.PrimitiveComponent.AddImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31440
+	void AddForceAtLocation(struct FVector Force, struct FVector Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddForceAtLocation // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31180
+	void AddForce(struct FVector Force, struct FName BoneName, bool bAccelChange); // Function Engine.PrimitiveComponent.AddForce // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31060
+	void AddAngularImpulse(struct FVector Impulse, struct FName BoneName, bool bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulse // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e30860
 };
 
 // Class Engine.GameState
@@ -1512,12 +1512,12 @@ struct AGameState : AInfo {
 	float ServerWorldTimeSecondsUpdateFrequency; // 0x410(0x04)
 	char UnknownData_414[0xc]; // 0x414(0x0c)
 
-	void OnRep_SpectatorClass(); // Function Engine.GameState.OnRep_SpectatorClass // Native|Public // @ game+0x2e396c0
-	void OnRep_ReplicatedWorldTimeSeconds(); // Function Engine.GameState.OnRep_ReplicatedWorldTimeSeconds // Native|Protected // @ game+0x2e39600
-	void OnRep_MatchState(); // Function Engine.GameState.OnRep_MatchState // Native|Public // @ game+0x2e39560
-	void OnRep_GameModeClass(); // Function Engine.GameState.OnRep_GameModeClass // Native|Public // @ game+0x2e39520
-	void OnRep_ElapsedTime(); // Function Engine.GameState.OnRep_ElapsedTime // Native|Public // @ game+0x2e39500
-	float GetServerWorldTimeSeconds(); // Function Engine.GameState.GetServerWorldTimeSeconds // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36760
+	void OnRep_SpectatorClass(); // Function Engine.GameState.OnRep_SpectatorClass // Native|Public // @ game+0x2e3bb50
+	void OnRep_ReplicatedWorldTimeSeconds(); // Function Engine.GameState.OnRep_ReplicatedWorldTimeSeconds // Native|Protected // @ game+0x2e3ba90
+	void OnRep_MatchState(); // Function Engine.GameState.OnRep_MatchState // Native|Public // @ game+0x2e3b9f0
+	void OnRep_GameModeClass(); // Function Engine.GameState.OnRep_GameModeClass // Native|Public // @ game+0x2e3b9b0
+	void OnRep_ElapsedTime(); // Function Engine.GameState.OnRep_ElapsedTime // Native|Public // @ game+0x2e3b990
+	float GetServerWorldTimeSeconds(); // Function Engine.GameState.GetServerWorldTimeSeconds // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38bf0
 };
 
 // Class Engine.GameUserSettings
@@ -1557,9 +1557,9 @@ struct UGameViewportClient : UScriptViewportClient {
 	struct UGameInstance* GameInstance; // 0x88(0x08)
 	char UnknownData_90[0x1c0]; // 0x90(0x1c0)
 
-	void SSSwapControllers(); // Function Engine.GameViewportClient.SSSwapControllers // Exec|Native|Public // @ game+0x3200eb0
-	void ShowTitleSafeArea(); // Function Engine.GameViewportClient.ShowTitleSafeArea // Exec|Native|Public // @ game+0x3200f60
-	void SetConsoleTarget(int32_t PlayerIndex); // Function Engine.GameViewportClient.SetConsoleTarget // Exec|Native|Public // @ game+0x3200ed0
+	void SSSwapControllers(); // Function Engine.GameViewportClient.SSSwapControllers // Exec|Native|Public // @ game+0x3203340
+	void ShowTitleSafeArea(); // Function Engine.GameViewportClient.ShowTitleSafeArea // Exec|Native|Public // @ game+0x32033f0
+	void SetConsoleTarget(int32_t PlayerIndex); // Function Engine.GameViewportClient.SetConsoleTarget // Exec|Native|Public // @ game+0x3203360
 };
 
 // Class Engine.PlayerState
@@ -1586,7 +1586,7 @@ struct APlayerState : AInfo {
 	struct FUniqueNetIdRepl UniqueId; // 0x420(0x18)
 	char UnknownData_438[0x18]; // 0x438(0x18)
 
-	void OnRep_UniqueId(); // Function Engine.PlayerState.OnRep_UniqueId // Native|Public // @ game+0x2e396e0
+	void OnRep_UniqueId(); // Function Engine.PlayerState.OnRep_UniqueId // Native|Public // @ game+0x2e3bb70
 };
 
 // Class Engine.Controller
@@ -1605,24 +1605,24 @@ struct AController : AActor {
 	struct FName StateName; // 0x410(0x08)
 	struct FMulticastDelegate OnInstigatedAnyDamage; // 0x418(0x10)
 
-	void UnPossess(); // Function Engine.Controller.UnPossess // Native|Public|BlueprintCallable // @ game+0x2d3c640
-	void StopMovement(); // Function Engine.Controller.StopMovement // Native|Public|BlueprintCallable // @ game+0x2d3c410
-	void SetInitialLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation); // Function Engine.Controller.SetInitialLocationAndRotation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d3ace0
-	void SetControlRotation(struct FRotator NewRotation); // Function Engine.Controller.SetControlRotation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d3a6c0
-	void ReceiveInstigatedAnyDamage(float Damage, struct UDamageType* DamageType, struct AActor* DamagedActor, struct AActor* DamageCauser); // Function Engine.Controller.ReceiveInstigatedAnyDamage // BlueprintAuthorityOnly|Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void Possess(struct APawn* InPawn); // Function Engine.Controller.Possess // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d383a0
-	void OnRep_PlayerState(); // Function Engine.Controller.OnRep_PlayerState // Native|Public // @ game+0x2d37880
-	void OnRep_Pawn(); // Function Engine.Controller.OnRep_Pawn // Native|Public // @ game+0x2d37860
-	bool LineOfSightTo(struct AActor* Other, struct FVector ViewPoint, bool bAlternateChecks); // Function Engine.Controller.LineOfSightTo // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37410
-	struct APawn* K2_GetPawn(); // Function Engine.Controller.K2_GetPawn // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d358d0
-	bool IsLocalPlayerController(); // Function Engine.Controller.IsLocalPlayerController // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33700
-	bool IsLocalController(); // Function Engine.Controller.IsLocalController // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d336d0
-	struct AActor* GetViewTarget(); // Function Engine.Controller.GetViewTarget // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d331b0
-	struct FRotator GetDesiredRotation(); // Function Engine.Controller.GetDesiredRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30a90
-	struct FRotator GetControlRotation(); // Function Engine.Controller.GetControlRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30530
-	void ClientSetRotation(struct FRotator NewRotation, bool bResetCamera); // Function Engine.Controller.ClientSetRotation // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2de80
-	void ClientSetLocation(struct FVector NewLocation, struct FRotator NewRotation); // Function Engine.Controller.ClientSetLocation // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2dda0
-	struct APlayerController* CastToPlayerController(); // Function Engine.Controller.CastToPlayerController // Final|Native|Public|BlueprintCallable // @ game+0x2d2c1e0
+	void UnPossess(); // Function Engine.Controller.UnPossess // Native|Public|BlueprintCallable // @ game+0x2d3ead0
+	void StopMovement(); // Function Engine.Controller.StopMovement // Native|Public|BlueprintCallable // @ game+0x2d3e8a0
+	void SetInitialLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation); // Function Engine.Controller.SetInitialLocationAndRotation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d3d170
+	void SetControlRotation(struct FRotator NewRotation); // Function Engine.Controller.SetControlRotation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2d3cb50
+	void ReceiveInstigatedAnyDamage(float Damage, struct UDamageType* DamageType, struct AActor* DamagedActor, struct AActor* DamageCauser); // Function Engine.Controller.ReceiveInstigatedAnyDamage // BlueprintAuthorityOnly|Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void Possess(struct APawn* InPawn); // Function Engine.Controller.Possess // BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x2d3a830
+	void OnRep_PlayerState(); // Function Engine.Controller.OnRep_PlayerState // Native|Public // @ game+0x2d39d10
+	void OnRep_Pawn(); // Function Engine.Controller.OnRep_Pawn // Native|Public // @ game+0x2d39cf0
+	bool LineOfSightTo(struct AActor* Other, struct FVector ViewPoint, bool bAlternateChecks); // Function Engine.Controller.LineOfSightTo // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d398a0
+	struct APawn* K2_GetPawn(); // Function Engine.Controller.K2_GetPawn // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d37d60
+	bool IsLocalPlayerController(); // Function Engine.Controller.IsLocalPlayerController // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35b90
+	bool IsLocalController(); // Function Engine.Controller.IsLocalController // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35b60
+	struct AActor* GetViewTarget(); // Function Engine.Controller.GetViewTarget // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35640
+	struct FRotator GetDesiredRotation(); // Function Engine.Controller.GetDesiredRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32f20
+	struct FRotator GetControlRotation(); // Function Engine.Controller.GetControlRotation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d329c0
+	void ClientSetRotation(struct FRotator NewRotation, bool bResetCamera); // Function Engine.Controller.ClientSetRotation // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d30310
+	void ClientSetLocation(struct FVector NewLocation, struct FRotator NewRotation); // Function Engine.Controller.ClientSetLocation // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d30230
+	struct APlayerController* CastToPlayerController(); // Function Engine.Controller.CastToPlayerController // Final|Native|Public|BlueprintCallable // @ game+0x2d2e670
 };
 
 // Class Engine.PlayerController
@@ -1694,136 +1694,136 @@ struct APlayerController : AController {
 	bool bInCinematicMode; // 0x71a(0x01)
 	char UnknownData_71B[0x55]; // 0x71b(0x55)
 
-	bool WasInputKeyJustReleased(struct FKey Key); // Function Engine.PlayerController.WasInputKeyJustReleased // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3c9f0
-	bool WasInputKeyJustPressed(struct FKey Key); // Function Engine.PlayerController.WasInputKeyJustPressed // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3c8f0
-	void ToggleSpeaking(bool bInSpeaking); // Function Engine.PlayerController.ToggleSpeaking // Exec|Native|Public // @ game+0x2d3c520
-	void SwitchLevel(struct FString URL); // Function Engine.PlayerController.SwitchLevel // Exec|Native|Public // @ game+0x2d3c430
-	void StopHapticEffect(char Hand); // Function Engine.PlayerController.StopHapticEffect // Final|Native|Public|BlueprintCallable // @ game+0x2d3c390
-	void StartFire(char FireModeNum); // Function Engine.PlayerController.StartFire // Exec|Native|Public // @ game+0x2d3bf60
-	void SetVirtualJoystickVisibility(bool bVisible); // Function Engine.PlayerController.SetVirtualJoystickVisibility // Native|Public|BlueprintCallable // @ game+0x2d3b880
-	void SetViewTargetWithBlend(struct AActor* NewViewTarget, float BlendTime, char BlendFunc, float BlendExp, bool bLockOutgoing); // Function Engine.PlayerController.SetViewTargetWithBlend // Native|Public|BlueprintCallable // @ game+0x2d3b700
-	void SetName(struct FString S); // Function Engine.PlayerController.SetName // Exec|Native|Public // @ game+0x2d3b080
-	void SetIgnoreMoveInput(bool bNewMoveInput); // Function Engine.PlayerController.SetIgnoreMoveInput // Native|Public|BlueprintCallable // @ game+0x2d3abc0
-	void SetIgnoreLookInput(bool bNewLookInput); // Function Engine.PlayerController.SetIgnoreLookInput // Native|Public|BlueprintCallable // @ game+0x2d3ab30
-	void SetHapticsByValue(float Frequency, float Amplitude, char Hand); // Function Engine.PlayerController.SetHapticsByValue // Final|Native|Public|BlueprintCallable // @ game+0x2d3a950
-	void SetCinematicMode(bool bInCinematicMode, bool bHidePlayer, bool bAffectsHUD, bool bAffectsMovement, bool bAffectsTurning); // Function Engine.PlayerController.SetCinematicMode // Native|Public|BlueprintCallable // @ game+0x2d3a470
-	void SetAudioListenerOverride(struct USceneComponent* AttachToComponent, struct FVector Location, struct FRotator Rotation); // Function Engine.PlayerController.SetAudioListenerOverride // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a1d0
-	void ServerViewSelf(struct FViewTargetTransitionParams TransitionParams); // Function Engine.PlayerController.ServerViewSelf // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d39930
-	void ServerViewPrevPlayer(); // Function Engine.PlayerController.ServerViewPrevPlayer // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d398e0
-	void ServerViewNextPlayer(); // Function Engine.PlayerController.ServerViewNextPlayer // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d39890
-	void ServerVerifyViewTarget(); // Function Engine.PlayerController.ServerVerifyViewTarget // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d39840
-	void ServerUpdateCamera(struct FVector_NetQuantize CamLoc, int32_t CamPitchAndYaw); // Function Engine.PlayerController.ServerUpdateCamera // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d39720
-	void ServerUnmutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ServerUnmutePlayer // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d395d0
-	void ServerToggleAILogging(); // Function Engine.PlayerController.ServerToggleAILogging // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d39580
-	void ServerShortTimeout(); // Function Engine.PlayerController.ServerShortTimeout // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d39530
-	void ServerSetSpectatorWaiting(bool bWaiting); // Function Engine.PlayerController.ServerSetSpectatorWaiting // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d39470
-	void ServerSetSpectatorLocation(struct FVector NewLoc, struct FRotator NewRot); // Function Engine.PlayerController.ServerSetSpectatorLocation // Net|Native|Event|Public|NetServer|HasDefaults|NetValidate // @ game+0x2d39340
-	void ServerRestartPlayer(); // Function Engine.PlayerController.ServerRestartPlayer // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d392f0
-	void ServerPause(); // Function Engine.PlayerController.ServerPause // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d392a0
-	void ServerNotifyLoadedWorld(struct FName WorldPackageName); // Function Engine.PlayerController.ServerNotifyLoadedWorld // Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d391f0
-	void ServerMutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ServerMutePlayer // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d390a0
-	void ServerCheckClientPossessionReliable(); // Function Engine.PlayerController.ServerCheckClientPossessionReliable // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d39050
-	void ServerCheckClientPossession(); // Function Engine.PlayerController.ServerCheckClientPossession // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d39000
-	void ServerChangeName(struct FString S); // Function Engine.PlayerController.ServerChangeName // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d38f30
-	void ServerCamera(struct FName NewMode); // Function Engine.PlayerController.ServerCamera // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d38e70
-	void ServerAcknowledgePossession(struct APawn* P); // Function Engine.PlayerController.ServerAcknowledgePossession // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d38db0
-	void SendToConsole(struct FString Command); // Function Engine.PlayerController.SendToConsole // Exec|Native|Public // @ game+0x2d38d00
-	void SendPlayerName(int32_t Id, struct FString Name); // Function Engine.PlayerController.SendPlayerName // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d38c10
-	void RestartLevel(); // Function Engine.PlayerController.RestartLevel // Exec|Native|Public // @ game+0x2d38bf0
-	void ResetIgnoreMoveInput(); // Function Engine.PlayerController.ResetIgnoreMoveInput // Native|Public|BlueprintCallable // @ game+0x2d38bb0
-	void ResetIgnoreLookInput(); // Function Engine.PlayerController.ResetIgnoreLookInput // Native|Public|BlueprintCallable // @ game+0x2d38b90
-	void ResetIgnoreInputFlags(); // Function Engine.PlayerController.ResetIgnoreInputFlags // Native|Public|BlueprintCallable // @ game+0x2d38b70
-	bool ProjectWorldLocationToScreen(struct FVector WorldLocation, struct FVector2D ScreenLocation); // Function Engine.PlayerController.ProjectWorldLocationToScreen // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d38430
-	void PlayHapticEffect(struct UHapticFeedbackEffect* HapticEffect, char Hand, float Scale); // Function Engine.PlayerController.PlayHapticEffect // Final|Native|Public|BlueprintCallable // @ game+0x2d38290
-	void PlayDynamicForceFeedback(float Intensity, float Duration, bool bAffectsLeftLarge, bool bAffectsLeftSmall, bool bAffectsRightLarge, bool bAffectsRightSmall, char Action, struct FLatentActionInfo LatentInfo); // Function Engine.PlayerController.PlayDynamicForceFeedback // Final|Native|Public|BlueprintCallable // @ game+0x2d38000
-	void Pause(); // Function Engine.PlayerController.Pause // Exec|Native|Public // @ game+0x2d37ad0
-	void OnServerStartedVisualLogger(bool bIsLogging); // Function Engine.PlayerController.OnServerStartedVisualLogger // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d37a40
-	void LocalTravel(struct FString URL); // Function Engine.PlayerController.LocalTravel // Exec|Native|Public // @ game+0x2d37530
-	bool IsSeamlessTravelInProgress(); // Function Engine.PlayerController.IsSeamlessTravelInProgress // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33880
-	bool IsPossessingServerAcknowledgedPawn(); // Function Engine.PlayerController.IsPossessingServerAcknowledgedPawn // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2d33820
-	bool IsMoveInputIgnored(); // Function Engine.PlayerController.IsMoveInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33760
-	bool IsLookInputIgnored(); // Function Engine.PlayerController.IsLookInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33730
-	bool IsInputKeyDown(struct FKey Key); // Function Engine.PlayerController.IsInputKeyDown // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d335d0
-	void GetViewportSize(int32_t SizeX, int32_t SizeY); // Function Engine.PlayerController.GetViewportSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d331e0
-	struct ASpectatorPawn* GetSpectatorPawn(); // Function Engine.PlayerController.GetSpectatorPawn // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32c70
-	bool GetMousePosition(float LocationX, float LocationY); // Function Engine.PlayerController.GetMousePosition // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32450
-	struct FVector GetInputVectorKeyState(struct FKey Key); // Function Engine.PlayerController.GetInputVectorKeyState // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32200
-	void GetInputTouchState(char FingerIndex, float LocationX, float LocationY, bool bIsCurrentlyPressed); // Function Engine.PlayerController.GetInputTouchState // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31f60
-	void GetInputMouseDelta(float DeltaX, float DeltaY); // Function Engine.PlayerController.GetInputMouseDelta // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31e80
-	void GetInputMotionState(struct FVector Tilt, struct FVector RotationRate, struct FVector Gravity, struct FVector Acceleration); // Function Engine.PlayerController.GetInputMotionState // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31cf0
-	float GetInputKeyTimeDown(struct FKey Key); // Function Engine.PlayerController.GetInputKeyTimeDown // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31bf0
-	void GetInputAnalogStickState(char WhichStick, float StickX, float StickY); // Function Engine.PlayerController.GetInputAnalogStickState // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31930
-	float GetInputAnalogKeyState(struct FKey Key); // Function Engine.PlayerController.GetInputAnalogKeyState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31830
-	struct AHUD* GetHUD(); // Function Engine.PlayerController.GetHUD // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30d60
-	bool GetHitResultUnderFingerForObjects(char FingerIndex, struct TArray<char> ObjectTypes, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerForObjects // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31520
-	bool GetHitResultUnderFingerByChannel(char FingerIndex, char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerByChannel // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31380
-	bool GetHitResultUnderFinger(char FingerIndex, char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderFinger // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d311e0
-	bool GetHitResultUnderCursorForObjects(struct TArray<char> ObjectTypes, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorForObjects // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31050
-	bool GetHitResultUnderCursorByChannel(char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorByChannel // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30ef0
-	bool GetHitResultUnderCursor(char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderCursor // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30d90
-	struct FVector GetFocalLocation(); // Function Engine.PlayerController.GetFocalLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30ce0
-	void FOV(float NewFOV); // Function Engine.PlayerController.FOV // Exec|Native|Public // @ game+0x2d2f570
-	void EnableCheats(); // Function Engine.PlayerController.EnableCheats // Exec|Native|Public // @ game+0x2d2f4c0
-	bool DeprojectScreenPositionToWorld(float ScreenX, float ScreenY, struct FVector WorldLocation, struct FVector WorldDirection); // Function Engine.PlayerController.DeprojectScreenPositionToWorld // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2f0b0
-	bool DeprojectMousePositionToWorld(struct FVector WorldLocation, struct FVector WorldDirection); // Function Engine.PlayerController.DeprojectMousePositionToWorld // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2efb0
-	void ConsoleKey(struct FKey Key); // Function Engine.PlayerController.ConsoleKey // Exec|Native|Public // @ game+0x2d2ed70
-	void ClientWasKicked(struct FText KickReason); // Function Engine.PlayerController.ClientWasKicked // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ec40
-	void ClientVoiceHandshakeComplete(); // Function Engine.PlayerController.ClientVoiceHandshakeComplete // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ec20
-	void ClientUpdateLevelStreamingStatusBatched(struct FString PackageBasePath, struct TArray<struct FLevelStreamingStatusUpdateInfo> LevelStreamingStatusUpdateInfo); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatusBatched // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2eaf0
-	void ClientUpdateLevelStreamingStatus(struct FName PackageName, bool bNewShouldBeLoaded, bool bNewShouldBeVisible, bool bNewShouldBlockOnLoad, int32_t LODIndex); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatus // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e940
-	void ClientUnmutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ClientUnmutePlayer // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e850
-	void ClientTravelInternal(struct FString URL, char TravelType, bool bSeamless, struct FGuid MapPackageGuid); // Function Engine.PlayerController.ClientTravelInternal // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2e6d0
-	void ClientTravel(struct FString URL, char TravelType, bool bSeamless, struct FGuid MapPackageGuid); // Function Engine.PlayerController.ClientTravel // Final|Native|Public|HasDefaults // @ game+0x2d2e550
-	void ClientTeamMessage(struct APlayerState* SenderPlayerState, struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientTeamMessage // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e3e0
-	void ClientStopForceFeedback(struct UForceFeedbackEffect* ForceFeedbackEffect, struct FName Tag); // Function Engine.PlayerController.ClientStopForceFeedback // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2e310
-	void ClientStopCameraShake(struct UClass* Shake); // Function Engine.PlayerController.ClientStopCameraShake // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2e280
-	void ClientStopCameraAnim(struct UCameraAnim* AnimToStop); // Function Engine.PlayerController.ClientStopCameraAnim // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e1f0
-	void ClientStartOnlineSession(); // Function Engine.PlayerController.ClientStartOnlineSession // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e1d0
-	void ClientSpawnCameraLensEffect(struct UClass* LensEffectEmitterClass); // Function Engine.PlayerController.ClientSpawnCameraLensEffect // Net|Native|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2e140
-	void ClientSetViewTarget(struct AActor* A, struct FViewTargetTransitionParams TransitionParams); // Function Engine.PlayerController.ClientSetViewTarget // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2dff0
-	void ClientSetSpectatorWaiting(bool bWaiting); // Function Engine.PlayerController.ClientSetSpectatorWaiting // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2df60
-	void ClientSetHUD(struct UClass* NewHUDClass); // Function Engine.PlayerController.ClientSetHUD // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2dd10
-	void ClientSetForceMipLevelsToBeResident(struct UMaterialInterface* Material, float ForceDuration, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientSetForceMipLevelsToBeResident // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2dc10
-	void ClientSetCinematicMode(bool bInCinematicMode, bool bAffectsMovement, bool bAffectsTurning, bool bAffectsHUD); // Function Engine.PlayerController.ClientSetCinematicMode // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2daa0
-	void ClientSetCameraMode(struct FName NewCamMode); // Function Engine.PlayerController.ClientSetCameraMode // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2da10
-	void ClientSetCameraFade(bool bEnableFading, struct FColor FadeColor, struct FVector2D FadeAlpha, float FadeTime, bool bFadeAudio); // Function Engine.PlayerController.ClientSetCameraFade // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2d880
-	void ClientSetBlockOnAsyncLoading(); // Function Engine.PlayerController.ClientSetBlockOnAsyncLoading // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d860
-	void ClientSeamlessTravelComplete(); // Function Engine.PlayerController.ClientSeamlessTravelComplete // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d840
-	void ClientReturnToMainMenu(struct FString ReturnReason); // Function Engine.PlayerController.ClientReturnToMainMenu // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d790
-	void ClientRetryClientRestart(struct APawn* NewPawn); // Function Engine.PlayerController.ClientRetryClientRestart // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d700
-	void ClientRestart(struct APawn* NewPawn); // Function Engine.PlayerController.ClientRestart // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d670
-	void ClientReset(); // Function Engine.PlayerController.ClientReset // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d650
-	void ClientRepObjRef(struct UObject* Object); // Function Engine.PlayerController.ClientRepObjRef // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d5c0
-	void ClientReceiveLocalizedMessage(struct UClass* Message, int32_t Switch, struct APlayerState* RelatedPlayerState_2, struct APlayerState* RelatedPlayerState_3, struct UObject* OptionalObject); // Function Engine.PlayerController.ClientReceiveLocalizedMessage // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d440
-	void ClientPrestreamTextures(struct AActor* ForcedActor, float ForceDuration, bool bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientPrestreamTextures // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d2f0
-	void ClientPrepareMapChange(struct FName LevelName, bool bFirst, bool bLast); // Function Engine.PlayerController.ClientPrepareMapChange // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2d1e0
-	void ClientPlaySoundAtLocation(struct USoundBase* Sound, struct FVector Location, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySoundAtLocation // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2d2d090
-	void ClientPlaySound(struct USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySound // Net|Native|Event|Public|NetClient // @ game+0x2d2cf90
-	void ClientPlayForceFeedback(struct UForceFeedbackEffect* ForceFeedbackEffect, bool bLooping, struct FName Tag); // Function Engine.PlayerController.ClientPlayForceFeedback // Net|Native|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2ce80
-	void ClientPlayCameraShake(struct UClass* Shake, float Scale, char PlaySpace, struct FRotator UserPlaySpaceRot); // Function Engine.PlayerController.ClientPlayCameraShake // Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable // @ game+0x2d2cd20
-	void ClientPlayCameraAnim(struct UCameraAnim* AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, char Space, struct FRotator CustomPlaySpace); // Function Engine.PlayerController.ClientPlayCameraAnim // Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable // @ game+0x2d2ca80
-	void ClientMutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ClientMutePlayer // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c990
-	void ClientMessage(struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientMessage // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c860
-	void ClientIgnoreMoveInput(bool bIgnore); // Function Engine.PlayerController.ClientIgnoreMoveInput // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c7d0
-	void ClientIgnoreLookInput(bool bIgnore); // Function Engine.PlayerController.ClientIgnoreLookInput // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c740
-	void ClientGotoState(struct FName NewState); // Function Engine.PlayerController.ClientGotoState // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c6b0
-	void ClientGameEnded(struct AActor* EndGameFocus, bool bIsWinner); // Function Engine.PlayerController.ClientGameEnded // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c5e0
-	void ClientForceGarbageCollection(); // Function Engine.PlayerController.ClientForceGarbageCollection // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c5c0
-	void ClientFlushLevelStreaming(); // Function Engine.PlayerController.ClientFlushLevelStreaming // Final|Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c5a0
-	void ClientEndOnlineSession(); // Function Engine.PlayerController.ClientEndOnlineSession // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c580
-	void ClientEnableNetworkVoice(bool bEnable); // Function Engine.PlayerController.ClientEnableNetworkVoice // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c4f0
-	void ClientCommitMapChange(); // Function Engine.PlayerController.ClientCommitMapChange // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c4d0
-	void ClientClearCameraLensEffects(); // Function Engine.PlayerController.ClientClearCameraLensEffects // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2c4b0
-	void ClientCapBandwidth(int32_t Cap); // Function Engine.PlayerController.ClientCapBandwidth // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c420
-	void ClientCancelPendingMapChange(); // Function Engine.PlayerController.ClientCancelPendingMapChange // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2c400
-	void ClientBlendOutCameraShake(struct UClass* Shake); // Function Engine.PlayerController.ClientBlendOutCameraShake // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2c370
-	void ClientAddTextureStreamingLoc(struct FVector InLoc, float Duration, bool bOverrideLocation); // Function Engine.PlayerController.ClientAddTextureStreamingLoc // Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2c250
-	void ClearAudioListenerOverride(); // Function Engine.PlayerController.ClearAudioListenerOverride // Final|Native|Public|BlueprintCallable // @ game+0x2d2c210
-	void Camera(struct FName NewMode); // Function Engine.PlayerController.Camera // Exec|Native|Public // @ game+0x2d2c150
-	void AddYawInput(float Val); // Function Engine.PlayerController.AddYawInput // Native|Public|BlueprintCallable // @ game+0x2d2bd20
-	void AddRollInput(float Val); // Function Engine.PlayerController.AddRollInput // Native|Public|BlueprintCallable // @ game+0x2d2ba60
-	void AddPitchInput(float Val); // Function Engine.PlayerController.AddPitchInput // Native|Public|BlueprintCallable // @ game+0x2d2b9e0
-	void ActivateTouchInterface(struct UTouchInterface* NewTouchInterface); // Function Engine.PlayerController.ActivateTouchInterface // Native|Public|BlueprintCallable // @ game+0x2d2b430
+	bool WasInputKeyJustReleased(struct FKey Key); // Function Engine.PlayerController.WasInputKeyJustReleased // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3ee80
+	bool WasInputKeyJustPressed(struct FKey Key); // Function Engine.PlayerController.WasInputKeyJustPressed // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3ed80
+	void ToggleSpeaking(bool bInSpeaking); // Function Engine.PlayerController.ToggleSpeaking // Exec|Native|Public // @ game+0x2d3e9b0
+	void SwitchLevel(struct FString URL); // Function Engine.PlayerController.SwitchLevel // Exec|Native|Public // @ game+0x2d3e8c0
+	void StopHapticEffect(char Hand); // Function Engine.PlayerController.StopHapticEffect // Final|Native|Public|BlueprintCallable // @ game+0x2d3e820
+	void StartFire(char FireModeNum); // Function Engine.PlayerController.StartFire // Exec|Native|Public // @ game+0x2d3e3f0
+	void SetVirtualJoystickVisibility(bool bVisible); // Function Engine.PlayerController.SetVirtualJoystickVisibility // Native|Public|BlueprintCallable // @ game+0x2d3dd10
+	void SetViewTargetWithBlend(struct AActor* NewViewTarget, float BlendTime, char BlendFunc, float BlendExp, bool bLockOutgoing); // Function Engine.PlayerController.SetViewTargetWithBlend // Native|Public|BlueprintCallable // @ game+0x2d3db90
+	void SetName(struct FString S); // Function Engine.PlayerController.SetName // Exec|Native|Public // @ game+0x2d3d510
+	void SetIgnoreMoveInput(bool bNewMoveInput); // Function Engine.PlayerController.SetIgnoreMoveInput // Native|Public|BlueprintCallable // @ game+0x2d3d050
+	void SetIgnoreLookInput(bool bNewLookInput); // Function Engine.PlayerController.SetIgnoreLookInput // Native|Public|BlueprintCallable // @ game+0x2d3cfc0
+	void SetHapticsByValue(float Frequency, float Amplitude, char Hand); // Function Engine.PlayerController.SetHapticsByValue // Final|Native|Public|BlueprintCallable // @ game+0x2d3cde0
+	void SetCinematicMode(bool bInCinematicMode, bool bHidePlayer, bool bAffectsHUD, bool bAffectsMovement, bool bAffectsTurning); // Function Engine.PlayerController.SetCinematicMode // Native|Public|BlueprintCallable // @ game+0x2d3c900
+	void SetAudioListenerOverride(struct USceneComponent* AttachToComponent, struct FVector Location, struct FRotator Rotation); // Function Engine.PlayerController.SetAudioListenerOverride // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3c660
+	void ServerViewSelf(struct FViewTargetTransitionParams TransitionParams); // Function Engine.PlayerController.ServerViewSelf // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d3bdc0
+	void ServerViewPrevPlayer(); // Function Engine.PlayerController.ServerViewPrevPlayer // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d3bd70
+	void ServerViewNextPlayer(); // Function Engine.PlayerController.ServerViewNextPlayer // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d3bd20
+	void ServerVerifyViewTarget(); // Function Engine.PlayerController.ServerVerifyViewTarget // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3bcd0
+	void ServerUpdateCamera(struct FVector_NetQuantize CamLoc, int32_t CamPitchAndYaw); // Function Engine.PlayerController.ServerUpdateCamera // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d3bbb0
+	void ServerUnmutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ServerUnmutePlayer // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3ba60
+	void ServerToggleAILogging(); // Function Engine.PlayerController.ServerToggleAILogging // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3ba10
+	void ServerShortTimeout(); // Function Engine.PlayerController.ServerShortTimeout // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b9c0
+	void ServerSetSpectatorWaiting(bool bWaiting); // Function Engine.PlayerController.ServerSetSpectatorWaiting // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b900
+	void ServerSetSpectatorLocation(struct FVector NewLoc, struct FRotator NewRot); // Function Engine.PlayerController.ServerSetSpectatorLocation // Net|Native|Event|Public|NetServer|HasDefaults|NetValidate // @ game+0x2d3b7d0
+	void ServerRestartPlayer(); // Function Engine.PlayerController.ServerRestartPlayer // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b780
+	void ServerPause(); // Function Engine.PlayerController.ServerPause // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b730
+	void ServerNotifyLoadedWorld(struct FName WorldPackageName); // Function Engine.PlayerController.ServerNotifyLoadedWorld // Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b680
+	void ServerMutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ServerMutePlayer // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b530
+	void ServerCheckClientPossessionReliable(); // Function Engine.PlayerController.ServerCheckClientPossessionReliable // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b4e0
+	void ServerCheckClientPossession(); // Function Engine.PlayerController.ServerCheckClientPossession // Net|Native|Event|Public|NetServer|NetValidate // @ game+0x2d3b490
+	void ServerChangeName(struct FString S); // Function Engine.PlayerController.ServerChangeName // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b3c0
+	void ServerCamera(struct FName NewMode); // Function Engine.PlayerController.ServerCamera // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b300
+	void ServerAcknowledgePossession(struct APawn* P); // Function Engine.PlayerController.ServerAcknowledgePossession // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x2d3b240
+	void SendToConsole(struct FString Command); // Function Engine.PlayerController.SendToConsole // Exec|Native|Public // @ game+0x2d3b190
+	void SendPlayerName(int32_t Id, struct FString Name); // Function Engine.PlayerController.SendPlayerName // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d3b0a0
+	void RestartLevel(); // Function Engine.PlayerController.RestartLevel // Exec|Native|Public // @ game+0x2d3b080
+	void ResetIgnoreMoveInput(); // Function Engine.PlayerController.ResetIgnoreMoveInput // Native|Public|BlueprintCallable // @ game+0x2d3b040
+	void ResetIgnoreLookInput(); // Function Engine.PlayerController.ResetIgnoreLookInput // Native|Public|BlueprintCallable // @ game+0x2d3b020
+	void ResetIgnoreInputFlags(); // Function Engine.PlayerController.ResetIgnoreInputFlags // Native|Public|BlueprintCallable // @ game+0x2d3b000
+	bool ProjectWorldLocationToScreen(struct FVector WorldLocation, struct FVector2D ScreenLocation); // Function Engine.PlayerController.ProjectWorldLocationToScreen // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d3a8c0
+	void PlayHapticEffect(struct UHapticFeedbackEffect* HapticEffect, char Hand, float Scale); // Function Engine.PlayerController.PlayHapticEffect // Final|Native|Public|BlueprintCallable // @ game+0x2d3a720
+	void PlayDynamicForceFeedback(float Intensity, float Duration, bool bAffectsLeftLarge, bool bAffectsLeftSmall, bool bAffectsRightLarge, bool bAffectsRightSmall, char Action, struct FLatentActionInfo LatentInfo); // Function Engine.PlayerController.PlayDynamicForceFeedback // Final|Native|Public|BlueprintCallable // @ game+0x2d3a490
+	void Pause(); // Function Engine.PlayerController.Pause // Exec|Native|Public // @ game+0x2d39f60
+	void OnServerStartedVisualLogger(bool bIsLogging); // Function Engine.PlayerController.OnServerStartedVisualLogger // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d39ed0
+	void LocalTravel(struct FString URL); // Function Engine.PlayerController.LocalTravel // Exec|Native|Public // @ game+0x2d399c0
+	bool IsSeamlessTravelInProgress(); // Function Engine.PlayerController.IsSeamlessTravelInProgress // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35d10
+	bool IsPossessingServerAcknowledgedPawn(); // Function Engine.PlayerController.IsPossessingServerAcknowledgedPawn // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2d35cb0
+	bool IsMoveInputIgnored(); // Function Engine.PlayerController.IsMoveInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35bf0
+	bool IsLookInputIgnored(); // Function Engine.PlayerController.IsLookInputIgnored // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35bc0
+	bool IsInputKeyDown(struct FKey Key); // Function Engine.PlayerController.IsInputKeyDown // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35a60
+	void GetViewportSize(int32_t SizeX, int32_t SizeY); // Function Engine.PlayerController.GetViewportSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35670
+	struct ASpectatorPawn* GetSpectatorPawn(); // Function Engine.PlayerController.GetSpectatorPawn // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35100
+	bool GetMousePosition(float LocationX, float LocationY); // Function Engine.PlayerController.GetMousePosition // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d348e0
+	struct FVector GetInputVectorKeyState(struct FKey Key); // Function Engine.PlayerController.GetInputVectorKeyState // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34690
+	void GetInputTouchState(char FingerIndex, float LocationX, float LocationY, bool bIsCurrentlyPressed); // Function Engine.PlayerController.GetInputTouchState // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d343f0
+	void GetInputMouseDelta(float DeltaX, float DeltaY); // Function Engine.PlayerController.GetInputMouseDelta // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34310
+	void GetInputMotionState(struct FVector Tilt, struct FVector RotationRate, struct FVector Gravity, struct FVector Acceleration); // Function Engine.PlayerController.GetInputMotionState // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34180
+	float GetInputKeyTimeDown(struct FKey Key); // Function Engine.PlayerController.GetInputKeyTimeDown // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34080
+	void GetInputAnalogStickState(char WhichStick, float StickX, float StickY); // Function Engine.PlayerController.GetInputAnalogStickState // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33dc0
+	float GetInputAnalogKeyState(struct FKey Key); // Function Engine.PlayerController.GetInputAnalogKeyState // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33cc0
+	struct AHUD* GetHUD(); // Function Engine.PlayerController.GetHUD // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d331f0
+	bool GetHitResultUnderFingerForObjects(char FingerIndex, struct TArray<char> ObjectTypes, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerForObjects // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d339b0
+	bool GetHitResultUnderFingerByChannel(char FingerIndex, char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerByChannel // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33810
+	bool GetHitResultUnderFinger(char FingerIndex, char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderFinger // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33670
+	bool GetHitResultUnderCursorForObjects(struct TArray<char> ObjectTypes, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorForObjects // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d334e0
+	bool GetHitResultUnderCursorByChannel(char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorByChannel // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33380
+	bool GetHitResultUnderCursor(char TraceChannel, bool bTraceComplex, struct FHitResult HitResult); // Function Engine.PlayerController.GetHitResultUnderCursor // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33220
+	struct FVector GetFocalLocation(); // Function Engine.PlayerController.GetFocalLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33170
+	void FOV(float NewFOV); // Function Engine.PlayerController.FOV // Exec|Native|Public // @ game+0x2d31a00
+	void EnableCheats(); // Function Engine.PlayerController.EnableCheats // Exec|Native|Public // @ game+0x2d31950
+	bool DeprojectScreenPositionToWorld(float ScreenX, float ScreenY, struct FVector WorldLocation, struct FVector WorldDirection); // Function Engine.PlayerController.DeprojectScreenPositionToWorld // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31540
+	bool DeprojectMousePositionToWorld(struct FVector WorldLocation, struct FVector WorldDirection); // Function Engine.PlayerController.DeprojectMousePositionToWorld // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d31440
+	void ConsoleKey(struct FKey Key); // Function Engine.PlayerController.ConsoleKey // Exec|Native|Public // @ game+0x2d31200
+	void ClientWasKicked(struct FText KickReason); // Function Engine.PlayerController.ClientWasKicked // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d310d0
+	void ClientVoiceHandshakeComplete(); // Function Engine.PlayerController.ClientVoiceHandshakeComplete // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d310b0
+	void ClientUpdateLevelStreamingStatusBatched(struct FString PackageBasePath, struct TArray<struct FLevelStreamingStatusUpdateInfo> LevelStreamingStatusUpdateInfo); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatusBatched // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30f80
+	void ClientUpdateLevelStreamingStatus(struct FName PackageName, bool bNewShouldBeLoaded, bool bNewShouldBeVisible, bool bNewShouldBlockOnLoad, int32_t LODIndex); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatus // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30dd0
+	void ClientUnmutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ClientUnmutePlayer // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30ce0
+	void ClientTravelInternal(struct FString URL, char TravelType, bool bSeamless, struct FGuid MapPackageGuid); // Function Engine.PlayerController.ClientTravelInternal // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d30b60
+	void ClientTravel(struct FString URL, char TravelType, bool bSeamless, struct FGuid MapPackageGuid); // Function Engine.PlayerController.ClientTravel // Final|Native|Public|HasDefaults // @ game+0x2d309e0
+	void ClientTeamMessage(struct APlayerState* SenderPlayerState, struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientTeamMessage // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30870
+	void ClientStopForceFeedback(struct UForceFeedbackEffect* ForceFeedbackEffect, struct FName Tag); // Function Engine.PlayerController.ClientStopForceFeedback // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d307a0
+	void ClientStopCameraShake(struct UClass* Shake); // Function Engine.PlayerController.ClientStopCameraShake // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d30710
+	void ClientStopCameraAnim(struct UCameraAnim* AnimToStop); // Function Engine.PlayerController.ClientStopCameraAnim // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30680
+	void ClientStartOnlineSession(); // Function Engine.PlayerController.ClientStartOnlineSession // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30660
+	void ClientSpawnCameraLensEffect(struct UClass* LensEffectEmitterClass); // Function Engine.PlayerController.ClientSpawnCameraLensEffect // Net|Native|Event|Public|NetClient|BlueprintCallable // @ game+0x2d305d0
+	void ClientSetViewTarget(struct AActor* A, struct FViewTargetTransitionParams TransitionParams); // Function Engine.PlayerController.ClientSetViewTarget // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d30480
+	void ClientSetSpectatorWaiting(bool bWaiting); // Function Engine.PlayerController.ClientSetSpectatorWaiting // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d303f0
+	void ClientSetHUD(struct UClass* NewHUDClass); // Function Engine.PlayerController.ClientSetHUD // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d301a0
+	void ClientSetForceMipLevelsToBeResident(struct UMaterialInterface* Material, float ForceDuration, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientSetForceMipLevelsToBeResident // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d300a0
+	void ClientSetCinematicMode(bool bInCinematicMode, bool bAffectsMovement, bool bAffectsTurning, bool bAffectsHUD); // Function Engine.PlayerController.ClientSetCinematicMode // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ff30
+	void ClientSetCameraMode(struct FName NewCamMode); // Function Engine.PlayerController.ClientSetCameraMode // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fea0
+	void ClientSetCameraFade(bool bEnableFading, struct FColor FadeColor, struct FVector2D FadeAlpha, float FadeTime, bool bFadeAudio); // Function Engine.PlayerController.ClientSetCameraFade // Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2fd10
+	void ClientSetBlockOnAsyncLoading(); // Function Engine.PlayerController.ClientSetBlockOnAsyncLoading // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fcf0
+	void ClientSeamlessTravelComplete(); // Function Engine.PlayerController.ClientSeamlessTravelComplete // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fcd0
+	void ClientReturnToMainMenu(struct FString ReturnReason); // Function Engine.PlayerController.ClientReturnToMainMenu // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fc20
+	void ClientRetryClientRestart(struct APawn* NewPawn); // Function Engine.PlayerController.ClientRetryClientRestart // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fb90
+	void ClientRestart(struct APawn* NewPawn); // Function Engine.PlayerController.ClientRestart // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fb00
+	void ClientReset(); // Function Engine.PlayerController.ClientReset // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fae0
+	void ClientRepObjRef(struct UObject* Object); // Function Engine.PlayerController.ClientRepObjRef // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2fa50
+	void ClientReceiveLocalizedMessage(struct UClass* Message, int32_t Switch, struct APlayerState* RelatedPlayerState_2, struct APlayerState* RelatedPlayerState_3, struct UObject* OptionalObject); // Function Engine.PlayerController.ClientReceiveLocalizedMessage // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2f8d0
+	void ClientPrestreamTextures(struct AActor* ForcedActor, float ForceDuration, bool bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientPrestreamTextures // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2f780
+	void ClientPrepareMapChange(struct FName LevelName, bool bFirst, bool bLast); // Function Engine.PlayerController.ClientPrepareMapChange // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2f670
+	void ClientPlaySoundAtLocation(struct USoundBase* Sound, struct FVector Location, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySoundAtLocation // Net|Native|Event|Public|HasDefaults|NetClient // @ game+0x2d2f520
+	void ClientPlaySound(struct USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySound // Net|Native|Event|Public|NetClient // @ game+0x2d2f420
+	void ClientPlayForceFeedback(struct UForceFeedbackEffect* ForceFeedbackEffect, bool bLooping, struct FName Tag); // Function Engine.PlayerController.ClientPlayForceFeedback // Net|Native|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2f310
+	void ClientPlayCameraShake(struct UClass* Shake, float Scale, char PlaySpace, struct FRotator UserPlaySpaceRot); // Function Engine.PlayerController.ClientPlayCameraShake // Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable // @ game+0x2d2f1b0
+	void ClientPlayCameraAnim(struct UCameraAnim* AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, char Space, struct FRotator CustomPlaySpace); // Function Engine.PlayerController.ClientPlayCameraAnim // Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable // @ game+0x2d2ef10
+	void ClientMutePlayer(struct FUniqueNetIdRepl PlayerId); // Function Engine.PlayerController.ClientMutePlayer // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ee20
+	void ClientMessage(struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientMessage // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ecf0
+	void ClientIgnoreMoveInput(bool bIgnore); // Function Engine.PlayerController.ClientIgnoreMoveInput // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ec60
+	void ClientIgnoreLookInput(bool bIgnore); // Function Engine.PlayerController.ClientIgnoreLookInput // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ebd0
+	void ClientGotoState(struct FName NewState); // Function Engine.PlayerController.ClientGotoState // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2eb40
+	void ClientGameEnded(struct AActor* EndGameFocus, bool bIsWinner); // Function Engine.PlayerController.ClientGameEnded // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ea70
+	void ClientForceGarbageCollection(); // Function Engine.PlayerController.ClientForceGarbageCollection // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ea50
+	void ClientFlushLevelStreaming(); // Function Engine.PlayerController.ClientFlushLevelStreaming // Final|Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ea30
+	void ClientEndOnlineSession(); // Function Engine.PlayerController.ClientEndOnlineSession // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2ea10
+	void ClientEnableNetworkVoice(bool bEnable); // Function Engine.PlayerController.ClientEnableNetworkVoice // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e980
+	void ClientCommitMapChange(); // Function Engine.PlayerController.ClientCommitMapChange // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e960
+	void ClientClearCameraLensEffects(); // Function Engine.PlayerController.ClientClearCameraLensEffects // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2e940
+	void ClientCapBandwidth(int32_t Cap); // Function Engine.PlayerController.ClientCapBandwidth // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e8b0
+	void ClientCancelPendingMapChange(); // Function Engine.PlayerController.ClientCancelPendingMapChange // Net|NetReliableNative|Event|Public|NetClient // @ game+0x2d2e890
+	void ClientBlendOutCameraShake(struct UClass* Shake); // Function Engine.PlayerController.ClientBlendOutCameraShake // Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable // @ game+0x2d2e800
+	void ClientAddTextureStreamingLoc(struct FVector InLoc, float Duration, bool bOverrideLocation); // Function Engine.PlayerController.ClientAddTextureStreamingLoc // Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2d2e6e0
+	void ClearAudioListenerOverride(); // Function Engine.PlayerController.ClearAudioListenerOverride // Final|Native|Public|BlueprintCallable // @ game+0x2d2e6a0
+	void Camera(struct FName NewMode); // Function Engine.PlayerController.Camera // Exec|Native|Public // @ game+0x2d2e5e0
+	void AddYawInput(float Val); // Function Engine.PlayerController.AddYawInput // Native|Public|BlueprintCallable // @ game+0x2d2e1b0
+	void AddRollInput(float Val); // Function Engine.PlayerController.AddRollInput // Native|Public|BlueprintCallable // @ game+0x2d2def0
+	void AddPitchInput(float Val); // Function Engine.PlayerController.AddPitchInput // Native|Public|BlueprintCallable // @ game+0x2d2de70
+	void ActivateTouchInterface(struct UTouchInterface* NewTouchInterface); // Function Engine.PlayerController.ActivateTouchInterface // Native|Public|BlueprintCallable // @ game+0x2d2d8c0
 };
 
 // Class Engine.StaticMeshActor
@@ -1929,7 +1929,7 @@ struct AWorldSettings : AInfo {
 	char UnknownData_574[0x4]; // 0x574(0x04)
 	struct APlayerState* Pauser; // 0x578(0x08)
 
-	void OnRep_WorldGravityZ(); // Function Engine.WorldSettings.OnRep_WorldGravityZ // Native|Public // @ game+0x2e39700
+	void OnRep_WorldGravityZ(); // Function Engine.WorldSettings.OnRep_WorldGravityZ // Native|Public // @ game+0x2e3bb90
 };
 
 // Class Engine.PostProcessComponent
@@ -1945,7 +1945,7 @@ struct UPostProcessComponent : USceneComponent {
 	char UnknownData_83C_2 : 6; // 0x83c(0x01)
 	char UnknownData_83D[0x3]; // 0x83d(0x03)
 
-	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.PostProcessComponent.AddOrUpdateBlendable // Final|Native|Public|BlueprintCallable // @ game+0x2f3b060
+	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.PostProcessComponent.AddOrUpdateBlendable // Final|Native|Public|BlueprintCallable // @ game+0x2f3d4f0
 };
 
 // Class Engine.Texture
@@ -2022,12 +2022,12 @@ struct ADebugCameraController : APlayerController {
 	float FovScaleAdjustment; // 0x7b4(0x04)
 	char UnknownData_7B8[0x8]; // 0x7b8(0x08)
 
-	void ToggleDisplay(); // Function Engine.DebugCameraController.ToggleDisplay // Final|Native|Public|BlueprintCallable // @ game+0x2e41d40
-	void ShowDebugSelectedInfo(); // Function Engine.DebugCameraController.ShowDebugSelectedInfo // Exec|Native|Public // @ game+0x2e41770
-	void IncreaseFOV(); // Function Engine.DebugCameraController.IncreaseFOV // Final|Native|Public|BlueprintCallable // @ game+0x2e37d70
-	void IncreaseCameraSpeed(); // Function Engine.DebugCameraController.IncreaseCameraSpeed // Final|Native|Public|BlueprintCallable // @ game+0x2e37d50
-	void DecreaseFOV(); // Function Engine.DebugCameraController.DecreaseFOV // Final|Native|Public|BlueprintCallable // @ game+0x2e30a40
-	void DecreaseCameraSpeed(); // Function Engine.DebugCameraController.DecreaseCameraSpeed // Final|Native|Public|BlueprintCallable // @ game+0x2e30a20
+	void ToggleDisplay(); // Function Engine.DebugCameraController.ToggleDisplay // Final|Native|Public|BlueprintCallable // @ game+0x2e441d0
+	void ShowDebugSelectedInfo(); // Function Engine.DebugCameraController.ShowDebugSelectedInfo // Exec|Native|Public // @ game+0x2e43c00
+	void IncreaseFOV(); // Function Engine.DebugCameraController.IncreaseFOV // Final|Native|Public|BlueprintCallable // @ game+0x2e3a200
+	void IncreaseCameraSpeed(); // Function Engine.DebugCameraController.IncreaseCameraSpeed // Final|Native|Public|BlueprintCallable // @ game+0x2e3a1e0
+	void DecreaseFOV(); // Function Engine.DebugCameraController.DecreaseFOV // Final|Native|Public|BlueprintCallable // @ game+0x2e32ed0
+	void DecreaseCameraSpeed(); // Function Engine.DebugCameraController.DecreaseCameraSpeed // Final|Native|Public|BlueprintCallable // @ game+0x2e32eb0
 };
 
 // Class Engine.HUD
@@ -2058,33 +2058,33 @@ struct AHUD : AActor {
 	struct AActor* ShowDebugTargetActor; // 0x448(0x08)
 	char UnknownData_450[0x70]; // 0x450(0x70)
 
-	void ShowHUD(); // Function Engine.HUD.ShowHUD // Exec|Native|Public // @ game+0x2e41810
-	void ShowDebugToggleSubCategory(struct FName Category); // Function Engine.HUD.ShowDebugToggleSubCategory // Final|Exec|Native|Public // @ game+0x2e41790
-	void ShowDebugForReticleTargetToggle(struct UClass* DesiredClass); // Function Engine.HUD.ShowDebugForReticleTargetToggle // Final|Exec|Native|Public // @ game+0x2e416f0
-	void ShowDebug(struct FName DebugType); // Function Engine.HUD.ShowDebug // Exec|Native|Public // @ game+0x2e41660
-	void RemoveDebugText(struct AActor* SrcActor, bool bLeaveDurationText); // Function Engine.HUD.RemoveDebugText // Final|Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e3a5c0
-	void RemoveAllDebugStrings(); // Function Engine.HUD.RemoveAllDebugStrings // Final|Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e3a5a0
-	void ReceiveHitBoxRelease(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxRelease // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveHitBoxEndCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxEndCursorOver // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveHitBoxClick(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxClick // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveHitBoxBeginCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxBeginCursorOver // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveDrawHUD(int32_t SizeX, int32_t SizeY); // Function Engine.HUD.ReceiveDrawHUD // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	struct FVector Project(struct FVector Location); // Function Engine.HUD.Project // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39f60
-	void GetTextSize(struct FString Text, float OutWidth, float OutHeight, struct UFont* Font, float Scale); // Function Engine.HUD.GetTextSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36bc0
-	struct APlayerController* GetOwningPlayerController(); // Function Engine.HUD.GetOwningPlayerController // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34a80
-	struct APawn* GetOwningPawn(); // Function Engine.HUD.GetOwningPawn // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34a50
-	void GetActorsInSelectionRectangle(struct UClass* ClassFilter, struct FVector2D FirstPoint, struct FVector2D SecondPoint, struct TArray<struct AActor*> OutActors, bool bIncludeNonCollidingComponents, bool bActorMustBeFullyEnclosed); // Function Engine.HUD.GetActorsInSelectionRectangle // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e32850
-	void DrawTextureSimple(struct UTexture* Texture, float ScreenX, float ScreenY, float Scale, bool bScalePosition); // Function Engine.HUD.DrawTextureSimple // Final|Native|Public|BlueprintCallable // @ game+0x2e31e50
-	void DrawTexture(struct UTexture* Texture, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float TextureU, float TextureV, float TextureUWidth, float TextureVHeight, struct FLinearColor TintColor, char BlendMode, float Scale, bool bScalePosition, float Rotation, struct FVector2D RotPivot); // Function Engine.HUD.DrawTexture // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31a30
-	void DrawText(struct FString Text, struct FLinearColor TextColor, float ScreenX, float ScreenY, struct UFont* Font, float Scale, bool bScalePosition); // Function Engine.HUD.DrawText // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e317f0
-	void DrawRect(struct FLinearColor RectColor, float ScreenX, float ScreenY, float ScreenW, float ScreenH); // Function Engine.HUD.DrawRect // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31640
-	void DrawMaterialTriangle(struct UMaterialInterface* Material, struct FVector2D V0_Pos, struct FVector2D V1_Pos, struct FVector2D V2_Pos, struct FVector2D V0_UV, struct FVector2D V1_UV, struct FVector2D V2_UV, struct FLinearColor V0_Color, struct FLinearColor V1_Color, struct FLinearColor V2_Color); // Function Engine.HUD.DrawMaterialTriangle // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e31380
-	void DrawMaterialSimple(struct UMaterialInterface* Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float Scale, bool bScalePosition); // Function Engine.HUD.DrawMaterialSimple // Final|Native|Public|BlueprintCallable // @ game+0x2e31180
-	void DrawMaterial(struct UMaterialInterface* Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float MaterialU, float MaterialV, float MaterialUWidth, float MaterialVHeight, float Scale, bool bScalePosition, float Rotation, struct FVector2D RotPivot); // Function Engine.HUD.DrawMaterial // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e30df0
-	void DrawLine(float StartScreenX, float StartScreenY, float EndScreenX, float EndScreenY, struct FLinearColor LineColor); // Function Engine.HUD.DrawLine // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e30c40
-	void Deproject(float ScreenX, float ScreenY, struct FVector WorldPosition, struct FVector WorldDirection); // Function Engine.HUD.Deproject // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e30a60
-	void AddHitBox(struct FVector2D Position, struct FVector2D Size, struct FName InName, bool bConsumesInput, int32_t Priority); // Function Engine.HUD.AddHitBox // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e2ee20
-	void AddDebugText(struct FString DebugText, struct AActor* SrcActor, float Duration, struct FVector Offset, struct FVector DesiredOffset, struct FColor TextColor, bool bSkipOverwriteCheck, bool bAbsoluteLocation, bool bKeepAttachedToActor, struct UFont* InFont, float FontScale, bool bDrawShadow); // Function Engine.HUD.AddDebugText // Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2e2e670
+	void ShowHUD(); // Function Engine.HUD.ShowHUD // Exec|Native|Public // @ game+0x2e43ca0
+	void ShowDebugToggleSubCategory(struct FName Category); // Function Engine.HUD.ShowDebugToggleSubCategory // Final|Exec|Native|Public // @ game+0x2e43c20
+	void ShowDebugForReticleTargetToggle(struct UClass* DesiredClass); // Function Engine.HUD.ShowDebugForReticleTargetToggle // Final|Exec|Native|Public // @ game+0x2e43b80
+	void ShowDebug(struct FName DebugType); // Function Engine.HUD.ShowDebug // Exec|Native|Public // @ game+0x2e43af0
+	void RemoveDebugText(struct AActor* SrcActor, bool bLeaveDurationText); // Function Engine.HUD.RemoveDebugText // Final|Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e3ca50
+	void RemoveAllDebugStrings(); // Function Engine.HUD.RemoveAllDebugStrings // Final|Net|NetReliableNative|Event|Public|NetClient // @ game+0x2e3ca30
+	void ReceiveHitBoxRelease(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxRelease // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveHitBoxEndCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxEndCursorOver // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveHitBoxClick(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxClick // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveHitBoxBeginCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxBeginCursorOver // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveDrawHUD(int32_t SizeX, int32_t SizeY); // Function Engine.HUD.ReceiveDrawHUD // BlueprintCosmetic|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	struct FVector Project(struct FVector Location); // Function Engine.HUD.Project // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3c3f0
+	void GetTextSize(struct FString Text, float OutWidth, float OutHeight, struct UFont* Font, float Scale); // Function Engine.HUD.GetTextSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39050
+	struct APlayerController* GetOwningPlayerController(); // Function Engine.HUD.GetOwningPlayerController // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36f10
+	struct APawn* GetOwningPawn(); // Function Engine.HUD.GetOwningPawn // Final|Native|Protected|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36ee0
+	void GetActorsInSelectionRectangle(struct UClass* ClassFilter, struct FVector2D FirstPoint, struct FVector2D SecondPoint, struct TArray<struct AActor*> OutActors, bool bIncludeNonCollidingComponents, bool bActorMustBeFullyEnclosed); // Function Engine.HUD.GetActorsInSelectionRectangle // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e34ce0
+	void DrawTextureSimple(struct UTexture* Texture, float ScreenX, float ScreenY, float Scale, bool bScalePosition); // Function Engine.HUD.DrawTextureSimple // Final|Native|Public|BlueprintCallable // @ game+0x2e342e0
+	void DrawTexture(struct UTexture* Texture, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float TextureU, float TextureV, float TextureUWidth, float TextureVHeight, struct FLinearColor TintColor, char BlendMode, float Scale, bool bScalePosition, float Rotation, struct FVector2D RotPivot); // Function Engine.HUD.DrawTexture // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e33ec0
+	void DrawText(struct FString Text, struct FLinearColor TextColor, float ScreenX, float ScreenY, struct UFont* Font, float Scale, bool bScalePosition); // Function Engine.HUD.DrawText // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e33c80
+	void DrawRect(struct FLinearColor RectColor, float ScreenX, float ScreenY, float ScreenW, float ScreenH); // Function Engine.HUD.DrawRect // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e33ad0
+	void DrawMaterialTriangle(struct UMaterialInterface* Material, struct FVector2D V0_Pos, struct FVector2D V1_Pos, struct FVector2D V2_Pos, struct FVector2D V0_UV, struct FVector2D V1_UV, struct FVector2D V2_UV, struct FLinearColor V0_Color, struct FLinearColor V1_Color, struct FLinearColor V2_Color); // Function Engine.HUD.DrawMaterialTriangle // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e33810
+	void DrawMaterialSimple(struct UMaterialInterface* Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float Scale, bool bScalePosition); // Function Engine.HUD.DrawMaterialSimple // Final|Native|Public|BlueprintCallable // @ game+0x2e33610
+	void DrawMaterial(struct UMaterialInterface* Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float MaterialU, float MaterialV, float MaterialUWidth, float MaterialVHeight, float Scale, bool bScalePosition, float Rotation, struct FVector2D RotPivot); // Function Engine.HUD.DrawMaterial // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e33280
+	void DrawLine(float StartScreenX, float StartScreenY, float EndScreenX, float EndScreenY, struct FLinearColor LineColor); // Function Engine.HUD.DrawLine // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e330d0
+	void Deproject(float ScreenX, float ScreenY, struct FVector WorldPosition, struct FVector WorldDirection); // Function Engine.HUD.Deproject // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32ef0
+	void AddHitBox(struct FVector2D Position, struct FVector2D Size, struct FName InName, bool bConsumesInput, int32_t Priority); // Function Engine.HUD.AddHitBox // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e312b0
+	void AddDebugText(struct FString DebugText, struct AActor* SrcActor, float Duration, struct FVector Offset, struct FVector DesiredOffset, struct FColor TextColor, bool bSkipOverwriteCheck, bool bAbsoluteLocation, bool bKeepAttachedToActor, struct UFont* InFont, float FontScale, bool bDrawShadow); // Function Engine.HUD.AddDebugText // Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient // @ game+0x2e30b00
 };
 
 // Class Engine.FeatureToggledStringAssetReference
@@ -2101,12 +2101,12 @@ struct ALevelScriptActor : AActor {
 	char UnknownData_3C8_1 : 7; // 0x3c8(0x01)
 	char UnknownData_3C9[0x7]; // 0x3c9(0x07)
 
-	void WorldOriginLocationChanged(struct FIntVector OldOriginLocation, struct FIntVector NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void SetCinematicMode(bool bCinematicMode, bool bHidePlayer, bool bAffectsHUD, bool bAffectsMovement, bool bAffectsTurning); // Function Engine.LevelScriptActor.SetCinematicMode // Native|Public|BlueprintCallable // @ game+0x2e3c930
-	bool RemoteEvent(struct FName EventName); // Function Engine.LevelScriptActor.RemoteEvent // Native|Public|BlueprintCallable // @ game+0x2e3a500
-	void MatchStarted(); // Function Engine.LevelScriptActor.MatchStarted // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void LevelReset(); // Function Engine.LevelScriptActor.LevelReset // BlueprintAuthorityOnly|Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void InitialNetRelevantActorsCreated(); // Function Engine.LevelScriptActor.InitialNetRelevantActorsCreated // Event|Public|BlueprintEvent // @ game+0x18e3b10
+	void WorldOriginLocationChanged(struct FIntVector OldOriginLocation, struct FIntVector NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void SetCinematicMode(bool bCinematicMode, bool bHidePlayer, bool bAffectsHUD, bool bAffectsMovement, bool bAffectsTurning); // Function Engine.LevelScriptActor.SetCinematicMode // Native|Public|BlueprintCallable // @ game+0x2e3edc0
+	bool RemoteEvent(struct FName EventName); // Function Engine.LevelScriptActor.RemoteEvent // Native|Public|BlueprintCallable // @ game+0x2e3c990
+	void MatchStarted(); // Function Engine.LevelScriptActor.MatchStarted // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void LevelReset(); // Function Engine.LevelScriptActor.LevelReset // BlueprintAuthorityOnly|Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void InitialNetRelevantActorsCreated(); // Function Engine.LevelScriptActor.InitialNetRelevantActorsCreated // Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class Engine.ArrowComponent
@@ -2120,8 +2120,8 @@ struct UArrowComponent : UPrimitiveComponent {
 	char UnknownData_5CD_1 : 7; // 0x5cd(0x01)
 	char UnknownData_5CE[0x2]; // 0x5ce(0x02)
 
-	void SetArrowColor_New(struct FLinearColor NewColor); // Function Engine.ArrowComponent.SetArrowColor_New // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f47ea0
-	void SetArrowColor_DEPRECATED(struct FColor NewColor); // Function Engine.ArrowComponent.SetArrowColor_DEPRECATED // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f47e20
+	void SetArrowColor_New(struct FLinearColor NewColor); // Function Engine.ArrowComponent.SetArrowColor_New // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a330
+	void SetArrowColor_DEPRECATED(struct FColor NewColor); // Function Engine.ArrowComponent.SetArrowColor_DEPRECATED // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a2b0
 };
 
 // Class Engine.MeshComponent
@@ -2129,8 +2129,8 @@ struct UArrowComponent : UPrimitiveComponent {
 struct UMeshComponent : UPrimitiveComponent {
 	struct TArray<struct UMaterialInterface*> OverrideMaterials; // 0x5b8(0x10)
 
-	void ResetDefaultMaterials(); // Function Engine.MeshComponent.ResetDefaultMaterials // Final|Native|Public|BlueprintCallable // @ game+0x2e3a6d0
-	struct TArray<struct UMaterialInterface*> GetMaterials(); // Function Engine.MeshComponent.GetMaterials // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34190
+	void ResetDefaultMaterials(); // Function Engine.MeshComponent.ResetDefaultMaterials // Final|Native|Public|BlueprintCallable // @ game+0x2e3cb60
+	struct TArray<struct UMaterialInterface*> GetMaterials(); // Function Engine.MeshComponent.GetMaterials // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36620
 };
 
 // Class Engine.StaticMeshComponent
@@ -2155,12 +2155,12 @@ struct UStaticMeshComponent : UMeshComponent {
 	struct TArray<struct FStaticMeshComponentLODInfo> LODData; // 0x608(0x10)
 	struct UMaterialInterface* CustomDepthMaterial; // 0x618(0x08)
 
-	bool SetStaticMesh(struct UStaticMesh* NewMesh); // Function Engine.StaticMeshComponent.SetStaticMesh // Native|Public|BlueprintCallable // @ game+0x2f4d7e0
-	void SetForcedLodModel(int32_t NewForcedLodModel); // Function Engine.StaticMeshComponent.SetForcedLodModel // Final|Native|Public|BlueprintCallable // @ game+0x2f4aad0
-	void SetCustomDepthMaterial(struct UMaterialInterface* Material); // Function Engine.StaticMeshComponent.SetCustomDepthMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2f496c0
-	void OnRep_StaticMesh(struct UStaticMesh* OldStaticMesh); // Function Engine.StaticMeshComponent.OnRep_StaticMesh // Final|Native|Public // @ game+0x2f44ee0
-	void GetLocalBounds(struct FVector Min, struct FVector Max); // Function Engine.StaticMeshComponent.GetLocalBounds // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f419b0
-	struct UMaterialInterface* GetCustomDepthMaterial(); // Function Engine.StaticMeshComponent.GetCustomDepthMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f406f0
+	bool SetStaticMesh(struct UStaticMesh* NewMesh); // Function Engine.StaticMeshComponent.SetStaticMesh // Native|Public|BlueprintCallable // @ game+0x2f4fc70
+	void SetForcedLodModel(int32_t NewForcedLodModel); // Function Engine.StaticMeshComponent.SetForcedLodModel // Final|Native|Public|BlueprintCallable // @ game+0x2f4cf60
+	void SetCustomDepthMaterial(struct UMaterialInterface* Material); // Function Engine.StaticMeshComponent.SetCustomDepthMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2f4bb50
+	void OnRep_StaticMesh(struct UStaticMesh* OldStaticMesh); // Function Engine.StaticMeshComponent.OnRep_StaticMesh // Final|Native|Public // @ game+0x2f47370
+	void GetLocalBounds(struct FVector Min, struct FVector Max); // Function Engine.StaticMeshComponent.GetLocalBounds // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43e40
+	struct UMaterialInterface* GetCustomDepthMaterial(); // Function Engine.StaticMeshComponent.GetCustomDepthMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42b80
 };
 
 // Class Engine.FogVolume
@@ -2169,7 +2169,7 @@ struct AFogVolume : AActor {
 	struct USphereComponent* SphereComponent; // 0x3c8(0x08)
 	struct UFogVolumeComponent* FogVolumeComponent; // 0x3d0(0x08)
 
-	void SetScaleWithLighting(bool bScaleWithLighting); // Function Engine.FogVolume.SetScaleWithLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e40710
+	void SetScaleWithLighting(bool bScaleWithLighting); // Function Engine.FogVolume.SetScaleWithLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e42ba0
 };
 
 // Class Engine.ThreadedActor
@@ -2186,8 +2186,8 @@ struct UMaterialInterface : UObject {
 	struct FLightmassMaterialInterfaceSettings LightmassSettings; // 0x3c(0x14)
 	char UnknownData_50[0x8]; // 0x50(0x08)
 
-	struct UPhysicalMaterial* GetPhysicalMaterial(); // Function Engine.MaterialInterface.GetPhysicalMaterial // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35030
-	struct UMaterial* GetBaseMaterial(); // Function Engine.MaterialInterface.GetBaseMaterial // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e32b90
+	struct UPhysicalMaterial* GetPhysicalMaterial(); // Function Engine.MaterialInterface.GetPhysicalMaterial // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e374c0
+	struct UMaterial* GetBaseMaterial(); // Function Engine.MaterialInterface.GetBaseMaterial // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e35020
 };
 
 // Class Engine.Material
@@ -2388,12 +2388,12 @@ struct UCameraModifier : UObject {
 	char UnknownData_44_1 : 7; // 0x44(0x01)
 	char UnknownData_45[0x3]; // 0x45(0x03)
 
-	bool IsDisabled(); // Function Engine.CameraModifier.IsDisabled // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3062ec0
-	struct AActor* GetViewTarget(); // Function Engine.CameraModifier.GetViewTarget // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3060c50
-	void EnableModifier(); // Function Engine.CameraModifier.EnableModifier // Native|Public|BlueprintCallable // @ game+0x305b390
-	void DisableModifier(bool bImmediate); // Function Engine.CameraModifier.DisableModifier // Native|Public|BlueprintCallable // @ game+0x3058690
-	void BlueprintModifyPostProcess(float DeltaTime, float PostProcessBlendWeight, struct FPostProcessSettings PostProcessSettings); // Function Engine.CameraModifier.BlueprintModifyPostProcess // BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e3b10
-	void BlueprintModifyCamera(float DeltaTime, struct FVector ViewLocation, struct FRotator ViewRotation, float FOV, struct FVector NewViewLocation, struct FRotator NewViewRotation, float NewFOV); // Function Engine.CameraModifier.BlueprintModifyCamera // BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e3b10
+	bool IsDisabled(); // Function Engine.CameraModifier.IsDisabled // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3065350
+	struct AActor* GetViewTarget(); // Function Engine.CameraModifier.GetViewTarget // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x30630e0
+	void EnableModifier(); // Function Engine.CameraModifier.EnableModifier // Native|Public|BlueprintCallable // @ game+0x305d820
+	void DisableModifier(bool bImmediate); // Function Engine.CameraModifier.DisableModifier // Native|Public|BlueprintCallable // @ game+0x305ab20
+	void BlueprintModifyPostProcess(float DeltaTime, float PostProcessBlendWeight, struct FPostProcessSettings PostProcessSettings); // Function Engine.CameraModifier.BlueprintModifyPostProcess // BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
+	void BlueprintModifyCamera(float DeltaTime, struct FVector ViewLocation, struct FRotator ViewRotation, float FOV, struct FVector NewViewLocation, struct FRotator NewViewRotation, float NewFOV); // Function Engine.CameraModifier.BlueprintModifyCamera // BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class Engine.PhysicsVolume
@@ -2458,32 +2458,32 @@ struct UParticleSystemComponent : UPrimitiveComponent {
 	char UnknownData_7D0_1 : 7; // 0x7d0(0x01)
 	char UnknownData_7D1[0xdf]; // 0x7d1(0xdf)
 
-	void SetVectorParameter(struct FName ParameterName, struct FVector Param); // Function Engine.ParticleSystemComponent.SetVectorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e41380
-	void SetTrailSourceData(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.SetTrailSourceData // Final|Native|Public|BlueprintCallable // @ game+0x2e40fc0
-	void SetTemplate(struct UParticleSystem* NewTemplate); // Function Engine.ParticleSystemComponent.SetTemplate // Final|Native|Public|BlueprintCallable // @ game+0x2e40f40
-	void SetMaterialParameter(struct FName ParameterName, struct UMaterialInterface* Param); // Function Engine.ParticleSystemComponent.SetMaterialParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3f620
-	void SetFloatParameter(struct FName ParameterName, float Param); // Function Engine.ParticleSystemComponent.SetFloatParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3dfa0
-	void SetEnableDistanceFading(bool bEnable); // Function Engine.ParticleSystemComponent.SetEnableDistanceFading // Final|Native|Public|BlueprintCallable // @ game+0x2e3dc90
-	void SetEmitterEnable(struct FName EmitterName, bool bNewEnableState); // Function Engine.ParticleSystemComponent.SetEmitterEnable // Native|Public|BlueprintCallable // @ game+0x2e3dbc0
-	void SetCustomLocalSpaceWorldSpace(); // Function Engine.ParticleSystemComponent.SetCustomLocalSpaceWorldSpace // Final|Native|Public|BlueprintCallable // @ game+0x2e3d750
-	void SetCustomLocalSpaceComponent(struct USceneComponent* InComponent); // Function Engine.ParticleSystemComponent.SetCustomLocalSpaceComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e3d6d0
-	void SetColorParameter(struct FName ParameterName, struct FLinearColor Param); // Function Engine.ParticleSystemComponent.SetColorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3cfa0
-	void SetBeamTargetTangent(int32_t EmitterIndex, struct FVector NewTangentPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetTangent // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3c320
-	void SetBeamTargetStrength(int32_t EmitterIndex, float NewTargetStrength, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetStrength // Native|Public|BlueprintCallable // @ game+0x2e3c220
-	void SetBeamTargetPoint(int32_t EmitterIndex, struct FVector NewTargetPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetPoint // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3c110
-	void SetBeamSourceTangent(int32_t EmitterIndex, struct FVector NewTangentPoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceTangent // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3c000
-	void SetBeamSourceStrength(int32_t EmitterIndex, float NewSourceStrength, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceStrength // Native|Public|BlueprintCallable // @ game+0x2e3bf00
-	void SetBeamSourcePoint(int32_t EmitterIndex, struct FVector NewSourcePoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourcePoint // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3bdf0
-	void SetBeamEndPoint(int32_t EmitterIndex, struct FVector NewEndPoint); // Function Engine.ParticleSystemComponent.SetBeamEndPoint // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3bd20
-	void SetActorParameter(struct FName ParameterName, struct AActor* Param); // Function Engine.ParticleSystemComponent.SetActorParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3a9d0
-	int32_t GetNumActiveParticles(); // Function Engine.ParticleSystemComponent.GetNumActiveParticles // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34530
-	struct UMaterialInterface* GetNamedMaterial(struct FName InName); // Function Engine.ParticleSystemComponent.GetNamedMaterial // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e343c0
-	void GenerateParticleEvent(struct FName InEventName, float InEmitterTime, struct FVector InLocation, struct FVector InDirection, struct FVector InVelocity); // Function Engine.ParticleSystemComponent.GenerateParticleEvent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e325d0
-	void EndTrails(); // Function Engine.ParticleSystemComponent.EndTrails // Final|Native|Public|BlueprintCallable // @ game+0x2e32020
-	struct UMaterialInstanceDynamic* CreateNamedDynamicMaterialInstance(struct FName InName, struct UMaterialInterface* SourceMaterial); // Function Engine.ParticleSystemComponent.CreateNamedDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2e308a0
-	void BeginTrails(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.BeginTrails // Final|Native|Public|BlueprintCallable // @ game+0x2e2fb40
-	void AddKillSphere(struct FVector4 KillSphere); // Function Engine.ParticleSystemComponent.AddKillSphere // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e2f2e0
-	void AddEmitterPoint(struct FVector4 Position, struct FVector4 InheritedVelocity, struct FVector4 Orientation, struct FVector Scale); // Function Engine.ParticleSystemComponent.AddEmitterPoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e2ea10
+	void SetVectorParameter(struct FName ParameterName, struct FVector Param); // Function Engine.ParticleSystemComponent.SetVectorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e43810
+	void SetTrailSourceData(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.SetTrailSourceData // Final|Native|Public|BlueprintCallable // @ game+0x2e43450
+	void SetTemplate(struct UParticleSystem* NewTemplate); // Function Engine.ParticleSystemComponent.SetTemplate // Final|Native|Public|BlueprintCallable // @ game+0x2e433d0
+	void SetMaterialParameter(struct FName ParameterName, struct UMaterialInterface* Param); // Function Engine.ParticleSystemComponent.SetMaterialParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e41ab0
+	void SetFloatParameter(struct FName ParameterName, float Param); // Function Engine.ParticleSystemComponent.SetFloatParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e40430
+	void SetEnableDistanceFading(bool bEnable); // Function Engine.ParticleSystemComponent.SetEnableDistanceFading // Final|Native|Public|BlueprintCallable // @ game+0x2e40120
+	void SetEmitterEnable(struct FName EmitterName, bool bNewEnableState); // Function Engine.ParticleSystemComponent.SetEmitterEnable // Native|Public|BlueprintCallable // @ game+0x2e40050
+	void SetCustomLocalSpaceWorldSpace(); // Function Engine.ParticleSystemComponent.SetCustomLocalSpaceWorldSpace // Final|Native|Public|BlueprintCallable // @ game+0x2e3fbe0
+	void SetCustomLocalSpaceComponent(struct USceneComponent* InComponent); // Function Engine.ParticleSystemComponent.SetCustomLocalSpaceComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e3fb60
+	void SetColorParameter(struct FName ParameterName, struct FLinearColor Param); // Function Engine.ParticleSystemComponent.SetColorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3f430
+	void SetBeamTargetTangent(int32_t EmitterIndex, struct FVector NewTangentPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetTangent // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e7b0
+	void SetBeamTargetStrength(int32_t EmitterIndex, float NewTargetStrength, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetStrength // Native|Public|BlueprintCallable // @ game+0x2e3e6b0
+	void SetBeamTargetPoint(int32_t EmitterIndex, struct FVector NewTargetPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetPoint // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e5a0
+	void SetBeamSourceTangent(int32_t EmitterIndex, struct FVector NewTangentPoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceTangent // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e490
+	void SetBeamSourceStrength(int32_t EmitterIndex, float NewSourceStrength, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceStrength // Native|Public|BlueprintCallable // @ game+0x2e3e390
+	void SetBeamSourcePoint(int32_t EmitterIndex, struct FVector NewSourcePoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourcePoint // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e280
+	void SetBeamEndPoint(int32_t EmitterIndex, struct FVector NewEndPoint); // Function Engine.ParticleSystemComponent.SetBeamEndPoint // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e1b0
+	void SetActorParameter(struct FName ParameterName, struct AActor* Param); // Function Engine.ParticleSystemComponent.SetActorParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3ce60
+	int32_t GetNumActiveParticles(); // Function Engine.ParticleSystemComponent.GetNumActiveParticles // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e369c0
+	struct UMaterialInterface* GetNamedMaterial(struct FName InName); // Function Engine.ParticleSystemComponent.GetNamedMaterial // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36850
+	void GenerateParticleEvent(struct FName InEventName, float InEmitterTime, struct FVector InLocation, struct FVector InDirection, struct FVector InVelocity); // Function Engine.ParticleSystemComponent.GenerateParticleEvent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e34a60
+	void EndTrails(); // Function Engine.ParticleSystemComponent.EndTrails // Final|Native|Public|BlueprintCallable // @ game+0x2e344b0
+	struct UMaterialInstanceDynamic* CreateNamedDynamicMaterialInstance(struct FName InName, struct UMaterialInterface* SourceMaterial); // Function Engine.ParticleSystemComponent.CreateNamedDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2e32d30
+	void BeginTrails(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.BeginTrails // Final|Native|Public|BlueprintCallable // @ game+0x2e31fd0
+	void AddKillSphere(struct FVector4 KillSphere); // Function Engine.ParticleSystemComponent.AddKillSphere // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e31770
+	void AddEmitterPoint(struct FVector4 Position, struct FVector4 InheritedVelocity, struct FVector4 Orientation, struct FVector Scale); // Function Engine.ParticleSystemComponent.AddEmitterPoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e30ea0
 };
 
 // Class Engine.SplineComponent
@@ -2502,68 +2502,68 @@ struct USplineComponent : UPrimitiveComponent {
 	struct FVector DefaultUpVector; // 0x628(0x0c)
 	char UnknownData_638[0x8]; // 0x638(0x08)
 
-	void SetWorldLocationAtSplinePoint(int32_t PointIndex, struct FVector InLocation); // Function Engine.SplineComponent.SetWorldLocationAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e414f0
-	void SetUnselectedSplineSegmentColor(struct FLinearColor SegmentColor); // Function Engine.SplineComponent.SetUnselectedSplineSegmentColor // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e41190
-	void SetTangentAtSplinePoint(int32_t PointIndex, struct FVector InTangent, char CoordinateSpace); // Function Engine.SplineComponent.SetTangentAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e40d20
-	void SetSplineWorldPoints(struct TArray<struct FVector> Points); // Function Engine.SplineComponent.SetSplineWorldPoints // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e40c60
-	void SetSplinePointType(int32_t PointIndex, char Type); // Function Engine.SplineComponent.SetSplinePointType // Final|Native|Public|BlueprintCallable // @ game+0x2e40aa0
-	void SetSplinePoints(struct TArray<struct FVector> Points, char CoordinateSpace); // Function Engine.SplineComponent.SetSplinePoints // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e40b60
-	void SetSplineLocalPoints(struct TArray<struct FVector> Points); // Function Engine.SplineComponent.SetSplineLocalPoints // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e409e0
-	void SetSelectedSplineSegmentColor(struct FLinearColor SegmentColor); // Function Engine.SplineComponent.SetSelectedSplineSegmentColor // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e407a0
-	void SetLocationAtSplinePoint(int32_t PointIndex, struct FVector InLocation, char CoordinateSpace); // Function Engine.SplineComponent.SetLocationAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3f020
-	void SetDefaultUpVector(struct FVector UpVector, char CoordinateSpace); // Function Engine.SplineComponent.SetDefaultUpVector // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3da50
-	void SetClosedLoop(bool bInClosedLoop); // Function Engine.SplineComponent.SetClosedLoop // Final|Native|Public|BlueprintCallable // @ game+0x2e3caf0
-	bool IsClosedLoop(); // Function Engine.SplineComponent.IsClosedLoop // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37f20
-	struct FVector GetWorldTangentAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldTangentAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37a80
-	struct FRotator GetWorldRotationAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldRotationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37990
-	struct FRotator GetWorldRotationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldRotationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e378e0
-	struct FVector GetWorldLocationAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldLocationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e377f0
-	struct FVector GetWorldLocationAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetWorldLocationAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37740
-	struct FVector GetWorldLocationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldLocationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37690
-	struct FVector GetWorldDirectionAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldDirectionAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e375a0
-	struct FVector GetWorldDirectionAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldDirectionAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e374f0
-	struct FVector GetUpVectorAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetUpVectorAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37390
-	struct FVector GetUpVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e372c0
-	struct FVector GetUpVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e371e0
-	struct FTransform GetTransformAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity, bool bUseScale); // Function Engine.SplineComponent.GetTransformAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37050
-	struct FTransform GetTransformAtSplinePoint(int32_t PointIndex, char CoordinateSpace, bool bUseScale); // Function Engine.SplineComponent.GetTransformAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36f10
-	struct FTransform GetTransformAtDistanceAlongSpline(float Distance, char CoordinateSpace, bool bUseScale); // Function Engine.SplineComponent.GetTransformAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36dc0
-	struct FVector GetTangentAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetTangentAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36aa0
-	struct FVector GetTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e369d0
-	struct FVector GetTangentAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e368f0
-	char GetSplinePointType(int32_t PointIndex); // Function Engine.SplineComponent.GetSplinePointType // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36860
-	float GetSplineLength(); // Function Engine.SplineComponent.GetSplineLength // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36830
-	struct FVector GetScaleAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetScaleAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36680
-	struct FVector GetScaleAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetScaleAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e365e0
-	struct FVector GetScaleAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetScaleAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36540
-	struct FRotator GetRotationAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetRotationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36420
-	struct FRotator GetRotationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36350
-	struct FRotator GetRotationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36270
-	float GetRollAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetRollAtTime // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36160
-	float GetRollAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtSplinePoint // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e360a0
-	float GetRollAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtDistanceAlongSpline // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35fd0
-	struct FVector GetRightVectorAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetRightVectorAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35eb0
-	struct FVector GetRightVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35de0
-	struct FVector GetRightVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35d00
-	struct FQuat GetQuaternionAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetQuaternionAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35570
-	struct FQuat GetQuaternionAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetQuaternionAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e354a0
-	struct FQuat GetQuaternionAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetQuaternionAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e353c0
-	int32_t GetNumberOfSplinePoints(); // Function Engine.SplineComponent.GetNumberOfSplinePoints // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34650
-	struct FVector GetLocationAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetLocationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33eb0
-	struct FVector GetLocationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33de0
-	struct FVector GetLocationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33d00
-	void GetLocationAndTangentAtSplinePoint(int32_t PointIndex, struct FVector Location, struct FVector Tangent, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAndTangentAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33b90
-	void GetLocalLocationAndTangentAtSplinePoint(int32_t PointIndex, struct FVector LocalLocation, struct FVector LocalTangent); // Function Engine.SplineComponent.GetLocalLocationAndTangentAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33a60
-	float GetInputKeyAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetInputKeyAtDistanceAlongSpline // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33890
-	float GetDistanceAlongSplineAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetDistanceAlongSplineAtSplinePoint // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e336d0
-	struct FVector GetDirectionAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetDirectionAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e335b0
-	struct FVector GetDirectionAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e334e0
-	struct FVector GetDirectionAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33400
-	struct FVector GetDefaultUpVector(char CoordinateSpace); // Function Engine.SplineComponent.GetDefaultUpVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33360
-	void ClearSplinePoints(); // Function Engine.SplineComponent.ClearSplinePoints // Final|Native|Public|BlueprintCallable // @ game+0x2e301f0
-	void AddSplineWorldPoint(struct FVector Position); // Function Engine.SplineComponent.AddSplineWorldPoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e2f990
-	void AddSplinePoint(struct FVector Position, char CoordinateSpace); // Function Engine.SplineComponent.AddSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e2f8b0
-	void AddSplineLocalPoint(struct FVector Position); // Function Engine.SplineComponent.AddSplineLocalPoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e2f820
+	void SetWorldLocationAtSplinePoint(int32_t PointIndex, struct FVector InLocation); // Function Engine.SplineComponent.SetWorldLocationAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e43980
+	void SetUnselectedSplineSegmentColor(struct FLinearColor SegmentColor); // Function Engine.SplineComponent.SetUnselectedSplineSegmentColor // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e43620
+	void SetTangentAtSplinePoint(int32_t PointIndex, struct FVector InTangent, char CoordinateSpace); // Function Engine.SplineComponent.SetTangentAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e431b0
+	void SetSplineWorldPoints(struct TArray<struct FVector> Points); // Function Engine.SplineComponent.SetSplineWorldPoints // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e430f0
+	void SetSplinePointType(int32_t PointIndex, char Type); // Function Engine.SplineComponent.SetSplinePointType // Final|Native|Public|BlueprintCallable // @ game+0x2e42f30
+	void SetSplinePoints(struct TArray<struct FVector> Points, char CoordinateSpace); // Function Engine.SplineComponent.SetSplinePoints // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e42ff0
+	void SetSplineLocalPoints(struct TArray<struct FVector> Points); // Function Engine.SplineComponent.SetSplineLocalPoints // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e42e70
+	void SetSelectedSplineSegmentColor(struct FLinearColor SegmentColor); // Function Engine.SplineComponent.SetSelectedSplineSegmentColor // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e42c30
+	void SetLocationAtSplinePoint(int32_t PointIndex, struct FVector InLocation, char CoordinateSpace); // Function Engine.SplineComponent.SetLocationAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e414b0
+	void SetDefaultUpVector(struct FVector UpVector, char CoordinateSpace); // Function Engine.SplineComponent.SetDefaultUpVector // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3fee0
+	void SetClosedLoop(bool bInClosedLoop); // Function Engine.SplineComponent.SetClosedLoop // Final|Native|Public|BlueprintCallable // @ game+0x2e3ef80
+	bool IsClosedLoop(); // Function Engine.SplineComponent.IsClosedLoop // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a3b0
+	struct FVector GetWorldTangentAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldTangentAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39f10
+	struct FRotator GetWorldRotationAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldRotationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39e20
+	struct FRotator GetWorldRotationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldRotationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39d70
+	struct FVector GetWorldLocationAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldLocationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39c80
+	struct FVector GetWorldLocationAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetWorldLocationAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39bd0
+	struct FVector GetWorldLocationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldLocationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39b20
+	struct FVector GetWorldDirectionAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldDirectionAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39a30
+	struct FVector GetWorldDirectionAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldDirectionAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39980
+	struct FVector GetUpVectorAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetUpVectorAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39820
+	struct FVector GetUpVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39750
+	struct FVector GetUpVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39670
+	struct FTransform GetTransformAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity, bool bUseScale); // Function Engine.SplineComponent.GetTransformAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e394e0
+	struct FTransform GetTransformAtSplinePoint(int32_t PointIndex, char CoordinateSpace, bool bUseScale); // Function Engine.SplineComponent.GetTransformAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e393a0
+	struct FTransform GetTransformAtDistanceAlongSpline(float Distance, char CoordinateSpace, bool bUseScale); // Function Engine.SplineComponent.GetTransformAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e39250
+	struct FVector GetTangentAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetTangentAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38f30
+	struct FVector GetTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38e60
+	struct FVector GetTangentAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38d80
+	char GetSplinePointType(int32_t PointIndex); // Function Engine.SplineComponent.GetSplinePointType // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38cf0
+	float GetSplineLength(); // Function Engine.SplineComponent.GetSplineLength // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38cc0
+	struct FVector GetScaleAtTime(float Time, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetScaleAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38b10
+	struct FVector GetScaleAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetScaleAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38a70
+	struct FVector GetScaleAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetScaleAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e389d0
+	struct FRotator GetRotationAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetRotationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e388b0
+	struct FRotator GetRotationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e387e0
+	struct FRotator GetRotationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38700
+	float GetRollAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetRollAtTime // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e385f0
+	float GetRollAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtSplinePoint // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38530
+	float GetRollAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtDistanceAlongSpline // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38460
+	struct FVector GetRightVectorAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetRightVectorAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38340
+	struct FVector GetRightVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38270
+	struct FVector GetRightVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38190
+	struct FQuat GetQuaternionAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetQuaternionAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37a00
+	struct FQuat GetQuaternionAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetQuaternionAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37930
+	struct FQuat GetQuaternionAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetQuaternionAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37850
+	int32_t GetNumberOfSplinePoints(); // Function Engine.SplineComponent.GetNumberOfSplinePoints // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36ae0
+	struct FVector GetLocationAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetLocationAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36340
+	struct FVector GetLocationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36270
+	struct FVector GetLocationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36190
+	void GetLocationAndTangentAtSplinePoint(int32_t PointIndex, struct FVector Location, struct FVector Tangent, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAndTangentAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36020
+	void GetLocalLocationAndTangentAtSplinePoint(int32_t PointIndex, struct FVector LocalLocation, struct FVector LocalTangent); // Function Engine.SplineComponent.GetLocalLocationAndTangentAtSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35ef0
+	float GetInputKeyAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetInputKeyAtDistanceAlongSpline // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35d20
+	float GetDistanceAlongSplineAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetDistanceAlongSplineAtSplinePoint // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35b60
+	struct FVector GetDirectionAtTime(float Time, char CoordinateSpace, bool bUseConstantVelocity); // Function Engine.SplineComponent.GetDirectionAtTime // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35a40
+	struct FVector GetDirectionAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtSplinePoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35970
+	struct FVector GetDirectionAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtDistanceAlongSpline // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35890
+	struct FVector GetDefaultUpVector(char CoordinateSpace); // Function Engine.SplineComponent.GetDefaultUpVector // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e357f0
+	void ClearSplinePoints(); // Function Engine.SplineComponent.ClearSplinePoints // Final|Native|Public|BlueprintCallable // @ game+0x2e32680
+	void AddSplineWorldPoint(struct FVector Position); // Function Engine.SplineComponent.AddSplineWorldPoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e31e20
+	void AddSplinePoint(struct FVector Position, char CoordinateSpace); // Function Engine.SplineComponent.AddSplinePoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e31d40
+	void AddSplineLocalPoint(struct FVector Position); // Function Engine.SplineComponent.AddSplineLocalPoint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e31cb0
 };
 
 // Class Engine.ShapeComponent
@@ -2586,16 +2586,16 @@ struct UCapsuleComponent : UShapeComponent {
 	float CapsuleHalfHeight; // 0x5d8(0x04)
 	float CapsuleRadius; // 0x5dc(0x04)
 
-	void SetCapsuleSize(float InRadius, float InHalfHeight, bool bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleSize // Final|Native|Public|BlueprintCallable // @ game+0x2f49050
-	void SetCapsuleRadius(float Radius, bool bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f48f80
-	void SetCapsuleHalfHeight(float HalfHeight, bool bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleHalfHeight // Final|Native|Public|BlueprintCallable // @ game+0x2f48eb0
-	void GetUnscaledCapsuleSize(float OutRadius, float OutHalfHeight); // Function Engine.CapsuleComponent.GetUnscaledCapsuleSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43440
-	float GetUnscaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43420
-	float GetUnscaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleHalfHeight // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43400
-	float GetShapeScale(); // Function Engine.CapsuleComponent.GetShapeScale // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42c20
-	void GetScaledCapsuleSize(float OutRadius, float OutHalfHeight); // Function Engine.CapsuleComponent.GetScaledCapsuleSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42ac0
-	float GetScaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetScaledCapsuleRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42a70
-	float GetScaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetScaledCapsuleHalfHeight // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42a20
+	void SetCapsuleSize(float InRadius, float InHalfHeight, bool bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleSize // Final|Native|Public|BlueprintCallable // @ game+0x2f4b4e0
+	void SetCapsuleRadius(float Radius, bool bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4b410
+	void SetCapsuleHalfHeight(float HalfHeight, bool bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleHalfHeight // Final|Native|Public|BlueprintCallable // @ game+0x2f4b340
+	void GetUnscaledCapsuleSize(float OutRadius, float OutHalfHeight); // Function Engine.CapsuleComponent.GetUnscaledCapsuleSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2f458d0
+	float GetUnscaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f458b0
+	float GetUnscaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleHalfHeight // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45890
+	float GetShapeScale(); // Function Engine.CapsuleComponent.GetShapeScale // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f450b0
+	void GetScaledCapsuleSize(float OutRadius, float OutHalfHeight); // Function Engine.CapsuleComponent.GetScaledCapsuleSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44f50
+	float GetScaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetScaledCapsuleRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44f00
+	float GetScaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetScaledCapsuleHalfHeight // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44eb0
 };
 
 // Class Engine.TextureProxy
@@ -2638,17 +2638,17 @@ struct UInstancedStaticMeshComponent : UStaticMeshComponent {
 	struct TArray<struct FInstancedStaticMeshMappingInfo> CachedMappings; // 0x6b8(0x10)
 	char UnknownData_6C8[0x8]; // 0x6c8(0x08)
 
-	bool UpdateInstanceTransform(int32_t InstanceIndex, struct FTransform NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty); // Function Engine.InstancedStaticMeshComponent.UpdateInstanceTransform // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f50670
-	void SetCullDistances(int32_t StartCullDistance, int32_t EndCullDistance); // Function Engine.InstancedStaticMeshComponent.SetCullDistances // Final|Native|Public|BlueprintCallable // @ game+0x2f49600
-	bool RemoveInstance(int32_t InstanceIndex); // Function Engine.InstancedStaticMeshComponent.RemoveInstance // Native|Public|BlueprintCallable // @ game+0x2f46820
-	bool GetInstanceTransform(int32_t InstanceIndex, struct FTransform OutInstanceTransform, bool bWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstanceTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41190
-	struct TArray<int32_t> GetInstancesOverlappingSphere(struct FVector Center, float Radius, bool bSphereInWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstancesOverlappingSphere // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41530
-	int32_t GetInstanceCount(); // Function Engine.InstancedStaticMeshComponent.GetInstanceCount // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41010
-	void EnableGPUVisibility(bool bEnable); // Function Engine.InstancedStaticMeshComponent.EnableGPUVisibility // Final|Native|Public|BlueprintCallable // @ game+0x2f3ea20
-	void ClearInstances(); // Function Engine.InstancedStaticMeshComponent.ClearInstances // Native|Public|BlueprintCallable // @ game+0x2f3d8f0
-	int32_t AddInstanceWorldSpace(struct FTransform WorldTransform); // Function Engine.InstancedStaticMeshComponent.AddInstanceWorldSpace // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ad50
-	void AddInstances(struct TArray<struct FTransform> InstanceTransforms); // Function Engine.InstancedStaticMeshComponent.AddInstances // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f3ae30
-	int32_t AddInstance(struct FTransform InstanceTransform); // Function Engine.InstancedStaticMeshComponent.AddInstance // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ab90
+	bool UpdateInstanceTransform(int32_t InstanceIndex, struct FTransform NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty); // Function Engine.InstancedStaticMeshComponent.UpdateInstanceTransform // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f52b00
+	void SetCullDistances(int32_t StartCullDistance, int32_t EndCullDistance); // Function Engine.InstancedStaticMeshComponent.SetCullDistances // Final|Native|Public|BlueprintCallable // @ game+0x2f4ba90
+	bool RemoveInstance(int32_t InstanceIndex); // Function Engine.InstancedStaticMeshComponent.RemoveInstance // Native|Public|BlueprintCallable // @ game+0x2f48cb0
+	bool GetInstanceTransform(int32_t InstanceIndex, struct FTransform OutInstanceTransform, bool bWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstanceTransform // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43620
+	struct TArray<int32_t> GetInstancesOverlappingSphere(struct FVector Center, float Radius, bool bSphereInWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstancesOverlappingSphere // Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f439c0
+	int32_t GetInstanceCount(); // Function Engine.InstancedStaticMeshComponent.GetInstanceCount // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f434a0
+	void EnableGPUVisibility(bool bEnable); // Function Engine.InstancedStaticMeshComponent.EnableGPUVisibility // Final|Native|Public|BlueprintCallable // @ game+0x2f40eb0
+	void ClearInstances(); // Function Engine.InstancedStaticMeshComponent.ClearInstances // Native|Public|BlueprintCallable // @ game+0x2f3fd80
+	int32_t AddInstanceWorldSpace(struct FTransform WorldTransform); // Function Engine.InstancedStaticMeshComponent.AddInstanceWorldSpace // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3d1e0
+	void AddInstances(struct TArray<struct FTransform> InstanceTransforms); // Function Engine.InstancedStaticMeshComponent.AddInstances // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f3d2c0
+	int32_t AddInstance(struct FTransform InstanceTransform); // Function Engine.InstancedStaticMeshComponent.AddInstance // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3d020
 };
 
 // Class Engine.HierarchicalInstancedStaticMeshComponent
@@ -2666,7 +2666,7 @@ struct UHierarchicalInstancedStaticMeshComponent : UInstancedStaticMeshComponent
 	bool bDisableCollision; // 0x776(0x01)
 	char UnknownData_777[0x29]; // 0x777(0x29)
 
-	bool RemoveInstances(struct TArray<int32_t> InstancesToRemove); // Function Engine.HierarchicalInstancedStaticMeshComponent.RemoveInstances // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f468c0
+	bool RemoveInstances(struct TArray<int32_t> InstancesToRemove); // Function Engine.HierarchicalInstancedStaticMeshComponent.RemoveInstances // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f48d50
 };
 
 // Class Engine.MaterialInstance
@@ -2725,7 +2725,7 @@ struct UMaterialExpressionCustomOutput : UMaterialExpression {
 // Size: 0x28 (Inherited: 0x28)
 struct UBlueprintAsyncActionBase : UObject {
 
-	void Activate(); // Function Engine.BlueprintAsyncActionBase.Activate // Native|Public|BlueprintCallable // @ game+0x2f3a690
+	void Activate(); // Function Engine.BlueprintAsyncActionBase.Activate // Native|Public|BlueprintCallable // @ game+0x2f3cb20
 };
 
 // Class Engine.BlueprintGeneratedClass
@@ -2946,7 +2946,7 @@ struct UChildActorComponent : USceneComponent {
 	struct AActor* ChildActor; // 0x2e8(0x08)
 	char UnknownData_2F0[0x10]; // 0x2f0(0x10)
 
-	void SetChildActorClass(struct UClass* InClass); // Function Engine.ChildActorComponent.SetChildActorClass // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2d3a3f0
+	void SetChildActorClass(struct UClass* InClass); // Function Engine.ChildActorComponent.SetChildActorClass // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2d3c880
 };
 
 // Class Engine.TestInterface
@@ -2982,11 +2982,11 @@ struct AActorWithTestInterface : AActor {
 struct AAmbientSound : AActor {
 	struct UAudioComponent* AudioComponent; // 0x3c8(0x08)
 
-	void Stop(); // Function Engine.AmbientSound.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2d3bfe0
-	void Play(float StartTime); // Function Engine.AmbientSound.Play // Final|Native|Public|BlueprintCallable // @ game+0x2d37af0
-	void FadeOut(float FadeOutDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeOut // Final|Native|Public|BlueprintCallable // @ game+0x2d2f6b0
-	void FadeIn(float FadeInDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeIn // Final|Native|Public|BlueprintCallable // @ game+0x2d2f5f0
-	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel); // Function Engine.AmbientSound.AdjustVolume // Final|Native|Public|BlueprintCallable // @ game+0x2d2bda0
+	void Stop(); // Function Engine.AmbientSound.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2d3e470
+	void Play(float StartTime); // Function Engine.AmbientSound.Play // Final|Native|Public|BlueprintCallable // @ game+0x2d39f80
+	void FadeOut(float FadeOutDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeOut // Final|Native|Public|BlueprintCallable // @ game+0x2d31b40
+	void FadeIn(float FadeInDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeIn // Final|Native|Public|BlueprintCallable // @ game+0x2d31a80
+	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel); // Function Engine.AmbientSound.AdjustVolume // Final|Native|Public|BlueprintCallable // @ game+0x2d2e230
 };
 
 // Class Engine.AutomaticInstancingActor
@@ -3118,24 +3118,24 @@ struct AFFTWater : AVolume {
 	struct UFFTWaterComponent* FFTWaterComponent; // 0x400(0x08)
 	struct UFFTWaterExtendedPlaneComponent* ExtendedPlaneComponent; // 0x408(0x08)
 
-	bool ValidateVertexBuffer(); // Function Engine.FFTWater.ValidateVertexBuffer // Final|Native|Public|BlueprintCallable // @ game+0x2d3c6c0
-	bool ValidateParticlesVelocity(); // Function Engine.FFTWater.ValidateParticlesVelocity // Final|Native|Public|BlueprintCallable // @ game+0x2d3c690
-	bool ValidateIndexBuffer(); // Function Engine.FFTWater.ValidateIndexBuffer // Final|Native|Public|BlueprintCallable // @ game+0x2d3c660
-	void SetWireframe(bool bWireframe); // Function Engine.FFTWater.SetWireframe // Final|Native|Public|BlueprintCallable // @ game+0x2d3ba60
-	void SetWaterColour(struct FLinearColor WaterColour); // Function Engine.FFTWater.SetWaterColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3b9e0
-	void SetSpecularBrightness(float SpecularBrightness); // Function Engine.FFTWater.SetSpecularBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2d3b460
-	void SetShallowWaterColour(struct FLinearColor ShallowWaterColour); // Function Engine.FFTWater.SetShallowWaterColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3b3e0
-	void SetReflectionBrightness(float ReflectionBrightness); // Function Engine.FFTWater.SetReflectionBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2d3b1b0
-	void SetLightFunctionMaterial(struct UMaterialInterface* Material); // Function Engine.FFTWater.SetLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2d3aee0
-	void SetFresnelPower(float FresnelPower); // Function Engine.FFTWater.SetFresnelPower // Final|Native|Public|BlueprintCallable // @ game+0x2d3a8d0
-	void SetFoamHighlightColour(struct FLinearColor FoamHighlightColour); // Function Engine.FFTWater.SetFoamHighlightColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a850
-	void SetFoamColour(struct FLinearColor FoamColour); // Function Engine.FFTWater.SetFoamColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a7d0
-	void SetFoamBrightness(float FoamBrightness); // Function Engine.FFTWater.SetFoamBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2d3a750
-	void SetCausticsDepth(float Depth); // Function Engine.FFTWater.SetCausticsDepth // Final|Native|Public|BlueprintCallable // @ game+0x2d3a370
-	void SetBackLitColour(struct FLinearColor BackLitColour); // Function Engine.FFTWater.SetBackLitColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a2f0
-	void SetAmbientColour(struct FLinearColor AmbientColour); // Function Engine.FFTWater.SetAmbientColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a0d0
-	bool HasLightFunctionMaterial(); // Function Engine.FFTWater.HasLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2d332f0
-	struct UFFTWaterComponent* GetComponent(); // Function Engine.FFTWater.GetComponent // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2d30090
+	bool ValidateVertexBuffer(); // Function Engine.FFTWater.ValidateVertexBuffer // Final|Native|Public|BlueprintCallable // @ game+0x2d3eb50
+	bool ValidateParticlesVelocity(); // Function Engine.FFTWater.ValidateParticlesVelocity // Final|Native|Public|BlueprintCallable // @ game+0x2d3eb20
+	bool ValidateIndexBuffer(); // Function Engine.FFTWater.ValidateIndexBuffer // Final|Native|Public|BlueprintCallable // @ game+0x2d3eaf0
+	void SetWireframe(bool bWireframe); // Function Engine.FFTWater.SetWireframe // Final|Native|Public|BlueprintCallable // @ game+0x2d3def0
+	void SetWaterColour(struct FLinearColor WaterColour); // Function Engine.FFTWater.SetWaterColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3de70
+	void SetSpecularBrightness(float SpecularBrightness); // Function Engine.FFTWater.SetSpecularBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2d3d8f0
+	void SetShallowWaterColour(struct FLinearColor ShallowWaterColour); // Function Engine.FFTWater.SetShallowWaterColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3d870
+	void SetReflectionBrightness(float ReflectionBrightness); // Function Engine.FFTWater.SetReflectionBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2d3d640
+	void SetLightFunctionMaterial(struct UMaterialInterface* Material); // Function Engine.FFTWater.SetLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2d3d370
+	void SetFresnelPower(float FresnelPower); // Function Engine.FFTWater.SetFresnelPower // Final|Native|Public|BlueprintCallable // @ game+0x2d3cd60
+	void SetFoamHighlightColour(struct FLinearColor FoamHighlightColour); // Function Engine.FFTWater.SetFoamHighlightColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3cce0
+	void SetFoamColour(struct FLinearColor FoamColour); // Function Engine.FFTWater.SetFoamColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3cc60
+	void SetFoamBrightness(float FoamBrightness); // Function Engine.FFTWater.SetFoamBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2d3cbe0
+	void SetCausticsDepth(float Depth); // Function Engine.FFTWater.SetCausticsDepth // Final|Native|Public|BlueprintCallable // @ game+0x2d3c800
+	void SetBackLitColour(struct FLinearColor BackLitColour); // Function Engine.FFTWater.SetBackLitColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3c780
+	void SetAmbientColour(struct FLinearColor AmbientColour); // Function Engine.FFTWater.SetAmbientColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3c560
+	bool HasLightFunctionMaterial(); // Function Engine.FFTWater.HasLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2d35780
+	struct UFFTWaterComponent* GetComponent(); // Function Engine.FFTWater.GetComponent // Final|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x2d32520
 };
 
 // Class Engine.LevelStreamingVolume
@@ -3215,7 +3215,7 @@ struct ANavModifierVolume : AVolume {
 	char UnknownData_400[0x8]; // 0x400(0x08)
 	struct UClass* AreaClass; // 0x408(0x08)
 
-	void SetAreaClass(struct UClass* NewAreaClass); // Function Engine.NavModifierVolume.SetAreaClass // Final|Native|Public|BlueprintCallable // @ game+0x2d3a150
+	void SetAreaClass(struct UClass* NewAreaClass); // Function Engine.NavModifierVolume.SetAreaClass // Final|Native|Public|BlueprintCallable // @ game+0x2d3c5e0
 };
 
 // Class Engine.DefaultPhysicsVolume
@@ -3273,7 +3273,7 @@ struct APostProcessVolume : AVolume {
 	char UnknownData_95C_2 : 6; // 0x95c(0x01)
 	char UnknownData_95D[0x3]; // 0x95d(0x03)
 
-	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.PostProcessVolume.AddOrUpdateBlendable // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2d2b850
+	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.PostProcessVolume.AddOrUpdateBlendable // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2d2dce0
 };
 
 // Class Engine.PrecomputedVisibilityOverrideVolume
@@ -3315,7 +3315,7 @@ struct ACameraActor : AActor {
 	float PostProcessBlendWeight; // 0x3ec(0x04)
 	struct FPostProcessSettings PostProcessSettings; // 0x3f0(0x540)
 
-	int32_t GetAutoActivatePlayerIndex(); // Function Engine.CameraActor.GetAutoActivatePlayerIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fe50
+	int32_t GetAutoActivatePlayerIndex(); // Function Engine.CameraActor.GetAutoActivatePlayerIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d322e0
 };
 
 // Class Engine.ClientOnlyTestActor
@@ -3355,10 +3355,10 @@ struct UCameraShake : UObject {
 	float OscillatorTimeRemaining; // 0x134(0x04)
 	struct UCameraAnimInst* AnimInst; // 0x138(0x08)
 
-	void ReceiveStopShake(); // Function Engine.CameraShake.ReceiveStopShake // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceivePlayShake(float Scale); // Function Engine.CameraShake.ReceivePlayShake // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	bool ReceiveIsFinished(); // Function Engine.CameraShake.ReceiveIsFinished // Native|Event|Public|BlueprintEvent|Const // @ game+0x2d387d0
-	void BlueprintUpdateCameraShake(float DeltaTime, float Alpha, struct FMinimalViewInfo POV, struct FMinimalViewInfo ModifiedPOV); // Function Engine.CameraShake.BlueprintUpdateCameraShake // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e3b10
+	void ReceiveStopShake(); // Function Engine.CameraShake.ReceiveStopShake // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceivePlayShake(float Scale); // Function Engine.CameraShake.ReceivePlayShake // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	bool ReceiveIsFinished(); // Function Engine.CameraShake.ReceiveIsFinished // Native|Event|Public|BlueprintEvent|Const // @ game+0x2d3ac60
+	void BlueprintUpdateCameraShake(float DeltaTime, float Alpha, struct FMinimalViewInfo POV, struct FMinimalViewInfo ModifiedPOV); // Function Engine.CameraShake.BlueprintUpdateCameraShake // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
 };
 
 // Class Engine.PlayerCameraManager
@@ -3407,31 +3407,31 @@ struct APlayerCameraManager : AActor {
 	float ViewRollMax; // 0x1c58(0x04)
 	char UnknownData_1C5C[0x4]; // 0x1c5c(0x04)
 
-	void StopCameraShake(struct UCameraShake* ShakeInstance); // Function Engine.PlayerCameraManager.StopCameraShake // Native|Public|BlueprintCallable // @ game+0x2d3c300
-	void StopCameraFade(); // Function Engine.PlayerCameraManager.StopCameraFade // Native|Public|BlueprintCallable // @ game+0x2d3c2e0
-	void StopCameraAnimInst(struct UCameraAnimInst* AnimInst, bool bImmediate); // Function Engine.PlayerCameraManager.StopCameraAnimInst // Native|Public|BlueprintCallable // @ game+0x2d3c210
-	void StopAllInstancesOfCameraShake(struct UClass* Shake); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraShake // Native|Public|BlueprintCallable // @ game+0x2d3c180
-	void StopAllInstancesOfCameraAnim(struct UCameraAnim* Anim, bool bImmediate); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim // Native|Public|BlueprintCallable // @ game+0x2d3c0b0
-	void StopAllCameraShakes(); // Function Engine.PlayerCameraManager.StopAllCameraShakes // Native|Public|BlueprintCallable // @ game+0x2d3c090
-	void StopAllCameraAnims(bool bImmediate); // Function Engine.PlayerCameraManager.StopAllCameraAnims // Native|Public|BlueprintCallable // @ game+0x2d3c000
-	void StartCameraFade(float FromAlpha, float ToAlpha, float Duration, struct FLinearColor Color, bool bShouldFadeAudio, bool bHoldWhenFinished); // Function Engine.PlayerCameraManager.StartCameraFade // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3bd90
-	void SetManualCameraFade(float InFadeAmount, struct FLinearColor Color, bool bInFadeAudio); // Function Engine.PlayerCameraManager.SetManualCameraFade // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3af60
-	bool RemoveCameraModifier(struct UCameraModifier* ModifierToRemove); // Function Engine.PlayerCameraManager.RemoveCameraModifier // Native|Public|BlueprintCallable // @ game+0x2d38890
-	void RemoveCameraLensEffect(struct AEmitterCameraLensEffectBase* Emitter); // Function Engine.PlayerCameraManager.RemoveCameraLensEffect // Native|Public|BlueprintCallable // @ game+0x2d38800
-	struct UCameraShake* PlayCameraShake(struct UClass* ShakeClass, float Scale, char PlaySpace, struct FRotator UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraShake // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d37e90
-	struct UCameraAnimInst* PlayCameraAnim(struct UCameraAnim* Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, float Duration, char PlaySpace, struct FRotator UserPlaySpaceRot, struct UCurveFloat* BlendInCurve); // Function Engine.PlayerCameraManager.PlayCameraAnim // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d37b70
-	bool IsScreenFullyOccluded(); // Function Engine.PlayerCameraManager.IsScreenFullyOccluded // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d33850
-	bool IsFadeInProgress(); // Function Engine.PlayerCameraManager.IsFadeInProgress // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d335a0
-	struct APlayerController* GetOwningPlayerController(); // Function Engine.PlayerCameraManager.GetOwningPlayerController // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32760
-	float GetFOVAngle(); // Function Engine.PlayerCameraManager.GetFOVAngle // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30c10
-	struct FRotator GetCameraRotation(); // Function Engine.PlayerCameraManager.GetCameraRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fec0
-	struct FVector GetCameraLocation(); // Function Engine.PlayerCameraManager.GetCameraLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d2fe80
-	struct UCameraModifier* FindCameraModifierByClass(struct UClass* ModifierClass); // Function Engine.PlayerCameraManager.FindCameraModifierByClass // Native|Public|BlueprintCallable // @ game+0x2d2f770
-	void ClearCameraLensEffects(); // Function Engine.PlayerCameraManager.ClearCameraLensEffects // Native|Public|BlueprintCallable // @ game+0x2d2c230
-	bool BlueprintUpdateCamera(struct AActor* CameraTarget, struct FVector NewCameraLocation, struct FRotator NewCameraRotation, float NewCameraFOV); // Function Engine.PlayerCameraManager.BlueprintUpdateCamera // BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e3b10
-	void BlendOutAllInstancesOfCameraShake(struct UClass* Shake); // Function Engine.PlayerCameraManager.BlendOutAllInstancesOfCameraShake // Native|Public|BlueprintCallable // @ game+0x2d2c0c0
-	struct UCameraModifier* AddNewCameraModifier(struct UClass* ModifierClass); // Function Engine.PlayerCameraManager.AddNewCameraModifier // Native|Public|BlueprintCallable // @ game+0x2d2b7b0
-	struct AEmitterCameraLensEffectBase* AddCameraLensEffect(struct UClass* LensEffectEmitterClass); // Function Engine.PlayerCameraManager.AddCameraLensEffect // Native|Public|BlueprintCallable // @ game+0x2d2b550
+	void StopCameraShake(struct UCameraShake* ShakeInstance); // Function Engine.PlayerCameraManager.StopCameraShake // Native|Public|BlueprintCallable // @ game+0x2d3e790
+	void StopCameraFade(); // Function Engine.PlayerCameraManager.StopCameraFade // Native|Public|BlueprintCallable // @ game+0x2d3e770
+	void StopCameraAnimInst(struct UCameraAnimInst* AnimInst, bool bImmediate); // Function Engine.PlayerCameraManager.StopCameraAnimInst // Native|Public|BlueprintCallable // @ game+0x2d3e6a0
+	void StopAllInstancesOfCameraShake(struct UClass* Shake); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraShake // Native|Public|BlueprintCallable // @ game+0x2d3e610
+	void StopAllInstancesOfCameraAnim(struct UCameraAnim* Anim, bool bImmediate); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim // Native|Public|BlueprintCallable // @ game+0x2d3e540
+	void StopAllCameraShakes(); // Function Engine.PlayerCameraManager.StopAllCameraShakes // Native|Public|BlueprintCallable // @ game+0x2d3e520
+	void StopAllCameraAnims(bool bImmediate); // Function Engine.PlayerCameraManager.StopAllCameraAnims // Native|Public|BlueprintCallable // @ game+0x2d3e490
+	void StartCameraFade(float FromAlpha, float ToAlpha, float Duration, struct FLinearColor Color, bool bShouldFadeAudio, bool bHoldWhenFinished); // Function Engine.PlayerCameraManager.StartCameraFade // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3e220
+	void SetManualCameraFade(float InFadeAmount, struct FLinearColor Color, bool bInFadeAudio); // Function Engine.PlayerCameraManager.SetManualCameraFade // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3d3f0
+	bool RemoveCameraModifier(struct UCameraModifier* ModifierToRemove); // Function Engine.PlayerCameraManager.RemoveCameraModifier // Native|Public|BlueprintCallable // @ game+0x2d3ad20
+	void RemoveCameraLensEffect(struct AEmitterCameraLensEffectBase* Emitter); // Function Engine.PlayerCameraManager.RemoveCameraLensEffect // Native|Public|BlueprintCallable // @ game+0x2d3ac90
+	struct UCameraShake* PlayCameraShake(struct UClass* ShakeClass, float Scale, char PlaySpace, struct FRotator UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraShake // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a320
+	struct UCameraAnimInst* PlayCameraAnim(struct UCameraAnim* Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, float Duration, char PlaySpace, struct FRotator UserPlaySpaceRot, struct UCurveFloat* BlendInCurve); // Function Engine.PlayerCameraManager.PlayCameraAnim // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2d3a000
+	bool IsScreenFullyOccluded(); // Function Engine.PlayerCameraManager.IsScreenFullyOccluded // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35ce0
+	bool IsFadeInProgress(); // Function Engine.PlayerCameraManager.IsFadeInProgress // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35a30
+	struct APlayerController* GetOwningPlayerController(); // Function Engine.PlayerCameraManager.GetOwningPlayerController // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d34bf0
+	float GetFOVAngle(); // Function Engine.PlayerCameraManager.GetFOVAngle // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d330a0
+	struct FRotator GetCameraRotation(); // Function Engine.PlayerCameraManager.GetCameraRotation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32350
+	struct FVector GetCameraLocation(); // Function Engine.PlayerCameraManager.GetCameraLocation // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32310
+	struct UCameraModifier* FindCameraModifierByClass(struct UClass* ModifierClass); // Function Engine.PlayerCameraManager.FindCameraModifierByClass // Native|Public|BlueprintCallable // @ game+0x2d31c00
+	void ClearCameraLensEffects(); // Function Engine.PlayerCameraManager.ClearCameraLensEffects // Native|Public|BlueprintCallable // @ game+0x2d2e6c0
+	bool BlueprintUpdateCamera(struct AActor* CameraTarget, struct FVector NewCameraLocation, struct FRotator NewCameraRotation, float NewCameraFOV); // Function Engine.PlayerCameraManager.BlueprintUpdateCamera // BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
+	void BlendOutAllInstancesOfCameraShake(struct UClass* Shake); // Function Engine.PlayerCameraManager.BlendOutAllInstancesOfCameraShake // Native|Public|BlueprintCallable // @ game+0x2d2e550
+	struct UCameraModifier* AddNewCameraModifier(struct UClass* ModifierClass); // Function Engine.PlayerCameraManager.AddNewCameraModifier // Native|Public|BlueprintCallable // @ game+0x2d2dc40
+	struct AEmitterCameraLensEffectBase* AddCameraLensEffect(struct UClass* LensEffectEmitterClass); // Function Engine.PlayerCameraManager.AddCameraLensEffect // Native|Public|BlueprintCallable // @ game+0x2d2d9e0
 };
 
 // Class Engine.CurveBase
@@ -3439,8 +3439,8 @@ struct APlayerCameraManager : AActor {
 struct UCurveBase : UObject {
 	char UnknownData_28[0x8]; // 0x28(0x08)
 
-	void GetValueRange(float MinValue, float MaxValue); // Function Engine.CurveBase.GetValueRange // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32ff0
-	void GetTimeRange(float MinTime, float MaxTime); // Function Engine.CurveBase.GetTimeRange // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d32cf0
+	void GetValueRange(float MinValue, float MaxValue); // Function Engine.CurveBase.GetValueRange // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35480
+	void GetTimeRange(float MinTime, float MaxTime); // Function Engine.CurveBase.GetTimeRange // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x2d35180
 };
 
 // Class Engine.CurveFloat
@@ -3450,7 +3450,7 @@ struct UCurveFloat : UCurveBase {
 	bool bIsEventCurve; // 0xa8(0x01)
 	char UnknownData_A9[0x7]; // 0xa9(0x07)
 
-	float GetFloatValue(float InTime); // Function Engine.CurveFloat.GetFloatValue // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d30c50
+	float GetFloatValue(float InTime); // Function Engine.CurveFloat.GetFloatValue // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2d330e0
 };
 
 // Class Engine.ForceFeedbackEffect
@@ -3473,9 +3473,9 @@ struct ALogVisualizerCameraController : ADebugCameraController {
 struct ADecalActor : AActor {
 	struct UDecalComponent* Decal; // 0x3c8(0x08)
 
-	void SetDecalMaterial(struct UMaterialInterface* NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e3d9d0
-	struct UMaterialInterface* GetDecalMaterial(); // Function Engine.DecalActor.GetDecalMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33290
-	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(); // Function Engine.DecalActor.CreateDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2e307a0
+	void SetDecalMaterial(struct UMaterialInterface* NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e3fe60
+	struct UMaterialInterface* GetDecalMaterial(); // Function Engine.DecalActor.GetDecalMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35720
+	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(); // Function Engine.DecalActor.CreateDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2e32c30
 };
 
 // Class Engine.DestructibleActor
@@ -3508,19 +3508,19 @@ struct AEmitter : AActor {
 	struct FMulticastDelegate OnParticleDeath; // 0x3f8(0x10)
 	struct FMulticastDelegate OnParticleCollide; // 0x408(0x10)
 
-	void ToggleActive(); // Function Engine.Emitter.ToggleActive // Final|Native|Public|BlueprintCallable // @ game+0x2e41d20
-	void SetVectorParameter(struct FName ParameterName, struct FVector Param); // Function Engine.Emitter.SetVectorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e412b0
-	void SetTemplate(struct UParticleSystem* NewTemplate); // Function Engine.Emitter.SetTemplate // Native|Public|BlueprintCallable // @ game+0x2e40eb0
-	void SetMaterialParameter(struct FName ParameterName, struct UMaterialInterface* Param); // Function Engine.Emitter.SetMaterialParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3f560
-	void SetFloatParameter(struct FName ParameterName, float Param); // Function Engine.Emitter.SetFloatParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3ded0
-	void SetColorParameter(struct FName ParameterName, struct FLinearColor Param); // Function Engine.Emitter.SetColorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3ced0
-	void SetActorParameter(struct FName ParameterName, struct AActor* Param); // Function Engine.Emitter.SetActorParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3a910
-	void OnRep_bCurrentlyActive(); // Function Engine.Emitter.OnRep_bCurrentlyActive // Native|Public // @ game+0x2e39720
-	void OnParticleSystemFinished(struct UParticleSystemComponent* FinishedComponent); // Function Engine.Emitter.OnParticleSystemFinished // Native|Public // @ game+0x2e39450
-	bool IsActive(); // Function Engine.Emitter.IsActive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37e60
-	struct FName GetEmitterName(); // Function Engine.Emitter.GetEmitterName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33760
-	void Deactivate(); // Function Engine.Emitter.Deactivate // Final|Native|Public|BlueprintCallable // @ game+0x2e30a00
-	void Activate(); // Function Engine.Emitter.Activate // Final|Native|Public|BlueprintCallable // @ game+0x2e2e3b0
+	void ToggleActive(); // Function Engine.Emitter.ToggleActive // Final|Native|Public|BlueprintCallable // @ game+0x2e441b0
+	void SetVectorParameter(struct FName ParameterName, struct FVector Param); // Function Engine.Emitter.SetVectorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e43740
+	void SetTemplate(struct UParticleSystem* NewTemplate); // Function Engine.Emitter.SetTemplate // Native|Public|BlueprintCallable // @ game+0x2e43340
+	void SetMaterialParameter(struct FName ParameterName, struct UMaterialInterface* Param); // Function Engine.Emitter.SetMaterialParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e419f0
+	void SetFloatParameter(struct FName ParameterName, float Param); // Function Engine.Emitter.SetFloatParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e40360
+	void SetColorParameter(struct FName ParameterName, struct FLinearColor Param); // Function Engine.Emitter.SetColorParameter // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3f360
+	void SetActorParameter(struct FName ParameterName, struct AActor* Param); // Function Engine.Emitter.SetActorParameter // Final|Native|Public|BlueprintCallable // @ game+0x2e3cda0
+	void OnRep_bCurrentlyActive(); // Function Engine.Emitter.OnRep_bCurrentlyActive // Native|Public // @ game+0x2e3bbb0
+	void OnParticleSystemFinished(struct UParticleSystemComponent* FinishedComponent); // Function Engine.Emitter.OnParticleSystemFinished // Native|Public // @ game+0x2e3b8e0
+	bool IsActive(); // Function Engine.Emitter.IsActive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a2f0
+	struct FName GetEmitterName(); // Function Engine.Emitter.GetEmitterName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35bf0
+	void Deactivate(); // Function Engine.Emitter.Deactivate // Final|Native|Public|BlueprintCallable // @ game+0x2e32e90
+	void Activate(); // Function Engine.Emitter.Activate // Final|Native|Public|BlueprintCallable // @ game+0x2e30840
 };
 
 // Class Engine.EmitterCameraLensEffectBase
@@ -3562,7 +3562,7 @@ struct AExponentialHeightFog : AInfo {
 	char UnknownData_3D0_1 : 7; // 0x3d0(0x01)
 	char UnknownData_3D1[0x7]; // 0x3d1(0x07)
 
-	void OnRep_bEnabled(); // Function Engine.ExponentialHeightFog.OnRep_bEnabled // Native|Public // @ game+0x2e39740
+	void OnRep_bEnabled(); // Function Engine.ExponentialHeightFog.OnRep_bEnabled // Native|Public // @ game+0x2e3bbd0
 };
 
 // Class Engine.NavigationObjectBase
@@ -3643,7 +3643,7 @@ struct ASkyLight : AInfo {
 	char UnknownData_3D0_1 : 7; // 0x3d0(0x01)
 	char UnknownData_3D1[0x7]; // 0x3d1(0x07)
 
-	void OnRep_bEnabled(); // Function Engine.SkyLight.OnRep_bEnabled // Native|Public // @ game+0x2e39760
+	void OnRep_bEnabled(); // Function Engine.SkyLight.OnRep_bEnabled // Native|Public // @ game+0x2e3bbf0
 };
 
 // Class Engine.WindDirectionalSource
@@ -3651,7 +3651,7 @@ struct ASkyLight : AInfo {
 struct AWindDirectionalSource : AInfo {
 	struct UWindDirectionalSourceComponent* Component; // 0x3c8(0x08)
 
-	struct UWindDirectionalSourceComponent* GetComponent(); // Function Engine.WindDirectionalSource.GetComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33020
+	struct UWindDirectionalSourceComponent* GetComponent(); // Function Engine.WindDirectionalSource.GetComponent // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e354b0
 };
 
 // Class Engine.LevelBounds
@@ -3681,8 +3681,8 @@ struct ULightComponentBase : USceneComponent {
 	float CapForTranslucency; // 0x308(0x04)
 	char UnknownData_30C[0x4]; // 0x30c(0x04)
 
-	void SetCastShadows(bool bNewValue); // Function Engine.LightComponentBase.SetCastShadows // Final|Native|Public|BlueprintCallable // @ game+0x2e3c7d0
-	struct FLinearColor GetLightColor(); // Function Engine.LightComponentBase.GetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e339e0
+	void SetCastShadows(bool bNewValue); // Function Engine.LightComponentBase.SetCastShadows // Final|Native|Public|BlueprintCallable // @ game+0x2e3ec60
+	struct FLinearColor GetLightColor(); // Function Engine.LightComponentBase.GetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35e70
 };
 
 // Class Engine.LightComponent
@@ -3726,22 +3726,22 @@ struct ULightComponent : ULightComponentBase {
 	float RayStartOffsetDepthScale; // 0x37c(0x04)
 	char UnknownData_380[0xf0]; // 0x380(0xf0)
 
-	void SetTemperature(float NewTemperature); // Function Engine.LightComponent.SetTemperature // Final|Native|Public|BlueprintCallable // @ game+0x2e40e30
-	void SetLightFunctionScale(struct FVector NewLightFunctionScale); // Function Engine.LightComponent.SetLightFunctionScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e860
-	void SetLightFunctionMaterial(struct UMaterialInterface* NewLightFunctionMaterial); // Function Engine.LightComponent.SetLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e3e750
-	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.LightComponent.SetLightFunctionFadeDistance // Final|Native|Public|BlueprintCallable // @ game+0x2e3e650
-	void SetLightFunctionDisabledBrightness(float NewValue); // Function Engine.LightComponent.SetLightFunctionDisabledBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2e3e550
-	void SetLightColor(struct FLinearColor NewLightColor, bool bSRGB); // Function Engine.LightComponent.SetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e400
-	void SetIntensity(float NewIntensity); // Function Engine.LightComponent.SetIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2e3e300
-	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.LightComponent.SetIndirectLightingIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2e3e200
-	void SetIESTexture(struct UTextureLightProfile* NewValue); // Function Engine.LightComponent.SetIESTexture // Final|Native|Public|BlueprintCallable // @ game+0x2e3e180
-	void SetEnableLightShaftBloom(bool bNewValue); // Function Engine.LightComponent.SetEnableLightShaftBloom // Final|Native|Public|BlueprintCallable // @ game+0x2e3ddb0
-	void SetBloomTint(struct FColor NewValue); // Function Engine.LightComponent.SetBloomTint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3c530
-	void SetBloomThreshold(float NewValue); // Function Engine.LightComponent.SetBloomThreshold // Final|Native|Public|BlueprintCallable // @ game+0x2e3c4b0
-	void SetBloomScale(float NewValue); // Function Engine.LightComponent.SetBloomScale // Final|Native|Public|BlueprintCallable // @ game+0x2e3c430
-	void SetAffectTranslucentLighting(bool bNewValue); // Function Engine.LightComponent.SetAffectTranslucentLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e3abb0
-	void SetAffectDynamicIndirectLighting(bool bNewValue); // Function Engine.LightComponent.SetAffectDynamicIndirectLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e3aa90
-	int32_t GetNumberOfShadowCastersInFirstCascade(); // Function Engine.LightComponent.GetNumberOfShadowCastersInFirstCascade // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34620
+	void SetTemperature(float NewTemperature); // Function Engine.LightComponent.SetTemperature // Final|Native|Public|BlueprintCallable // @ game+0x2e432c0
+	void SetLightFunctionScale(struct FVector NewLightFunctionScale); // Function Engine.LightComponent.SetLightFunctionScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e40cf0
+	void SetLightFunctionMaterial(struct UMaterialInterface* NewLightFunctionMaterial); // Function Engine.LightComponent.SetLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e40be0
+	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.LightComponent.SetLightFunctionFadeDistance // Final|Native|Public|BlueprintCallable // @ game+0x2e40ae0
+	void SetLightFunctionDisabledBrightness(float NewValue); // Function Engine.LightComponent.SetLightFunctionDisabledBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2e409e0
+	void SetLightColor(struct FLinearColor NewLightColor, bool bSRGB); // Function Engine.LightComponent.SetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e40890
+	void SetIntensity(float NewIntensity); // Function Engine.LightComponent.SetIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2e40790
+	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.LightComponent.SetIndirectLightingIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2e40690
+	void SetIESTexture(struct UTextureLightProfile* NewValue); // Function Engine.LightComponent.SetIESTexture // Final|Native|Public|BlueprintCallable // @ game+0x2e40610
+	void SetEnableLightShaftBloom(bool bNewValue); // Function Engine.LightComponent.SetEnableLightShaftBloom // Final|Native|Public|BlueprintCallable // @ game+0x2e40240
+	void SetBloomTint(struct FColor NewValue); // Function Engine.LightComponent.SetBloomTint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e9c0
+	void SetBloomThreshold(float NewValue); // Function Engine.LightComponent.SetBloomThreshold // Final|Native|Public|BlueprintCallable // @ game+0x2e3e940
+	void SetBloomScale(float NewValue); // Function Engine.LightComponent.SetBloomScale // Final|Native|Public|BlueprintCallable // @ game+0x2e3e8c0
+	void SetAffectTranslucentLighting(bool bNewValue); // Function Engine.LightComponent.SetAffectTranslucentLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e3d040
+	void SetAffectDynamicIndirectLighting(bool bNewValue); // Function Engine.LightComponent.SetAffectDynamicIndirectLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e3cf20
+	int32_t GetNumberOfShadowCastersInFirstCascade(); // Function Engine.LightComponent.GetNumberOfShadowCastersInFirstCascade // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36ab0
 };
 
 // Class Engine.Light
@@ -3749,15 +3749,15 @@ struct ULightComponent : ULightComponentBase {
 struct ALight : AActor {
 	struct ULightComponent* LightComponent; // 0x3c8(0x08)
 
-	void SetLightFunctionScale(struct FVector NewLightFunctionScale); // Function Engine.Light.SetLightFunctionScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e7d0
-	void SetLightFunctionMaterial(struct UMaterialInterface* NewLightFunctionMaterial); // Function Engine.Light.SetLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e3e6d0
-	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.Light.SetLightFunctionFadeDistance // Final|Native|Public|BlueprintCallable // @ game+0x2e3e5d0
-	void SetLightColor(struct FLinearColor NewLightColor); // Function Engine.Light.SetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e3e380
-	void SetCastShadows(bool bNewValue); // Function Engine.Light.SetCastShadows // Final|Native|Public|BlueprintCallable // @ game+0x2e3c740
-	void SetBrightness(float NewBrightness); // Function Engine.Light.SetBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2e3c5a0
-	void SetAffectTranslucentLighting(bool bNewValue); // Function Engine.Light.SetAffectTranslucentLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e3ab20
-	struct FLinearColor GetLightColor(); // Function Engine.Light.GetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e339a0
-	float GetBrightness(); // Function Engine.Light.GetBrightness // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32ce0
+	void SetLightFunctionScale(struct FVector NewLightFunctionScale); // Function Engine.Light.SetLightFunctionScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e40c60
+	void SetLightFunctionMaterial(struct UMaterialInterface* NewLightFunctionMaterial); // Function Engine.Light.SetLightFunctionMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e40b60
+	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.Light.SetLightFunctionFadeDistance // Final|Native|Public|BlueprintCallable // @ game+0x2e40a60
+	void SetLightColor(struct FLinearColor NewLightColor); // Function Engine.Light.SetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2e40810
+	void SetCastShadows(bool bNewValue); // Function Engine.Light.SetCastShadows // Final|Native|Public|BlueprintCallable // @ game+0x2e3ebd0
+	void SetBrightness(float NewBrightness); // Function Engine.Light.SetBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2e3ea30
+	void SetAffectTranslucentLighting(bool bNewValue); // Function Engine.Light.SetAffectTranslucentLighting // Final|Native|Public|BlueprintCallable // @ game+0x2e3cfb0
+	struct FLinearColor GetLightColor(); // Function Engine.Light.GetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35e30
+	float GetBrightness(); // Function Engine.Light.GetBrightness // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35170
 };
 
 // Class Engine.AmbientLightSource
@@ -3776,8 +3776,8 @@ struct ADirectionalLight : ALight {
 struct APointLight : ALight {
 	struct UPointLightComponent* PointLightComponent; // 0x3d0(0x08)
 
-	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e404e0
-	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLight.SetLightFalloffExponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3e4d0
+	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e42970
+	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLight.SetLightFalloffExponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e40960
 };
 
 // Class Engine.SpotLight
@@ -3785,8 +3785,8 @@ struct APointLight : ALight {
 struct ASpotLight : ALight {
 	struct USpotLightComponent* SpotLightComponent; // 0x3d0(0x08)
 
-	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2e3f990
-	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLight.SetInnerConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2e3e280
+	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2e41e20
+	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLight.SetInnerConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2e40710
 };
 
 // Class Engine.GeneratedMeshAreaLight
@@ -3858,14 +3858,14 @@ struct AMatineeActor : AActor {
 	char UnknownData_43C_1 : 7; // 0x43c(0x01)
 	char UnknownData_43D[0x3]; // 0x43d(0x03)
 
-	void Stop(); // Function Engine.MatineeActor.Stop // Native|Public|BlueprintCallable // @ game+0x2e41af0
-	void SetPosition(float NewPosition, bool bJump); // Function Engine.MatineeActor.SetPosition // Native|Public|BlueprintCallable // @ game+0x2e40340
-	void SetLoopingState(bool bNewLooping); // Function Engine.MatineeActor.SetLoopingState // Native|Public|BlueprintCallable // @ game+0x2e3f1b0
-	void Reverse(); // Function Engine.MatineeActor.Reverse // Native|Public|BlueprintCallable // @ game+0x2e3a7f0
-	void PlayInstantly(); // Function Engine.MatineeActor.PlayInstantly // Final|Native|Public|BlueprintCallable // @ game+0x2e39ea0
-	void Play(struct UObject* WorldContextObject, struct FLatentActionInfo LatentInfo); // Function Engine.MatineeActor.Play // Final|Native|Public|BlueprintCallable // @ game+0x2e39b40
-	void Pause(); // Function Engine.MatineeActor.Pause // Native|Public|BlueprintCallable // @ game+0x2e39920
-	void ChangePlaybackDirection(); // Function Engine.MatineeActor.ChangePlaybackDirection // Native|Public|BlueprintCallable // @ game+0x2e30090
+	void Stop(); // Function Engine.MatineeActor.Stop // Native|Public|BlueprintCallable // @ game+0x2e43f80
+	void SetPosition(float NewPosition, bool bJump); // Function Engine.MatineeActor.SetPosition // Native|Public|BlueprintCallable // @ game+0x2e427d0
+	void SetLoopingState(bool bNewLooping); // Function Engine.MatineeActor.SetLoopingState // Native|Public|BlueprintCallable // @ game+0x2e41640
+	void Reverse(); // Function Engine.MatineeActor.Reverse // Native|Public|BlueprintCallable // @ game+0x2e3cc80
+	void PlayInstantly(); // Function Engine.MatineeActor.PlayInstantly // Final|Native|Public|BlueprintCallable // @ game+0x2e3c330
+	void Play(struct UObject* WorldContextObject, struct FLatentActionInfo LatentInfo); // Function Engine.MatineeActor.Play // Final|Native|Public|BlueprintCallable // @ game+0x2e3bfd0
+	void Pause(); // Function Engine.MatineeActor.Pause // Native|Public|BlueprintCallable // @ game+0x2e3bdb0
+	void ChangePlaybackDirection(); // Function Engine.MatineeActor.ChangePlaybackDirection // Native|Public|BlueprintCallable // @ game+0x2e32520
 };
 
 // Class Engine.MatineeActorCameraAnim
@@ -4063,11 +4063,11 @@ struct ANavLinkProxy : AActor {
 	char UnknownData_401[0x7]; // 0x401(0x07)
 	struct FMulticastDelegate OnSmartLinkReached; // 0x408(0x10)
 
-	void SetSmartLinkEnabled(bool bEnabled); // Function Engine.NavLinkProxy.SetSmartLinkEnabled // Final|Native|Public|BlueprintCallable // @ game+0x2e40950
-	void ResumePathFollowing(struct AActor* Agent); // Function Engine.NavLinkProxy.ResumePathFollowing // Final|Native|Public|BlueprintCallable // @ game+0x2e3a750
-	void ReceiveSmartLinkReached(struct AActor* Agent, struct FVector Destination); // Function Engine.NavLinkProxy.ReceiveSmartLinkReached // Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e3b10
-	bool IsSmartLinkEnabled(); // Function Engine.NavLinkProxy.IsSmartLinkEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e384e0
-	bool HasMovingAgents(); // Function Engine.NavLinkProxy.HasMovingAgents // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37b90
+	void SetSmartLinkEnabled(bool bEnabled); // Function Engine.NavLinkProxy.SetSmartLinkEnabled // Final|Native|Public|BlueprintCallable // @ game+0x2e42de0
+	void ResumePathFollowing(struct AActor* Agent); // Function Engine.NavLinkProxy.ResumePathFollowing // Final|Native|Public|BlueprintCallable // @ game+0x2e3cbe0
+	void ReceiveSmartLinkReached(struct AActor* Agent, struct FVector Destination); // Function Engine.NavLinkProxy.ReceiveSmartLinkReached // Event|Public|HasOutParms|HasDefaults|BlueprintEvent // @ game+0x18e5fa0
+	bool IsSmartLinkEnabled(); // Function Engine.NavLinkProxy.IsSmartLinkEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a970
+	bool HasMovingAgents(); // Function Engine.NavLinkProxy.HasMovingAgents // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a020
 };
 
 // Class Engine.Note
@@ -4131,8 +4131,8 @@ struct UParticleSystem : UObject {
 	struct TArray<struct FLODSoloTrack> SoloTracking; // 0x120(0x10)
 	struct TArray<struct FNamedEmitterMaterial> NamedMaterialSlots; // 0x130(0x10)
 
-	int32_t GetNumLODs(); // Function Engine.ParticleSystem.GetNumLODs // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34560
-	bool ContainsEmitterType(struct UClass* TypeData); // Function Engine.ParticleSystem.ContainsEmitterType // Final|Native|Public|BlueprintCallable // @ game+0x2e30500
+	int32_t GetNumLODs(); // Function Engine.ParticleSystem.GetNumLODs // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e369f0
+	bool ContainsEmitterType(struct UClass* TypeData); // Function Engine.ParticleSystem.ContainsEmitterType // Final|Native|Public|BlueprintCallable // @ game+0x2e32990
 };
 
 // Class Engine.ParticleSystemAggregateTickSettings
@@ -4199,9 +4199,9 @@ struct USkeletalMesh : UObject {
 	char UnknownData_220[0x8]; // 0x220(0x08)
 	struct TArray<struct USkeletalMeshSocket*> Sockets; // 0x228(0x10)
 
-	bool IsSectionUsingCloth(int32_t InSectionIndex, bool bCheckCorrespondingSections); // Function Engine.SkeletalMesh.IsSectionUsingCloth // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38420
-	int32_t GetNumLODsBP(); // Function Engine.SkeletalMesh.GetNumLODsBP // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34590
-	struct USkeletalMeshSocket* FindSocket(struct FName InSocketName); // Function Engine.SkeletalMesh.FindSocket // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e324e0
+	bool IsSectionUsingCloth(int32_t InSectionIndex, bool bCheckCorrespondingSections); // Function Engine.SkeletalMesh.IsSectionUsingCloth // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a8b0
+	int32_t GetNumLODsBP(); // Function Engine.SkeletalMesh.GetNumLODsBP // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36a20
+	struct USkeletalMeshSocket* FindSocket(struct FName InSocketName); // Function Engine.SkeletalMesh.FindSocket // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34970
 };
 
 // Class Engine.AnimationAsset
@@ -4224,13 +4224,13 @@ struct ADefaultPawn : APawn {
 	char UnknownData_460_1 : 7; // 0x460(0x01)
 	char UnknownData_461[0x7]; // 0x461(0x07)
 
-	void TurnAtRate(float Rate); // Function Engine.DefaultPawn.TurnAtRate // Final|Native|Public|BlueprintCallable // @ game+0x2e42180
-	void Turn(float Val); // Function Engine.DefaultPawn.Turn // Final|Native|Private|BlueprintCallable // @ game+0x2e42100
-	void MoveUp_World(float Val); // Function Engine.DefaultPawn.MoveUp_World // Native|Public|BlueprintCallable // @ game+0x2e38f60
-	void MoveRight(float Val); // Function Engine.DefaultPawn.MoveRight // Native|Public|BlueprintCallable // @ game+0x2e38ee0
-	void MoveForward(float Val); // Function Engine.DefaultPawn.MoveForward // Native|Public|BlueprintCallable // @ game+0x2e38e60
-	void LookUpAtRate(float Rate); // Function Engine.DefaultPawn.LookUpAtRate // Final|Native|Public|BlueprintCallable // @ game+0x2e38de0
-	void LookUp(float Val); // Function Engine.DefaultPawn.LookUp // Final|Native|Private|BlueprintCallable // @ game+0x2e38d60
+	void TurnAtRate(float Rate); // Function Engine.DefaultPawn.TurnAtRate // Final|Native|Public|BlueprintCallable // @ game+0x2e44610
+	void Turn(float Val); // Function Engine.DefaultPawn.Turn // Final|Native|Private|BlueprintCallable // @ game+0x2e44590
+	void MoveUp_World(float Val); // Function Engine.DefaultPawn.MoveUp_World // Native|Public|BlueprintCallable // @ game+0x2e3b3f0
+	void MoveRight(float Val); // Function Engine.DefaultPawn.MoveRight // Native|Public|BlueprintCallable // @ game+0x2e3b370
+	void MoveForward(float Val); // Function Engine.DefaultPawn.MoveForward // Native|Public|BlueprintCallable // @ game+0x2e3b2f0
+	void LookUpAtRate(float Rate); // Function Engine.DefaultPawn.LookUpAtRate // Final|Native|Public|BlueprintCallable // @ game+0x2e3b270
+	void LookUp(float Val); // Function Engine.DefaultPawn.LookUp // Final|Native|Private|BlueprintCallable // @ game+0x2e3b1f0
 };
 
 // Class Engine.SpectatorPawn
@@ -4287,10 +4287,10 @@ struct APhysicsThruster : ARigidBodyBase {
 struct ARadialForceActor : ARigidBodyBase {
 	struct URadialForceComponent* ForceComponent; // 0x3c8(0x08)
 
-	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce // Native|Public|BlueprintCallable // @ game+0x2e41d60
-	void FireImpulse(); // Function Engine.RadialForceActor.FireImpulse // Native|Public|BlueprintCallable // @ game+0x2e32570
-	void EnableForce(); // Function Engine.RadialForceActor.EnableForce // Native|Public|BlueprintCallable // @ game+0x2e31fe0
-	void DisableForce(); // Function Engine.RadialForceActor.DisableForce // Native|Public|BlueprintCallable // @ game+0x2e30bf0
+	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce // Native|Public|BlueprintCallable // @ game+0x2e441f0
+	void FireImpulse(); // Function Engine.RadialForceActor.FireImpulse // Native|Public|BlueprintCallable // @ game+0x2e34a00
+	void EnableForce(); // Function Engine.RadialForceActor.EnableForce // Native|Public|BlueprintCallable // @ game+0x2e34470
+	void DisableForce(); // Function Engine.RadialForceActor.DisableForce // Native|Public|BlueprintCallable // @ game+0x2e33080
 };
 
 // Class Engine.SceneCapture
@@ -4305,7 +4305,7 @@ struct ASceneCapture2D : ASceneCapture {
 	struct USceneCaptureComponent2D* CaptureComponent2D; // 0x3d0(0x08)
 	struct UDrawFrustumComponent* DrawFrustum; // 0x3d8(0x08)
 
-	void OnInterpToggle(bool bEnable); // Function Engine.SceneCapture2D.OnInterpToggle // Final|Native|Public|BlueprintCallable // @ game+0x2e39290
+	void OnInterpToggle(bool bEnable); // Function Engine.SceneCapture2D.OnInterpToggle // Final|Native|Public|BlueprintCallable // @ game+0x2e3b720
 };
 
 // Class Engine.SceneCaptureCube
@@ -4314,7 +4314,7 @@ struct ASceneCaptureCube : ASceneCapture {
 	struct USceneCaptureComponentCube* CaptureComponentCube; // 0x3d0(0x08)
 	struct UDrawFrustumComponent* DrawFrustum; // 0x3d8(0x08)
 
-	void OnInterpToggle(bool bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle // Final|Native|Public|BlueprintCallable // @ game+0x2e39320
+	void OnInterpToggle(bool bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle // Final|Native|Public|BlueprintCallable // @ game+0x2e3b7b0
 };
 
 // Class Engine.ServerOnlyTestActor
@@ -4373,22 +4373,22 @@ struct USkinnedMeshComponent : UMeshComponent {
 	bool bDisplayDebugUpdateRateOptimizations; // 0x6da(0x01)
 	char UnknownData_6DB[0x15]; // 0x6db(0x15)
 
-	void UnHideBoneByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.UnHideBoneByName // Final|Native|Public|BlueprintCallable // @ game+0x2e42290
-	void TransformToBoneSpace(struct FName BoneName, struct FVector InPosition, struct FRotator InRotation, struct FVector OutPosition, struct FRotator OutRotation); // Function Engine.SkinnedMeshComponent.TransformToBoneSpace // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e41f40
-	void TransformFromBoneSpace(struct FName BoneName, struct FVector InPosition, struct FRotator InRotation, struct FVector OutPosition, struct FRotator OutRotation); // Function Engine.SkinnedMeshComponent.TransformFromBoneSpace // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e41d80
-	void SetSkeletalMesh(struct USkeletalMesh* NewMesh); // Function Engine.SkinnedMeshComponent.SetSkeletalMesh // Native|Public|BlueprintCallable // @ game+0x2e408c0
-	void SetPhysicsAsset(struct UPhysicsAsset* NewPhysicsAsset, bool bForceReInit); // Function Engine.SkinnedMeshComponent.SetPhysicsAsset // Native|Public|BlueprintCallable // @ game+0x2e3fc40
-	void SetMasterPoseComponent(struct USkinnedMeshComponent* NewMasterBoneComponent); // Function Engine.SkinnedMeshComponent.SetMasterPoseComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e3f410
-	void SetCustomDepthMaterial(struct UMaterialInterface* Material); // Function Engine.SkinnedMeshComponent.SetCustomDepthMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e3d5d0
-	void OnRep_SkeletalMesh(struct USkeletalMesh* OldMesh); // Function Engine.SkinnedMeshComponent.OnRep_SkeletalMesh // Final|Native|Public // @ game+0x2e39640
-	bool IsBoneHiddenByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.IsBoneHiddenByName // Final|Native|Public|BlueprintCallable // @ game+0x2e37e90
-	void HideBoneByName(struct FName BoneName, char PhysBodyOption); // Function Engine.SkinnedMeshComponent.HideBoneByName // Final|Native|Public|BlueprintCallable // @ game+0x2e37bc0
-	struct FName GetSocketBoneName(struct FName InSocketName); // Function Engine.SkinnedMeshComponent.GetSocketBoneName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e367a0
-	struct FName GetParentBone(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetParentBone // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34ab0
-	struct UMaterialInterface* GetCustomDepthMaterial(); // Function Engine.SkinnedMeshComponent.GetCustomDepthMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33260
-	struct FName GetBoneName(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetBoneName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32c50
-	int32_t GetBoneIndex(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetBoneIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32bc0
-	bool BoneIsChildOf(struct FName BoneName, struct FName ParentBoneName); // Function Engine.SkinnedMeshComponent.BoneIsChildOf // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e2fcb0
+	void UnHideBoneByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.UnHideBoneByName // Final|Native|Public|BlueprintCallable // @ game+0x2e44720
+	void TransformToBoneSpace(struct FName BoneName, struct FVector InPosition, struct FRotator InRotation, struct FVector OutPosition, struct FRotator OutRotation); // Function Engine.SkinnedMeshComponent.TransformToBoneSpace // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2e443d0
+	void TransformFromBoneSpace(struct FName BoneName, struct FVector InPosition, struct FRotator InRotation, struct FVector OutPosition, struct FRotator OutRotation); // Function Engine.SkinnedMeshComponent.TransformFromBoneSpace // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e44210
+	void SetSkeletalMesh(struct USkeletalMesh* NewMesh); // Function Engine.SkinnedMeshComponent.SetSkeletalMesh // Native|Public|BlueprintCallable // @ game+0x2e42d50
+	void SetPhysicsAsset(struct UPhysicsAsset* NewPhysicsAsset, bool bForceReInit); // Function Engine.SkinnedMeshComponent.SetPhysicsAsset // Native|Public|BlueprintCallable // @ game+0x2e420d0
+	void SetMasterPoseComponent(struct USkinnedMeshComponent* NewMasterBoneComponent); // Function Engine.SkinnedMeshComponent.SetMasterPoseComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e418a0
+	void SetCustomDepthMaterial(struct UMaterialInterface* Material); // Function Engine.SkinnedMeshComponent.SetCustomDepthMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2e3fa60
+	void OnRep_SkeletalMesh(struct USkeletalMesh* OldMesh); // Function Engine.SkinnedMeshComponent.OnRep_SkeletalMesh // Final|Native|Public // @ game+0x2e3bad0
+	bool IsBoneHiddenByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.IsBoneHiddenByName // Final|Native|Public|BlueprintCallable // @ game+0x2e3a320
+	void HideBoneByName(struct FName BoneName, char PhysBodyOption); // Function Engine.SkinnedMeshComponent.HideBoneByName // Final|Native|Public|BlueprintCallable // @ game+0x2e3a050
+	struct FName GetSocketBoneName(struct FName InSocketName); // Function Engine.SkinnedMeshComponent.GetSocketBoneName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38c30
+	struct FName GetParentBone(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetParentBone // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36f40
+	struct UMaterialInterface* GetCustomDepthMaterial(); // Function Engine.SkinnedMeshComponent.GetCustomDepthMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e356f0
+	struct FName GetBoneName(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetBoneName // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e350e0
+	int32_t GetBoneIndex(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetBoneIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35050
+	bool BoneIsChildOf(struct FName BoneName, struct FName ParentBoneName); // Function Engine.SkinnedMeshComponent.BoneIsChildOf // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32140
 };
 
 // Class Engine.PhysicsConstraintComponent
@@ -4404,32 +4404,32 @@ struct UPhysicsConstraintComponent : USceneComponent {
 	char UnknownData_328[0x8]; // 0x328(0x08)
 	struct FConstraintInstance ConstraintInstance; // 0x330(0x160)
 
-	void SetLinearZLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearZLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3ef60
-	void SetLinearYLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearYLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3eea0
-	void SetLinearXLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearXLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3ede0
-	void SetLinearVelocityTarget(struct FVector InVelTarget); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3ed50
-	void SetLinearVelocityDrive(bool bEnableDriveX, bool bEnableDriveY, bool bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3ec30
-	void SetLinearPositionTarget(struct FVector InPosTarget); // Function Engine.PhysicsConstraintComponent.SetLinearPositionTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3eba0
-	void SetLinearPositionDrive(bool bEnableDriveX, bool bEnableDriveY, bool bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearPositionDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3ea80
-	void SetLinearDriveParams(float InSpring, float InDamping, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetLinearDriveParams // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3e970
-	void SetDisableCollision(bool bDisableCollision); // Function Engine.PhysicsConstraintComponent.SetDisableCollision // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3db30
-	void SetConstraintReferencePosition(char Frame, struct FVector RefPosition); // Function Engine.PhysicsConstraintComponent.SetConstraintReferencePosition // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3d480
-	void SetConstraintReferenceOrientation(char Frame, struct FVector PriAxis, struct FVector SecAxis); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceOrientation // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3d360
-	void SetConstraintReferenceFrame(char Frame, struct FTransform RefFrame); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceFrame // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3d240
-	void SetConstrainedComponents(struct UPrimitiveComponent* Component1, struct FName BoneName1, struct UPrimitiveComponent* Component2, struct FName BoneName2); // Function Engine.PhysicsConstraintComponent.SetConstrainedComponents // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3d070
-	void SetAngularVelocityTarget(struct FVector InVelTarget); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3ba90
-	void SetAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3b9c0
-	void SetAngularTwistLimit(char ConstraintType, float TwistLimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularTwistLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3b900
-	void SetAngularSwing2Limit(char MotionType, float Swing2LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing2Limit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3b840
-	void SetAngularSwing1Limit(char MotionType, float Swing1LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing1Limit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3b780
-	void SetAngularOrientationTarget(struct FRotator InPosTarget); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3b6f0
-	void SetAngularOrientationDrive(bool bEnableSwingDrive, bool bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3b620
-	void SetAngularDriveParams(float InSpring, float InDamping, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetAngularDriveParams // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3b510
-	float GetCurrentTwist(); // Function Engine.PhysicsConstraintComponent.GetCurrentTwist // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33230
-	float GetCurrentSwing2(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing2 // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e33200
-	float GetCurrentSwing1(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing1 // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e331d0
-	void GetConstraintForce(struct FVector OutLinearForce, struct FVector OutAngularForce); // Function Engine.PhysicsConstraintComponent.GetConstraintForce // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e33050
-	void BreakConstraint(); // Function Engine.PhysicsConstraintComponent.BreakConstraint // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e2fd70
+	void SetLinearZLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearZLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e413f0
+	void SetLinearYLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearYLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e41330
+	void SetLinearXLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearXLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e41270
+	void SetLinearVelocityTarget(struct FVector InVelTarget); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e411e0
+	void SetLinearVelocityDrive(bool bEnableDriveX, bool bEnableDriveY, bool bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e410c0
+	void SetLinearPositionTarget(struct FVector InPosTarget); // Function Engine.PhysicsConstraintComponent.SetLinearPositionTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e41030
+	void SetLinearPositionDrive(bool bEnableDriveX, bool bEnableDriveY, bool bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearPositionDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e40f10
+	void SetLinearDriveParams(float InSpring, float InDamping, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetLinearDriveParams // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e40e00
+	void SetDisableCollision(bool bDisableCollision); // Function Engine.PhysicsConstraintComponent.SetDisableCollision // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3ffc0
+	void SetConstraintReferencePosition(char Frame, struct FVector RefPosition); // Function Engine.PhysicsConstraintComponent.SetConstraintReferencePosition // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3f910
+	void SetConstraintReferenceOrientation(char Frame, struct FVector PriAxis, struct FVector SecAxis); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceOrientation // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3f7f0
+	void SetConstraintReferenceFrame(char Frame, struct FTransform RefFrame); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceFrame // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3f6d0
+	void SetConstrainedComponents(struct UPrimitiveComponent* Component1, struct FName BoneName1, struct UPrimitiveComponent* Component2, struct FName BoneName2); // Function Engine.PhysicsConstraintComponent.SetConstrainedComponents // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3f500
+	void SetAngularVelocityTarget(struct FVector InVelTarget); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3df20
+	void SetAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3de50
+	void SetAngularTwistLimit(char ConstraintType, float TwistLimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularTwistLimit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3dd90
+	void SetAngularSwing2Limit(char MotionType, float Swing2LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing2Limit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3dcd0
+	void SetAngularSwing1Limit(char MotionType, float Swing1LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing1Limit // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3dc10
+	void SetAngularOrientationTarget(struct FRotator InPosTarget); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationTarget // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3db80
+	void SetAngularOrientationDrive(bool bEnableSwingDrive, bool bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationDrive // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3dab0
+	void SetAngularDriveParams(float InSpring, float InDamping, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetAngularDriveParams // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e3d9a0
+	float GetCurrentTwist(); // Function Engine.PhysicsConstraintComponent.GetCurrentTwist // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e356c0
+	float GetCurrentSwing2(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing2 // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35690
+	float GetCurrentSwing1(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing1 // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35660
+	void GetConstraintForce(struct FVector OutLinearForce, struct FVector OutAngularForce); // Function Engine.PhysicsConstraintComponent.GetConstraintForce // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e354e0
+	void BreakConstraint(); // Function Engine.PhysicsConstraintComponent.BreakConstraint // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2e32200
 };
 
 // Class Engine.Skeleton
@@ -4449,7 +4449,7 @@ struct USkeleton : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UInterface_Animatable : UInterface {
 
-	struct UAnimInstance* GetAnimInstance(); // Function Engine.Interface_Animatable.GetAnimInstance // RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32ab0
+	struct UAnimInstance* GetAnimInstance(); // Function Engine.Interface_Animatable.GetAnimInstance // RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34f40
 };
 
 // Class Engine.SkeletalMeshComponent
@@ -4510,40 +4510,40 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	float LastPoseTickTime; // 0x9b8(0x04)
 	char UnknownData_9BC[0x4]; // 0x9bc(0x04)
 
-	void UnbindClothFromMasterPoseComponent(bool bRestoreSimulationSpace); // Function Engine.SkeletalMeshComponent.UnbindClothFromMasterPoseComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e42310
-	void Stop(); // Function Engine.SkeletalMeshComponent.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2e41b10
-	void SetPosition(float InPos, bool bFireNotifies); // Function Engine.SkeletalMeshComponent.SetPosition // Final|Native|Public|BlueprintCallable // @ game+0x2e40410
-	void SetPlayRate(float Rate); // Function Engine.SkeletalMeshComponent.SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2e402c0
-	void SetPhysicsBlendWeight(float PhysicsBlendWeight); // Function Engine.SkeletalMeshComponent.SetPhysicsBlendWeight // Final|Native|Public|BlueprintCallable // @ game+0x2e3fd10
-	void SetMorphTarget(struct FName MorphTargetName, float Value, bool bRemoveZeroWeight); // Function Engine.SkeletalMeshComponent.SetMorphTarget // Final|Native|Public|BlueprintCallable // @ game+0x2e3f760
-	void SetEnablePhysicsBlending(bool bNewBlendPhysics); // Function Engine.SkeletalMeshComponent.SetEnablePhysicsBlending // Final|Native|Public|BlueprintCallable // @ game+0x2e3de40
-	void SetClothMaxDistanceScale(float Scale); // Function Engine.SkeletalMeshComponent.SetClothMaxDistanceScale // Final|Native|Public|BlueprintCallable // @ game+0x2e3cb80
-	void SetAnimInstanceClass(struct UClass* NewClass); // Function Engine.SkeletalMeshComponent.SetAnimInstanceClass // Final|Native|Public|BlueprintCallable // @ game+0x2e3bb20
-	void SetAnimationMode(char InAnimationMode); // Function Engine.SkeletalMeshComponent.SetAnimationMode // Final|Native|Public|BlueprintCallable // @ game+0x2e3bc20
-	void SetAnimation(struct UAnimationAsset* NewAnimToPlay); // Function Engine.SkeletalMeshComponent.SetAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2e3bba0
-	void SetAllMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularVelocityDrive // Final|Native|Public|BlueprintCallable // @ game+0x2e3b290
-	void SetAllMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularPositionDrive // Final|Native|Public|BlueprintCallable // @ game+0x2e3b170
-	void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularDriveParams // Final|Native|Public|BlueprintCallable // @ game+0x2e3b010
-	void SetAllBodiesSimulatePhysics(bool bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesSimulatePhysics // Final|Native|Public|BlueprintCallable // @ game+0x2e3af00
-	void SetAllBodiesPhysicsBlendWeight(float PhysicsBlendWeight, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesPhysicsBlendWeight // Final|Native|Public|BlueprintCallable // @ game+0x2e3ae30
-	void SetAllBodiesBelowSimulatePhysics(struct FName InBoneName, bool bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowSimulatePhysics // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e3ad60
-	void SetAllBodiesBelowPhysicsBlendWeight(struct FName InBoneName, float PhysicsBlendWeight, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowPhysicsBlendWeight // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e3ac40
-	void ResetClothTeleportMode(); // Function Engine.SkeletalMeshComponent.ResetClothTeleportMode // Final|Native|Public|BlueprintCallable // @ game+0x2e3a6b0
-	void ResetAllBodiesSimulatePhysics(); // Function Engine.SkeletalMeshComponent.ResetAllBodiesSimulatePhysics // Final|Native|Public|BlueprintCallable // @ game+0x2e3a690
-	void PlayAnimation(struct UAnimationAsset* NewAnimToPlay, bool bLooping); // Function Engine.SkeletalMeshComponent.PlayAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2e39dd0
-	void Play(bool bLooping); // Function Engine.SkeletalMeshComponent.Play // Final|Native|Public|BlueprintCallable // @ game+0x2e39c30
-	bool IsPlaying(); // Function Engine.SkeletalMeshComponent.IsPlaying // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e38390
-	float GetPosition(); // Function Engine.SkeletalMeshComponent.GetPosition // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35390
-	float GetPlayRate(); // Function Engine.SkeletalMeshComponent.GetPlayRate // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e35360
-	float GetMorphTarget(struct FName MorphTargetName); // Function Engine.SkeletalMeshComponent.GetMorphTarget // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34270
-	float GetClothMaxDistanceScale(); // Function Engine.SkeletalMeshComponent.GetClothMaxDistanceScale // Final|Native|Public|BlueprintCallable // @ game+0x2e32ef0
-	struct UAnimInstance* GetAnimInstance(); // Function Engine.SkeletalMeshComponent.GetAnimInstance // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32ae0
-	char GetAnimationMode(); // Function Engine.SkeletalMeshComponent.GetAnimationMode // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e32b20
-	void ForceClothNextUpdateTeleportAndReset(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleportAndReset // Final|Native|Public|BlueprintCallable // @ game+0x2e325b0
-	void ForceClothNextUpdateTeleport(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleport // Final|Native|Public|BlueprintCallable // @ game+0x2e32590
-	void ClearMorphTargets(); // Function Engine.SkeletalMeshComponent.ClearMorphTargets // Final|Native|Public|BlueprintCallable // @ game+0x2e30150
-	void BindClothToMasterPoseComponent(); // Function Engine.SkeletalMeshComponent.BindClothToMasterPoseComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e2fc90
-	void AccumulateAllBodiesBelowPhysicsBlendWeight(struct FName InBoneName, float AddPhysicsBlendWeight, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.AccumulateAllBodiesBelowPhysicsBlendWeight // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e2e290
+	void UnbindClothFromMasterPoseComponent(bool bRestoreSimulationSpace); // Function Engine.SkeletalMeshComponent.UnbindClothFromMasterPoseComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e447a0
+	void Stop(); // Function Engine.SkeletalMeshComponent.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2e43fa0
+	void SetPosition(float InPos, bool bFireNotifies); // Function Engine.SkeletalMeshComponent.SetPosition // Final|Native|Public|BlueprintCallable // @ game+0x2e428a0
+	void SetPlayRate(float Rate); // Function Engine.SkeletalMeshComponent.SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2e42750
+	void SetPhysicsBlendWeight(float PhysicsBlendWeight); // Function Engine.SkeletalMeshComponent.SetPhysicsBlendWeight // Final|Native|Public|BlueprintCallable // @ game+0x2e421a0
+	void SetMorphTarget(struct FName MorphTargetName, float Value, bool bRemoveZeroWeight); // Function Engine.SkeletalMeshComponent.SetMorphTarget // Final|Native|Public|BlueprintCallable // @ game+0x2e41bf0
+	void SetEnablePhysicsBlending(bool bNewBlendPhysics); // Function Engine.SkeletalMeshComponent.SetEnablePhysicsBlending // Final|Native|Public|BlueprintCallable // @ game+0x2e402d0
+	void SetClothMaxDistanceScale(float Scale); // Function Engine.SkeletalMeshComponent.SetClothMaxDistanceScale // Final|Native|Public|BlueprintCallable // @ game+0x2e3f010
+	void SetAnimInstanceClass(struct UClass* NewClass); // Function Engine.SkeletalMeshComponent.SetAnimInstanceClass // Final|Native|Public|BlueprintCallable // @ game+0x2e3dfb0
+	void SetAnimationMode(char InAnimationMode); // Function Engine.SkeletalMeshComponent.SetAnimationMode // Final|Native|Public|BlueprintCallable // @ game+0x2e3e0b0
+	void SetAnimation(struct UAnimationAsset* NewAnimToPlay); // Function Engine.SkeletalMeshComponent.SetAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2e3e030
+	void SetAllMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularVelocityDrive // Final|Native|Public|BlueprintCallable // @ game+0x2e3d720
+	void SetAllMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularPositionDrive // Final|Native|Public|BlueprintCallable // @ game+0x2e3d600
+	void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularDriveParams // Final|Native|Public|BlueprintCallable // @ game+0x2e3d4a0
+	void SetAllBodiesSimulatePhysics(bool bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesSimulatePhysics // Final|Native|Public|BlueprintCallable // @ game+0x2e3d390
+	void SetAllBodiesPhysicsBlendWeight(float PhysicsBlendWeight, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesPhysicsBlendWeight // Final|Native|Public|BlueprintCallable // @ game+0x2e3d2c0
+	void SetAllBodiesBelowSimulatePhysics(struct FName InBoneName, bool bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowSimulatePhysics // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e3d1f0
+	void SetAllBodiesBelowPhysicsBlendWeight(struct FName InBoneName, float PhysicsBlendWeight, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowPhysicsBlendWeight // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e3d0d0
+	void ResetClothTeleportMode(); // Function Engine.SkeletalMeshComponent.ResetClothTeleportMode // Final|Native|Public|BlueprintCallable // @ game+0x2e3cb40
+	void ResetAllBodiesSimulatePhysics(); // Function Engine.SkeletalMeshComponent.ResetAllBodiesSimulatePhysics // Final|Native|Public|BlueprintCallable // @ game+0x2e3cb20
+	void PlayAnimation(struct UAnimationAsset* NewAnimToPlay, bool bLooping); // Function Engine.SkeletalMeshComponent.PlayAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2e3c260
+	void Play(bool bLooping); // Function Engine.SkeletalMeshComponent.Play // Final|Native|Public|BlueprintCallable // @ game+0x2e3c0c0
+	bool IsPlaying(); // Function Engine.SkeletalMeshComponent.IsPlaying // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e3a820
+	float GetPosition(); // Function Engine.SkeletalMeshComponent.GetPosition // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e37820
+	float GetPlayRate(); // Function Engine.SkeletalMeshComponent.GetPlayRate // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e377f0
+	float GetMorphTarget(struct FName MorphTargetName); // Function Engine.SkeletalMeshComponent.GetMorphTarget // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e36700
+	float GetClothMaxDistanceScale(); // Function Engine.SkeletalMeshComponent.GetClothMaxDistanceScale // Final|Native|Public|BlueprintCallable // @ game+0x2e35380
+	struct UAnimInstance* GetAnimInstance(); // Function Engine.SkeletalMeshComponent.GetAnimInstance // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34f70
+	char GetAnimationMode(); // Function Engine.SkeletalMeshComponent.GetAnimationMode // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e34fb0
+	void ForceClothNextUpdateTeleportAndReset(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleportAndReset // Final|Native|Public|BlueprintCallable // @ game+0x2e34a40
+	void ForceClothNextUpdateTeleport(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleport // Final|Native|Public|BlueprintCallable // @ game+0x2e34a20
+	void ClearMorphTargets(); // Function Engine.SkeletalMeshComponent.ClearMorphTargets // Final|Native|Public|BlueprintCallable // @ game+0x2e325e0
+	void BindClothToMasterPoseComponent(); // Function Engine.SkeletalMeshComponent.BindClothToMasterPoseComponent // Final|Native|Public|BlueprintCallable // @ game+0x2e32120
+	void AccumulateAllBodiesBelowPhysicsBlendWeight(struct FName InBoneName, float AddPhysicsBlendWeight, bool bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.AccumulateAllBodiesBelowPhysicsBlendWeight // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e30720
 };
 
 // Class Engine.MatineeAnimInterface
@@ -4564,8 +4564,8 @@ struct ASkeletalMeshActor : AActor {
 	struct UPhysicsAsset* ReplicatedPhysAsset; // 0x3e8(0x08)
 	char UnknownData_3F0[0x8]; // 0x3f0(0x08)
 
-	void OnRep_ReplicatedPhysAsset(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedPhysAsset // Native|Public // @ game+0x2e395e0
-	void OnRep_ReplicatedMesh(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMesh // Native|Public // @ game+0x2e395c0
+	void OnRep_ReplicatedPhysAsset(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedPhysAsset // Native|Public // @ game+0x2e3ba70
+	void OnRep_ReplicatedMesh(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMesh // Native|Public // @ game+0x2e3ba50
 };
 
 // Class Engine.SplineMeshActor
@@ -4651,15 +4651,15 @@ struct UApplicationLifecycleComponent : UActorComponent {
 	struct FMulticastDelegate ApplicationHasEnteredForegroundDelegate; // 0xf8(0x10)
 	struct FMulticastDelegate ApplicationWillTerminateDelegate; // 0x108(0x10)
 
-	void ApplicationLifetimeDelegate__DelegateSignature(); // DelegateFunction Engine.ApplicationLifecycleComponent.ApplicationLifetimeDelegate__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
+	void ApplicationLifetimeDelegate__DelegateSignature(); // DelegateFunction Engine.ApplicationLifecycleComponent.ApplicationLifetimeDelegate__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
 };
 
 // Class Engine.AggregatorInterface
 // Size: 0x28 (Inherited: 0x28)
 struct UAggregatorInterface : UInterface {
 
-	void UnregisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.AggregatorInterface.UnregisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e423a0
-	void RegisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.AggregatorInterface.RegisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e3a2c0
+	void UnregisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.AggregatorInterface.UnregisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e44830
+	void RegisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.AggregatorInterface.RegisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e3c750
 };
 
 // Class Engine.ComponentAggregatorComponent
@@ -4668,8 +4668,8 @@ struct UComponentAggregatorComponent : UActorComponent {
 	char UnknownData_C8[0x8]; // 0xc8(0x08)
 	struct TArray<struct UObject*> Aggregatables; // 0xd0(0x10)
 
-	void UnregisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.ComponentAggregatorComponent.UnregisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e42440
-	void RegisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.ComponentAggregatorComponent.RegisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e3a360
+	void UnregisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.ComponentAggregatorComponent.UnregisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e448d0
+	void RegisterAggregatable(TScriptInterface<struct UAggregatableInterface> InAggregatable); // Function Engine.ComponentAggregatorComponent.RegisterAggregatable // Native|Public|BlueprintCallable // @ game+0x2e3c7f0
 };
 
 // Class Engine.InterpToMovementComponent
@@ -4694,12 +4694,12 @@ struct UInterpToMovementComponent : UMovementComponent {
 	struct TArray<struct FInterpControlPoint> ControlPoints; // 0x178(0x10)
 	char UnknownData_188[0x20]; // 0x188(0x20)
 
-	void StopSimulating(struct FHitResult HitResult); // Function Engine.InterpToMovementComponent.StopSimulating // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e41c60
-	void OnInterpToWaitEndDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitEndDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e3b10
-	void OnInterpToWaitBeginDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitBeginDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e3b10
-	void OnInterpToStopDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToStopDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e3b10
-	void OnInterpToReverseDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToReverseDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e3b10
-	void OnInterpToResetDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToResetDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e3b10
+	void StopSimulating(struct FHitResult HitResult); // Function Engine.InterpToMovementComponent.StopSimulating // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2e440f0
+	void OnInterpToWaitEndDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitEndDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e5fa0
+	void OnInterpToWaitBeginDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitBeginDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e5fa0
+	void OnInterpToStopDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToStopDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e5fa0
+	void OnInterpToReverseDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToReverseDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e5fa0
+	void OnInterpToResetDelegate__DelegateSignature(struct FHitResult ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToResetDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e5fa0
 };
 
 // Class Engine.NavigationSystem
@@ -4735,28 +4735,28 @@ struct UNavigationSystem : UBlueprintFunctionLibrary {
 	struct FStringAssetReference InstancedNavMeshesDataAsset; // 0x3c0(0x10)
 	struct UInstancedNavMeshesDataAsset* InstancedNavMeshesData; // 0x3d0(0x08)
 
-	void UnregisterNavigationInvoker(struct AActor* Invoker); // Function Engine.NavigationSystem.UnregisterNavigationInvoker // Final|Native|Public|BlueprintCallable // @ game+0x2e424e0
-	void SimpleMoveToLocation(struct AController* Controller, struct FVector Goal); // Function Engine.NavigationSystem.SimpleMoveToLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e418e0
-	void SimpleMoveToActor(struct AController* Controller, struct AActor* Goal); // Function Engine.NavigationSystem.SimpleMoveToActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x2e41830
-	void SetMaxSimultaneousTileGenerationJobsCount(int32_t MaxNumberOfJobs); // Function Engine.NavigationSystem.SetMaxSimultaneousTileGenerationJobsCount // Final|Native|Public|BlueprintCallable // @ game+0x2e3f6e0
-	void SetGeometryGatheringMode(char NewMode); // Function Engine.NavigationSystem.SetGeometryGatheringMode // Final|Native|Public|BlueprintCallable // @ game+0x2e3e100
-	void ResetMaxSimultaneousTileGenerationJobsCount(); // Function Engine.NavigationSystem.ResetMaxSimultaneousTileGenerationJobsCount // Final|Native|Public|BlueprintCallable // @ game+0x2e3a710
-	void RegisterNavigationInvoker(struct AActor* Invoker, float TileGenerationRadius, float TileRemovalRadius); // Function Engine.NavigationSystem.RegisterNavigationInvoker // Final|Native|Public|BlueprintCallable // @ game+0x2e3a400
-	struct FVector ProjectPointToNavigation(struct UObject* WorldContext, struct FVector Point, struct ANavigationData* NavData, struct UClass* FilterClass, struct FVector QueryExtent); // Function Engine.NavigationSystem.ProjectPointToNavigation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e3a010
-	void OnNavigationBoundsUpdated(struct ANavMeshBoundsVolume* NavVolume); // Function Engine.NavigationSystem.OnNavigationBoundsUpdated // Final|Native|Public|BlueprintCallable // @ game+0x2e393d0
-	bool NavigationRaycast(struct UObject* WorldContext, struct FVector RayStart, struct FVector RayEnd, struct FVector HitLocation, struct UClass* FilterClass, struct AController* Querier); // Function Engine.NavigationSystem.NavigationRaycast // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e39080
-	bool IsNavigationBeingBuilt(struct UObject* WorldContext); // Function Engine.NavigationSystem.IsNavigationBeingBuilt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2e381f0
-	struct FVector GetRandomReachablePointInRadius(struct UObject* WorldContext, struct FVector Origin, float Radius, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomReachablePointInRadius // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e35b30
-	struct FVector GetRandomPointInRadius(struct UObject* WorldContext, struct FVector Origin, float Radius, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomPointInRadius // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e35960
-	struct FVector GetRandomPointInNavigableRadius(struct UObject* WorldContext, struct FVector Origin, float Radius, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomPointInNavigableRadius // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e35790
-	struct FVector GetRandomPoint(struct UObject* WorldContext, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomPoint // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e35690
-	char GetPathLength(struct UObject* WorldContext, struct FVector PathStart, struct FVector PathEnd, float PathLength, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetPathLength // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e34d60
-	char GetPathCost(struct UObject* WorldContext, struct FVector PathStart, struct FVector PathEnd, float PathCost, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetPathCost // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e34b40
-	struct UNavigationSystem* GetNavigationSystem(struct UObject* WorldContext); // Function Engine.NavigationSystem.GetNavigationSystem // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2e344b0
-	struct ANavigationData* GetMainNavData(); // Function Engine.NavigationSystem.GetMainNavData // Final|Native|Public|BlueprintCallable // @ game+0x2e33fd0
-	struct UNavigationPath* FindPathToLocationSynchronously(struct UObject* WorldContext, struct FVector PathStart, struct FVector PathEnd, struct AActor* PathfindingContext, struct UClass* FilterClass); // Function Engine.NavigationSystem.FindPathToLocationSynchronously // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e32230
-	struct UNavigationPath* FindPathToActorSynchronously(struct UObject* WorldContext, struct FVector PathStart, struct AActor* GoalActor, float TetherDistance, struct AActor* PathfindingContext, struct UClass* FilterClass); // Function Engine.NavigationSystem.FindPathToActorSynchronously // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e32040
-	bool DoesMainNavDataHaveValidNavMesh(); // Function Engine.NavigationSystem.DoesMainNavDataHaveValidNavMesh // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e30c10
+	void UnregisterNavigationInvoker(struct AActor* Invoker); // Function Engine.NavigationSystem.UnregisterNavigationInvoker // Final|Native|Public|BlueprintCallable // @ game+0x2e44970
+	void SimpleMoveToLocation(struct AController* Controller, struct FVector Goal); // Function Engine.NavigationSystem.SimpleMoveToLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e43d70
+	void SimpleMoveToActor(struct AController* Controller, struct AActor* Goal); // Function Engine.NavigationSystem.SimpleMoveToActor // Final|Native|Static|Public|BlueprintCallable // @ game+0x2e43cc0
+	void SetMaxSimultaneousTileGenerationJobsCount(int32_t MaxNumberOfJobs); // Function Engine.NavigationSystem.SetMaxSimultaneousTileGenerationJobsCount // Final|Native|Public|BlueprintCallable // @ game+0x2e41b70
+	void SetGeometryGatheringMode(char NewMode); // Function Engine.NavigationSystem.SetGeometryGatheringMode // Final|Native|Public|BlueprintCallable // @ game+0x2e40590
+	void ResetMaxSimultaneousTileGenerationJobsCount(); // Function Engine.NavigationSystem.ResetMaxSimultaneousTileGenerationJobsCount // Final|Native|Public|BlueprintCallable // @ game+0x2e3cba0
+	void RegisterNavigationInvoker(struct AActor* Invoker, float TileGenerationRadius, float TileRemovalRadius); // Function Engine.NavigationSystem.RegisterNavigationInvoker // Final|Native|Public|BlueprintCallable // @ game+0x2e3c890
+	struct FVector ProjectPointToNavigation(struct UObject* WorldContext, struct FVector Point, struct ANavigationData* NavData, struct UClass* FilterClass, struct FVector QueryExtent); // Function Engine.NavigationSystem.ProjectPointToNavigation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e3c4a0
+	void OnNavigationBoundsUpdated(struct ANavMeshBoundsVolume* NavVolume); // Function Engine.NavigationSystem.OnNavigationBoundsUpdated // Final|Native|Public|BlueprintCallable // @ game+0x2e3b860
+	bool NavigationRaycast(struct UObject* WorldContext, struct FVector RayStart, struct FVector RayEnd, struct FVector HitLocation, struct UClass* FilterClass, struct AController* Querier); // Function Engine.NavigationSystem.NavigationRaycast // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e3b510
+	bool IsNavigationBeingBuilt(struct UObject* WorldContext); // Function Engine.NavigationSystem.IsNavigationBeingBuilt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2e3a680
+	struct FVector GetRandomReachablePointInRadius(struct UObject* WorldContext, struct FVector Origin, float Radius, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomReachablePointInRadius // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e37fc0
+	struct FVector GetRandomPointInRadius(struct UObject* WorldContext, struct FVector Origin, float Radius, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomPointInRadius // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e37df0
+	struct FVector GetRandomPointInNavigableRadius(struct UObject* WorldContext, struct FVector Origin, float Radius, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomPointInNavigableRadius // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e37c20
+	struct FVector GetRandomPoint(struct UObject* WorldContext, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetRandomPoint // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e37b20
+	char GetPathLength(struct UObject* WorldContext, struct FVector PathStart, struct FVector PathEnd, float PathLength, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetPathLength // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e371f0
+	char GetPathCost(struct UObject* WorldContext, struct FVector PathStart, struct FVector PathEnd, float PathCost, struct ANavigationData* NavData, struct UClass* FilterClass); // Function Engine.NavigationSystem.GetPathCost // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2e36fd0
+	struct UNavigationSystem* GetNavigationSystem(struct UObject* WorldContext); // Function Engine.NavigationSystem.GetNavigationSystem // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2e36940
+	struct ANavigationData* GetMainNavData(); // Function Engine.NavigationSystem.GetMainNavData // Final|Native|Public|BlueprintCallable // @ game+0x2e36460
+	struct UNavigationPath* FindPathToLocationSynchronously(struct UObject* WorldContext, struct FVector PathStart, struct FVector PathEnd, struct AActor* PathfindingContext, struct UClass* FilterClass); // Function Engine.NavigationSystem.FindPathToLocationSynchronously // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e346c0
+	struct UNavigationPath* FindPathToActorSynchronously(struct UObject* WorldContext, struct FVector PathStart, struct AActor* GoalActor, float TetherDistance, struct AActor* PathfindingContext, struct UClass* FilterClass); // Function Engine.NavigationSystem.FindPathToActorSynchronously // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2e344d0
+	bool DoesMainNavDataHaveValidNavMesh(); // Function Engine.NavigationSystem.DoesMainNavDataHaveValidNavMesh // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2e330a0
 };
 
 // Class Engine.AnimSequenceBase
@@ -4767,7 +4767,7 @@ struct UAnimSequenceBase : UAnimationAsset {
 	float RateScale; // 0x64(0x04)
 	struct FRawCurveTracks RawCurveData; // 0x68(0x10)
 
-	float GetPlayLength(); // Function Engine.AnimSequenceBase.GetPlayLength // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f421c0
+	float GetPlayLength(); // Function Engine.AnimSequenceBase.GetPlayLength // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44650
 };
 
 // Class Engine.AnimCompositeBase
@@ -4858,11 +4858,11 @@ struct UProjectileMovementComponent : UMovementComponent {
 	int32_t MaxSimulationIterations; // 0x170(0x04)
 	char UnknownData_174[0x4]; // 0x174(0x04)
 
-	void StopSimulating(struct FHitResult HitResult); // Function Engine.ProjectileMovementComponent.StopSimulating // Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f50110
-	void SetVelocityInLocalSpace(struct FVector NewVelocity); // Function Engine.ProjectileMovementComponent.SetVelocityInLocalSpace // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4e160
-	void OnProjectileStopDelegate__DelegateSignature(struct FHitResult ImpactResult); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileStopDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e3b10
-	void OnProjectileBounceDelegate__DelegateSignature(struct FHitResult ImpactResult, struct FVector ImpactVelocity); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileBounceDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults // @ game+0x18e3b10
-	struct FVector LimitVelocity(struct FVector NewVelocity); // Function Engine.ProjectileMovementComponent.LimitVelocity // Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44150
+	void StopSimulating(struct FHitResult HitResult); // Function Engine.ProjectileMovementComponent.StopSimulating // Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f525a0
+	void SetVelocityInLocalSpace(struct FVector NewVelocity); // Function Engine.ProjectileMovementComponent.SetVelocityInLocalSpace // Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f505f0
+	void OnProjectileStopDelegate__DelegateSignature(struct FHitResult ImpactResult); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileStopDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms // @ game+0x18e5fa0
+	void OnProjectileBounceDelegate__DelegateSignature(struct FHitResult ImpactResult, struct FVector ImpactVelocity); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileBounceDelegate__DelegateSignature // MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults // @ game+0x18e5fa0
+	struct FVector LimitVelocity(struct FVector NewVelocity); // Function Engine.ProjectileMovementComponent.LimitVelocity // Final|Native|Protected|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f465e0
 };
 
 // Class Engine.RotatingMovementComponent
@@ -4892,7 +4892,7 @@ struct UNavRelevantComponent : UActorComponent {
 	char UnknownData_ED[0x3]; // 0xed(0x03)
 	struct UObject* CachedNavParent; // 0xf0(0x08)
 
-	void SetNavigationRelevancy(bool bRelevant); // Function Engine.NavRelevantComponent.SetNavigationRelevancy // Final|Native|Public|BlueprintCallable // @ game+0x2f4be00
+	void SetNavigationRelevancy(bool bRelevant); // Function Engine.NavRelevantComponent.SetNavigationRelevancy // Final|Native|Public|BlueprintCallable // @ game+0x2f4e290
 };
 
 // Class Engine.NavLinkCustomInterface
@@ -4949,7 +4949,7 @@ struct UPawnNoiseEmitterComponent : UActorComponent {
 	float LastLocalNoiseTime; // 0xe8(0x04)
 	char UnknownData_EC[0x4]; // 0xec(0x04)
 
-	void MakeNoise(struct AActor* NoiseMaker, float Loudness, struct FVector NoiseLocation); // Function Engine.PawnNoiseEmitterComponent.MakeNoise // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f445f0
+	void MakeNoise(struct AActor* NoiseMaker, float Loudness, struct FVector NoiseLocation); // Function Engine.PawnNoiseEmitterComponent.MakeNoise // BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f46a80
 };
 
 // Class Engine.PhysicsHandleComponent
@@ -4965,17 +4965,17 @@ struct UPhysicsHandleComponent : UActorComponent {
 	float InterpolationSpeed; // 0x150(0x04)
 	char UnknownData_154[0x1c]; // 0x154(0x1c)
 
-	void SetTargetRotation(struct FRotator NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetRotation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4da70
-	void SetTargetLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetLocationAndRotation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d990
-	void SetTargetLocation(struct FVector NewLocation); // Function Engine.PhysicsHandleComponent.SetTargetLocation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d900
-	void SetLinearStiffness(float NewLinearStiffness); // Function Engine.PhysicsHandleComponent.SetLinearStiffness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b870
-	void SetLinearDamping(float NewLinearDamping); // Function Engine.PhysicsHandleComponent.SetLinearDamping // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b7f0
-	void SetInterpolationSpeed(float NewInterpolationSpeed); // Function Engine.PhysicsHandleComponent.SetInterpolationSpeed // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b460
-	void SetAngularStiffness(float NewAngularStiffness); // Function Engine.PhysicsHandleComponent.SetAngularStiffness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f47c90
-	void SetAngularDamping(float NewAngularDamping); // Function Engine.PhysicsHandleComponent.SetAngularDamping // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f47c10
-	void ReleaseComponent(); // Function Engine.PhysicsHandleComponent.ReleaseComponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f46800
-	void GrabComponent(struct UPrimitiveComponent* Component, struct FName InBoneName, struct FVector GrabLocation, bool bConstrainRotation); // Function Engine.PhysicsHandleComponent.GrabComponent // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f43730
-	void GetTargetLocationAndRotation(struct FVector TargetLocation, struct FRotator TargetRotation); // Function Engine.PhysicsHandleComponent.GetTargetLocationAndRotation // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43240
+	void SetTargetRotation(struct FRotator NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetRotation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4ff00
+	void SetTargetLocationAndRotation(struct FVector NewLocation, struct FRotator NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetLocationAndRotation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4fe20
+	void SetTargetLocation(struct FVector NewLocation); // Function Engine.PhysicsHandleComponent.SetTargetLocation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4fd90
+	void SetLinearStiffness(float NewLinearStiffness); // Function Engine.PhysicsHandleComponent.SetLinearStiffness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4dd00
+	void SetLinearDamping(float NewLinearDamping); // Function Engine.PhysicsHandleComponent.SetLinearDamping // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4dc80
+	void SetInterpolationSpeed(float NewInterpolationSpeed); // Function Engine.PhysicsHandleComponent.SetInterpolationSpeed // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4d8f0
+	void SetAngularStiffness(float NewAngularStiffness); // Function Engine.PhysicsHandleComponent.SetAngularStiffness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4a120
+	void SetAngularDamping(float NewAngularDamping); // Function Engine.PhysicsHandleComponent.SetAngularDamping // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4a0a0
+	void ReleaseComponent(); // Function Engine.PhysicsHandleComponent.ReleaseComponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f48c90
+	void GrabComponent(struct UPrimitiveComponent* Component, struct FName InBoneName, struct FVector GrabLocation, bool bConstrainRotation); // Function Engine.PhysicsHandleComponent.GrabComponent // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f45bc0
+	void GetTargetLocationAndRotation(struct FVector TargetLocation, struct FRotator TargetRotation); // Function Engine.PhysicsHandleComponent.GetTargetLocationAndRotation // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f456d0
 };
 
 // Class Engine.PlatformEventsComponent
@@ -4984,10 +4984,10 @@ struct UPlatformEventsComponent : UActorComponent {
 	struct FMulticastDelegate PlatformChangedToLaptopModeDelegate; // 0xc8(0x10)
 	struct FMulticastDelegate PlatformChangedToTabletModeDelegate; // 0xd8(0x10)
 
-	bool SupportsConvertibleLaptops(); // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops // Final|Native|Public|BlueprintCallable // @ game+0x2f502a0
-	void PlatformEventDelegate__DelegateSignature(); // DelegateFunction Engine.PlatformEventsComponent.PlatformEventDelegate__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e3b10
-	bool IsInTabletMode(); // Function Engine.PlatformEventsComponent.IsInTabletMode // Final|Native|Public|BlueprintCallable // @ game+0x2f43d50
-	bool IsInLaptopMode(); // Function Engine.PlatformEventsComponent.IsInLaptopMode // Final|Native|Public|BlueprintCallable // @ game+0x2f43d20
+	bool SupportsConvertibleLaptops(); // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops // Final|Native|Public|BlueprintCallable // @ game+0x2f52730
+	void PlatformEventDelegate__DelegateSignature(); // DelegateFunction Engine.PlatformEventsComponent.PlatformEventDelegate__DelegateSignature // MulticastDelegate|Public|Delegate // @ game+0x18e5fa0
+	bool IsInTabletMode(); // Function Engine.PlatformEventsComponent.IsInTabletMode // Final|Native|Public|BlueprintCallable // @ game+0x2f461e0
+	bool IsInLaptopMode(); // Function Engine.PlatformEventsComponent.IsInLaptopMode // Final|Native|Public|BlueprintCallable // @ game+0x2f461b0
 };
 
 // Class Engine.AtmosphericFogComponent
@@ -5014,20 +5014,20 @@ struct UAtmosphericFogComponent : USceneComponent {
 	struct UTexture2D* IrradianceTexture; // 0x348(0x08)
 	char UnknownData_350[0x170]; // 0x350(0x170)
 
-	void StartPrecompute(); // Function Engine.AtmosphericFogComponent.StartPrecompute // Final|Native|Public|BlueprintCallable // @ game+0x2f50090
-	void SetSunMultiplier(float NewSunMultiplier); // Function Engine.AtmosphericFogComponent.SetSunMultiplier // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4d880
-	void SetStartDistance(float NewStartDistance); // Function Engine.AtmosphericFogComponent.SetStartDistance // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4d2d0
-	void SetPrecomputeParams(float DensityHeight, int32_t MaxScatteringOrder, int32_t InscatterAltitudeSampleNum); // Function Engine.AtmosphericFogComponent.SetPrecomputeParams // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4c510
-	void SetFogMultiplier(float NewFogMultiplier); // Function Engine.AtmosphericFogComponent.SetFogMultiplier // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4a9d0
-	void SetDistanceScale(float NewDistanceScale); // Function Engine.AtmosphericFogComponent.SetDistanceScale // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f49d40
-	void SetDistanceOffset(float NewDistanceOffset); // Function Engine.AtmosphericFogComponent.SetDistanceOffset // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f49cc0
-	void SetDensityOffset(float NewDensityOffset); // Function Engine.AtmosphericFogComponent.SetDensityOffset // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f49940
-	void SetDensityMultiplier(float NewDensityMultiplier); // Function Engine.AtmosphericFogComponent.SetDensityMultiplier // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f498c0
-	void SetDefaultLightColor(struct FLinearColor NewLightColor); // Function Engine.AtmosphericFogComponent.SetDefaultLightColor // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f49840
-	void SetDefaultBrightness(float NewBrightness); // Function Engine.AtmosphericFogComponent.SetDefaultBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f497c0
-	void SetAltitudeScale(float NewAltitudeScale); // Function Engine.AtmosphericFogComponent.SetAltitudeScale // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f47a80
-	void DisableSunDisk(bool NewSunDisk); // Function Engine.AtmosphericFogComponent.DisableSunDisk // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f3e8b0
-	void DisableGroundScattering(bool NewGroundScattering); // Function Engine.AtmosphericFogComponent.DisableGroundScattering // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f3e800
+	void StartPrecompute(); // Function Engine.AtmosphericFogComponent.StartPrecompute // Final|Native|Public|BlueprintCallable // @ game+0x2f52520
+	void SetSunMultiplier(float NewSunMultiplier); // Function Engine.AtmosphericFogComponent.SetSunMultiplier // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4fd10
+	void SetStartDistance(float NewStartDistance); // Function Engine.AtmosphericFogComponent.SetStartDistance // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4f760
+	void SetPrecomputeParams(float DensityHeight, int32_t MaxScatteringOrder, int32_t InscatterAltitudeSampleNum); // Function Engine.AtmosphericFogComponent.SetPrecomputeParams // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4e9a0
+	void SetFogMultiplier(float NewFogMultiplier); // Function Engine.AtmosphericFogComponent.SetFogMultiplier // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4ce60
+	void SetDistanceScale(float NewDistanceScale); // Function Engine.AtmosphericFogComponent.SetDistanceScale // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4c1d0
+	void SetDistanceOffset(float NewDistanceOffset); // Function Engine.AtmosphericFogComponent.SetDistanceOffset // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4c150
+	void SetDensityOffset(float NewDensityOffset); // Function Engine.AtmosphericFogComponent.SetDensityOffset // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4bdd0
+	void SetDensityMultiplier(float NewDensityMultiplier); // Function Engine.AtmosphericFogComponent.SetDensityMultiplier // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4bd50
+	void SetDefaultLightColor(struct FLinearColor NewLightColor); // Function Engine.AtmosphericFogComponent.SetDefaultLightColor // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4bcd0
+	void SetDefaultBrightness(float NewBrightness); // Function Engine.AtmosphericFogComponent.SetDefaultBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4bc50
+	void SetAltitudeScale(float NewAltitudeScale); // Function Engine.AtmosphericFogComponent.SetAltitudeScale // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f49f10
+	void DisableSunDisk(bool NewSunDisk); // Function Engine.AtmosphericFogComponent.DisableSunDisk // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f40d40
+	void DisableGroundScattering(bool NewGroundScattering); // Function Engine.AtmosphericFogComponent.DisableGroundScattering // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f40c90
 };
 
 // Class Engine.SoundAttenuation
@@ -5065,22 +5065,22 @@ struct UAudioComponent : USceneComponent {
 	DelegateProperty OnQueueSubtitles; // 0x418(0x10)
 	char UnknownData_428[0x8]; // 0x428(0x08)
 
-	void Stop(); // Function Engine.AudioComponent.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2f500b0
-	void SetWaveParameter(struct FName InName, struct USoundWave* InWave); // Function Engine.AudioComponent.SetWaveParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f4e5a0
-	void SetVolumeMultiplier(float NewVolumeMultiplier); // Function Engine.AudioComponent.SetVolumeMultiplier // Final|Native|Public|BlueprintCallable // @ game+0x2f4e300
-	void SetUISound(bool bInUISound); // Function Engine.AudioComponent.SetUISound // Final|Native|Public|BlueprintCallable // @ game+0x2f4df90
-	void SetSound(struct USoundBase* NewSound); // Function Engine.AudioComponent.SetSound // Final|Native|Public|BlueprintCallable // @ game+0x2f4cb50
-	void SetPitchMultiplier(float NewPitchMultiplier); // Function Engine.AudioComponent.SetPitchMultiplier // Final|Native|Public|BlueprintCallable // @ game+0x2f4c120
-	void SetIntParameter(struct FName InName, int32_t InInt); // Function Engine.AudioComponent.SetIntParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f4b2a0
-	void SetFloatParameter(struct FName InName, float InFloat); // Function Engine.AudioComponent.SetFloatParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f4a560
-	void SetBoolParameter(struct FName InName, bool InBool); // Function Engine.AudioComponent.SetBoolParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f48ae0
-	void Play(float StartTime); // Function Engine.AudioComponent.Play // Final|Native|Public|BlueprintCallable // @ game+0x2f45340
-	bool IsPlaying(); // Function Engine.AudioComponent.IsPlaying // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43db0
-	void FadeOut(float FadeOutDuration, float FadeVolumeLevel); // Function Engine.AudioComponent.FadeOut // Final|Native|Public|BlueprintCallable // @ game+0x2f3edd0
-	void FadeIn(float FadeInDuration, float FadeVolumeLevel, float StartTime); // Function Engine.AudioComponent.FadeIn // Final|Native|Public|BlueprintCallable // @ game+0x2f3ecc0
-	bool BP_GetAttenuationSettingsToApply(struct FAttenuationSettings OutAttenuationSettings); // Function Engine.AudioComponent.BP_GetAttenuationSettingsToApply // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f3c420
-	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel); // Function Engine.AudioComponent.AdjustVolume // Final|Native|Public|BlueprintCallable // @ game+0x2f3b3b0
-	void AdjustAttenuation(struct FAttenuationSettings InAttenuationSettings); // Function Engine.AudioComponent.AdjustAttenuation // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f3b240
+	void Stop(); // Function Engine.AudioComponent.Stop // Final|Native|Public|BlueprintCallable // @ game+0x2f52540
+	void SetWaveParameter(struct FName InName, struct USoundWave* InWave); // Function Engine.AudioComponent.SetWaveParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f50a30
+	void SetVolumeMultiplier(float NewVolumeMultiplier); // Function Engine.AudioComponent.SetVolumeMultiplier // Final|Native|Public|BlueprintCallable // @ game+0x2f50790
+	void SetUISound(bool bInUISound); // Function Engine.AudioComponent.SetUISound // Final|Native|Public|BlueprintCallable // @ game+0x2f50420
+	void SetSound(struct USoundBase* NewSound); // Function Engine.AudioComponent.SetSound // Final|Native|Public|BlueprintCallable // @ game+0x2f4efe0
+	void SetPitchMultiplier(float NewPitchMultiplier); // Function Engine.AudioComponent.SetPitchMultiplier // Final|Native|Public|BlueprintCallable // @ game+0x2f4e5b0
+	void SetIntParameter(struct FName InName, int32_t InInt); // Function Engine.AudioComponent.SetIntParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f4d730
+	void SetFloatParameter(struct FName InName, float InFloat); // Function Engine.AudioComponent.SetFloatParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f4c9f0
+	void SetBoolParameter(struct FName InName, bool InBool); // Function Engine.AudioComponent.SetBoolParameter // Final|Native|Public|BlueprintCallable // @ game+0x2f4af70
+	void Play(float StartTime); // Function Engine.AudioComponent.Play // Final|Native|Public|BlueprintCallable // @ game+0x2f477d0
+	bool IsPlaying(); // Function Engine.AudioComponent.IsPlaying // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46240
+	void FadeOut(float FadeOutDuration, float FadeVolumeLevel); // Function Engine.AudioComponent.FadeOut // Final|Native|Public|BlueprintCallable // @ game+0x2f41260
+	void FadeIn(float FadeInDuration, float FadeVolumeLevel, float StartTime); // Function Engine.AudioComponent.FadeIn // Final|Native|Public|BlueprintCallable // @ game+0x2f41150
+	bool BP_GetAttenuationSettingsToApply(struct FAttenuationSettings OutAttenuationSettings); // Function Engine.AudioComponent.BP_GetAttenuationSettingsToApply // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f3e8b0
+	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel); // Function Engine.AudioComponent.AdjustVolume // Final|Native|Public|BlueprintCallable // @ game+0x2f3d840
+	void AdjustAttenuation(struct FAttenuationSettings InAttenuationSettings); // Function Engine.AudioComponent.AdjustAttenuation // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f3d6d0
 };
 
 // Class Engine.BasisComponent
@@ -5114,12 +5114,12 @@ struct UDecalComponent : USceneComponent {
 	struct UMaterialInstanceDynamic* MaterialInstanceDynamic; // 0x2f0(0x08)
 	char UnknownData_2F8[0x18]; // 0x2f8(0x18)
 
-	void SetSortOrder(int32_t Value); // Function Engine.DecalComponent.SetSortOrder // Final|Native|Public|BlueprintCallable // @ game+0x2f4cad0
-	void SetLifeSpan(float LifeSpan); // Function Engine.DecalComponent.SetLifeSpan // Final|Native|Public|BlueprintCallable // @ game+0x2f4b5e0
-	void SetDecalMaterial(struct UMaterialInterface* NewDecalMaterial); // Function Engine.DecalComponent.SetDecalMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2f49740
-	struct UMaterialInterface* GetDecalMaterial(); // Function Engine.DecalComponent.GetDecalMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40930
-	struct UMaterialInstanceDynamic* GetDecalDynamicMaterialInstance(); // Function Engine.DecalComponent.GetDecalDynamicMaterialInstance // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40900
-	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(); // Function Engine.DecalComponent.CreateDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2f3e2e0
+	void SetSortOrder(int32_t Value); // Function Engine.DecalComponent.SetSortOrder // Final|Native|Public|BlueprintCallable // @ game+0x2f4ef60
+	void SetLifeSpan(float LifeSpan); // Function Engine.DecalComponent.SetLifeSpan // Final|Native|Public|BlueprintCallable // @ game+0x2f4da70
+	void SetDecalMaterial(struct UMaterialInterface* NewDecalMaterial); // Function Engine.DecalComponent.SetDecalMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2f4bbd0
+	struct UMaterialInterface* GetDecalMaterial(); // Function Engine.DecalComponent.GetDecalMaterial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42dc0
+	struct UMaterialInstanceDynamic* GetDecalDynamicMaterialInstance(); // Function Engine.DecalComponent.GetDecalDynamicMaterialInstance // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42d90
+	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(); // Function Engine.DecalComponent.CreateDynamicMaterialInstance // Native|Public|BlueprintCallable // @ game+0x2f40770
 };
 
 // Class Engine.ExponentialHeightFogComponent
@@ -5142,20 +5142,20 @@ struct UExponentialHeightFogComponent : USceneComponent {
 	bool bIsUnderwater; // 0x33c(0x01)
 	char UnknownData_33D[0x3]; // 0x33d(0x03)
 
-	void SetStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetStartDistance // Final|Native|Public|BlueprintCallable // @ game+0x2f4d350
-	void SetInscatteringStartScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringStartScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4b220
-	void SetInscatteringFarScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringFarScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4b1a0
-	void SetFogMaxOpacity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogMaxOpacity // Final|Native|Public|BlueprintCallable // @ game+0x2f4a950
-	void SetFogInscatteringColor(struct FLinearColor Value); // Function Engine.ExponentialHeightFogComponent.SetFogInscatteringColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a8d0
-	void SetFogHeightFalloff(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogHeightFalloff // Final|Native|Public|BlueprintCallable // @ game+0x2f4a850
-	void SetFogDensity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogDensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4a7d0
-	void SetFarInscatteringColour(struct FLinearColor Value); // Function Engine.ExponentialHeightFogComponent.SetFarInscatteringColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a4e0
-	void SetExponentialFogFarDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetExponentialFogFarDistance // Final|Native|Public|BlueprintCallable // @ game+0x2f4a3e0
-	void SetDirectionalInscatteringStartScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringStartScale // Final|Native|Public|BlueprintCallable // @ game+0x2f49c40
-	void SetDirectionalInscatteringStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringStartDistance // Final|Native|Public|BlueprintCallable // @ game+0x2f49bc0
-	void SetDirectionalInscatteringFarScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringFarScale // Final|Native|Public|BlueprintCallable // @ game+0x2f49b40
-	void SetDirectionalInscatteringExponent(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringExponent // Final|Native|Public|BlueprintCallable // @ game+0x2f49ac0
-	void SetDirectionalInscatteringColor(struct FLinearColor Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f49a40
+	void SetStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetStartDistance // Final|Native|Public|BlueprintCallable // @ game+0x2f4f7e0
+	void SetInscatteringStartScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringStartScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4d6b0
+	void SetInscatteringFarScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringFarScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4d630
+	void SetFogMaxOpacity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogMaxOpacity // Final|Native|Public|BlueprintCallable // @ game+0x2f4cde0
+	void SetFogInscatteringColor(struct FLinearColor Value); // Function Engine.ExponentialHeightFogComponent.SetFogInscatteringColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4cd60
+	void SetFogHeightFalloff(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogHeightFalloff // Final|Native|Public|BlueprintCallable // @ game+0x2f4cce0
+	void SetFogDensity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogDensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4cc60
+	void SetFarInscatteringColour(struct FLinearColor Value); // Function Engine.ExponentialHeightFogComponent.SetFarInscatteringColour // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4c970
+	void SetExponentialFogFarDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetExponentialFogFarDistance // Final|Native|Public|BlueprintCallable // @ game+0x2f4c870
+	void SetDirectionalInscatteringStartScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringStartScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4c0d0
+	void SetDirectionalInscatteringStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringStartDistance // Final|Native|Public|BlueprintCallable // @ game+0x2f4c050
+	void SetDirectionalInscatteringFarScale(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringFarScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4bfd0
+	void SetDirectionalInscatteringExponent(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringExponent // Final|Native|Public|BlueprintCallable // @ game+0x2f4bf50
+	void SetDirectionalInscatteringColor(struct FLinearColor Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4bed0
 };
 
 // Class Engine.FogVolumeComponent
@@ -5205,7 +5205,7 @@ struct UFogVolumeComponent : USceneComponent {
 	struct UTexture* MeshFogVolumeTexture; // 0x3d0(0x08)
 	char UnknownData_3D8[0x8]; // 0x3d8(0x08)
 
-	void UpdateFog(); // Function Engine.FogVolumeComponent.UpdateFog // Final|Native|Public|BlueprintCallable // @ game+0x2f50650
+	void UpdateFog(); // Function Engine.FogVolumeComponent.UpdateFog // Final|Native|Public|BlueprintCallable // @ game+0x2f52ae0
 };
 
 // Class Engine.InstancedNavMeshInterface
@@ -5240,10 +5240,10 @@ struct UAmbientLightSourceComponent : ULightComponent {
 	char UnknownData_49C_1 : 7; // 0x49c(0x01)
 	char UnknownData_49D[0x3]; // 0x49d(0x03)
 
-	void SetTint(struct FLinearColor NewTint); // Function Engine.AmbientLightSourceComponent.SetTint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4de90
-	void SetRadius(float NewRadius); // Function Engine.AmbientLightSourceComponent.SetRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4c620
-	void SetGroupingPolicy(char Policy); // Function Engine.AmbientLightSourceComponent.SetGroupingPolicy // Final|Native|Public|BlueprintCallable // @ game+0x2f4ae20
-	void SetAmbientIntensity(float NewIntensity); // Function Engine.AmbientLightSourceComponent.SetAmbientIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f47b90
+	void SetTint(struct FLinearColor NewTint); // Function Engine.AmbientLightSourceComponent.SetTint // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f50320
+	void SetRadius(float NewRadius); // Function Engine.AmbientLightSourceComponent.SetRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4eab0
+	void SetGroupingPolicy(char Policy); // Function Engine.AmbientLightSourceComponent.SetGroupingPolicy // Final|Native|Public|BlueprintCallable // @ game+0x2f4d2b0
+	void SetAmbientIntensity(float NewIntensity); // Function Engine.AmbientLightSourceComponent.SetAmbientIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4a020
 };
 
 // Class Engine.DirectionalLightComponent
@@ -5280,20 +5280,20 @@ struct UDirectionalLightComponent : ULightComponent {
 	char UnknownData_4E0_1 : 7; // 0x4e0(0x01)
 	char UnknownData_4E1[0xf]; // 0x4e1(0x0f)
 
-	void SetShadowLastTransitionSize(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowLastTransitionSize // Final|Native|Public|BlueprintCallable // @ game+0x2f4c9c0
-	void SetShadowDistanceFadeoutFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowDistanceFadeoutFraction // Final|Native|Public|BlueprintCallable // @ game+0x2f4c940
-	void SetOcclusionMaskDarkness(float NewValue); // Function Engine.DirectionalLightComponent.SetOcclusionMaskDarkness // Final|Native|Public|BlueprintCallable // @ game+0x2f4bf90
-	void SetNormalOffsetBiasScale(float NewValue); // Function Engine.DirectionalLightComponent.SetNormalOffsetBiasScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4bf10
-	void SetLightShaftOverrideDirection(struct FVector NewValue); // Function Engine.DirectionalLightComponent.SetLightShaftOverrideDirection // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4b760
-	void SetFarCascadeUpdateRate(float NewValue); // Function Engine.DirectionalLightComponent.SetFarCascadeUpdateRate // Final|Native|Public|BlueprintCallable // @ game+0x2f4a460
-	void SetEnableLightShaftOcclusion(bool bNewValue); // Function Engine.DirectionalLightComponent.SetEnableLightShaftOcclusion // Final|Native|Public|BlueprintCallable // @ game+0x2f49f40
-	void SetDynamicShadowDistanceStationaryLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceStationaryLight // Final|Native|Public|BlueprintCallable // @ game+0x2f49ec0
-	void SetDynamicShadowDistanceMovableLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceMovableLight // Final|Native|Public|BlueprintCallable // @ game+0x2f49e40
-	void SetDynamicShadowCascades(int32_t NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowCascades // Final|Native|Public|BlueprintCallable // @ game+0x2f49dc0
-	void SetCloudsShadowsIntensity(float NewValue); // Function Engine.DirectionalLightComponent.SetCloudsShadowsIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f493f0
-	void SetCloseCascadeUpdateRate(float NewValue); // Function Engine.DirectionalLightComponent.SetCloseCascadeUpdateRate // Final|Native|Public|BlueprintCallable // @ game+0x2f49370
-	void SetCascadeTransitionFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeTransitionFraction // Final|Native|Public|BlueprintCallable // @ game+0x2f492f0
-	void SetCascadeDistributionExponent(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeDistributionExponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f49270
+	void SetShadowLastTransitionSize(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowLastTransitionSize // Final|Native|Public|BlueprintCallable // @ game+0x2f4ee50
+	void SetShadowDistanceFadeoutFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowDistanceFadeoutFraction // Final|Native|Public|BlueprintCallable // @ game+0x2f4edd0
+	void SetOcclusionMaskDarkness(float NewValue); // Function Engine.DirectionalLightComponent.SetOcclusionMaskDarkness // Final|Native|Public|BlueprintCallable // @ game+0x2f4e420
+	void SetNormalOffsetBiasScale(float NewValue); // Function Engine.DirectionalLightComponent.SetNormalOffsetBiasScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4e3a0
+	void SetLightShaftOverrideDirection(struct FVector NewValue); // Function Engine.DirectionalLightComponent.SetLightShaftOverrideDirection // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4dbf0
+	void SetFarCascadeUpdateRate(float NewValue); // Function Engine.DirectionalLightComponent.SetFarCascadeUpdateRate // Final|Native|Public|BlueprintCallable // @ game+0x2f4c8f0
+	void SetEnableLightShaftOcclusion(bool bNewValue); // Function Engine.DirectionalLightComponent.SetEnableLightShaftOcclusion // Final|Native|Public|BlueprintCallable // @ game+0x2f4c3d0
+	void SetDynamicShadowDistanceStationaryLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceStationaryLight // Final|Native|Public|BlueprintCallable // @ game+0x2f4c350
+	void SetDynamicShadowDistanceMovableLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceMovableLight // Final|Native|Public|BlueprintCallable // @ game+0x2f4c2d0
+	void SetDynamicShadowCascades(int32_t NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowCascades // Final|Native|Public|BlueprintCallable // @ game+0x2f4c250
+	void SetCloudsShadowsIntensity(float NewValue); // Function Engine.DirectionalLightComponent.SetCloudsShadowsIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4b880
+	void SetCloseCascadeUpdateRate(float NewValue); // Function Engine.DirectionalLightComponent.SetCloseCascadeUpdateRate // Final|Native|Public|BlueprintCallable // @ game+0x2f4b800
+	void SetCascadeTransitionFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeTransitionFraction // Final|Native|Public|BlueprintCallable // @ game+0x2f4b780
+	void SetCascadeDistributionExponent(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeDistributionExponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b700
 };
 
 // Class Engine.PointLightComponent
@@ -5316,10 +5316,10 @@ struct UPointLightComponent : ULightComponent {
 	char UnknownData_4A9_1 : 7; // 0x4a9(0x01)
 	char UnknownData_4AA[0x6]; // 0x4aa(0x06)
 
-	void SetSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSourceRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4cc50
-	void SetSourceLength(float NewValue); // Function Engine.PointLightComponent.SetSourceLength // Final|Native|Public|BlueprintCallable // @ game+0x2f4cbd0
-	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLightComponent.SetLightFalloffExponent // Final|Native|Public|BlueprintCallable // @ game+0x2f4b6e0
-	void SetAttenuationRadius(float NewRadius); // Function Engine.PointLightComponent.SetAttenuationRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f47f20
+	void SetSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSourceRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4f0e0
+	void SetSourceLength(float NewValue); // Function Engine.PointLightComponent.SetSourceLength // Final|Native|Public|BlueprintCallable // @ game+0x2f4f060
+	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLightComponent.SetLightFalloffExponent // Final|Native|Public|BlueprintCallable // @ game+0x2f4db70
+	void SetAttenuationRadius(float NewRadius); // Function Engine.PointLightComponent.SetAttenuationRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4a3b0
 };
 
 // Class Engine.SpotLightComponent
@@ -5330,9 +5330,9 @@ struct USpotLightComponent : UPointLightComponent {
 	float LightShaftConeAngle; // 0x4b0(0x04)
 	float KickBackRatio; // 0x4b4(0x04)
 
-	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLightComponent.SetOuterConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2f4c0a0
-	void SetKickBackProportionality(float NewKickBackRatio); // Function Engine.SpotLightComponent.SetKickBackProportionality // Final|Native|Public|BlueprintCallable // @ game+0x2f4b4e0
-	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLightComponent.SetInnerConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2f4b120
+	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLightComponent.SetOuterConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2f4e530
+	void SetKickBackProportionality(float NewKickBackRatio); // Function Engine.SpotLightComponent.SetKickBackProportionality // Final|Native|Public|BlueprintCallable // @ game+0x2f4d970
+	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLightComponent.SetInnerConeAngle // Final|Native|Public|BlueprintCallable // @ game+0x2f4d5b0
 };
 
 // Class Engine.SkyLightComponent
@@ -5353,14 +5353,14 @@ struct USkyLightComponent : ULightComponentBase {
 	struct UTextureCube* BlendDestinationCubemap; // 0x3e8(0x08)
 	char UnknownData_3F0[0xc0]; // 0x3f0(0xc0)
 
-	void SetOcclusionTint(struct FColor InTint); // Function Engine.SkyLightComponent.SetOcclusionTint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4c010
-	void SetMinOcclusion(float InMinOcclusion); // Function Engine.SkyLightComponent.SetMinOcclusion // Final|Native|Public|BlueprintCallable // @ game+0x2f4ba10
-	void SetLightColor(struct FLinearColor NewLightColor); // Function Engine.SkyLightComponent.SetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4b660
-	void SetIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4b360
-	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIndirectLightingIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4b0a0
-	void SetCubemapBlend(struct UTextureCube* SourceCubemap, struct UTextureCube* DestinationCubemap, float InBlendFraction); // Function Engine.SkyLightComponent.SetCubemapBlend // Final|Native|Public|BlueprintCallable // @ game+0x2f494f0
-	void SetCubemap(struct UTextureCube* NewCubemap); // Function Engine.SkyLightComponent.SetCubemap // Final|Native|Public|BlueprintCallable // @ game+0x2f49470
-	void RecaptureSky(); // Function Engine.SkyLightComponent.RecaptureSky // Final|Native|Public|BlueprintCallable // @ game+0x2f46710
+	void SetOcclusionTint(struct FColor InTint); // Function Engine.SkyLightComponent.SetOcclusionTint // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4e4a0
+	void SetMinOcclusion(float InMinOcclusion); // Function Engine.SkyLightComponent.SetMinOcclusion // Final|Native|Public|BlueprintCallable // @ game+0x2f4dea0
+	void SetLightColor(struct FLinearColor NewLightColor); // Function Engine.SkyLightComponent.SetLightColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4daf0
+	void SetIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4d7f0
+	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIndirectLightingIntensity // Final|Native|Public|BlueprintCallable // @ game+0x2f4d530
+	void SetCubemapBlend(struct UTextureCube* SourceCubemap, struct UTextureCube* DestinationCubemap, float InBlendFraction); // Function Engine.SkyLightComponent.SetCubemapBlend // Final|Native|Public|BlueprintCallable // @ game+0x2f4b980
+	void SetCubemap(struct UTextureCube* NewCubemap); // Function Engine.SkyLightComponent.SetCubemap // Final|Native|Public|BlueprintCallable // @ game+0x2f4b900
+	void RecaptureSky(); // Function Engine.SkyLightComponent.RecaptureSky // Final|Native|Public|BlueprintCallable // @ game+0x2f48ba0
 };
 
 // Class Engine.NavigationGraphNodeComponent
@@ -5385,10 +5385,10 @@ struct UPhysicsSpringComponent : USceneComponent {
 	float SpringCompression; // 0x2f4(0x04)
 	char UnknownData_2F8[0x18]; // 0x2f8(0x18)
 
-	struct FVector GetSpringRestingPoint(); // Function Engine.PhysicsSpringComponent.GetSpringRestingPoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42d60
-	struct FVector GetSpringDirection(); // Function Engine.PhysicsSpringComponent.GetSpringDirection // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42d20
-	struct FVector GetSpringCurrentEndPoint(); // Function Engine.PhysicsSpringComponent.GetSpringCurrentEndPoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42ce0
-	float GetNormalizedCompressionScalar(); // Function Engine.PhysicsSpringComponent.GetNormalizedCompressionScalar // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41d20
+	struct FVector GetSpringRestingPoint(); // Function Engine.PhysicsSpringComponent.GetSpringRestingPoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f451f0
+	struct FVector GetSpringDirection(); // Function Engine.PhysicsSpringComponent.GetSpringDirection // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f451b0
+	struct FVector GetSpringCurrentEndPoint(); // Function Engine.PhysicsSpringComponent.GetSpringCurrentEndPoint // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45170
+	float GetNormalizedCompressionScalar(); // Function Engine.PhysicsSpringComponent.GetNormalizedCompressionScalar // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f441b0
 };
 
 // Class Engine.PhysicsThrusterComponent
@@ -5428,20 +5428,20 @@ struct UFFTWaterComponent : UBaseWaterComponent {
 	struct UMaterial* DefaultLightFunctionMaterial; // 0x980(0x08)
 	char UnknownData_988[0x28]; // 0x988(0x28)
 
-	void SetWaterPositionOffset(struct FVector2D PositionOffset); // Function Engine.FFTWaterComponent.SetWaterPositionOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4e510
-	void SetWaterColour(struct FLinearColor WaterColour); // Function Engine.FFTWaterComponent.SetWaterColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4e480
-	void SetSpecularBrightness(float SpecularBrightness); // Function Engine.FFTWaterComponent.SetSpecularBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2f4ccd0
-	void SetShallowWaterColour(struct FLinearColor ShallowWaterColour); // Function Engine.FFTWaterComponent.SetShallowWaterColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4ca40
-	void SetReflectionBrightness(float ReflectionBrightness); // Function Engine.FFTWaterComponent.SetReflectionBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2f4c6a0
-	void SetMurkyRegion(struct FMurkyRegion MurkyRegion); // Function Engine.FFTWaterComponent.SetMurkyRegion // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f4bc20
-	void SetFresnelPower(float FresnelPower); // Function Engine.FFTWaterComponent.SetFresnelPower // Final|Native|Public|BlueprintCallable // @ game+0x2f4ac20
-	void SetFoamHighlightColour(struct FLinearColor FoamHighlightColour); // Function Engine.FFTWaterComponent.SetFoamHighlightColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4a740
-	void SetFoamColour(struct FLinearColor FoamColour); // Function Engine.FFTWaterComponent.SetFoamColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4a6b0
-	void SetFoamBrightness(float FoamBrightness); // Function Engine.FFTWaterComponent.SetFoamBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2f4a630
-	void SetCarrierWaveParams(float Amplitude, float WaveLength, float PropagationSpeed); // Function Engine.FFTWaterComponent.SetCarrierWaveParams // Final|Native|Public|BlueprintCallable // @ game+0x2f49160
-	void SetBackLitColour(struct FLinearColor BackLitColour); // Function Engine.FFTWaterComponent.SetBackLitColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f480b0
-	void SetAmbientColour(struct FLinearColor AmbientColour); // Function Engine.FFTWaterComponent.SetAmbientColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f47b00
-	void GetWaterPositionOffset(struct FVector2D PositionOffset); // Function Engine.FFTWaterComponent.GetWaterPositionOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f43580
+	void SetWaterPositionOffset(struct FVector2D PositionOffset); // Function Engine.FFTWaterComponent.SetWaterPositionOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f509a0
+	void SetWaterColour(struct FLinearColor WaterColour); // Function Engine.FFTWaterComponent.SetWaterColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f50910
+	void SetSpecularBrightness(float SpecularBrightness); // Function Engine.FFTWaterComponent.SetSpecularBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2f4f160
+	void SetShallowWaterColour(struct FLinearColor ShallowWaterColour); // Function Engine.FFTWaterComponent.SetShallowWaterColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4eed0
+	void SetReflectionBrightness(float ReflectionBrightness); // Function Engine.FFTWaterComponent.SetReflectionBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2f4eb30
+	void SetMurkyRegion(struct FMurkyRegion MurkyRegion); // Function Engine.FFTWaterComponent.SetMurkyRegion // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f4e0b0
+	void SetFresnelPower(float FresnelPower); // Function Engine.FFTWaterComponent.SetFresnelPower // Final|Native|Public|BlueprintCallable // @ game+0x2f4d0b0
+	void SetFoamHighlightColour(struct FLinearColor FoamHighlightColour); // Function Engine.FFTWaterComponent.SetFoamHighlightColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4cbd0
+	void SetFoamColour(struct FLinearColor FoamColour); // Function Engine.FFTWaterComponent.SetFoamColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4cb40
+	void SetFoamBrightness(float FoamBrightness); // Function Engine.FFTWaterComponent.SetFoamBrightness // Final|Native|Public|BlueprintCallable // @ game+0x2f4cac0
+	void SetCarrierWaveParams(float Amplitude, float WaveLength, float PropagationSpeed); // Function Engine.FFTWaterComponent.SetCarrierWaveParams // Final|Native|Public|BlueprintCallable // @ game+0x2f4b5f0
+	void SetBackLitColour(struct FLinearColor BackLitColour); // Function Engine.FFTWaterComponent.SetBackLitColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4a540
+	void SetAmbientColour(struct FLinearColor AmbientColour); // Function Engine.FFTWaterComponent.SetAmbientColour // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f49f90
+	void GetWaterPositionOffset(struct FVector2D PositionOffset); // Function Engine.FFTWaterComponent.GetWaterPositionOffset // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f45a10
 };
 
 // Class Engine.FFTWaterExtendedPlaneComponent
@@ -5451,7 +5451,7 @@ struct UFFTWaterExtendedPlaneComponent : UBaseWaterComponent {
 	struct UMaterial* Material; // 0x8d8(0x08)
 	char UnknownData_8E8[0x8]; // 0x8e8(0x08)
 
-	void SetMurkyRegion(struct FMurkyRegion MurkyRegion); // Function Engine.FFTWaterExtendedPlaneComponent.SetMurkyRegion // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f4bcd0
+	void SetMurkyRegion(struct FMurkyRegion MurkyRegion); // Function Engine.FFTWaterExtendedPlaneComponent.SetMurkyRegion // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f4e160
 };
 
 // Class Engine.BillboardComponent
@@ -5467,9 +5467,9 @@ struct UBillboardComponent : UPrimitiveComponent {
 	char UnknownData_5DC_1 : 7; // 0x5dc(0x01)
 	char UnknownData_5DD[0x3]; // 0x5dd(0x03)
 
-	void SetUV(int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetUV // Native|Public|BlueprintCallable // @ game+0x2f4e020
-	void SetSpriteAndUV(struct UTexture2D* NewSprite, int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetSpriteAndUV // Native|Public|BlueprintCallable // @ game+0x2f4cf90
-	void SetSprite(struct UTexture2D* NewSprite); // Function Engine.BillboardComponent.SetSprite // Native|Public|BlueprintCallable // @ game+0x2f4cf00
+	void SetUV(int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetUV // Native|Public|BlueprintCallable // @ game+0x2f504b0
+	void SetSpriteAndUV(struct UTexture2D* NewSprite, int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetSpriteAndUV // Native|Public|BlueprintCallable // @ game+0x2f4f420
+	void SetSprite(struct UTexture2D* NewSprite); // Function Engine.BillboardComponent.SetSprite // Native|Public|BlueprintCallable // @ game+0x2f4f390
 };
 
 // Class Engine.BrushComponent
@@ -5504,7 +5504,7 @@ struct ULineBatchComponent : UPrimitiveComponent {
 struct UMaterialBillboardComponent : UPrimitiveComponent {
 	struct TArray<struct FMaterialSpriteElement> Elements; // 0x5b8(0x10)
 
-	void AddElement(struct UMaterialInterface* Material, struct UCurveFloat* DistanceToOpacityCurve, bool bSizeIsInScreenSpace, float BaseSizeX, float BaseSizeY, struct UCurveFloat* DistanceToSizeCurve); // Function Engine.MaterialBillboardComponent.AddElement // Native|Public|BlueprintCallable // @ game+0x2f3a860
+	void AddElement(struct UMaterialInterface* Material, struct UCurveFloat* DistanceToOpacityCurve, bool bSizeIsInScreenSpace, float BaseSizeX, float BaseSizeY, struct UCurveFloat* DistanceToSizeCurve); // Function Engine.MaterialBillboardComponent.AddElement // Native|Public|BlueprintCallable // @ game+0x2f3ccf0
 };
 
 // Class Engine.CollisionProfile
@@ -5549,9 +5549,9 @@ struct UStaticMesh : UObject {
 	struct TArray<struct UAssetUserData*> AssetUserData; // 0x120(0x10)
 	struct UNavCollision* NavCollision; // 0x130(0x08)
 
-	int32_t GetNumUVChannels(int32_t LodLevel); // Function Engine.StaticMesh.GetNumUVChannels // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41ec0
-	int32_t GetNumLODsBP(); // Function Engine.StaticMesh.GetNumLODsBP // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f41e90
-	struct FBox GetBoundingBox(); // Function Engine.StaticMesh.GetBoundingBox // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f401d0
+	int32_t GetNumUVChannels(int32_t LodLevel); // Function Engine.StaticMesh.GetNumUVChannels // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44350
+	int32_t GetNumLODsBP(); // Function Engine.StaticMesh.GetNumLODsBP // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44320
+	struct FBox GetBoundingBox(); // Function Engine.StaticMesh.GetBoundingBox // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42660
 };
 
 // Class Engine.MergedCollisionComponent
@@ -5560,8 +5560,8 @@ struct UMergedCollisionComponent : UPrimitiveComponent {
 	struct TArray<struct FMergedCollisionComponentStaticMeshInstanceData> PerInstanceData; // 0x5b8(0x10)
 	char UnknownData_5D0[0x10]; // 0x5d0(0x10)
 
-	struct UStaticMesh* GetStaticMeshByInstanceBodyIndex(int32_t InstanceBodyIndex); // Function Engine.MergedCollisionComponent.GetStaticMeshByInstanceBodyIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42f90
-	int32_t GetOwningActorCrc32ByInstanceBodyIndex(int32_t InstanceBodyIndex); // Function Engine.MergedCollisionComponent.GetOwningActorCrc32ByInstanceBodyIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42030
+	struct UStaticMesh* GetStaticMeshByInstanceBodyIndex(int32_t InstanceBodyIndex); // Function Engine.MergedCollisionComponent.GetStaticMeshByInstanceBodyIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45420
+	int32_t GetOwningActorCrc32ByInstanceBodyIndex(int32_t InstanceBodyIndex); // Function Engine.MergedCollisionComponent.GetOwningActorCrc32ByInstanceBodyIndex // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f444c0
 };
 
 // Class Engine.DestructibleComponent
@@ -5578,10 +5578,10 @@ struct UDestructibleComponent : USkinnedMeshComponent {
 	struct FMulticastDelegate OnComponentFracture; // 0x720(0x10)
 	char UnknownData_730[0x80]; // 0x730(0x80)
 
-	void SetDestructibleMesh(struct UDestructibleMesh* NewMesh); // Function Engine.DestructibleComponent.SetDestructibleMesh // Final|Native|Public|BlueprintCallable // @ game+0x2f499c0
-	struct UDestructibleMesh* GetDestructibleMesh(); // Function Engine.DestructibleComponent.GetDestructibleMesh // Final|Native|Public|BlueprintCallable // @ game+0x2f40960
-	void ApplyRadiusDamage(float BaseDamage, struct FVector HurtOrigin, float DamageRadius, float ImpulseStrength, bool bFullDamage); // Function Engine.DestructibleComponent.ApplyRadiusDamage // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3c0a0
-	void ApplyDamage(float DamageAmount, struct FVector HitLocation, struct FVector ImpulseDir, float ImpulseStrength); // Function Engine.DestructibleComponent.ApplyDamage // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3b4f0
+	void SetDestructibleMesh(struct UDestructibleMesh* NewMesh); // Function Engine.DestructibleComponent.SetDestructibleMesh // Final|Native|Public|BlueprintCallable // @ game+0x2f4be50
+	struct UDestructibleMesh* GetDestructibleMesh(); // Function Engine.DestructibleComponent.GetDestructibleMesh // Final|Native|Public|BlueprintCallable // @ game+0x2f42df0
+	void ApplyRadiusDamage(float BaseDamage, struct FVector HurtOrigin, float DamageRadius, float ImpulseStrength, bool bFullDamage); // Function Engine.DestructibleComponent.ApplyRadiusDamage // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3e530
+	void ApplyDamage(float DamageAmount, struct FVector HitLocation, struct FVector ImpulseDir, float ImpulseStrength); // Function Engine.DestructibleComponent.ApplyDamage // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3d980
 };
 
 // Class Engine.PoseableMeshComponent
@@ -5589,15 +5589,15 @@ struct UDestructibleComponent : USkinnedMeshComponent {
 struct UPoseableMeshComponent : USkinnedMeshComponent {
 	char UnknownData_6F0[0xd0]; // 0x6f0(0xd0)
 
-	void SetBoneTransformByName(struct FName BoneName, struct FTransform InTransform, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneTransformByName // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f487e0
-	void SetBoneScaleByName(struct FName BoneName, struct FVector InScale3D, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneScaleByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f48530
-	void SetBoneRotationByName(struct FName BoneName, struct FRotator InRotation, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneRotationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f48420
-	void SetBoneLocationByName(struct FName BoneName, struct FVector InLocation, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneLocationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f48310
-	void ResetBoneTransformByName(struct FName BoneName); // Function Engine.PoseableMeshComponent.ResetBoneTransformByName // Final|Native|Public|BlueprintCallable // @ game+0x2f46ad0
-	struct FTransform GetBoneTransformByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneTransformByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3ff20
-	struct FVector GetBoneScaleByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneScaleByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3fe50
-	struct FRotator GetBoneRotationByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneRotationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3fd80
-	struct FVector GetBoneLocationByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneLocationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3fcb0
+	void SetBoneTransformByName(struct FName BoneName, struct FTransform InTransform, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneTransformByName // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4ac70
+	void SetBoneScaleByName(struct FName BoneName, struct FVector InScale3D, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneScaleByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a9c0
+	void SetBoneRotationByName(struct FName BoneName, struct FRotator InRotation, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneRotationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a8b0
+	void SetBoneLocationByName(struct FName BoneName, struct FVector InLocation, char BoneSpace); // Function Engine.PoseableMeshComponent.SetBoneLocationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a7a0
+	void ResetBoneTransformByName(struct FName BoneName); // Function Engine.PoseableMeshComponent.ResetBoneTransformByName // Final|Native|Public|BlueprintCallable // @ game+0x2f48f60
+	struct FTransform GetBoneTransformByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneTransformByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f423b0
+	struct FVector GetBoneScaleByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneScaleByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f422e0
+	struct FRotator GetBoneRotationByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneRotationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f42210
+	struct FVector GetBoneLocationByName(struct FName BoneName, char BoneSpace); // Function Engine.PoseableMeshComponent.GetBoneLocationByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f42140
 };
 
 // Class Engine.PoseableSkeletalMeshComponent
@@ -5605,10 +5605,10 @@ struct UPoseableMeshComponent : USkinnedMeshComponent {
 struct UPoseableSkeletalMeshComponent : USkeletalMeshComponent {
 	char UnknownData_9C0[0x10]; // 0x9c0(0x10)
 
-	void SwitchPoseMode(char NewMode); // Function Engine.PoseableSkeletalMeshComponent.SwitchPoseMode // Final|Native|Public|BlueprintCallable // @ game+0x2f502d0
-	void SetBoneTransformByName(struct FName BoneName, struct FTransform InTransform, char BoneSpace, bool bApplyRefPose); // Function Engine.PoseableSkeletalMeshComponent.SetBoneTransformByName // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f48940
-	void SetBoneTransformByIndex(int32_t BoneIndex, struct FTransform InTransform, char BoneSpace, bool bApplyRefPose); // Function Engine.PoseableSkeletalMeshComponent.SetBoneTransformByIndex // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f48640
-	struct FTransform GetBoneTransformByName(struct FName BoneName, char BoneSpace, bool bApplyRefPose); // Function Engine.PoseableSkeletalMeshComponent.GetBoneTransformByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f40020
+	void SwitchPoseMode(char NewMode); // Function Engine.PoseableSkeletalMeshComponent.SwitchPoseMode // Final|Native|Public|BlueprintCallable // @ game+0x2f52760
+	void SetBoneTransformByName(struct FName BoneName, struct FTransform InTransform, char BoneSpace, bool bApplyRefPose); // Function Engine.PoseableSkeletalMeshComponent.SetBoneTransformByName // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4add0
+	void SetBoneTransformByIndex(int32_t BoneIndex, struct FTransform InTransform, char BoneSpace, bool bApplyRefPose); // Function Engine.PoseableSkeletalMeshComponent.SetBoneTransformByIndex // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4aad0
+	struct FTransform GetBoneTransformByName(struct FName BoneName, char BoneSpace, bool bApplyRefPose); // Function Engine.PoseableSkeletalMeshComponent.GetBoneTransformByName // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f424b0
 };
 
 // Class Engine.FlatWaterMeshComponent
@@ -5637,11 +5637,11 @@ struct UFlatWaterMeshComponent : UStaticMeshComponent {
 	struct TArray<struct FFlatWaterMeshTextureOverride> TextureOverrides; // 0x6a0(0x10)
 	char UnknownData_6B0[0x10]; // 0x6b0(0x10)
 
-	void UpdateBoundary(struct AActor* BoundaryActor); // Function Engine.FlatWaterMeshComponent.UpdateBoundary // Final|Native|Public|BlueprintCallable // @ game+0x2f50590
-	void SetTexture(int32_t MaterialIndex, struct FName Name, struct UTexture* Texture); // Function Engine.FlatWaterMeshComponent.SetTexture // Final|Native|Public|BlueprintCallable // @ game+0x2f4dc90
-	void SetScalarValue(int32_t MaterialIndex, struct FName Name, float Value); // Function Engine.FlatWaterMeshComponent.SetScalarValue // Final|Native|Public|BlueprintCallable // @ game+0x2f4c7b0
-	void PlaceDrop(struct FVector2D Position, float Size, float Height); // Function Engine.FlatWaterMeshComponent.PlaceDrop // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f45240
-	void CreateBoundaryMap(struct AActor* BoundaryActor, float ZNearDistance, float ZFarDistance, int32_t TextureSize); // Function Engine.FlatWaterMeshComponent.CreateBoundaryMap // Final|Native|Public|BlueprintCallable // @ game+0x2f3e1a0
+	void UpdateBoundary(struct AActor* BoundaryActor); // Function Engine.FlatWaterMeshComponent.UpdateBoundary // Final|Native|Public|BlueprintCallable // @ game+0x2f52a20
+	void SetTexture(int32_t MaterialIndex, struct FName Name, struct UTexture* Texture); // Function Engine.FlatWaterMeshComponent.SetTexture // Final|Native|Public|BlueprintCallable // @ game+0x2f50120
+	void SetScalarValue(int32_t MaterialIndex, struct FName Name, float Value); // Function Engine.FlatWaterMeshComponent.SetScalarValue // Final|Native|Public|BlueprintCallable // @ game+0x2f4ec40
+	void PlaceDrop(struct FVector2D Position, float Size, float Height); // Function Engine.FlatWaterMeshComponent.PlaceDrop // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f476d0
+	void CreateBoundaryMap(struct AActor* BoundaryActor, float ZNearDistance, float ZFarDistance, int32_t TextureSize); // Function Engine.FlatWaterMeshComponent.CreateBoundaryMap // Final|Native|Public|BlueprintCallable // @ game+0x2f40630
 };
 
 // Class Engine.InstancedCoverageMeshComponent
@@ -5674,8 +5674,8 @@ struct UInstancedCoverageMeshComponent : UStaticMeshComponent {
 	char UnknownData_6A4[0x4]; // 0x6a4(0x04)
 	struct UStaticMesh* CoveredMesh; // 0x6a8(0x08)
 
-	void SetBaseMeshComponent(struct UStaticMeshComponent* BaseMeshComponent); // Function Engine.InstancedCoverageMeshComponent.SetBaseMeshComponent // Native|Public|BlueprintCallable // @ game+0x2f48140
-	struct UStaticMeshComponent* BaseMeshComponent(); // Function Engine.InstancedCoverageMeshComponent.BaseMeshComponent // Native|Public|BlueprintCallable // @ game+0x2f3c5a0
+	void SetBaseMeshComponent(struct UStaticMeshComponent* BaseMeshComponent); // Function Engine.InstancedCoverageMeshComponent.SetBaseMeshComponent // Native|Public|BlueprintCallable // @ game+0x2f4a5d0
+	struct UStaticMeshComponent* BaseMeshComponent(); // Function Engine.InstancedCoverageMeshComponent.BaseMeshComponent // Native|Public|BlueprintCallable // @ game+0x2f3ea30
 };
 
 // Class Engine.MergedStaticMeshComponent
@@ -5706,7 +5706,7 @@ struct UMobileInstancedStaticMeshComponent : UStaticMeshComponent {
 	struct UPhysicsSerializer* PhysicsSerializer; // 0x670(0x08)
 	char UnknownData_678[0x28]; // 0x678(0x28)
 
-	int32_t AddInstance(struct FTransform Transform); // Function Engine.MobileInstancedStaticMeshComponent.AddInstance // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ac70
+	int32_t AddInstance(struct FTransform Transform); // Function Engine.MobileInstancedStaticMeshComponent.AddInstance // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3d100
 };
 
 // Class Engine.SplineMeshComponent
@@ -5730,36 +5730,36 @@ struct USplineMeshComponent : UStaticMeshComponent {
 	char UnknownData_6B8_1 : 7; // 0x6b8(0x01)
 	char UnknownData_6B9[0x7]; // 0x6b9(0x07)
 
-	void UpdateMesh(); // Function Engine.SplineMeshComponent.UpdateMesh // Final|Native|Public|BlueprintCallable // @ game+0x2f508b0
-	void SetStartTangent(struct FVector StartTangent, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartTangent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d700
-	void SetStartScale(struct FVector2D StartScale, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d640
-	void SetStartRoll(float StartRoll, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartRoll // Final|Native|Public|BlueprintCallable // @ game+0x2f4d570
-	void SetStartPosition(struct FVector StartPos, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartPosition // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d490
-	void SetStartOffset(struct FVector2D StartOffset, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartOffset // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d3d0
-	void SetStartAndEnd(struct FVector StartPos, struct FVector StartTangent, struct FVector EndPos, struct FVector EndTangent, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartAndEnd // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4d110
-	void SetSplineUpDir(struct FVector InSplineUpDir, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetSplineUpDir // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4ce20
-	void SetForwardAxis(char InForwardAxis, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetForwardAxis // Final|Native|Public|BlueprintCallable // @ game+0x2f4ab50
-	void SetEndTangent(struct FVector EndTangent, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndTangent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a300
-	void SetEndScale(struct FVector2D EndScale, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a240
-	void SetEndRoll(float EndRoll, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndRoll // Final|Native|Public|BlueprintCallable // @ game+0x2f4a170
-	void SetEndPosition(struct FVector EndPos, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndPosition // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4a090
-	void SetEndOffset(struct FVector2D EndOffset, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndOffset // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f49fd0
-	void SetBoundaryMin(float InBoundaryMin, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMin // Final|Native|Public|BlueprintCallable // @ game+0x2f48c80
-	void SetBoundaryMax(float InBoundaryMax, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMax // Final|Native|Public|BlueprintCallable // @ game+0x2f48bb0
-	struct FVector GetStartTangent(); // Function Engine.SplineMeshComponent.GetStartTangent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42e90
-	struct FVector2D GetStartScale(); // Function Engine.SplineMeshComponent.GetStartScale // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42e50
-	float GetStartRoll(); // Function Engine.SplineMeshComponent.GetStartRoll // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42e20
-	struct FVector GetStartPosition(); // Function Engine.SplineMeshComponent.GetStartPosition // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42de0
-	struct FVector2D GetStartOffset(); // Function Engine.SplineMeshComponent.GetStartOffset // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42da0
-	struct FVector GetSplineUpDir(); // Function Engine.SplineMeshComponent.GetSplineUpDir // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42ca0
-	char GetForwardAxis(); // Function Engine.SplineMeshComponent.GetForwardAxis // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40ac0
-	struct FVector GetEndTangent(); // Function Engine.SplineMeshComponent.GetEndTangent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40a80
-	struct FVector2D GetEndScale(); // Function Engine.SplineMeshComponent.GetEndScale // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40a40
-	float GetEndRoll(); // Function Engine.SplineMeshComponent.GetEndRoll // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40a10
-	struct FVector GetEndPosition(); // Function Engine.SplineMeshComponent.GetEndPosition // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f409d0
-	struct FVector2D GetEndOffset(); // Function Engine.SplineMeshComponent.GetEndOffset // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40990
-	float GetBoundaryMin(); // Function Engine.SplineMeshComponent.GetBoundaryMin // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f401a0
-	float GetBoundaryMax(); // Function Engine.SplineMeshComponent.GetBoundaryMax // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f40170
+	void UpdateMesh(); // Function Engine.SplineMeshComponent.UpdateMesh // Final|Native|Public|BlueprintCallable // @ game+0x2f52d40
+	void SetStartTangent(struct FVector StartTangent, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartTangent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4fb90
+	void SetStartScale(struct FVector2D StartScale, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4fad0
+	void SetStartRoll(float StartRoll, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartRoll // Final|Native|Public|BlueprintCallable // @ game+0x2f4fa00
+	void SetStartPosition(struct FVector StartPos, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartPosition // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4f920
+	void SetStartOffset(struct FVector2D StartOffset, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartOffset // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4f860
+	void SetStartAndEnd(struct FVector StartPos, struct FVector StartTangent, struct FVector EndPos, struct FVector EndTangent, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartAndEnd // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4f5a0
+	void SetSplineUpDir(struct FVector InSplineUpDir, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetSplineUpDir // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4f2b0
+	void SetForwardAxis(char InForwardAxis, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetForwardAxis // Final|Native|Public|BlueprintCallable // @ game+0x2f4cfe0
+	void SetEndTangent(struct FVector EndTangent, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndTangent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4c790
+	void SetEndScale(struct FVector2D EndScale, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndScale // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4c6d0
+	void SetEndRoll(float EndRoll, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndRoll // Final|Native|Public|BlueprintCallable // @ game+0x2f4c600
+	void SetEndPosition(struct FVector EndPos, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndPosition // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4c520
+	void SetEndOffset(struct FVector2D EndOffset, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndOffset // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4c460
+	void SetBoundaryMin(float InBoundaryMin, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMin // Final|Native|Public|BlueprintCallable // @ game+0x2f4b110
+	void SetBoundaryMax(float InBoundaryMax, bool bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMax // Final|Native|Public|BlueprintCallable // @ game+0x2f4b040
+	struct FVector GetStartTangent(); // Function Engine.SplineMeshComponent.GetStartTangent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45320
+	struct FVector2D GetStartScale(); // Function Engine.SplineMeshComponent.GetStartScale // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f452e0
+	float GetStartRoll(); // Function Engine.SplineMeshComponent.GetStartRoll // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f452b0
+	struct FVector GetStartPosition(); // Function Engine.SplineMeshComponent.GetStartPosition // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45270
+	struct FVector2D GetStartOffset(); // Function Engine.SplineMeshComponent.GetStartOffset // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45230
+	struct FVector GetSplineUpDir(); // Function Engine.SplineMeshComponent.GetSplineUpDir // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45130
+	char GetForwardAxis(); // Function Engine.SplineMeshComponent.GetForwardAxis // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42f50
+	struct FVector GetEndTangent(); // Function Engine.SplineMeshComponent.GetEndTangent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42f10
+	struct FVector2D GetEndScale(); // Function Engine.SplineMeshComponent.GetEndScale // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42ed0
+	float GetEndRoll(); // Function Engine.SplineMeshComponent.GetEndRoll // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42ea0
+	struct FVector GetEndPosition(); // Function Engine.SplineMeshComponent.GetEndPosition // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42e60
+	struct FVector2D GetEndOffset(); // Function Engine.SplineMeshComponent.GetEndOffset // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42e20
+	float GetBoundaryMin(); // Function Engine.SplineMeshComponent.GetBoundaryMin // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42630
+	float GetBoundaryMax(); // Function Engine.SplineMeshComponent.GetBoundaryMax // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42600
 };
 
 // Class Engine.ModelComponent
@@ -5791,9 +5791,9 @@ struct UBoxComponent : UShapeComponent {
 	struct FVector BoxExtent; // 0x5d8(0x0c)
 	char UnknownData_5EC[0x4]; // 0x5ec(0x04)
 
-	void SetBoxExtent(struct FVector InBoxExtent, bool bUpdateOverlaps); // Function Engine.BoxComponent.SetBoxExtent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f48d50
-	struct FVector GetUnscaledBoxExtent(); // Function Engine.BoxComponent.GetUnscaledBoxExtent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f433d0
-	struct FVector GetScaledBoxExtent(); // Function Engine.BoxComponent.GetScaledBoxExtent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f429b0
+	void SetBoxExtent(struct FVector InBoxExtent, bool bUpdateOverlaps); // Function Engine.BoxComponent.SetBoxExtent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4b1e0
+	struct FVector GetUnscaledBoxExtent(); // Function Engine.BoxComponent.GetUnscaledBoxExtent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45860
+	struct FVector GetScaledBoxExtent(); // Function Engine.BoxComponent.GetScaledBoxExtent // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44e40
 };
 
 // Class Engine.SphereComponent
@@ -5801,10 +5801,10 @@ struct UBoxComponent : UShapeComponent {
 struct USphereComponent : UShapeComponent {
 	float SphereRadius; // 0x5d8(0x04)
 
-	void SetSphereRadius(float InSphereRadius, bool bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4cd50
-	float GetUnscaledSphereRadius(); // Function Engine.SphereComponent.GetUnscaledSphereRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43530
-	float GetShapeScale(); // Function Engine.SphereComponent.GetShapeScale // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42c60
-	float GetScaledSphereRadius(); // Function Engine.SphereComponent.GetScaledSphereRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42bd0
+	void SetSphereRadius(float InSphereRadius, bool bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius // Final|Native|Public|BlueprintCallable // @ game+0x2f4f1e0
+	float GetUnscaledSphereRadius(); // Function Engine.SphereComponent.GetUnscaledSphereRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f459c0
+	float GetShapeScale(); // Function Engine.SphereComponent.GetShapeScale // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f450f0
+	float GetScaledSphereRadius(); // Function Engine.SphereComponent.GetScaledSphereRadius // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45060
 };
 
 // Class Engine.DrawSphereComponent
@@ -5833,18 +5833,18 @@ struct UTextRenderComponent : UPrimitiveComponent {
 	float HorizSpacingAdjust; // 0x618(0x04)
 	char bAlwaysRenderAsText : 1; // 0x61c(0x01)
 
-	void SetYScale(float Value); // Function Engine.TextRenderComponent.SetYScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4e820
-	void SetXScale(float Value); // Function Engine.TextRenderComponent.SetXScale // Final|Native|Public|BlueprintCallable // @ game+0x2f4e7a0
-	void SetWorldSize(float Value); // Function Engine.TextRenderComponent.SetWorldSize // Final|Native|Public|BlueprintCallable // @ game+0x2f4e720
-	void SetTextRenderColor(struct FColor Value); // Function Engine.TextRenderComponent.SetTextRenderColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4dc20
-	void SetTextMaterial(struct UMaterialInterface* Material); // Function Engine.TextRenderComponent.SetTextMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2f4dba0
-	void SetText(struct FString Value); // Function Engine.TextRenderComponent.SetText // Final|Native|Public|BlueprintCallable // @ game+0x2f4db00
-	void SetHorizSpacingAdjust(float Value); // Function Engine.TextRenderComponent.SetHorizSpacingAdjust // Final|Native|Public|BlueprintCallable // @ game+0x2f4afa0
-	void SetHorizontalAlignment(char Value); // Function Engine.TextRenderComponent.SetHorizontalAlignment // Final|Native|Public|BlueprintCallable // @ game+0x2f4b020
-	void SetFont(struct UFont* Value); // Function Engine.TextRenderComponent.SetFont // Final|Native|Public|BlueprintCallable // @ game+0x2f4aa50
-	void K2_SetText(struct FText Value); // Function Engine.TextRenderComponent.K2_SetText // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f440a0
-	struct FVector GetTextWorldSize(); // Function Engine.TextRenderComponent.GetTextWorldSize // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43360
-	struct FVector GetTextLocalSize(); // Function Engine.TextRenderComponent.GetTextLocalSize // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43320
+	void SetYScale(float Value); // Function Engine.TextRenderComponent.SetYScale // Final|Native|Public|BlueprintCallable // @ game+0x2f50cb0
+	void SetXScale(float Value); // Function Engine.TextRenderComponent.SetXScale // Final|Native|Public|BlueprintCallable // @ game+0x2f50c30
+	void SetWorldSize(float Value); // Function Engine.TextRenderComponent.SetWorldSize // Final|Native|Public|BlueprintCallable // @ game+0x2f50bb0
+	void SetTextRenderColor(struct FColor Value); // Function Engine.TextRenderComponent.SetTextRenderColor // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f500b0
+	void SetTextMaterial(struct UMaterialInterface* Material); // Function Engine.TextRenderComponent.SetTextMaterial // Final|Native|Public|BlueprintCallable // @ game+0x2f50030
+	void SetText(struct FString Value); // Function Engine.TextRenderComponent.SetText // Final|Native|Public|BlueprintCallable // @ game+0x2f4ff90
+	void SetHorizSpacingAdjust(float Value); // Function Engine.TextRenderComponent.SetHorizSpacingAdjust // Final|Native|Public|BlueprintCallable // @ game+0x2f4d430
+	void SetHorizontalAlignment(char Value); // Function Engine.TextRenderComponent.SetHorizontalAlignment // Final|Native|Public|BlueprintCallable // @ game+0x2f4d4b0
+	void SetFont(struct UFont* Value); // Function Engine.TextRenderComponent.SetFont // Final|Native|Public|BlueprintCallable // @ game+0x2f4cee0
+	void K2_SetText(struct FText Value); // Function Engine.TextRenderComponent.K2_SetText // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x2f46530
+	struct FVector GetTextWorldSize(); // Function Engine.TextRenderComponent.GetTextWorldSize // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f457f0
+	struct FVector GetTextLocalSize(); // Function Engine.TextRenderComponent.GetTextLocalSize // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x2f457b0
 };
 
 // Class Engine.VectorFieldComponent
@@ -5857,7 +5857,7 @@ struct UVectorFieldComponent : UPrimitiveComponent {
 	char UnknownData_5D0_1 : 7; // 0x5d0(0x01)
 	char UnknownData_5D1[0xf]; // 0x5d1(0x0f)
 
-	void SetIntensity(float NewIntensity); // Function Engine.VectorFieldComponent.SetIntensity // Native|Public|BlueprintCallable // @ game+0x2f4b3e0
+	void SetIntensity(float NewIntensity); // Function Engine.VectorFieldComponent.SetIntensity // Native|Public|BlueprintCallable // @ game+0x2f4d870
 };
 
 // Class Engine.RadialForceComponent
@@ -5876,9 +5876,9 @@ struct URadialForceComponent : USceneComponent {
 	struct TArray<char> ObjectTypesToAffect; // 0x2f8(0x10)
 	char UnknownData_308[0x8]; // 0x308(0x08)
 
-	void RemoveObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect // Native|Public|BlueprintCallable // @ game+0x2f46980
-	void FireImpulse(); // Function Engine.RadialForceComponent.FireImpulse // Native|Public|BlueprintCallable // @ game+0x2f3efb0
-	void AddObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.AddObjectTypeToAffect // Native|Public|BlueprintCallable // @ game+0x2f3aee0
+	void RemoveObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect // Native|Public|BlueprintCallable // @ game+0x2f48e10
+	void FireImpulse(); // Function Engine.RadialForceComponent.FireImpulse // Native|Public|BlueprintCallable // @ game+0x2f41440
+	void AddObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.AddObjectTypeToAffect // Native|Public|BlueprintCallable // @ game+0x2f3d370
 };
 
 // Class Engine.ReflectionCaptureComponent
@@ -5894,12 +5894,12 @@ struct UReflectionCaptureComponent : USceneComponent {
 	struct FGuid StateId; // 0x30c(0x10)
 	char UnknownData_31C[0x54]; // 0x31c(0x54)
 
-	void UpdateReflectionCapture(); // Function Engine.ReflectionCaptureComponent.UpdateReflectionCapture // Final|Native|Public|BlueprintCallable // @ game+0x2f508d0
-	void UpdateAllReflectionCaptures(); // Function Engine.ReflectionCaptureComponent.UpdateAllReflectionCaptures // Final|Native|Public|BlueprintCallable // @ game+0x2f50570
-	void SetTint(struct FLinearColor Value); // Function Engine.ReflectionCaptureComponent.SetTint // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f4df10
-	void SetShadowBrightness(float Value); // Function Engine.ReflectionCaptureComponent.SetShadowBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4c8c0
-	void SetLPVOcclusionBrightness(float Value); // Function Engine.ReflectionCaptureComponent.SetLPVOcclusionBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b560
-	void SetBrightness(float Value); // Function Engine.ReflectionCaptureComponent.SetBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f48e30
+	void UpdateReflectionCapture(); // Function Engine.ReflectionCaptureComponent.UpdateReflectionCapture // Final|Native|Public|BlueprintCallable // @ game+0x2f52d60
+	void UpdateAllReflectionCaptures(); // Function Engine.ReflectionCaptureComponent.UpdateAllReflectionCaptures // Final|Native|Public|BlueprintCallable // @ game+0x2f52a00
+	void SetTint(struct FLinearColor Value); // Function Engine.ReflectionCaptureComponent.SetTint // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f503a0
+	void SetShadowBrightness(float Value); // Function Engine.ReflectionCaptureComponent.SetShadowBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4ed50
+	void SetLPVOcclusionBrightness(float Value); // Function Engine.ReflectionCaptureComponent.SetLPVOcclusionBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4d9f0
+	void SetBrightness(float Value); // Function Engine.ReflectionCaptureComponent.SetBrightness // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b2c0
 };
 
 // Class Engine.BoxReflectionCaptureComponent
@@ -5940,8 +5940,8 @@ struct USceneCaptureComponent : USceneComponent {
 	struct TArray<struct FEngineShowFlagsSetting> ShowFlagSettings; // 0x2f8(0x10)
 	char UnknownData_308[0x48]; // 0x308(0x48)
 
-	void HideComponent(struct UPrimitiveComponent* InComponent); // Function Engine.SceneCaptureComponent.HideComponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f43b80
-	void HideActorComponents(struct AActor* InActor); // Function Engine.SceneCaptureComponent.HideActorComponents // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f43b00
+	void HideComponent(struct UPrimitiveComponent* InComponent); // Function Engine.SceneCaptureComponent.HideComponent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f46010
+	void HideActorComponents(struct AActor* InActor); // Function Engine.SceneCaptureComponent.HideActorComponents // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f45f90
 };
 
 // Class Engine.SceneCaptureComponent2D
@@ -5964,8 +5964,8 @@ struct USceneCaptureComponent2D : USceneCaptureComponent {
 	char UnknownData_8B9[0x3]; // 0x8b9(0x03)
 	int32_t LandscapeLODOverride; // 0x8bc(0x04)
 
-	void UpdateContent(); // Function Engine.SceneCaptureComponent2D.UpdateContent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f50610
-	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.SceneCaptureComponent2D.AddOrUpdateBlendable // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f3b150
+	void UpdateContent(); // Function Engine.SceneCaptureComponent2D.UpdateContent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f52aa0
+	void AddOrUpdateBlendable(TScriptInterface<struct UBlendableInterface> InBlendableObject, float InWeight); // Function Engine.SceneCaptureComponent2D.AddOrUpdateBlendable // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f3d5e0
 };
 
 // Class Engine.SceneCaptureComponentCube
@@ -5973,7 +5973,7 @@ struct USceneCaptureComponent2D : USceneCaptureComponent {
 struct USceneCaptureComponentCube : USceneCaptureComponent {
 	struct UTextureRenderTargetCube* TextureTarget; // 0x348(0x08)
 
-	void UpdateContent(); // Function Engine.SceneCaptureComponentCube.UpdateContent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f50630
+	void UpdateContent(); // Function Engine.SceneCaptureComponentCube.UpdateContent // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f52ac0
 };
 
 // Class Engine.SpringArmComponent
@@ -6026,24 +6026,24 @@ struct UWindDirectionalSourceComponent : USceneComponent {
 struct UTimelineComponent : UActorComponent {
 	struct FTimeline TheTimeline; // 0xc8(0x98)
 
-	void Stop(); // Function Engine.TimelineComponent.Stop // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f500d0
-	void SetTimelineLengthMode(char NewLengthMode); // Function Engine.TimelineComponent.SetTimelineLengthMode // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4de10
-	void SetTimelineLength(float NewLength); // Function Engine.TimelineComponent.SetTimelineLength // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4dd90
-	void SetPlayRate(float NewRate); // Function Engine.TimelineComponent.SetPlayRate // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4c220
-	void SetPlaybackPosition(float NewPosition, bool bFireEvents, bool bFireUpdate); // Function Engine.TimelineComponent.SetPlaybackPosition // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4c2a0
-	void SetNewTime(float NewTime); // Function Engine.TimelineComponent.SetNewTime // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4be90
-	void SetLooping(bool bNewLooping); // Function Engine.TimelineComponent.SetLooping // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4b980
-	void ReverseFromEnd(); // Function Engine.TimelineComponent.ReverseFromEnd // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f46b70
-	void Reverse(); // Function Engine.TimelineComponent.Reverse // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f46b50
-	void PlayFromStart(); // Function Engine.TimelineComponent.PlayFromStart // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f459b0
-	void Play(); // Function Engine.TimelineComponent.Play // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f453c0
-	void OnRep_Timeline(); // Function Engine.TimelineComponent.OnRep_Timeline // Final|Native|Public // @ game+0x2f44f60
-	bool IsReversing(); // Function Engine.TimelineComponent.IsReversing // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43ed0
-	bool IsPlaying(); // Function Engine.TimelineComponent.IsPlaying // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43de0
-	bool IsLooping(); // Function Engine.TimelineComponent.IsLooping // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f43d80
-	float GetTimelineLength(); // Function Engine.TimelineComponent.GetTimelineLength // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f433a0
-	float GetPlayRate(); // Function Engine.TimelineComponent.GetPlayRate // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42200
-	float GetPlaybackPosition(); // Function Engine.TimelineComponent.GetPlaybackPosition // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f42230
+	void Stop(); // Function Engine.TimelineComponent.Stop // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f52560
+	void SetTimelineLengthMode(char NewLengthMode); // Function Engine.TimelineComponent.SetTimelineLengthMode // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f502a0
+	void SetTimelineLength(float NewLength); // Function Engine.TimelineComponent.SetTimelineLength // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f50220
+	void SetPlayRate(float NewRate); // Function Engine.TimelineComponent.SetPlayRate // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4e6b0
+	void SetPlaybackPosition(float NewPosition, bool bFireEvents, bool bFireUpdate); // Function Engine.TimelineComponent.SetPlaybackPosition // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4e730
+	void SetNewTime(float NewTime); // Function Engine.TimelineComponent.SetNewTime // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4e320
+	void SetLooping(bool bNewLooping); // Function Engine.TimelineComponent.SetLooping // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f4de10
+	void ReverseFromEnd(); // Function Engine.TimelineComponent.ReverseFromEnd // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f49000
+	void Reverse(); // Function Engine.TimelineComponent.Reverse // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f48fe0
+	void PlayFromStart(); // Function Engine.TimelineComponent.PlayFromStart // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f47e40
+	void Play(); // Function Engine.TimelineComponent.Play // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x2f47850
+	void OnRep_Timeline(); // Function Engine.TimelineComponent.OnRep_Timeline // Final|Native|Public // @ game+0x2f473f0
+	bool IsReversing(); // Function Engine.TimelineComponent.IsReversing // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46360
+	bool IsPlaying(); // Function Engine.TimelineComponent.IsPlaying // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46270
+	bool IsLooping(); // Function Engine.TimelineComponent.IsLooping // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f46210
+	float GetTimelineLength(); // Function Engine.TimelineComponent.GetTimelineLength // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f45830
+	float GetPlayRate(); // Function Engine.TimelineComponent.GetPlayRate // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f44690
+	float GetPlaybackPosition(); // Function Engine.TimelineComponent.GetPlaybackPosition // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x2f446c0
 };
 
 // Class Engine.AggregatableInterface
@@ -6251,17 +6251,17 @@ struct UAnimSingleNodeInstance : UAnimInstance {
 	char UnknownData_518_3 : 5; // 0x518(0x01)
 	char UnknownData_519[0x7]; // 0x519(0x07)
 
-	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim // Final|Native|Public|BlueprintCallable // @ game+0x2f500f0
-	void SetVertexAnimation(struct UVertexAnimation* NewVertexAnim, bool bIsLooping, float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetVertexAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2f4e1f0
-	void SetReverse(bool bInReverse); // Function Engine.AnimSingleNodeInstance.SetReverse // Final|Native|Public|BlueprintCallable // @ game+0x2f4c720
-	void SetPosition(float InPosition, bool bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPosition // Final|Native|Public|BlueprintCallable // @ game+0x2f4c440
-	void SetPlayRate(float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2f4c1a0
-	void SetPlaying(bool bIsPlaying); // Function Engine.AnimSingleNodeInstance.SetPlaying // Final|Native|Public|BlueprintCallable // @ game+0x2f4c3b0
-	void SetLooping(bool bIsLooping); // Function Engine.AnimSingleNodeInstance.SetLooping // Final|Native|Public|BlueprintCallable // @ game+0x2f4b8f0
-	void SetBlendSpaceInput(struct FVector InBlendInput); // Function Engine.AnimSingleNodeInstance.SetBlendSpaceInput // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f48280
-	void SetAnimationAsset(struct UAnimationAsset* NewAsset, bool bIsLooping, float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetAnimationAsset // Native|Public|BlueprintCallable // @ game+0x2f47d10
-	void PlayAnim(bool bIsLooping, float InPlayRate, float InStartPosition); // Function Engine.AnimSingleNodeInstance.PlayAnim // Final|Native|Public|BlueprintCallable // @ game+0x2f453e0
-	float GetLength(); // Function Engine.AnimSingleNodeInstance.GetLength // Final|Native|Public|BlueprintCallable // @ game+0x2f41980
+	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim // Final|Native|Public|BlueprintCallable // @ game+0x2f52580
+	void SetVertexAnimation(struct UVertexAnimation* NewVertexAnim, bool bIsLooping, float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetVertexAnimation // Final|Native|Public|BlueprintCallable // @ game+0x2f50680
+	void SetReverse(bool bInReverse); // Function Engine.AnimSingleNodeInstance.SetReverse // Final|Native|Public|BlueprintCallable // @ game+0x2f4ebb0
+	void SetPosition(float InPosition, bool bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPosition // Final|Native|Public|BlueprintCallable // @ game+0x2f4e8d0
+	void SetPlayRate(float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetPlayRate // Final|Native|Public|BlueprintCallable // @ game+0x2f4e630
+	void SetPlaying(bool bIsPlaying); // Function Engine.AnimSingleNodeInstance.SetPlaying // Final|Native|Public|BlueprintCallable // @ game+0x2f4e840
+	void SetLooping(bool bIsLooping); // Function Engine.AnimSingleNodeInstance.SetLooping // Final|Native|Public|BlueprintCallable // @ game+0x2f4dd80
+	void SetBlendSpaceInput(struct FVector InBlendInput); // Function Engine.AnimSingleNodeInstance.SetBlendSpaceInput // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4a710
+	void SetAnimationAsset(struct UAnimationAsset* NewAsset, bool bIsLooping, float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetAnimationAsset // Native|Public|BlueprintCallable // @ game+0x2f4a1a0
+	void PlayAnim(bool bIsLooping, float InPlayRate, float InStartPosition); // Function Engine.AnimSingleNodeInstance.PlayAnim // Final|Native|Public|BlueprintCallable // @ game+0x2f47870
+	float GetLength(); // Function Engine.AnimSingleNodeInstance.GetLength // Final|Native|Public|BlueprintCallable // @ game+0x2f43e10
 };
 
 // Class Engine.AnimMetaData
@@ -6290,7 +6290,7 @@ struct UAnimNotifyState_Trail : UAnimNotifyState {
 	struct FName WidthScaleCurve; // 0x4c(0x08)
 	char UnknownData_54[0x4]; // 0x54(0x04)
 
-	struct UParticleSystem* OverridePSTemplate(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate // Event|Public|BlueprintEvent|Const // @ game+0x18e3b10
+	struct UParticleSystem* OverridePSTemplate(struct USkeletalMeshComponent* MeshComp, struct UAnimSequenceBase* Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate // Event|Public|BlueprintEvent|Const // @ game+0x18e5fa0
 };
 
 // Class Engine.AnimSet
@@ -6360,12 +6360,12 @@ struct UAvoidanceManager : UObject {
 	float TestHeightDifference; // 0x44(0x04)
 	char UnknownData_48[0x80]; // 0x48(0x80)
 
-	bool RegisterMovementComponent(struct UMovementComponent* MovementComp, float AvoidanceWeight); // Function Engine.AvoidanceManager.RegisterMovementComponent // Final|Native|Public|BlueprintCallable // @ game+0x2f46730
-	int32_t GetObjectCount(); // Function Engine.AvoidanceManager.GetObjectCount // Final|Native|Public|BlueprintCallable // @ game+0x2f41fd0
-	int32_t GetNewAvoidanceUID(); // Function Engine.AvoidanceManager.GetNewAvoidanceUID // Final|Native|Public|BlueprintCallable // @ game+0x2f41cf0
-	struct FVector GetAvoidanceVelocityIgnoringUID(struct FNavAvoidanceData AvoidanceData, float DeltaTime, int32_t IgnoreThisUID); // Function Engine.AvoidanceManager.GetAvoidanceVelocityIgnoringUID // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3fb60
-	struct FVector GetAvoidanceVelocityForComponent(struct UMovementComponent* MovementComp); // Function Engine.AvoidanceManager.GetAvoidanceVelocityForComponent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f3fac0
-	struct FVector GetAvoidanceVelocity(struct FNavAvoidanceData AvoidanceData, float DeltaTime); // Function Engine.AvoidanceManager.GetAvoidanceVelocity // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3f9c0
+	bool RegisterMovementComponent(struct UMovementComponent* MovementComp, float AvoidanceWeight); // Function Engine.AvoidanceManager.RegisterMovementComponent // Final|Native|Public|BlueprintCallable // @ game+0x2f48bc0
+	int32_t GetObjectCount(); // Function Engine.AvoidanceManager.GetObjectCount // Final|Native|Public|BlueprintCallable // @ game+0x2f44460
+	int32_t GetNewAvoidanceUID(); // Function Engine.AvoidanceManager.GetNewAvoidanceUID // Final|Native|Public|BlueprintCallable // @ game+0x2f44180
+	struct FVector GetAvoidanceVelocityIgnoringUID(struct FNavAvoidanceData AvoidanceData, float DeltaTime, int32_t IgnoreThisUID); // Function Engine.AvoidanceManager.GetAvoidanceVelocityIgnoringUID // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f41ff0
+	struct FVector GetAvoidanceVelocityForComponent(struct UMovementComponent* MovementComp); // Function Engine.AvoidanceManager.GetAvoidanceVelocityForComponent // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x2f41f50
+	struct FVector GetAvoidanceVelocity(struct FNavAvoidanceData AvoidanceData, float DeltaTime); // Function Engine.AvoidanceManager.GetAvoidanceVelocity // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f41e50
 };
 
 // Class Engine.AnimBlueprint
@@ -6385,7 +6385,7 @@ struct ULevelScriptBlueprint : UBlueprint {
 // Size: 0x28 (Inherited: 0x28)
 struct UContentStreamingBlueprintLibrary : UBlueprintFunctionLibrary {
 
-	bool BlockUntilStreamingFinished(float TimeLimit); // Function Engine.ContentStreamingBlueprintLibrary.BlockUntilStreamingFinished // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3cb60
+	bool BlockUntilStreamingFinished(float TimeLimit); // Function Engine.ContentStreamingBlueprintLibrary.BlockUntilStreamingFinished // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3eff0
 };
 
 // Class Engine.DataTable
@@ -6399,9 +6399,9 @@ struct UDataTable : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UDataTableFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void GetDataTableRowNames(struct UDataTable* Table, struct TArray<struct FName> OutRowNames); // Function Engine.DataTableFunctionLibrary.GetDataTableRowNames // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f40820
-	bool GetDataTableRowFromName(struct UDataTable* Table, struct FName RowName, struct FTableRowBase OutRow); // Function Engine.DataTableFunctionLibrary.GetDataTableRowFromName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f40720
-	void EvaluateCurveTableRow(struct UCurveTable* CurveTable, struct FName RowName, float InXY, char OutResult, float OutXY); // Function Engine.DataTableFunctionLibrary.EvaluateCurveTableRow // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f3eb20
+	void GetDataTableRowNames(struct UDataTable* Table, struct TArray<struct FName> OutRowNames); // Function Engine.DataTableFunctionLibrary.GetDataTableRowNames // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f42cb0
+	bool GetDataTableRowFromName(struct UDataTable* Table, struct FName RowName, struct FTableRowBase OutRow); // Function Engine.DataTableFunctionLibrary.GetDataTableRowFromName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f42bb0
+	void EvaluateCurveTableRow(struct UCurveTable* CurveTable, struct FName RowName, float InXY, char OutResult, float OutXY); // Function Engine.DataTableFunctionLibrary.EvaluateCurveTableRow // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f40fb0
 };
 
 // Class Engine.DebugDrawService
@@ -6413,16 +6413,16 @@ struct UDebugDrawService : UBlueprintFunctionLibrary {
 // Size: 0x28 (Inherited: 0x28)
 struct UDeformablesBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void ApplyWorldForceToDeformables(struct USkinnedMeshComponent* SkinnedMeshComp, struct FVector WorldSpaceForce); // Function Engine.DeformablesBlueprintFunctionLibrary.ApplyWorldForceToDeformables // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f3c240
+	void ApplyWorldForceToDeformables(struct USkinnedMeshComponent* SkinnedMeshComp, struct FVector WorldSpaceForce); // Function Engine.DeformablesBlueprintFunctionLibrary.ApplyWorldForceToDeformables // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f3e6d0
 };
 
 // Class Engine.FeatureConfigBlueprintFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UFeatureConfigBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void MakeFeatureFlag(struct FFeatureFlag Flag); // Function Engine.FeatureConfigBlueprintFunctionLibrary.MakeFeatureFlag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f44560
-	bool IsFeatureEnabled(struct FFeatureFlag Flag); // Function Engine.FeatureConfigBlueprintFunctionLibrary.IsFeatureEnabled // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f43c00
-	void BreakFeatureFlag(struct FFeatureFlag Flag); // Function Engine.FeatureConfigBlueprintFunctionLibrary.BreakFeatureFlag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f3ced0
+	void MakeFeatureFlag(struct FFeatureFlag Flag); // Function Engine.FeatureConfigBlueprintFunctionLibrary.MakeFeatureFlag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f469f0
+	bool IsFeatureEnabled(struct FFeatureFlag Flag); // Function Engine.FeatureConfigBlueprintFunctionLibrary.IsFeatureEnabled // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f46090
+	void BreakFeatureFlag(struct FFeatureFlag Flag); // Function Engine.FeatureConfigBlueprintFunctionLibrary.BreakFeatureFlag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f3f360
 };
 
 // Class Engine.DialogueTypes
@@ -6434,85 +6434,85 @@ struct UDialogueTypes : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UGameplayStatics : UBlueprintFunctionLibrary {
 
-	void UnloadStreamLevel(struct UObject* WorldContextObject, struct FName LevelName, struct FLatentActionInfo LatentInfo); // Function Engine.GameplayStatics.UnloadStreamLevel // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f50380
-	struct UAudioComponent* SpawnSoundAttached(struct USoundBase* Sound, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, bool bStopWhenAttachedToDestroyed, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnSoundAttached // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f4fd80
-	struct UAudioComponent* SpawnSoundAtLocation(struct UObject* WorldContextObject, struct USoundBase* Sound, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnSoundAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f4fb30
-	struct UAudioComponent* SpawnSound2D(struct UObject* WorldContextObject, struct USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.SpawnSound2D // Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable // @ game+0x2f4f9b0
-	struct UObject* SpawnObject(struct UClass* ObjectClass, struct UObject* Outer); // Function Engine.GameplayStatics.SpawnObject // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4f8f0
-	struct UParticleSystemComponent* SpawnEmitterAttached(struct UParticleSystem* EmitterTemplate, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, bool bAutoDestroy); // Function Engine.GameplayStatics.SpawnEmitterAttached // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f4f6e0
-	struct UParticleSystemComponent* SpawnEmitterAtLocation(struct UObject* WorldContextObject, struct UParticleSystem* EmitterTemplate, struct FVector Location, struct FRotator Rotation, bool bAutoDestroy); // Function Engine.GameplayStatics.SpawnEmitterAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f4f550
-	struct UAudioComponent* SpawnDialogueAttached(struct UDialogueWave* Dialogue, struct FDialogueContext Context, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, bool bStopWhenAttachedToDestroyed, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnDialogueAttached // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4f1a0
-	struct UAudioComponent* SpawnDialogueAtLocation(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnDialogueAtLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f4eed0
-	struct UAudioComponent* SpawnDialogue2D(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.SpawnDialogue2D // Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f4ece0
-	struct UDecalComponent* SpawnDecalAttached(struct UMaterialInterface* DecalMaterial, struct FVector DecalSize, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, float LifeSpan); // Function Engine.GameplayStatics.SpawnDecalAttached // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f4ea80
-	struct UDecalComponent* SpawnDecalAtLocation(struct UObject* WorldContextObject, struct UMaterialInterface* DecalMaterial, struct FVector DecalSize, struct FVector Location, struct FRotator Rotation, float LifeSpan); // Function Engine.GameplayStatics.SpawnDecalAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f4e8a0
-	void SetWorldOriginLocation(struct UObject* WorldContextObject, struct FIntVector NewLocation); // Function Engine.GameplayStatics.SetWorldOriginLocation // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4e660
-	void SetGlobalTimeDilation(struct UObject* WorldContextObject, float TimeDilation); // Function Engine.GameplayStatics.SetGlobalTimeDilation // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4ad60
-	bool SetGamePaused(struct UObject* WorldContextObject, bool bPaused); // Function Engine.GameplayStatics.SetGamePaused // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4aca0
-	void SetBaseSoundMix(struct UObject* WorldContextObject, struct USoundMix* InSoundMix); // Function Engine.GameplayStatics.SetBaseSoundMix // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f481d0
-	bool SaveGameToSlot(struct USaveGame* SaveGameObject, struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.SaveGameToSlot // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f46b90
-	void RemovePlayer(struct APlayerController* Player, bool bDestroyPawn); // Function Engine.GameplayStatics.RemovePlayer // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f46a10
-	void PushSoundMixModifier(struct UObject* WorldContextObject, struct USoundMix* InSoundMixModifier); // Function Engine.GameplayStatics.PushSoundMixModifier // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f46660
-	bool ProjectWorldToScreen(struct APlayerController* Player, struct FVector WorldPosition, struct FVector2D ScreenPosition); // Function Engine.GameplayStatics.ProjectWorldToScreen // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2f46540
-	void PopSoundMixModifier(struct UObject* WorldContextObject, struct USoundMix* InSoundMixModifier); // Function Engine.GameplayStatics.PopSoundMixModifier // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f463b0
-	void PlayWorldCameraShake(struct UObject* WorldContextObject, struct UClass* Shake, struct FVector Epicenter, float InnerRadius, float OuterRadius, float Falloff, bool bOrientShakeTowardsEpicenter); // Function Engine.GameplayStatics.PlayWorldCameraShake // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f461a0
-	void PlaySoundAtLocation(struct UObject* WorldContextObject, struct USoundBase* Sound, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.PlaySoundAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f45f50
-	void PlaySound2D(struct UObject* WorldContextObject, struct USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.PlaySound2D // Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable // @ game+0x2f45dd0
-	void PlayDialogueAtLocation(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.PlayDialogueAtLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f456d0
-	void PlayDialogue2D(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.PlayDialogue2D // Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f454e0
-	struct FString ParseOption(struct FString Options, struct FString Key); // Function Engine.GameplayStatics.ParseOption // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f450f0
-	void OpenLevel(struct UObject* WorldContextObject, struct FName LevelName, bool bAbsolute, struct FString Options); // Function Engine.GameplayStatics.OpenLevel // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f44f80
-	void LoadStreamLevel(struct UObject* WorldContextObject, struct FName LevelName, bool bMakeVisibleAfterLoad, bool bShouldBlockOnLoad, struct FLatentActionInfo LatentInfo); // Function Engine.GameplayStatics.LoadStreamLevel // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f442e0
-	struct USaveGame* LoadGameFromSlot(struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.LoadGameFromSlot // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f44200
-	bool IsGamePaused(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.IsGamePaused // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43ca0
-	bool HasOption(struct FString Options, struct FString InKey); // Function Engine.GameplayStatics.HasOption // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f439f0
-	int32_t GrassOverlappingSphereCount(struct UObject* WorldContextObject, struct UStaticMesh* StaticMesh, struct FVector CenterPosition, float Radius); // Function Engine.GameplayStatics.GrassOverlappingSphereCount // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f438a0
-	struct FIntVector GetWorldOriginLocation(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetWorldOriginLocation // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f436a0
-	float GetWorldDeltaSeconds(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetWorldDeltaSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43610
-	char GetSurfaceType(struct FHitResult Hit); // Function Engine.GameplayStatics.GetSurfaceType // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f430e0
-	struct ULevelStreaming* GetStreamingLevel(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.GameplayStatics.GetStreamingLevel // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43020
-	float GetRealTimeSeconds(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetRealTimeSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42560
-	struct APawn* GetPlayerPawn(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerPawn // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f424a0
-	struct APlayerController* GetPlayerController(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerController // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f423e0
-	struct ACharacter* GetPlayerCharacter(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerCharacter // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42320
-	struct APlayerCameraManager* GetPlayerCameraManager(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerCameraManager // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42260
-	struct FString GetPlatformName(); // Function Engine.GameplayStatics.GetPlatformName // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f42120
-	struct UClass* GetObjectClass(struct UObject* Object); // Function Engine.GameplayStatics.GetObjectClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41f50
-	void GetKeyValue(struct FString Pair, struct FString Key, struct FString Value); // Function Engine.GameplayStatics.GetKeyValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f41810
-	int32_t GetIntOption(struct FString Options, struct FString Key, int32_t DefaultValue); // Function Engine.GameplayStatics.GetIntOption // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f416d0
-	float GetGlobalTimeDilation(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGlobalTimeDilation // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40c70
-	struct AGameState* GetGameState(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGameState // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40bf0
-	struct AGameMode* GetGameMode(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGameMode // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40b70
-	struct UGameInstance* GetGameInstance(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGameInstance // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f40af0
-	struct FString GetCurrentLevelName(struct UObject* WorldContextObject, bool bRemovePrefixString); // Function Engine.GameplayStatics.GetCurrentLevelName // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40410
-	float GetAudioTimeSeconds(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetAudioTimeSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f3f930
-	void GetAllActorsWithInterface(struct UObject* WorldContextObject, struct UClass* Interface, struct TArray<struct AActor*> OutActors); // Function Engine.GameplayStatics.GetAllActorsWithInterface // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f3f4e0
-	void GetAllActorsOfClass(struct UObject* WorldContextObject, struct UClass* ActorClass, struct TArray<struct AActor*> OutActors); // Function Engine.GameplayStatics.GetAllActorsOfClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f3f3c0
-	void GetActorArrayBounds(struct TArray<struct AActor*> Actors, bool bOnlyCollidingComponents, struct FVector Center, struct FVector BoxExtent); // Function Engine.GameplayStatics.GetActorArrayBounds // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3f220
-	struct FVector GetActorArrayAverageLocation(struct TArray<struct AActor*> Actors); // Function Engine.GameplayStatics.GetActorArrayAverageLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3f160
-	void GetAccurateRealTime(struct UObject* WorldContextObject, int32_t Seconds, float PartialSeconds); // Function Engine.GameplayStatics.GetAccurateRealTime // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f3f040
-	void FlushLevelStreaming(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.FlushLevelStreaming // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3efd0
-	struct AActor* FinishSpawningActor(struct AActor* Actor, struct FTransform SpawnTransform); // Function Engine.GameplayStatics.FinishSpawningActor // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ee90
-	void EnableLiveStreaming(bool Enable); // Function Engine.GameplayStatics.EnableLiveStreaming // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3eaa0
-	bool DoesSaveGameExist(struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.DoesSaveGameExist // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3e940
-	bool DeprojectScreenToWorld(struct APlayerController* Player, struct FVector2D ScreenPosition, struct FVector WorldPosition, struct FVector WorldDirection); // Function Engine.GameplayStatics.DeprojectScreenToWorld // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2f3e690
-	bool DeleteGameInSlot(struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.DeleteGameInSlot // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3e5b0
-	void DeactivateReverbEffect(struct UObject* WorldContextObject, struct FName TagName); // Function Engine.GameplayStatics.DeactivateReverbEffect // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3e500
-	struct USaveGame* CreateSaveGameObjectFromBlueprint(struct UBlueprint* SaveGameBlueprint); // Function Engine.GameplayStatics.CreateSaveGameObjectFromBlueprint // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3e480
-	struct USaveGame* CreateSaveGameObject(struct UClass* SaveGameClass); // Function Engine.GameplayStatics.CreateSaveGameObject // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3e400
-	struct APlayerController* CreatePlayer(struct UObject* WorldContextObject, int32_t ControllerId, bool bSpawnPawn); // Function Engine.GameplayStatics.CreatePlayer // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3e310
-	void ClearSoundMixModifiers(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.ClearSoundMixModifiers // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3d930
-	void BreakHitResult(struct FHitResult Hit, bool bBlockingHit, bool bInitialOverlap, float Time, struct FVector Location, struct FVector ImpactPoint, struct FVector Normal, struct FVector ImpactNormal, struct UPhysicalMaterial* PhysMat, struct AActor* HitActor, struct UPrimitiveComponent* HitComponent, struct FName HitBoneName, int32_t HitItem, struct FVector TraceStart, struct FVector TraceEnd); // Function Engine.GameplayStatics.BreakHitResult // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2f3cf60
-	bool BlueprintSuggestProjectileVelocity(struct UObject* WorldContextObject, struct FVector TossVelocity, struct FVector StartLocation, struct FVector EndLocation, float LaunchSpeed, float OverrideGravityZ, char TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug); // Function Engine.GameplayStatics.BlueprintSuggestProjectileVelocity // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3cbe0
-	struct AActor* BeginSpawningActorFromClass(struct UObject* WorldContextObject, struct UClass* ActorClass, struct FTransform SpawnTransform, bool bNoCollisionFail, struct AActor* Owner); // Function Engine.GameplayStatics.BeginSpawningActorFromClass // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3c960
-	struct AActor* BeginSpawningActorFromBlueprint(struct UObject* WorldContextObject, struct UBlueprint* Blueprint, struct FTransform SpawnTransform, bool bNoCollisionFail); // Function Engine.GameplayStatics.BeginSpawningActorFromBlueprint // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3c7c0
-	struct AActor* BeginDeferredActorSpawnFromClass(struct UObject* WorldContextObject, struct UClass* ActorClass, struct FTransform SpawnTransform, char CollisionHandlingOverride, struct AActor* Owner); // Function Engine.GameplayStatics.BeginDeferredActorSpawnFromClass // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3c5d0
-	bool AreAnyListenersWithinRange(struct UObject* WorldContextObject, struct FVector Location, float MaximumRange); // Function Engine.GameplayStatics.AreAnyListenersWithinRange // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f3c300
-	bool ApplyRadialDamageWithFalloff(struct UObject* WorldContextObject, float BaseDamage, float MinimumDamage, struct FVector Origin, float DamageInnerRadius, float DamageOuterRadius, float DamageFalloff, struct UClass* DamageTypeClass, struct TArray<struct AActor*> IgnoreActors, struct AActor* DamageCauser, struct AController* InstigatedByController, char DamagePreventionChannel); // Function Engine.GameplayStatics.ApplyRadialDamageWithFalloff // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3bd20
-	bool ApplyRadialDamage(struct UObject* WorldContextObject, float BaseDamage, struct FVector Origin, float DamageRadius, struct UClass* DamageTypeClass, struct TArray<struct AActor*> IgnoreActors, struct AActor* DamageCauser, struct AController* InstigatedByController, bool bDoFullDamage, char DamagePreventionChannel); // Function Engine.GameplayStatics.ApplyRadialDamage // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ba20
-	void ApplyPointDamage(struct AActor* DamagedActor, float BaseDamage, struct FVector HitFromDirection, struct FHitResult HitInfo, struct AController* EventInstigator, struct AActor* DamageCauser, struct UClass* DamageTypeClass); // Function Engine.GameplayStatics.ApplyPointDamage // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3b7e0
-	void ApplyDamage(struct AActor* DamagedActor, float BaseDamage, struct AController* EventInstigator, struct AActor* DamageCauser, struct UClass* DamageTypeClass); // Function Engine.GameplayStatics.ApplyDamage // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x2f3b660
-	void ActivateReverbEffect(struct UObject* WorldContextObject, struct UReverbEffect* ReverbEffect, struct FName TagName, float Priority, float Volume, float FadeTime); // Function Engine.GameplayStatics.ActivateReverbEffect // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3a6b0
+	void UnloadStreamLevel(struct UObject* WorldContextObject, struct FName LevelName, struct FLatentActionInfo LatentInfo); // Function Engine.GameplayStatics.UnloadStreamLevel // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f52810
+	struct UAudioComponent* SpawnSoundAttached(struct USoundBase* Sound, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, bool bStopWhenAttachedToDestroyed, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnSoundAttached // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f52210
+	struct UAudioComponent* SpawnSoundAtLocation(struct UObject* WorldContextObject, struct USoundBase* Sound, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnSoundAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f51fc0
+	struct UAudioComponent* SpawnSound2D(struct UObject* WorldContextObject, struct USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.SpawnSound2D // Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable // @ game+0x2f51e40
+	struct UObject* SpawnObject(struct UClass* ObjectClass, struct UObject* Outer); // Function Engine.GameplayStatics.SpawnObject // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f51d80
+	struct UParticleSystemComponent* SpawnEmitterAttached(struct UParticleSystem* EmitterTemplate, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, bool bAutoDestroy); // Function Engine.GameplayStatics.SpawnEmitterAttached // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f51b70
+	struct UParticleSystemComponent* SpawnEmitterAtLocation(struct UObject* WorldContextObject, struct UParticleSystem* EmitterTemplate, struct FVector Location, struct FRotator Rotation, bool bAutoDestroy); // Function Engine.GameplayStatics.SpawnEmitterAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f519e0
+	struct UAudioComponent* SpawnDialogueAttached(struct UDialogueWave* Dialogue, struct FDialogueContext Context, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, bool bStopWhenAttachedToDestroyed, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnDialogueAttached // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f51630
+	struct UAudioComponent* SpawnDialogueAtLocation(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.SpawnDialogueAtLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f51360
+	struct UAudioComponent* SpawnDialogue2D(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.SpawnDialogue2D // Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f51170
+	struct UDecalComponent* SpawnDecalAttached(struct UMaterialInterface* DecalMaterial, struct FVector DecalSize, struct USceneComponent* AttachToComponent, struct FName AttachPointName, struct FVector Location, struct FRotator Rotation, char LocationType, float LifeSpan); // Function Engine.GameplayStatics.SpawnDecalAttached // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f50f10
+	struct UDecalComponent* SpawnDecalAtLocation(struct UObject* WorldContextObject, struct UMaterialInterface* DecalMaterial, struct FVector DecalSize, struct FVector Location, struct FRotator Rotation, float LifeSpan); // Function Engine.GameplayStatics.SpawnDecalAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f50d30
+	void SetWorldOriginLocation(struct UObject* WorldContextObject, struct FIntVector NewLocation); // Function Engine.GameplayStatics.SetWorldOriginLocation // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f50af0
+	void SetGlobalTimeDilation(struct UObject* WorldContextObject, float TimeDilation); // Function Engine.GameplayStatics.SetGlobalTimeDilation // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4d1f0
+	bool SetGamePaused(struct UObject* WorldContextObject, bool bPaused); // Function Engine.GameplayStatics.SetGamePaused // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4d130
+	void SetBaseSoundMix(struct UObject* WorldContextObject, struct USoundMix* InSoundMix); // Function Engine.GameplayStatics.SetBaseSoundMix // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f4a660
+	bool SaveGameToSlot(struct USaveGame* SaveGameObject, struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.SaveGameToSlot // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f49020
+	void RemovePlayer(struct APlayerController* Player, bool bDestroyPawn); // Function Engine.GameplayStatics.RemovePlayer // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f48ea0
+	void PushSoundMixModifier(struct UObject* WorldContextObject, struct USoundMix* InSoundMixModifier); // Function Engine.GameplayStatics.PushSoundMixModifier // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f48af0
+	bool ProjectWorldToScreen(struct APlayerController* Player, struct FVector WorldPosition, struct FVector2D ScreenPosition); // Function Engine.GameplayStatics.ProjectWorldToScreen // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2f489d0
+	void PopSoundMixModifier(struct UObject* WorldContextObject, struct USoundMix* InSoundMixModifier); // Function Engine.GameplayStatics.PopSoundMixModifier // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f48840
+	void PlayWorldCameraShake(struct UObject* WorldContextObject, struct UClass* Shake, struct FVector Epicenter, float InnerRadius, float OuterRadius, float Falloff, bool bOrientShakeTowardsEpicenter); // Function Engine.GameplayStatics.PlayWorldCameraShake // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f48630
+	void PlaySoundAtLocation(struct UObject* WorldContextObject, struct USoundBase* Sound, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.PlaySoundAtLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f483e0
+	void PlaySound2D(struct UObject* WorldContextObject, struct USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.PlaySound2D // Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable // @ game+0x2f48260
+	void PlayDialogueAtLocation(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, struct FVector Location, struct FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, struct USoundAttenuation* AttenuationSettings); // Function Engine.GameplayStatics.PlayDialogueAtLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f47b60
+	void PlayDialogue2D(struct UObject* WorldContextObject, struct UDialogueWave* Dialogue, struct FDialogueContext Context, float VolumeMultiplier, float PitchMultiplier, float StartTime); // Function Engine.GameplayStatics.PlayDialogue2D // Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f47970
+	struct FString ParseOption(struct FString Options, struct FString Key); // Function Engine.GameplayStatics.ParseOption // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f47580
+	void OpenLevel(struct UObject* WorldContextObject, struct FName LevelName, bool bAbsolute, struct FString Options); // Function Engine.GameplayStatics.OpenLevel // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f47410
+	void LoadStreamLevel(struct UObject* WorldContextObject, struct FName LevelName, bool bMakeVisibleAfterLoad, bool bShouldBlockOnLoad, struct FLatentActionInfo LatentInfo); // Function Engine.GameplayStatics.LoadStreamLevel // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f46770
+	struct USaveGame* LoadGameFromSlot(struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.LoadGameFromSlot // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f46690
+	bool IsGamePaused(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.IsGamePaused // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f46130
+	bool HasOption(struct FString Options, struct FString InKey); // Function Engine.GameplayStatics.HasOption // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f45e80
+	int32_t GrassOverlappingSphereCount(struct UObject* WorldContextObject, struct UStaticMesh* StaticMesh, struct FVector CenterPosition, float Radius); // Function Engine.GameplayStatics.GrassOverlappingSphereCount // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f45d30
+	struct FIntVector GetWorldOriginLocation(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetWorldOriginLocation // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f45b30
+	float GetWorldDeltaSeconds(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetWorldDeltaSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f45aa0
+	char GetSurfaceType(struct FHitResult Hit); // Function Engine.GameplayStatics.GetSurfaceType // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f45570
+	struct ULevelStreaming* GetStreamingLevel(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.GameplayStatics.GetStreamingLevel // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f454b0
+	float GetRealTimeSeconds(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetRealTimeSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f449f0
+	struct APawn* GetPlayerPawn(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerPawn // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44930
+	struct APlayerController* GetPlayerController(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerController // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f44870
+	struct ACharacter* GetPlayerCharacter(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerCharacter // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f447b0
+	struct APlayerCameraManager* GetPlayerCameraManager(struct UObject* WorldContextObject, int32_t PlayerIndex); // Function Engine.GameplayStatics.GetPlayerCameraManager // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f446f0
+	struct FString GetPlatformName(); // Function Engine.GameplayStatics.GetPlatformName // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f445b0
+	struct UClass* GetObjectClass(struct UObject* Object); // Function Engine.GameplayStatics.GetObjectClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f443e0
+	void GetKeyValue(struct FString Pair, struct FString Key, struct FString Value); // Function Engine.GameplayStatics.GetKeyValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f43ca0
+	int32_t GetIntOption(struct FString Options, struct FString Key, int32_t DefaultValue); // Function Engine.GameplayStatics.GetIntOption // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43b60
+	float GetGlobalTimeDilation(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGlobalTimeDilation // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43100
+	struct AGameState* GetGameState(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGameState // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43080
+	struct AGameMode* GetGameMode(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGameMode // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f43000
+	struct UGameInstance* GetGameInstance(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetGameInstance // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f42f80
+	struct FString GetCurrentLevelName(struct UObject* WorldContextObject, bool bRemovePrefixString); // Function Engine.GameplayStatics.GetCurrentLevelName // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f428a0
+	float GetAudioTimeSeconds(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.GetAudioTimeSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x2f41dc0
+	void GetAllActorsWithInterface(struct UObject* WorldContextObject, struct UClass* Interface, struct TArray<struct AActor*> OutActors); // Function Engine.GameplayStatics.GetAllActorsWithInterface // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f41970
+	void GetAllActorsOfClass(struct UObject* WorldContextObject, struct UClass* ActorClass, struct TArray<struct AActor*> OutActors); // Function Engine.GameplayStatics.GetAllActorsOfClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x2f41850
+	void GetActorArrayBounds(struct TArray<struct AActor*> Actors, bool bOnlyCollidingComponents, struct FVector Center, struct FVector BoxExtent); // Function Engine.GameplayStatics.GetActorArrayBounds // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f416b0
+	struct FVector GetActorArrayAverageLocation(struct TArray<struct AActor*> Actors); // Function Engine.GameplayStatics.GetActorArrayAverageLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f415f0
+	void GetAccurateRealTime(struct UObject* WorldContextObject, int32_t Seconds, float PartialSeconds); // Function Engine.GameplayStatics.GetAccurateRealTime // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x2f414d0
+	void FlushLevelStreaming(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.FlushLevelStreaming // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f41460
+	struct AActor* FinishSpawningActor(struct AActor* Actor, struct FTransform SpawnTransform); // Function Engine.GameplayStatics.FinishSpawningActor // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f41320
+	void EnableLiveStreaming(bool Enable); // Function Engine.GameplayStatics.EnableLiveStreaming // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40f30
+	bool DoesSaveGameExist(struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.DoesSaveGameExist // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40dd0
+	bool DeprojectScreenToWorld(struct APlayerController* Player, struct FVector2D ScreenPosition, struct FVector WorldPosition, struct FVector WorldDirection); // Function Engine.GameplayStatics.DeprojectScreenToWorld // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2f40b20
+	bool DeleteGameInSlot(struct FString SlotName, int32_t UserIndex); // Function Engine.GameplayStatics.DeleteGameInSlot // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40a40
+	void DeactivateReverbEffect(struct UObject* WorldContextObject, struct FName TagName); // Function Engine.GameplayStatics.DeactivateReverbEffect // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40990
+	struct USaveGame* CreateSaveGameObjectFromBlueprint(struct UBlueprint* SaveGameBlueprint); // Function Engine.GameplayStatics.CreateSaveGameObjectFromBlueprint // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40910
+	struct USaveGame* CreateSaveGameObject(struct UClass* SaveGameClass); // Function Engine.GameplayStatics.CreateSaveGameObject // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f40890
+	struct APlayerController* CreatePlayer(struct UObject* WorldContextObject, int32_t ControllerId, bool bSpawnPawn); // Function Engine.GameplayStatics.CreatePlayer // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f407a0
+	void ClearSoundMixModifiers(struct UObject* WorldContextObject); // Function Engine.GameplayStatics.ClearSoundMixModifiers // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3fdc0
+	void BreakHitResult(struct FHitResult Hit, bool bBlockingHit, bool bInitialOverlap, float Time, struct FVector Location, struct FVector ImpactPoint, struct FVector Normal, struct FVector ImpactNormal, struct UPhysicalMaterial* PhysMat, struct AActor* HitActor, struct UPrimitiveComponent* HitComponent, struct FName HitBoneName, int32_t HitItem, struct FVector TraceStart, struct FVector TraceEnd); // Function Engine.GameplayStatics.BreakHitResult // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x2f3f3f0
+	bool BlueprintSuggestProjectileVelocity(struct UObject* WorldContextObject, struct FVector TossVelocity, struct FVector StartLocation, struct FVector EndLocation, float LaunchSpeed, float OverrideGravityZ, char TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug); // Function Engine.GameplayStatics.BlueprintSuggestProjectileVelocity // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3f070
+	struct AActor* BeginSpawningActorFromClass(struct UObject* WorldContextObject, struct UClass* ActorClass, struct FTransform SpawnTransform, bool bNoCollisionFail, struct AActor* Owner); // Function Engine.GameplayStatics.BeginSpawningActorFromClass // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3edf0
+	struct AActor* BeginSpawningActorFromBlueprint(struct UObject* WorldContextObject, struct UBlueprint* Blueprint, struct FTransform SpawnTransform, bool bNoCollisionFail); // Function Engine.GameplayStatics.BeginSpawningActorFromBlueprint // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ec50
+	struct AActor* BeginDeferredActorSpawnFromClass(struct UObject* WorldContextObject, struct UClass* ActorClass, struct FTransform SpawnTransform, char CollisionHandlingOverride, struct AActor* Owner); // Function Engine.GameplayStatics.BeginDeferredActorSpawnFromClass // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3ea60
+	bool AreAnyListenersWithinRange(struct UObject* WorldContextObject, struct FVector Location, float MaximumRange); // Function Engine.GameplayStatics.AreAnyListenersWithinRange // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x2f3e790
+	bool ApplyRadialDamageWithFalloff(struct UObject* WorldContextObject, float BaseDamage, float MinimumDamage, struct FVector Origin, float DamageInnerRadius, float DamageOuterRadius, float DamageFalloff, struct UClass* DamageTypeClass, struct TArray<struct AActor*> IgnoreActors, struct AActor* DamageCauser, struct AController* InstigatedByController, char DamagePreventionChannel); // Function Engine.GameplayStatics.ApplyRadialDamageWithFalloff // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3e1b0
+	bool ApplyRadialDamage(struct UObject* WorldContextObject, float BaseDamage, struct FVector Origin, float DamageRadius, struct UClass* DamageTypeClass, struct TArray<struct AActor*> IgnoreActors, struct AActor* DamageCauser, struct AController* InstigatedByController, bool bDoFullDamage, char DamagePreventionChannel); // Function Engine.GameplayStatics.ApplyRadialDamage // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3deb0
+	void ApplyPointDamage(struct AActor* DamagedActor, float BaseDamage, struct FVector HitFromDirection, struct FHitResult HitInfo, struct AController* EventInstigator, struct AActor* DamageCauser, struct UClass* DamageTypeClass); // Function Engine.GameplayStatics.ApplyPointDamage // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x2f3dc70
+	void ApplyDamage(struct AActor* DamagedActor, float BaseDamage, struct AController* EventInstigator, struct AActor* DamageCauser, struct UClass* DamageTypeClass); // Function Engine.GameplayStatics.ApplyDamage // Final|BlueprintAuthorityOnly|Native|Static|Public|BlueprintCallable // @ game+0x2f3daf0
+	void ActivateReverbEffect(struct UObject* WorldContextObject, struct UReverbEffect* ReverbEffect, struct FName TagName, float Priority, float Volume, float FadeTime); // Function Engine.GameplayStatics.ActivateReverbEffect // Final|Native|Static|Public|BlueprintCallable // @ game+0x2f3cb40
 };
 
 // Class Engine.GPUSortDestData
@@ -6525,758 +6525,758 @@ struct UGPUSortDestData : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UGPUSortTestLibrary : UBlueprintFunctionLibrary {
 
-	bool ValidateGPUTransposeForSize(struct UObject* WorldContext, struct UGPUSortDestData* TestData); // Function Engine.GPUSortTestLibrary.ValidateGPUTransposeForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307c700
-	bool ValidateGPUSortForSize(struct UObject* WorldContext, struct UGPUSortDestData* TestData); // Function Engine.GPUSortTestLibrary.ValidateGPUSortForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307c640
-	struct UGPUSortDestData* TestGPUTransposeForSize(struct UObject* WorldContext, int32_t Size); // Function Engine.GPUSortTestLibrary.TestGPUTransposeForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307ac80
-	struct UGPUSortDestData* TestGPUSortForSize(struct UObject* WorldContext, int32_t Size); // Function Engine.GPUSortTestLibrary.TestGPUSortForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307abc0
+	bool ValidateGPUTransposeForSize(struct UObject* WorldContext, struct UGPUSortDestData* TestData); // Function Engine.GPUSortTestLibrary.ValidateGPUTransposeForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307eb90
+	bool ValidateGPUSortForSize(struct UObject* WorldContext, struct UGPUSortDestData* TestData); // Function Engine.GPUSortTestLibrary.ValidateGPUSortForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307ead0
+	struct UGPUSortDestData* TestGPUTransposeForSize(struct UObject* WorldContext, int32_t Size); // Function Engine.GPUSortTestLibrary.TestGPUTransposeForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307d110
+	struct UGPUSortDestData* TestGPUSortForSize(struct UObject* WorldContext, int32_t Size); // Function Engine.GPUSortTestLibrary.TestGPUSortForSize // Final|Native|Static|Public|BlueprintCallable // @ game+0x307d050
 };
 
 // Class Engine.KismetArrayLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetArrayLibrary : UBlueprintFunctionLibrary {
 
-	void SetArrayPropertyByName(struct UObject* Object, struct FName PropertyName, struct TArray<int32_t> Value); // Function Engine.KismetArrayLibrary.SetArrayPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3075200
-	void FilterArray(struct TArray<struct AActor*> TargetArray, struct UClass* FilterClass, struct TArray<struct AActor*> FilteredArray); // Function Engine.KismetArrayLibrary.FilterArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x305d0d0
-	void Array_Shuffle(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_Shuffle // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304bef0
-	void Array_Set(struct TArray<int32_t> TargetArray, int32_t Index, int32_t Item, bool bSizeToFit); // Function Engine.KismetArrayLibrary.Array_Set // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304bc90
-	void Array_Resize(struct TArray<int32_t> TargetArray, int32_t Size); // Function Engine.KismetArrayLibrary.Array_Resize // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304bb70
-	bool Array_RemoveItem(struct TArray<int32_t> TargetArray, int32_t Item); // Function Engine.KismetArrayLibrary.Array_RemoveItem // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304b990
-	void Array_Remove(struct TArray<int32_t> TargetArray, int32_t IndexToRemove); // Function Engine.KismetArrayLibrary.Array_Remove // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304b870
-	int32_t Array_Length(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_Length // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304b780
-	int32_t Array_LastIndex(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_LastIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304b690
-	void Array_Insert(struct TArray<int32_t> TargetArray, int32_t NewItem, int32_t Index); // Function Engine.KismetArrayLibrary.Array_Insert // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304b470
-	void Array_Get(struct TArray<int32_t> TargetArray, int32_t Index, int32_t Item); // Function Engine.KismetArrayLibrary.Array_Get // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304b260
-	int32_t Array_Find(struct TArray<int32_t> TargetArray, int32_t ItemToFind); // Function Engine.KismetArrayLibrary.Array_Find // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304b080
-	bool Array_Contains(struct TArray<int32_t> TargetArray, int32_t ItemToFind); // Function Engine.KismetArrayLibrary.Array_Contains // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304ae90
-	void Array_Clear(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_Clear // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304adb0
-	void Array_Append(struct TArray<int32_t> TargetArray, struct TArray<int32_t> SourceArray); // Function Engine.KismetArrayLibrary.Array_Append // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304ac30
-	int32_t Array_AddUnique(struct TArray<int32_t> TargetArray, int32_t NewItem); // Function Engine.KismetArrayLibrary.Array_AddUnique // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304aa50
-	int32_t Array_Add(struct TArray<int32_t> TargetArray, int32_t NewItem); // Function Engine.KismetArrayLibrary.Array_Add // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304a870
+	void SetArrayPropertyByName(struct UObject* Object, struct FName PropertyName, struct TArray<int32_t> Value); // Function Engine.KismetArrayLibrary.SetArrayPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3077690
+	void FilterArray(struct TArray<struct AActor*> TargetArray, struct UClass* FilterClass, struct TArray<struct AActor*> FilteredArray); // Function Engine.KismetArrayLibrary.FilterArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x305f560
+	void Array_Shuffle(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_Shuffle // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304e380
+	void Array_Set(struct TArray<int32_t> TargetArray, int32_t Index, int32_t Item, bool bSizeToFit); // Function Engine.KismetArrayLibrary.Array_Set // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304e120
+	void Array_Resize(struct TArray<int32_t> TargetArray, int32_t Size); // Function Engine.KismetArrayLibrary.Array_Resize // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304e000
+	bool Array_RemoveItem(struct TArray<int32_t> TargetArray, int32_t Item); // Function Engine.KismetArrayLibrary.Array_RemoveItem // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304de20
+	void Array_Remove(struct TArray<int32_t> TargetArray, int32_t IndexToRemove); // Function Engine.KismetArrayLibrary.Array_Remove // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304dd00
+	int32_t Array_Length(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_Length // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304dc10
+	int32_t Array_LastIndex(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_LastIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304db20
+	void Array_Insert(struct TArray<int32_t> TargetArray, int32_t NewItem, int32_t Index); // Function Engine.KismetArrayLibrary.Array_Insert // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304d900
+	void Array_Get(struct TArray<int32_t> TargetArray, int32_t Index, int32_t Item); // Function Engine.KismetArrayLibrary.Array_Get // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304d6f0
+	int32_t Array_Find(struct TArray<int32_t> TargetArray, int32_t ItemToFind); // Function Engine.KismetArrayLibrary.Array_Find // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304d510
+	bool Array_Contains(struct TArray<int32_t> TargetArray, int32_t ItemToFind); // Function Engine.KismetArrayLibrary.Array_Contains // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304d320
+	void Array_Clear(struct TArray<int32_t> TargetArray); // Function Engine.KismetArrayLibrary.Array_Clear // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304d240
+	void Array_Append(struct TArray<int32_t> TargetArray, struct TArray<int32_t> SourceArray); // Function Engine.KismetArrayLibrary.Array_Append // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304d0c0
+	int32_t Array_AddUnique(struct TArray<int32_t> TargetArray, int32_t NewItem); // Function Engine.KismetArrayLibrary.Array_AddUnique // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304cee0
+	int32_t Array_Add(struct TArray<int32_t> TargetArray, int32_t NewItem); // Function Engine.KismetArrayLibrary.Array_Add // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x304cd00
 };
 
 // Class Engine.KismetGuidLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetGuidLibrary : UBlueprintFunctionLibrary {
 
-	void Parse_StringToGuid(struct FString GuidString, struct FGuid OutGuid, bool Success); // Function Engine.KismetGuidLibrary.Parse_StringToGuid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306fe10
-	bool NotEqual_GuidGuid(struct FGuid A, struct FGuid B); // Function Engine.KismetGuidLibrary.NotEqual_GuidGuid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306eff0
-	struct FGuid NewGuid(); // Function Engine.KismetGuidLibrary.NewGuid // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e850
-	bool IsValid_Guid(struct FGuid InGuid); // Function Engine.KismetGuidLibrary.IsValid_Guid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063520
-	void Invalidate_Guid(struct FGuid InGuid); // Function Engine.KismetGuidLibrary.Invalidate_Guid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3062810
-	bool EqualEqual_GuidGuid(struct FGuid A, struct FGuid B); // Function Engine.KismetGuidLibrary.EqualEqual_GuidGuid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305b8b0
-	struct FString Conv_GuidToString(struct FGuid InGuid); // Function Engine.KismetGuidLibrary.Conv_GuidToString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3055d70
+	void Parse_StringToGuid(struct FString GuidString, struct FGuid OutGuid, bool Success); // Function Engine.KismetGuidLibrary.Parse_StringToGuid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30722a0
+	bool NotEqual_GuidGuid(struct FGuid A, struct FGuid B); // Function Engine.KismetGuidLibrary.NotEqual_GuidGuid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071480
+	struct FGuid NewGuid(); // Function Engine.KismetGuidLibrary.NewGuid // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070ce0
+	bool IsValid_Guid(struct FGuid InGuid); // Function Engine.KismetGuidLibrary.IsValid_Guid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30659b0
+	void Invalidate_Guid(struct FGuid InGuid); // Function Engine.KismetGuidLibrary.Invalidate_Guid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3064ca0
+	bool EqualEqual_GuidGuid(struct FGuid A, struct FGuid B); // Function Engine.KismetGuidLibrary.EqualEqual_GuidGuid // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dd40
+	struct FString Conv_GuidToString(struct FGuid InGuid); // Function Engine.KismetGuidLibrary.Conv_GuidToString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058200
 };
 
 // Class Engine.KismetInputLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetInputLibrary : UBlueprintFunctionLibrary {
 
-	bool PointerEvent_IsTouchEvent(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_IsTouchEvent // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070d40
-	bool PointerEvent_IsMouseButtonDown(struct FPointerEvent Input, struct FKey MouseButton); // Function Engine.KismetInputLibrary.PointerEvent_IsMouseButtonDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070b90
-	float PointerEvent_GetWheelDelta(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetWheelDelta // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070a80
-	int32_t PointerEvent_GetUserIndex(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetUserIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070970
-	int32_t PointerEvent_GetTouchpadIndex(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetTouchpadIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070860
-	struct FVector2D PointerEvent_GetScreenSpacePosition(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetScreenSpacePosition // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070750
-	int32_t PointerEvent_GetPointerIndex(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetPointerIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070640
-	struct FVector2D PointerEvent_GetLastScreenSpacePosition(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetLastScreenSpacePosition // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070530
-	struct FVector2D PointerEvent_GetGestureDelta(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetGestureDelta // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070420
-	struct FKey PointerEvent_GetEffectingButton(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetEffectingButton // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30702d0
-	struct FVector2D PointerEvent_GetCursorDelta(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetCursorDelta // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30701c0
-	bool Key_IsVectorAxis(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsVectorAxis // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066d70
-	bool Key_IsMouseButton(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsMouseButton // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066cc0
-	bool Key_IsModifierKey(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsModifierKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066c10
-	bool Key_IsKeyboardKey(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsKeyboardKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066b60
-	bool Key_IsGamepadKey(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsGamepadKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066ab0
-	bool Key_IsFloatAxis(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsFloatAxis // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066a00
-	struct FText Key_GetDisplayName(struct FKey Key); // Function Engine.KismetInputLibrary.Key_GetDisplayName // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3066930
-	bool InputEvent_IsShiftDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsShiftDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062750
-	bool InputEvent_IsRightShiftDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightShiftDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062690
-	bool InputEvent_IsRightControlDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightControlDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30625d0
-	bool InputEvent_IsRightCommandDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightCommandDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062510
-	bool InputEvent_IsRightAltDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightAltDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062450
-	bool InputEvent_IsRepeat(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRepeat // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062390
-	bool InputEvent_IsLeftShiftDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftShiftDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30622d0
-	bool InputEvent_IsLeftControlDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftControlDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062210
-	bool InputEvent_IsLeftCommandDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftCommandDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062150
-	bool InputEvent_IsLeftAltDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftAltDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3062090
-	bool InputEvent_IsControlDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsControlDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3061fd0
-	bool InputEvent_IsCommandDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsCommandDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3061f10
-	bool InputEvent_IsAltDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsAltDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3061e50
-	int32_t GetUserIndex(struct FKeyEvent Input); // Function Engine.KismetInputLibrary.GetUserIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3060840
-	struct FKey GetKey(struct FKeyEvent Input); // Function Engine.KismetInputLibrary.GetKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x305f300
-	float GetAnalogValue(struct FAnalogInputEvent Input); // Function Engine.KismetInputLibrary.GetAnalogValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x305e110
-	bool EqualEqual_KeyKey(struct FKey A, struct FKey B); // Function Engine.KismetInputLibrary.EqualEqual_KeyKey // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305bb90
-	int32_t ControllerEvent_GetUserIndex(struct FControllerEvent Input); // Function Engine.KismetInputLibrary.ControllerEvent_GetUserIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3054f60
-	struct FKey ControllerEvent_GetEffectingButton(struct FControllerEvent Input); // Function Engine.KismetInputLibrary.ControllerEvent_GetEffectingButton // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3054de0
-	float ControllerEvent_GetAnalogValue(struct FControllerEvent Input); // Function Engine.KismetInputLibrary.ControllerEvent_GetAnalogValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3054cb0
-	void CalibrateTilt(); // Function Engine.KismetInputLibrary.CalibrateTilt // Final|Native|Static|Public|BlueprintCallable // @ game+0x3050fa0
+	bool PointerEvent_IsTouchEvent(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_IsTouchEvent // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30731d0
+	bool PointerEvent_IsMouseButtonDown(struct FPointerEvent Input, struct FKey MouseButton); // Function Engine.KismetInputLibrary.PointerEvent_IsMouseButtonDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3073020
+	float PointerEvent_GetWheelDelta(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetWheelDelta // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3072f10
+	int32_t PointerEvent_GetUserIndex(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetUserIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3072e00
+	int32_t PointerEvent_GetTouchpadIndex(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetTouchpadIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3072cf0
+	struct FVector2D PointerEvent_GetScreenSpacePosition(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetScreenSpacePosition // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072be0
+	int32_t PointerEvent_GetPointerIndex(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetPointerIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3072ad0
+	struct FVector2D PointerEvent_GetLastScreenSpacePosition(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetLastScreenSpacePosition // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30729c0
+	struct FVector2D PointerEvent_GetGestureDelta(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetGestureDelta // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30728b0
+	struct FKey PointerEvent_GetEffectingButton(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetEffectingButton // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3072760
+	struct FVector2D PointerEvent_GetCursorDelta(struct FPointerEvent Input); // Function Engine.KismetInputLibrary.PointerEvent_GetCursorDelta // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072650
+	bool Key_IsVectorAxis(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsVectorAxis // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3069200
+	bool Key_IsMouseButton(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsMouseButton // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3069150
+	bool Key_IsModifierKey(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsModifierKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30690a0
+	bool Key_IsKeyboardKey(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsKeyboardKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3068ff0
+	bool Key_IsGamepadKey(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsGamepadKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3068f40
+	bool Key_IsFloatAxis(struct FKey Key); // Function Engine.KismetInputLibrary.Key_IsFloatAxis // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3068e90
+	struct FText Key_GetDisplayName(struct FKey Key); // Function Engine.KismetInputLibrary.Key_GetDisplayName // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3068dc0
+	bool InputEvent_IsShiftDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsShiftDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064be0
+	bool InputEvent_IsRightShiftDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightShiftDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064b20
+	bool InputEvent_IsRightControlDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightControlDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064a60
+	bool InputEvent_IsRightCommandDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightCommandDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30649a0
+	bool InputEvent_IsRightAltDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRightAltDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30648e0
+	bool InputEvent_IsRepeat(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsRepeat // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064820
+	bool InputEvent_IsLeftShiftDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftShiftDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064760
+	bool InputEvent_IsLeftControlDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftControlDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30646a0
+	bool InputEvent_IsLeftCommandDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftCommandDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30645e0
+	bool InputEvent_IsLeftAltDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsLeftAltDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064520
+	bool InputEvent_IsControlDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsControlDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3064460
+	bool InputEvent_IsCommandDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsCommandDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30643a0
+	bool InputEvent_IsAltDown(struct FInputEvent Input); // Function Engine.KismetInputLibrary.InputEvent_IsAltDown // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30642e0
+	int32_t GetUserIndex(struct FKeyEvent Input); // Function Engine.KismetInputLibrary.GetUserIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3062cd0
+	struct FKey GetKey(struct FKeyEvent Input); // Function Engine.KismetInputLibrary.GetKey // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3061790
+	float GetAnalogValue(struct FAnalogInputEvent Input); // Function Engine.KismetInputLibrary.GetAnalogValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30605a0
+	bool EqualEqual_KeyKey(struct FKey A, struct FKey B); // Function Engine.KismetInputLibrary.EqualEqual_KeyKey // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e020
+	int32_t ControllerEvent_GetUserIndex(struct FControllerEvent Input); // Function Engine.KismetInputLibrary.ControllerEvent_GetUserIndex // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30573f0
+	struct FKey ControllerEvent_GetEffectingButton(struct FControllerEvent Input); // Function Engine.KismetInputLibrary.ControllerEvent_GetEffectingButton // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3057270
+	float ControllerEvent_GetAnalogValue(struct FControllerEvent Input); // Function Engine.KismetInputLibrary.ControllerEvent_GetAnalogValue // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3057140
+	void CalibrateTilt(); // Function Engine.KismetInputLibrary.CalibrateTilt // Final|Native|Static|Public|BlueprintCallable // @ game+0x3053430
 };
 
 // Class Engine.KismetMaterialLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetMaterialLibrary : UBlueprintFunctionLibrary {
 
-	void SetVectorParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName, struct FLinearColor ParameterValue); // Function Engine.KismetMaterialLibrary.SetVectorParameterValue // Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3076820
-	void SetScalarParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName, float ParameterValue); // Function Engine.KismetMaterialLibrary.SetScalarParameterValue // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x3076130
-	struct FLinearColor GetVectorParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName); // Function Engine.KismetMaterialLibrary.GetVectorParameterValue // Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3060ab0
-	float GetScalarParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName); // Function Engine.KismetMaterialLibrary.GetScalarParameterValue // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x305fe80
-	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(struct UObject* WorldContextObject, struct UMaterialInterface* Parent); // Function Engine.KismetMaterialLibrary.CreateDynamicMaterialInstance // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x3057470
+	void SetVectorParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName, struct FLinearColor ParameterValue); // Function Engine.KismetMaterialLibrary.SetVectorParameterValue // Final|RequiredAPI|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078cb0
+	void SetScalarParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName, float ParameterValue); // Function Engine.KismetMaterialLibrary.SetScalarParameterValue // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x30785c0
+	struct FLinearColor GetVectorParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName); // Function Engine.KismetMaterialLibrary.GetVectorParameterValue // Final|RequiredAPI|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3062f40
+	float GetScalarParameterValue(struct UObject* WorldContextObject, struct UMaterialParameterCollection* Collection, struct FName ParameterName); // Function Engine.KismetMaterialLibrary.GetScalarParameterValue // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x3062310
+	struct UMaterialInstanceDynamic* CreateDynamicMaterialInstance(struct UObject* WorldContextObject, struct UMaterialInterface* Parent); // Function Engine.KismetMaterialLibrary.CreateDynamicMaterialInstance // Final|RequiredAPI|Native|Static|Public|BlueprintCallable // @ game+0x3059900
 };
 
 // Class Engine.KismetMathLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetMathLibrary : UBlueprintFunctionLibrary {
 
-	int32_t Xor_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Xor_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307ccb0
-	float VSizeSquared(struct FVector A); // Function Engine.KismetMathLibrary.VSizeSquared // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c5b0
-	float VSize2DSquared(struct FVector2D A); // Function Engine.KismetMathLibrary.VSize2DSquared // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c4a0
-	float VSize2D(struct FVector2D A); // Function Engine.KismetMathLibrary.VSize2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c420
-	float VSize(struct FVector A); // Function Engine.KismetMathLibrary.VSize // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c520
-	struct FVector VLerp(struct FVector A, struct FVector B, float Alpha); // Function Engine.KismetMathLibrary.VLerp // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c2e0
-	struct FVector VInterpTo_Constant(struct FVector Current, struct FVector Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.VInterpTo_Constant // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c140
-	struct FVector VInterpTo(struct FVector Current, struct FVector Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.VInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307bfa0
-	struct FVector2D Vector2DInterpTo_Constant(struct FVector2D Current, struct FVector2D Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.Vector2DInterpTo_Constant // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c910
-	struct FVector2D Vector2DInterpTo(struct FVector2D Current, struct FVector2D Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.Vector2DInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c7c0
-	struct FVector VEase(struct FVector A, struct FVector B, float Alpha, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.VEase // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307bda0
-	struct FDateTime UtcNow(); // Function Engine.KismetMathLibrary.UtcNow // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307bd60
-	struct FVector TransformLocation(struct FTransform T, struct FVector Location); // Function Engine.KismetMathLibrary.TransformLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b8e0
-	struct FVector TransformDirection(struct FTransform T, struct FVector Direction); // Function Engine.KismetMathLibrary.TransformDirection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b7a0
-	struct FDateTime Today(); // Function Engine.KismetMathLibrary.Today // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b720
-	struct FTransform TLerp(struct FTransform A, struct FTransform B, float Alpha); // Function Engine.KismetMathLibrary.TLerp // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a920
-	struct FTransform TInterpTo(struct FTransform Current, struct FTransform Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.TInterpTo // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a700
-	struct FTimespan TimespanZeroValue(); // Function Engine.KismetMathLibrary.TimespanZeroValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b500
-	float TimespanRatio(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.TimespanRatio // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b440
-	struct FTimespan TimespanMinValue(); // Function Engine.KismetMathLibrary.TimespanMinValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b400
-	struct FTimespan TimespanMaxValue(); // Function Engine.KismetMathLibrary.TimespanMaxValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b3c0
-	bool TimespanFromString(struct FString TimespanString, struct FTimespan Result); // Function Engine.KismetMathLibrary.TimespanFromString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307b2c0
-	struct FTransform TEase(struct FTransform A, struct FTransform B, float Alpha, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.TEase // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a470
-	float Tan(float A); // Function Engine.KismetMathLibrary.Tan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307ab00
-	struct FVector Subtract_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Subtract_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a2d0
-	struct FVector Subtract_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Subtract_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a1f0
-	struct FVector Subtract_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Subtract_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a110
-	struct FVector2D Subtract_Vector2DVector2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.Subtract_Vector2DVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307a050
-	struct FVector2D Subtract_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Subtract_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3079f90
-	struct FTimespan Subtract_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Subtract_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3079ed0
-	int32_t Subtract_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Subtract_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079e10
-	float Subtract_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Subtract_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079d50
-	struct FDateTime Subtract_DateTimeTimespan(struct FDateTime A, struct FTimespan B); // Function Engine.KismetMathLibrary.Subtract_DateTimeTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3079c90
-	struct FTimespan Subtract_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.Subtract_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3079bd0
-	char Subtract_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Subtract_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079b10
-	float Square(float A); // Function Engine.KismetMathLibrary.Square // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079780
-	float Sqrt(float A); // Function Engine.KismetMathLibrary.Sqrt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079700
-	float Sin(float A); // Function Engine.KismetMathLibrary.Sin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076e50
-	int32_t SignOfInteger(int32_t A); // Function Engine.KismetMathLibrary.SignOfInteger // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076dd0
-	float SignOfFloat(float A); // Function Engine.KismetMathLibrary.SignOfFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076d50
-	void SetRandomStreamSeed(struct FRandomStream Stream, int32_t NewSeed); // Function Engine.KismetMathLibrary.SetRandomStreamSeed // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3075f60
-	struct FVector SelectVector(struct FVector A, struct FVector B, bool bPickA); // Function Engine.KismetMathLibrary.SelectVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3075070
-	struct FTransform SelectTransform(struct FTransform A, struct FTransform B, bool bPickA); // Function Engine.KismetMathLibrary.SelectTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074ea0
-	struct FString SelectString(struct FString A, struct FString B, bool bPickA); // Function Engine.KismetMathLibrary.SelectString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074d10
-	struct FRotator SelectRotator(struct FRotator A, struct FRotator B, bool bPickA); // Function Engine.KismetMathLibrary.SelectRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074bd0
-	struct UObject* SelectObject(struct UObject* A, struct UObject* B, bool bSelectA); // Function Engine.KismetMathLibrary.SelectObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074ad0
-	int32_t SelectInt(int32_t A, int32_t B, bool bPickA); // Function Engine.KismetMathLibrary.SelectInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30749e0
-	float SelectFloat(float A, float B, bool bPickA); // Function Engine.KismetMathLibrary.SelectFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30748e0
-	struct FLinearColor SelectColor(struct FLinearColor A, struct FLinearColor B, bool bPickA); // Function Engine.KismetMathLibrary.SelectColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30747b0
-	struct UClass* SelectClass(struct UClass* A, struct UClass* B, bool bSelectA); // Function Engine.KismetMathLibrary.SelectClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30746b0
-	void SeedRandomStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.SeedRandomStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3074630
-	int32_t Round(float A); // Function Engine.KismetMathLibrary.Round // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30745b0
-	struct FRotator RotatorFromAxisAndAngle(struct FVector Axis, float Angle); // Function Engine.KismetMathLibrary.RotatorFromAxisAndAngle // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30744d0
-	struct FVector RotateAngleAxis(struct FVector InVect, float AngleDeg, struct FVector Axis); // Function Engine.KismetMathLibrary.RotateAngleAxis // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074390
-	struct FRotator RLerp(struct FRotator A, struct FRotator B, float Alpha, bool bShortestPath); // Function Engine.KismetMathLibrary.RLerp // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072020
-	struct FRotator RInterpTo_Constant(struct FRotator Current, struct FRotator Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.RInterpTo_Constant // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071e80
-	struct FRotator RInterpTo(struct FRotator Current, struct FRotator Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.RInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071ce0
-	void RGBToHSV_Vector(struct FLinearColor RGB, struct FLinearColor HSV); // Function Engine.KismetMathLibrary.RGBToHSV_Vector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071c20
-	void RGBToHSV(struct FLinearColor InColor, float H, float S, float V, float A); // Function Engine.KismetMathLibrary.RGBToHSV // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071a30
-	void ResetRandomStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.ResetRandomStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3073250
-	struct FRotator REase(struct FRotator A, struct FRotator B, float Alpha, bool bShortestPath, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.REase // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071800
-	struct FVector RandomUnitVectorInConeWithYawAndPitch(struct FVector ConeDir, float MaxYawInDegrees, float MaxPitchInDegrees); // Function Engine.KismetMathLibrary.RandomUnitVectorInConeWithYawAndPitch // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072ce0
-	struct FVector RandomUnitVectorInCone(struct FVector ConeDir, float ConeHalfAngle); // Function Engine.KismetMathLibrary.RandomUnitVectorInCone // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072c00
-	struct FVector RandomUnitVectorFromStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomUnitVectorFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072b60
-	struct FVector RandomUnitVector(); // Function Engine.KismetMathLibrary.RandomUnitVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072b20
-	struct FRotator RandomRotatorFromStream(bool bRoll, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomRotatorFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072a40
-	struct FRotator RandomRotator(bool bRoll); // Function Engine.KismetMathLibrary.RandomRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30729a0
-	struct FVector RandomPointInBoundingBox(struct FVector Origin, struct FVector BoxExtent); // Function Engine.KismetMathLibrary.RandomPointInBoundingBox // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30728a0
-	int32_t RandomIntegerInRangeFromStream(int32_t Min, int32_t Max, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomIntegerInRangeFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30727a0
-	int32_t RandomIntegerInRange(int32_t Min, int32_t Max); // Function Engine.KismetMathLibrary.RandomIntegerInRange // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30726e0
-	int32_t RandomIntegerFromStream(int32_t Max, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomIntegerFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072610
-	int32_t RandomInteger(int32_t Max); // Function Engine.KismetMathLibrary.RandomInteger // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072590
-	float RandomFloatInRangeFromStream(float Min, float Max, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomFloatInRangeFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072480
-	float RandomFloatInRange(float Min, float Max); // Function Engine.KismetMathLibrary.RandomFloatInRange // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30723c0
-	float RandomFloatFromStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomFloatFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072330
-	float RandomFloat(); // Function Engine.KismetMathLibrary.RandomFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072300
-	bool RandomBoolFromStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomBoolFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3072270
-	bool RandomBool(); // Function Engine.KismetMathLibrary.RandomBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072240
-	float RadiansToDegrees(float A); // Function Engine.KismetMathLibrary.RadiansToDegrees // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30721c0
-	struct FVector ProjectVectorOnToVector(struct FVector V, struct FVector Target); // Function Engine.KismetMathLibrary.ProjectVectorOnToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071610
-	struct FVector ProjectVectorOnToPlane(struct FVector V, struct FVector PlaneNormal); // Function Engine.KismetMathLibrary.ProjectVectorOnToPlane // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071520
-	struct FVector ProjectPointOnToPlane(struct FVector Point, struct FVector PlaneBase, struct FVector PlaneNormal); // Function Engine.KismetMathLibrary.ProjectPointOnToPlane // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30713e0
-	bool PointsAreCoplanar(struct TArray<struct FVector> Points, float Tolerance); // Function Engine.KismetMathLibrary.PointsAreCoplanar // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3070e50
-	int32_t Percent_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Percent_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30700e0
-	float Percent_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Percent_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3070020
-	char Percent_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Percent_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ff60
-	int32_t Or_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Or_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fbc0
-	struct FDateTime Now(); // Function Engine.KismetMathLibrary.Now // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306faf0
-	bool NotEqual_VectorVector(struct FVector A, struct FVector B, float ErrorTolerance); // Function Engine.KismetMathLibrary.NotEqual_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306f950
-	bool NotEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.NotEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306f890
-	bool NotEqual_RotatorRotator(struct FRotator A, struct FRotator B, float ErrorTolerance); // Function Engine.KismetMathLibrary.NotEqual_RotatorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306f450
-	bool NotEqual_ObjectObject(struct UObject* A, struct UObject* B); // Function Engine.KismetMathLibrary.NotEqual_ObjectObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f390
-	bool NotEqual_NameName(struct FName A, struct FName B); // Function Engine.KismetMathLibrary.NotEqual_NameName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f2d0
-	bool NotEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.NotEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f210
-	bool NotEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.NotEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ef30
-	bool NotEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.NotEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306ee80
-	bool NotEqual_ClassClass(struct UClass* A, struct UClass* B); // Function Engine.KismetMathLibrary.NotEqual_ClassClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306edc0
-	bool NotEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.NotEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ed00
-	bool NotEqual_BoolBool(bool A, bool B); // Function Engine.KismetMathLibrary.NotEqual_BoolBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ec30
-	bool Not_PreBool(bool A); // Function Engine.KismetMathLibrary.Not_PreBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fa70
-	float NormalizeToRange(float Value, float RangeMin, float RangeMax); // Function Engine.KismetMathLibrary.NormalizeToRange // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ea30
-	struct FRotator NormalizedDeltaRotator(struct FRotator A, struct FRotator B); // Function Engine.KismetMathLibrary.NormalizedDeltaRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306eb40
-	float NormalizeAxis(float Angle); // Function Engine.KismetMathLibrary.NormalizeAxis // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306e9b0
-	struct FVector2D Normal2D(struct FVector2D A); // Function Engine.KismetMathLibrary.Normal2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e890
-	struct FVector Normal(struct FVector A); // Function Engine.KismetMathLibrary.Normal // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e910
-	struct FVector NegateVector(struct FVector A); // Function Engine.KismetMathLibrary.NegateVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e7b0
-	struct FRotator NegateRotator(struct FRotator A); // Function Engine.KismetMathLibrary.NegateRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e710
-	bool NearlyEqual_TransformTransform(struct FTransform A, struct FTransform B, float LocationTolerance, float RotationTolerance, float Scale3DTolerance); // Function Engine.KismetMathLibrary.NearlyEqual_TransformTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e4f0
-	bool NearlyEqual_FloatFloat(float A, float B, float ErrorTolerance); // Function Engine.KismetMathLibrary.NearlyEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306e3e0
-	float MultiplyMultiply_FloatFloat(float Base, float Exp); // Function Engine.KismetMathLibrary.MultiplyMultiply_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306d880
-	float MultiplyByPi(float Value); // Function Engine.KismetMathLibrary.MultiplyByPi // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306d800
-	struct FVector Multiply_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Multiply_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e2f0
-	struct FVector Multiply_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Multiply_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e210
-	struct FVector Multiply_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Multiply_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e130
-	struct FVector2D Multiply_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Multiply_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e070
-	struct FTimespan Multiply_TimespanFloat(struct FTimespan A, float Scalar); // Function Engine.KismetMathLibrary.Multiply_TimespanFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306dfb0
-	struct FRotator Multiply_RotatorInt(struct FRotator A, int32_t B); // Function Engine.KismetMathLibrary.Multiply_RotatorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306ded0
-	struct FRotator Multiply_RotatorFloat(struct FRotator A, float B); // Function Engine.KismetMathLibrary.Multiply_RotatorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306ddf0
-	struct FLinearColor Multiply_LinearColorLinearColor(struct FLinearColor A, struct FLinearColor B); // Function Engine.KismetMathLibrary.Multiply_LinearColorLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306dd20
-	struct FLinearColor Multiply_LinearColorFloat(struct FLinearColor A, float B); // Function Engine.KismetMathLibrary.Multiply_LinearColorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306dc50
-	int32_t Multiply_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Multiply_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306db90
-	float Multiply_IntFloat(int32_t A, float B); // Function Engine.KismetMathLibrary.Multiply_IntFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306dac0
-	float Multiply_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Multiply_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306da00
-	char Multiply_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Multiply_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306d940
-	struct FVector MirrorVectorByNormal(struct FVector InVect, struct FVector InNormal); // Function Engine.KismetMathLibrary.MirrorVectorByNormal // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d480
-	void MinOfIntArray(struct TArray<int32_t> IntArray, int32_t IndexOfMinValue, int32_t MinValue); // Function Engine.KismetMathLibrary.MinOfIntArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306d060
-	void MinOfFloatArray(struct TArray<float> FloatArray, int32_t IndexOfMinValue, float MinValue); // Function Engine.KismetMathLibrary.MinOfFloatArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306cf10
-	void MinOfByteArray(struct TArray<char> ByteArray, int32_t IndexOfMinValue, char MinValue); // Function Engine.KismetMathLibrary.MinOfByteArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306cdc0
-	void MinimumAreaRectangle(struct UObject* WorldContextObject, struct TArray<struct FVector> InVerts, struct FVector SampleSurfaceNormal, struct FVector OutRectCenter, struct FRotator OutRectRotation, float OutSideLengthX, float OutSideLengthY, bool bDebugDraw); // Function Engine.KismetMathLibrary.MinimumAreaRectangle // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306d1b0
-	int32_t Min(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Min // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306cd00
-	void MaxOfIntArray(struct TArray<int32_t> IntArray, int32_t IndexOfMaxValue, int32_t MaxValue); // Function Engine.KismetMathLibrary.MaxOfIntArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306c7c0
-	void MaxOfFloatArray(struct TArray<float> FloatArray, int32_t IndexOfMaxValue, float MaxValue); // Function Engine.KismetMathLibrary.MaxOfFloatArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306c670
-	void MaxOfByteArray(struct TArray<char> ByteArray, int32_t IndexOfMaxValue, char MaxValue); // Function Engine.KismetMathLibrary.MaxOfByteArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306c520
-	int32_t Max(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Max // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306c460
-	float MapRangeUnclamped(float Value, float InRangeA, float InRangeB, float OutRangeA, float OutRangeB); // Function Engine.KismetMathLibrary.MapRangeUnclamped // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306bef0
-	float MapRangeClamped(float Value, float InRangeA, float InRangeB, float OutRangeA, float OutRangeB); // Function Engine.KismetMathLibrary.MapRangeClamped // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306bd50
-	struct FVector2D MakeVector2D(float X, float Y); // Function Engine.KismetMathLibrary.MakeVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306bb60
-	struct FVector MakeVector(float X, float Y, float Z); // Function Engine.KismetMathLibrary.MakeVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306bc30
-	struct FTransform MakeTransform(struct FVector Location, struct FRotator Rotation, struct FVector Scale); // Function Engine.KismetMathLibrary.MakeTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b9f0
-	struct FTimespan MakeTimespan(int32_t Days, int32_t Hours, int32_t Minutes, int32_t Seconds, int32_t Milliseconds); // Function Engine.KismetMathLibrary.MakeTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b870
-	struct FRotator MakeRotFromZY(struct FVector Z, struct FVector Y); // Function Engine.KismetMathLibrary.MakeRotFromZY // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b510
-	struct FRotator MakeRotFromZX(struct FVector Z, struct FVector X); // Function Engine.KismetMathLibrary.MakeRotFromZX // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b410
-	struct FRotator MakeRotFromZ(struct FVector Z); // Function Engine.KismetMathLibrary.MakeRotFromZ // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b370
-	struct FRotator MakeRotFromYZ(struct FVector Y, struct FVector Z); // Function Engine.KismetMathLibrary.MakeRotFromYZ // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b270
-	struct FRotator MakeRotFromYX(struct FVector Y, struct FVector X); // Function Engine.KismetMathLibrary.MakeRotFromYX // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b170
-	struct FRotator MakeRotFromY(struct FVector Y); // Function Engine.KismetMathLibrary.MakeRotFromY // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b0d0
-	struct FRotator MakeRotFromXZ(struct FVector X, struct FVector Z); // Function Engine.KismetMathLibrary.MakeRotFromXZ // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306afd0
-	struct FRotator MakeRotFromXY(struct FVector X, struct FVector Y); // Function Engine.KismetMathLibrary.MakeRotFromXY // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306aed0
-	struct FRotator MakeRotFromX(struct FVector X); // Function Engine.KismetMathLibrary.MakeRotFromX // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306ae30
-	struct FRotator MakeRotator(float Roll, float Pitch, float Yaw); // Function Engine.KismetMathLibrary.MakeRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b750
-	struct FRotator MakeRotationFromAxes(struct FVector Forward, struct FVector Right, struct FVector Up); // Function Engine.KismetMathLibrary.MakeRotationFromAxes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306b610
-	struct FRandomStream MakeRandomStream(int32_t InitialSeed); // Function Engine.KismetMathLibrary.MakeRandomStream // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306ada0
-	float MakePulsatingValue(float InCurrentTime, float InPulsesPerSecond, float InPhase); // Function Engine.KismetMathLibrary.MakePulsatingValue // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ac90
-	struct FDateTime MakeDateTime(int32_t Year, int32_t Month, int32_t Day, int32_t Hour, int32_t Minute, int32_t Second, int32_t Millisecond); // Function Engine.KismetMathLibrary.MakeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306a650
-	struct FLinearColor MakeColor(float R, float G, float B, float A); // Function Engine.KismetMathLibrary.MakeColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306a4f0
-	float Loge(float A); // Function Engine.KismetMathLibrary.Loge // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306a470
-	bool LinePlaneIntersection_OriginNormal(struct FVector LineStart, struct FVector LineEnd, struct FVector PlaneOrigin, struct FVector PlaneNormal, float T, struct FVector Intersection); // Function Engine.KismetMathLibrary.LinePlaneIntersection_OriginNormal // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3067e30
-	bool LinePlaneIntersection(struct FVector LineStart, struct FVector LineEnd, struct FPlane APlane, float T, struct FVector Intersection); // Function Engine.KismetMathLibrary.LinePlaneIntersection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3067c40
-	struct FLinearColor LinearColorLerpUsingHSV(struct FLinearColor A, struct FLinearColor B, float Alpha); // Function Engine.KismetMathLibrary.LinearColorLerpUsingHSV // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3069ad0
-	struct FLinearColor LinearColorLerp(struct FLinearColor A, struct FLinearColor B, float Alpha); // Function Engine.KismetMathLibrary.LinearColorLerp // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30699b0
-	struct FVector LessLess_VectorRotator(struct FVector A, struct FRotator B); // Function Engine.KismetMathLibrary.LessLess_VectorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30677a0
-	bool LessEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.LessEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30676e0
-	bool LessEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.LessEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067620
-	bool LessEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.LessEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067560
-	bool LessEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.LessEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30674b0
-	bool LessEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.LessEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30673f0
-	bool Less_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Less_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3067b80
-	bool Less_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Less_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067ac0
-	bool Less_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Less_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067a00
-	bool Less_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.Less_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3067950
-	bool Less_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Less_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067890
-	float Lerp(float A, float B, float Alpha); // Function Engine.KismetMathLibrary.Lerp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30672e0
-	bool IsPointInBox(struct FVector Point, struct FBox Box); // Function Engine.KismetMathLibrary.IsPointInBox // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30632b0
-	bool IsMorning(struct FDateTime A); // Function Engine.KismetMathLibrary.IsMorning // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062ff0
-	bool IsLeapYear(int32_t Year); // Function Engine.KismetMathLibrary.IsLeapYear // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062ef0
-	bool IsAfternoon(struct FDateTime A); // Function Engine.KismetMathLibrary.IsAfternoon // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062d50
-	struct FTransform InvertTransform(struct FTransform T); // Function Engine.KismetMathLibrary.InvertTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062c50
-	struct FVector InverseTransformLocation(struct FTransform T, struct FVector Location); // Function Engine.KismetMathLibrary.InverseTransformLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062af0
-	struct FVector InverseTransformDirection(struct FTransform T, struct FVector Direction); // Function Engine.KismetMathLibrary.InverseTransformDirection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30629b0
-	float InverseLerp(float A, float B, float Value); // Function Engine.KismetMathLibrary.InverseLerp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30628a0
-	bool InRange_FloatFloat(float Value, float Min, float Max, bool InclusiveMin, bool InclusiveMax); // Function Engine.KismetMathLibrary.InRange_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061cb0
-	float Hypotenuse(float Width, float Height); // Function Engine.KismetMathLibrary.Hypotenuse // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061bf0
-	void HSVToRGB_Vector(struct FLinearColor HSV, struct FLinearColor RGB); // Function Engine.KismetMathLibrary.HSVToRGB_Vector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061990
-	struct FLinearColor HSVToRGB(float H, float S, float V, float A); // Function Engine.KismetMathLibrary.HSVToRGB // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061830
-	float GridSnap_Float(float Location, float GridSize); // Function Engine.KismetMathLibrary.GridSnap_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061770
-	struct FVector GreaterGreater_VectorRotator(struct FVector A, struct FRotator B); // Function Engine.KismetMathLibrary.GreaterGreater_VectorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30612d0
-	bool GreaterEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.GreaterEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061210
-	bool GreaterEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.GreaterEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061150
-	bool GreaterEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.GreaterEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061090
-	bool GreaterEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.GreaterEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060fe0
-	bool GreaterEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.GreaterEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060f20
-	bool Greater_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Greater_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30616b0
-	bool Greater_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Greater_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30615f0
-	bool Greater_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Greater_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061530
-	bool Greater_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.Greater_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061480
-	bool Greater_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Greater_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30613c0
-	int32_t GetYear(struct FDateTime A); // Function Engine.KismetMathLibrary.GetYear // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060e70
-	void GetYawPitchFromVector(struct FVector InVec, float Yaw, float Pitch); // Function Engine.KismetMathLibrary.GetYawPitchFromVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060d40
-	float GetYawFromVector(struct FVector InVec); // Function Engine.KismetMathLibrary.GetYawFromVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060cb0
-	struct FVector GetVectorArrayAverage(struct TArray<struct FVector> Vectors); // Function Engine.KismetMathLibrary.GetVectorArrayAverage // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30609f0
-	struct FVector GetUpVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.GetUpVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30607a0
-	float GetTotalSeconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalSeconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060540
-	float GetTotalMinutes(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalMinutes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30604b0
-	float GetTotalMilliseconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalMilliseconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060420
-	float GetTotalHours(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalHours // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060390
-	float GetTotalDays(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalDays // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060300
-	struct FTimespan GetTimeOfDay(struct FDateTime A); // Function Engine.KismetMathLibrary.GetTimeOfDay // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060280
-	int32_t GetSeconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetSeconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305ffe0
-	int32_t GetSecond(struct FDateTime A); // Function Engine.KismetMathLibrary.GetSecond // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305ff70
-	struct FVector GetRightVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.GetRightVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305fde0
-	float GetPI(); // Function Engine.KismetMathLibrary.GetPI // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305fb20
-	int32_t GetMonth(struct FDateTime A); // Function Engine.KismetMathLibrary.GetMonth // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f950
-	int32_t GetMinutes(struct FTimespan A); // Function Engine.KismetMathLibrary.GetMinutes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f8d0
-	int32_t GetMinute(struct FDateTime A); // Function Engine.KismetMathLibrary.GetMinute // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f860
-	float GetMinElement(struct FVector A); // Function Engine.KismetMathLibrary.GetMinElement // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f7d0
-	int32_t GetMilliseconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetMilliseconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f750
-	int32_t GetMillisecond(struct FDateTime A); // Function Engine.KismetMathLibrary.GetMillisecond // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f6e0
-	float GetMaxElement(struct FVector A); // Function Engine.KismetMathLibrary.GetMaxElement // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f620
-	int32_t GetHours(struct FTimespan A); // Function Engine.KismetMathLibrary.GetHours // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f280
-	int32_t GetHour12(struct FDateTime A); // Function Engine.KismetMathLibrary.GetHour12 // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f1a0
-	int32_t GetHour(struct FDateTime A); // Function Engine.KismetMathLibrary.GetHour // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f210
-	struct FVector GetForwardVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.GetForwardVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305efd0
-	struct FTimespan GetDuration(struct FTimespan A); // Function Engine.KismetMathLibrary.GetDuration // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305eb80
-	struct FVector GetDirectionVector(struct FVector From, struct FVector To); // Function Engine.KismetMathLibrary.GetDirectionVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e9b0
-	int32_t GetDays(struct FTimespan A); // Function Engine.KismetMathLibrary.GetDays // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e930
-	int32_t GetDayOfYear(struct FDateTime A); // Function Engine.KismetMathLibrary.GetDayOfYear // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e8c0
-	int32_t GetDay(struct FDateTime A); // Function Engine.KismetMathLibrary.GetDay // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e850
-	struct FDateTime GetDate(struct FDateTime A); // Function Engine.KismetMathLibrary.GetDate // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e7d0
-	void GetAxes(struct FRotator A, struct FVector X, struct FVector Y, struct FVector Z); // Function Engine.KismetMathLibrary.GetAxes // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e230
-	int32_t FTrunc(float A); // Function Engine.KismetMathLibrary.FTrunc // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d050
-	struct FTimespan FromSeconds(float Seconds); // Function Engine.KismetMathLibrary.FromSeconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dde0
-	struct FTimespan FromMinutes(float Minutes); // Function Engine.KismetMathLibrary.FromMinutes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dd50
-	struct FTimespan FromMilliseconds(float Milliseconds); // Function Engine.KismetMathLibrary.FromMilliseconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dcc0
-	struct FTimespan FromHours(float Hours); // Function Engine.KismetMathLibrary.FromHours // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dc30
-	struct FTimespan FromDays(float Days); // Function Engine.KismetMathLibrary.FromDays // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dba0
-	float Fraction(float A); // Function Engine.KismetMathLibrary.Fraction // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305daa0
-	int32_t FMod(float Dividend, float Divisor, float Remainder); // Function Engine.KismetMathLibrary.FMod // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305cf40
-	float FMin(float A, float B); // Function Engine.KismetMathLibrary.FMin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ce80
-	float FMax(float A, float B); // Function Engine.KismetMathLibrary.FMax // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305cdc0
-	float FixedTurn(float InCurrent, float InDesired, float InDeltaRate); // Function Engine.KismetMathLibrary.FixedTurn // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d650
-	float FInterpTo_Constant(float Current, float Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.FInterpTo_Constant // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305cc70
-	float FInterpTo(float Current, float Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.FInterpTo // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305cb20
-	float FInterpEaseInOut(float A, float B, float Alpha, float Exponent); // Function Engine.KismetMathLibrary.FInterpEaseInOut // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305c9d0
-	struct FRotator FindLookAtRotation(struct FVector Start, struct FVector Target); // Function Engine.KismetMathLibrary.FindLookAtRotation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305d230
-	int32_t FFloor(float A); // Function Engine.KismetMathLibrary.FFloor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305c950
-	float FClamp(float Value, float Min, float Max); // Function Engine.KismetMathLibrary.FClamp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305c840
-	int32_t FCeil(float A); // Function Engine.KismetMathLibrary.FCeil // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305c7c0
-	float Exp(float A); // Function Engine.KismetMathLibrary.Exp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305c740
-	bool EqualEqual_VectorVector(struct FVector A, struct FVector B, float ErrorTolerance); // Function Engine.KismetMathLibrary.EqualEqual_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305c510
-	bool EqualEqual_TransformTransform(struct FTransform A, struct FTransform B); // Function Engine.KismetMathLibrary.EqualEqual_TransformTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305c3a0
-	bool EqualEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.EqualEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305c2e0
-	bool EqualEqual_RotatorRotator(struct FRotator A, struct FRotator B, float ErrorTolerance); // Function Engine.KismetMathLibrary.EqualEqual_RotatorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305bea0
-	bool EqualEqual_ObjectObject(struct UObject* A, struct UObject* B); // Function Engine.KismetMathLibrary.EqualEqual_ObjectObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305bde0
-	bool EqualEqual_NameName(struct FName A, struct FName B); // Function Engine.KismetMathLibrary.EqualEqual_NameName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305bd20
-	bool EqualEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.EqualEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305bad0
-	bool EqualEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.EqualEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b7f0
-	bool EqualEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.EqualEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305b740
-	bool EqualEqual_ClassClass(struct UClass* A, struct UClass* B); // Function Engine.KismetMathLibrary.EqualEqual_ClassClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b680
-	bool EqualEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.EqualEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b5c0
-	bool EqualEqual_BoolBool(bool A, bool B); // Function Engine.KismetMathLibrary.EqualEqual_BoolBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b4f0
-	float Ease(float A, float B, float Alpha, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.Ease // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b1c0
-	float DotProduct2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.DotProduct2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058d90
-	float Dot_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Dot_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058e40
-	struct FVector Divide_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Divide_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058be0
-	struct FVector Divide_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Divide_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058b00
-	struct FVector Divide_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Divide_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058a20
-	struct FVector2D Divide_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Divide_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058960
-	int32_t Divide_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Divide_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30588a0
-	float Divide_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Divide_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30587e0
-	char Divide_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Divide_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058720
-	float DegTan(float A); // Function Engine.KismetMathLibrary.DegTan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058310
-	float DegSin(float A); // Function Engine.KismetMathLibrary.DegSin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058290
-	float DegreesToRadians(float A); // Function Engine.KismetMathLibrary.DegreesToRadians // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058390
-	float DegCos(float A); // Function Engine.KismetMathLibrary.DegCos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058210
-	float DegAtan2(float A, float B); // Function Engine.KismetMathLibrary.DegAtan2 // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30580d0
-	float DegAtan(float A); // Function Engine.KismetMathLibrary.DegAtan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058190
-	float DegAsin(float A); // Function Engine.KismetMathLibrary.DegAsin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058050
-	float DegAcos(float A); // Function Engine.KismetMathLibrary.DegAcos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057fd0
-	int32_t DaysInYear(int32_t Year); // Function Engine.KismetMathLibrary.DaysInYear // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057cf0
-	int32_t DaysInMonth(int32_t Year, int32_t Month); // Function Engine.KismetMathLibrary.DaysInMonth // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057c30
-	struct FDateTime DateTimeMinValue(); // Function Engine.KismetMathLibrary.DateTimeMinValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057bf0
-	struct FDateTime DateTimeMaxValue(); // Function Engine.KismetMathLibrary.DateTimeMaxValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057bb0
-	bool DateTimeFromString(struct FString DateTimeString, struct FDateTime Result); // Function Engine.KismetMathLibrary.DateTimeFromString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057ab0
-	bool DateTimeFromIsoString(struct FString IsoString, struct FDateTime Result); // Function Engine.KismetMathLibrary.DateTimeFromIsoString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30579b0
-	float CrossProduct2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.CrossProduct2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057650
-	struct FVector Cross_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Cross_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057700
-	struct FVector CreateVectorFromYawPitch(float Yaw, float Pitch, float Length); // Function Engine.KismetMathLibrary.CreateVectorFromYawPitch // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057530
-	float Cos(float A); // Function Engine.KismetMathLibrary.Cos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057380
-	struct FTransform ConvertTransformToRelative(struct FTransform Transform, struct FTransform ParentTransform); // Function Engine.KismetMathLibrary.ConvertTransformToRelative // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057200
-	struct FVector2D Conv_VectorToVector2D(struct FVector InVector); // Function Engine.KismetMathLibrary.Conv_VectorToVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057170
-	struct FTransform Conv_VectorToTransform(struct FVector InLocation); // Function Engine.KismetMathLibrary.Conv_VectorToTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30570a0
-	struct FRotator Conv_VectorToRotator(struct FVector InVec); // Function Engine.KismetMathLibrary.Conv_VectorToRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056f10
-	struct FLinearColor Conv_VectorToLinearColor(struct FVector InVec); // Function Engine.KismetMathLibrary.Conv_VectorToLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056e80
-	struct FVector Conv_Vector2DToVector(struct FVector2D InVector2D, float Z); // Function Engine.KismetMathLibrary.Conv_Vector2DToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056ce0
-	struct FVector Conv_RotatorToVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.Conv_RotatorToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056760
-	struct FVector Conv_LinearColorToVector(struct FLinearColor InLinearColor); // Function Engine.KismetMathLibrary.Conv_LinearColorToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056370
-	struct FColor Conv_LinearColorToColor(struct FLinearColor InLinearColor); // Function Engine.KismetMathLibrary.Conv_LinearColorToColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30562e0
-	float Conv_IntToFloat(int32_t InInt); // Function Engine.KismetMathLibrary.Conv_IntToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055f60
-	char Conv_IntToByte(int32_t InInt); // Function Engine.KismetMathLibrary.Conv_IntToByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055ee0
-	bool Conv_IntToBool(int32_t InInt); // Function Engine.KismetMathLibrary.Conv_IntToBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055e60
-	struct FVector Conv_FloatToVector(float InFloat); // Function Engine.KismetMathLibrary.Conv_FloatToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3055ce0
-	struct FLinearColor Conv_FloatToLinearColor(float InFloat); // Function Engine.KismetMathLibrary.Conv_FloatToLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3055940
-	struct FLinearColor Conv_ColorToLinearColor(struct FColor InColor); // Function Engine.KismetMathLibrary.Conv_ColorToLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30557e0
-	int32_t Conv_ByteToInt(char InByte); // Function Engine.KismetMathLibrary.Conv_ByteToInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30555e0
-	float Conv_ByteToFloat(char InByte); // Function Engine.KismetMathLibrary.Conv_ByteToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055560
-	int32_t Conv_BoolToInt(bool InBool); // Function Engine.KismetMathLibrary.Conv_BoolToInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055350
-	float Conv_BoolToFloat(bool InBool); // Function Engine.KismetMathLibrary.Conv_BoolToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30552c0
-	char Conv_BoolToByte(bool InBool); // Function Engine.KismetMathLibrary.Conv_BoolToByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055240
-	struct FTransform ComposeTransforms(struct FTransform A, struct FTransform B); // Function Engine.KismetMathLibrary.ComposeTransforms // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3054960
-	struct FRotator ComposeRotators(struct FRotator A, struct FRotator B); // Function Engine.KismetMathLibrary.ComposeRotators // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3054870
-	bool ClassIsChildOf(struct UClass* TestClass, struct UClass* ParentClass); // Function Engine.KismetMathLibrary.ClassIsChildOf // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3053c20
-	struct FVector ClampVectorSize(struct FVector A, float Min, float Max); // Function Engine.KismetMathLibrary.ClampVectorSize // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3053b00
-	float ClampAxis(float Angle); // Function Engine.KismetMathLibrary.ClampAxis // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3053a80
-	float ClampAngle(float AngleDegrees, float MinAngleDegrees, float MaxAngleDegrees); // Function Engine.KismetMathLibrary.ClampAngle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3053970
-	int32_t Clamp(int32_t Value, int32_t Min, int32_t Max); // Function Engine.KismetMathLibrary.Clamp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3053880
-	struct FLinearColor CInterpTo(struct FLinearColor Current, struct FLinearColor Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.CInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3050e20
-	void BreakVector2D(struct FVector2D InVec, float X, float Y); // Function Engine.KismetMathLibrary.BreakVector2D // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304f620
-	void BreakVector(struct FVector InVec, float X, float Y, float Z); // Function Engine.KismetMathLibrary.BreakVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304f740
-	void BreakTransform(struct FTransform InTransform, struct FVector Location, struct FRotator Rotation, struct FVector Scale); // Function Engine.KismetMathLibrary.BreakTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304f450
-	void BreakTimespan(struct FTimespan InTimespan, int32_t Days, int32_t Hours, int32_t Minutes, int32_t Seconds, int32_t Milliseconds); // Function Engine.KismetMathLibrary.BreakTimespan // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304f240
-	void BreakRotIntoAxes(struct FRotator InRot, struct FVector X, struct FVector Y, struct FVector Z); // Function Engine.KismetMathLibrary.BreakRotIntoAxes // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304ef30
-	void BreakRotator(struct FRotator InRot, float Roll, float Pitch, float Yaw); // Function Engine.KismetMathLibrary.BreakRotator // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304f0b0
-	void BreakRandomStream(struct FRandomStream InRandomStream, int32_t InitialSeed); // Function Engine.KismetMathLibrary.BreakRandomStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304ee50
-	void BreakDateTime(struct FDateTime InDateTime, int32_t Year, int32_t Month, int32_t Day, int32_t Hour, int32_t Minute, int32_t Second, int32_t Millisecond); // Function Engine.KismetMathLibrary.BreakDateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304eba0
-	void BreakColor(struct FLinearColor InColor, float R, float G, float B, float A); // Function Engine.KismetMathLibrary.BreakColor // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304e9b0
-	bool BooleanXOR(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanXOR // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304cfa0
-	bool BooleanOR(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanOR // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304ced0
-	bool BooleanNOR(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanNOR // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304ce00
-	bool BooleanNAND(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanNAND // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304cd30
-	bool BooleanAND(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanAND // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304cc60
-	float Atan2(float A, float B); // Function Engine.KismetMathLibrary.Atan2 // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304ca60
-	float Atan(float A); // Function Engine.KismetMathLibrary.Atan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304cb20
-	float Asin(float A); // Function Engine.KismetMathLibrary.Asin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c9e0
-	int32_t And_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.And_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304a7b0
-	struct FVector Add_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Add_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a6c0
-	struct FVector Add_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Add_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a5e0
-	struct FVector Add_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Add_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a500
-	struct FVector2D Add_Vector2DVector2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.Add_Vector2DVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a440
-	struct FVector2D Add_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Add_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a380
-	struct FTimespan Add_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Add_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a2c0
-	int32_t Add_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Add_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304a200
-	float Add_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Add_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304a140
-	struct FDateTime Add_DateTimeTimespan(struct FDateTime A, struct FTimespan B); // Function Engine.KismetMathLibrary.Add_DateTimeTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304a080
-	char Add_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Add_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3049fc0
-	float Acos(float A); // Function Engine.KismetMathLibrary.Acos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3049dc0
-	int32_t Abs_Int(int32_t A); // Function Engine.KismetMathLibrary.Abs_Int // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3049d40
-	float Abs(float A); // Function Engine.KismetMathLibrary.Abs // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3049cc0
+	int32_t Xor_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Xor_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307f140
+	float VSizeSquared(struct FVector A); // Function Engine.KismetMathLibrary.VSizeSquared // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307ea40
+	float VSize2DSquared(struct FVector2D A); // Function Engine.KismetMathLibrary.VSize2DSquared // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e930
+	float VSize2D(struct FVector2D A); // Function Engine.KismetMathLibrary.VSize2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e8b0
+	float VSize(struct FVector A); // Function Engine.KismetMathLibrary.VSize // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e9b0
+	struct FVector VLerp(struct FVector A, struct FVector B, float Alpha); // Function Engine.KismetMathLibrary.VLerp // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e770
+	struct FVector VInterpTo_Constant(struct FVector Current, struct FVector Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.VInterpTo_Constant // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e5d0
+	struct FVector VInterpTo(struct FVector Current, struct FVector Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.VInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e430
+	struct FVector2D Vector2DInterpTo_Constant(struct FVector2D Current, struct FVector2D Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.Vector2DInterpTo_Constant // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307eda0
+	struct FVector2D Vector2DInterpTo(struct FVector2D Current, struct FVector2D Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.Vector2DInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307ec50
+	struct FVector VEase(struct FVector A, struct FVector B, float Alpha, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.VEase // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e230
+	struct FDateTime UtcNow(); // Function Engine.KismetMathLibrary.UtcNow // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307e1f0
+	struct FVector TransformLocation(struct FTransform T, struct FVector Location); // Function Engine.KismetMathLibrary.TransformLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307dd70
+	struct FVector TransformDirection(struct FTransform T, struct FVector Direction); // Function Engine.KismetMathLibrary.TransformDirection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307dc30
+	struct FDateTime Today(); // Function Engine.KismetMathLibrary.Today // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307dbb0
+	struct FTransform TLerp(struct FTransform A, struct FTransform B, float Alpha); // Function Engine.KismetMathLibrary.TLerp // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307cdb0
+	struct FTransform TInterpTo(struct FTransform Current, struct FTransform Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.TInterpTo // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307cb90
+	struct FTimespan TimespanZeroValue(); // Function Engine.KismetMathLibrary.TimespanZeroValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307d990
+	float TimespanRatio(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.TimespanRatio // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307d8d0
+	struct FTimespan TimespanMinValue(); // Function Engine.KismetMathLibrary.TimespanMinValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307d890
+	struct FTimespan TimespanMaxValue(); // Function Engine.KismetMathLibrary.TimespanMaxValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307d850
+	bool TimespanFromString(struct FString TimespanString, struct FTimespan Result); // Function Engine.KismetMathLibrary.TimespanFromString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307d750
+	struct FTransform TEase(struct FTransform A, struct FTransform B, float Alpha, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.TEase // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c900
+	float Tan(float A); // Function Engine.KismetMathLibrary.Tan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307cf90
+	struct FVector Subtract_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Subtract_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c760
+	struct FVector Subtract_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Subtract_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c680
+	struct FVector Subtract_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Subtract_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c5a0
+	struct FVector2D Subtract_Vector2DVector2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.Subtract_Vector2DVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c4e0
+	struct FVector2D Subtract_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Subtract_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c420
+	struct FTimespan Subtract_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Subtract_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c360
+	int32_t Subtract_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Subtract_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307c2a0
+	float Subtract_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Subtract_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307c1e0
+	struct FDateTime Subtract_DateTimeTimespan(struct FDateTime A, struct FTimespan B); // Function Engine.KismetMathLibrary.Subtract_DateTimeTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c120
+	struct FTimespan Subtract_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.Subtract_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x307c060
+	char Subtract_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Subtract_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307bfa0
+	float Square(float A); // Function Engine.KismetMathLibrary.Square // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307bc10
+	float Sqrt(float A); // Function Engine.KismetMathLibrary.Sqrt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307bb90
+	float Sin(float A); // Function Engine.KismetMathLibrary.Sin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30792e0
+	int32_t SignOfInteger(int32_t A); // Function Engine.KismetMathLibrary.SignOfInteger // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079260
+	float SignOfFloat(float A); // Function Engine.KismetMathLibrary.SignOfFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30791e0
+	void SetRandomStreamSeed(struct FRandomStream Stream, int32_t NewSeed); // Function Engine.KismetMathLibrary.SetRandomStreamSeed // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30783f0
+	struct FVector SelectVector(struct FVector A, struct FVector B, bool bPickA); // Function Engine.KismetMathLibrary.SelectVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3077500
+	struct FTransform SelectTransform(struct FTransform A, struct FTransform B, bool bPickA); // Function Engine.KismetMathLibrary.SelectTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3077330
+	struct FString SelectString(struct FString A, struct FString B, bool bPickA); // Function Engine.KismetMathLibrary.SelectString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30771a0
+	struct FRotator SelectRotator(struct FRotator A, struct FRotator B, bool bPickA); // Function Engine.KismetMathLibrary.SelectRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3077060
+	struct UObject* SelectObject(struct UObject* A, struct UObject* B, bool bSelectA); // Function Engine.KismetMathLibrary.SelectObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076f60
+	int32_t SelectInt(int32_t A, int32_t B, bool bPickA); // Function Engine.KismetMathLibrary.SelectInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076e70
+	float SelectFloat(float A, float B, bool bPickA); // Function Engine.KismetMathLibrary.SelectFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076d70
+	struct FLinearColor SelectColor(struct FLinearColor A, struct FLinearColor B, bool bPickA); // Function Engine.KismetMathLibrary.SelectColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3076c40
+	struct UClass* SelectClass(struct UClass* A, struct UClass* B, bool bSelectA); // Function Engine.KismetMathLibrary.SelectClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076b40
+	void SeedRandomStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.SeedRandomStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3076ac0
+	int32_t Round(float A); // Function Engine.KismetMathLibrary.Round // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076a40
+	struct FRotator RotatorFromAxisAndAngle(struct FVector Axis, float Angle); // Function Engine.KismetMathLibrary.RotatorFromAxisAndAngle // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3076960
+	struct FVector RotateAngleAxis(struct FVector InVect, float AngleDeg, struct FVector Axis); // Function Engine.KismetMathLibrary.RotateAngleAxis // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3076820
+	struct FRotator RLerp(struct FRotator A, struct FRotator B, float Alpha, bool bShortestPath); // Function Engine.KismetMathLibrary.RLerp // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30744b0
+	struct FRotator RInterpTo_Constant(struct FRotator Current, struct FRotator Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.RInterpTo_Constant // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074310
+	struct FRotator RInterpTo(struct FRotator Current, struct FRotator Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.RInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074170
+	void RGBToHSV_Vector(struct FLinearColor RGB, struct FLinearColor HSV); // Function Engine.KismetMathLibrary.RGBToHSV_Vector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30740b0
+	void RGBToHSV(struct FLinearColor InColor, float H, float S, float V, float A); // Function Engine.KismetMathLibrary.RGBToHSV // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3073ec0
+	void ResetRandomStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.ResetRandomStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30756e0
+	struct FRotator REase(struct FRotator A, struct FRotator B, float Alpha, bool bShortestPath, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.REase // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3073c90
+	struct FVector RandomUnitVectorInConeWithYawAndPitch(struct FVector ConeDir, float MaxYawInDegrees, float MaxPitchInDegrees); // Function Engine.KismetMathLibrary.RandomUnitVectorInConeWithYawAndPitch // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3075170
+	struct FVector RandomUnitVectorInCone(struct FVector ConeDir, float ConeHalfAngle); // Function Engine.KismetMathLibrary.RandomUnitVectorInCone // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3075090
+	struct FVector RandomUnitVectorFromStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomUnitVectorFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074ff0
+	struct FVector RandomUnitVector(); // Function Engine.KismetMathLibrary.RandomUnitVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074fb0
+	struct FRotator RandomRotatorFromStream(bool bRoll, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomRotatorFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074ed0
+	struct FRotator RandomRotator(bool bRoll); // Function Engine.KismetMathLibrary.RandomRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074e30
+	struct FVector RandomPointInBoundingBox(struct FVector Origin, struct FVector BoxExtent); // Function Engine.KismetMathLibrary.RandomPointInBoundingBox // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074d30
+	int32_t RandomIntegerInRangeFromStream(int32_t Min, int32_t Max, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomIntegerInRangeFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074c30
+	int32_t RandomIntegerInRange(int32_t Min, int32_t Max); // Function Engine.KismetMathLibrary.RandomIntegerInRange // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074b70
+	int32_t RandomIntegerFromStream(int32_t Max, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomIntegerFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074aa0
+	int32_t RandomInteger(int32_t Max); // Function Engine.KismetMathLibrary.RandomInteger // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074a20
+	float RandomFloatInRangeFromStream(float Min, float Max, struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomFloatInRangeFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074910
+	float RandomFloatInRange(float Min, float Max); // Function Engine.KismetMathLibrary.RandomFloatInRange // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074850
+	float RandomFloatFromStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomFloatFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30747c0
+	float RandomFloat(); // Function Engine.KismetMathLibrary.RandomFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074790
+	bool RandomBoolFromStream(struct FRandomStream Stream); // Function Engine.KismetMathLibrary.RandomBoolFromStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3074700
+	bool RandomBool(); // Function Engine.KismetMathLibrary.RandomBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30746d0
+	float RadiansToDegrees(float A); // Function Engine.KismetMathLibrary.RadiansToDegrees // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074650
+	struct FVector ProjectVectorOnToVector(struct FVector V, struct FVector Target); // Function Engine.KismetMathLibrary.ProjectVectorOnToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3073aa0
+	struct FVector ProjectVectorOnToPlane(struct FVector V, struct FVector PlaneNormal); // Function Engine.KismetMathLibrary.ProjectVectorOnToPlane // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30739b0
+	struct FVector ProjectPointOnToPlane(struct FVector Point, struct FVector PlaneBase, struct FVector PlaneNormal); // Function Engine.KismetMathLibrary.ProjectPointOnToPlane // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3073870
+	bool PointsAreCoplanar(struct TArray<struct FVector> Points, float Tolerance); // Function Engine.KismetMathLibrary.PointsAreCoplanar // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30732e0
+	int32_t Percent_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Percent_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072570
+	float Percent_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Percent_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30724b0
+	char Percent_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Percent_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30723f0
+	int32_t Or_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Or_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072050
+	struct FDateTime Now(); // Function Engine.KismetMathLibrary.Now // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071f80
+	bool NotEqual_VectorVector(struct FVector A, struct FVector B, float ErrorTolerance); // Function Engine.KismetMathLibrary.NotEqual_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071de0
+	bool NotEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.NotEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071d20
+	bool NotEqual_RotatorRotator(struct FRotator A, struct FRotator B, float ErrorTolerance); // Function Engine.KismetMathLibrary.NotEqual_RotatorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30718e0
+	bool NotEqual_ObjectObject(struct UObject* A, struct UObject* B); // Function Engine.KismetMathLibrary.NotEqual_ObjectObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071820
+	bool NotEqual_NameName(struct FName A, struct FName B); // Function Engine.KismetMathLibrary.NotEqual_NameName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071760
+	bool NotEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.NotEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30716a0
+	bool NotEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.NotEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30713c0
+	bool NotEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.NotEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3071310
+	bool NotEqual_ClassClass(struct UClass* A, struct UClass* B); // Function Engine.KismetMathLibrary.NotEqual_ClassClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071250
+	bool NotEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.NotEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071190
+	bool NotEqual_BoolBool(bool A, bool B); // Function Engine.KismetMathLibrary.NotEqual_BoolBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30710c0
+	bool Not_PreBool(bool A); // Function Engine.KismetMathLibrary.Not_PreBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071f00
+	float NormalizeToRange(float Value, float RangeMin, float RangeMax); // Function Engine.KismetMathLibrary.NormalizeToRange // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3070ec0
+	struct FRotator NormalizedDeltaRotator(struct FRotator A, struct FRotator B); // Function Engine.KismetMathLibrary.NormalizedDeltaRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070fd0
+	float NormalizeAxis(float Angle); // Function Engine.KismetMathLibrary.NormalizeAxis // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3070e40
+	struct FVector2D Normal2D(struct FVector2D A); // Function Engine.KismetMathLibrary.Normal2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070d20
+	struct FVector Normal(struct FVector A); // Function Engine.KismetMathLibrary.Normal // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070da0
+	struct FVector NegateVector(struct FVector A); // Function Engine.KismetMathLibrary.NegateVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070c40
+	struct FRotator NegateRotator(struct FRotator A); // Function Engine.KismetMathLibrary.NegateRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070ba0
+	bool NearlyEqual_TransformTransform(struct FTransform A, struct FTransform B, float LocationTolerance, float RotationTolerance, float Scale3DTolerance); // Function Engine.KismetMathLibrary.NearlyEqual_TransformTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070980
+	bool NearlyEqual_FloatFloat(float A, float B, float ErrorTolerance); // Function Engine.KismetMathLibrary.NearlyEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3070870
+	float MultiplyMultiply_FloatFloat(float Base, float Exp); // Function Engine.KismetMathLibrary.MultiplyMultiply_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fd10
+	float MultiplyByPi(float Value); // Function Engine.KismetMathLibrary.MultiplyByPi // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fc90
+	struct FVector Multiply_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Multiply_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070780
+	struct FVector Multiply_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Multiply_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30706a0
+	struct FVector Multiply_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Multiply_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30705c0
+	struct FVector2D Multiply_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Multiply_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070500
+	struct FTimespan Multiply_TimespanFloat(struct FTimespan A, float Scalar); // Function Engine.KismetMathLibrary.Multiply_TimespanFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070440
+	struct FRotator Multiply_RotatorInt(struct FRotator A, int32_t B); // Function Engine.KismetMathLibrary.Multiply_RotatorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070360
+	struct FRotator Multiply_RotatorFloat(struct FRotator A, float B); // Function Engine.KismetMathLibrary.Multiply_RotatorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3070280
+	struct FLinearColor Multiply_LinearColorLinearColor(struct FLinearColor A, struct FLinearColor B); // Function Engine.KismetMathLibrary.Multiply_LinearColorLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30701b0
+	struct FLinearColor Multiply_LinearColorFloat(struct FLinearColor A, float B); // Function Engine.KismetMathLibrary.Multiply_LinearColorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30700e0
+	int32_t Multiply_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Multiply_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3070020
+	float Multiply_IntFloat(int32_t A, float B); // Function Engine.KismetMathLibrary.Multiply_IntFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ff50
+	float Multiply_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Multiply_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fe90
+	char Multiply_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Multiply_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fdd0
+	struct FVector MirrorVectorByNormal(struct FVector InVect, struct FVector InNormal); // Function Engine.KismetMathLibrary.MirrorVectorByNormal // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306f910
+	void MinOfIntArray(struct TArray<int32_t> IntArray, int32_t IndexOfMinValue, int32_t MinValue); // Function Engine.KismetMathLibrary.MinOfIntArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306f4f0
+	void MinOfFloatArray(struct TArray<float> FloatArray, int32_t IndexOfMinValue, float MinValue); // Function Engine.KismetMathLibrary.MinOfFloatArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306f3a0
+	void MinOfByteArray(struct TArray<char> ByteArray, int32_t IndexOfMinValue, char MinValue); // Function Engine.KismetMathLibrary.MinOfByteArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306f250
+	void MinimumAreaRectangle(struct UObject* WorldContextObject, struct TArray<struct FVector> InVerts, struct FVector SampleSurfaceNormal, struct FVector OutRectCenter, struct FRotator OutRectRotation, float OutSideLengthX, float OutSideLengthY, bool bDebugDraw); // Function Engine.KismetMathLibrary.MinimumAreaRectangle // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306f640
+	int32_t Min(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Min // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f190
+	void MaxOfIntArray(struct TArray<int32_t> IntArray, int32_t IndexOfMaxValue, int32_t MaxValue); // Function Engine.KismetMathLibrary.MaxOfIntArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306ec50
+	void MaxOfFloatArray(struct TArray<float> FloatArray, int32_t IndexOfMaxValue, float MaxValue); // Function Engine.KismetMathLibrary.MaxOfFloatArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306eb00
+	void MaxOfByteArray(struct TArray<char> ByteArray, int32_t IndexOfMaxValue, char MaxValue); // Function Engine.KismetMathLibrary.MaxOfByteArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306e9b0
+	int32_t Max(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Max // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306e8f0
+	float MapRangeUnclamped(float Value, float InRangeA, float InRangeB, float OutRangeA, float OutRangeB); // Function Engine.KismetMathLibrary.MapRangeUnclamped // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306e380
+	float MapRangeClamped(float Value, float InRangeA, float InRangeB, float OutRangeA, float OutRangeB); // Function Engine.KismetMathLibrary.MapRangeClamped // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306e1e0
+	struct FVector2D MakeVector2D(float X, float Y); // Function Engine.KismetMathLibrary.MakeVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306dff0
+	struct FVector MakeVector(float X, float Y, float Z); // Function Engine.KismetMathLibrary.MakeVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306e0c0
+	struct FTransform MakeTransform(struct FVector Location, struct FRotator Rotation, struct FVector Scale); // Function Engine.KismetMathLibrary.MakeTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306de80
+	struct FTimespan MakeTimespan(int32_t Days, int32_t Hours, int32_t Minutes, int32_t Seconds, int32_t Milliseconds); // Function Engine.KismetMathLibrary.MakeTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306dd00
+	struct FRotator MakeRotFromZY(struct FVector Z, struct FVector Y); // Function Engine.KismetMathLibrary.MakeRotFromZY // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d9a0
+	struct FRotator MakeRotFromZX(struct FVector Z, struct FVector X); // Function Engine.KismetMathLibrary.MakeRotFromZX // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d8a0
+	struct FRotator MakeRotFromZ(struct FVector Z); // Function Engine.KismetMathLibrary.MakeRotFromZ // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d800
+	struct FRotator MakeRotFromYZ(struct FVector Y, struct FVector Z); // Function Engine.KismetMathLibrary.MakeRotFromYZ // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d700
+	struct FRotator MakeRotFromYX(struct FVector Y, struct FVector X); // Function Engine.KismetMathLibrary.MakeRotFromYX // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d600
+	struct FRotator MakeRotFromY(struct FVector Y); // Function Engine.KismetMathLibrary.MakeRotFromY // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d560
+	struct FRotator MakeRotFromXZ(struct FVector X, struct FVector Z); // Function Engine.KismetMathLibrary.MakeRotFromXZ // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d460
+	struct FRotator MakeRotFromXY(struct FVector X, struct FVector Y); // Function Engine.KismetMathLibrary.MakeRotFromXY // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d360
+	struct FRotator MakeRotFromX(struct FVector X); // Function Engine.KismetMathLibrary.MakeRotFromX // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d2c0
+	struct FRotator MakeRotator(float Roll, float Pitch, float Yaw); // Function Engine.KismetMathLibrary.MakeRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306dbe0
+	struct FRotator MakeRotationFromAxes(struct FVector Forward, struct FVector Right, struct FVector Up); // Function Engine.KismetMathLibrary.MakeRotationFromAxes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306daa0
+	struct FRandomStream MakeRandomStream(int32_t InitialSeed); // Function Engine.KismetMathLibrary.MakeRandomStream // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306d230
+	float MakePulsatingValue(float InCurrentTime, float InPulsesPerSecond, float InPhase); // Function Engine.KismetMathLibrary.MakePulsatingValue // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306d120
+	struct FDateTime MakeDateTime(int32_t Year, int32_t Month, int32_t Day, int32_t Hour, int32_t Minute, int32_t Second, int32_t Millisecond); // Function Engine.KismetMathLibrary.MakeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306cae0
+	struct FLinearColor MakeColor(float R, float G, float B, float A); // Function Engine.KismetMathLibrary.MakeColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306c980
+	float Loge(float A); // Function Engine.KismetMathLibrary.Loge // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306c900
+	bool LinePlaneIntersection_OriginNormal(struct FVector LineStart, struct FVector LineEnd, struct FVector PlaneOrigin, struct FVector PlaneNormal, float T, struct FVector Intersection); // Function Engine.KismetMathLibrary.LinePlaneIntersection_OriginNormal // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306a2c0
+	bool LinePlaneIntersection(struct FVector LineStart, struct FVector LineEnd, struct FPlane APlane, float T, struct FVector Intersection); // Function Engine.KismetMathLibrary.LinePlaneIntersection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306a0d0
+	struct FLinearColor LinearColorLerpUsingHSV(struct FLinearColor A, struct FLinearColor B, float Alpha); // Function Engine.KismetMathLibrary.LinearColorLerpUsingHSV // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306bf60
+	struct FLinearColor LinearColorLerp(struct FLinearColor A, struct FLinearColor B, float Alpha); // Function Engine.KismetMathLibrary.LinearColorLerp // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306be40
+	struct FVector LessLess_VectorRotator(struct FVector A, struct FRotator B); // Function Engine.KismetMathLibrary.LessLess_VectorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3069c30
+	bool LessEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.LessEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3069b70
+	bool LessEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.LessEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069ab0
+	bool LessEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.LessEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30699f0
+	bool LessEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.LessEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3069940
+	bool LessEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.LessEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069880
+	bool Less_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Less_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x306a010
+	bool Less_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Less_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069f50
+	bool Less_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Less_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069e90
+	bool Less_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.Less_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3069de0
+	bool Less_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Less_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069d20
+	float Lerp(float A, float B, float Alpha); // Function Engine.KismetMathLibrary.Lerp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069770
+	bool IsPointInBox(struct FVector Point, struct FBox Box); // Function Engine.KismetMathLibrary.IsPointInBox // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3065740
+	bool IsMorning(struct FDateTime A); // Function Engine.KismetMathLibrary.IsMorning // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3065480
+	bool IsLeapYear(int32_t Year); // Function Engine.KismetMathLibrary.IsLeapYear // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065380
+	bool IsAfternoon(struct FDateTime A); // Function Engine.KismetMathLibrary.IsAfternoon // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30651e0
+	struct FTransform InvertTransform(struct FTransform T); // Function Engine.KismetMathLibrary.InvertTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30650e0
+	struct FVector InverseTransformLocation(struct FTransform T, struct FVector Location); // Function Engine.KismetMathLibrary.InverseTransformLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3064f80
+	struct FVector InverseTransformDirection(struct FTransform T, struct FVector Direction); // Function Engine.KismetMathLibrary.InverseTransformDirection // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3064e40
+	float InverseLerp(float A, float B, float Value); // Function Engine.KismetMathLibrary.InverseLerp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3064d30
+	bool InRange_FloatFloat(float Value, float Min, float Max, bool InclusiveMin, bool InclusiveMax); // Function Engine.KismetMathLibrary.InRange_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3064140
+	float Hypotenuse(float Width, float Height); // Function Engine.KismetMathLibrary.Hypotenuse // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3064080
+	void HSVToRGB_Vector(struct FLinearColor HSV, struct FLinearColor RGB); // Function Engine.KismetMathLibrary.HSVToRGB_Vector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063e20
+	struct FLinearColor HSVToRGB(float H, float S, float V, float A); // Function Engine.KismetMathLibrary.HSVToRGB // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063cc0
+	float GridSnap_Float(float Location, float GridSize); // Function Engine.KismetMathLibrary.GridSnap_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063c00
+	struct FVector GreaterGreater_VectorRotator(struct FVector A, struct FRotator B); // Function Engine.KismetMathLibrary.GreaterGreater_VectorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063760
+	bool GreaterEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.GreaterEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30636a0
+	bool GreaterEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.GreaterEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30635e0
+	bool GreaterEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.GreaterEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063520
+	bool GreaterEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.GreaterEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063470
+	bool GreaterEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.GreaterEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30633b0
+	bool Greater_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Greater_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063b40
+	bool Greater_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Greater_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063a80
+	bool Greater_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Greater_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30639c0
+	bool Greater_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.Greater_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063910
+	bool Greater_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Greater_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063850
+	int32_t GetYear(struct FDateTime A); // Function Engine.KismetMathLibrary.GetYear // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063300
+	void GetYawPitchFromVector(struct FVector InVec, float Yaw, float Pitch); // Function Engine.KismetMathLibrary.GetYawPitchFromVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30631d0
+	float GetYawFromVector(struct FVector InVec); // Function Engine.KismetMathLibrary.GetYawFromVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3063140
+	struct FVector GetVectorArrayAverage(struct TArray<struct FVector> Vectors); // Function Engine.KismetMathLibrary.GetVectorArrayAverage // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062e80
+	struct FVector GetUpVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.GetUpVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062c30
+	float GetTotalSeconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalSeconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30629d0
+	float GetTotalMinutes(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalMinutes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062940
+	float GetTotalMilliseconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalMilliseconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30628b0
+	float GetTotalHours(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalHours // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062820
+	float GetTotalDays(struct FTimespan A); // Function Engine.KismetMathLibrary.GetTotalDays // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062790
+	struct FTimespan GetTimeOfDay(struct FDateTime A); // Function Engine.KismetMathLibrary.GetTimeOfDay // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062710
+	int32_t GetSeconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetSeconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062470
+	int32_t GetSecond(struct FDateTime A); // Function Engine.KismetMathLibrary.GetSecond // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062400
+	struct FVector GetRightVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.GetRightVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3062270
+	float GetPI(); // Function Engine.KismetMathLibrary.GetPI // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061fb0
+	int32_t GetMonth(struct FDateTime A); // Function Engine.KismetMathLibrary.GetMonth // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061de0
+	int32_t GetMinutes(struct FTimespan A); // Function Engine.KismetMathLibrary.GetMinutes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061d60
+	int32_t GetMinute(struct FDateTime A); // Function Engine.KismetMathLibrary.GetMinute // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061cf0
+	float GetMinElement(struct FVector A); // Function Engine.KismetMathLibrary.GetMinElement // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061c60
+	int32_t GetMilliseconds(struct FTimespan A); // Function Engine.KismetMathLibrary.GetMilliseconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061be0
+	int32_t GetMillisecond(struct FDateTime A); // Function Engine.KismetMathLibrary.GetMillisecond // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061b70
+	float GetMaxElement(struct FVector A); // Function Engine.KismetMathLibrary.GetMaxElement // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061ab0
+	int32_t GetHours(struct FTimespan A); // Function Engine.KismetMathLibrary.GetHours // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061710
+	int32_t GetHour12(struct FDateTime A); // Function Engine.KismetMathLibrary.GetHour12 // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061630
+	int32_t GetHour(struct FDateTime A); // Function Engine.KismetMathLibrary.GetHour // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30616a0
+	struct FVector GetForwardVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.GetForwardVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061460
+	struct FTimespan GetDuration(struct FTimespan A); // Function Engine.KismetMathLibrary.GetDuration // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3061010
+	struct FVector GetDirectionVector(struct FVector From, struct FVector To); // Function Engine.KismetMathLibrary.GetDirectionVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060e40
+	int32_t GetDays(struct FTimespan A); // Function Engine.KismetMathLibrary.GetDays // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060dc0
+	int32_t GetDayOfYear(struct FDateTime A); // Function Engine.KismetMathLibrary.GetDayOfYear // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060d50
+	int32_t GetDay(struct FDateTime A); // Function Engine.KismetMathLibrary.GetDay // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060ce0
+	struct FDateTime GetDate(struct FDateTime A); // Function Engine.KismetMathLibrary.GetDate // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060c60
+	void GetAxes(struct FRotator A, struct FVector X, struct FVector Y, struct FVector Z); // Function Engine.KismetMathLibrary.GetAxes // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30606c0
+	int32_t FTrunc(float A); // Function Engine.KismetMathLibrary.FTrunc // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f4e0
+	struct FTimespan FromSeconds(float Seconds); // Function Engine.KismetMathLibrary.FromSeconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060270
+	struct FTimespan FromMinutes(float Minutes); // Function Engine.KismetMathLibrary.FromMinutes // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30601e0
+	struct FTimespan FromMilliseconds(float Milliseconds); // Function Engine.KismetMathLibrary.FromMilliseconds // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060150
+	struct FTimespan FromHours(float Hours); // Function Engine.KismetMathLibrary.FromHours // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30600c0
+	struct FTimespan FromDays(float Days); // Function Engine.KismetMathLibrary.FromDays // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060030
+	float Fraction(float A); // Function Engine.KismetMathLibrary.Fraction // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ff30
+	int32_t FMod(float Dividend, float Divisor, float Remainder); // Function Engine.KismetMathLibrary.FMod // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305f3d0
+	float FMin(float A, float B); // Function Engine.KismetMathLibrary.FMin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f310
+	float FMax(float A, float B); // Function Engine.KismetMathLibrary.FMax // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f250
+	float FixedTurn(float InCurrent, float InDesired, float InDeltaRate); // Function Engine.KismetMathLibrary.FixedTurn // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305fae0
+	float FInterpTo_Constant(float Current, float Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.FInterpTo_Constant // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f100
+	float FInterpTo(float Current, float Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.FInterpTo // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305efb0
+	float FInterpEaseInOut(float A, float B, float Alpha, float Exponent); // Function Engine.KismetMathLibrary.FInterpEaseInOut // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ee60
+	struct FRotator FindLookAtRotation(struct FVector Start, struct FVector Target); // Function Engine.KismetMathLibrary.FindLookAtRotation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305f6c0
+	int32_t FFloor(float A); // Function Engine.KismetMathLibrary.FFloor // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ede0
+	float FClamp(float Value, float Min, float Max); // Function Engine.KismetMathLibrary.FClamp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ecd0
+	int32_t FCeil(float A); // Function Engine.KismetMathLibrary.FCeil // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ec50
+	float Exp(float A); // Function Engine.KismetMathLibrary.Exp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ebd0
+	bool EqualEqual_VectorVector(struct FVector A, struct FVector B, float ErrorTolerance); // Function Engine.KismetMathLibrary.EqualEqual_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e9a0
+	bool EqualEqual_TransformTransform(struct FTransform A, struct FTransform B); // Function Engine.KismetMathLibrary.EqualEqual_TransformTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e830
+	bool EqualEqual_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.EqualEqual_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e770
+	bool EqualEqual_RotatorRotator(struct FRotator A, struct FRotator B, float ErrorTolerance); // Function Engine.KismetMathLibrary.EqualEqual_RotatorRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e330
+	bool EqualEqual_ObjectObject(struct UObject* A, struct UObject* B); // Function Engine.KismetMathLibrary.EqualEqual_ObjectObject // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e270
+	bool EqualEqual_NameName(struct FName A, struct FName B); // Function Engine.KismetMathLibrary.EqualEqual_NameName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e1b0
+	bool EqualEqual_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.EqualEqual_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305df60
+	bool EqualEqual_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.EqualEqual_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305dc80
+	bool EqualEqual_DateTimeDateTime(struct FDateTime A, struct FDateTime B); // Function Engine.KismetMathLibrary.EqualEqual_DateTimeDateTime // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305dbd0
+	bool EqualEqual_ClassClass(struct UClass* A, struct UClass* B); // Function Engine.KismetMathLibrary.EqualEqual_ClassClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305db10
+	bool EqualEqual_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.EqualEqual_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305da50
+	bool EqualEqual_BoolBool(bool A, bool B); // Function Engine.KismetMathLibrary.EqualEqual_BoolBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d980
+	float Ease(float A, float B, float Alpha, char EasingFunc, float BlendExp, int32_t Steps); // Function Engine.KismetMathLibrary.Ease // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d650
+	float DotProduct2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.DotProduct2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305b220
+	float Dot_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Dot_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305b2d0
+	struct FVector Divide_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Divide_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305b070
+	struct FVector Divide_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Divide_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305af90
+	struct FVector Divide_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Divide_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305aeb0
+	struct FVector2D Divide_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Divide_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305adf0
+	int32_t Divide_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Divide_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ad30
+	float Divide_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Divide_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ac70
+	char Divide_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Divide_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305abb0
+	float DegTan(float A); // Function Engine.KismetMathLibrary.DegTan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a7a0
+	float DegSin(float A); // Function Engine.KismetMathLibrary.DegSin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a720
+	float DegreesToRadians(float A); // Function Engine.KismetMathLibrary.DegreesToRadians // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a820
+	float DegCos(float A); // Function Engine.KismetMathLibrary.DegCos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a6a0
+	float DegAtan2(float A, float B); // Function Engine.KismetMathLibrary.DegAtan2 // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a560
+	float DegAtan(float A); // Function Engine.KismetMathLibrary.DegAtan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a620
+	float DegAsin(float A); // Function Engine.KismetMathLibrary.DegAsin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a4e0
+	float DegAcos(float A); // Function Engine.KismetMathLibrary.DegAcos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a460
+	int32_t DaysInYear(int32_t Year); // Function Engine.KismetMathLibrary.DaysInYear // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a180
+	int32_t DaysInMonth(int32_t Year, int32_t Month); // Function Engine.KismetMathLibrary.DaysInMonth // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305a0c0
+	struct FDateTime DateTimeMinValue(); // Function Engine.KismetMathLibrary.DateTimeMinValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305a080
+	struct FDateTime DateTimeMaxValue(); // Function Engine.KismetMathLibrary.DateTimeMaxValue // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305a040
+	bool DateTimeFromString(struct FString DateTimeString, struct FDateTime Result); // Function Engine.KismetMathLibrary.DateTimeFromString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059f40
+	bool DateTimeFromIsoString(struct FString IsoString, struct FDateTime Result); // Function Engine.KismetMathLibrary.DateTimeFromIsoString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059e40
+	float CrossProduct2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.CrossProduct2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059ae0
+	struct FVector Cross_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Cross_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059b90
+	struct FVector CreateVectorFromYawPitch(float Yaw, float Pitch, float Length); // Function Engine.KismetMathLibrary.CreateVectorFromYawPitch // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30599c0
+	float Cos(float A); // Function Engine.KismetMathLibrary.Cos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3059810
+	struct FTransform ConvertTransformToRelative(struct FTransform Transform, struct FTransform ParentTransform); // Function Engine.KismetMathLibrary.ConvertTransformToRelative // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059690
+	struct FVector2D Conv_VectorToVector2D(struct FVector InVector); // Function Engine.KismetMathLibrary.Conv_VectorToVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059600
+	struct FTransform Conv_VectorToTransform(struct FVector InLocation); // Function Engine.KismetMathLibrary.Conv_VectorToTransform // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059530
+	struct FRotator Conv_VectorToRotator(struct FVector InVec); // Function Engine.KismetMathLibrary.Conv_VectorToRotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30593a0
+	struct FLinearColor Conv_VectorToLinearColor(struct FVector InVec); // Function Engine.KismetMathLibrary.Conv_VectorToLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059310
+	struct FVector Conv_Vector2DToVector(struct FVector2D InVector2D, float Z); // Function Engine.KismetMathLibrary.Conv_Vector2DToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059170
+	struct FVector Conv_RotatorToVector(struct FRotator InRot); // Function Engine.KismetMathLibrary.Conv_RotatorToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058bf0
+	struct FVector Conv_LinearColorToVector(struct FLinearColor InLinearColor); // Function Engine.KismetMathLibrary.Conv_LinearColorToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058800
+	struct FColor Conv_LinearColorToColor(struct FLinearColor InLinearColor); // Function Engine.KismetMathLibrary.Conv_LinearColorToColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058770
+	float Conv_IntToFloat(int32_t InInt); // Function Engine.KismetMathLibrary.Conv_IntToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30583f0
+	char Conv_IntToByte(int32_t InInt); // Function Engine.KismetMathLibrary.Conv_IntToByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058370
+	bool Conv_IntToBool(int32_t InInt); // Function Engine.KismetMathLibrary.Conv_IntToBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30582f0
+	struct FVector Conv_FloatToVector(float InFloat); // Function Engine.KismetMathLibrary.Conv_FloatToVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058170
+	struct FLinearColor Conv_FloatToLinearColor(float InFloat); // Function Engine.KismetMathLibrary.Conv_FloatToLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057dd0
+	struct FLinearColor Conv_ColorToLinearColor(struct FColor InColor); // Function Engine.KismetMathLibrary.Conv_ColorToLinearColor // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057c70
+	int32_t Conv_ByteToInt(char InByte); // Function Engine.KismetMathLibrary.Conv_ByteToInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057a70
+	float Conv_ByteToFloat(char InByte); // Function Engine.KismetMathLibrary.Conv_ByteToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30579f0
+	int32_t Conv_BoolToInt(bool InBool); // Function Engine.KismetMathLibrary.Conv_BoolToInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30577e0
+	float Conv_BoolToFloat(bool InBool); // Function Engine.KismetMathLibrary.Conv_BoolToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057750
+	char Conv_BoolToByte(bool InBool); // Function Engine.KismetMathLibrary.Conv_BoolToByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30576d0
+	struct FTransform ComposeTransforms(struct FTransform A, struct FTransform B); // Function Engine.KismetMathLibrary.ComposeTransforms // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056df0
+	struct FRotator ComposeRotators(struct FRotator A, struct FRotator B); // Function Engine.KismetMathLibrary.ComposeRotators // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056d00
+	bool ClassIsChildOf(struct UClass* TestClass, struct UClass* ParentClass); // Function Engine.KismetMathLibrary.ClassIsChildOf // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30560b0
+	struct FVector ClampVectorSize(struct FVector A, float Min, float Max); // Function Engine.KismetMathLibrary.ClampVectorSize // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3055f90
+	float ClampAxis(float Angle); // Function Engine.KismetMathLibrary.ClampAxis // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055f10
+	float ClampAngle(float AngleDegrees, float MinAngleDegrees, float MaxAngleDegrees); // Function Engine.KismetMathLibrary.ClampAngle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055e00
+	int32_t Clamp(int32_t Value, int32_t Min, int32_t Max); // Function Engine.KismetMathLibrary.Clamp // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055d10
+	struct FLinearColor CInterpTo(struct FLinearColor Current, struct FLinearColor Target, float DeltaTime, float InterpSpeed); // Function Engine.KismetMathLibrary.CInterpTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30532b0
+	void BreakVector2D(struct FVector2D InVec, float X, float Y); // Function Engine.KismetMathLibrary.BreakVector2D // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3051ab0
+	void BreakVector(struct FVector InVec, float X, float Y, float Z); // Function Engine.KismetMathLibrary.BreakVector // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3051bd0
+	void BreakTransform(struct FTransform InTransform, struct FVector Location, struct FRotator Rotation, struct FVector Scale); // Function Engine.KismetMathLibrary.BreakTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30518e0
+	void BreakTimespan(struct FTimespan InTimespan, int32_t Days, int32_t Hours, int32_t Minutes, int32_t Seconds, int32_t Milliseconds); // Function Engine.KismetMathLibrary.BreakTimespan // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30516d0
+	void BreakRotIntoAxes(struct FRotator InRot, struct FVector X, struct FVector Y, struct FVector Z); // Function Engine.KismetMathLibrary.BreakRotIntoAxes // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30513c0
+	void BreakRotator(struct FRotator InRot, float Roll, float Pitch, float Yaw); // Function Engine.KismetMathLibrary.BreakRotator // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3051540
+	void BreakRandomStream(struct FRandomStream InRandomStream, int32_t InitialSeed); // Function Engine.KismetMathLibrary.BreakRandomStream // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30512e0
+	void BreakDateTime(struct FDateTime InDateTime, int32_t Year, int32_t Month, int32_t Day, int32_t Hour, int32_t Minute, int32_t Second, int32_t Millisecond); // Function Engine.KismetMathLibrary.BreakDateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3051030
+	void BreakColor(struct FLinearColor InColor, float R, float G, float B, float A); // Function Engine.KismetMathLibrary.BreakColor // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3050e40
+	bool BooleanXOR(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanXOR // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304f430
+	bool BooleanOR(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanOR // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304f360
+	bool BooleanNOR(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanNOR // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304f290
+	bool BooleanNAND(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanNAND // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304f1c0
+	bool BooleanAND(bool A, bool B); // Function Engine.KismetMathLibrary.BooleanAND // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304f0f0
+	float Atan2(float A, float B); // Function Engine.KismetMathLibrary.Atan2 // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304eef0
+	float Atan(float A); // Function Engine.KismetMathLibrary.Atan // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304efb0
+	float Asin(float A); // Function Engine.KismetMathLibrary.Asin // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304ee70
+	int32_t And_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.And_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304cc40
+	struct FVector Add_VectorVector(struct FVector A, struct FVector B); // Function Engine.KismetMathLibrary.Add_VectorVector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304cb50
+	struct FVector Add_VectorInt(struct FVector A, int32_t B); // Function Engine.KismetMathLibrary.Add_VectorInt // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304ca70
+	struct FVector Add_VectorFloat(struct FVector A, float B); // Function Engine.KismetMathLibrary.Add_VectorFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c990
+	struct FVector2D Add_Vector2DVector2D(struct FVector2D A, struct FVector2D B); // Function Engine.KismetMathLibrary.Add_Vector2DVector2D // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c8d0
+	struct FVector2D Add_Vector2DFloat(struct FVector2D A, float B); // Function Engine.KismetMathLibrary.Add_Vector2DFloat // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c810
+	struct FTimespan Add_TimespanTimespan(struct FTimespan A, struct FTimespan B); // Function Engine.KismetMathLibrary.Add_TimespanTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c750
+	int32_t Add_IntInt(int32_t A, int32_t B); // Function Engine.KismetMathLibrary.Add_IntInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c690
+	float Add_FloatFloat(float A, float B); // Function Engine.KismetMathLibrary.Add_FloatFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c5d0
+	struct FDateTime Add_DateTimeTimespan(struct FDateTime A, struct FTimespan B); // Function Engine.KismetMathLibrary.Add_DateTimeTimespan // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c510
+	char Add_ByteByte(char A, char B); // Function Engine.KismetMathLibrary.Add_ByteByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c450
+	float Acos(float A); // Function Engine.KismetMathLibrary.Acos // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c250
+	int32_t Abs_Int(int32_t A); // Function Engine.KismetMathLibrary.Abs_Int // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c1d0
+	float Abs(float A); // Function Engine.KismetMathLibrary.Abs // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c150
 };
 
 // Class Engine.KismetNodeHelperLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetNodeHelperLibrary : UBlueprintFunctionLibrary {
 
-	void MarkBit(int32_t Data, int32_t Index); // Function Engine.KismetNodeHelperLibrary.MarkBit // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306c090
-	bool HasUnmarkedBit(int32_t Data, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.HasUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3061b10
-	bool HasMarkedBit(int32_t Data, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.HasMarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3061a50
-	char GetValidIndex(struct UEnum* Enum, char EnumeratorIndex); // Function Engine.KismetNodeHelperLibrary.GetValidIndex // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060930
-	int32_t GetUnmarkedBit(int32_t Data, int32_t StartIdx, int32_t NumBits, bool bRandom); // Function Engine.KismetNodeHelperLibrary.GetUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3060670
-	int32_t GetRandomUnmarkedBit(int32_t Data, int32_t StartIdx, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.GetRandomUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x305fc90
-	int32_t GetFirstUnmarkedBit(int32_t Data, int32_t StartIdx, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.GetFirstUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x305eee0
-	struct FString GetEnumeratorUserFriendlyName(struct UEnum* Enum, char EnumeratorValue); // Function Engine.KismetNodeHelperLibrary.GetEnumeratorUserFriendlyName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305edc0
-	struct FName GetEnumeratorName(struct UEnum* Enum, char EnumeratorValue); // Function Engine.KismetNodeHelperLibrary.GetEnumeratorName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ed00
-	void ClearBit(int32_t Data, int32_t Index); // Function Engine.KismetNodeHelperLibrary.ClearBit // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3053d60
-	void ClearAllBits(int32_t Data); // Function Engine.KismetNodeHelperLibrary.ClearAllBits // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3053ce0
-	bool BitIsMarked(int32_t Data, int32_t Index); // Function Engine.KismetNodeHelperLibrary.BitIsMarked // Final|Native|Static|Public|BlueprintCallable // @ game+0x304cba0
+	void MarkBit(int32_t Data, int32_t Index); // Function Engine.KismetNodeHelperLibrary.MarkBit // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306e520
+	bool HasUnmarkedBit(int32_t Data, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.HasUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3063fa0
+	bool HasMarkedBit(int32_t Data, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.HasMarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3063ee0
+	char GetValidIndex(struct UEnum* Enum, char EnumeratorIndex); // Function Engine.KismetNodeHelperLibrary.GetValidIndex // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062dc0
+	int32_t GetUnmarkedBit(int32_t Data, int32_t StartIdx, int32_t NumBits, bool bRandom); // Function Engine.KismetNodeHelperLibrary.GetUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3062b00
+	int32_t GetRandomUnmarkedBit(int32_t Data, int32_t StartIdx, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.GetRandomUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3062120
+	int32_t GetFirstUnmarkedBit(int32_t Data, int32_t StartIdx, int32_t NumBits); // Function Engine.KismetNodeHelperLibrary.GetFirstUnmarkedBit // Final|Native|Static|Public|BlueprintCallable // @ game+0x3061370
+	struct FString GetEnumeratorUserFriendlyName(struct UEnum* Enum, char EnumeratorValue); // Function Engine.KismetNodeHelperLibrary.GetEnumeratorUserFriendlyName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061250
+	struct FName GetEnumeratorName(struct UEnum* Enum, char EnumeratorValue); // Function Engine.KismetNodeHelperLibrary.GetEnumeratorName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061190
+	void ClearBit(int32_t Data, int32_t Index); // Function Engine.KismetNodeHelperLibrary.ClearBit // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30561f0
+	void ClearAllBits(int32_t Data); // Function Engine.KismetNodeHelperLibrary.ClearAllBits // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3056170
+	bool BitIsMarked(int32_t Data, int32_t Index); // Function Engine.KismetNodeHelperLibrary.BitIsMarked // Final|Native|Static|Public|BlueprintCallable // @ game+0x304f030
 };
 
 // Class Engine.KismetStringLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetStringLibrary : UBlueprintFunctionLibrary {
 
-	struct FString TrimTrailing(struct FString SourceString); // Function Engine.KismetStringLibrary.TrimTrailing // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307bc70
-	struct FString Trim(struct FString SourceString); // Function Engine.KismetStringLibrary.Trim // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307bb80
-	struct FString ToUpper(struct FString SourceString); // Function Engine.KismetStringLibrary.ToUpper // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307b630
-	struct FString ToLower(struct FString SourceString); // Function Engine.KismetStringLibrary.ToLower // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307b540
-	struct FString TimeSecondsToString(float InSeconds); // Function Engine.KismetStringLibrary.TimeSecondsToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307b1e0
-	bool StartsWith(struct FString SourceString, struct FString InPrefix, char SearchCase); // Function Engine.KismetStringLibrary.StartsWith // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3079820
-	bool Split(struct FString SourceString, struct FString InStr, struct FString LeftS, struct FString RightS, char SearchCase, char SearchDir); // Function Engine.KismetStringLibrary.Split // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30794b0
-	struct FString RightPad(struct FString SourceString, int32_t ChCount); // Function Engine.KismetStringLibrary.RightPad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074260
-	struct FString RightChop(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.RightChop // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074130
-	struct FString Right(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.Right // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3074000
-	struct FString Reverse(struct FString SourceString); // Function Engine.KismetStringLibrary.Reverse // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3073f10
-	int32_t ReplaceInline(struct FString SourceString, struct FString SearchText, struct FString ReplacementText, char SearchCase); // Function Engine.KismetStringLibrary.ReplaceInline // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3073020
-	struct FString Replace(struct FString SourceString, struct FString From, struct FString To, char SearchCase); // Function Engine.KismetStringLibrary.Replace // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072e40
-	struct TArray<struct FString> ParseIntoArray(struct FString SourceString, struct FString Delimiter, bool CullEmptyStrings); // Function Engine.KismetStringLibrary.ParseIntoArray // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306fc80
-	bool NotEqual_StrStr(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.NotEqual_StrStr // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f570
-	bool NotEqual_StriStri(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.NotEqual_StriStri // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f670
-	struct FString Mid(struct FString SourceString, int32_t Start, int32_t Count); // Function Engine.KismetStringLibrary.Mid // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306cb90
-	bool MatchesWildcard(struct FString SourceString, struct FString Wildcard, char SearchCase); // Function Engine.KismetStringLibrary.MatchesWildcard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306c320
-	int32_t Len(struct FString S); // Function Engine.KismetStringLibrary.Len // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067240
-	struct FString LeftPad(struct FString SourceString, int32_t ChCount); // Function Engine.KismetStringLibrary.LeftPad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067110
-	struct FString LeftChop(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.LeftChop // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3066fe0
-	struct FString Left(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.Left // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3066eb0
-	struct FString JoinStringArray(struct TArray<struct FString> SourceArray, struct FString Separator); // Function Engine.KismetStringLibrary.JoinStringArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30635c0
-	bool IsNumeric(struct FString SourceString); // Function Engine.KismetStringLibrary.IsNumeric // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30631e0
-	struct FString GetSubstring(struct FString SourceString, int32_t StartIndex, int32_t Length); // Function Engine.KismetStringLibrary.GetSubstring // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060060
-	int32_t GetCharacterAsNumber(struct FString SourceString, int32_t Index); // Function Engine.KismetStringLibrary.GetCharacterAsNumber // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e4b0
-	struct TArray<struct FString> GetCharacterArrayFromString(struct FString SourceString); // Function Engine.KismetStringLibrary.GetCharacterArrayFromString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e3b0
-	int32_t FindSubstring(struct FString SearchIn, struct FString Substring, bool bUseCase, bool bSearchFromEnd, int32_t StartPosition); // Function Engine.KismetStringLibrary.FindSubstring // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d330
-	bool EqualEqual_StrStr(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.EqualEqual_StrStr // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305bfc0
-	bool EqualEqual_StriStri(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.EqualEqual_StriStri // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305c0c0
-	bool EndsWith(struct FString SourceString, struct FString InSuffix, char SearchCase); // Function Engine.KismetStringLibrary.EndsWith // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b3b0
-	int32_t CullArray(struct FString SourceString, struct TArray<struct FString> InArray); // Function Engine.KismetStringLibrary.CullArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30577f0
-	struct FString Conv_VectorToString(struct FVector InVec); // Function Engine.KismetStringLibrary.Conv_VectorToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056fb0
-	struct FString Conv_Vector2dToString(struct FVector2D InVec); // Function Engine.KismetStringLibrary.Conv_Vector2dToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056db0
-	struct FString Conv_TransformToString(struct FTransform InTrans); // Function Engine.KismetStringLibrary.Conv_TransformToString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056bb0
-	struct FName Conv_StringToName(struct FString InString); // Function Engine.KismetStringLibrary.Conv_StringToName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3056940
-	int32_t Conv_StringToInt(struct FString InString); // Function Engine.KismetStringLibrary.Conv_StringToInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30568a0
-	float Conv_StringToFloat(struct FString InString); // Function Engine.KismetStringLibrary.Conv_StringToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3056800
-	struct FString Conv_RotatorToString(struct FRotator InRot); // Function Engine.KismetStringLibrary.Conv_RotatorToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3056670
-	struct FString Conv_ObjectToString(struct UObject* InObj); // Function Engine.KismetStringLibrary.Conv_ObjectToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3056590
-	struct FString Conv_NameToString(struct FName InName); // Function Engine.KismetStringLibrary.Conv_NameToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3056400
-	struct FString Conv_IntToString(int32_t InInt); // Function Engine.KismetStringLibrary.Conv_IntToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055fe0
-	struct FString Conv_FloatToString(float InFloat); // Function Engine.KismetStringLibrary.Conv_FloatToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30559d0
-	struct FString Conv_ColorToString(struct FLinearColor InColor); // Function Engine.KismetStringLibrary.Conv_ColorToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3055860
-	struct FString Conv_ByteToString(char InByte); // Function Engine.KismetStringLibrary.Conv_ByteToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055660
-	struct FString Conv_BoolToString(bool InBool); // Function Engine.KismetStringLibrary.Conv_BoolToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30553d0
-	struct FString Concat_StrStr(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.Concat_StrStr // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3054ae0
-	struct FString BuildString_Vector2d(struct FString AppendTo, struct FString Prefix, struct FVector2D InVector2D, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Vector2d // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3050a50
-	struct FString BuildString_Vector(struct FString AppendTo, struct FString Prefix, struct FVector InVector, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Vector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3050c30
-	struct FString BuildString_Rotator(struct FString AppendTo, struct FString Prefix, struct FRotator InRot, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Rotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3050860
-	struct FString BuildString_Object(struct FString AppendTo, struct FString Prefix, struct UObject* InObj, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Object // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3050680
-	struct FString BuildString_Name(struct FString AppendTo, struct FString Prefix, struct FName InName, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Name // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30504a0
-	struct FString BuildString_Int(struct FString AppendTo, struct FString Prefix, int32_t InInt, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Int // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30502c0
-	struct FString BuildString_Float(struct FString AppendTo, struct FString Prefix, float InFloat, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30500e0
-	struct FString BuildString_Color(struct FString AppendTo, struct FString Prefix, struct FLinearColor InColor, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Color // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304ff00
-	struct FString BuildString_Bool(struct FString AppendTo, struct FString Prefix, bool InBool, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Bool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304fd20
+	struct FString TrimTrailing(struct FString SourceString); // Function Engine.KismetStringLibrary.TrimTrailing // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307e100
+	struct FString Trim(struct FString SourceString); // Function Engine.KismetStringLibrary.Trim // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307e010
+	struct FString ToUpper(struct FString SourceString); // Function Engine.KismetStringLibrary.ToUpper // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307dac0
+	struct FString ToLower(struct FString SourceString); // Function Engine.KismetStringLibrary.ToLower // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307d9d0
+	struct FString TimeSecondsToString(float InSeconds); // Function Engine.KismetStringLibrary.TimeSecondsToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307d670
+	bool StartsWith(struct FString SourceString, struct FString InPrefix, char SearchCase); // Function Engine.KismetStringLibrary.StartsWith // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x307bcb0
+	bool Split(struct FString SourceString, struct FString InStr, struct FString LeftS, struct FString RightS, char SearchCase, char SearchDir); // Function Engine.KismetStringLibrary.Split // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307b940
+	struct FString RightPad(struct FString SourceString, int32_t ChCount); // Function Engine.KismetStringLibrary.RightPad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30766f0
+	struct FString RightChop(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.RightChop // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30765c0
+	struct FString Right(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.Right // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3076490
+	struct FString Reverse(struct FString SourceString); // Function Engine.KismetStringLibrary.Reverse // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30763a0
+	int32_t ReplaceInline(struct FString SourceString, struct FString SearchText, struct FString ReplacementText, char SearchCase); // Function Engine.KismetStringLibrary.ReplaceInline // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30754b0
+	struct FString Replace(struct FString SourceString, struct FString From, struct FString To, char SearchCase); // Function Engine.KismetStringLibrary.Replace // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30752d0
+	struct TArray<struct FString> ParseIntoArray(struct FString SourceString, struct FString Delimiter, bool CullEmptyStrings); // Function Engine.KismetStringLibrary.ParseIntoArray // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3072110
+	bool NotEqual_StrStr(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.NotEqual_StrStr // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071a00
+	bool NotEqual_StriStri(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.NotEqual_StriStri // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3071b00
+	struct FString Mid(struct FString SourceString, int32_t Start, int32_t Count); // Function Engine.KismetStringLibrary.Mid // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306f020
+	bool MatchesWildcard(struct FString SourceString, struct FString Wildcard, char SearchCase); // Function Engine.KismetStringLibrary.MatchesWildcard // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306e7b0
+	int32_t Len(struct FString S); // Function Engine.KismetStringLibrary.Len // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30696d0
+	struct FString LeftPad(struct FString SourceString, int32_t ChCount); // Function Engine.KismetStringLibrary.LeftPad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30695a0
+	struct FString LeftChop(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.LeftChop // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069470
+	struct FString Left(struct FString SourceString, int32_t Count); // Function Engine.KismetStringLibrary.Left // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3069340
+	struct FString JoinStringArray(struct TArray<struct FString> SourceArray, struct FString Separator); // Function Engine.KismetStringLibrary.JoinStringArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3065a50
+	bool IsNumeric(struct FString SourceString); // Function Engine.KismetStringLibrary.IsNumeric // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065670
+	struct FString GetSubstring(struct FString SourceString, int32_t StartIndex, int32_t Length); // Function Engine.KismetStringLibrary.GetSubstring // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30624f0
+	int32_t GetCharacterAsNumber(struct FString SourceString, int32_t Index); // Function Engine.KismetStringLibrary.GetCharacterAsNumber // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060940
+	struct TArray<struct FString> GetCharacterArrayFromString(struct FString SourceString); // Function Engine.KismetStringLibrary.GetCharacterArrayFromString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060840
+	int32_t FindSubstring(struct FString SearchIn, struct FString Substring, bool bUseCase, bool bSearchFromEnd, int32_t StartPosition); // Function Engine.KismetStringLibrary.FindSubstring // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f7c0
+	bool EqualEqual_StrStr(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.EqualEqual_StrStr // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e450
+	bool EqualEqual_StriStri(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.EqualEqual_StriStri // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e550
+	bool EndsWith(struct FString SourceString, struct FString InSuffix, char SearchCase); // Function Engine.KismetStringLibrary.EndsWith // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d840
+	int32_t CullArray(struct FString SourceString, struct TArray<struct FString> InArray); // Function Engine.KismetStringLibrary.CullArray // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3059c80
+	struct FString Conv_VectorToString(struct FVector InVec); // Function Engine.KismetStringLibrary.Conv_VectorToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059440
+	struct FString Conv_Vector2dToString(struct FVector2D InVec); // Function Engine.KismetStringLibrary.Conv_Vector2dToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059240
+	struct FString Conv_TransformToString(struct FTransform InTrans); // Function Engine.KismetStringLibrary.Conv_TransformToString // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3059040
+	struct FName Conv_StringToName(struct FString InString); // Function Engine.KismetStringLibrary.Conv_StringToName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058dd0
+	int32_t Conv_StringToInt(struct FString InString); // Function Engine.KismetStringLibrary.Conv_StringToInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058d30
+	float Conv_StringToFloat(struct FString InString); // Function Engine.KismetStringLibrary.Conv_StringToFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058c90
+	struct FString Conv_RotatorToString(struct FRotator InRot); // Function Engine.KismetStringLibrary.Conv_RotatorToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3058b00
+	struct FString Conv_ObjectToString(struct UObject* InObj); // Function Engine.KismetStringLibrary.Conv_ObjectToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058a20
+	struct FString Conv_NameToString(struct FName InName); // Function Engine.KismetStringLibrary.Conv_NameToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058890
+	struct FString Conv_IntToString(int32_t InInt); // Function Engine.KismetStringLibrary.Conv_IntToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058470
+	struct FString Conv_FloatToString(float InFloat); // Function Engine.KismetStringLibrary.Conv_FloatToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057e60
+	struct FString Conv_ColorToString(struct FLinearColor InColor); // Function Engine.KismetStringLibrary.Conv_ColorToString // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3057cf0
+	struct FString Conv_ByteToString(char InByte); // Function Engine.KismetStringLibrary.Conv_ByteToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057af0
+	struct FString Conv_BoolToString(bool InBool); // Function Engine.KismetStringLibrary.Conv_BoolToString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057860
+	struct FString Concat_StrStr(struct FString A, struct FString B); // Function Engine.KismetStringLibrary.Concat_StrStr // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3056f70
+	struct FString BuildString_Vector2d(struct FString AppendTo, struct FString Prefix, struct FVector2D InVector2D, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Vector2d // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3052ee0
+	struct FString BuildString_Vector(struct FString AppendTo, struct FString Prefix, struct FVector InVector, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Vector // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x30530c0
+	struct FString BuildString_Rotator(struct FString AppendTo, struct FString Prefix, struct FRotator InRot, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Rotator // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3052cf0
+	struct FString BuildString_Object(struct FString AppendTo, struct FString Prefix, struct UObject* InObj, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Object // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3052b10
+	struct FString BuildString_Name(struct FString AppendTo, struct FString Prefix, struct FName InName, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Name // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3052930
+	struct FString BuildString_Int(struct FString AppendTo, struct FString Prefix, int32_t InInt, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Int // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3052750
+	struct FString BuildString_Float(struct FString AppendTo, struct FString Prefix, float InFloat, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3052570
+	struct FString BuildString_Color(struct FString AppendTo, struct FString Prefix, struct FLinearColor InColor, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Color // Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3052390
+	struct FString BuildString_Bool(struct FString AppendTo, struct FString Prefix, bool InBool, struct FString Suffix); // Function Engine.KismetStringLibrary.BuildString_Bool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30521b0
 };
 
 // Class Engine.KismetSystemLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetSystemLibrary : UBlueprintFunctionLibrary {
 
-	void StackTrace(); // Function Engine.KismetSystemLibrary.StackTrace // Final|Native|Static|Public|BlueprintCallable // @ game+0x3079800
-	bool SphereTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078a20
-	bool SphereTraceSingleByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingleByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078670
-	bool SphereTraceSingle_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingle_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3079140
-	bool SphereTraceSingle_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingle_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078dd0
-	bool SphereTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3077ca0
-	bool SphereTraceMultiByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMultiByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3077930
-	bool SphereTraceMulti_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMulti_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078340
-	bool SphereTraceMulti_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMulti_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078010
-	bool SphereOverlapComponents_NEW(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.SphereOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30776a0
-	bool SphereOverlapComponents_DEPRECATED(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.SphereOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3077440
-	bool SphereOverlapActors_NEW(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.SphereOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30771b0
-	bool SphereOverlapActors_DEPRECATED(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.SphereOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3076f50
-	void ShowPlatformSpecificLeaderboardScreen(struct FString CategoryName); // Function Engine.KismetSystemLibrary.ShowPlatformSpecificLeaderboardScreen // Final|Native|Static|Public|BlueprintCallable // @ game+0x3076cc0
-	void ShowPlatformSpecificAchievementsScreen(struct APlayerController* SpecificPlayer); // Function Engine.KismetSystemLibrary.ShowPlatformSpecificAchievementsScreen // Final|Native|Static|Public|BlueprintCallable // @ game+0x3076c50
-	void ShowAdBanner(int32_t AdIdIndex, bool bShowOnBottomOfScreen); // Function Engine.KismetSystemLibrary.ShowAdBanner // Final|Native|Static|Public|BlueprintCallable // @ game+0x3076ba0
-	void SetWindowTitle(struct FText Title); // Function Engine.KismetSystemLibrary.SetWindowTitle // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3076ae0
-	void SetVolumeButtonsHandledBySystem(bool bEnabled); // Function Engine.KismetSystemLibrary.SetVolumeButtonsHandledBySystem // Final|Native|Static|Public|BlueprintCallable // @ game+0x3076a60
-	void SetVectorPropertyByName(struct UObject* Object, struct FName PropertyName, struct FVector Value); // Function Engine.KismetSystemLibrary.SetVectorPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3076960
-	void SetTransformPropertyByName(struct UObject* Object, struct FName PropertyName, struct FTransform Value); // Function Engine.KismetSystemLibrary.SetTransformPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30766d0
-	void SetTextPropertyByName(struct UObject* Object, struct FName PropertyName, struct FText Value); // Function Engine.KismetSystemLibrary.SetTextPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30765b0
-	void SetSupressViewportTransitionMessage(struct UObject* WorldContextObject, bool bState); // Function Engine.KismetSystemLibrary.SetSupressViewportTransitionMessage // Final|Native|Static|Public|BlueprintCallable // @ game+0x30764f0
-	void SetStructurePropertyByName(struct UObject* Object, struct FName PropertyName, struct FGenericStruct Value); // Function Engine.KismetSystemLibrary.SetStructurePropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3076400
-	void SetStringPropertyByName(struct UObject* Object, struct FName PropertyName, struct FString Value); // Function Engine.KismetSystemLibrary.SetStringPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x30762f0
-	void SetRotatorPropertyByName(struct UObject* Object, struct FName PropertyName, struct FRotator Value); // Function Engine.KismetSystemLibrary.SetRotatorPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3076030
-	void SetObjectPropertyByName(struct UObject* Object, struct FName PropertyName, struct UObject* Value); // Function Engine.KismetSystemLibrary.SetObjectPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075e70
-	void SetNamePropertyByName(struct UObject* Object, struct FName PropertyName, struct FName Value); // Function Engine.KismetSystemLibrary.SetNamePropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3075cf0
-	void SetLinearColorPropertyByName(struct UObject* Object, struct FName PropertyName, struct FLinearColor Value); // Function Engine.KismetSystemLibrary.SetLinearColorPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3075bd0
-	void SetIntPropertyByName(struct UObject* Object, struct FName PropertyName, int32_t Value); // Function Engine.KismetSystemLibrary.SetIntPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075ae0
-	void SetFloatPropertyByName(struct UObject* Object, struct FName PropertyName, float Value); // Function Engine.KismetSystemLibrary.SetFloatPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x30759e0
-	void SetCollisionProfileNameProperty(struct UObject* Object, struct FName PropertyName, struct FCollisionProfileName Value); // Function Engine.KismetSystemLibrary.SetCollisionProfileNameProperty // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3075870
-	void SetClassPropertyByName(struct UObject* Object, struct FName PropertyName, struct UClass* Value); // Function Engine.KismetSystemLibrary.SetClassPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075780
-	void SetBytePropertyByName(struct UObject* Object, struct FName PropertyName, char Value); // Function Engine.KismetSystemLibrary.SetBytePropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075690
-	void SetBoolPropertyByName(struct UObject* Object, struct FName PropertyName, bool Value); // Function Engine.KismetSystemLibrary.SetBoolPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075590
-	void SetAssetPropertyByName(struct UObject* Object, struct FName PropertyName, struct UObject* Value); // Function Engine.KismetSystemLibrary.SetAssetPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3075440
-	void SetAssetClassPropertyByName(struct UObject* Object, struct FName PropertyName, struct UClass* Value); // Function Engine.KismetSystemLibrary.SetAssetClassPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30752f0
-	void RetriggerableDelay(struct UObject* WorldContextObject, float Duration, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.RetriggerableDelay // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073df0
-	void ResetGamepadAssignmentToController(int32_t ControllerId); // Function Engine.KismetSystemLibrary.ResetGamepadAssignmentToController // Final|Native|Static|Public|BlueprintCallable // @ game+0x30731c0
-	void ResetGamepadAssignments(); // Function Engine.KismetSystemLibrary.ResetGamepadAssignments // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073230
-	void RegisterForRemoteNotifications(); // Function Engine.KismetSystemLibrary.RegisterForRemoteNotifications // Final|Native|Static|Public|BlueprintCallable // @ game+0x3072e20
-	void QuitGame(struct UObject* WorldContextObject, struct APlayerController* SpecificPlayer, char QuitPreference); // Function Engine.KismetSystemLibrary.QuitGame // Final|Native|Static|Public|BlueprintCallable // @ game+0x3071700
-	void PrintWarning(struct FString InString); // Function Engine.KismetSystemLibrary.PrintWarning // Final|Native|Static|Public|BlueprintCallable // @ game+0x3071350
-	void PrintText(struct UObject* WorldContextObject, struct FText InText, bool bPrintToScreen, bool bPrintToLog, struct FLinearColor TextColor, float Duration); // Function Engine.KismetSystemLibrary.PrintText // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3071150
-	void PrintString(struct UObject* WorldContextObject, struct FString InString, bool bPrintToScreen, bool bPrintToLog, struct FLinearColor TextColor, float Duration); // Function Engine.KismetSystemLibrary.PrintString // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3070f50
-	void OnAssetLoaded__DelegateSignature(struct UObject* Loaded); // DelegateFunction Engine.KismetSystemLibrary.OnAssetLoaded__DelegateSignature // Public|Delegate // @ game+0x18e3b10
-	void OnAssetClassLoaded__DelegateSignature(struct UClass* Loaded); // DelegateFunction Engine.KismetSystemLibrary.OnAssetClassLoaded__DelegateSignature // Public|Delegate // @ game+0x18e3b10
-	void MoveComponentTo(struct USceneComponent* Component, struct FVector TargetRelativeLocation, struct FRotator TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, char MoveAction, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.MoveComponentTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x306d570
-	struct FText MakeLiteralText(struct FText Value); // Function Engine.KismetSystemLibrary.MakeLiteralText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306abc0
-	struct FString MakeLiteralString(struct FString Value); // Function Engine.KismetSystemLibrary.MakeLiteralString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306aad0
-	struct FName MakeLiteralName(struct FName Value); // Function Engine.KismetSystemLibrary.MakeLiteralName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306aa40
-	int32_t MakeLiteralInt(int32_t Value); // Function Engine.KismetSystemLibrary.MakeLiteralInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306a9c0
-	float MakeLiteralFloat(float Value); // Function Engine.KismetSystemLibrary.MakeLiteralFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306a940
-	char MakeLiteralByte(char Value); // Function Engine.KismetSystemLibrary.MakeLiteralByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306a8c0
-	bool MakeLiteralBool(bool Value); // Function Engine.KismetSystemLibrary.MakeLiteralBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306a840
-	void LoadAssetClass(struct UObject* WorldContextObject, struct UClass* AssetClass, DelegateProperty OnLoaded, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.LoadAssetClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3069db0
-	void LoadAsset(struct UObject* WorldContextObject, struct UObject* Asset, DelegateProperty OnLoaded, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.LoadAsset // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3069bf0
-	bool LineTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3069000
-	bool LineTraceSingleByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingleByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3068c90
-	bool LineTraceSingle_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingle_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3069690
-	bool LineTraceSingle_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingle_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3069370
-	bool LineTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3068380
-	bool LineTraceMultiByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMultiByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3068050
-	bool LineTraceMulti_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMulti_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30689a0
-	bool LineTraceMulti_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMulti_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30686b0
-	void LaunchURL(struct FString URL); // Function Engine.KismetSystemLibrary.LaunchURL // Final|Native|Static|Public|BlueprintCallable // @ game+0x3066e20
-	void K2_UnPauseTimerHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_UnPauseTimerHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x3066870
-	void K2_UnPauseTimerDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_UnPauseTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x30667d0
-	void K2_UnPauseTimer(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_UnPauseTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x30666f0
-	bool K2_TimerExistsHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_TimerExistsHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3066630
-	bool K2_TimerExistsDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_TimerExistsDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3066580
-	bool K2_TimerExists(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_TimerExists // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3066490
-	struct FTimerHandle K2_SetTimerDelegate(DelegateProperty Delegate, float Time, bool bLooping); // Function Engine.KismetSystemLibrary.K2_SetTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3066130
-	struct FTimerHandle K2_SetTimer(struct UObject* Object, struct FString FunctionName, float Time, bool bLooping); // Function Engine.KismetSystemLibrary.K2_SetTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065f90
-	void K2_PauseTimerHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_PauseTimerHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065e20
-	void K2_PauseTimerDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_PauseTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065d80
-	void K2_PauseTimer(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_PauseTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065ca0
-	bool K2_IsValidTimerHandle(struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_IsValidTimerHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065c20
-	bool K2_IsTimerPausedHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_IsTimerPausedHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065b60
-	bool K2_IsTimerPausedDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_IsTimerPausedDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065ab0
-	bool K2_IsTimerPaused(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_IsTimerPaused // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30659c0
-	bool K2_IsTimerActiveHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_IsTimerActiveHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065900
-	bool K2_IsTimerActiveDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_IsTimerActiveDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065850
-	bool K2_IsTimerActive(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_IsTimerActive // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065760
-	struct FTimerHandle K2_InvalidateTimerHandle(struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_InvalidateTimerHandle // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30656c0
-	float K2_GetTimerRemainingTimeHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_GetTimerRemainingTimeHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30655f0
-	float K2_GetTimerRemainingTimeDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_GetTimerRemainingTimeDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065540
-	float K2_GetTimerRemainingTime(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_GetTimerRemainingTime // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065450
-	float K2_GetTimerElapsedTimeHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_GetTimerElapsedTimeHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065380
-	float K2_GetTimerElapsedTimeDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_GetTimerElapsedTimeDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30652d0
-	float K2_GetTimerElapsedTime(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_GetTimerElapsedTime // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30651e0
-	void K2_ClearTimerHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_ClearTimerHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x30638d0
-	void K2_ClearTimerDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_ClearTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3063830
-	void K2_ClearTimer(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_ClearTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3063750
-	bool IsValidClass(struct UClass* Class); // Function Engine.KismetSystemLibrary.IsValidClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30634a0
-	bool IsValid(struct UObject* Object); // Function Engine.KismetSystemLibrary.IsValid // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063420
-	bool IsServer(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.IsServer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30633a0
-	bool IsPackagedForDistribution(); // Function Engine.KismetSystemLibrary.IsPackagedForDistribution // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063280
-	bool IsLoggedIn(struct APlayerController* SpecificPlayer); // Function Engine.KismetSystemLibrary.IsLoggedIn // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062f70
-	bool IsDedicatedServer(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.IsDedicatedServer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062e40
-	bool IsControllerAssignedToGamepad(int32_t ControllerId); // Function Engine.KismetSystemLibrary.IsControllerAssignedToGamepad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062dc0
-	void HideAdBanner(); // Function Engine.KismetSystemLibrary.HideAdBanner // Final|Native|Static|Public|BlueprintCallable // @ game+0x3061bd0
-	bool GetVolumeButtonsHandledBySystem(); // Function Engine.KismetSystemLibrary.GetVolumeButtonsHandledBySystem // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060c80
-	struct FString GetUniqueDeviceId(); // Function Engine.KismetSystemLibrary.GetUniqueDeviceId // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30605d0
-	bool GetSupportedFullscreenResolutions(struct TArray<struct FIntPoint> Resolutions); // Function Engine.KismetSystemLibrary.GetSupportedFullscreenResolutions // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30601d0
-	int32_t GetRenderingMaterialQualityLevel(); // Function Engine.KismetSystemLibrary.GetRenderingMaterialQualityLevel // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305fdb0
-	int32_t GetRenderingDetailMode(); // Function Engine.KismetSystemLibrary.GetRenderingDetailMode // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305fd80
-	struct TArray<struct FString> GetPreferredLanguages(); // Function Engine.KismetSystemLibrary.GetPreferredLanguages // Final|Native|Static|Public|BlueprintCallable // @ game+0x305fbf0
-	struct FString GetPlatformUserName(); // Function Engine.KismetSystemLibrary.GetPlatformUserName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305fb50
-	int32_t GetObjectNameAsCrc32(struct UObject* Object); // Function Engine.KismetSystemLibrary.GetObjectNameAsCrc32 // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305faa0
-	struct FString GetObjectName(struct UObject* Object); // Function Engine.KismetSystemLibrary.GetObjectName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f9c0
-	int32_t GetMaxShadowCascades(); // Function Engine.KismetSystemLibrary.GetMaxShadowCascades // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f6b0
-	struct FString GetLocalCurrencySymbol(); // Function Engine.KismetSystemLibrary.GetLocalCurrencySymbol // Final|Native|Static|Public|BlueprintCallable // @ game+0x305f580
-	struct FString GetLocalCurrencyCode(); // Function Engine.KismetSystemLibrary.GetLocalCurrencyCode // Final|Native|Static|Public|BlueprintCallable // @ game+0x305f4e0
-	float GetGameTimeInSeconds(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.GetGameTimeInSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f110
-	struct FString GetGameName(); // Function Engine.KismetSystemLibrary.GetGameName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305f070
-	struct FString GetEngineVersion(); // Function Engine.KismetSystemLibrary.GetEngineVersion // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ec60
-	struct FString GetDisplayName(struct UObject* Object); // Function Engine.KismetSystemLibrary.GetDisplayName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305eaa0
-	void GetComponentBounds(struct USceneComponent* Component, struct FVector Origin, struct FVector BoxExtent, float SphereRadius); // Function Engine.KismetSystemLibrary.GetComponentBounds // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305e670
-	struct FString GetClassDisplayName(struct UClass* Class); // Function Engine.KismetSystemLibrary.GetClassDisplayName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e590
-	int32_t GetAdIDCount(); // Function Engine.KismetSystemLibrary.GetAdIDCount // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305e0e0
-	void GetActorListFromComponentList(struct TArray<struct UPrimitiveComponent*> ComponentList, struct UClass* ActorClassFilter, struct TArray<struct AActor*> OutActorList); // Function Engine.KismetSystemLibrary.GetActorListFromComponentList // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x305df80
-	void GetActorBounds(struct AActor* Actor, struct FVector Origin, struct FVector BoxExtent); // Function Engine.KismetSystemLibrary.GetActorBounds // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x305de70
-	void ForceCloseAdBanner(); // Function Engine.KismetSystemLibrary.ForceCloseAdBanner // Final|Native|Static|Public|BlueprintCallable // @ game+0x305d8a0
-	void FlushPersistentDebugLines(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.FlushPersistentDebugLines // Final|Native|Static|Public|BlueprintCallable // @ game+0x305d7f0
-	void FlushDebugStrings(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.FlushDebugStrings // Final|Native|Static|Public|BlueprintCallable // @ game+0x305d760
-	void ExecuteConsoleCommand(struct UObject* WorldContextObject, struct FString Command, struct APlayerController* SpecificPlayer); // Function Engine.KismetSystemLibrary.ExecuteConsoleCommand // Final|Native|Static|Public|BlueprintCallable // @ game+0x305c630
-	void DrawDebugString(struct UObject* WorldContextObject, struct FVector TextLocation, struct FString Text, struct AActor* TestBaseActor, struct FLinearColor TextColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugString // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305aeb0
-	void DrawDebugSphere(struct UObject* WorldContextObject, struct FVector Center, float Radius, int32_t Segments, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugSphere // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305ace0
-	void DrawDebugPoint(struct UObject* WorldContextObject, struct FVector Position, float Size, struct FLinearColor PointColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugPoint // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305ab50
-	void DrawDebugPlane(struct UObject* WorldContextObject, struct FPlane PlaneCoordinates, struct FVector Location, float Size, struct FLinearColor PlaneColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugPlane // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305a980
-	void DrawDebugLine(struct UObject* WorldContextObject, struct FVector LineStart, struct FVector LineEnd, struct FLinearColor LineColor, float Duration, float Thickness); // Function Engine.KismetSystemLibrary.DrawDebugLine // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305a7a0
-	void DrawDebugFrustum(struct UObject* WorldContextObject, struct FTransform FrustumTransform, struct FLinearColor FrustumColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugFrustum // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305a5f0
-	void DrawDebugFloatHistoryTransform(struct UObject* WorldContextObject, struct FDebugFloatHistory FloatHistory, struct FTransform DrawTransform, struct FVector2D DrawSize, struct FLinearColor DrawColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugFloatHistoryTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305a390
-	void DrawDebugFloatHistoryLocation(struct UObject* WorldContextObject, struct FDebugFloatHistory FloatHistory, struct FVector DrawLocation, struct FVector2D DrawSize, struct FLinearColor DrawColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugFloatHistoryLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305a180
-	void DrawDebugCylinder(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, int32_t Segments, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCylinder // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3059f70
-	void DrawDebugCoordinateSystem(struct UObject* WorldContextObject, struct FVector AxisLoc, struct FRotator AxisRot, float Scale, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCoordinateSystem // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3059de0
-	void DrawDebugConeInDegrees(struct UObject* WorldContextObject, struct FVector Origin, struct FVector Direction, float Length, float AngleWidth, float AngleHeight, int32_t NumSides, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugConeInDegrees // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3059b40
-	void DrawDebugCone(struct UObject* WorldContextObject, struct FVector Origin, struct FVector Direction, float Length, float AngleWidth, float AngleHeight, int32_t NumSides, struct FLinearColor LineColor); // Function Engine.KismetSystemLibrary.DrawDebugCone // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x30598f0
-	void DrawDebugCircle(struct UObject* WorldContextObject, struct FVector Center, float Radius, int32_t NumSegments, struct FLinearColor LineColor, float Duration, float Thickness, struct FVector YAxis, struct FVector ZAxis, bool bDrawAxis); // Function Engine.KismetSystemLibrary.DrawDebugCircle // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3059610
-	void DrawDebugCapsule(struct UObject* WorldContextObject, struct FVector Center, float HalfHeight, float Radius, struct FRotator Rotation, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCapsule // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x30593f0
-	void DrawDebugCamera(struct ACameraActor* CameraActor, struct FLinearColor CameraColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCamera // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x30592f0
-	void DrawDebugBox(struct UObject* WorldContextObject, struct FVector Center, struct FVector Extent, struct FLinearColor LineColor, struct FRotator Rotation, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugBox // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3059100
-	void DrawDebugArrow(struct UObject* WorldContextObject, struct FVector LineStart, struct FVector LineEnd, float ArrowSize, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugArrow // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3058f20
-	bool DoesImplementInterface(struct UObject* TestObject, struct UClass* Interface); // Function Engine.KismetSystemLibrary.DoesImplementInterface // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058cd0
-	void Delay(struct UObject* WorldContextObject, float Duration, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.Delay // Final|Native|Static|Public|BlueprintCallable // @ game+0x3058410
-	void CreateCopyForUndoBuffer(struct UObject* ObjectToModify); // Function Engine.KismetSystemLibrary.CreateCopyForUndoBuffer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3057400
-	struct UObject* Conv_InterfaceToObject(TScriptInterface<struct UInterface> Interface); // Function Engine.KismetSystemLibrary.Conv_InterfaceToObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3056240
-	struct UObject* Conv_AssetToObject(struct UObject* Asset); // Function Engine.KismetSystemLibrary.Conv_AssetToObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3055170
-	struct UClass* Conv_AssetClassToClass(struct UClass* AssetClass); // Function Engine.KismetSystemLibrary.Conv_AssetClassToClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3055090
-	void ControlScreensaver(bool bAllowScreenSaver); // Function Engine.KismetSystemLibrary.ControlScreensaver // Final|Native|Static|Public|BlueprintCallable // @ game+0x3054c30
-	bool ComponentOverlapComponents_NEW(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.ComponentOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30545d0
-	bool ComponentOverlapComponents_DEPRECATED(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.ComponentOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3054360
-	bool ComponentOverlapActors_NEW(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.ComponentOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30540c0
-	bool ComponentOverlapActors_DEPRECATED(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.ComponentOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3053e50
-	void CollectGarbage(); // Function Engine.KismetSystemLibrary.CollectGarbage // Final|Native|Static|Public|BlueprintCallable // @ game+0x3053e30
-	bool CapsuleTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3052cb0
-	bool CapsuleTraceSingleByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingleByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30528c0
-	bool CapsuleTraceSingle_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingle_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3053450
-	bool CapsuleTraceSingle_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingle_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30530a0
-	bool CapsuleTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3051e30
-	bool CapsuleTraceMultiByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMultiByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3051a80
-	bool CapsuleTraceMulti_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMulti_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3052550
-	bool CapsuleTraceMulti_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMulti_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30521e0
-	bool CapsuleOverlapComponents_NEW(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.CapsuleOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30517b0
-	bool CapsuleOverlapComponents_DEPRECATED(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.CapsuleOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3051520
-	bool CapsuleOverlapActors_NEW(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.CapsuleOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3051250
-	bool CapsuleOverlapActors_DEPRECATED(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.CapsuleOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3050fc0
-	bool BoxTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304e5b0
-	bool BoxTraceSingle(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceSingle // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304e1f0
-	bool BoxTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304de00
-	bool BoxTraceMulti(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceMulti // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304da70
-	bool BoxOverlapComponents_NEW(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector Extent, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.BoxOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304d7d0
-	bool BoxOverlapComponents_DEPRECATED(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector Extent, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.BoxOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304d570
-	bool BoxOverlapActors_NEW(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector BoxExtent, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.BoxOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304d2d0
-	bool BoxOverlapActors_DEPRECATED(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector BoxExtent, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.BoxOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304d070
-	struct FDebugFloatHistory AddFloatHistorySample(float Value, struct FDebugFloatHistory FloatHistory); // Function Engine.KismetSystemLibrary.AddFloatHistorySample // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3049e40
+	void StackTrace(); // Function Engine.KismetSystemLibrary.StackTrace // Final|Native|Static|Public|BlueprintCallable // @ game+0x307bc90
+	bool SphereTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307aeb0
+	bool SphereTraceSingleByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingleByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307ab00
+	bool SphereTraceSingle_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingle_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307b5d0
+	bool SphereTraceSingle_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceSingle_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307b260
+	bool SphereTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307a130
+	bool SphereTraceMultiByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMultiByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3079dc0
+	bool SphereTraceMulti_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMulti_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307a7d0
+	bool SphereTraceMulti_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.SphereTraceMulti_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x307a4a0
+	bool SphereOverlapComponents_NEW(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.SphereOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3079b30
+	bool SphereOverlapComponents_DEPRECATED(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.SphereOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30798d0
+	bool SphereOverlapActors_NEW(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.SphereOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3079640
+	bool SphereOverlapActors_DEPRECATED(struct UObject* WorldContextObject, struct FVector SpherePos, float SphereRadius, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.SphereOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30793e0
+	void ShowPlatformSpecificLeaderboardScreen(struct FString CategoryName); // Function Engine.KismetSystemLibrary.ShowPlatformSpecificLeaderboardScreen // Final|Native|Static|Public|BlueprintCallable // @ game+0x3079150
+	void ShowPlatformSpecificAchievementsScreen(struct APlayerController* SpecificPlayer); // Function Engine.KismetSystemLibrary.ShowPlatformSpecificAchievementsScreen // Final|Native|Static|Public|BlueprintCallable // @ game+0x30790e0
+	void ShowAdBanner(int32_t AdIdIndex, bool bShowOnBottomOfScreen); // Function Engine.KismetSystemLibrary.ShowAdBanner // Final|Native|Static|Public|BlueprintCallable // @ game+0x3079030
+	void SetWindowTitle(struct FText Title); // Function Engine.KismetSystemLibrary.SetWindowTitle // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3078f70
+	void SetVolumeButtonsHandledBySystem(bool bEnabled); // Function Engine.KismetSystemLibrary.SetVolumeButtonsHandledBySystem // Final|Native|Static|Public|BlueprintCallable // @ game+0x3078ef0
+	void SetVectorPropertyByName(struct UObject* Object, struct FName PropertyName, struct FVector Value); // Function Engine.KismetSystemLibrary.SetVectorPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078df0
+	void SetTransformPropertyByName(struct UObject* Object, struct FName PropertyName, struct FTransform Value); // Function Engine.KismetSystemLibrary.SetTransformPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078b60
+	void SetTextPropertyByName(struct UObject* Object, struct FName PropertyName, struct FText Value); // Function Engine.KismetSystemLibrary.SetTextPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3078a40
+	void SetSupressViewportTransitionMessage(struct UObject* WorldContextObject, bool bState); // Function Engine.KismetSystemLibrary.SetSupressViewportTransitionMessage // Final|Native|Static|Public|BlueprintCallable // @ game+0x3078980
+	void SetStructurePropertyByName(struct UObject* Object, struct FName PropertyName, struct FGenericStruct Value); // Function Engine.KismetSystemLibrary.SetStructurePropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3078890
+	void SetStringPropertyByName(struct UObject* Object, struct FName PropertyName, struct FString Value); // Function Engine.KismetSystemLibrary.SetStringPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3078780
+	void SetRotatorPropertyByName(struct UObject* Object, struct FName PropertyName, struct FRotator Value); // Function Engine.KismetSystemLibrary.SetRotatorPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30784c0
+	void SetObjectPropertyByName(struct UObject* Object, struct FName PropertyName, struct UObject* Value); // Function Engine.KismetSystemLibrary.SetObjectPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3078300
+	void SetNamePropertyByName(struct UObject* Object, struct FName PropertyName, struct FName Value); // Function Engine.KismetSystemLibrary.SetNamePropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3078180
+	void SetLinearColorPropertyByName(struct UObject* Object, struct FName PropertyName, struct FLinearColor Value); // Function Engine.KismetSystemLibrary.SetLinearColorPropertyByName // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3078060
+	void SetIntPropertyByName(struct UObject* Object, struct FName PropertyName, int32_t Value); // Function Engine.KismetSystemLibrary.SetIntPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3077f70
+	void SetFloatPropertyByName(struct UObject* Object, struct FName PropertyName, float Value); // Function Engine.KismetSystemLibrary.SetFloatPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3077e70
+	void SetCollisionProfileNameProperty(struct UObject* Object, struct FName PropertyName, struct FCollisionProfileName Value); // Function Engine.KismetSystemLibrary.SetCollisionProfileNameProperty // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3077d00
+	void SetClassPropertyByName(struct UObject* Object, struct FName PropertyName, struct UClass* Value); // Function Engine.KismetSystemLibrary.SetClassPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3077c10
+	void SetBytePropertyByName(struct UObject* Object, struct FName PropertyName, char Value); // Function Engine.KismetSystemLibrary.SetBytePropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3077b20
+	void SetBoolPropertyByName(struct UObject* Object, struct FName PropertyName, bool Value); // Function Engine.KismetSystemLibrary.SetBoolPropertyByName // Final|Native|Static|Public|BlueprintCallable // @ game+0x3077a20
+	void SetAssetPropertyByName(struct UObject* Object, struct FName PropertyName, struct UObject* Value); // Function Engine.KismetSystemLibrary.SetAssetPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x30778d0
+	void SetAssetClassPropertyByName(struct UObject* Object, struct FName PropertyName, struct UClass* Value); // Function Engine.KismetSystemLibrary.SetAssetClassPropertyByName // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3077780
+	void RetriggerableDelay(struct UObject* WorldContextObject, float Duration, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.RetriggerableDelay // Final|Native|Static|Public|BlueprintCallable // @ game+0x3076280
+	void ResetGamepadAssignmentToController(int32_t ControllerId); // Function Engine.KismetSystemLibrary.ResetGamepadAssignmentToController // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075650
+	void ResetGamepadAssignments(); // Function Engine.KismetSystemLibrary.ResetGamepadAssignments // Final|Native|Static|Public|BlueprintCallable // @ game+0x30756c0
+	void RegisterForRemoteNotifications(); // Function Engine.KismetSystemLibrary.RegisterForRemoteNotifications // Final|Native|Static|Public|BlueprintCallable // @ game+0x30752b0
+	void QuitGame(struct UObject* WorldContextObject, struct APlayerController* SpecificPlayer, char QuitPreference); // Function Engine.KismetSystemLibrary.QuitGame // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073b90
+	void PrintWarning(struct FString InString); // Function Engine.KismetSystemLibrary.PrintWarning // Final|Native|Static|Public|BlueprintCallable // @ game+0x30737e0
+	void PrintText(struct UObject* WorldContextObject, struct FText InText, bool bPrintToScreen, bool bPrintToLog, struct FLinearColor TextColor, float Duration); // Function Engine.KismetSystemLibrary.PrintText // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x30735e0
+	void PrintString(struct UObject* WorldContextObject, struct FString InString, bool bPrintToScreen, bool bPrintToLog, struct FLinearColor TextColor, float Duration); // Function Engine.KismetSystemLibrary.PrintString // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x30733e0
+	void OnAssetLoaded__DelegateSignature(struct UObject* Loaded); // DelegateFunction Engine.KismetSystemLibrary.OnAssetLoaded__DelegateSignature // Public|Delegate // @ game+0x18e5fa0
+	void OnAssetClassLoaded__DelegateSignature(struct UClass* Loaded); // DelegateFunction Engine.KismetSystemLibrary.OnAssetClassLoaded__DelegateSignature // Public|Delegate // @ game+0x18e5fa0
+	void MoveComponentTo(struct USceneComponent* Component, struct FVector TargetRelativeLocation, struct FRotator TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, char MoveAction, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.MoveComponentTo // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x306fa00
+	struct FText MakeLiteralText(struct FText Value); // Function Engine.KismetSystemLibrary.MakeLiteralText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306d050
+	struct FString MakeLiteralString(struct FString Value); // Function Engine.KismetSystemLibrary.MakeLiteralString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306cf60
+	struct FName MakeLiteralName(struct FName Value); // Function Engine.KismetSystemLibrary.MakeLiteralName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ced0
+	int32_t MakeLiteralInt(int32_t Value); // Function Engine.KismetSystemLibrary.MakeLiteralInt // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ce50
+	float MakeLiteralFloat(float Value); // Function Engine.KismetSystemLibrary.MakeLiteralFloat // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306cdd0
+	char MakeLiteralByte(char Value); // Function Engine.KismetSystemLibrary.MakeLiteralByte // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306cd50
+	bool MakeLiteralBool(bool Value); // Function Engine.KismetSystemLibrary.MakeLiteralBool // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x306ccd0
+	void LoadAssetClass(struct UObject* WorldContextObject, struct UClass* AssetClass, DelegateProperty OnLoaded, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.LoadAssetClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306c240
+	void LoadAsset(struct UObject* WorldContextObject, struct UObject* Asset, DelegateProperty OnLoaded, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.LoadAsset // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306c080
+	bool LineTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306b490
+	bool LineTraceSingleByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingleByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306b120
+	bool LineTraceSingle_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingle_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306bb20
+	bool LineTraceSingle_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceSingle_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306b800
+	bool LineTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306a810
+	bool LineTraceMultiByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMultiByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306a4e0
+	bool LineTraceMulti_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMulti_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306ae30
+	bool LineTraceMulti_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.LineTraceMulti_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x306ab40
+	void LaunchURL(struct FString URL); // Function Engine.KismetSystemLibrary.LaunchURL // Final|Native|Static|Public|BlueprintCallable // @ game+0x30692b0
+	void K2_UnPauseTimerHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_UnPauseTimerHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x3068d00
+	void K2_UnPauseTimerDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_UnPauseTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3068c60
+	void K2_UnPauseTimer(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_UnPauseTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3068b80
+	bool K2_TimerExistsHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_TimerExistsHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3068ac0
+	bool K2_TimerExistsDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_TimerExistsDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3068a10
+	bool K2_TimerExists(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_TimerExists // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3068920
+	struct FTimerHandle K2_SetTimerDelegate(DelegateProperty Delegate, float Time, bool bLooping); // Function Engine.KismetSystemLibrary.K2_SetTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x30685c0
+	struct FTimerHandle K2_SetTimer(struct UObject* Object, struct FString FunctionName, float Time, bool bLooping); // Function Engine.KismetSystemLibrary.K2_SetTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3068420
+	void K2_PauseTimerHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_PauseTimerHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x30682b0
+	void K2_PauseTimerDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_PauseTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3068210
+	void K2_PauseTimer(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_PauseTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3068130
+	bool K2_IsValidTimerHandle(struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_IsValidTimerHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30680b0
+	bool K2_IsTimerPausedHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_IsTimerPausedHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067ff0
+	bool K2_IsTimerPausedDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_IsTimerPausedDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067f40
+	bool K2_IsTimerPaused(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_IsTimerPaused // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067e50
+	bool K2_IsTimerActiveHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_IsTimerActiveHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067d90
+	bool K2_IsTimerActiveDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_IsTimerActiveDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067ce0
+	bool K2_IsTimerActive(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_IsTimerActive // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067bf0
+	struct FTimerHandle K2_InvalidateTimerHandle(struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_InvalidateTimerHandle // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3067b50
+	float K2_GetTimerRemainingTimeHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_GetTimerRemainingTimeHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067a80
+	float K2_GetTimerRemainingTimeDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_GetTimerRemainingTimeDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30679d0
+	float K2_GetTimerRemainingTime(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_GetTimerRemainingTime // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30678e0
+	float K2_GetTimerElapsedTimeHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_GetTimerElapsedTimeHandle // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067810
+	float K2_GetTimerElapsedTimeDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_GetTimerElapsedTimeDelegate // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067760
+	float K2_GetTimerElapsedTime(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_GetTimerElapsedTime // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3067670
+	void K2_ClearTimerHandle(struct UObject* WorldContextObject, struct FTimerHandle Handle); // Function Engine.KismetSystemLibrary.K2_ClearTimerHandle // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065d60
+	void K2_ClearTimerDelegate(DelegateProperty Delegate); // Function Engine.KismetSystemLibrary.K2_ClearTimerDelegate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065cc0
+	void K2_ClearTimer(struct UObject* Object, struct FString FunctionName); // Function Engine.KismetSystemLibrary.K2_ClearTimer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3065be0
+	bool IsValidClass(struct UClass* Class); // Function Engine.KismetSystemLibrary.IsValidClass // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065930
+	bool IsValid(struct UObject* Object); // Function Engine.KismetSystemLibrary.IsValid // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30658b0
+	bool IsServer(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.IsServer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065830
+	bool IsPackagedForDistribution(); // Function Engine.KismetSystemLibrary.IsPackagedForDistribution // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065710
+	bool IsLoggedIn(struct APlayerController* SpecificPlayer); // Function Engine.KismetSystemLibrary.IsLoggedIn // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065400
+	bool IsDedicatedServer(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.IsDedicatedServer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30652d0
+	bool IsControllerAssignedToGamepad(int32_t ControllerId); // Function Engine.KismetSystemLibrary.IsControllerAssignedToGamepad // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3065250
+	void HideAdBanner(); // Function Engine.KismetSystemLibrary.HideAdBanner // Final|Native|Static|Public|BlueprintCallable // @ game+0x3064060
+	bool GetVolumeButtonsHandledBySystem(); // Function Engine.KismetSystemLibrary.GetVolumeButtonsHandledBySystem // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063110
+	struct FString GetUniqueDeviceId(); // Function Engine.KismetSystemLibrary.GetUniqueDeviceId // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062a60
+	bool GetSupportedFullscreenResolutions(struct TArray<struct FIntPoint> Resolutions); // Function Engine.KismetSystemLibrary.GetSupportedFullscreenResolutions // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3062660
+	int32_t GetRenderingMaterialQualityLevel(); // Function Engine.KismetSystemLibrary.GetRenderingMaterialQualityLevel // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062240
+	int32_t GetRenderingDetailMode(); // Function Engine.KismetSystemLibrary.GetRenderingDetailMode // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3062210
+	struct TArray<struct FString> GetPreferredLanguages(); // Function Engine.KismetSystemLibrary.GetPreferredLanguages // Final|Native|Static|Public|BlueprintCallable // @ game+0x3062080
+	struct FString GetPlatformUserName(); // Function Engine.KismetSystemLibrary.GetPlatformUserName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061fe0
+	int32_t GetObjectNameAsCrc32(struct UObject* Object); // Function Engine.KismetSystemLibrary.GetObjectNameAsCrc32 // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061f30
+	struct FString GetObjectName(struct UObject* Object); // Function Engine.KismetSystemLibrary.GetObjectName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061e50
+	int32_t GetMaxShadowCascades(); // Function Engine.KismetSystemLibrary.GetMaxShadowCascades // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061b40
+	struct FString GetLocalCurrencySymbol(); // Function Engine.KismetSystemLibrary.GetLocalCurrencySymbol // Final|Native|Static|Public|BlueprintCallable // @ game+0x3061a10
+	struct FString GetLocalCurrencyCode(); // Function Engine.KismetSystemLibrary.GetLocalCurrencyCode // Final|Native|Static|Public|BlueprintCallable // @ game+0x3061970
+	float GetGameTimeInSeconds(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.GetGameTimeInSeconds // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30615a0
+	struct FString GetGameName(); // Function Engine.KismetSystemLibrary.GetGameName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3061500
+	struct FString GetEngineVersion(); // Function Engine.KismetSystemLibrary.GetEngineVersion // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30610f0
+	struct FString GetDisplayName(struct UObject* Object); // Function Engine.KismetSystemLibrary.GetDisplayName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060f30
+	void GetComponentBounds(struct USceneComponent* Component, struct FVector Origin, struct FVector BoxExtent, float SphereRadius); // Function Engine.KismetSystemLibrary.GetComponentBounds // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060b00
+	struct FString GetClassDisplayName(struct UClass* Class); // Function Engine.KismetSystemLibrary.GetClassDisplayName // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060a20
+	int32_t GetAdIDCount(); // Function Engine.KismetSystemLibrary.GetAdIDCount // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3060570
+	void GetActorListFromComponentList(struct TArray<struct UPrimitiveComponent*> ComponentList, struct UClass* ActorClassFilter, struct TArray<struct AActor*> OutActorList); // Function Engine.KismetSystemLibrary.GetActorListFromComponentList // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3060410
+	void GetActorBounds(struct AActor* Actor, struct FVector Origin, struct FVector BoxExtent); // Function Engine.KismetSystemLibrary.GetActorBounds // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x3060300
+	void ForceCloseAdBanner(); // Function Engine.KismetSystemLibrary.ForceCloseAdBanner // Final|Native|Static|Public|BlueprintCallable // @ game+0x305fd30
+	void FlushPersistentDebugLines(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.FlushPersistentDebugLines // Final|Native|Static|Public|BlueprintCallable // @ game+0x305fc80
+	void FlushDebugStrings(struct UObject* WorldContextObject); // Function Engine.KismetSystemLibrary.FlushDebugStrings // Final|Native|Static|Public|BlueprintCallable // @ game+0x305fbf0
+	void ExecuteConsoleCommand(struct UObject* WorldContextObject, struct FString Command, struct APlayerController* SpecificPlayer); // Function Engine.KismetSystemLibrary.ExecuteConsoleCommand // Final|Native|Static|Public|BlueprintCallable // @ game+0x305eac0
+	void DrawDebugString(struct UObject* WorldContextObject, struct FVector TextLocation, struct FString Text, struct AActor* TestBaseActor, struct FLinearColor TextColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugString // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305d340
+	void DrawDebugSphere(struct UObject* WorldContextObject, struct FVector Center, float Radius, int32_t Segments, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugSphere // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305d170
+	void DrawDebugPoint(struct UObject* WorldContextObject, struct FVector Position, float Size, struct FLinearColor PointColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugPoint // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305cfe0
+	void DrawDebugPlane(struct UObject* WorldContextObject, struct FPlane PlaneCoordinates, struct FVector Location, float Size, struct FLinearColor PlaneColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugPlane // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305ce10
+	void DrawDebugLine(struct UObject* WorldContextObject, struct FVector LineStart, struct FVector LineEnd, struct FLinearColor LineColor, float Duration, float Thickness); // Function Engine.KismetSystemLibrary.DrawDebugLine // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305cc30
+	void DrawDebugFrustum(struct UObject* WorldContextObject, struct FTransform FrustumTransform, struct FLinearColor FrustumColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugFrustum // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305ca80
+	void DrawDebugFloatHistoryTransform(struct UObject* WorldContextObject, struct FDebugFloatHistory FloatHistory, struct FTransform DrawTransform, struct FVector2D DrawSize, struct FLinearColor DrawColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugFloatHistoryTransform // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305c820
+	void DrawDebugFloatHistoryLocation(struct UObject* WorldContextObject, struct FDebugFloatHistory FloatHistory, struct FVector DrawLocation, struct FVector2D DrawSize, struct FLinearColor DrawColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugFloatHistoryLocation // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x305c610
+	void DrawDebugCylinder(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, int32_t Segments, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCylinder // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305c400
+	void DrawDebugCoordinateSystem(struct UObject* WorldContextObject, struct FVector AxisLoc, struct FRotator AxisRot, float Scale, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCoordinateSystem // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305c270
+	void DrawDebugConeInDegrees(struct UObject* WorldContextObject, struct FVector Origin, struct FVector Direction, float Length, float AngleWidth, float AngleHeight, int32_t NumSides, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugConeInDegrees // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305bfd0
+	void DrawDebugCone(struct UObject* WorldContextObject, struct FVector Origin, struct FVector Direction, float Length, float AngleWidth, float AngleHeight, int32_t NumSides, struct FLinearColor LineColor); // Function Engine.KismetSystemLibrary.DrawDebugCone // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305bd80
+	void DrawDebugCircle(struct UObject* WorldContextObject, struct FVector Center, float Radius, int32_t NumSegments, struct FLinearColor LineColor, float Duration, float Thickness, struct FVector YAxis, struct FVector ZAxis, bool bDrawAxis); // Function Engine.KismetSystemLibrary.DrawDebugCircle // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305baa0
+	void DrawDebugCapsule(struct UObject* WorldContextObject, struct FVector Center, float HalfHeight, float Radius, struct FRotator Rotation, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCapsule // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305b880
+	void DrawDebugCamera(struct ACameraActor* CameraActor, struct FLinearColor CameraColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugCamera // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305b780
+	void DrawDebugBox(struct UObject* WorldContextObject, struct FVector Center, struct FVector Extent, struct FLinearColor LineColor, struct FRotator Rotation, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugBox // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305b590
+	void DrawDebugArrow(struct UObject* WorldContextObject, struct FVector LineStart, struct FVector LineEnd, float ArrowSize, struct FLinearColor LineColor, float Duration); // Function Engine.KismetSystemLibrary.DrawDebugArrow // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x305b3b0
+	bool DoesImplementInterface(struct UObject* TestObject, struct UClass* Interface); // Function Engine.KismetSystemLibrary.DoesImplementInterface // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305b160
+	void Delay(struct UObject* WorldContextObject, float Duration, struct FLatentActionInfo LatentInfo); // Function Engine.KismetSystemLibrary.Delay // Final|Native|Static|Public|BlueprintCallable // @ game+0x305a8a0
+	void CreateCopyForUndoBuffer(struct UObject* ObjectToModify); // Function Engine.KismetSystemLibrary.CreateCopyForUndoBuffer // Final|Native|Static|Public|BlueprintCallable // @ game+0x3059890
+	struct UObject* Conv_InterfaceToObject(TScriptInterface<struct UInterface> Interface); // Function Engine.KismetSystemLibrary.Conv_InterfaceToObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x30586d0
+	struct UObject* Conv_AssetToObject(struct UObject* Asset); // Function Engine.KismetSystemLibrary.Conv_AssetToObject // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3057600
+	struct UClass* Conv_AssetClassToClass(struct UClass* AssetClass); // Function Engine.KismetSystemLibrary.Conv_AssetClassToClass // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3057520
+	void ControlScreensaver(bool bAllowScreenSaver); // Function Engine.KismetSystemLibrary.ControlScreensaver // Final|Native|Static|Public|BlueprintCallable // @ game+0x30570c0
+	bool ComponentOverlapComponents_NEW(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.ComponentOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3056a60
+	bool ComponentOverlapComponents_DEPRECATED(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.ComponentOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30567f0
+	bool ComponentOverlapActors_NEW(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.ComponentOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3056550
+	bool ComponentOverlapActors_DEPRECATED(struct UPrimitiveComponent* Component, struct FTransform ComponentTransform, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.ComponentOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30562e0
+	void CollectGarbage(); // Function Engine.KismetSystemLibrary.CollectGarbage // Final|Native|Static|Public|BlueprintCallable // @ game+0x30562c0
+	bool CapsuleTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3055140
+	bool CapsuleTraceSingleByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingleByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3054d50
+	bool CapsuleTraceSingle_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingle_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30558e0
+	bool CapsuleTraceSingle_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceSingle_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3055530
+	bool CapsuleTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30542c0
+	bool CapsuleTraceMultiByObject_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, struct TArray<char> ObjectsToTrace, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMultiByObject_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3053f10
+	bool CapsuleTraceMulti_NEW(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMulti_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30549e0
+	bool CapsuleTraceMulti_DEPRECATED(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, float Radius, float HalfHeight, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.CapsuleTraceMulti_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3054670
+	bool CapsuleOverlapComponents_NEW(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.CapsuleOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3053c40
+	bool CapsuleOverlapComponents_DEPRECATED(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.CapsuleOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30539b0
+	bool CapsuleOverlapActors_NEW(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.CapsuleOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30536e0
+	bool CapsuleOverlapActors_DEPRECATED(struct UObject* WorldContextObject, struct FVector CapsulePos, float Radius, float HalfHeight, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.CapsuleOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3053450
+	bool BoxTraceSingleForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceSingleForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3050a40
+	bool BoxTraceSingle(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct FHitResult OutHit, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceSingle // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3050680
+	bool BoxTraceMultiForObjects(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, struct TArray<char> ObjectTypes, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceMultiForObjects // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3050290
+	bool BoxTraceMulti(struct UObject* WorldContextObject, struct FVector Start, struct FVector End, struct FVector HalfSize, struct FRotator Orientation, char TraceChannel, bool bTraceComplex, struct TArray<struct AActor*> ActorsToIgnore, char DrawDebugType, struct TArray<struct FHitResult> OutHits, bool bIgnoreSelf); // Function Engine.KismetSystemLibrary.BoxTraceMulti // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304ff00
+	bool BoxOverlapComponents_NEW(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector Extent, struct TArray<char> ObjectTypes, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.BoxOverlapComponents_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304fc60
+	bool BoxOverlapComponents_DEPRECATED(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector Extent, char Filter, struct UClass* ComponentClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct UPrimitiveComponent*> OutComponents); // Function Engine.KismetSystemLibrary.BoxOverlapComponents_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304fa00
+	bool BoxOverlapActors_NEW(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector BoxExtent, struct TArray<char> ObjectTypes, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.BoxOverlapActors_NEW // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304f760
+	bool BoxOverlapActors_DEPRECATED(struct UObject* WorldContextObject, struct FVector BoxPos, struct FVector BoxExtent, char Filter, struct UClass* ActorClassFilter, struct TArray<struct AActor*> ActorsToIgnore, struct TArray<struct AActor*> OutActors); // Function Engine.KismetSystemLibrary.BoxOverlapActors_DEPRECATED // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x304f500
+	struct FDebugFloatHistory AddFloatHistorySample(float Value, struct FDebugFloatHistory FloatHistory); // Function Engine.KismetSystemLibrary.AddFloatHistorySample // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x304c2d0
 };
 
 // Class Engine.KismetTextLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UKismetTextLibrary : UBlueprintFunctionLibrary {
 
-	struct FText TextTrimTrailing(struct FText InText); // Function Engine.KismetTextLibrary.TextTrimTrailing // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307b0f0
-	struct FText TextTrimPrecedingAndTrailing(struct FText InText); // Function Engine.KismetTextLibrary.TextTrimPrecedingAndTrailing // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307b020
-	struct FText TextTrimPreceding(struct FText InText); // Function Engine.KismetTextLibrary.TextTrimPreceding // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307af50
-	bool TextIsTransient(struct FText InText); // Function Engine.KismetTextLibrary.TextIsTransient // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307aea0
-	bool TextIsEmpty(struct FText InText); // Function Engine.KismetTextLibrary.TextIsEmpty // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307adf0
-	bool TextIsCultureInvariant(struct FText InText); // Function Engine.KismetTextLibrary.TextIsCultureInvariant // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307ad40
-	bool NotEqual_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.NotEqual_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306f770
-	bool NotEqual_IgnoreCase_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.NotEqual_IgnoreCase_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x306f0f0
-	struct FText GetEmptyText(); // Function Engine.KismetTextLibrary.GetEmptyText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305ec10
-	struct FText Format(struct FText InPattern, struct TArray<struct FFormatTextArgument> InArgs); // Function Engine.KismetTextLibrary.Format // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305d8c0
-	bool FindTextInLocalizationTable(struct FString Namespace, struct FString Key, struct FText OutText); // Function Engine.KismetTextLibrary.FindTextInLocalizationTable // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305d4f0
-	bool EqualEqual_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.EqualEqual_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305c1c0
-	bool EqualEqual_IgnoreCase_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.EqualEqual_IgnoreCase_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305b9b0
-	struct FString Conv_TextToString(struct FText InText); // Function Engine.KismetTextLibrary.Conv_TextToString // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3056ab0
-	struct FText Conv_StringToText(struct FString InString); // Function Engine.KismetTextLibrary.Conv_StringToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30569f0
-	struct FText Conv_NameToText(struct FName InName); // Function Engine.KismetTextLibrary.Conv_NameToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30564e0
-	struct FText Conv_IntToText(int32_t Value, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits); // Function Engine.KismetTextLibrary.Conv_IntToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30560c0
-	struct FText Conv_FloatToText(float Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits); // Function Engine.KismetTextLibrary.Conv_FloatToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055ab0
-	struct FText Conv_ByteToText(char Value); // Function Engine.KismetTextLibrary.Conv_ByteToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3055740
-	struct FText Conv_BoolToText(bool InBool); // Function Engine.KismetTextLibrary.Conv_BoolToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30554b0
-	struct FText AsTimespan_Timespan(struct FTimespan InTimespan); // Function Engine.KismetTextLibrary.AsTimespan_Timespan // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c920
-	struct FText AsTime_DateTime(struct FDateTime In); // Function Engine.KismetTextLibrary.AsTime_DateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c870
-	struct FText AsPercent_Float(float Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits); // Function Engine.KismetTextLibrary.AsPercent_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c640
-	struct FText AsDateTime_DateTime(struct FDateTime In); // Function Engine.KismetTextLibrary.AsDateTime_DateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c4e0
-	struct FText AsDate_DateTime(struct FDateTime InDateTime); // Function Engine.KismetTextLibrary.AsDate_DateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304c590
-	struct FText AsCurrency_Integer(int32_t Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits, struct FString CurrencyCode); // Function Engine.KismetTextLibrary.AsCurrency_Integer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304c260
-	struct FText AsCurrency_Float(float Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits, struct FString CurrencyCode); // Function Engine.KismetTextLibrary.AsCurrency_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304bfd0
+	struct FText TextTrimTrailing(struct FText InText); // Function Engine.KismetTextLibrary.TextTrimTrailing // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307d580
+	struct FText TextTrimPrecedingAndTrailing(struct FText InText); // Function Engine.KismetTextLibrary.TextTrimPrecedingAndTrailing // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307d4b0
+	struct FText TextTrimPreceding(struct FText InText); // Function Engine.KismetTextLibrary.TextTrimPreceding // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307d3e0
+	bool TextIsTransient(struct FText InText); // Function Engine.KismetTextLibrary.TextIsTransient // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307d330
+	bool TextIsEmpty(struct FText InText); // Function Engine.KismetTextLibrary.TextIsEmpty // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307d280
+	bool TextIsCultureInvariant(struct FText InText); // Function Engine.KismetTextLibrary.TextIsCultureInvariant // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x307d1d0
+	bool NotEqual_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.NotEqual_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3071c00
+	bool NotEqual_IgnoreCase_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.NotEqual_IgnoreCase_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3071580
+	struct FText GetEmptyText(); // Function Engine.KismetTextLibrary.GetEmptyText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30610a0
+	struct FText Format(struct FText InPattern, struct TArray<struct FFormatTextArgument> InArgs); // Function Engine.KismetTextLibrary.Format // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x305fd50
+	bool FindTextInLocalizationTable(struct FString Namespace, struct FString Key, struct FText OutText); // Function Engine.KismetTextLibrary.FindTextInLocalizationTable // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305f980
+	bool EqualEqual_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.EqualEqual_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305e650
+	bool EqualEqual_IgnoreCase_TextText(struct FText A, struct FText B); // Function Engine.KismetTextLibrary.EqualEqual_IgnoreCase_TextText // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x305de40
+	struct FString Conv_TextToString(struct FText InText); // Function Engine.KismetTextLibrary.Conv_TextToString // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3058f40
+	struct FText Conv_StringToText(struct FString InString); // Function Engine.KismetTextLibrary.Conv_StringToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058e80
+	struct FText Conv_NameToText(struct FName InName); // Function Engine.KismetTextLibrary.Conv_NameToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058970
+	struct FText Conv_IntToText(int32_t Value, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits); // Function Engine.KismetTextLibrary.Conv_IntToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3058550
+	struct FText Conv_FloatToText(float Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits); // Function Engine.KismetTextLibrary.Conv_FloatToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057f40
+	struct FText Conv_ByteToText(char Value); // Function Engine.KismetTextLibrary.Conv_ByteToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057bd0
+	struct FText Conv_BoolToText(bool InBool); // Function Engine.KismetTextLibrary.Conv_BoolToText // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3057940
+	struct FText AsTimespan_Timespan(struct FTimespan InTimespan); // Function Engine.KismetTextLibrary.AsTimespan_Timespan // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304edb0
+	struct FText AsTime_DateTime(struct FDateTime In); // Function Engine.KismetTextLibrary.AsTime_DateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304ed00
+	struct FText AsPercent_Float(float Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits); // Function Engine.KismetTextLibrary.AsPercent_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304ead0
+	struct FText AsDateTime_DateTime(struct FDateTime In); // Function Engine.KismetTextLibrary.AsDateTime_DateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304e970
+	struct FText AsDate_DateTime(struct FDateTime InDateTime); // Function Engine.KismetTextLibrary.AsDate_DateTime // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure // @ game+0x304ea20
+	struct FText AsCurrency_Integer(int32_t Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits, struct FString CurrencyCode); // Function Engine.KismetTextLibrary.AsCurrency_Integer // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304e6f0
+	struct FText AsCurrency_Float(float Value, char RoundingMode, bool bUseGrouping, int32_t MinimumIntegralDigits, int32_t MaximumIntegralDigits, int32_t MinimumFractionalDigits, int32_t MaximumFractionalDigits, struct FString CurrencyCode); // Function Engine.KismetTextLibrary.AsCurrency_Float // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x304e460
 };
 
 // Class Engine.LoadingPerfBPFuncLib
 // Size: 0x28 (Inherited: 0x28)
 struct ULoadingPerfBPFuncLib : UBlueprintFunctionLibrary {
 
-	void WriteTimings(); // Function Engine.LoadingPerfBPFuncLib.WriteTimings // Final|Native|Static|Public|BlueprintCallable // @ game+0x307cc90
-	void MarkEndStreaming(); // Function Engine.LoadingPerfBPFuncLib.MarkEndStreaming // Final|Native|Static|Public|BlueprintCallable // @ game+0x306c160
+	void WriteTimings(); // Function Engine.LoadingPerfBPFuncLib.WriteTimings // Final|Native|Static|Public|BlueprintCallable // @ game+0x307f120
+	void MarkEndStreaming(); // Function Engine.LoadingPerfBPFuncLib.MarkEndStreaming // Final|Native|Static|Public|BlueprintCallable // @ game+0x306e5f0
 };
 
 // Class Engine.WorldComposition
@@ -7301,52 +7301,52 @@ struct UNestedWorldComposition : UWorldComposition {
 // Size: 0x28 (Inherited: 0x28)
 struct UNestedWorldCompositionFunctionLib : UBlueprintFunctionLibrary {
 
-	void TriggerManualNestedLevelUnload(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.TriggerManualNestedLevelUnload // Final|Native|Static|Public|BlueprintCallable // @ game+0x307bad0
-	void TriggerManualNestedLevelLoad(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.TriggerManualNestedLevelLoad // Final|Native|Static|Public|BlueprintCallable // @ game+0x307ba20
-	bool IsNestedLevelVisibleRecursive(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.IsNestedLevelVisibleRecursive // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063120
-	bool IsNestedLevelVisible(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.IsNestedLevelVisible // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3063060
+	void TriggerManualNestedLevelUnload(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.TriggerManualNestedLevelUnload // Final|Native|Static|Public|BlueprintCallable // @ game+0x307df60
+	void TriggerManualNestedLevelLoad(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.TriggerManualNestedLevelLoad // Final|Native|Static|Public|BlueprintCallable // @ game+0x307deb0
+	bool IsNestedLevelVisibleRecursive(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.IsNestedLevelVisibleRecursive // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30655b0
+	bool IsNestedLevelVisible(struct UObject* WorldContextObject, struct FName PackageName); // Function Engine.NestedWorldCompositionFunctionLib.IsNestedLevelVisible // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x30654f0
 };
 
 // Class Engine.NetPushModelHelpers
 // Size: 0x28 (Inherited: 0x28)
 struct UNetPushModelHelpers : UBlueprintFunctionLibrary {
 
-	void MarkPropertyDirtyFromRepIndex(struct UObject* Object, int32_t RepIndex, struct FName PropertyName); // Function Engine.NetPushModelHelpers.MarkPropertyDirtyFromRepIndex // Final|Native|Static|Public|BlueprintCallable // @ game+0x306c230
-	void MarkPropertyDirty(struct UObject* Object, struct FName PropertyName); // Function Engine.NetPushModelHelpers.MarkPropertyDirty // Final|Native|Static|Public|BlueprintCallable // @ game+0x306c180
+	void MarkPropertyDirtyFromRepIndex(struct UObject* Object, int32_t RepIndex, struct FName PropertyName); // Function Engine.NetPushModelHelpers.MarkPropertyDirtyFromRepIndex // Final|Native|Static|Public|BlueprintCallable // @ game+0x306e6c0
+	void MarkPropertyDirty(struct UObject* Object, struct FName PropertyName); // Function Engine.NetPushModelHelpers.MarkPropertyDirty // Final|Native|Static|Public|BlueprintCallable // @ game+0x306e610
 };
 
 // Class Engine.ParticleWarningFunctions
 // Size: 0x28 (Inherited: 0x28)
 struct UParticleWarningFunctions : UBlueprintFunctionLibrary {
 
-	struct TArray<struct FString> RetrieveInfoOnEmitterWithShortQuarterResArea(struct UParticleSystemComponent* Component, float ShortQuarterRes); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmitterWithShortQuarterResArea // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073530
-	struct TArray<struct FString> RetrieveInfoOnEmitterWithLongNearTransition(struct UParticleSystemComponent* Component, float LongNearTransition); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmitterWithLongNearTransition // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073400
-	struct TArray<struct FString> RetrieveInfoOnEmitterWithLongFarTransition(struct UParticleSystemComponent* Component, float LongFarTransition); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmitterWithLongFarTransition // Final|Native|Static|Public|BlueprintCallable // @ game+0x30732d0
-	struct TArray<struct FString> RetrieveInfoOnEmittersWithoutPerVertexLighting(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithoutPerVertexLighting // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073d10
-	struct TArray<struct FString> RetrieveInfoOnEmittersWithLowAlphaThreshold(struct UParticleSystemComponent* Component, float LowAlphaThreshold); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithLowAlphaThreshold // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073be0
-	struct TArray<struct FString> RetrieveInfoOnEmittersWithLoopZero(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithLoopZero // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073b00
-	struct TArray<struct FString> RetrieveInfoOnEmittersWithKillOnCompleteUnticked(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithKillOnCompleteUnticked // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073a20
-	struct TArray<struct FString> RetrieveInfoOnEmittersWithHighSpawnRate(struct UParticleSystemComponent* Component, int32_t HighSpawnRate); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithHighSpawnRate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073900
-	struct TArray<struct FString> RetrieveInfoOnEmittersWithDurationZero(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithDurationZero // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073820
-	struct TArray<struct FString> RetrieveInfoOnEmittersUsingMaxDrawCount(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersUsingMaxDrawCount // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073740
-	struct TArray<struct FString> RetrieveInfoOnEmittersOnCPU(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersOnCPU // Final|Native|Static|Public|BlueprintCallable // @ game+0x3073660
+	struct TArray<struct FString> RetrieveInfoOnEmitterWithShortQuarterResArea(struct UParticleSystemComponent* Component, float ShortQuarterRes); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmitterWithShortQuarterResArea // Final|Native|Static|Public|BlueprintCallable // @ game+0x30759c0
+	struct TArray<struct FString> RetrieveInfoOnEmitterWithLongNearTransition(struct UParticleSystemComponent* Component, float LongNearTransition); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmitterWithLongNearTransition // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075890
+	struct TArray<struct FString> RetrieveInfoOnEmitterWithLongFarTransition(struct UParticleSystemComponent* Component, float LongFarTransition); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmitterWithLongFarTransition // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075760
+	struct TArray<struct FString> RetrieveInfoOnEmittersWithoutPerVertexLighting(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithoutPerVertexLighting // Final|Native|Static|Public|BlueprintCallable // @ game+0x30761a0
+	struct TArray<struct FString> RetrieveInfoOnEmittersWithLowAlphaThreshold(struct UParticleSystemComponent* Component, float LowAlphaThreshold); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithLowAlphaThreshold // Final|Native|Static|Public|BlueprintCallable // @ game+0x3076070
+	struct TArray<struct FString> RetrieveInfoOnEmittersWithLoopZero(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithLoopZero // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075f90
+	struct TArray<struct FString> RetrieveInfoOnEmittersWithKillOnCompleteUnticked(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithKillOnCompleteUnticked // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075eb0
+	struct TArray<struct FString> RetrieveInfoOnEmittersWithHighSpawnRate(struct UParticleSystemComponent* Component, int32_t HighSpawnRate); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithHighSpawnRate // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075d90
+	struct TArray<struct FString> RetrieveInfoOnEmittersWithDurationZero(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersWithDurationZero // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075cb0
+	struct TArray<struct FString> RetrieveInfoOnEmittersUsingMaxDrawCount(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersUsingMaxDrawCount // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075bd0
+	struct TArray<struct FString> RetrieveInfoOnEmittersOnCPU(struct UParticleSystemComponent* Component); // Function Engine.ParticleWarningFunctions.RetrieveInfoOnEmittersOnCPU // Final|Native|Static|Public|BlueprintCallable // @ game+0x3075af0
 };
 
 // Class Engine.SkeletalMeshMergeBlueprintFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct USkeletalMeshMergeBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct USkeletalMesh* MergeSkeletalMeshesWithMorphTargets(struct TArray<struct USkeletalMesh*> Meshes, struct TArray<struct FName> MorphTargetNames, struct TArray<float> MorphTargetWeights); // Function Engine.SkeletalMeshMergeBlueprintFunctionLibrary.MergeSkeletalMeshesWithMorphTargets // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306c9c0
-	struct USkeletalMesh* MergeSkeletalMeshes(struct TArray<struct USkeletalMesh*> Meshes); // Function Engine.SkeletalMeshMergeBlueprintFunctionLibrary.MergeSkeletalMeshes // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306c910
+	struct USkeletalMesh* MergeSkeletalMeshesWithMorphTargets(struct TArray<struct USkeletalMesh*> Meshes, struct TArray<struct FName> MorphTargetNames, struct TArray<float> MorphTargetWeights); // Function Engine.SkeletalMeshMergeBlueprintFunctionLibrary.MergeSkeletalMeshesWithMorphTargets // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306ee50
+	struct USkeletalMesh* MergeSkeletalMeshes(struct TArray<struct USkeletalMesh*> Meshes); // Function Engine.SkeletalMeshMergeBlueprintFunctionLibrary.MergeSkeletalMeshes // Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x306eda0
 };
 
 // Class Engine.VisualLoggerKismetLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UVisualLoggerKismetLibrary : UBlueprintFunctionLibrary {
 
-	void LogText(struct UObject* WorldContextObject, struct FString Text, struct FName LogCategory); // Function Engine.VisualLoggerKismetLibrary.LogText // Final|Native|Static|Public|BlueprintCallable // @ game+0x306a350
-	void LogLocation(struct UObject* WorldContextObject, struct FVector Location, struct FString Text, struct FLinearColor ObjectColor, float Radius, struct FName LogCategory); // Function Engine.VisualLoggerKismetLibrary.LogLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x306a150
-	void LogBox(struct UObject* WorldContextObject, struct FBox BoxShape, struct FString Text, struct FLinearColor ObjectColor, struct FName LogCategory); // Function Engine.VisualLoggerKismetLibrary.LogBox // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x3069f70
+	void LogText(struct UObject* WorldContextObject, struct FString Text, struct FName LogCategory); // Function Engine.VisualLoggerKismetLibrary.LogText // Final|Native|Static|Public|BlueprintCallable // @ game+0x306c7e0
+	void LogLocation(struct UObject* WorldContextObject, struct FVector Location, struct FString Text, struct FLinearColor ObjectColor, float Radius, struct FName LogCategory); // Function Engine.VisualLoggerKismetLibrary.LogLocation // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x306c5e0
+	void LogBox(struct UObject* WorldContextObject, struct FBox BoxShape, struct FString Text, struct FLinearColor ObjectColor, struct FName LogCategory); // Function Engine.VisualLoggerKismetLibrary.LogBox // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x306c400
 };
 
 // Class Engine.AnimBlueprintGeneratedClass
@@ -7480,9 +7480,9 @@ struct UCameraAnimInst : UObject {
 	char PlaySpace; // 0x80(0x01)
 	char UnknownData_81[0x9f]; // 0x81(0x9f)
 
-	void Stop(bool bImmediate); // Function Engine.CameraAnimInst.Stop // Final|Native|Public|BlueprintCallable // @ game+0x3079960
-	void SetScale(float NewDuration); // Function Engine.CameraAnimInst.SetScale // Final|Native|Public|BlueprintCallable // @ game+0x3076270
-	void SetDuration(float NewDuration); // Function Engine.CameraAnimInst.SetDuration // Final|Native|Public|BlueprintCallable // @ game+0x3075960
+	void Stop(bool bImmediate); // Function Engine.CameraAnimInst.Stop // Final|Native|Public|BlueprintCallable // @ game+0x307bdf0
+	void SetScale(float NewDuration); // Function Engine.CameraAnimInst.SetScale // Final|Native|Public|BlueprintCallable // @ game+0x3078700
+	void SetDuration(float NewDuration); // Function Engine.CameraAnimInst.SetDuration // Final|Native|Public|BlueprintCallable // @ game+0x3077df0
 };
 
 // Class Engine.CameraModifier_CameraShake
@@ -7520,21 +7520,21 @@ struct UCanvas : UObject {
 	struct UReporterGraph* ReporterGraph; // 0x70(0x08)
 	char UnknownData_78[0x78]; // 0x78(0x78)
 
-	struct FVector2D K2_TextSize(struct UFont* RenderFont, struct FString RenderText, struct FVector2D Scale); // Function Engine.Canvas.K2_TextSize // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3066350
-	struct FVector2D K2_StrLen(struct UFont* RenderFont, struct FString RenderText); // Function Engine.Canvas.K2_StrLen // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3066260
-	struct FVector K2_Project(struct FVector WorldLocation); // Function Engine.Canvas.K2_Project // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3065ee0
-	void K2_DrawTriangle(struct UTexture* RenderTexture, struct TArray<struct FCanvasUVTri> Triangles); // Function Engine.Canvas.K2_DrawTriangle // Final|Native|Public|BlueprintCallable // @ game+0x30650a0
-	void K2_DrawTextWithFontInfo(struct FSlateFontInfo FontInfo, struct FString RenderText, struct FVector2D ScreenPosition, struct FVector2D Scale, struct FLinearColor RenderColor, float Kerning, struct FLinearColor ShadowColor, struct FVector2D ShadowOffset, bool bCentreX, bool bCentreY, bool bOutlined, struct FLinearColor OutlineColor); // Function Engine.Canvas.K2_DrawTextWithFontInfo // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x30649d0
-	void K2_DrawTexture(struct UTexture* RenderTexture, struct FVector2D ScreenPosition, struct FVector2D ScreenSize, struct FVector2D CoordinatePosition, struct FVector2D CoordinateSize, struct FLinearColor RenderColor, char BlendMode, float Rotation, struct FVector2D PivotPoint); // Function Engine.Canvas.K2_DrawTexture // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3064e20
-	void K2_DrawText(struct UFont* RenderFont, struct FString RenderText, struct FVector2D ScreenPosition, struct FVector2D Scale, struct FLinearColor RenderColor, float Kerning, struct FLinearColor ShadowColor, struct FVector2D ShadowOffset, bool bCentreX, bool bCentreY, bool bOutlined, struct FLinearColor OutlineColor); // Function Engine.Canvas.K2_DrawText // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3064630
-	void K2_DrawPolygon(struct UTexture* RenderTexture, struct FVector2D ScreenPosition, struct FVector2D Radius, int32_t NumberOfSides, struct FLinearColor RenderColor); // Function Engine.Canvas.K2_DrawPolygon // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x30644a0
-	void K2_DrawMaterialTriangle(struct UMaterialInterface* RenderMaterial, struct TArray<struct FCanvasUVTri> Triangles); // Function Engine.Canvas.K2_DrawMaterialTriangle // Final|Native|Public|BlueprintCallable // @ game+0x3064360
-	void K2_DrawMaterial(struct UMaterialInterface* RenderMaterial, struct FVector2D ScreenPosition, struct FVector2D ScreenSize, struct FVector2D CoordinatePosition, struct FVector2D CoordinateSize, float Rotation, struct FVector2D PivotPoint); // Function Engine.Canvas.K2_DrawMaterial // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3064140
-	void K2_DrawLine(struct FVector2D ScreenPositionA, struct FVector2D ScreenPositionB, float Thickness, struct FLinearColor RenderColor); // Function Engine.Canvas.K2_DrawLine // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3063ff0
-	void K2_DrawBox(struct FVector2D ScreenPosition, struct FVector2D ScreenSize, float Thickness); // Function Engine.Canvas.K2_DrawBox // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3063ef0
-	void K2_DrawBorder(struct UTexture* BorderTexture, struct UTexture* BackgroundTexture, struct UTexture* LeftBorderTexture, struct UTexture* RightBorderTexture, struct UTexture* TopBorderTexture, struct UTexture* BottomBorderTexture, struct FVector2D ScreenPosition, struct FVector2D ScreenSize, struct FVector2D CoordinatePosition, struct FVector2D CoordinateSize, struct FLinearColor RenderColor, struct FVector2D BorderScale, struct FVector2D BackgroundScale, float Rotation, struct FVector2D PivotPoint, struct FVector2D CornerSize); // Function Engine.Canvas.K2_DrawBorder // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3063ab0
-	void K2_Deproject(struct FVector2D ScreenPosition, struct FVector WorldOrigin, struct FVector WorldDirection); // Function Engine.Canvas.K2_Deproject // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3063990
-	void DrawTextures(struct TArray<struct FTextureRenderData> RenderDatas); // Function Engine.Canvas.DrawTextures // Native|Public|HasOutParms // @ game+0x305b0a0
+	struct FVector2D K2_TextSize(struct UFont* RenderFont, struct FString RenderText, struct FVector2D Scale); // Function Engine.Canvas.K2_TextSize // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x30687e0
+	struct FVector2D K2_StrLen(struct UFont* RenderFont, struct FString RenderText); // Function Engine.Canvas.K2_StrLen // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x30686f0
+	struct FVector K2_Project(struct FVector WorldLocation); // Function Engine.Canvas.K2_Project // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3068370
+	void K2_DrawTriangle(struct UTexture* RenderTexture, struct TArray<struct FCanvasUVTri> Triangles); // Function Engine.Canvas.K2_DrawTriangle // Final|Native|Public|BlueprintCallable // @ game+0x3067530
+	void K2_DrawTextWithFontInfo(struct FSlateFontInfo FontInfo, struct FString RenderText, struct FVector2D ScreenPosition, struct FVector2D Scale, struct FLinearColor RenderColor, float Kerning, struct FLinearColor ShadowColor, struct FVector2D ShadowOffset, bool bCentreX, bool bCentreY, bool bOutlined, struct FLinearColor OutlineColor); // Function Engine.Canvas.K2_DrawTextWithFontInfo // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3066e60
+	void K2_DrawTexture(struct UTexture* RenderTexture, struct FVector2D ScreenPosition, struct FVector2D ScreenSize, struct FVector2D CoordinatePosition, struct FVector2D CoordinateSize, struct FLinearColor RenderColor, char BlendMode, float Rotation, struct FVector2D PivotPoint); // Function Engine.Canvas.K2_DrawTexture // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x30672b0
+	void K2_DrawText(struct UFont* RenderFont, struct FString RenderText, struct FVector2D ScreenPosition, struct FVector2D Scale, struct FLinearColor RenderColor, float Kerning, struct FLinearColor ShadowColor, struct FVector2D ShadowOffset, bool bCentreX, bool bCentreY, bool bOutlined, struct FLinearColor OutlineColor); // Function Engine.Canvas.K2_DrawText // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3066ac0
+	void K2_DrawPolygon(struct UTexture* RenderTexture, struct FVector2D ScreenPosition, struct FVector2D Radius, int32_t NumberOfSides, struct FLinearColor RenderColor); // Function Engine.Canvas.K2_DrawPolygon // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3066930
+	void K2_DrawMaterialTriangle(struct UMaterialInterface* RenderMaterial, struct TArray<struct FCanvasUVTri> Triangles); // Function Engine.Canvas.K2_DrawMaterialTriangle // Final|Native|Public|BlueprintCallable // @ game+0x30667f0
+	void K2_DrawMaterial(struct UMaterialInterface* RenderMaterial, struct FVector2D ScreenPosition, struct FVector2D ScreenSize, struct FVector2D CoordinatePosition, struct FVector2D CoordinateSize, float Rotation, struct FVector2D PivotPoint); // Function Engine.Canvas.K2_DrawMaterial // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x30665d0
+	void K2_DrawLine(struct FVector2D ScreenPositionA, struct FVector2D ScreenPositionB, float Thickness, struct FLinearColor RenderColor); // Function Engine.Canvas.K2_DrawLine // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3066480
+	void K2_DrawBox(struct FVector2D ScreenPosition, struct FVector2D ScreenSize, float Thickness); // Function Engine.Canvas.K2_DrawBox // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3066380
+	void K2_DrawBorder(struct UTexture* BorderTexture, struct UTexture* BackgroundTexture, struct UTexture* LeftBorderTexture, struct UTexture* RightBorderTexture, struct UTexture* TopBorderTexture, struct UTexture* BottomBorderTexture, struct FVector2D ScreenPosition, struct FVector2D ScreenSize, struct FVector2D CoordinatePosition, struct FVector2D CoordinateSize, struct FLinearColor RenderColor, struct FVector2D BorderScale, struct FVector2D BackgroundScale, float Rotation, struct FVector2D PivotPoint, struct FVector2D CornerSize); // Function Engine.Canvas.K2_DrawBorder // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3065f40
+	void K2_Deproject(struct FVector2D ScreenPosition, struct FVector WorldOrigin, struct FVector WorldDirection); // Function Engine.Canvas.K2_Deproject // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x3065e20
+	void DrawTextures(struct TArray<struct FTextureRenderData> RenderDatas); // Function Engine.Canvas.DrawTextures // Native|Public|HasOutParms // @ game+0x305d530
 };
 
 // Class Engine.Channel
@@ -7576,55 +7576,55 @@ struct UCheatManager : UObject {
 	struct UClass* DebugCameraControllerClass; // 0x30(0x08)
 	char UnknownData_38[0x40]; // 0x38(0x40)
 
-	void WidgetReflector(); // Function Engine.CheatManager.WidgetReflector // Exec|Native|Public // @ game+0x307cc70
-	void Walk(); // Function Engine.CheatManager.Walk // Exec|Native|Public // @ game+0x307cc50
-	void ViewSelf(); // Function Engine.CheatManager.ViewSelf // Exec|Native|Public // @ game+0x307cc30
-	void ViewPlayer(struct FString S); // Function Engine.CheatManager.ViewPlayer // Exec|Native|Public // @ game+0x307cb80
-	void ViewClass(struct UClass* DesiredClass); // Function Engine.CheatManager.ViewClass // Exec|Native|Public // @ game+0x307caf0
-	void ViewActor(struct FName ActorName); // Function Engine.CheatManager.ViewActor // Exec|Native|Public // @ game+0x307ca60
-	void ToggleDebugCamera(); // Function Engine.CheatManager.ToggleDebugCamera // Exec|Native|Public // @ game+0x307b780
-	void ToggleAILogging(); // Function Engine.CheatManager.ToggleAILogging // Exec|Native|Public // @ game+0x307b760
-	void TextureAtlasVisualizer(); // Function Engine.CheatManager.TextureAtlasVisualizer // Exec|Native|Public // @ game+0x307b1c0
-	void TestCollisionDistance(); // Function Engine.CheatManager.TestCollisionDistance // Exec|Native|Public // @ game+0x307aba0
-	void Teleport(); // Function Engine.CheatManager.Teleport // Exec|Native|Public // @ game+0x307ab80
-	void Summon(struct FString ClassName); // Function Engine.CheatManager.Summon // Exec|Native|Public // @ game+0x307a3c0
-	void StreamLevelOut(struct FName PackageName); // Function Engine.CheatManager.StreamLevelOut // Exec|Native|Public // @ game+0x3079a80
-	void StreamLevelIn(struct FName PackageName); // Function Engine.CheatManager.StreamLevelIn // Exec|Native|Public // @ game+0x30799f0
-	void Slomo(float T); // Function Engine.CheatManager.Slomo // Exec|Native|Public // @ game+0x3076ed0
-	void SetWorldOrigin(); // Function Engine.CheatManager.SetWorldOrigin // Final|Exec|Native|Public // @ game+0x3076b80
-	void SetNavDrawDistance(float DrawDistance); // Function Engine.CheatManager.SetNavDrawDistance // Final|Exec|Native|Public // @ game+0x3075df0
-	void SetMouseSensitivityToDefault(); // Function Engine.CheatManager.SetMouseSensitivityToDefault // Final|Exec|Native|Public // @ game+0x3075cd0
-	void ServerToggleAILogging(); // Function Engine.CheatManager.ServerToggleAILogging // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x30751b0
-	void RebuildNavigation(); // Function Engine.CheatManager.RebuildNavigation // Exec|Native|Public // @ game+0x3072e00
-	void PlayersOnly(); // Function Engine.CheatManager.PlayersOnly // Exec|Native|Public // @ game+0x30701a0
-	void OnlyLoadLevel(struct FName PackageName); // Function Engine.CheatManager.OnlyLoadLevel // Exec|Native|Public // @ game+0x306fb30
-	void LogLoc(); // Function Engine.CheatManager.LogLoc // Exec|Native|Public // @ game+0x306a130
-	void InvertMouse(); // Function Engine.CheatManager.InvertMouse // Final|Exec|Native|Public // @ game+0x3062c30
-	void God(); // Function Engine.CheatManager.God // Exec|Native|Public // @ game+0x3060f00
-	void Ghost(); // Function Engine.CheatManager.Ghost // Exec|Native|Public // @ game+0x3060ee0
-	void FreezeFrame(float Delay); // Function Engine.CheatManager.FreezeFrame // Exec|Native|Public // @ game+0x305db20
-	void FontAtlasVisualizer(); // Function Engine.CheatManager.FontAtlasVisualizer // Exec|Native|Public // @ game+0x305d880
-	void Fly(); // Function Engine.CheatManager.Fly // Exec|Native|Public // @ game+0x305d860
-	void FlushLog(); // Function Engine.CheatManager.FlushLog // Exec|Native|Public // @ game+0x305d7d0
-	void DumpVoiceMutingState(); // Function Engine.CheatManager.DumpVoiceMutingState // Exec|Native|Public // @ game+0x305b1a0
-	void DumpPartyState(); // Function Engine.CheatManager.DumpPartyState // Exec|Native|Public // @ game+0x305b180
-	void DumpOnlineSessionState(); // Function Engine.CheatManager.DumpOnlineSessionState // Exec|Native|Public // @ game+0x305b160
-	void DestroyTarget(); // Function Engine.CheatManager.DestroyTarget // Exec|Native|Public // @ game+0x3058670
-	void DestroyPawns(struct UClass* aClass); // Function Engine.CheatManager.DestroyPawns // Exec|Native|Public // @ game+0x30585e0
-	void DestroyAllPawnsExceptTarget(); // Function Engine.CheatManager.DestroyAllPawnsExceptTarget // Final|Exec|Native|Public // @ game+0x30585c0
-	void DestroyAll(struct UClass* aClass); // Function Engine.CheatManager.DestroyAll // Exec|Native|Public // @ game+0x3058530
-	void DebugCapsuleSweepSize(float HalfHeight, float Radius); // Function Engine.CheatManager.DebugCapsuleSweepSize // Exec|Native|Public // @ game+0x3057f00
-	void DebugCapsuleSweepPawn(); // Function Engine.CheatManager.DebugCapsuleSweepPawn // Exec|Native|Public // @ game+0x3057ee0
-	void DebugCapsuleSweepComplex(bool bTraceComplex); // Function Engine.CheatManager.DebugCapsuleSweepComplex // Exec|Native|Public // @ game+0x3057e50
-	void DebugCapsuleSweepClear(); // Function Engine.CheatManager.DebugCapsuleSweepClear // Exec|Native|Public // @ game+0x3057e30
-	void DebugCapsuleSweepChannel(char Channel); // Function Engine.CheatManager.DebugCapsuleSweepChannel // Exec|Native|Public // @ game+0x3057db0
-	void DebugCapsuleSweepCapture(); // Function Engine.CheatManager.DebugCapsuleSweepCapture // Exec|Native|Public // @ game+0x3057d90
-	void DebugCapsuleSweep(); // Function Engine.CheatManager.DebugCapsuleSweep // Exec|Native|Public // @ game+0x3057d70
-	void DamageTarget(float DamageAmount); // Function Engine.CheatManager.DamageTarget // Final|Exec|Native|Public // @ game+0x3057930
-	void ChangeSize(float F); // Function Engine.CheatManager.ChangeSize // Exec|Native|Public // @ game+0x3053800
-	void BugItStringCreator(struct FVector ViewLocation, struct FRotator ViewRotation, struct FString GoString, struct FString LocString); // Function Engine.CheatManager.BugItStringCreator // Exec|Native|Public|HasOutParms|HasDefaults // @ game+0x304fb50
-	void BugItGo(float X, float Y, float Z, float Pitch, float Yaw, float Roll); // Function Engine.CheatManager.BugItGo // Exec|Native|Public // @ game+0x304f980
-	void BugIt(struct FString ScreenShotDescription); // Function Engine.CheatManager.BugIt // Exec|Native|Public // @ game+0x304f8d0
+	void WidgetReflector(); // Function Engine.CheatManager.WidgetReflector // Exec|Native|Public // @ game+0x307f100
+	void Walk(); // Function Engine.CheatManager.Walk // Exec|Native|Public // @ game+0x307f0e0
+	void ViewSelf(); // Function Engine.CheatManager.ViewSelf // Exec|Native|Public // @ game+0x307f0c0
+	void ViewPlayer(struct FString S); // Function Engine.CheatManager.ViewPlayer // Exec|Native|Public // @ game+0x307f010
+	void ViewClass(struct UClass* DesiredClass); // Function Engine.CheatManager.ViewClass // Exec|Native|Public // @ game+0x307ef80
+	void ViewActor(struct FName ActorName); // Function Engine.CheatManager.ViewActor // Exec|Native|Public // @ game+0x307eef0
+	void ToggleDebugCamera(); // Function Engine.CheatManager.ToggleDebugCamera // Exec|Native|Public // @ game+0x307dc10
+	void ToggleAILogging(); // Function Engine.CheatManager.ToggleAILogging // Exec|Native|Public // @ game+0x307dbf0
+	void TextureAtlasVisualizer(); // Function Engine.CheatManager.TextureAtlasVisualizer // Exec|Native|Public // @ game+0x307d650
+	void TestCollisionDistance(); // Function Engine.CheatManager.TestCollisionDistance // Exec|Native|Public // @ game+0x307d030
+	void Teleport(); // Function Engine.CheatManager.Teleport // Exec|Native|Public // @ game+0x307d010
+	void Summon(struct FString ClassName); // Function Engine.CheatManager.Summon // Exec|Native|Public // @ game+0x307c850
+	void StreamLevelOut(struct FName PackageName); // Function Engine.CheatManager.StreamLevelOut // Exec|Native|Public // @ game+0x307bf10
+	void StreamLevelIn(struct FName PackageName); // Function Engine.CheatManager.StreamLevelIn // Exec|Native|Public // @ game+0x307be80
+	void Slomo(float T); // Function Engine.CheatManager.Slomo // Exec|Native|Public // @ game+0x3079360
+	void SetWorldOrigin(); // Function Engine.CheatManager.SetWorldOrigin // Final|Exec|Native|Public // @ game+0x3079010
+	void SetNavDrawDistance(float DrawDistance); // Function Engine.CheatManager.SetNavDrawDistance // Final|Exec|Native|Public // @ game+0x3078280
+	void SetMouseSensitivityToDefault(); // Function Engine.CheatManager.SetMouseSensitivityToDefault // Final|Exec|Native|Public // @ game+0x3078160
+	void ServerToggleAILogging(); // Function Engine.CheatManager.ServerToggleAILogging // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x3077640
+	void RebuildNavigation(); // Function Engine.CheatManager.RebuildNavigation // Exec|Native|Public // @ game+0x3075290
+	void PlayersOnly(); // Function Engine.CheatManager.PlayersOnly // Exec|Native|Public // @ game+0x3072630
+	void OnlyLoadLevel(struct FName PackageName); // Function Engine.CheatManager.OnlyLoadLevel // Exec|Native|Public // @ game+0x3071fc0
+	void LogLoc(); // Function Engine.CheatManager.LogLoc // Exec|Native|Public // @ game+0x306c5c0
+	void InvertMouse(); // Function Engine.CheatManager.InvertMouse // Final|Exec|Native|Public // @ game+0x30650c0
+	void God(); // Function Engine.CheatManager.God // Exec|Native|Public // @ game+0x3063390
+	void Ghost(); // Function Engine.CheatManager.Ghost // Exec|Native|Public // @ game+0x3063370
+	void FreezeFrame(float Delay); // Function Engine.CheatManager.FreezeFrame // Exec|Native|Public // @ game+0x305ffb0
+	void FontAtlasVisualizer(); // Function Engine.CheatManager.FontAtlasVisualizer // Exec|Native|Public // @ game+0x305fd10
+	void Fly(); // Function Engine.CheatManager.Fly // Exec|Native|Public // @ game+0x305fcf0
+	void FlushLog(); // Function Engine.CheatManager.FlushLog // Exec|Native|Public // @ game+0x305fc60
+	void DumpVoiceMutingState(); // Function Engine.CheatManager.DumpVoiceMutingState // Exec|Native|Public // @ game+0x305d630
+	void DumpPartyState(); // Function Engine.CheatManager.DumpPartyState // Exec|Native|Public // @ game+0x305d610
+	void DumpOnlineSessionState(); // Function Engine.CheatManager.DumpOnlineSessionState // Exec|Native|Public // @ game+0x305d5f0
+	void DestroyTarget(); // Function Engine.CheatManager.DestroyTarget // Exec|Native|Public // @ game+0x305ab00
+	void DestroyPawns(struct UClass* aClass); // Function Engine.CheatManager.DestroyPawns // Exec|Native|Public // @ game+0x305aa70
+	void DestroyAllPawnsExceptTarget(); // Function Engine.CheatManager.DestroyAllPawnsExceptTarget // Final|Exec|Native|Public // @ game+0x305aa50
+	void DestroyAll(struct UClass* aClass); // Function Engine.CheatManager.DestroyAll // Exec|Native|Public // @ game+0x305a9c0
+	void DebugCapsuleSweepSize(float HalfHeight, float Radius); // Function Engine.CheatManager.DebugCapsuleSweepSize // Exec|Native|Public // @ game+0x305a390
+	void DebugCapsuleSweepPawn(); // Function Engine.CheatManager.DebugCapsuleSweepPawn // Exec|Native|Public // @ game+0x305a370
+	void DebugCapsuleSweepComplex(bool bTraceComplex); // Function Engine.CheatManager.DebugCapsuleSweepComplex // Exec|Native|Public // @ game+0x305a2e0
+	void DebugCapsuleSweepClear(); // Function Engine.CheatManager.DebugCapsuleSweepClear // Exec|Native|Public // @ game+0x305a2c0
+	void DebugCapsuleSweepChannel(char Channel); // Function Engine.CheatManager.DebugCapsuleSweepChannel // Exec|Native|Public // @ game+0x305a240
+	void DebugCapsuleSweepCapture(); // Function Engine.CheatManager.DebugCapsuleSweepCapture // Exec|Native|Public // @ game+0x305a220
+	void DebugCapsuleSweep(); // Function Engine.CheatManager.DebugCapsuleSweep // Exec|Native|Public // @ game+0x305a200
+	void DamageTarget(float DamageAmount); // Function Engine.CheatManager.DamageTarget // Final|Exec|Native|Public // @ game+0x3059dc0
+	void ChangeSize(float F); // Function Engine.CheatManager.ChangeSize // Exec|Native|Public // @ game+0x3055c90
+	void BugItStringCreator(struct FVector ViewLocation, struct FRotator ViewRotation, struct FString GoString, struct FString LocString); // Function Engine.CheatManager.BugItStringCreator // Exec|Native|Public|HasOutParms|HasDefaults // @ game+0x3051fe0
+	void BugItGo(float X, float Y, float Z, float Pitch, float Yaw, float Roll); // Function Engine.CheatManager.BugItGo // Exec|Native|Public // @ game+0x3051e10
+	void BugIt(struct FString ScreenShotDescription); // Function Engine.CheatManager.BugIt // Exec|Native|Public // @ game+0x3051d60
 };
 
 // Class Engine.CheckBoxStyleAsset
@@ -7661,7 +7661,7 @@ struct UConsole : UObject {
 struct UCurveLinearColor : UCurveBase {
 	struct FRichCurve FloatCurves[0x04]; // 0x30(0x1e0)
 
-	struct FLinearColor GetLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetLinearColorValue // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x305f440
+	struct FLinearColor GetLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetLinearColorValue // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x30618d0
 };
 
 // Class Engine.CurveVector
@@ -7669,7 +7669,7 @@ struct UCurveLinearColor : UCurveBase {
 struct UCurveVector : UCurveBase {
 	struct FRichCurve FloatCurves[0x03]; // 0x30(0x168)
 
-	struct FVector GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3060bb0
+	struct FVector GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue // Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3063040
 };
 
 // Class Engine.CurveEdPresetCurve
@@ -8382,18 +8382,18 @@ struct UPlayerInput : UObject {
 	struct TArray<struct FName> InvertedCombinedAxisX; // 0x1a0(0x10)
 	char UnknownData_1B0[0x278]; // 0x1b0(0x278)
 
-	void SetMouseSensitivity(float Sensitivity); // Function Engine.PlayerInput.SetMouseSensitivity // Final|Exec|Native|Public // @ game+0x3156a40
-	void SetForceFeedbackIntensity(float Intensity); // Function Engine.PlayerInput.SetForceFeedbackIntensity // Final|Exec|Native|Public // @ game+0x31569c0
-	void SetCombinedAxisScale(struct FName CombinedAxisName, float Scale); // Function Engine.PlayerInput.SetCombinedAxisScale // Final|Exec|Native|Public // @ game+0x31568f0
-	void SetCombinedAxisNonLinearity(struct FName CombinedAxisName, float NonLinearity); // Function Engine.PlayerInput.SetCombinedAxisNonLinearity // Final|Exec|Native|Public // @ game+0x3156820
-	void SetCombinedAxisLowerDeadzone(struct FName CombinedAxisName, float LowerDeadzone); // Function Engine.PlayerInput.SetCombinedAxisLowerDeadzone // Final|Exec|Native|Public // @ game+0x3156750
-	void SetBind(struct FName BindName, struct FString Command); // Function Engine.PlayerInput.SetBind // Final|Exec|Native|Public // @ game+0x3156670
-	void InvertMouseAxis(struct FName AxisName); // Function Engine.PlayerInput.InvertMouseAxis // Final|Exec|Native|Public // @ game+0x3156080
-	void InvertGamepadAxis(struct FName AxisName); // Function Engine.PlayerInput.InvertGamepadAxis // Final|Exec|Native|Public // @ game+0x3156000
-	void InvertCombinedAxisY(struct FName CombinedAxisName); // Function Engine.PlayerInput.InvertCombinedAxisY // Final|Exec|Native|Public // @ game+0x3155f80
-	void InvertCombinedAxisX(struct FName CombinedAxisName); // Function Engine.PlayerInput.InvertCombinedAxisX // Final|Exec|Native|Public // @ game+0x3155f00
-	void InvertAxisKey(struct FKey AxisKey); // Function Engine.PlayerInput.InvertAxisKey // Final|Exec|Native|Public // @ game+0x3155e10
-	void ClearSmoothing(); // Function Engine.PlayerInput.ClearSmoothing // Final|Exec|Native|Public // @ game+0x31554d0
+	void SetMouseSensitivity(float Sensitivity); // Function Engine.PlayerInput.SetMouseSensitivity // Final|Exec|Native|Public // @ game+0x3158ed0
+	void SetForceFeedbackIntensity(float Intensity); // Function Engine.PlayerInput.SetForceFeedbackIntensity // Final|Exec|Native|Public // @ game+0x3158e50
+	void SetCombinedAxisScale(struct FName CombinedAxisName, float Scale); // Function Engine.PlayerInput.SetCombinedAxisScale // Final|Exec|Native|Public // @ game+0x3158d80
+	void SetCombinedAxisNonLinearity(struct FName CombinedAxisName, float NonLinearity); // Function Engine.PlayerInput.SetCombinedAxisNonLinearity // Final|Exec|Native|Public // @ game+0x3158cb0
+	void SetCombinedAxisLowerDeadzone(struct FName CombinedAxisName, float LowerDeadzone); // Function Engine.PlayerInput.SetCombinedAxisLowerDeadzone // Final|Exec|Native|Public // @ game+0x3158be0
+	void SetBind(struct FName BindName, struct FString Command); // Function Engine.PlayerInput.SetBind // Final|Exec|Native|Public // @ game+0x3158b00
+	void InvertMouseAxis(struct FName AxisName); // Function Engine.PlayerInput.InvertMouseAxis // Final|Exec|Native|Public // @ game+0x3158510
+	void InvertGamepadAxis(struct FName AxisName); // Function Engine.PlayerInput.InvertGamepadAxis // Final|Exec|Native|Public // @ game+0x3158490
+	void InvertCombinedAxisY(struct FName CombinedAxisName); // Function Engine.PlayerInput.InvertCombinedAxisY // Final|Exec|Native|Public // @ game+0x3158410
+	void InvertCombinedAxisX(struct FName CombinedAxisName); // Function Engine.PlayerInput.InvertCombinedAxisX // Final|Exec|Native|Public // @ game+0x3158390
+	void InvertAxisKey(struct FKey AxisKey); // Function Engine.PlayerInput.InvertAxisKey // Final|Exec|Native|Public // @ game+0x31582a0
+	void ClearSmoothing(); // Function Engine.PlayerInput.ClearSmoothing // Final|Exec|Native|Public // @ game+0x3157960
 };
 
 // Class Engine.InputSettings
@@ -8964,11 +8964,11 @@ struct ULevelStreaming : UObject {
 	struct ULevel* LoadedLevel; // 0x200(0x08)
 	struct ULevel* PendingUnloadLevel; // 0x208(0x08)
 
-	bool IsStreamingStatePending(); // Function Engine.LevelStreaming.IsStreamingStatePending // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3156190
-	bool IsLevelVisible(); // Function Engine.LevelStreaming.IsLevelVisible // RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3156130
-	bool IsLevelLoaded(); // Function Engine.LevelStreaming.IsLevelLoaded // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3156100
-	struct ALevelScriptActor* GetLevelScriptActor(); // Function Engine.LevelStreaming.GetLevelScriptActor // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x3155c70
-	struct ULevelStreaming* CreateInstance(struct FString UniqueInstanceName); // Function Engine.LevelStreaming.CreateInstance // Final|Native|Public|BlueprintCallable // @ game+0x31557b0
+	bool IsStreamingStatePending(); // Function Engine.LevelStreaming.IsStreamingStatePending // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158620
+	bool IsLevelVisible(); // Function Engine.LevelStreaming.IsLevelVisible // RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x31585c0
+	bool IsLevelLoaded(); // Function Engine.LevelStreaming.IsLevelLoaded // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158590
+	struct ALevelScriptActor* GetLevelScriptActor(); // Function Engine.LevelStreaming.GetLevelScriptActor // Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure // @ game+0x3158100
+	struct ULevelStreaming* CreateInstance(struct FString UniqueInstanceName); // Function Engine.LevelStreaming.CreateInstance // Final|Native|Public|BlueprintCallable // @ game+0x3157c40
 };
 
 // Class Engine.LevelStreamingAlwaysLoaded
@@ -10130,16 +10130,16 @@ struct UMaterialFunction : UObject {
 // Size: 0x1b8 (Inherited: 0x1b8)
 struct UMaterialInstanceDynamic : UMaterialInstance {
 
-	void SetVectorParameterValue(struct FName ParameterName, struct FLinearColor Value); // Function Engine.MaterialInstanceDynamic.SetVectorParameterValue // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3156c50
-	void SetTextureParameterValue(struct FName ParameterName, struct UTexture* Value); // Function Engine.MaterialInstanceDynamic.SetTextureParameterValue // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3156b90
-	void SetScalarParameterValue(struct FName ParameterName, float Value); // Function Engine.MaterialInstanceDynamic.SetScalarParameterValue // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3156ac0
-	void MergeParameters(struct UMaterialInstance* MaterialInstance); // Function Engine.MaterialInstanceDynamic.MergeParameters // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x31565d0
-	void K2_InterpolateMaterialInstanceParams(struct UMaterialInstance* MaterialA, struct UMaterialInstance* MaterialB, float Alpha); // Function Engine.MaterialInstanceDynamic.K2_InterpolateMaterialInstanceParams // Final|Native|Public|BlueprintCallable // @ game+0x31564c0
-	struct FLinearColor K2_GetVectorParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceDynamic.K2_GetVectorParameterValue // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3156420
-	struct UTexture* K2_GetTextureParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceDynamic.K2_GetTextureParameterValue // Final|Native|Public|BlueprintCallable // @ game+0x3156390
-	float K2_GetScalarParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceDynamic.K2_GetScalarParameterValue // Final|Native|Public|BlueprintCallable // @ game+0x31562f0
-	void K2_CopyMaterialInstanceParameters(struct UMaterialInterface* SourceMaterialToCopyFrom, bool bOverride); // Function Engine.MaterialInstanceDynamic.K2_CopyMaterialInstanceParameters // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3156220
-	void CopyParameterOverrides(struct UMaterialInstance* MaterialInstance); // Function Engine.MaterialInstanceDynamic.CopyParameterOverrides // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x31554f0
+	void SetVectorParameterValue(struct FName ParameterName, struct FLinearColor Value); // Function Engine.MaterialInstanceDynamic.SetVectorParameterValue // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x31590e0
+	void SetTextureParameterValue(struct FName ParameterName, struct UTexture* Value); // Function Engine.MaterialInstanceDynamic.SetTextureParameterValue // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3159020
+	void SetScalarParameterValue(struct FName ParameterName, float Value); // Function Engine.MaterialInstanceDynamic.SetScalarParameterValue // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3158f50
+	void MergeParameters(struct UMaterialInstance* MaterialInstance); // Function Engine.MaterialInstanceDynamic.MergeParameters // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3158a60
+	void K2_InterpolateMaterialInstanceParams(struct UMaterialInstance* MaterialA, struct UMaterialInstance* MaterialB, float Alpha); // Function Engine.MaterialInstanceDynamic.K2_InterpolateMaterialInstanceParams // Final|Native|Public|BlueprintCallable // @ game+0x3158950
+	struct FLinearColor K2_GetVectorParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceDynamic.K2_GetVectorParameterValue // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x31588b0
+	struct UTexture* K2_GetTextureParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceDynamic.K2_GetTextureParameterValue // Final|Native|Public|BlueprintCallable // @ game+0x3158820
+	float K2_GetScalarParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceDynamic.K2_GetScalarParameterValue // Final|Native|Public|BlueprintCallable // @ game+0x3158780
+	void K2_CopyMaterialInstanceParameters(struct UMaterialInterface* SourceMaterialToCopyFrom, bool bOverride); // Function Engine.MaterialInstanceDynamic.K2_CopyMaterialInstanceParameters // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x31586b0
+	void CopyParameterOverrides(struct UMaterialInstance* MaterialInstance); // Function Engine.MaterialInstanceDynamic.CopyParameterOverrides // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3157980
 };
 
 // Class Engine.MaterialParameterCollection
@@ -10188,8 +10188,8 @@ struct UTexture2D : UTexture {
 	int32_t MinimumLoadedMips; // 0x160(0x04)
 	char UnknownData_164[0x2c]; // 0x164(0x2c)
 
-	int32_t Blueprint_GetSizeY(); // Function Engine.Texture2D.Blueprint_GetSizeY // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x31554a0
-	int32_t Blueprint_GetSizeX(); // Function Engine.Texture2D.Blueprint_GetSizeX // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3155470
+	int32_t Blueprint_GetSizeY(); // Function Engine.Texture2D.Blueprint_GetSizeY // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3157930
+	int32_t Blueprint_GetSizeX(); // Function Engine.Texture2D.Blueprint_GetSizeX // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3157900
 };
 
 // Class Engine.CanvasRenderTarget2D
@@ -10198,11 +10198,11 @@ struct UCanvasRenderTarget2D : UTextureRenderTarget2D {
 	struct FMulticastDelegate OnCanvasRenderTargetUpdate; // 0x168(0x10)
 	struct UWorld* World; // 0x178(0x08)
 
-	void UpdateResource(); // Function Engine.CanvasRenderTarget2D.UpdateResource // Native|Public|BlueprintCallable // @ game+0x3156d20
-	void Render(); // Function Engine.CanvasRenderTarget2D.Render // Final|Native|Public|BlueprintCallable // @ game+0x3156650
-	void ReceiveUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.ReceiveUpdate // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void GetSize(int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.GetSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3155d00
-	struct UCanvasRenderTarget2D* CreateCanvasRenderTarget2D(struct UObject* WorldContextObject, struct UClass* CanvasRenderTarget2DClass, int32_t Width, int32_t Height, char Mips, bool HDR, bool CreateTextureResource, char RenderTargetFormat); // Function Engine.CanvasRenderTarget2D.CreateCanvasRenderTarget2D // Final|Native|Static|Public|BlueprintCallable // @ game+0x3155570
+	void UpdateResource(); // Function Engine.CanvasRenderTarget2D.UpdateResource // Native|Public|BlueprintCallable // @ game+0x31591b0
+	void Render(); // Function Engine.CanvasRenderTarget2D.Render // Final|Native|Public|BlueprintCallable // @ game+0x3158ae0
+	void ReceiveUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.ReceiveUpdate // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void GetSize(int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.GetSize // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x3158190
+	struct UCanvasRenderTarget2D* CreateCanvasRenderTarget2D(struct UObject* WorldContextObject, struct UClass* CanvasRenderTarget2DClass, int32_t Width, int32_t Height, char Mips, bool HDR, bool CreateTextureResource, char RenderTargetFormat); // Function Engine.CanvasRenderTarget2D.CreateCanvasRenderTarget2D // Final|Native|Static|Public|BlueprintCallable // @ game+0x3157a00
 };
 
 // Class Engine.CompressedCanvasRenderTarget2D
@@ -10212,7 +10212,7 @@ struct UCompressedCanvasRenderTarget2D : UTexture2D {
 	struct UCanvasRenderTarget2D* RenderTarget; // 0x198(0x08)
 	char UnknownData_1A0[0x8]; // 0x1a0(0x08)
 
-	void UpdateResource(); // Function Engine.CompressedCanvasRenderTarget2D.UpdateResource // Native|Public|BlueprintCallable // @ game+0x3156d40
+	void UpdateResource(); // Function Engine.CompressedCanvasRenderTarget2D.UpdateResource // Native|Public|BlueprintCallable // @ game+0x31591d0
 };
 
 // Class Engine.MaybeCompressedCanvasRenderTarget2D
@@ -10224,9 +10224,9 @@ struct UMaybeCompressedCanvasRenderTarget2D : UObject {
 	struct UCanvasRenderTarget2D* UncompressedRenderTarget; // 0x40(0x08)
 	struct UCompressedCanvasRenderTarget2D* CompressedRenderTarget; // 0x48(0x08)
 
-	void UpdateResource(); // Function Engine.MaybeCompressedCanvasRenderTarget2D.UpdateResource // Final|Native|Public|BlueprintCallable // @ game+0x3156d60
-	struct UTexture* GetTexture(); // Function Engine.MaybeCompressedCanvasRenderTarget2D.GetTexture // Final|Native|Public|BlueprintCallable // @ game+0x3155de0
-	struct UMaybeCompressedCanvasRenderTarget2D* CreateMaybeCompressedCanvasRenderTarget2D(struct UObject* WorldContextObject, int32_t Width, int32_t Height, char Mips, bool HDR, bool CreateTextureResource, int32_t ChannelCount); // Function Engine.MaybeCompressedCanvasRenderTarget2D.CreateMaybeCompressedCanvasRenderTarget2D // Final|Native|Static|Public|BlueprintCallable // @ game+0x3155870
+	void UpdateResource(); // Function Engine.MaybeCompressedCanvasRenderTarget2D.UpdateResource // Final|Native|Public|BlueprintCallable // @ game+0x31591f0
+	struct UTexture* GetTexture(); // Function Engine.MaybeCompressedCanvasRenderTarget2D.GetTexture // Final|Native|Public|BlueprintCallable // @ game+0x3158270
+	struct UMaybeCompressedCanvasRenderTarget2D* CreateMaybeCompressedCanvasRenderTarget2D(struct UObject* WorldContextObject, int32_t Width, int32_t Height, char Mips, bool HDR, bool CreateTextureResource, int32_t ChannelCount); // Function Engine.MaybeCompressedCanvasRenderTarget2D.CreateMaybeCompressedCanvasRenderTarget2D // Final|Native|Static|Public|BlueprintCallable // @ game+0x3157d00
 };
 
 // Class Engine.NavArea_Default
@@ -10308,14 +10308,14 @@ struct UNavigationPath : UObject {
 	char RecalculateOnInvalidation; // 0x48(0x01)
 	char UnknownData_49[0x3f]; // 0x49(0x3f)
 
-	bool IsValid(); // Function Engine.NavigationPath.IsValid // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x31561f0
-	bool IsStringPulled(); // Function Engine.NavigationPath.IsStringPulled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x31561c0
-	bool IsPartial(); // Function Engine.NavigationPath.IsPartial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3156160
-	float GetPathLength(); // Function Engine.NavigationPath.GetPathLength // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3155cd0
-	float GetPathCost(); // Function Engine.NavigationPath.GetPathCost // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3155ca0
-	struct FString GetDebugString(); // Function Engine.NavigationPath.GetDebugString // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3155bd0
-	void EnableRecalculationOnInvalidation(char DoRecalculation); // Function Engine.NavigationPath.EnableRecalculationOnInvalidation // Final|Native|Public|BlueprintCallable // @ game+0x3155b50
-	void EnableDebugDrawing(bool bShouldDrawDebugData, struct FLinearColor PathColor); // Function Engine.NavigationPath.EnableDebugDrawing // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3155a70
+	bool IsValid(); // Function Engine.NavigationPath.IsValid // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158680
+	bool IsStringPulled(); // Function Engine.NavigationPath.IsStringPulled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158650
+	bool IsPartial(); // Function Engine.NavigationPath.IsPartial // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x31585f0
+	float GetPathLength(); // Function Engine.NavigationPath.GetPathLength // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158160
+	float GetPathCost(); // Function Engine.NavigationPath.GetPathCost // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158130
+	struct FString GetDebugString(); // Function Engine.NavigationPath.GetDebugString // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3158060
+	void EnableRecalculationOnInvalidation(char DoRecalculation); // Function Engine.NavigationPath.EnableRecalculationOnInvalidation // Final|Native|Public|BlueprintCallable // @ game+0x3157fe0
+	void EnableDebugDrawing(bool bShouldDrawDebugData, struct FLinearColor PathColor); // Function Engine.NavigationPath.EnableDebugDrawing // Final|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3157f00
 };
 
 // Class Engine.NavigationPathGenerator
@@ -12229,13 +12229,13 @@ struct UMicroTransactionBase : UPlatformInterfaceBase {
 // Size: 0x38 (Inherited: 0x38)
 struct UTwitterIntegrationBase : UPlatformInterfaceBase {
 
-	bool TwitterRequest(struct FString URL, struct TArray<struct FString> ParamKeysAndValues, char RequestMethod, int32_t AccountIndex); // Function Engine.TwitterIntegrationBase.TwitterRequest // Native|Public|HasOutParms // @ game+0x32010f0
-	bool ShowTweetUI(struct FString InitialMessage, struct FString URL, struct FString Picture); // Function Engine.TwitterIntegrationBase.ShowTweetUI // Native|Public // @ game+0x3200f80
-	void Init(); // Function Engine.TwitterIntegrationBase.Init // Native|Public // @ game+0x3200d70
-	int32_t GetNumAccounts(); // Function Engine.TwitterIntegrationBase.GetNumAccounts // Native|Public // @ game+0x3200c40
-	struct FString GetAccountName(int32_t AccountIndex); // Function Engine.TwitterIntegrationBase.GetAccountName // Native|Public // @ game+0x32008e0
-	bool CanShowTweetUI(); // Function Engine.TwitterIntegrationBase.CanShowTweetUI // Native|Public // @ game+0x3200890
-	bool AuthorizeAccounts(); // Function Engine.TwitterIntegrationBase.AuthorizeAccounts // Native|Public // @ game+0x3200860
+	bool TwitterRequest(struct FString URL, struct TArray<struct FString> ParamKeysAndValues, char RequestMethod, int32_t AccountIndex); // Function Engine.TwitterIntegrationBase.TwitterRequest // Native|Public|HasOutParms // @ game+0x3203580
+	bool ShowTweetUI(struct FString InitialMessage, struct FString URL, struct FString Picture); // Function Engine.TwitterIntegrationBase.ShowTweetUI // Native|Public // @ game+0x3203410
+	void Init(); // Function Engine.TwitterIntegrationBase.Init // Native|Public // @ game+0x3203200
+	int32_t GetNumAccounts(); // Function Engine.TwitterIntegrationBase.GetNumAccounts // Native|Public // @ game+0x32030d0
+	struct FString GetAccountName(int32_t AccountIndex); // Function Engine.TwitterIntegrationBase.GetAccountName // Native|Public // @ game+0x3202d70
+	bool CanShowTweetUI(); // Function Engine.TwitterIntegrationBase.CanShowTweetUI // Native|Public // @ game+0x3202d20
+	bool AuthorizeAccounts(); // Function Engine.TwitterIntegrationBase.AuthorizeAccounts // Native|Public // @ game+0x3202cf0
 };
 
 // Class Engine.PlatformInterfaceWebResponse
@@ -12248,9 +12248,9 @@ struct UPlatformInterfaceWebResponse : UObject {
 	struct TArray<char> BinaryResponse; // 0x50(0x10)
 	char UnknownData_60[0x50]; // 0x60(0x50)
 
-	int32_t GetNumHeaders(); // Function Engine.PlatformInterfaceWebResponse.GetNumHeaders // Native|Public // @ game+0x3200c70
-	struct FString GetHeaderValue(struct FString HeaderName); // Function Engine.PlatformInterfaceWebResponse.GetHeaderValue // Native|Public // @ game+0x3200b40
-	void GetHeader(int32_t HeaderIndex, struct FString Header, struct FString Value); // Function Engine.PlatformInterfaceWebResponse.GetHeader // Native|Public|HasOutParms // @ game+0x32009d0
+	int32_t GetNumHeaders(); // Function Engine.PlatformInterfaceWebResponse.GetNumHeaders // Native|Public // @ game+0x3203100
+	struct FString GetHeaderValue(struct FString HeaderName); // Function Engine.PlatformInterfaceWebResponse.GetHeaderValue // Native|Public // @ game+0x3202fd0
+	void GetHeader(int32_t HeaderIndex, struct FString Header, struct FString Value); // Function Engine.PlatformInterfaceWebResponse.GetHeader // Native|Public|HasOutParms // @ game+0x3202e60
 };
 
 // Class Engine.LocalPlayer
@@ -12375,8 +12375,8 @@ struct USkeletalMeshSocket : UObject {
 	bool bForceAlwaysAnimated; // 0x5c(0x01)
 	char UnknownData_5D[0x3]; // 0x5d(0x03)
 
-	void InitializeSocketFromLocation(struct USkeletalMeshComponent* SkelComp, struct FVector WorldLocation, struct FVector WorldNormal); // Function Engine.SkeletalMeshSocket.InitializeSocketFromLocation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3200d90
-	struct FVector GetSocketLocation(struct USkeletalMeshComponent* SkelComp); // Function Engine.SkeletalMeshSocket.GetSocketLocation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3200ca0
+	void InitializeSocketFromLocation(struct USkeletalMeshComponent* SkelComp, struct FVector WorldLocation, struct FVector WorldNormal); // Function Engine.SkeletalMeshSocket.InitializeSocketFromLocation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable // @ game+0x3203220
+	struct FVector GetSocketLocation(struct USkeletalMeshComponent* SkelComp); // Function Engine.SkeletalMeshSocket.GetSocketLocation // Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x3203130
 };
 
 // Class Engine.SlateBrushAsset
@@ -12770,8 +12770,8 @@ struct UTimecodeProvider : UObject {
 	float FrameDelay; // 0x28(0x04)
 	char UnknownData_2C[0x4]; // 0x2c(0x04)
 
-	char GetSynchronizationState(); // Function Engine.TimecodeProvider.GetSynchronizationState // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x3200d40
-	void FetchAndUpdate(); // Function Engine.TimecodeProvider.FetchAndUpdate // Native|Public|BlueprintCallable // @ game+0x32008c0
+	char GetSynchronizationState(); // Function Engine.TimecodeProvider.GetSynchronizationState // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x32031d0
+	void FetchAndUpdate(); // Function Engine.TimecodeProvider.FetchAndUpdate // Native|Public|BlueprintCallable // @ game+0x3202d50
 };
 
 // Class Engine.TimelineTemplate

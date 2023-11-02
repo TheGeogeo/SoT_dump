@@ -7,8 +7,8 @@ struct ACompetitiveVoyageItemRelocationVolume : AActor {
 	struct TArray<struct FVector> RelocationPositions; // 0x3e8(0x10)
 	char UnknownData_3F8[0x1d8]; // 0x3f8(0x1d8)
 
-	void OnTriggerVolumeEndOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function CompetitiveVoyages.CompetitiveVoyageItemRelocationVolume.OnTriggerVolumeEndOverlap // Final|Native|Protected // @ game+0x44036b0
-	void OnTriggerVolumeBeginOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function CompetitiveVoyages.CompetitiveVoyageItemRelocationVolume.OnTriggerVolumeBeginOverlap // Final|Native|Protected|HasOutParms // @ game+0x44034e0
+	void OnTriggerVolumeEndOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function CompetitiveVoyages.CompetitiveVoyageItemRelocationVolume.OnTriggerVolumeEndOverlap // Final|Native|Protected // @ game+0x4405cd0
+	void OnTriggerVolumeBeginOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function CompetitiveVoyages.CompetitiveVoyageItemRelocationVolume.OnTriggerVolumeBeginOverlap // Final|Native|Protected|HasOutParms // @ game+0x4405b00
 };
 
 // Class CompetitiveVoyages.CompetitiveVoyagesServiceInterface
@@ -46,7 +46,7 @@ struct UCompetitiveVoyageVoteConsumerBase : UVoteConsumerInlineBase {
 	struct TArray<struct FCrewMemberVotes> Votes; // 0xa0(0x10)
 	char UnknownData_B0[0x18]; // 0xb0(0x18)
 
-	void OnRep_Votes(struct TArray<struct FCrewMemberVotes> PreviousVotes); // Function CompetitiveVoyages.CompetitiveVoyageVoteConsumerBase.OnRep_Votes // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4403400
+	void OnRep_Votes(struct TArray<struct FCrewMemberVotes> PreviousVotes); // Function CompetitiveVoyages.CompetitiveVoyageVoteConsumerBase.OnRep_Votes // Final|RequiredAPI|Native|Private|HasOutParms // @ game+0x4405a20
 };
 
 // Class CompetitiveVoyages.StopCompetitiveVoyageVoteConsumer
@@ -123,22 +123,22 @@ struct USonicStatus : UStatusBase {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestCompetitiveVoyagesFunctionStepLibrary : UTaleQuestFunctionStepLibrary {
 
-	void SetTreasureHuntItemFound(struct AActor* FindingActor); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetTreasureHuntItemFound // Final|Native|Public|Const // @ game+0x4403b40
-	void SetPhasedMarkerManager(struct AActor* InMarkerManager); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetPhasedMarkerManager // Final|Native|Public // @ game+0x4403ac0
-	void SetMainVoyageState(char InState); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetMainVoyageState // Final|Native|Public|Const // @ game+0x4403a40
-	void SetCompetitiveVoyageState(char InState); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetCompetitiveVoyageState // Final|Native|Public|Const // @ game+0x44039c0
-	void RemoveVoyageItem(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemoveVoyageItem // Final|Native|Public // @ game+0x4403940
-	void RemoveVoyageIsland(struct FName InIslandName); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemoveVoyageIsland // Final|Native|Public|HasOutParms // @ game+0x44038b0
-	void RemovePhasedMarkerItem(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemovePhasedMarkerItem // Final|Native|Public // @ game+0x4403830
-	void RemovePhasedMapMarker(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemovePhasedMapMarker // Final|Native|Public // @ game+0x44037b0
-	int32_t GetNumTreasureHuntItemsFound(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetNumTreasureHuntItemsFound // Final|Native|Public|Const // @ game+0x44033d0
-	char GetMainVoyageState(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetMainVoyageState // Final|Native|Public|Const // @ game+0x44033a0
-	struct TArray<struct FName> GetCompetitiveVoyageIslandsToIgnore(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetCompetitiveVoyageIslandsToIgnore // Final|Native|Public|Const // @ game+0x44032f0
-	struct FVector GetAverageShipLocationForVoyage(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetAverageShipLocationForVoyage // Final|Native|Public|HasDefaults|Const // @ game+0x44032b0
-	void CreatePhasedMapMarkerService(struct UClass* InClass); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.CreatePhasedMapMarkerService // Final|Native|Public // @ game+0x4403230
-	void AddVoyageItem(struct AActor* InItemInfo, bool WantsBeacon, bool WantsMapMarker); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddVoyageItem // Final|Native|Public // @ game+0x4403120
-	void AddVoyageIsland(struct FName InIslandName); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddVoyageIsland // Final|Native|Public|HasOutParms // @ game+0x4403090
-	void AddPhasedMarkerItem(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddPhasedMarkerItem // Final|Native|Public // @ game+0x4403010
-	void AddPhasedMapMarker(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddPhasedMapMarker // Final|Native|Public // @ game+0x4402f90
+	void SetTreasureHuntItemFound(struct AActor* FindingActor); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetTreasureHuntItemFound // Final|Native|Public|Const // @ game+0x4406160
+	void SetPhasedMarkerManager(struct AActor* InMarkerManager); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetPhasedMarkerManager // Final|Native|Public // @ game+0x44060e0
+	void SetMainVoyageState(char InState); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetMainVoyageState // Final|Native|Public|Const // @ game+0x4406060
+	void SetCompetitiveVoyageState(char InState); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.SetCompetitiveVoyageState // Final|Native|Public|Const // @ game+0x4405fe0
+	void RemoveVoyageItem(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemoveVoyageItem // Final|Native|Public // @ game+0x4405f60
+	void RemoveVoyageIsland(struct FName InIslandName); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemoveVoyageIsland // Final|Native|Public|HasOutParms // @ game+0x4405ed0
+	void RemovePhasedMarkerItem(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemovePhasedMarkerItem // Final|Native|Public // @ game+0x4405e50
+	void RemovePhasedMapMarker(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.RemovePhasedMapMarker // Final|Native|Public // @ game+0x4405dd0
+	int32_t GetNumTreasureHuntItemsFound(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetNumTreasureHuntItemsFound // Final|Native|Public|Const // @ game+0x44059f0
+	char GetMainVoyageState(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetMainVoyageState // Final|Native|Public|Const // @ game+0x44059c0
+	struct TArray<struct FName> GetCompetitiveVoyageIslandsToIgnore(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetCompetitiveVoyageIslandsToIgnore // Final|Native|Public|Const // @ game+0x4405910
+	struct FVector GetAverageShipLocationForVoyage(); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.GetAverageShipLocationForVoyage // Final|Native|Public|HasDefaults|Const // @ game+0x44058d0
+	void CreatePhasedMapMarkerService(struct UClass* InClass); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.CreatePhasedMapMarkerService // Final|Native|Public // @ game+0x4405850
+	void AddVoyageItem(struct AActor* InItemInfo, bool WantsBeacon, bool WantsMapMarker); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddVoyageItem // Final|Native|Public // @ game+0x4405740
+	void AddVoyageIsland(struct FName InIslandName); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddVoyageIsland // Final|Native|Public|HasOutParms // @ game+0x44056b0
+	void AddPhasedMarkerItem(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddPhasedMarkerItem // Final|Native|Public // @ game+0x4405630
+	void AddPhasedMapMarker(struct AActor* InItemInfo); // Function CompetitiveVoyages.TaleQuestCompetitiveVoyagesFunctionStepLibrary.AddPhasedMapMarker // Final|Native|Public // @ game+0x44055b0
 };
 

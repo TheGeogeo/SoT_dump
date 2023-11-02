@@ -9,9 +9,9 @@ struct AFixedSplinePathingActor : AActor {
 	bool CanTick; // 0x3e8(0x01)
 	char UnknownData_3E9[0x2f]; // 0x3e9(0x2f)
 
-	void SetSplineActor(struct AActor* Actor); // Function SplinePathing.FixedSplinePathingActor.SetSplineActor // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3df1aa0
-	void OnRep_SplineActor(); // Function SplinePathing.FixedSplinePathingActor.OnRep_SplineActor // Final|Native|Private // @ game+0x3df1a80
-	void OnRep_CanTick(); // Function SplinePathing.FixedSplinePathingActor.OnRep_CanTick // Final|RequiredAPI|Native|Private // @ game+0x3df1a60
+	void SetSplineActor(struct AActor* Actor); // Function SplinePathing.FixedSplinePathingActor.SetSplineActor // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x3df40b0
+	void OnRep_SplineActor(); // Function SplinePathing.FixedSplinePathingActor.OnRep_SplineActor // Final|Native|Private // @ game+0x3df4090
+	void OnRep_CanTick(); // Function SplinePathing.FixedSplinePathingActor.OnRep_CanTick // Final|RequiredAPI|Native|Private // @ game+0x3df4070
 };
 
 // Class SplinePathing.SplinePathingActor

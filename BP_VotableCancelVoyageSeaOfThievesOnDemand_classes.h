@@ -9,14 +9,14 @@ struct ABP_VotableCancelVoyageSeaOfThievesOnDemand_C : AVotableObjectView {
 	struct UMaterialInterface* Token Material; // 0x518(0x08)
 	struct TArray<struct FTransform> DaggerPositions; // 0x520(0x10)
 
-	void GetVoteCount(int32_t Count); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.GetVoteCount // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PlayShowTokenAnimation(struct UPrimitiveComponent* Token); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.PlayShowTokenAnimation // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Is Session Locked(bool IsLocked); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.Is Session Locked // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	struct FText GetObjectDisplayName(); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.GetObjectDisplayName // HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnVoteAdded(TScriptInterface<struct UVoterInterface> Voter); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.OnVoteAdded // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e3b10
-	void OnVoteRemoved(TScriptInterface<struct UVoterInterface> Voter); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.OnVoteRemoved // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_VotableCancelVoyageSeaOfThievesOnDemand(int32_t EntryPoint); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.ExecuteUbergraph_BP_VotableCancelVoyageSeaOfThievesOnDemand // HasDefaults // @ game+0x18e3b10
+	void GetVoteCount(int32_t Count); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.GetVoteCount // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PlayShowTokenAnimation(struct UPrimitiveComponent* Token); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.PlayShowTokenAnimation // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Is Session Locked(bool IsLocked); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.Is Session Locked // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	struct FText GetObjectDisplayName(); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.GetObjectDisplayName // HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnVoteAdded(TScriptInterface<struct UVoterInterface>* Voter); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.OnVoteAdded // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
+	void OnVoteRemoved(TScriptInterface<struct UVoterInterface>* Voter); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.OnVoteRemoved // Event|Public|HasOutParms|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_VotableCancelVoyageSeaOfThievesOnDemand(int32_t EntryPoint); // Function BP_VotableCancelVoyageSeaOfThievesOnDemand.BP_VotableCancelVoyageSeaOfThievesOnDemand_C.ExecuteUbergraph_BP_VotableCancelVoyageSeaOfThievesOnDemand // HasDefaults // @ game+0x18e5fa0
 };
 

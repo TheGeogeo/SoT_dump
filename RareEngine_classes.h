@@ -20,11 +20,11 @@ struct UAudioHardwareDeviceService : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UHitchDiagnosisBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void SetHitchThreshold(int32_t InThreshold); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold // Final|Native|Static|Public|BlueprintCallable // @ game+0x3274de0
-	struct FString GetMaxHitchNameThisFrame(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3274d40
-	int32_t GetMaxHitchLengthThisFrameMs(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3274d10
-	void DumpThisFramesHitchesToLog(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog // Final|Native|Static|Public|BlueprintCallable // @ game+0x32748f0
-	bool DidHitchOccurThisFrame(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x32748c0
+	void SetHitchThreshold(int32_t InThreshold); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold // Final|Native|Static|Public|BlueprintCallable // @ game+0x3277270
+	struct FString GetMaxHitchNameThisFrame(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x32771d0
+	int32_t GetMaxHitchLengthThisFrameMs(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x32771a0
+	void DumpThisFramesHitchesToLog(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog // Final|Native|Static|Public|BlueprintCallable // @ game+0x3276d80
+	bool DidHitchOccurThisFrame(); // Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x3276d50
 };
 
 // Class RareEngine.MemoryUsageVisualiserSettings
@@ -45,16 +45,16 @@ struct UStallDetector : UObject {
 	struct FMulticastDelegate Callback; // 0x30(0x10)
 	char UnknownData_40[0x10]; // 0x40(0x10)
 
-	void Deactivate(); // Function RareEngine.StallDetector.Deactivate // Final|Native|Public|BlueprintCallable // @ game+0x32748a0
-	struct UStallDetector* CreateStallDetector(float Delay, bool CreateActive); // Function RareEngine.StallDetector.CreateStallDetector // Final|Native|Static|Public|BlueprintCallable // @ game+0x32747d0
-	void Activate(); // Function RareEngine.StallDetector.Activate // Final|Native|Public|BlueprintCallable // @ game+0x32747b0
+	void Deactivate(); // Function RareEngine.StallDetector.Deactivate // Final|Native|Public|BlueprintCallable // @ game+0x3276d30
+	struct UStallDetector* CreateStallDetector(float Delay, bool CreateActive); // Function RareEngine.StallDetector.CreateStallDetector // Final|Native|Static|Public|BlueprintCallable // @ game+0x3276c60
+	void Activate(); // Function RareEngine.StallDetector.Activate // Final|Native|Public|BlueprintCallable // @ game+0x3276c40
 };
 
 // Class RareEngine.StaticMeshActorBlueprintLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UStaticMeshActorBlueprintLibrary : UBlueprintFunctionLibrary {
 
-	void FindAllStaticMeshComponents(struct UObject* WorldContextObject, struct TArray<struct UStaticMesh*> MeshFilter, struct TArray<struct FStaticMeshComponentList> OutComponentLists, struct ULevel* RestrictToLevel); // Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3274b10
-	void FindAllStaticMeshActors(struct UObject* WorldContextObject, struct TArray<struct UStaticMesh*> MeshFilter, struct TArray<struct FStaticMeshActorList> OutActorLists, struct ULevel* RestrictToLevel); // Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3274910
+	void FindAllStaticMeshComponents(struct UObject* WorldContextObject, struct TArray<struct UStaticMesh*> MeshFilter, struct TArray<struct FStaticMeshComponentList> OutComponentLists, struct ULevel* RestrictToLevel); // Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3276fa0
+	void FindAllStaticMeshActors(struct UObject* WorldContextObject, struct TArray<struct UStaticMesh*> MeshFilter, struct TArray<struct FStaticMeshActorList> OutActorLists, struct ULevel* RestrictToLevel); // Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3276da0
 };
 

@@ -30,8 +30,8 @@ struct UBP_SailAnim_C : USailAnimInstance {
 	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_982A8E734123238A2CCF5CB62A719028; // 0xe80(0x60)
 	bool Main Sail; // 0xee0(0x01)
 
-	void Set Billow Animation Rate(); // Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void InitialiseSail(float PlayRateMultiplier, bool MainSail); // Function BP_SailAnim.BP_SailAnim_C.InitialiseSail // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_SailAnim(int32_t EntryPoint); // Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim //  // @ game+0x18e3b10
+	void Set Billow Animation Rate(); // Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void InitialiseSail(float* PlayRateMultiplier, bool* MainSail); // Function BP_SailAnim.BP_SailAnim_C.InitialiseSail // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_SailAnim(int32_t EntryPoint); // Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim //  // @ game+0x18e5fa0
 };
 

@@ -3,7 +3,7 @@
 struct APuzzleManager : AActor {
 	struct TArray<struct UPuzzleManagerPolicy*> PuzzleManagerPolicies; // 0x3c8(0x10)
 
-	void ResetAllPuzzles(); // Function PuzzleManagerFramework.PuzzleManager.ResetAllPuzzles // Final|Native|Public|BlueprintCallable // @ game+0x3fbf810
+	void ResetAllPuzzles(); // Function PuzzleManagerFramework.PuzzleManager.ResetAllPuzzles // Final|Native|Public|BlueprintCallable // @ game+0x3fc1e20
 };
 
 // Class PuzzleManagerFramework.PuzzleManagerPolicyInterface

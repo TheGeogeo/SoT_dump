@@ -2,9 +2,9 @@
 // Size: 0x28 (Inherited: 0x28)
 struct URenderToTextureFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct URenderToTextureSceneDetails* GetRenderToTexture(struct FName Identifier); // Function RenderToTexture.RenderToTextureFunctionLibrary.GetRenderToTexture // Final|Native|Static|Public|BlueprintCallable // @ game+0x32a1990
-	bool DestroyRenderToTexture(struct FName Identifier); // Function RenderToTexture.RenderToTextureFunctionLibrary.DestroyRenderToTexture // Final|Native|Static|Public|BlueprintCallable // @ game+0x32a18c0
-	struct URenderToTextureSceneDetails* CreateRenderToTexture(struct UObject* WorldContext, struct FName Identifier, struct UClass* ClassToSpawn, struct FIntPoint Resolution, bool bForceLinearGamma, bool bCaptureAlpha); // Function RenderToTexture.RenderToTextureFunctionLibrary.CreateRenderToTexture // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x32a1710
+	struct URenderToTextureSceneDetails* GetRenderToTexture(struct FName Identifier); // Function RenderToTexture.RenderToTextureFunctionLibrary.GetRenderToTexture // Final|Native|Static|Public|BlueprintCallable // @ game+0x32a3e20
+	bool DestroyRenderToTexture(struct FName Identifier); // Function RenderToTexture.RenderToTextureFunctionLibrary.DestroyRenderToTexture // Final|Native|Static|Public|BlueprintCallable // @ game+0x32a3d50
+	struct URenderToTextureSceneDetails* CreateRenderToTexture(struct UObject* WorldContext, struct FName Identifier, struct UClass* ClassToSpawn, struct FIntPoint Resolution, bool bForceLinearGamma, bool bCaptureAlpha); // Function RenderToTexture.RenderToTextureFunctionLibrary.CreateRenderToTexture // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x32a3ba0
 };
 
 // Class RenderToTexture.RenderToTextureSceneDetails
@@ -18,8 +18,8 @@ struct URenderToTextureSceneDetails : UObject {
 	struct UTextureRenderTarget2D* RenderTarget; // 0x50(0x08)
 	char UnknownData_58[0x50]; // 0x58(0x50)
 
-	struct UTextureRenderTarget2D* GetTexture(); // Function RenderToTexture.RenderToTextureSceneDetails.GetTexture // Final|Native|Public|BlueprintCallable // @ game+0x32a1a10
-	struct AActor* GetInstance(); // Function RenderToTexture.RenderToTextureSceneDetails.GetInstance // Final|Native|Public|BlueprintCallable // @ game+0x32a1960
-	void DestroyTexture(); // Function RenderToTexture.RenderToTextureSceneDetails.DestroyTexture // Final|Native|Public|BlueprintCallable // @ game+0x32a1940
+	struct UTextureRenderTarget2D* GetTexture(); // Function RenderToTexture.RenderToTextureSceneDetails.GetTexture // Final|Native|Public|BlueprintCallable // @ game+0x32a3ea0
+	struct AActor* GetInstance(); // Function RenderToTexture.RenderToTextureSceneDetails.GetInstance // Final|Native|Public|BlueprintCallable // @ game+0x32a3df0
+	void DestroyTexture(); // Function RenderToTexture.RenderToTextureSceneDetails.DestroyTexture // Final|Native|Public|BlueprintCallable // @ game+0x32a3dd0
 };
 

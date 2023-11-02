@@ -40,7 +40,7 @@ struct UStoryDrivenBlendedLightingZoneComponent : UBlendedLightingZoneComponent 
 	struct FLightingZoneStoryRelatedSettings CurrentStoryResponse; // 0x330(0x10)
 	char UnknownData_348[0x18]; // 0x348(0x18)
 
-	void OnRep_CurrentStoryResponse(); // Function StoryFramework.StoryDrivenBlendedLightingZoneComponent.OnRep_CurrentStoryResponse // Final|Native|Private // @ game+0x17041a0
+	void OnRep_CurrentStoryResponse(); // Function StoryFramework.StoryDrivenBlendedLightingZoneComponent.OnRep_CurrentStoryResponse // Final|Native|Private // @ game+0x1706630
 };
 
 // Class StoryFramework.StoryDrivenBlendedLightingZoneComponentDataAsset
@@ -145,6 +145,6 @@ struct AStoryService : AActor {
 	struct TArray<struct FStoryInfo> ActiveStories; // 0x400(0x10)
 	char UnknownData_410[0x90]; // 0x410(0x90)
 
-	void OnRep_ActiveStories(); // Function StoryFramework.StoryService.OnRep_ActiveStories // Final|Native|Private // @ game+0x37194b0
+	void OnRep_ActiveStories(); // Function StoryFramework.StoryService.OnRep_ActiveStories // Final|Native|Private // @ game+0x371bac0
 };
 

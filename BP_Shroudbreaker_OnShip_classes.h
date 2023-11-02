@@ -39,34 +39,34 @@ struct ABP_Shroudbreaker_OnShip_C : AShroudBreakerOnShip {
 	struct AShipHullAudio* ShipHullAudio; // 0x780(0x08)
 	struct UWwiseEvent* ShroudBreakerAmbientLoopingWwiseEvent; // 0x788(0x08)
 
-	struct UWwiseEmitterComponent* GetShroudBreakerObjectEmitterComponent(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShroudBreakerObjectEmitterComponent // Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetShipHullAudio(struct AShipHullAudio* ShipHullAudioRef); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShipHullAudio // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_ShroudBreakerDeactivate(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerDeactivate // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_ShroudBreakerEffectsActive(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerEffectsActive // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnRep_MusicZoneActive(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_MusicZoneActive // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UnregisterShipEvent(struct FObjectMessagingDispatcherHandle Dispatcher, struct FObjectMessagingHandle Handle); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UnregisterShipEvent // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetObjMsgDispatcher(struct FObjectMessagingDispatcherHandle Dispatcher, bool Success); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetObjMsgDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveEndPlay(char EndPlayReason); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnShroudbreakerActivated(struct FShroudBreakerActivatedEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerActivated // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnShroudbreakerDeactivated(struct FShroudBreakerDeactivatedEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerDeactivated // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnShipDestroyed(struct FEventShipDestroyed Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShipDestroyed // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnActivateEffects(struct FShroudBreakerActivateEffectsEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnActivateEffects // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnDeactivateEffects(struct FShroudBreakerDeactivateEffectsEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnDeactivateEffects // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PlayerEnteredTP(struct FEventPlayerEnteredIslandVicinity Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerEnteredTP // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PlayerLeftTP(struct FEventPlayerLeftIslandVicinity Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerLeftTP // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnRepFunctionDeactivateShroudBreaker(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRepFunctionDeactivateShroudBreaker // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnShroudBreakerActivationStateChange(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudBreakerActivationStateChange // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void Stage 4 Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 4 Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Stage 3 Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 3 Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Stage 2 Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 2 Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Stage1Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage1Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Deactivate All VFX and SFX(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivate All VFX and SFX // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Deactivation Stage 4(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 4 // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Deactivation Stage 3(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 3 // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Deactivation Stage 2(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 2 // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void Deactivation Stage 1(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 1 // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Shroudbreaker_OnShip(int32_t EntryPoint); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ExecuteUbergraph_BP_Shroudbreaker_OnShip // HasDefaults // @ game+0x18e3b10
+	struct UWwiseEmitterComponent* GetShroudBreakerObjectEmitterComponent(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShroudBreakerObjectEmitterComponent // Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetShipHullAudio(struct AShipHullAudio* ShipHullAudioRef); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShipHullAudio // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_ShroudBreakerDeactivate(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerDeactivate // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_ShroudBreakerEffectsActive(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerEffectsActive // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnRep_MusicZoneActive(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_MusicZoneActive // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UnregisterShipEvent(struct FObjectMessagingDispatcherHandle Dispatcher, struct FObjectMessagingHandle Handle); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UnregisterShipEvent // Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetObjMsgDispatcher(struct FObjectMessagingDispatcherHandle Dispatcher, bool Success); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetObjMsgDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveEndPlay(char* EndPlayReason); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnShroudbreakerActivated(struct FShroudBreakerActivatedEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerActivated // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnShroudbreakerDeactivated(struct FShroudBreakerDeactivatedEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerDeactivated // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnShipDestroyed(struct FEventShipDestroyed Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShipDestroyed // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnActivateEffects(struct FShroudBreakerActivateEffectsEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnActivateEffects // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnDeactivateEffects(struct FShroudBreakerDeactivateEffectsEvent Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnDeactivateEffects // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PlayerEnteredTP(struct FEventPlayerEnteredIslandVicinity Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerEnteredTP // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PlayerLeftTP(struct FEventPlayerLeftIslandVicinity Ev); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerLeftTP // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnRepFunctionDeactivateShroudBreaker(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRepFunctionDeactivateShroudBreaker // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnShroudBreakerActivationStateChange(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudBreakerActivationStateChange // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void Stage 4 Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 4 Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Stage 3 Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 3 Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Stage 2 Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 2 Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Stage1Activation(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage1Activation // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Deactivate All VFX and SFX(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivate All VFX and SFX // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Deactivation Stage 4(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 4 // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Deactivation Stage 3(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 3 // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Deactivation Stage 2(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 2 // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void Deactivation Stage 1(); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 1 // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Shroudbreaker_OnShip(int32_t EntryPoint); // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ExecuteUbergraph_BP_Shroudbreaker_OnShip // HasDefaults // @ game+0x18e5fa0
 };
 

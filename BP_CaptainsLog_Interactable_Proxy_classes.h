@@ -3,8 +3,8 @@
 struct ABP_CaptainsLog_Interactable_Proxy_C : ACaptainsLogbookInteractableProxy {
 	struct USceneComponent* PlayerPosition; // 0x778(0x08)
 
-	struct FText GetObjectDisplayName(); // Function BP_CaptainsLog_Interactable_Proxy.BP_CaptainsLog_Interactable_Proxy_C.GetObjectDisplayName // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	struct FDockableInfo GetDockableInfo(); // Function BP_CaptainsLog_Interactable_Proxy.BP_CaptainsLog_Interactable_Proxy_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_CaptainsLog_Interactable_Proxy.BP_CaptainsLog_Interactable_Proxy_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	struct FText GetObjectDisplayName(); // Function BP_CaptainsLog_Interactable_Proxy.BP_CaptainsLog_Interactable_Proxy_C.GetObjectDisplayName // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	struct FDockableInfo GetDockableInfo(); // Function BP_CaptainsLog_Interactable_Proxy.BP_CaptainsLog_Interactable_Proxy_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_CaptainsLog_Interactable_Proxy.BP_CaptainsLog_Interactable_Proxy_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -2,6 +2,6 @@
 // Size: 0x60 (Inherited: 0x60)
 struct UBP_CompanyOnboardingStarter_C : UCompanyOnboardingStarter {
 
-	bool HasPrerequisites(); // Function BP_CompanyOnboardingStarter.BP_CompanyOnboardingStarter_C.HasPrerequisites // Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	bool HasPrerequisites(); // Function BP_CompanyOnboardingStarter.BP_CompanyOnboardingStarter_C.HasPrerequisites // Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

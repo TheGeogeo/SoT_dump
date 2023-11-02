@@ -92,8 +92,8 @@ struct ULightWeightStatusEffectManagerComponent : UActorComponent {
 	struct UStatusRecipientResponseList* RecipientResponseList; // 0xe8(0x08)
 	struct TArray<struct FActiveStatusEffect> ActiveEffects; // 0xf0(0x10)
 
-	void OnRep_ActiveEffects(struct TArray<struct FActiveStatusEffect> OldEffects); // Function StatusEffects.LightWeightStatusEffectManagerComponent.OnRep_ActiveEffects // Final|Native|Private|HasOutParms // @ game+0x347ae50
-	void MultiCast_ApplyOneShotStatus(struct TArray<struct FActiveStatusEffect> AddedEffects, struct TArray<struct FActiveStatusEffect> RemovedEffects); // Function StatusEffects.LightWeightStatusEffectManagerComponent.MultiCast_ApplyOneShotStatus // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x347a9a0
+	void OnRep_ActiveEffects(struct TArray<struct FActiveStatusEffect> OldEffects); // Function StatusEffects.LightWeightStatusEffectManagerComponent.OnRep_ActiveEffects // Final|Native|Private|HasOutParms // @ game+0x347d450
+	void MultiCast_ApplyOneShotStatus(struct TArray<struct FActiveStatusEffect> AddedEffects, struct TArray<struct FActiveStatusEffect> RemovedEffects); // Function StatusEffects.LightWeightStatusEffectManagerComponent.MultiCast_ApplyOneShotStatus // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x347cfa0
 };
 
 // Class StatusEffects.MaterialStatusSusceptibilityInterface
@@ -141,7 +141,7 @@ struct UStatusApplicationMonitorComponent : UActorComponent {
 // Size: 0x28 (Inherited: 0x28)
 struct UStatusEffectHelperFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void ApplyOneShotStatus(struct AActor* Recipient, struct FStatus Status); // Function StatusEffects.StatusEffectHelperFunctionLibrary.ApplyOneShotStatus // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x347a8d0
+	void ApplyOneShotStatus(struct AActor* Recipient, struct FStatus Status); // Function StatusEffects.StatusEffectHelperFunctionLibrary.ApplyOneShotStatus // Final|BlueprintAuthorityOnly|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x347ced0
 };
 
 // Class StatusEffects.StatusEffectTicketDispenserInterface
@@ -156,8 +156,8 @@ struct UStatusEffectManagerComponent : UActorComponent {
 	struct UStatusRecipientResponseList* RecipientResponseList; // 0xf0(0x08)
 	struct TArray<struct FActiveStatusEffect> ActiveEffects; // 0xf8(0x10)
 
-	void OnRep_ActiveEffects(struct TArray<struct FActiveStatusEffect> OldEffects); // Function StatusEffects.StatusEffectManagerComponent.OnRep_ActiveEffects // Final|Native|Private|HasOutParms // @ game+0x347af00
-	void MultiCast_ApplyOneShotStatus(struct TArray<struct FActiveStatusEffect> AddedEffects, struct TArray<struct FActiveStatusEffect> RemovedEffects); // Function StatusEffects.StatusEffectManagerComponent.MultiCast_ApplyOneShotStatus // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x347aa90
+	void OnRep_ActiveEffects(struct TArray<struct FActiveStatusEffect> OldEffects); // Function StatusEffects.StatusEffectManagerComponent.OnRep_ActiveEffects // Final|Native|Private|HasOutParms // @ game+0x347d500
+	void MultiCast_ApplyOneShotStatus(struct TArray<struct FActiveStatusEffect> AddedEffects, struct TArray<struct FActiveStatusEffect> RemovedEffects); // Function StatusEffects.StatusEffectManagerComponent.MultiCast_ApplyOneShotStatus // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x347d090
 };
 
 // Class StatusEffects.StatusEffectOverlapZone
@@ -192,10 +192,10 @@ struct UStatusEffectVolumeComponent : USceneComponent {
 	struct TArray<struct FStatus> StatusEffectsToMaintain; // 0x2e8(0x10)
 	char UnknownData_2F8[0x8]; // 0x2f8(0x08)
 
-	void UnaffectActor(struct AActor* Actor); // Function StatusEffects.StatusEffectVolumeComponent.UnaffectActor // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x347afb0
-	void OnParentComponentEndOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentEndOverlap // Final|Native|Private // @ game+0x347ad50
-	void OnParentComponentBeginOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentBeginOverlap // Final|Native|Private|HasOutParms // @ game+0x347ab80
-	void AffectActor(struct AActor* Actor); // Function StatusEffects.StatusEffectVolumeComponent.AffectActor // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x347a850
+	void UnaffectActor(struct AActor* Actor); // Function StatusEffects.StatusEffectVolumeComponent.UnaffectActor // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x347d5b0
+	void OnParentComponentEndOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentEndOverlap // Final|Native|Private // @ game+0x347d350
+	void OnParentComponentBeginOverlap(struct AActor* OtherActor, struct UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentBeginOverlap // Final|Native|Private|HasOutParms // @ game+0x347d180
+	void AffectActor(struct AActor* Actor); // Function StatusEffects.StatusEffectVolumeComponent.AffectActor // Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable // @ game+0x347ce50
 };
 
 // Class StatusEffects.SetCanReceiveBuffStatusResponse

@@ -5,7 +5,7 @@ struct ABP_LargeShip_StandardHull_Art_C : AActor {
 	struct UPostProcessComponent* BattleBoundsPostProcess; // 0x3d0(0x08)
 	struct UBoxComponent* BattleBounds_PP_Volume; // 0x3d8(0x08)
 	struct UStaticMeshComponent* shp_hatch_01_a; // 0x3e0(0x08)
-	struct UPostProcessComponent* ; // 0x3e8(0x08)
+	struct UPostProcessComponent* FirePostProcess; // 0x3e8(0x08)
 	struct UBoxComponent* Fire_PP_Volume; // 0x3f0(0x08)
 	struct UChildActorComponent* StaticDoors; // 0x3f8(0x08)
 	struct UPostProcessComponent* PostProcess2; // 0x400(0x08)
@@ -95,6 +95,6 @@ struct ABP_LargeShip_StandardHull_Art_C : AActor {
 	struct UStaticMeshComponent* shp_stern_staircase_01_a_01; // 0x6a0(0x08)
 	struct UStaticMeshComponent* shp_galleon_main_deck_01_a; // 0x6a8(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art.BP_LargeShip_StandardHull_Art_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art.BP_LargeShip_StandardHull_Art_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -2,9 +2,9 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UVoiceChatEmitterInterface : UInterface {
 
-	struct FVector GetVoiceLocation(); // Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x39f4180
-	void GetVoiceAudioEmitterProxy(struct FWwiseEmitter EmitterProxy); // Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy // Native|Public|HasOutParms|BlueprintCallable // @ game+0x39f40b0
-	float GetVoiceAttenuationScaler(TScriptInterface<struct UVoiceChatEmitterInterface> RelativeToThisEmitter); // Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x39f4000
+	struct FVector GetVoiceLocation(); // Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation // Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x39f6790
+	void GetVoiceAudioEmitterProxy(struct FWwiseEmitter EmitterProxy); // Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy // Native|Public|HasOutParms|BlueprintCallable // @ game+0x39f66c0
+	float GetVoiceAttenuationScaler(TScriptInterface<struct UVoiceChatEmitterInterface> RelativeToThisEmitter); // Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x39f6610
 };
 
 // Class PositionalVoice.VoiceChatRendererInterface

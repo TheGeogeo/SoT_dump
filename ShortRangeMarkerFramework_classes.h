@@ -9,7 +9,7 @@ struct AShortRangeMarker : AActor {
 	struct FMulticastDelegate TriggerFadeOut; // 0x400(0x10)
 	struct TArray<struct AActor*> CachedActors; // 0x410(0x10)
 
-	void Multicast_OnCleanUp(); // Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x3f27cc0
+	void Multicast_OnCleanUp(); // Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x3f2a2d0
 };
 
 // Class ShortRangeMarkerFramework.ShortRangeMarkerInterface
@@ -21,7 +21,7 @@ struct UShortRangeMarkerInterface : UInterface {
 // Size: 0x28 (Inherited: 0x28)
 struct UShortRangeMarkerBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void RegisterActorsWithShortRangeMarker(struct UObject* WorldContextObject, struct AActor* InMarker, struct TArray<struct AActor*> InActors); // Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3f27ce0
+	void RegisterActorsWithShortRangeMarker(struct UObject* WorldContextObject, struct AActor* InMarker, struct TArray<struct AActor*> InActors); // Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x3f2a2f0
 };
 
 // Class ShortRangeMarkerFramework.ShortRangeMarkerDataAsset

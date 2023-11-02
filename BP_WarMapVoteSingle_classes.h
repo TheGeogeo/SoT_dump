@@ -10,6 +10,6 @@ struct ABP_WarMapVoteSingle_C : AWarMapVoteInteractionActor {
 	struct UStaticMeshVoteVisualiserComponent* StaticMeshVoteVisualiser; // 0x678(0x08)
 	struct UActionRulesComponent* ActionRules; // 0x680(0x08)
 
-	void UserConstructionScript(); // Function BP_WarMapVoteSingle.BP_WarMapVoteSingle_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_WarMapVoteSingle.BP_WarMapVoteSingle_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

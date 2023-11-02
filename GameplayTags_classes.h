@@ -52,27 +52,27 @@ struct UEditableGameplayTagQueryExpression_NoExprMatch : UEditableGameplayTagQue
 // Size: 0x28 (Inherited: 0x28)
 struct UGameplayTagAssetInterface : UInterface {
 
-	bool HasMatchingGameplayTag(struct FGameplayTag TagToCheck); // Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x23a28d0
-	bool HasAnyMatchingGameplayTags(struct FGameplayTagContainer TagContainer, bool bCountEmptyAsMatch); // Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x23a2790
-	bool HasAllMatchingGameplayTags(struct FGameplayTagContainer TagContainer, bool bCountEmptyAsMatch); // Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x23a24c0
-	void GetOwnedGameplayTags(struct FGameplayTagContainer TagContainer); // Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x23a23f0
+	bool HasMatchingGameplayTag(struct FGameplayTag TagToCheck); // Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x23a4d60
+	bool HasAnyMatchingGameplayTags(struct FGameplayTagContainer TagContainer, bool bCountEmptyAsMatch); // Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x23a4c20
+	bool HasAllMatchingGameplayTags(struct FGameplayTagContainer TagContainer, bool bCountEmptyAsMatch); // Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x23a4950
+	void GetOwnedGameplayTags(struct FGameplayTagContainer TagContainer); // Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags // Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x23a4880
 };
 
 // Class GameplayTags.BlueprintGameplayTagLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UBlueprintGameplayTagLibrary : UBlueprintFunctionLibrary {
 
-	struct FGameplayTag MakeLiteralGameplayTag(struct FGameplayTag Value); // Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTag // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x23a2ad0
-	struct FGameplayTagQuery MakeGameplayTagQuery(struct FGameplayTagQuery TagQuery); // Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagQuery // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x23a2960
-	bool HasAllMatchingGameplayTags(TScriptInterface<struct UGameplayTagAssetInterface> TagContainerInterface, struct FGameplayTagContainer OtherContainer, bool bCountEmptyAsMatch); // Function GameplayTags.BlueprintGameplayTagLibrary.HasAllMatchingGameplayTags // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a2600
-	int32_t GetNumGameplayTagsInContainer(struct FGameplayTagContainer TagContainer); // Function GameplayTags.BlueprintGameplayTagLibrary.GetNumGameplayTagsInContainer // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a2320
-	bool DoGameplayTagsMatch(struct FGameplayTag TagOne, struct FGameplayTag TagTwo, char TagOneMatchType, char TagTwoMatchType); // Function GameplayTags.BlueprintGameplayTagLibrary.DoGameplayTagsMatch // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a1960
-	bool DoesTagAssetInterfaceHaveTag(TScriptInterface<struct UGameplayTagAssetInterface> TagContainerInterface, char ContainerTagsMatchType, struct FGameplayTag Tag, char TagMatchType); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesTagAssetInterfaceHaveTag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a21b0
-	bool DoesContainerMatchTagQuery(struct FGameplayTagContainer TagContainer, struct FGameplayTagQuery TagQuery); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchTagQuery // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a2020
-	bool DoesContainerMatchAnyTagsInContainer(struct FGameplayTagContainer TagContainer, struct FGameplayTagContainer OtherContainer, bool bCountEmptyAsMatch); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchAnyTagsInContainer // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a1e60
-	bool DoesContainerMatchAllTagsInContainer(struct FGameplayTagContainer TagContainer, struct FGameplayTagContainer OtherContainer, bool bCountEmptyAsMatch); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchAllTagsInContainer // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a1ca0
-	bool DoesContainerHaveTag(struct FGameplayTagContainer TagContainer, char ContainerTagsMatchType, struct FGameplayTag Tag, char TagMatchType); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerHaveTag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a1af0
-	bool AppendGameplayTagContainers(struct FGameplayTagContainer InTagContainer, struct FGameplayTagContainer InOutTagContainer); // Function GameplayTags.BlueprintGameplayTagLibrary.AppendGameplayTagContainers // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a17f0
+	struct FGameplayTag MakeLiteralGameplayTag(struct FGameplayTag Value); // Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTag // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x23a4f60
+	struct FGameplayTagQuery MakeGameplayTagQuery(struct FGameplayTagQuery TagQuery); // Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagQuery // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x23a4df0
+	bool HasAllMatchingGameplayTags(TScriptInterface<struct UGameplayTagAssetInterface> TagContainerInterface, struct FGameplayTagContainer OtherContainer, bool bCountEmptyAsMatch); // Function GameplayTags.BlueprintGameplayTagLibrary.HasAllMatchingGameplayTags // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a4a90
+	int32_t GetNumGameplayTagsInContainer(struct FGameplayTagContainer TagContainer); // Function GameplayTags.BlueprintGameplayTagLibrary.GetNumGameplayTagsInContainer // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a47b0
+	bool DoGameplayTagsMatch(struct FGameplayTag TagOne, struct FGameplayTag TagTwo, char TagOneMatchType, char TagTwoMatchType); // Function GameplayTags.BlueprintGameplayTagLibrary.DoGameplayTagsMatch // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a3df0
+	bool DoesTagAssetInterfaceHaveTag(TScriptInterface<struct UGameplayTagAssetInterface> TagContainerInterface, char ContainerTagsMatchType, struct FGameplayTag Tag, char TagMatchType); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesTagAssetInterfaceHaveTag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a4640
+	bool DoesContainerMatchTagQuery(struct FGameplayTagContainer TagContainer, struct FGameplayTagQuery TagQuery); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchTagQuery // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a44b0
+	bool DoesContainerMatchAnyTagsInContainer(struct FGameplayTagContainer TagContainer, struct FGameplayTagContainer OtherContainer, bool bCountEmptyAsMatch); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchAnyTagsInContainer // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a42f0
+	bool DoesContainerMatchAllTagsInContainer(struct FGameplayTagContainer TagContainer, struct FGameplayTagContainer OtherContainer, bool bCountEmptyAsMatch); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchAllTagsInContainer // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a4130
+	bool DoesContainerHaveTag(struct FGameplayTagContainer TagContainer, char ContainerTagsMatchType, struct FGameplayTag Tag, char TagMatchType); // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerHaveTag // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a3f80
+	bool AppendGameplayTagContainers(struct FGameplayTagContainer InTagContainer, struct FGameplayTagContainer InOutTagContainer); // Function GameplayTags.BlueprintGameplayTagLibrary.AppendGameplayTagContainers // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x23a3c80
 };
 
 // Class GameplayTags.GameplayTagsManager
@@ -82,7 +82,7 @@ struct UGameplayTagsManager : UObject {
 	struct TArray<struct UDataTable*> GameplayTagTables; // 0x140(0x10)
 	char UnknownData_150[0x20]; // 0x150(0x20)
 
-	struct FGameplayTag RequestGameplayTag(struct FName TagName, bool ErrorIfNotFound); // Function GameplayTags.GameplayTagsManager.RequestGameplayTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x23a2b60
+	struct FGameplayTag RequestGameplayTag(struct FName TagName, bool ErrorIfNotFound); // Function GameplayTags.GameplayTagsManager.RequestGameplayTag // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x23a4ff0
 };
 
 // Class GameplayTags.GameplayTagsSettings

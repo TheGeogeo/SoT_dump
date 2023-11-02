@@ -22,6 +22,6 @@ struct ATaleNote : ASkeletalMeshWieldableItem {
 	struct UZoomInOnWieldableItemComponent* ZoomInOnWieldableComponent; // 0x968(0x08)
 	char UnknownData_970[0xe0]; // 0x970(0xe0)
 
-	void OnTextCanvasUpdate(struct UCanvas* InCanvas, int32_t InWidth, int32_t InHeight); // Function TaleNotes.TaleNote.OnTextCanvasUpdate // Final|Native|Protected // @ game+0x4706f90
+	void OnTextCanvasUpdate(struct UCanvas* InCanvas, int32_t InWidth, int32_t InHeight); // Function TaleNotes.TaleNote.OnTextCanvasUpdate // Final|Native|Protected // @ game+0x47095b0
 };
 

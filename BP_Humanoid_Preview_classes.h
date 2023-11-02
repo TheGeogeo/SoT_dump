@@ -24,6 +24,6 @@ struct UBP_Humanoid_Preview_C : UPreviewCharacterAnimationInstance {
 	struct FAnimNode_Slot AnimGraphNode_Slot_8A5246C7402ED8F21203A68057B434BA; // 0xda0(0x60)
 	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_4805FD4F465DBD0A8F5730B95CC35DB3; // 0xe00(0x60)
 
-	void ExecuteUbergraph_BP_Humanoid_Preview(int32_t EntryPoint); // Function BP_Humanoid_Preview.BP_Humanoid_Preview_C.ExecuteUbergraph_BP_Humanoid_Preview //  // @ game+0x18e3b10
+	void ExecuteUbergraph_BP_Humanoid_Preview(int32_t EntryPoint); // Function BP_Humanoid_Preview.BP_Humanoid_Preview_C.ExecuteUbergraph_BP_Humanoid_Preview //  // @ game+0x18e5fa0
 };
 

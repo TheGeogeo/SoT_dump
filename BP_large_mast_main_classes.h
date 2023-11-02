@@ -14,8 +14,8 @@ struct ABP_large_mast_main_C : ABP_Mast_C {
 	struct UStaticMeshComponent* shp_mast_ladder_step_01_a; // 0xab8(0x08)
 	struct UStaticMeshComponent* CrowsNest; // 0xac0(0x08)
 
-	void UserConstructionScript(); // Function BP_large_mast_main.BP_large_mast_main_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void OnMastDescLoaded(struct UMastDescAsset* MastDesc); // Function BP_large_mast_main.BP_large_mast_main_C.OnMastDescLoaded // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_large_mast_main(int32_t EntryPoint); // Function BP_large_mast_main.BP_large_mast_main_C.ExecuteUbergraph_BP_large_mast_main //  // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_large_mast_main.BP_large_mast_main_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void OnMastDescLoaded(struct UMastDescAsset** MastDesc); // Function BP_large_mast_main.BP_large_mast_main_C.OnMastDescLoaded // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_large_mast_main(int32_t EntryPoint); // Function BP_large_mast_main.BP_large_mast_main_C.ExecuteUbergraph_BP_large_mast_main //  // @ game+0x18e5fa0
 };
 

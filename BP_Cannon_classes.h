@@ -5,7 +5,7 @@ struct ABP_Cannon_C : ACannon {
 	struct UInteractableComponent* Interactable; // 0xdb8(0x08)
 	struct UStaticMeshComponent* Collision; // 0xdc0(0x08)
 
-	struct FDockableInfo GetDockableInfo(); // Function BP_Cannon.BP_Cannon_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Cannon.BP_Cannon_C.UserConstructionScript // Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	struct FDockableInfo GetDockableInfo(); // Function BP_Cannon.BP_Cannon_C.GetDockableInfo // Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Cannon.BP_Cannon_C.UserConstructionScript // Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

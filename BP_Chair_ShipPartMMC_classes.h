@@ -2,6 +2,6 @@
 // Size: 0x478 (Inherited: 0x478)
 struct ABP_Chair_ShipPartMMC_C : ABP_Chair_C {
 
-	void UserConstructionScript(); // Function BP_Chair_ShipPartMMC.BP_Chair_ShipPartMMC_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Chair_ShipPartMMC.BP_Chair_ShipPartMMC_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

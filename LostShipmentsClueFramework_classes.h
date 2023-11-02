@@ -44,7 +44,7 @@ struct URandomClueChoiceSelectionStrategy : UClueChoiceSelectionStrategy {
 struct UClueDestinationDescriptor : UObject {
 	char UnknownData_28[0x18]; // 0x28(0x18)
 
-	void OnRep_DestinationInfo(); // Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo // Native|Public // @ game+0x1531810
+	void OnRep_DestinationInfo(); // Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo // Native|Public // @ game+0x1533ca0
 };
 
 // Class LostShipmentsClueFramework.ClueDescriptor
@@ -56,7 +56,7 @@ struct UClueDescriptor : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UClueConnectionBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct UClueDescriptor* CreateCluePointingToSite(struct UClueConnectionConfig* ConnectionConfiguration, int32_t Difficulty, struct TArray<struct UClass*> AllowedClueTypes, struct UTaleQuestSelectorService* SelectorService, struct FVector SourceLocation, struct FClueSite TargetSite); // Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x1531470
+	struct UClueDescriptor* CreateCluePointingToSite(struct UClueConnectionConfig* ConnectionConfiguration, int32_t Difficulty, struct TArray<struct UClass*> AllowedClueTypes, struct UTaleQuestSelectorService* SelectorService, struct FVector SourceLocation, struct FClueSite TargetSite); // Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x1533900
 };
 
 // Class LostShipmentsClueFramework.ClueDescriptorGenerator
@@ -115,7 +115,7 @@ struct UClueFactory : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UClueLifetimeBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void GiveClueToParticipant(struct AActor* Participant, struct UClueDescriptor* Clue, struct UClass* ClueSite); // Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant // Final|Native|Static|Public|BlueprintCallable // @ game+0x1531720
+	void GiveClueToParticipant(struct AActor* Participant, struct UClueDescriptor* Clue, struct UClass* ClueSite); // Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant // Final|Native|Static|Public|BlueprintCallable // @ game+0x1533bb0
 };
 
 // Class LostShipmentsClueFramework.ClueSiteLootRestrictionsDataAsset
@@ -182,7 +182,7 @@ struct UTaleQuestClueSiteService : UTaleQuestService {
 	struct TMap<char, struct FClueSiteLootHistory> SpawnedLoot; // 0x78(0x50)
 	struct TArray<struct FGuid> DebugClueSiteIds; // 0xc8(0x10)
 
-	struct TArray<struct FClueSite> GetClueSites(); // Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites // Final|Native|Public|BlueprintCallable // @ game+0x1531680
+	struct TArray<struct FClueSite> GetClueSites(); // Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites // Final|Native|Public|BlueprintCallable // @ game+0x1533b10
 };
 
 // Class LostShipmentsClueFramework.TaleQuestClueSiteServiceDesc

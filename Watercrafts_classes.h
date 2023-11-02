@@ -22,7 +22,7 @@ struct AFakeShip : AActor {
 	struct TArray<struct AItemProxy*> AttachedItems; // 0x3d0(0x10)
 	char UnknownData_3E0[0xf8]; // 0x3e0(0xf8)
 
-	void OnAttachedItemEndPlay(struct AActor* Actor); // Function Watercrafts.FakeShip.OnAttachedItemEndPlay // Final|Native|Private // @ game+0x40a6c00
+	void OnAttachedItemEndPlay(struct AActor* Actor); // Function Watercrafts.FakeShip.OnAttachedItemEndPlay // Final|Native|Private // @ game+0x40a9210
 };
 
 // Class Watercrafts.WatercraftTrackerInterface
@@ -38,8 +38,8 @@ struct UItemProxyWatercraftTrackerComponent : UActorComponent {
 	struct AActor* CurrentWatercraft; // 0xd8(0x08)
 	char UnknownData_E0[0x80]; // 0xe0(0x80)
 
-	void OnRep_CurrentWatercraft(struct AActor* PreviousWatercraft); // Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft // Final|Native|Private // @ game+0x40a6d00
-	void OnCurrentWatercraftDestroyed(struct AActor* DestroyedWatercraft); // Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed // Final|Native|Private // @ game+0x40a6c80
+	void OnRep_CurrentWatercraft(struct AActor* PreviousWatercraft); // Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft // Final|Native|Private // @ game+0x40a9310
+	void OnCurrentWatercraftDestroyed(struct AActor* DestroyedWatercraft); // Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed // Final|Native|Private // @ game+0x40a9290
 };
 
 // Class Watercrafts.ItemProxyWatercraftTrackerComponentDataAsset
@@ -257,8 +257,8 @@ struct AWatercraft : AActor {
 	TScriptInterface<struct UScrapeableInterface> Scrapeable; // 0x5a0(0x10)
 	char UnknownData_5B0[0x180]; // 0x5b0(0x180)
 
-	void OnRigidBodyWake(struct FName InBoneName); // Function Watercrafts.Watercraft.OnRigidBodyWake // Final|Native|Protected // @ game+0x40a6f20
-	void OnRigidBodySleep(struct FName InBoneName); // Function Watercrafts.Watercraft.OnRigidBodySleep // Final|Native|Protected // @ game+0x40a6ea0
+	void OnRigidBodyWake(struct FName InBoneName); // Function Watercrafts.Watercraft.OnRigidBodyWake // Final|Native|Protected // @ game+0x40a9530
+	void OnRigidBodySleep(struct FName InBoneName); // Function Watercrafts.Watercraft.OnRigidBodySleep // Final|Native|Protected // @ game+0x40a94b0
 };
 
 // Class Watercrafts.Rowboat
@@ -317,9 +317,9 @@ struct ARowboat : AWatercraft {
 	struct FName PremountCollisionProfileName; // 0x8d4(0x08)
 	char UnknownData_8DC[0x1dc]; // 0x8dc(0x1dc)
 
-	void SetAlwaysEnabledInteractables(struct TArray<struct UChildActorComponent*> InAlwaysEnabledInteractables); // Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables // Final|Native|Protected|HasOutParms|BlueprintCallable // @ game+0x40a7230
-	void ReactToRepairableStateChanged(char InNewState, char InPreviousState, struct URepairableComponent* InRepairableComponent); // Function Watercrafts.Rowboat.ReactToRepairableStateChanged // Final|Native|Protected // @ game+0x40a7020
-	void OnRep_IsSinking(); // Function Watercrafts.Rowboat.OnRep_IsSinking // Final|Native|Private // @ game+0x40a6d80
+	void SetAlwaysEnabledInteractables(struct TArray<struct UChildActorComponent*> InAlwaysEnabledInteractables); // Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables // Final|Native|Protected|HasOutParms|BlueprintCallable // @ game+0x40a9840
+	void ReactToRepairableStateChanged(char InNewState, char InPreviousState, struct URepairableComponent* InRepairableComponent); // Function Watercrafts.Rowboat.ReactToRepairableStateChanged // Final|Native|Protected // @ game+0x40a9630
+	void OnRep_IsSinking(); // Function Watercrafts.Rowboat.OnRep_IsSinking // Final|Native|Private // @ game+0x40a9390
 };
 
 // Class Watercrafts.RowboatPartInterface
@@ -392,15 +392,15 @@ struct UTaleQuestSpawnWatercraftStepDesc : UTaleQuestStepDesc {
 // Size: 0x180 (Inherited: 0x180)
 struct UTaleQuestWatercraftFunctionLibrary : UTaleQuestFunctionStepLibrary {
 
-	struct AWatercraft* GetFirstSpawnedWatercraft(); // Function Watercrafts.TaleQuestWatercraftFunctionLibrary.GetFirstSpawnedWatercraft // Final|Native|Public // @ game+0x40a6bd0
-	void FilterPointsByDistanceFromWatercraft(float MinDistance, struct TArray<struct FOrientedPoint> Points); // Function Watercrafts.TaleQuestWatercraftFunctionLibrary.FilterPointsByDistanceFromWatercraft // Final|Native|Public|HasOutParms|Const // @ game+0x40a6ad0
+	struct AWatercraft* GetFirstSpawnedWatercraft(); // Function Watercrafts.TaleQuestWatercraftFunctionLibrary.GetFirstSpawnedWatercraft // Final|Native|Public // @ game+0x40a91e0
+	void FilterPointsByDistanceFromWatercraft(float MinDistance, struct TArray<struct FOrientedPoint> Points); // Function Watercrafts.TaleQuestWatercraftFunctionLibrary.FilterPointsByDistanceFromWatercraft // Final|Native|Public|HasOutParms|Const // @ game+0x40a90e0
 };
 
 // Class Watercrafts.WatercraftBlueprintFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UWatercraftBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct AWatercraft* SpawnWatercraft(struct UObject* WorldContextObject, struct UClass* WatercraftClass, struct FVector Location, struct FRotator Rotation); // Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x40a72e0
+	struct AWatercraft* SpawnWatercraft(struct UObject* WorldContextObject, struct UClass* WatercraftClass, struct FVector Location, struct FRotator Rotation); // Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x40a98f0
 };
 
 // Class Watercrafts.WatercraftServiceInterface
@@ -436,6 +436,6 @@ struct UWatercraftTrackerComponent : UActorComponent {
 	char UnknownData_C8[0x8]; // 0xc8(0x08)
 	struct TArray<struct AActor*> CurrentWatercrafts; // 0xd0(0x10)
 
-	void OnWatercraftDestroyed(struct AActor* WatercraftActor); // Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed // Final|Native|Private // @ game+0x40a6fa0
+	void OnWatercraftDestroyed(struct AActor* WatercraftActor); // Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed // Final|Native|Private // @ game+0x40a95b0
 };
 

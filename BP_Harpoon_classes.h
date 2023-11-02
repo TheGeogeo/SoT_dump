@@ -5,8 +5,8 @@ struct ABP_Harpoon_C : AActor {
 	struct UStaticMeshComponent* shp_rope_coil_02_a; // 0x3d0(0x08)
 	struct USceneComponent* DefaultSceneRoot; // 0x3d8(0x08)
 
-	void UserConstructionScript(); // Function BP_Harpoon.BP_Harpoon_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_Harpoon.BP_Harpoon_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Harpoon(int32_t EntryPoint); // Function BP_Harpoon.BP_Harpoon_C.ExecuteUbergraph_BP_Harpoon //  // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Harpoon.BP_Harpoon_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_Harpoon.BP_Harpoon_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Harpoon(int32_t EntryPoint); // Function BP_Harpoon.BP_Harpoon_C.ExecuteUbergraph_BP_Harpoon //  // @ game+0x18e5fa0
 };
 

@@ -23,7 +23,7 @@ struct UOceanCrawlerAudioBroadcaster : UActorComponent {
 	struct AActor* CachedOwner; // 0xd0(0x08)
 	char UnknownData_D8[0xe8]; // 0xd8(0xe8)
 
-	void Multicast_PlayBuffAudio(struct FEventOceanCrawlerAIBuffAudioRequest InRequest); // Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio // Final|Net|Native|Event|NetMulticast|Private // @ game+0x158ec40
-	void Multicast_PlayAudio(char InAudioKey, float InAudioDelay); // Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio // Final|Net|Native|Event|NetMulticast|Private // @ game+0x158eb80
+	void Multicast_PlayBuffAudio(struct FEventOceanCrawlerAIBuffAudioRequest InRequest); // Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio // Final|Net|Native|Event|NetMulticast|Private // @ game+0x15910d0
+	void Multicast_PlayAudio(char InAudioKey, float InAudioDelay); // Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio // Final|Net|Native|Event|NetMulticast|Private // @ game+0x1591010
 };
 

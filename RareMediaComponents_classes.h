@@ -3,8 +3,8 @@
 struct UMediaSubtitleComponent : UActorComponent {
 	char UnknownData_C8[0x68]; // 0xc8(0x68)
 
-	void SetMediaPlayer(struct UMediaPlayer* NewMediaPlayer); // Function RareMediaComponents.MediaSubtitleComponent.SetMediaPlayer // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x5606c60
-	struct UMediaPlayer* GetMediaPlayer(); // Function RareMediaComponents.MediaSubtitleComponent.GetMediaPlayer // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5606c30
+	void SetMediaPlayer(struct UMediaPlayer* NewMediaPlayer); // Function RareMediaComponents.MediaSubtitleComponent.SetMediaPlayer // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x56091e0
+	struct UMediaPlayer* GetMediaPlayer(); // Function RareMediaComponents.MediaSubtitleComponent.GetMediaPlayer // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x56091b0
 };
 
 // Class RareMediaComponents.WwiseMediaSoundComponent

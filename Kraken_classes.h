@@ -8,7 +8,7 @@ struct AKrakenTentacle : AActor {
 	float VenomChance; // 0x400(0x04)
 	char UnknownData_404[0x10c]; // 0x404(0x10c)
 
-	void OnDamageToTentacle(struct FImpactDamageEvent ImpactDamageEvent); // Function Kraken.KrakenTentacle.OnDamageToTentacle // Final|Native|Public|HasOutParms // @ game+0x43223b0
+	void OnDamageToTentacle(struct FImpactDamageEvent ImpactDamageEvent); // Function Kraken.KrakenTentacle.OnDamageToTentacle // Final|Native|Public|HasOutParms // @ game+0x43249d0
 };
 
 // Class Kraken.CoordinatedKrakenInterface
@@ -78,8 +78,8 @@ struct AMurk : AActor {
 	struct UMaterialInstanceDynamic* OuterSheetMaterialInstance; // 0x3f8(0x08)
 	char UnknownData_400[0x68]; // 0x400(0x68)
 
-	void DeactivateMurkBP(); // Function Kraken.Murk.DeactivateMurkBP // Final|Native|Public|BlueprintCallable // @ game+0x4322190
-	void ActivateMurkBP(); // Function Kraken.Murk.ActivateMurkBP // Final|Native|Public|BlueprintCallable // @ game+0x43220f0
+	void DeactivateMurkBP(); // Function Kraken.Murk.DeactivateMurkBP // Final|Native|Public|BlueprintCallable // @ game+0x43247b0
+	void ActivateMurkBP(); // Function Kraken.Murk.ActivateMurkBP // Final|Native|Public|BlueprintCallable // @ game+0x4324710
 };
 
 // Class Kraken.KrakenShipWrappingTentacle
@@ -103,7 +103,7 @@ struct AKrakenShipWrappingTentacle : AKrakenTentacle {
 	struct FKrakenShipWrappingTentacleAnimationState PendingServerAnimationState; // 0x680(0x10)
 	char UnknownData_690[0x70]; // 0x690(0x70)
 
-	void OnRep_CurrentServerAnimationState(); // Function Kraken.KrakenShipWrappingTentacle.OnRep_CurrentServerAnimationState // Final|Native|Private // @ game+0x43224b0
+	void OnRep_CurrentServerAnimationState(); // Function Kraken.KrakenShipWrappingTentacle.OnRep_CurrentServerAnimationState // Final|Native|Private // @ game+0x4324ad0
 };
 
 // Class Kraken.KrakenTelemetryComponent
@@ -135,8 +135,8 @@ struct AKraken : AActor {
 	int32_t NumTentaclesRemaining; // 0x810(0x04)
 	char UnknownData_814[0x12c]; // 0x814(0x12c)
 
-	void Multicast_OnTentacleTakenDamage(); // Function Kraken.Kraken.Multicast_OnTentacleTakenDamage // Final|Net|Native|Event|NetMulticast|Private // @ game+0x4322310
-	void AddActorToKnownTargets(struct AActor* Target); // Function Kraken.Kraken.AddActorToKnownTargets // Final|Native|Public|BlueprintCallable // @ game+0x4322110
+	void Multicast_OnTentacleTakenDamage(); // Function Kraken.Kraken.Multicast_OnTentacleTakenDamage // Final|Net|Native|Event|NetMulticast|Private // @ game+0x4324930
+	void AddActorToKnownTargets(struct AActor* Target); // Function Kraken.Kraken.AddActorToKnownTargets // Final|Native|Public|BlueprintCallable // @ game+0x4324730
 };
 
 // Class Kraken.KrakenAnimatedTentacleAnimationDataAsset
@@ -211,11 +211,11 @@ struct AKrakenHead : AActor {
 	struct FName BiteAttackImpactNamedPointsGroupName; // 0x5a8(0x08)
 	char UnknownData_5B0[0x20]; // 0x5b0(0x20)
 
-	void TestSetDamageEnabled(bool InEnabled); // Function Kraken.KrakenHead.TestSetDamageEnabled // Final|Native|Public|BlueprintCallable // @ game+0x4322690
-	void RequestState(struct UClass* NewState); // Function Kraken.KrakenHead.RequestState // Native|Public|HasOutParms|BlueprintCallable // @ game+0x43225f0
-	void OnRep_IsDamageEnabled(); // Function Kraken.KrakenHead.OnRep_IsDamageEnabled // Final|Native|Protected // @ game+0x43224f0
-	void OnRep_HeadStateRequest(); // Function Kraken.KrakenHead.OnRep_HeadStateRequest // Final|Native|Protected // @ game+0x43224d0
-	void OnCoordinatedKrakenSpecialEvent(char InEventType); // Function Kraken.KrakenHead.OnCoordinatedKrakenSpecialEvent // Final|Native|Private // @ game+0x4322330
+	void TestSetDamageEnabled(bool InEnabled); // Function Kraken.KrakenHead.TestSetDamageEnabled // Final|Native|Public|BlueprintCallable // @ game+0x4324cb0
+	void RequestState(struct UClass* NewState); // Function Kraken.KrakenHead.RequestState // Native|Public|HasOutParms|BlueprintCallable // @ game+0x4324c10
+	void OnRep_IsDamageEnabled(); // Function Kraken.KrakenHead.OnRep_IsDamageEnabled // Final|Native|Protected // @ game+0x4324b10
+	void OnRep_HeadStateRequest(); // Function Kraken.KrakenHead.OnRep_HeadStateRequest // Final|Native|Protected // @ game+0x4324af0
+	void OnCoordinatedKrakenSpecialEvent(char InEventType); // Function Kraken.KrakenHead.OnCoordinatedKrakenSpecialEvent // Final|Native|Private // @ game+0x4324950
 };
 
 // Class Kraken.KrakenHeadAnimationInstance
@@ -283,14 +283,14 @@ struct AKrakenService : AActor {
 	struct AKraken* Kraken; // 0x4a8(0x08)
 	char UnknownData_4B0[0xe0]; // 0x4b0(0xe0)
 
-	void Test_TrySpawningKraken(); // Function Kraken.KrakenService.Test_TrySpawningKraken // Final|Native|Public|BlueprintCallable // @ game+0x4322770
-	bool Test_IsCurrentStateInactive(); // Function Kraken.KrakenService.Test_IsCurrentStateInactive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4322740
-	bool Test_IsCurrentStateActive(); // Function Kraken.KrakenService.Test_IsCurrentStateActive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4322710
-	void RequestKrakenWithLocation(struct FVector SpawnLocation, struct AActor* SpawnedForActor); // Function Kraken.KrakenService.RequestKrakenWithLocation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4322510
-	bool IsServiceInitialized(); // Function Kraken.KrakenService.IsServiceInitialized // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x43222e0
-	bool IsKrakenActive(); // Function Kraken.KrakenService.IsKrakenActive // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x43222a0
-	bool DismissOrRemoveCrewFromKraken(struct FGuid InCrewId); // Function Kraken.KrakenService.DismissOrRemoveCrewFromKraken // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x43221f0
-	bool DismissKraken(); // Function Kraken.KrakenService.DismissKraken // Native|Public|BlueprintCallable // @ game+0x43221b0
+	void Test_TrySpawningKraken(); // Function Kraken.KrakenService.Test_TrySpawningKraken // Final|Native|Public|BlueprintCallable // @ game+0x4324d90
+	bool Test_IsCurrentStateInactive(); // Function Kraken.KrakenService.Test_IsCurrentStateInactive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4324d60
+	bool Test_IsCurrentStateActive(); // Function Kraken.KrakenService.Test_IsCurrentStateActive // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4324d30
+	void RequestKrakenWithLocation(struct FVector SpawnLocation, struct AActor* SpawnedForActor); // Function Kraken.KrakenService.RequestKrakenWithLocation // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4324b30
+	bool IsServiceInitialized(); // Function Kraken.KrakenService.IsServiceInitialized // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4324900
+	bool IsKrakenActive(); // Function Kraken.KrakenService.IsKrakenActive // Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x43248c0
+	bool DismissOrRemoveCrewFromKraken(struct FGuid InCrewId); // Function Kraken.KrakenService.DismissOrRemoveCrewFromKraken // Native|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x4324810
+	bool DismissKraken(); // Function Kraken.KrakenService.DismissKraken // Native|Public|BlueprintCallable // @ game+0x43247d0
 };
 
 // Class Kraken.KrakenServiceParamsDataAsset

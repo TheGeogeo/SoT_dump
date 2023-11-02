@@ -28,14 +28,14 @@ struct ABP_PiratePreview_C : APiratePreviewActor {
 	struct FMulticastDelegate PreviewReady; // 0x8d8(0x10)
 	struct FMulticastDelegate PreviewShutdown; // 0x8e8(0x10)
 
-	void UserConstructionScript(); // Function BP_PiratePreview.BP_PiratePreview_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_PiratePreview.BP_PiratePreview_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void PreviewBusy_Event(struct FPiratePreviewBusyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy_Event // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PreviewReady_Event(struct FPiratePreviewReadyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady_Event // BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveEndPlay(char EndPlayReason); // Function BP_PiratePreview.BP_PiratePreview_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_PiratePreview(int32_t EntryPoint); // Function BP_PiratePreview.BP_PiratePreview_C.ExecuteUbergraph_BP_PiratePreview // HasDefaults // @ game+0x18e3b10
-	void PreviewShutdown__DelegateSignature(struct FPiratePreviewShutdownEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewShutdown__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PreviewReady__DelegateSignature(struct FPiratePreviewReadyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PreviewBusy__DelegateSignature(struct FPiratePreviewBusyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_PiratePreview.BP_PiratePreview_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_PiratePreview.BP_PiratePreview_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void PreviewBusy_Event(struct FPiratePreviewBusyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy_Event // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PreviewReady_Event(struct FPiratePreviewReadyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady_Event // BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveEndPlay(char* EndPlayReason); // Function BP_PiratePreview.BP_PiratePreview_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_PiratePreview(int32_t EntryPoint); // Function BP_PiratePreview.BP_PiratePreview_C.ExecuteUbergraph_BP_PiratePreview // HasDefaults // @ game+0x18e5fa0
+	void PreviewShutdown__DelegateSignature(struct FPiratePreviewShutdownEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewShutdown__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PreviewReady__DelegateSignature(struct FPiratePreviewReadyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PreviewBusy__DelegateSignature(struct FPiratePreviewBusyEvent Data); // Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -20,9 +20,9 @@ struct ALostSandsRowboatGunpowderBarrel : AActor {
 	struct FPlayerStat RowboatDestroyedAwayFromGoldenSandsStat; // 0x574(0x04)
 	char UnknownData_578[0x90]; // 0x578(0x90)
 
-	bool IsFuseEnabled(); // Function LostSands.LostSandsRowboatGunpowderBarrel.IsFuseEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x4668bd0
-	bool IsExplosionAtGoldenSandsOutpost(struct FVector InLocation); // Function LostSands.LostSandsRowboatGunpowderBarrel.IsExplosionAtGoldenSandsOutpost // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x4668b30
-	void EnableFuse(); // Function LostSands.LostSandsRowboatGunpowderBarrel.EnableFuse // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x4668b10
-	void DisableFuse(); // Function LostSands.LostSandsRowboatGunpowderBarrel.DisableFuse // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x4668af0
+	bool IsFuseEnabled(); // Function LostSands.LostSandsRowboatGunpowderBarrel.IsFuseEnabled // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x466b1f0
+	bool IsExplosionAtGoldenSandsOutpost(struct FVector InLocation); // Function LostSands.LostSandsRowboatGunpowderBarrel.IsExplosionAtGoldenSandsOutpost // Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x466b150
+	void EnableFuse(); // Function LostSands.LostSandsRowboatGunpowderBarrel.EnableFuse // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x466b130
+	void DisableFuse(); // Function LostSands.LostSandsRowboatGunpowderBarrel.DisableFuse // Final|RequiredAPI|Native|Public|BlueprintCallable // @ game+0x466b110
 };
 

@@ -3,6 +3,6 @@
 struct ABP_WaterBarrel_C : AWaterBarrel {
 	struct UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x688(0x08)
 
-	void UserConstructionScript(); // Function BP_WaterBarrel.BP_WaterBarrel_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_WaterBarrel.BP_WaterBarrel_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

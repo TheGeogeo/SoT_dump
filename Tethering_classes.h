@@ -20,8 +20,8 @@ struct UDynamicCordRenderComponent : UCordRenderComponent {
 	struct USceneComponent* EndPointB; // 0x668(0x08)
 	char UnknownData_674[0x4c]; // 0x674(0x4c)
 
-	void SetCordEndPointB(struct USceneComponent* EndPointB); // Function Tethering.DynamicCordRenderComponent.SetCordEndPointB // Final|Native|Public|BlueprintCallable // @ game+0x37cd750
-	void SetCordEndPointA(struct USceneComponent* EndPointA); // Function Tethering.DynamicCordRenderComponent.SetCordEndPointA // Final|Native|Public|BlueprintCallable // @ game+0x37cd6d0
+	void SetCordEndPointB(struct USceneComponent* EndPointB); // Function Tethering.DynamicCordRenderComponent.SetCordEndPointB // Final|Native|Public|BlueprintCallable // @ game+0x37cfd60
+	void SetCordEndPointA(struct USceneComponent* EndPointA); // Function Tethering.DynamicCordRenderComponent.SetCordEndPointA // Final|Native|Public|BlueprintCallable // @ game+0x37cfce0
 };
 
 // Class Tethering.HarpoonRenderComponent

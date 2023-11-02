@@ -7,11 +7,11 @@ struct ABP_BaseInternalDamageZone_C : ABP_DamageZone_C {
 	struct UWwiseEvent* Start Repair Cue; // 0x878(0x08)
 	struct FWwiseEmitter RepairEmitter; // 0x880(0x20)
 
-	void OnRepairMounted(); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted // Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	bool GetRepairMountLocation(struct USceneComponent* MountLocation, struct FName MountSocket); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	bool ShouldDrawTooltipInWorldSpace(struct AActor* InInteractor, struct FVector DesiredTooltipWorldPosition); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveEndPlay(char EndPlayReason); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_BaseInternalDamageZone(int32_t EntryPoint); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone //  // @ game+0x18e3b10
+	void OnRepairMounted(); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted // Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	bool GetRepairMountLocation(struct USceneComponent** MountLocation, struct FName* MountSocket); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	bool ShouldDrawTooltipInWorldSpace(struct AActor** InInteractor, struct FVector* DesiredTooltipWorldPosition); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace // Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveEndPlay(char* EndPlayReason); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_BaseInternalDamageZone(int32_t EntryPoint); // Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone //  // @ game+0x18e5fa0
 };
 

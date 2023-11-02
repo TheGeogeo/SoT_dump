@@ -94,11 +94,11 @@ struct UWwiseEvent : UObject {
 	bool CookedIsStopEvent; // 0x45(0x01)
 	char UnknownData_46[0xa]; // 0x46(0x0a)
 
-	bool IsAudible(struct FVector SoundPosition, struct FVector ListenerPos, float AttenuationScaler); // Function WwiseAudio.WwiseEvent.IsAudible // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x54749a0
-	float GetMaxAttenuation(); // Function WwiseAudio.WwiseEvent.GetMaxAttenuation // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5474970
-	char GetDurationType(); // Function WwiseAudio.WwiseEvent.GetDurationType // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5474930
-	float GetDurationMin(); // Function WwiseAudio.WwiseEvent.GetDurationMin // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5474900
-	float GetDurationMax(); // Function WwiseAudio.WwiseEvent.GetDurationMax // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x54748d0
+	bool IsAudible(struct FVector SoundPosition, struct FVector ListenerPos, float AttenuationScaler); // Function WwiseAudio.WwiseEvent.IsAudible // Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const // @ game+0x5476f20
+	float GetMaxAttenuation(); // Function WwiseAudio.WwiseEvent.GetMaxAttenuation // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5476ef0
+	char GetDurationType(); // Function WwiseAudio.WwiseEvent.GetDurationType // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5476eb0
+	float GetDurationMin(); // Function WwiseAudio.WwiseEvent.GetDurationMin // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5476e80
+	float GetDurationMax(); // Function WwiseAudio.WwiseEvent.GetDurationMax // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x5476e50
 };
 
 // Class WwiseAudio.WwiseIDsDatabase

@@ -2,9 +2,9 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UDamageablePartsInterface : UInterface {
 
-	void UnregisterDamageablePart(struct AActor* DamageableActor); // Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x43325e0
-	void RegisterDamageablePart(struct AActor* DamageableActor); // Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x43324d0
-	struct TArray<struct AActor*> GetDamageableParts(); // Function ShipDamage.DamageablePartsInterface.GetDamageableParts // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x43322a0
+	void UnregisterDamageablePart(struct AActor* DamageableActor); // Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x4334c00
+	void RegisterDamageablePart(struct AActor* DamageableActor); // Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x4334af0
+	struct TArray<struct AActor*> GetDamageableParts(); // Function ShipDamage.DamageablePartsInterface.GetDamageableParts // Native|Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x43348c0
 };
 
 // Class ShipDamage.GenericShipDamageablePart

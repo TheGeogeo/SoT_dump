@@ -66,8 +66,8 @@ struct UAbandonedNoteClueDestinationContainerComponent : UActorComponent {
 	struct UAbandonedNoteClueTextChoiceSource* ClueTextChoiceSource; // 0x148(0x08)
 	char UnknownData_150[0x80]; // 0x150(0x80)
 
-	void OnRep_CurrentTitleText(); // Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText // Final|Native|Private // @ game+0x1567df0
-	void OnRep_CurrentClueDestination(); // Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination // Final|Native|Private // @ game+0x1567dd0
+	void OnRep_CurrentTitleText(); // Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText // Final|Native|Private // @ game+0x156a280
+	void OnRep_CurrentClueDestination(); // Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination // Final|Native|Private // @ game+0x156a260
 };
 
 // Class LostShipmentsClueVariants.NPCByNameClueDestinationDescriptor
@@ -188,14 +188,14 @@ struct AClueSiteCircleMapWieldable : ARenderToTextureMapBase {
 	struct FMapRadialIconData MapRadialIconData; // 0x8b0(0x18)
 	char UnknownData_8C8[0x8]; // 0x8c8(0x08)
 
-	void OnRep_MapRadialIconData(); // Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData // Final|Native|Private // @ game+0x1567e30
+	void OnRep_MapRadialIconData(); // Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData // Final|Native|Private // @ game+0x156a2c0
 };
 
 // Class LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UClueVariantsBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void GiveClueDescriptorToItem(struct AItemInfo* ItemInfo, struct UClueDescriptor* Clue); // Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem // Final|Native|Static|Public|BlueprintCallable // @ game+0x1567d20
+	void GiveClueDescriptorToItem(struct AItemInfo* ItemInfo, struct UClueDescriptor* Clue); // Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem // Final|Native|Static|Public|BlueprintCallable // @ game+0x156a1b0
 };
 
 // Class LostShipmentsClueVariants.CompositeClueDestinationDescriptor
@@ -204,7 +204,7 @@ struct UCompositeClueDestinationDescriptor : UClueDestinationDescriptor {
 	struct UClueDestinationDescriptor* PrimaryClueDestDescriptor; // 0x40(0x08)
 	struct UClueDestinationDescriptor* SecondaryClueDestDescriptor; // 0x48(0x08)
 
-	void OnRep_DestinationInfo(); // Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo // Final|Native|Private // @ game+0x1567e10
+	void OnRep_DestinationInfo(); // Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo // Final|Native|Private // @ game+0x156a2a0
 };
 
 // Class LostShipmentsClueVariants.EndOfGooseChaseClueDestinationDescriptor
@@ -246,7 +246,7 @@ struct UFloatingMessageInABottleSeaClueCreator : USeaClueCreator {
 // Size: 0x28 (Inherited: 0x28)
 struct UGooseChaseClueBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct UClueDescriptor* CreateEndOfGooseChaseClue(); // Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue // Final|Native|Static|Public|BlueprintCallable // @ game+0x1567cc0
+	struct UClueDescriptor* CreateEndOfGooseChaseClue(); // Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue // Final|Native|Static|Public|BlueprintCallable // @ game+0x156a150
 };
 
 // Class LostShipmentsClueVariants.IslandByCompassBearingClueDestinationDescriptor
@@ -344,7 +344,7 @@ struct USeaLocationByGridSquareClueDestinationDescriptor : UClueDestinationDescr
 // Size: 0x28 (Inherited: 0x28)
 struct UShipwreckClueBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct UClueDescriptor* CreateCluePointingToShipwreck(struct UClueConnectionConfig* ConnectionConfiguration, int32_t Difficulty, struct TArray<struct UClass*> AllowedClueTypes, struct UTaleQuestSelectorService* SelectorService, struct FVector SourceLocation, struct AShipwreck* Shipwreck); // Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x1567ac0
+	struct UClueDescriptor* CreateCluePointingToShipwreck(struct UClueConnectionConfig* ConnectionConfiguration, int32_t Difficulty, struct TArray<struct UClass*> AllowedClueTypes, struct UTaleQuestSelectorService* SelectorService, struct FVector SourceLocation, struct AShipwreck* Shipwreck); // Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck // Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable // @ game+0x1569f50
 };
 
 // Class LostShipmentsClueVariants.ShipwreckClueDestinationDescriptor
@@ -373,8 +373,8 @@ struct UTaleQuestClueInventoryService : UTaleQuestService {
 	struct FText TitleText; // 0x248(0x38)
 	struct UAbandonedNoteClueTextChoiceSource* ClueTextChoiceSource; // 0x280(0x08)
 
-	void SetClueTitleText(struct FText InTitleText); // Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x1567e50
-	int32_t GetCollectedClueCount(); // Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x1567cf0
+	void SetClueTitleText(struct FText InTitleText); // Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText // Final|Native|Public|HasOutParms|BlueprintCallable // @ game+0x156a2e0
+	int32_t GetCollectedClueCount(); // Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x156a180
 };
 
 // Class LostShipmentsClueVariants.TaleQuestClueInventoryServiceDesc

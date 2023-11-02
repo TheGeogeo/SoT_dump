@@ -27,7 +27,7 @@ struct ABreakableActorBase : AActor {
 	struct UActorDamageableComponent* DamageableComponent; // 0x438(0x08)
 	char UnknownData_440[0x118]; // 0x440(0x118)
 
-	void Multicast_WasDefeated(struct AActor* InInstigator, struct AActor* InDirectInstigator); // Function BreakableActorFramework.BreakableActorBase.Multicast_WasDefeated // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x43c2750
+	void Multicast_WasDefeated(struct AActor* InInstigator, struct AActor* InDirectInstigator); // Function BreakableActorFramework.BreakableActorBase.Multicast_WasDefeated // Net|NetReliableNative|Event|NetMulticast|Protected // @ game+0x43c4d70
 };
 
 // Class BreakableActorFramework.BreakableSarcophagus

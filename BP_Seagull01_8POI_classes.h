@@ -14,11 +14,11 @@ struct ABP_Seagull01_8POI_C : ASeagulls {
 	struct UMaterialInstanceDynamic* seagulls_MT_LOD; // 0x478(0x08)
 	struct UWwiseEvent* WwiseEvent; // 0x480(0x08)
 
-	void seagull_Fade(struct UMaterialInstance* Seagull_Material, struct UMaterialInstance* Seagull_MT_LOD); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UserConstructionScript(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ReceiveBeginPlay(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void FadeIn(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void FadeOut(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut // Event|Protected|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_Seagull01_8POI(int32_t EntryPoint); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI //  // @ game+0x18e3b10
+	void seagull_Fade(struct UMaterialInstance* Seagull_Material, struct UMaterialInstance* Seagull_MT_LOD); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UserConstructionScript(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ReceiveBeginPlay(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void FadeIn(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void FadeOut(); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut // Event|Protected|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_Seagull01_8POI(int32_t EntryPoint); // Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI //  // @ game+0x18e5fa0
 };
 

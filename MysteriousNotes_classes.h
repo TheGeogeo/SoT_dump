@@ -77,14 +77,14 @@ struct UPlayerMysteriousNoteComponent : UActorComponent {
 	bool BeenPossessed; // 0x1d8(0x01)
 	char UnknownData_1D9[0x8f]; // 0x1d9(0x8f)
 
-	void TriggerNotesReceivedPopup(bool InCinematicSkipped); // Function MysteriousNotes.PlayerMysteriousNoteComponent.TriggerNotesReceivedPopup // RequiredAPI|Net|NetReliableNative|Event|Public|NetClient // @ game+0x42239c0
-	void Server_NoteCompletionStepReceived(struct APlayerController* InPlayerController, struct FName InCompletionID); // Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_NoteCompletionStepReceived // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x42238c0
-	void Server_MarkNoteAsRead(struct APlayerController* InPlayerController, struct FGuid NoteId); // Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsRead // Net|NetReliableNative|Event|Protected|NetServer|HasDefaults|NetValidate // @ game+0x42237c0
-	void Server_MarkNoteAsDeleted(struct APlayerController* InPlayerController, struct FGuid NoteId); // Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsDeleted // Net|NetReliableNative|Event|Protected|NetServer|HasDefaults|NetValidate // @ game+0x42236c0
-	void OnRep_NoteData(); // Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_NoteData // Final|RequiredAPI|Native|Private // @ game+0x4223580
-	void OnRep_BeenPossessed(); // Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_BeenPossessed // Final|RequiredAPI|Native|Private // @ game+0x4223560
-	void CustomServerUpdateDetailNotes(struct TArray<struct FNotesRemoteServiceNoteDetailModel> InNotes); // Function MysteriousNotes.PlayerMysteriousNoteComponent.CustomServerUpdateDetailNotes // RequiredAPI|Net|NetReliableNative|Event|Public|NetClient // @ game+0x42234c0
-	void AddFakeNote(struct FString NoteType, struct FString NoteTitle, struct FString NoteBody, struct TArray<struct FString> CompletionStrings); // Function MysteriousNotes.PlayerMysteriousNoteComponent.AddFakeNote // RequiredAPI|Net|NetReliableNative|Event|Public|NetClient // @ game+0x42232e0
+	void TriggerNotesReceivedPopup(bool InCinematicSkipped); // Function MysteriousNotes.PlayerMysteriousNoteComponent.TriggerNotesReceivedPopup // RequiredAPI|Net|NetReliableNative|Event|Public|NetClient // @ game+0x4225fd0
+	void Server_NoteCompletionStepReceived(struct APlayerController* InPlayerController, struct FName InCompletionID); // Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_NoteCompletionStepReceived // Net|NetReliableNative|Event|Protected|NetServer|NetValidate // @ game+0x4225ed0
+	void Server_MarkNoteAsRead(struct APlayerController* InPlayerController, struct FGuid NoteId); // Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsRead // Net|NetReliableNative|Event|Protected|NetServer|HasDefaults|NetValidate // @ game+0x4225dd0
+	void Server_MarkNoteAsDeleted(struct APlayerController* InPlayerController, struct FGuid NoteId); // Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsDeleted // Net|NetReliableNative|Event|Protected|NetServer|HasDefaults|NetValidate // @ game+0x4225cd0
+	void OnRep_NoteData(); // Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_NoteData // Final|RequiredAPI|Native|Private // @ game+0x4225b90
+	void OnRep_BeenPossessed(); // Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_BeenPossessed // Final|RequiredAPI|Native|Private // @ game+0x4225b70
+	void CustomServerUpdateDetailNotes(struct TArray<struct FNotesRemoteServiceNoteDetailModel> InNotes); // Function MysteriousNotes.PlayerMysteriousNoteComponent.CustomServerUpdateDetailNotes // RequiredAPI|Net|NetReliableNative|Event|Public|NetClient // @ game+0x4225ad0
+	void AddFakeNote(struct FString NoteType, struct FString NoteTitle, struct FString NoteBody, struct TArray<struct FString> CompletionStrings); // Function MysteriousNotes.PlayerMysteriousNoteComponent.AddFakeNote // RequiredAPI|Net|NetReliableNative|Event|Public|NetClient // @ game+0x42258f0
 };
 
 // Class MysteriousNotes.WieldableMysteriousNote
@@ -101,7 +101,7 @@ struct AWieldableMysteriousNote : ASkeletalMeshWieldableItem {
 	struct UInventoryItemComponent* InventoryItemComponent; // 0x870(0x08)
 	char UnknownData_878[0x108]; // 0x878(0x108)
 
-	void OnTextCanvasUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function MysteriousNotes.WieldableMysteriousNote.OnTextCanvasUpdate // Final|Native|Private // @ game+0x42235c0
-	void OnRep_NoteLayout(); // Function MysteriousNotes.WieldableMysteriousNote.OnRep_NoteLayout // Final|RequiredAPI|Native|Private // @ game+0x42235a0
+	void OnTextCanvasUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function MysteriousNotes.WieldableMysteriousNote.OnTextCanvasUpdate // Final|Native|Private // @ game+0x4225bd0
+	void OnRep_NoteLayout(); // Function MysteriousNotes.WieldableMysteriousNote.OnRep_NoteLayout // Final|RequiredAPI|Native|Private // @ game+0x4225bb0
 };
 

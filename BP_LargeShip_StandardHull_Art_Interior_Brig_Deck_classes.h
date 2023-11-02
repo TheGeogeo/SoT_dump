@@ -30,6 +30,6 @@ struct ABP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C : AActor {
 	struct UMergedStaticMeshComponent* MergedStaticMesh_col; // 0x498(0x08)
 	struct UStaticMeshComponent* shp_interior_brig_deck_01_a; // 0x4a0(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Interior_Brig_Deck.BP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Interior_Brig_Deck.BP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

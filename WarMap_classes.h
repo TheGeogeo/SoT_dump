@@ -29,7 +29,7 @@ struct UWarMapVoteConsumerBase : UVoteConsumerInlineBase {
 	struct TArray<struct APlayerState*> Votes; // 0xa8(0x10)
 	char UnknownData_B8[0x58]; // 0xb8(0x58)
 
-	void OnRep_Votes(); // Function WarMap.WarMapVoteConsumerBase.OnRep_Votes // Final|Native|Private // @ game+0x48102e0
+	void OnRep_Votes(); // Function WarMap.WarMapVoteConsumerBase.OnRep_Votes // Final|Native|Private // @ game+0x4812900
 };
 
 // Class WarMap.StartWarMapVoyageVoteConsumer

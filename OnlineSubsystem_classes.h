@@ -20,7 +20,7 @@ struct UNamedInterfaces : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UTurnBasedMatchInterface : UInterface {
 
-	void OnMatchReceivedTurn(struct FString Match, bool bDidBecomeActive); // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn // Event|Public|BlueprintEvent // @ game+0x18e3b10
-	void OnMatchEnded(struct FString Match); // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded // Event|Public|BlueprintEvent // @ game+0x18e3b10
+	void OnMatchReceivedTurn(struct FString Match, bool bDidBecomeActive); // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn // Event|Public|BlueprintEvent // @ game+0x18e5fa0
+	void OnMatchEnded(struct FString Match); // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded // Event|Public|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -265,8 +265,8 @@ struct APetAIController : AAthenaAIController {
 	float MinAgentHalfHeightPctOverride; // 0xa00(0x04)
 	char UnknownData_A04[0x54]; // 0xa04(0x54)
 
-	void OnPerceptionUpdated(struct TArray<struct AActor*> ChangedPerceivedActors); // Function Pets.PetAIController.OnPerceptionUpdated // Native|Public // @ game+0x45e6000
-	struct UAthenaAICharacterPathFollowingComponent* GetAthenaAICharPathFollowingComp(); // Function Pets.PetAIController.GetAthenaAICharPathFollowingComp // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45e5ef0
+	void OnPerceptionUpdated(struct TArray<struct AActor*> ChangedPerceivedActors); // Function Pets.PetAIController.OnPerceptionUpdated // Native|Public // @ game+0x45e8620
+	struct UAthenaAICharacterPathFollowingComponent* GetAthenaAICharPathFollowingComp(); // Function Pets.PetAIController.GetAthenaAICharPathFollowingComp // Final|Native|Public|BlueprintCallable|BlueprintPure|Const // @ game+0x45e8510
 };
 
 // Class Pets.PetCustomisationOverrideDataAsset
@@ -319,7 +319,7 @@ struct UPetHangoutSpotComponent : USceneComponent {
 	struct UPetHangoutSpotsDataAsset* PetHangoutSpotsDataAsset; // 0x368(0x08)
 	char UnknownData_370[0x10]; // 0x370(0x10)
 
-	void OnRep_IsOwnerSinking(); // Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking // Final|Native|Private // @ game+0x45e61c0
+	void OnRep_IsOwnerSinking(); // Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking // Final|Native|Private // @ game+0x45e87e0
 };
 
 // Class Pets.PetItemInfo
@@ -336,7 +336,7 @@ struct APetItemInfo : ANonStorableItemInfo {
 	struct UPetUGCNameComponent* PetUGCNameComponent; // 0x590(0x08)
 	char UnknownData_598[0x10]; // 0x598(0x10)
 
-	void OnRep_PetOwner(); // Function Pets.PetItemInfo.OnRep_PetOwner // Final|Native|Private // @ game+0x45e6280
+	void OnRep_PetOwner(); // Function Pets.PetItemInfo.OnRep_PetOwner // Final|Native|Private // @ game+0x45e88a0
 };
 
 // Class Pets.PetListingDataAsset
@@ -361,7 +361,7 @@ struct UPetOwnerComponent : UActorComponent {
 	char UnknownData_C8[0x18]; // 0xc8(0x18)
 	struct AItemInfo* PetInfo; // 0xe0(0x08)
 
-	void Server_RequestDismissal(); // Function Pets.PetOwnerComponent.Server_RequestDismissal // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45e6410
+	void Server_RequestDismissal(); // Function Pets.PetOwnerComponent.Server_RequestDismissal // Net|NetReliableNative|Event|Public|NetServer|NetValidate // @ game+0x45e8a30
 };
 
 // Class Pets.PetPartCustomisationInterface
@@ -421,9 +421,9 @@ struct UPetsService : UObject {
 	struct UPetHangoutSpotsDataAsset* PetHangoutDataAsset; // 0x2d8(0x08)
 	char UnknownData_2E0[0x50]; // 0x2e0(0x50)
 
-	void RemovePetFromActor(struct AActor* InOwner); // Function Pets.PetsService.RemovePetFromActor // Final|Native|Public|BlueprintCallable // @ game+0x45e6380
-	void AddPetForActorAndWield(struct UClass* InPetType, struct FPetCustomisation InCustomisation, struct AActor* InOwner, bool IsWielded); // Function Pets.PetsService.AddPetForActorAndWield // Native|Public|BlueprintCallable // @ game+0x45e5d50
-	void AddPetForActor(struct UClass* InPetType, struct FPetCustomisation InCustomisation, struct AActor* InOwner); // Function Pets.PetsService.AddPetForActor // Final|Native|Public|BlueprintCallable // @ game+0x45e5be0
+	void RemovePetFromActor(struct AActor* InOwner); // Function Pets.PetsService.RemovePetFromActor // Final|Native|Public|BlueprintCallable // @ game+0x45e89a0
+	void AddPetForActorAndWield(struct UClass* InPetType, struct FPetCustomisation InCustomisation, struct AActor* InOwner, bool IsWielded); // Function Pets.PetsService.AddPetForActorAndWield // Native|Public|BlueprintCallable // @ game+0x45e8370
+	void AddPetForActor(struct UClass* InPetType, struct FPetCustomisation InCustomisation, struct AActor* InOwner); // Function Pets.PetsService.AddPetForActor // Final|Native|Public|BlueprintCallable // @ game+0x45e8200
 };
 
 // Class Pets.PetsSettings
@@ -486,8 +486,8 @@ struct AWieldablePet : ASkeletalMeshWieldableItem {
 	char DropRequest; // 0x921(0x01)
 	char UnknownData_922[0xe]; // 0x922(0x0e)
 
-	void OnRep_HungerReactAnimationState(); // Function Pets.WieldablePet.OnRep_HungerReactAnimationState // Final|Native|Private // @ game+0x45e6180
-	void OnRep_DropRequest(char PriorDropRequest); // Function Pets.WieldablePet.OnRep_DropRequest // Final|Native|Private // @ game+0x45e6100
+	void OnRep_HungerReactAnimationState(); // Function Pets.WieldablePet.OnRep_HungerReactAnimationState // Final|Native|Private // @ game+0x45e87a0
+	void OnRep_DropRequest(char PriorDropRequest); // Function Pets.WieldablePet.OnRep_DropRequest // Final|Native|Private // @ game+0x45e8720
 };
 
 // Class Pets.WieldablePetAnimNotifyWwiseEmitterComponent

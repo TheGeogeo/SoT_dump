@@ -10,7 +10,7 @@ struct ACustomServerLocalisationService : AActor {
 	struct TArray<struct FCustomServerLocalisationData> LocalisationData; // 0x3d0(0x10)
 	char UnknownData_3E0[0x80]; // 0x3e0(0x80)
 
-	void OnRep_GenerateLocalisationData(); // Function CustomServerLocalisation.CustomServerLocalisationService.OnRep_GenerateLocalisationData // Final|Native|Private // @ game+0x42081d0
-	void BeginPlay(); // Function CustomServerLocalisation.CustomServerLocalisationService.BeginPlay // Final|Native|Private // @ game+0x42081b0
+	void OnRep_GenerateLocalisationData(); // Function CustomServerLocalisation.CustomServerLocalisationService.OnRep_GenerateLocalisationData // Final|Native|Private // @ game+0x420a7e0
+	void BeginPlay(); // Function CustomServerLocalisation.CustomServerLocalisationService.BeginPlay // Final|Native|Private // @ game+0x420a7c0
 };
 

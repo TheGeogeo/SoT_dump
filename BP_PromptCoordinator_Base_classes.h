@@ -6,18 +6,18 @@ struct UBP_PromptCoordinator_Base_C : UBasePromptCoordinator {
 	char UnknownData_121[0x7]; // 0x121(0x07)
 	struct FMulticastDelegate OnComplete; // 0x128(0x10)
 
-	void IsCharacterInsideRadius(struct FVector Center, float Radius, bool Result); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.IsCharacterInsideRadius // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e3b10
-	void UninitializeImplementable(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UninitializeImplementable // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetHUDObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle HUD Dispatcher); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetHUDObjectMessageDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void Complete(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Complete // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void UnregisterHandles(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UnregisterHandles // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void PostInitialize(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.PostInitialize // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void InitializeAndStart(struct AAthenaPlayerController* PlayerController); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.InitializeAndStart // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetCharacterObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle Player Dispatcher); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetCharacterObjectMessageDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void Evaluate(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Evaluate // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void GetControllerObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle Player Dispatcher); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetControllerObjectMessageDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e3b10
-	void Start(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Start // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
-	void ExecuteUbergraph_BP_PromptCoordinator_Base(int32_t EntryPoint); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.ExecuteUbergraph_BP_PromptCoordinator_Base //  // @ game+0x18e3b10
-	void OnComplete__DelegateSignature(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.OnComplete__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void IsCharacterInsideRadius(struct FVector Center, float Radius, bool Result); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.IsCharacterInsideRadius // Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const // @ game+0x18e5fa0
+	void UninitializeImplementable(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UninitializeImplementable // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetHUDObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle HUD Dispatcher); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetHUDObjectMessageDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void Complete(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Complete // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void UnregisterHandles(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UnregisterHandles // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void PostInitialize(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.PostInitialize // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void InitializeAndStart(struct AAthenaPlayerController* PlayerController); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.InitializeAndStart // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetCharacterObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle Player Dispatcher); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetCharacterObjectMessageDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void Evaluate(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Evaluate // Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void GetControllerObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle Player Dispatcher); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetControllerObjectMessageDispatcher // Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure // @ game+0x18e5fa0
+	void Start(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Start // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
+	void ExecuteUbergraph_BP_PromptCoordinator_Base(int32_t EntryPoint); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.ExecuteUbergraph_BP_PromptCoordinator_Base //  // @ game+0x18e5fa0
+	void OnComplete__DelegateSignature(); // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.OnComplete__DelegateSignature // Public|Delegate|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

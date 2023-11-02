@@ -5,17 +5,17 @@ struct UAnimationSwitchDataAsset : UDataAsset {
 	char UnknownData_2C[0x4]; // 0x2c(0x04)
 	struct TArray<struct FAnimationSwitchEntry> Entries; // 0x30(0x10)
 
-	struct UClass* GetAnimSetIdForDesc(struct FPirateDescription Desc); // Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x16d76e0
+	struct UClass* GetAnimSetIdForDesc(struct FPirateDescription Desc); // Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const // @ game+0x16d9b70
 };
 
 // Class PirateGenerator.CharacterMeshBakeFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UCharacterMeshBakeFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void BakeCharacterMeshAsync(struct UCharacterMeshBakeSpecification* CharacterMeshSpecification, DelegateProperty AsyncResult); // Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d5c60
-	struct USkeletalMesh* BakeCharacterMesh(struct UCharacterMeshBakeSpecification* CharacterMeshSpecification); // Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d5be0
-	void AsyncBakeResultDynamic__DelegateSignature(struct USkeletalMesh* Mesh); // DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature // Public|Delegate // @ game+0x18e3b10
-	void AppendCharacterBlendShapes(struct UCharacterMeshBakeSpecification* CharacterMeshSpecification, struct TArray<struct FIPGBlendShape> BlendShapes); // Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d5a40
+	void BakeCharacterMeshAsync(struct UCharacterMeshBakeSpecification* CharacterMeshSpecification, DelegateProperty AsyncResult); // Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d80f0
+	struct USkeletalMesh* BakeCharacterMesh(struct UCharacterMeshBakeSpecification* CharacterMeshSpecification); // Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d8070
+	void AsyncBakeResultDynamic__DelegateSignature(struct USkeletalMesh* Mesh); // DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature // Public|Delegate // @ game+0x18e5fa0
+	void AppendCharacterBlendShapes(struct UCharacterMeshBakeSpecification* CharacterMeshSpecification, struct TArray<struct FIPGBlendShape> BlendShapes); // Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d7ed0
 };
 
 // Class PirateGenerator.SkeletonsDataAsset
@@ -43,10 +43,10 @@ struct UCharacterMeshBakeSpecification : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UCharacterMeshBakeTestFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct UCharacterMeshBakeSpecification* MakeCharacterMeshSpecification(); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d8700
-	void BlendMeshWithMeshPatchAssets(struct USkeletalMesh* BaseMesh, float BaseMeshWeight, struct TArray<struct UMeshPatchAsset*> MeshPatchAssets, struct TArray<float> MeshPatchAssetWeights, struct USkeletalMesh* TargetMesh); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d6300
-	struct USkeletalMesh* BakeCharacterMeshFromClassDefault(struct UClass* CharacterMeshBakeSpecificationClass); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d5d50
-	bool AreMeshesEquivalentByMeshPatchCriteria(struct USkeletalMesh* MeshA, struct USkeletalMesh* MeshB); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d5b20
+	struct UCharacterMeshBakeSpecification* MakeCharacterMeshSpecification(); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification // Final|Native|Static|Public|BlueprintCallable // @ game+0x16dab90
+	void BlendMeshWithMeshPatchAssets(struct USkeletalMesh* BaseMesh, float BaseMeshWeight, struct TArray<struct UMeshPatchAsset*> MeshPatchAssets, struct TArray<float> MeshPatchAssetWeights, struct USkeletalMesh* TargetMesh); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8790
+	struct USkeletalMesh* BakeCharacterMeshFromClassDefault(struct UClass* CharacterMeshBakeSpecificationClass); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d81e0
+	bool AreMeshesEquivalentByMeshPatchCriteria(struct USkeletalMesh* MeshA, struct USkeletalMesh* MeshB); // Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d7fb0
 };
 
 // Class PirateGenerator.ColorTexture
@@ -59,8 +59,8 @@ struct UColorTexture : UTexture {
 // Size: 0x28 (Inherited: 0x28)
 struct UFileAccessFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct FString GetMeshPatchAssetPathFromMeshPathAndTypeName(struct FString MeshPath, struct FString TypeName); // Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d7bc0
-	struct UMeshPatchAsset* GetMeshPatchAssetForMeshFromTypeName(struct USkeletalMesh* Mesh, struct FString TypeName); // Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d7ae0
+	struct FString GetMeshPatchAssetPathFromMeshPathAndTypeName(struct FString MeshPath, struct FString TypeName); // Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName // Final|Native|Static|Public|BlueprintCallable // @ game+0x16da050
+	struct UMeshPatchAsset* GetMeshPatchAssetForMeshFromTypeName(struct USkeletalMesh* Mesh, struct FString TypeName); // Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d9f70
 };
 
 // Class PirateGenerator.MaterialReferencesDataAsset
@@ -73,10 +73,10 @@ struct UMaterialReferencesDataAsset : UDataAsset {
 // Size: 0x28 (Inherited: 0x28)
 struct UPirateBodyShapeFunctionLibrary : UBlueprintFunctionLibrary {
 
-	struct FString GetHighestWeighted(float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights, float Threshold); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d78c0
-	bool FindBodyBlendsFromBodyShapeWheelRadialCoordinate(char Gender, struct FRadialCoordinate BodyShapeWheelRadialCoordinate, float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d67c0
-	struct FRadialCoordinate ConvertToRadialCoordinate(struct FVector2D UV); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x16d6740
-	struct FVector2D ConvertFromRadialCoordinate(struct FRadialCoordinate Coord); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x16d66b0
+	struct FString GetHighestWeighted(float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights, float Threshold); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d9d50
+	bool FindBodyBlendsFromBodyShapeWheelRadialCoordinate(char Gender, struct FRadialCoordinate BodyShapeWheelRadialCoordinate, float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8c50
+	struct FRadialCoordinate ConvertToRadialCoordinate(struct FVector2D UV); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x16d8bd0
+	struct FVector2D ConvertFromRadialCoordinate(struct FRadialCoordinate Coord); // Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate // Final|Native|Static|Public|HasDefaults|BlueprintCallable // @ game+0x16d8b40
 };
 
 // Class PirateGenerator.PirateGeneratorMaterials
@@ -89,19 +89,19 @@ struct UPirateGeneratorMaterials : UObject {
 // Size: 0x28 (Inherited: 0x28)
 struct UPirateGeneratorFunctionLibrary : UBlueprintFunctionLibrary {
 
-	bool SavePirateDescription(struct FString RelativePath, struct FPirateDescription InDesc); // Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d9150
-	struct FRadialCoordinate RandomBodyShape(int32_t Seed); // Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x16d9030
-	struct UWardrobeDataAsset* LoadWardrobeDataAsset(); // Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadWardrobeDataAsset // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d86d0
-	bool LoadPirateDescription(struct FString RelativePath, struct FPirateDescription OutDesc); // Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8580
-	void K2_BakeFromDescriptionGameThread(struct FPirateDescription Desc, char Flags, struct USkeletalMesh* OutMesh, struct FPirateGeneratorAdditionalBakeInfo OutAdditionalBakeInfo, struct FPirateDescription OutDesc); // Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d82b0
-	int32_t IPGLatestVersion(); // Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x16d8280
-	int32_t GetSeedFromString(struct FString RefName, struct FString Str); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x16d8180
-	void GetAllTextureReferences(struct USkeletalMesh* Mesh, struct TArray<struct FPirateGeneratorTextureReference> OutReferences); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d72d0
-	struct TArray<struct FString> GetAllDescriptions(); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d71c0
-	struct FPirateDescription GenerateRandomPirateWithVersion(int32_t Seed, int32_t Version, bool bOverrideBodyShape, struct FRadialCoordinate BodyShapeOverride, char SpecificGender, char SpecificEthnicity, struct TArray<struct FIPGDynamicSlider> DynamicSliders, struct TArray<struct FName> TextureReferences, struct TArray<struct FIPGScalarParameter> ScalarParameters); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d6db0
-	struct FPirateDescription GenerateRandomPirate(int32_t Seed, bool bOverrideBodyShape, struct FRadialCoordinate BodyShapeOverride, char SpecificGender, char SpecificEthnicity, struct TArray<struct FIPGDynamicSlider> DynamicSliders, struct TArray<struct FName> TextureReferences, struct TArray<struct FIPGScalarParameter> ScalarParameters); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d69e0
-	void BakeMeshWithNewMaterial(struct FName InMaterialName, struct FPirateDescription InPirateDesc, struct TArray<struct FName> ClothingWardrobeKeys, bool InFirstPerson, DelegateProperty Result); // Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeMeshWithNewMaterial // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d5f70
-	void BakeFromDescriptionAsync(struct FPirateDescription Desc, char Flags, DelegateProperty AsyncResult); // Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d5dd0
+	bool SavePirateDescription(struct FString RelativePath, struct FPirateDescription InDesc); // Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16db5e0
+	struct FRadialCoordinate RandomBodyShape(int32_t Seed); // Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x16db4c0
+	struct UWardrobeDataAsset* LoadWardrobeDataAsset(); // Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadWardrobeDataAsset // Final|Native|Static|Public|BlueprintCallable // @ game+0x16dab60
+	bool LoadPirateDescription(struct FString RelativePath, struct FPirateDescription OutDesc); // Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16daa10
+	void K2_BakeFromDescriptionGameThread(struct FPirateDescription Desc, char Flags, struct USkeletalMesh* OutMesh, struct FPirateGeneratorAdditionalBakeInfo OutAdditionalBakeInfo, struct FPirateDescription OutDesc); // Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16da740
+	int32_t IPGLatestVersion(); // Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x16da710
+	int32_t GetSeedFromString(struct FString RefName, struct FString Str); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString // Final|Native|Static|Public|BlueprintCallable|BlueprintPure // @ game+0x16da610
+	void GetAllTextureReferences(struct USkeletalMesh* Mesh, struct TArray<struct FPirateGeneratorTextureReference> OutReferences); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d9760
+	struct TArray<struct FString> GetAllDescriptions(); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d9650
+	struct FPirateDescription GenerateRandomPirateWithVersion(int32_t Seed, int32_t Version, bool bOverrideBodyShape, struct FRadialCoordinate BodyShapeOverride, char SpecificGender, char SpecificEthnicity, struct TArray<struct FIPGDynamicSlider> DynamicSliders, struct TArray<struct FName> TextureReferences, struct TArray<struct FIPGScalarParameter> ScalarParameters); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d9240
+	struct FPirateDescription GenerateRandomPirate(int32_t Seed, bool bOverrideBodyShape, struct FRadialCoordinate BodyShapeOverride, char SpecificGender, char SpecificEthnicity, struct TArray<struct FIPGDynamicSlider> DynamicSliders, struct TArray<struct FName> TextureReferences, struct TArray<struct FIPGScalarParameter> ScalarParameters); // Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d8e70
+	void BakeMeshWithNewMaterial(struct FName InMaterialName, struct FPirateDescription InPirateDesc, struct TArray<struct FName> ClothingWardrobeKeys, bool InFirstPerson, DelegateProperty Result); // Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeMeshWithNewMaterial // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8400
+	void BakeFromDescriptionAsync(struct FPirateDescription Desc, char Flags, DelegateProperty AsyncResult); // Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8260
 };
 
 // Class PirateGenerator.WardrobeExcludeDataAsset
@@ -115,8 +115,8 @@ struct UWardrobeDataAsset : UDataAsset {
 	char UnknownData_28[0xa0]; // 0x28(0xa0)
 	struct TArray<struct FMeshPatchEntry> AssetMap; // 0xc8(0x10)
 
-	bool Rebuild(bool LoadAllAssets); // Function PirateGenerator.WardrobeDataAsset.Rebuild // Final|Native|Public|BlueprintCallable // @ game+0x16d90c0
-	int32_t GetNumNewAssets(); // Function PirateGenerator.WardrobeDataAsset.GetNumNewAssets // Final|Native|Public|BlueprintCallable // @ game+0x16d7d10
+	bool Rebuild(bool LoadAllAssets); // Function PirateGenerator.WardrobeDataAsset.Rebuild // Final|Native|Public|BlueprintCallable // @ game+0x16db550
+	int32_t GetNumNewAssets(); // Function PirateGenerator.WardrobeDataAsset.GetNumNewAssets // Final|Native|Public|BlueprintCallable // @ game+0x16da1a0
 };
 
 // Class PirateGenerator.PirateGeneratorSettings
@@ -146,8 +146,8 @@ struct UPirateGeneratorSettings : UDeveloperSettings {
 // Size: 0x28 (Inherited: 0x28)
 struct UPreparePirateMeshBakeTestFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void PopulateSkeletonBlendsInCharacterMeshBakeSpecification(struct UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification, struct USkeletalMesh* MeshWithBaseSkeleton, struct USkeletonsDataAsset* SkeletonsDataAsset, struct FString MeshTypeSkeletonFileFormat, float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights); // Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8d90
-	void PopulateBlendedSubMeshesInCharacterMeshBakeSpecification(struct UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification, struct TArray<struct USkeletalMesh*> SubMeshes, float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights); // Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8b60
+	void PopulateSkeletonBlendsInCharacterMeshBakeSpecification(struct UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification, struct USkeletalMesh* MeshWithBaseSkeleton, struct USkeletonsDataAsset* SkeletonsDataAsset, struct FString MeshTypeSkeletonFileFormat, float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights); // Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16db220
+	void PopulateBlendedSubMeshesInCharacterMeshBakeSpecification(struct UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification, struct TArray<struct USkeletalMesh*> SubMeshes, float BaseMeshBlendWeight, struct TArray<struct FString> BodyShapeBlendNames, struct TArray<float> BodyShapeBlendWeights); // Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16daff0
 };
 
 // Class PirateGenerator.TextureSwitch
@@ -209,22 +209,22 @@ struct UWardrobeOutfitDataAsset : UDataAsset {
 	struct TArray<struct FName> MaleWardrobeItems; // 0x38(0x10)
 	struct TArray<struct FWardrobeOutfitCategoryBias> BiasPerCategory; // 0x48(0x10)
 
-	float GetBiasForCategory(struct FName Name); // Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x16d77e0
+	float GetBiasForCategory(struct FName Name); // Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory // Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x16d9c70
 };
 
 // Class PirateGenerator.WardrobeFunctionLibrary
 // Size: 0x28 (Inherited: 0x28)
 struct UWardrobeFunctionLibrary : UBlueprintFunctionLibrary {
 
-	void PickOutfitAsync(struct TArray<struct FName> ClothingItemNames, struct TArray<struct FName> Tags, char PirateType, char Gender, DelegateProperty AsyncResult); // Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8950
-	bool PickOutfit(struct TArray<struct FName> ClothingItemNames, struct TArray<struct FName> Tags, char PirateType, char Gender, struct FWardrobeOutfitResult Result); // Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d8730
-	struct TArray<struct FName> GetRandomWardrobeItemsWithBias(int32_t Seed, struct TArray<struct FName> InputItems, struct TArray<struct FWardrobeOutfitCategoryBias> BiasPerCategory); // Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d7fd0
-	struct TArray<struct FName> GetRandomWardrobeItems(int32_t Seed, struct TArray<struct FName> InputItems); // Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16d7e90
-	struct TArray<struct FName> GetRandomOutfit(struct UWardrobeOutfitDataAsset* Outfit, int32_t Seed, char Gender); // Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d7d40
-	struct TArray<struct FName> GetAllWardrobeTypes(); // Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d7640
-	struct TArray<struct FName> GetAllWardrobeItemsForType(struct FString TypeName, char PirateType, bool bWithExclusions); // Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d74d0
-	struct TArray<struct FName> GetAllWardrobeItems(char PirateType); // Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d73f0
-	bool CanLoadOutfit(struct TArray<struct FName> ClothingItemNames, struct TArray<struct FName> Tags, char PirateType, char Gender); // Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x16d64f0
-	void AsyncOutfitResultDynamic__DelegateSignature(bool Success, struct TArray<struct USkeletalMesh*> Meshes); // DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature // Public|Delegate|HasOutParms // @ game+0x18e3b10
+	void PickOutfitAsync(struct TArray<struct FName> ClothingItemNames, struct TArray<struct FName> Tags, char PirateType, char Gender, DelegateProperty AsyncResult); // Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16dade0
+	bool PickOutfit(struct TArray<struct FName> ClothingItemNames, struct TArray<struct FName> Tags, char PirateType, char Gender, struct FWardrobeOutfitResult Result); // Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16dabc0
+	struct TArray<struct FName> GetRandomWardrobeItemsWithBias(int32_t Seed, struct TArray<struct FName> InputItems, struct TArray<struct FWardrobeOutfitCategoryBias> BiasPerCategory); // Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16da460
+	struct TArray<struct FName> GetRandomWardrobeItems(int32_t Seed, struct TArray<struct FName> InputItems); // Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems // Final|Native|Static|Public|HasOutParms|BlueprintCallable // @ game+0x16da320
+	struct TArray<struct FName> GetRandomOutfit(struct UWardrobeOutfitDataAsset* Outfit, int32_t Seed, char Gender); // Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit // Final|Native|Static|Public|BlueprintCallable // @ game+0x16da1d0
+	struct TArray<struct FName> GetAllWardrobeTypes(); // Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d9ad0
+	struct TArray<struct FName> GetAllWardrobeItemsForType(struct FString TypeName, char PirateType, bool bWithExclusions); // Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d9960
+	struct TArray<struct FName> GetAllWardrobeItems(char PirateType); // Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems // Final|Native|Static|Public|BlueprintCallable // @ game+0x16d9880
+	bool CanLoadOutfit(struct TArray<struct FName> ClothingItemNames, struct TArray<struct FName> Tags, char PirateType, char Gender); // Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit // Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure // @ game+0x16d8980
+	void AsyncOutfitResultDynamic__DelegateSignature(bool Success, struct TArray<struct USkeletalMesh*> Meshes); // DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature // Public|Delegate|HasOutParms // @ game+0x18e5fa0
 };
 

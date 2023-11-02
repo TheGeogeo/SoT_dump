@@ -12,9 +12,9 @@ struct ACustomMap : ARenderToTextureMapBase {
 	struct TArray<struct UCustomMapDisplayObjectBase*> DisplayItems; // 0x8a0(0x10)
 	char UnknownData_8B0[0x10]; // 0x8b0(0x10)
 
-	void OnRep_FontUpdated(); // Function CustomMaps.CustomMap.OnRep_FontUpdated // Final|Native|Private // @ game+0x4411380
-	void OnRep_DisplayItem(); // Function CustomMaps.CustomMap.OnRep_DisplayItem // Final|Native|Private // @ game+0x4411360
-	void OnMapItemsUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function CustomMaps.CustomMap.OnMapItemsUpdate // Final|Native|Private // @ game+0x4411260
+	void OnRep_FontUpdated(); // Function CustomMaps.CustomMap.OnRep_FontUpdated // Final|Native|Private // @ game+0x44139a0
+	void OnRep_DisplayItem(); // Function CustomMaps.CustomMap.OnRep_DisplayItem // Final|Native|Private // @ game+0x4413980
+	void OnMapItemsUpdate(struct UCanvas* Canvas, int32_t Width, int32_t Height); // Function CustomMaps.CustomMap.OnMapItemsUpdate // Final|Native|Private // @ game+0x4413880
 };
 
 // Class CustomMaps.CustomMapCollectionInterface

@@ -3,6 +3,6 @@
 struct ABP_PassiveShipPawn_C : AShipProxyPawn {
 	struct USceneComponent* DefaultSceneRoot; // 0x478(0x08)
 
-	void UserConstructionScript(); // Function BP_PassiveShipPawn.BP_PassiveShipPawn_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_PassiveShipPawn.BP_PassiveShipPawn_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

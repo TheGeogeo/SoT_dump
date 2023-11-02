@@ -26,8 +26,8 @@ struct AWaterSlide : ARide {
 	struct UWaterSlideAudioParams* WaterSlideAudioParams; // 0x418(0x08)
 	char UnknownData_420[0x8]; // 0x420(0x08)
 
-	void SetEntranceCollisionComponent(struct UPrimitiveComponent* InEntranceCollisionComponent); // Function WaterSlide.WaterSlide.SetEntranceCollisionComponent // Final|Native|Protected|BlueprintCallable // @ game+0x4745260
-	void ComponentBeginOverlapCallBack(struct AActor* InOtherActor, struct UPrimitiveComponent* InOtherComp, int32_t InOtherBodyIndex, bool InFromSweep, struct FHitResult InSweepResult); // Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack // Final|Native|Private|HasOutParms // @ game+0x4745090
+	void SetEntranceCollisionComponent(struct UPrimitiveComponent* InEntranceCollisionComponent); // Function WaterSlide.WaterSlide.SetEntranceCollisionComponent // Final|Native|Protected|BlueprintCallable // @ game+0x4747880
+	void ComponentBeginOverlapCallBack(struct AActor* InOtherActor, struct UPrimitiveComponent* InOtherComp, int32_t InOtherBodyIndex, bool InFromSweep, struct FHitResult InSweepResult); // Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack // Final|Native|Private|HasOutParms // @ game+0x47476b0
 };
 
 // Class WaterSlide.Zipline

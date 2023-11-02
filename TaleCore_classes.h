@@ -3,7 +3,7 @@
 struct AClientCommandHandler : AActor {
 	struct FClientCommandQueue CommandQueue; // 0x3c8(0x18)
 
-	void OnRep_CommandQueue(); // Function TaleCore.ClientCommandHandler.OnRep_CommandQueue // Final|Native|Private // @ game+0x3e10a80
+	void OnRep_CommandQueue(); // Function TaleCore.ClientCommandHandler.OnRep_CommandQueue // Final|Native|Private // @ game+0x3e13090
 };
 
 // Class TaleCore.TaleStruct

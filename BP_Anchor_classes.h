@@ -3,6 +3,6 @@
 struct ABP_Anchor_C : AAnchor {
 	struct USceneComponent* DefaultSceneRoot; // 0x400(0x08)
 
-	void UserConstructionScript(); // Function BP_Anchor.BP_Anchor_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_Anchor.BP_Anchor_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

@@ -8,7 +8,7 @@ struct UShantyPuzzleCompletionComponent : UActorComponent {
 	struct TArray<struct FLandmarkReactionKeyFrame> PuzzleCompletedReaction; // 0xf0(0x10)
 	struct ALandmarkReactionPlayer* ReactionPlayer; // 0x100(0x08)
 
-	void PlayReactions_Net(char State); // Function ShantyPuzzle.ShantyPuzzleCompletionComponent.PlayReactions_Net // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x47f2ff0
+	void PlayReactions_Net(char State); // Function ShantyPuzzle.ShantyPuzzleCompletionComponent.PlayReactions_Net // Final|Net|NetReliableNative|Event|NetMulticast|Private // @ game+0x47f5610
 };
 
 // Class ShantyPuzzle.ShantyPuzzleInterface
@@ -30,8 +30,8 @@ struct UShantyPuzzleComponent : USceneComponent {
 	struct AEnsemble* CurrentlyPlayingShantyPuzzleEnsemble; // 0x328(0x08)
 	char UnknownData_330[0xc0]; // 0x330(0xc0)
 
-	void OnEndOverlap(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex); // Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap // Final|Native|Public // @ game+0x47f2ef0
-	void OnBeginOverlap(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap // Final|Native|Public|HasOutParms // @ game+0x47f2d20
+	void OnEndOverlap(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex); // Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap // Final|Native|Public // @ game+0x47f5510
+	void OnBeginOverlap(struct AActor* InActor, struct UPrimitiveComponent* InComponent, int32_t InOtherBodyIndex, bool bFromSweep, struct FHitResult SweepResult); // Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap // Final|Native|Public|HasOutParms // @ game+0x47f5340
 };
 
 // Class ShantyPuzzle.ShantyPuzzleInteractionZoneComponent

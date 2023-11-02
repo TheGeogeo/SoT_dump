@@ -2,8 +2,8 @@
 // Size: 0x28 (Inherited: 0x28)
 struct UGenericStatusVFXInterface : UInterface {
 
-	void IncrementVFXSource(); // Function GenericStatusVFX.GenericStatusVFXInterface.IncrementVFXSource // Native|Public|BlueprintCallable // @ game+0x4557b50
-	void DecrementVFXSource(); // Function GenericStatusVFX.GenericStatusVFXInterface.DecrementVFXSource // Native|Public|BlueprintCallable // @ game+0x4557b30
+	void IncrementVFXSource(); // Function GenericStatusVFX.GenericStatusVFXInterface.IncrementVFXSource // Native|Public|BlueprintCallable // @ game+0x455a170
+	void DecrementVFXSource(); // Function GenericStatusVFX.GenericStatusVFXInterface.DecrementVFXSource // Native|Public|BlueprintCallable // @ game+0x455a150
 };
 
 // Class GenericStatusVFX.GenericStatusVFXComponent
@@ -18,7 +18,7 @@ struct UGenericStatusVFXComponent : UActorComponent {
 	bool ContainsVFXSource; // 0x120(0x01)
 	char UnknownData_121[0x7]; // 0x121(0x07)
 
-	void OnRep_ContainsVFXSource(); // Function GenericStatusVFX.GenericStatusVFXComponent.OnRep_ContainsVFXSource // Final|Native|Private // @ game+0x4557b70
+	void OnRep_ContainsVFXSource(); // Function GenericStatusVFX.GenericStatusVFXComponent.OnRep_ContainsVFXSource // Final|Native|Private // @ game+0x455a190
 };
 
 // Class GenericStatusVFX.GenericStatusVFXDataAsset

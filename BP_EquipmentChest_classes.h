@@ -3,6 +3,6 @@
 struct ABP_EquipmentChest_C : APossessionsChest {
 	struct UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5a0(0x08)
 
-	void UserConstructionScript(); // Function BP_EquipmentChest.BP_EquipmentChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_EquipmentChest.BP_EquipmentChest_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 

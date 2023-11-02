@@ -4,7 +4,7 @@ struct UCommunityEmissaryFlagComponent : UStaticMeshComponent {
 	struct UCommunityEmissaryFlagData* CommunityEmissaryDataAsset; // 0x620(0x08)
 	char UnknownData_628[0x28]; // 0x628(0x28)
 
-	void Multicast_UpdateCommunityEmissaryFlag(int32_t FlagDataIndex); // Function CommunityEmissary.CommunityEmissaryFlagComponent.Multicast_UpdateCommunityEmissaryFlag // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x43ded90
+	void Multicast_UpdateCommunityEmissaryFlag(int32_t FlagDataIndex); // Function CommunityEmissary.CommunityEmissaryFlagComponent.Multicast_UpdateCommunityEmissaryFlag // Net|NetReliableNative|Event|NetMulticast|Public // @ game+0x43e13b0
 };
 
 // Class CommunityEmissary.CommunityEmissaryFlagData

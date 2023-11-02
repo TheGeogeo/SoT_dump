@@ -17,6 +17,6 @@ struct UKnockbackColliderComponent : UBoxComponent {
 	char SolidState; // 0x668(0x01)
 	char UnknownData_669[0x7]; // 0x669(0x07)
 
-	void OnRep_SolidState(); // Function KnockbackFramework.KnockbackColliderComponent.OnRep_SolidState // Final|Native|Private // @ game+0x3c226d0
+	void OnRep_SolidState(); // Function KnockbackFramework.KnockbackColliderComponent.OnRep_SolidState // Final|Native|Private // @ game+0x3c24ce0
 };
 

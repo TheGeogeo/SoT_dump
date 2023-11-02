@@ -5,6 +5,6 @@ struct ABP_LargeShip_StandardHull_Art_Doors_C : AActor {
 	struct UStaticMeshComponent* StaticMesh; // 0x3d0(0x08)
 	struct USceneComponent* DefaultSceneRoot; // 0x3d8(0x08)
 
-	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e3b10
+	void UserConstructionScript(); // Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.UserConstructionScript // Event|Public|BlueprintCallable|BlueprintEvent // @ game+0x18e5fa0
 };
 
